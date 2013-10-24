@@ -1,0 +1,79 @@
+/* Quicklinks
+
+#quicklinks
+  h2
+    font-size: 14pt
+    font-weight: normal
+    color: #777
+    margin-top: 0
+  margin: 0 0 2em
+  padding: 0 0 2em
+  overflow: hidden
+  ul, li
+    display: inline
+    list-style: none
+    padding: 0
+    margin: 0
+  a
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    float: left
+    font-size: 86%
+    min-width: 33%
+    padding: 0.5ex 0 0.5ex 2ex
+  br
+    display: none
+  p
+    display: inline
+    margin: 0
+
+.top a, a.top
+  display: block
+  padding: 2em 1em 2em 0
+  font-size: 86%
+
+.top a
+  padding-top: 1em
+  &:before
+    content: "\25b4"
+    padding-right: 0.5ex
+    text-decoration: none !important
+
+a.top:before
+  content: "\25b4"
+  padding-right: 0.5ex
+  text-decoration: none !important
+
+/* Footer
+
+#colophon
+  margin: 0 7.6%
+  padding: 2em 0 1em
+
+#site-generator
+  background: none
+  border-top: none
+  padding: 0
+  font-size: 8pt
+  text-align: center
+
+.footer-nav-list
+  margin: 0
+  li
+    color: #666
+    display: inline
+    list-style-type: none
+  a
+    color: #cc0000 !important
+    font-weight: normal !important
+    padding: 0 8px 4px 0
+    text-decoration: none
+    white-space: nowrap
+    &:hover
+      text-decoration: underline
+
+#rh_ms_footer p
+  clear: both
+
+.hidden
+  display: none

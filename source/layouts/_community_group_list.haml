@@ -1,0 +1,44 @@
+- hide_secondary = false unless defined? hide_secondary
+- group_type ||= 'standards'
+
+#quicklinks
+
+  %h2 Category quick links
+
+  %ul
+    - data[group_type].each do |name, group|
+
+      %li= link_to name, "##{name.parameterize}"
+
+
+#project_list
+
+  - data[group_type].each do |name, group|
+
+    .category
+      %h2{id: name.parameterize}= name
+
+      .projects
+
+        .primary
+          .positionFix
+
+            - if group
+              %ul
+
+                - group.each do |item|
+
+                  - image_name = item.image || item.name.parameterize
+                  - if File.exists? root + '/source/' + image_path("#{group_type}/#{image_name}.png")
+
+                    %li= link_to image_tag("#{group_type}/#{image_name}.png", alt: item.name), item.url, class: "item-#{image_name}", target: "_blank"
+
+
+
+      - unless hide_secondary
+        .secondary
+          - if group
+            %ul
+              - group.sort_by! { |k, v| k[:name].downcase }
+              - group.each do |item|
+                %li= link_to item.name, item.url
