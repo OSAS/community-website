@@ -1,0 +1,81 @@
+Standard bodies:
+
+  - name: DMTF
+    url: http://dmtf.org/
+
+  - name: IETF Internet Engineering Task Force
+    image: ietf
+    url: http://www.ietf.org/
+
+  - name: NIST National Institute of Standards and Technology
+    image: nist
+    url: http://www.nist.gov/
+
+  - name: OASIS
+    url: https://www.oasis-open.org/
+
+  - name: OMG Object Management Group
+    image: omg
+    url: http://www.omg.org/
+
+  - name: OpenGroup
+    url: http://www.opengroup.org/
+
+  - name: W3C Web Consortium
+    name: w3c
+    url: http://www.w3.org/
+
+
+Software standards:
+
+  - name: C++
+    image: c++
+    url: http://www.open-std.org/jtc1/sc22/wg21/
+
+  - name: DWARF Standards Committee
+    image: dwarf
+    url: http://www.dwarfstd.org/
+
+  - name: Free Desktop Organization
+    image: freedesktop
+    url: http://www.freedesktop.org/
+
+  - name: JCP Java Community Process
+    image: jcp
+    url: http://www.jcp.org/
+
+  - name: OpenMP
+    url: http://openmp.org/
+
+  - name: OSGI Alliance
+    image: osgi
+    url: http://www.osgi.org/
+
+  - name: UEFI Forum
+    image: uefi
+    url: http://www.uefi.org/
+
+
+Security standards:
+
+  - name: CSA Cloud Security Alliance
+    image: csa
+    url: https://cloudsecurityalliance.org/
+
+  - name: TCG Trusted Computing Group
+    image: tcg
+    url: http://www.trustedcomputinggroup.org/
+
+
+Benchmark standards:
+
+  - name: SPEC Standard Performance Evaluation Corporation
+    image: spec
+    url: http://www.spec.org/
+
+  - name: STAC Benchmark Council
+    image: stac
+    url: http://www.stacresearch.com/
+
+  - name: TPC
+    url: http://www.tpc.org/

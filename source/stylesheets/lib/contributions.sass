@@ -1,0 +1,63 @@
+/* Contributions page
+
+#project_list
+  ul
+    font-size: 86%
+    line-height: 1.5
+    list-style: none
+    margin: 0
+    padding: 0
+  li
+    list-style: none
+    margin: 0
+    padding: 0
+    a!
+  .secondary
+    overflow: hidden
+    li a
+      display: block
+    ul
+      border-right: 1px solid #eeeeee
+      /* margin-right hack: remove rightmost line (w/ overflow: hidden, above)
+      margin: 0 -1px 0 18px
+    columns: 4
+    -moz-columns: 4
+    -webkit-columns: 4
+
+.projects
+  .primary, .secondary
+    clear: both
+  .primary
+    margin-bottom: 24px
+    li
+      display: inline
+    a
+      padding: 6px 18px 6px 18px
+      margin: 0 12px 0 0
+      line-height: 74px
+      border-radius: 12px
+      display: inline-block
+      &:hover
+        /* fade to white
+        box-shadow: inset 0 0 24px 24px white
+        -moz-box-shadow: inset 0 0 24px 24px white
+        -webkit-box-shadow: inset 0 0 24px 24px white
+        /* subtle yellow
+        background-color: #fef9d3
+    img
+      max-width: 100%
+      vertical-align: middle
+
+/* Change the columns based on available browser width
+
+@media screen and (max-width: 60em)
+  #project_list .secondary
+    columns: 3
+    -moz-columns: 3
+    -webkit-columns: 3
+
+@media screen and (max-width: 32em)
+  #project_list .secondary
+    columns: 2
+    -moz-columns: 2
+    -webkit-columns: 2

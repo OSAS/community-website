@@ -1,0 +1,508 @@
+/*** Page **
+
+$header-height: 182px
+$header-padding: 20px
+
+.entry-meta
+  font-size: inherit
+  padding: 10px 0 30px
+  position: relative
+
+  a
+    font-weight: normal
+
+  .edit-link
+    position: absolute
+    top: 0
+    right: 0
+
+body
+  &.custom-background
+    //background-color: #555
+  //background-color: #555
+  padding: 0
+  //font-family: 'Liberation Sans',Helvetica,Arial,sans-serif
+  //font-family: 'Open Sans',Helvetica,Arial,sans-serif
+  font-family: Open Sans,Helvetica,Arial,sans-serif
+  font-weight: 400
+
+#page
+  margin: 0 auto
+  max-width: 100%
+  /*
+   *box-shadow: 0 0 75px rgba(0, 0, 0, 0.25);
+   *border: 1px solid #ddd;
+   *border-width: 0 1px 1px;
+
+.one-column #page
+  max-width: 100%
+
+#main
+  max-width: 1000px
+  margin: 0 auto
+
+/*** Header **
+
+/* Header sizes & title on standard pages
+
+/*
+ *#branding h1,
+ *#branding h2 {
+ *  display: none;
+ *}
+ *
+ *#branding {
+ *  height: 138px;
+ *}
+
+/* Header sizes & title on the home page
+
+/*
+ *body.home #branding h1,
+ *body.home #branding h2 {
+ *  display: block;
+ *}
+ *
+ *body.home #branding {
+ *  height: 220px;
+ *}
+
+#branding
+  height: $header-height
+
+  a:hover
+    color: white
+
+  img
+    width: auto
+    float: left
+
+  border: none
+  overflow: hidden
+  background: url(header-transparent.png) no-repeat 100% 0 #a40000
+
+  .hgroup
+    max-width: 1000px
+    //padding: 45px 50px
+    margin: 0 auto
+    position: relative
+
+    > a > img
+      margin: 45px 0 0 $header-padding
+      opacity: 1
+
+  #site-title
+    margin-right: $header-padding
+
+
+
+/* General header style
+
+@media screen and (min-width: 651px)
+
+  #site-title
+    position: absolute
+    top: 0
+    right: 0
+    padding: 0
+    margin: 0
+    /* Vertically align with the logo
+    line-height: 156px
+
+    a
+      text-shadow: none !important
+      font-size: 40px
+      font-weight: normal
+
+@media screen and (max-width: 650px)
+
+  #branding
+    overflow: visible
+    /* Fix the overflow issue
+    border-top: 1px solid #500
+
+    .hgroup > a > img
+      margin: 20px auto 10px
+
+    img
+      float: none !important
+
+    #searchform
+      //position: static !important
+      text-align: center
+      margin: 1em 0 0
+      top: $header-height + 35px !important
+      position: absolute !important
+      width: 100%
+      display: none
+
+      #s
+        float: none !important
+        width: 80% !important
+        border: 1px solid #999 !important
+
+  .blog 
+    /* Make room for search on the blog page
+    #main
+      padding-top: 60px
+
+    /* Show search on the blog page
+    #searchform
+      display: block !important
+
+  .rhcnews
+    display: none
+
+  .mission-text
+    font-size: 15px
+    padding: 10px 0
+
+  #rh-logo,
+  #site-title
+    text-align: center
+    padding: 0
+    margin: 0 auto
+
+  #site-title
+    position: static
+
+    a
+      text-shadow: none !important
+      //font-size: 40px
+      font-weight: normal
+
+#site-description
+  display: none !important
+
+/* More branding/header style
+
+#branding
+  h1, h2, .hgroup a
+    color: white
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.35)
+  h1
+    /*  text-transform: uppercase;
+    /*
+     *opacity: 0.8;
+     *font-size: ;
+
+input#s
+  //background-color: white
+  background-color: rgba(255, 255, 255, 0.9)
+
+/* Restyle the navigation bar
+
+#access
+  font-family: Interstate,'Liberation Sans',Helvetica,Arial,sans-serif
+  /*  text-transform: uppercase;
+  li:hover > a, a:focus
+    /*
+     *background: #c00;
+     *background: rgba(220,0,0,0.5);
+    color: white
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.2) 6px, transparent 90%)
+  .current-menu-item > a, .current-menu-ancestor > a, .current_page_item > a, .current_page_ancestor > a
+    /*
+     *background: #c00;
+    background: linear-gradient(to top, white 6px, rgba(255, 255, 255, 0.2) 6px, transparent 90%) !important
+
+  div
+    max-width: 1000px
+    margin: 0 auto
+    //padding: 0 7.6%
+    
+  ul
+    margin: 0
+    padding-left: 20px
+
+  li > a, a
+    font-weight: normal !important
+    -moz-transition: all 0.15s
+    -webkit-transition: all 0.15s
+    transition: all 0.15s
+    font-size: 190%
+    color: white
+    padding: 0 1em
+    line-height: 2.4
+  background: #000
+  background: rgba(0, 0, 0, 0.3)
+  position: absolute
+  bottom: 0
+  margin: 0
+  box-shadow: none
+
+/*** General style for pages **
+
+#site-title
+  font-family: Interstate,'Liberation Sans',Helvetica,Arial,sans-serif
+
+h1, h2, h3, h4
+  //color: #555
+  //font-family: Interstate,'Liberation Sans',Helvetica,Arial,sans-serif
+
+//.entry-content
+
+#content
+  h1, h2, h3, h4
+    color: #777
+    font-weight: normal
+
+  h1
+    font-size: 28pt
+
+body.page #content h2
+  font-size: 22pt
+  font-weight: normal
+  margin-top: 2em
+
+#content
+  h1
+    //color: #c00
+    //text-transform: uppercase;
+    //font-size: 26pt
+    padding-top: 1.5em
+
+  .entry-header,
+  .entry-content
+    h1
+      padding-top: 0
+      //font-size: 150%
+      //color: #3565a4
+      //color: #555
+
+      &:first-child
+        //font-size: 200%
+
+.entry-content,
+.entry-summary
+  padding-top: 0
+  padding-bottom: 0
+
+.singular
+  .entry-header, .entry-content, footer.entry-meta, #comments-title
+    margin: 0 auto
+    width: 100%
+  &.page .hentry
+    padding-top: 1.5em
+
+.one-column.singular .entry-meta .edit-link a, .entry-meta .edit-link a
+  top: 10px
+
+/*** Front page **
+
+#project-highlights
+  ul
+    margin: 0
+    padding: 0
+  li
+    margin: 0
+    padding: 0
+    overflow: hidden
+    clear: both
+    margin: 1em 0
+  .title
+    display: none
+  .imgcol, p
+    float: left
+  .imgcol
+    width: 22.5%
+    text-align: right
+    padding: 0 5% 0 0
+    img
+      max-width: 100%
+  li
+    p
+      width: 72.5%
+    &:nth-child(odd)
+      .imgcol, p
+        float: right
+      .imgcol
+        text-align: left
+        padding: 0 0 0 2.5%
+
+/* Alternate sides
+
+/* Call to action
+
+.call-to-action
+  width: 100%
+  padding: 2em
+  text-align: center
+  a
+    background-clip: padding-box
+    background-color: #c00
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
+    border-radius: 9px
+    border: 1px solid #990000
+    box-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0.4), inset -1px -1px 1px 0 rgba(0, 0, 0, 0.3), 1px 1px 3px 0 rgba(0, 0, 0, 0.5)
+    color: #fff
+    padding: 9px 18px
+    text-decoration: none
+    /* Disable text selection; this is acting as a widget
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    &:hover
+      background-color: #d00
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75)
+    &:active
+      box-shadow: inset -1px -1px 1px 0 rgba(255, 255, 255, 0.4), inset 1px 1px 2px 0 rgba(0, 0, 0, 0.3), 0 0 2px 0 rgba(0, 0, 0, 0.25)
+      background-color: #a00
+      color: #ebb
+      text-shadow: none
+
+/*** Home **
+
+.rhcnews
+  margin-left: 50px
+  h1
+    font-size: 170%
+    margin-bottom: 30px
+  h2
+    font-size: 150%
+
+#nav-single
+  top: -1.7em
+
+/*** Mission **
+
+.mission
+  background-color: #fff7b2
+  line-height: 1.5
+  //height: 80px
+  margin: 20px 0 40px
+  //margin-top: -1.625em
+  //margin-bottom: 1.625em
+
+.mission-text
+  //font-family: Interstate,'Liberation Sans',Helvetica,Arial,sans-serif
+  //color: #888a85
+  color: #5d5a41
+  width: 90%
+  margin: 0 auto
+  padding: 1.5em 0
+  font-size: 130%
+  //top: 18%
+  //position: relative
+
+  strong
+    color: #000
+
+/* Sidebar
+
+#secondary
+  margin-right: 5.6%
+  width: 20.8%
+  h2
+    font-size: 170%
+
+.widget-title
+  font-size: 170%
+  text-transform: none
+  font-weight: normal
+  //color: black
+  letter-spacing: normal
+  line-height: normal
+  /* Cheat a little to make "Upcoming events" fit (and not wrap)
+  margin-right: -1ex
+
+.widget
+  ul
+    list-style: square inside none
+    margin: 0px 0px 0px 20px
+  word-wrap: none
+  -moz-hyphens: none
+
+.widget-area
+  font-size: inherit
+  p
+    margin-bottom: 0
+    margin-left: 10px
+
+.widget ul li
+  color: inherit
+  font-size: inherit
+
+.widget-area a
+  color: rgb(53, 101, 164) !important
+
+/* Reset search
+
+#branding #searchform
+  z-index: 1
+  right: auto
+  max-width: 1000px
+  margin: 0 auto
+  /* Shove the search container to the bottom of the header (182px)
+  position: relative
+
+#searchform #s
+  width: 20ex !important
+  font-size: inherit
+  background-color: #fff
+  border-radius: 0
+  border: none
+  /* Move the search form up a bit
+  position: relative
+
+@media screen and (min-width: 641px)
+  #branding #searchform
+    top: $header-height !important
+    right: 0 !important
+
+  #searchform #s
+    margin-top: -2.3em
+    margin-right: $header-padding
+
+#branding
+  line-height: 2.4
+
+
+@media screen and (max-width: 640px)
+
+  #access
+
+    ul
+      padding: 0
+      text-align: center
+
+    li
+      width: 25%
+
+      > a
+        font-size: 15px
+        padding: 10px 0
+
+.floatHeader
+  #access,
+  #branding #searchform
+    position: fixed
+    top: 0
+    bottom: auto
+
+  #branding #searchform
+    left: 0
+    max-width: 1000px
+    top: 48px !important
+
+  #access
+    background: #700
+
+.legal-body
+  font-size: 8pt
+  text-align: center
+  margin-bottom: -8.3em
+  color: #555
+
+body.admin-bar
+  // This is set by WordPress; used here for reference
+  $admin-bar-height: 28px
+
+  &.floatHeader
+    #access,
+    #searchform
+      /* Shift down floating nav for signed-in users
+      margin-top: $admin-bar-height !important
