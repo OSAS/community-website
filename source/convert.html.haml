@@ -1,0 +1,37 @@
+:ruby
+  doc = Nokogiri::HTML(open('/home/garrett/Source/confcal/output/all.xhtml'), nil, 'UTF-8')
+
+  require 'reverse_markdown'
+
+  def markdownize snippet #, indent_num = 4, line_width = 72
+    line_width = 68
+    indent = '    '
+
+    snippet.css('.hidden').remove
+    word_wrap((ReverseMarkdown.parse_string snippet.to_html), line_width).gsub(/\n/, "\n#{indent}")
+  end
+
+  def parse_time snippet
+    snippet.to_html[/title="([^"]*)/, 1]
+  end
+
+- doc.css('.conference').each do |conf|
+
+  %h2= conf.css('h2.summary').text
+  %p= conf.css('h2.summary').text.gsub(/[ \.:-]/, '_').camelize.classify
+  %p= conf.css('.conference-info .location').text
+
+  %pre= parse_time conf.css('.conference-info .dtstart')
+  %pre= parse_time conf.css('.conference-info .dtend')
+
+  -# conf.css('.conference-info .description p').each do |para|
+    %pre= ReverseMarkdown.parse_string para
+  %pre= markdownize conf.css('.conference-info .description')
+
+  - conf.css('.talk').each do |talk|
+    %h3= talk.css('.summary').text
+    %h4= talk.css('.speaker').text
+    %pre= parse_time talk.css('.dtstart')
+    %pre= parse_time talk.css('.dtend')
+
+    %pre= markdownize talk.css('.description')
