@@ -1,37 +1,157 @@
 :ruby
+  require 'open-uri/cached'
   doc = Nokogiri::HTML(open('/home/garrett/Source/confcal/output/all.xhtml'), nil, 'UTF-8')
 
   require 'reverse_markdown'
+  require 'chronic'
+  #require 'geocoder'
 
-  def markdownize snippet #, indent_num = 4, line_width = 72
-    line_width = 68
-    indent = '    '
+  def tz_lookup time_zone
+    ## Build timezone abbriviation dictionary
+    tzc = {}
+
+    # Prioritize US & Indian timezones
+    (ActiveSupport::TimeZone.us_zones + [ActiveSupport::TimeZone.new('Asia/Kolkata')] + ActiveSupport::TimeZone.all).each do | zone|
+      daylight_abbr = zone.parse('Aug 1').strftime('%Z')
+      standard_abbr = zone.parse('Dec 1').strftime('%Z')
+
+      # It's important to give priority to standard, as there are some clashes
+      # (Sadly, that's just the way it is)
+      tzc[standard_abbr] = zone.name unless tzc[standard_abbr]
+      tzc[daylight_abbr] = zone.name unless tzc[daylight_abbr]
+    end
+
+    #Time.find_zone(zone_string) ? zone_string : 'UTC'
+
+    tzc[time_zone] || time_zone || time_zone
+  end
+
+  geocache = {}
+
+  #extend Geocoder::Model::ActiveRecord
+  #Geocoder.configure(cache: geocache)
+
+  def markdownize snippet, indent_num = 4, line_width = 76
+    #line_width = 68
+    #indent = '    '
 
     snippet.css('.hidden').remove
-    word_wrap((ReverseMarkdown.parse_string snippet.to_html), line_width).gsub(/\n/, "\n#{indent}")
+    #word_wrap((ReverseMarkdown.parse_string snippet.to_html), line_width).gsub(/\n/, "\n#{indent}")
+
+    word_wrap(ReverseMarkdown.parse_string(snippet.to_html).strip, line_width)
   end
 
-  def parse_time snippet
-    snippet.to_html[/title="([^"]*)/, 1]
+  def parse_time snippet, event_tz = 'UTC', only_date = false
+    current_timezone = Time.zone
+    Time.zone = tz_lookup event_tz rescue 'UTC'
+    Chronic.time_class = Time.zone
+
+    snippet_time = Chronic::parse snippet.to_html[/title="([^"]*)/, 1], :ambiguous_time_range => :none
+
+    Time.zone = current_timezone
+
+    snippet_time
   end
 
-- doc.css('.conference').each do |conf|
+  def display_time snippet_time, event_tz = 'UTC'
+    snippet_time.strftime('%B %d, %Y %H:%M %Z') if snippet_time
+  end
+
+  def parse_and_display_time snippet, event_tz = 'UTC', only_date = false
+    display_time(parse_time(snippet, event_tz, only_date))
+  end
+
+  output = {}
+
+- doc.css('.conference').first(5).each do |conf|
 
   %h2= conf.css('h2.summary').text
   %p= conf.css('h2.summary').text.gsub(/[ \.:-]/, '_').camelize.classify
   %p= conf.css('.conference-info .location').text
 
-  %pre= parse_time conf.css('.conference-info .dtstart')
-  %pre= parse_time conf.css('.conference-info .dtend')
+  -#%pre= (Geocoder.search conf.css('.conference-info .location').text).inspect
+  -# geo = Geocoder.search conf.css('.conference-info .location').text
+
+  -# geo.each do |place|
+    =# place.address
+    %h4= place.address
+    %h4= place.coordinates
+
+    - if defined? place.formatted_address #&& place.types.include? "point_of_interest"
+      %pre
+        = place.formatted_address
+    - else
+      =# place#.long_name
+    %pre= place.types if defined? place.types
+    %pre= place.inspect
+
+  %pre= parse_and_display_time conf.css('.conference-info .dtstart')
+  %pre= parse_and_display_time conf.css('.conference-info .dtend')
+
+  :ruby
+    conf_start_time = parse_time(conf.css('.conference-info .dtstart'))
+
+    local_timezone = conf.css('.talk .time').text[/[a-zA-Z\+\-0-9]*$/]
+
+    this_conf = {
+      "name" => conf.css('h2.summary').text,
+      #"shortname" => conf.css('h2.summary').text.gsub(/[ \.:-]/, '_').camelize.classify,
+      "location" => conf.css('.conference-info .location').text,
+      #"summary" => markdownize(conf.css('.conference-info .description'), 0, -1),
+      #"timezone" => conf.css('.date').text[/[a-zA-Z\+\-0-9]*$/],
+      "start" => parse_and_display_time(conf.css('.conference-info .dtstart'), local_timezone),
+      "end" => parse_and_display_time(conf.css('.conference-info .dtend'), local_timezone),
+    }
+
+    # Make end time optional
+    this_conf.delete 'end' if this_conf['start'] == this_conf['end']
+
+    summary = markdownize(conf.css('.conference-info .description'))
+
+    this_conf['summary'] = summary unless summary.empty?
+
+    conf.css('.talk').each do |talk|
+      this_conf['timezone'] ||= talk.css('.time').text[/[a-zA-Z\+\-0-9]*$/]
+
+      this_talk = {
+        "summary" => talk.css('.summary').text,
+        "speaker" => talk.css('.speaker').text,
+        "start" => parse_and_display_time(talk.css('.dtstart'), local_timezone),
+        "end" => parse_and_display_time(talk.css('.dtend'), local_timezone),
+        "description" => markdownize(talk.css('.description'))
+      }
+      this_conf['talks'] ||= []
+      this_conf['talks'].push this_talk
+    end
+
+    output[conf_start_time.year] ||= []
+    output[conf_start_time.year].push this_conf
 
   -# conf.css('.conference-info .description p').each do |para|
     %pre= ReverseMarkdown.parse_string para
   %pre= markdownize conf.css('.conference-info .description')
 
   - conf.css('.talk').each do |talk|
+
     %h3= talk.css('.summary').text
     %h4= talk.css('.speaker').text
-    %pre= parse_time talk.css('.dtstart')
-    %pre= parse_time talk.css('.dtend')
+
+    %pre
+      -# talk.css('.time').text
+      = local_timezone = talk.css('.time').text[/[a-zA-Z\+\-0-9]*$/]
+
+    %h4= local_timezone
+    %h4= tz_lookup local_timezone
+
+    %h5= talk.css('.time').text
+    %pre= parse_and_display_time talk.css('.dtstart'), local_timezone
+    %pre= parse_and_display_time talk.css('.dtend'), local_timezone
 
     %pre= markdownize talk.css('.description')
+
+
+-# output.first.each do |year|
+
+  %pre= year.to_yaml.gsub(/^\-/, "\r\-")
+
+%pre=output.to_yaml.gsub /^(\s*- \w+:)/, "\r\\1"
