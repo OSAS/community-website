@@ -1,3 +1,7 @@
+---
+layout: false
+---
+
 :ruby
   require 'open-uri/cached'
   doc = Nokogiri::HTML(open('/home/garrett/Source/confcal/output/all.xhtml'), nil, 'UTF-8')
@@ -65,10 +69,6 @@
 
 - doc.css('.conference').first(5).each do |conf|
 
-  %h2= conf.css('h2.summary').text
-  %p= conf.css('h2.summary').text.gsub(/[ \.:-]/, '_').camelize.classify
-  %p= conf.css('.conference-info .location').text
-
   -#%pre= (Geocoder.search conf.css('.conference-info .location').text).inspect
   -# geo = Geocoder.search conf.css('.conference-info .location').text
 
@@ -84,9 +84,6 @@
       =# place#.long_name
     %pre= place.types if defined? place.types
     %pre= place.inspect
-
-  %pre= parse_and_display_time conf.css('.conference-info .dtstart')
-  %pre= parse_and_display_time conf.css('.conference-info .dtend')
 
   :ruby
     conf_start_time = parse_time(conf.css('.conference-info .dtstart'))
@@ -127,31 +124,4 @@
     output[conf_start_time.year] ||= []
     output[conf_start_time.year].push this_conf
 
-  -# conf.css('.conference-info .description p').each do |para|
-    %pre= ReverseMarkdown.parse_string para
-  %pre= markdownize conf.css('.conference-info .description')
-
-  - conf.css('.talk').each do |talk|
-
-    %h3= talk.css('.summary').text
-    %h4= talk.css('.speaker').text
-
-    %pre
-      -# talk.css('.time').text
-      = local_timezone = talk.css('.time').text[/[a-zA-Z\+\-0-9]*$/]
-
-    %h4= local_timezone
-    %h4= tz_lookup local_timezone
-
-    %h5= talk.css('.time').text
-    %pre= parse_and_display_time talk.css('.dtstart'), local_timezone
-    %pre= parse_and_display_time talk.css('.dtend'), local_timezone
-
-    %pre= markdownize talk.css('.description')
-
-
--# output.first.each do |year|
-
-  %pre= year.to_yaml.gsub(/^\-/, "\r\-")
-
-%pre=output.to_yaml.gsub /^(\s*- \w+:)/, "\r\\1"
+=output.to_yaml.gsub /^(\s*- \w+:)/, "\r\\1"
