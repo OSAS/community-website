@@ -67,7 +67,7 @@ layout: false
 
   output = {}
 
-- doc.css('.conference').first(5).each do |conf|
+- doc.css('.conference').first(25).each do |conf|
 
   -#%pre= (Geocoder.search conf.css('.conference-info .location').text).inspect
   -# geo = Geocoder.search conf.css('.conference-info .location').text
@@ -94,7 +94,6 @@ layout: false
       "name" => conf.css('h2.summary').text,
       #"shortname" => conf.css('h2.summary').text.gsub(/[ \.:-]/, '_').camelize.classify,
       "location" => conf.css('.conference-info .location').text,
-      #"summary" => markdownize(conf.css('.conference-info .description'), 0, -1),
       #"timezone" => conf.css('.date').text[/[a-zA-Z\+\-0-9]*$/],
       "start" => parse_and_display_time(conf.css('.conference-info .dtstart'), local_timezone),
       "end" => parse_and_display_time(conf.css('.conference-info .dtend'), local_timezone),
@@ -103,15 +102,14 @@ layout: false
     # Make end time optional
     this_conf.delete 'end' if this_conf['start'] == this_conf['end']
 
-    summary = markdownize(conf.css('.conference-info .description'))
-
-    this_conf['summary'] = summary unless summary.empty?
+    description = markdownize(conf.css('.conference-info .description'))
+    this_conf['description'] = description unless description.empty?
 
     conf.css('.talk').each do |talk|
       this_conf['timezone'] ||= talk.css('.time').text[/[a-zA-Z\+\-0-9]*$/]
 
       this_talk = {
-        "summary" => talk.css('.summary').text,
+        "title" => talk.css('.summary').text,
         "speaker" => talk.css('.speaker').text,
         "start" => parse_and_display_time(talk.css('.dtstart'), local_timezone),
         "end" => parse_and_display_time(talk.css('.dtend'), local_timezone),
@@ -124,4 +122,9 @@ layout: false
     output[conf_start_time.year] ||= []
     output[conf_start_time.year].push this_conf
 
-=output.to_yaml.gsub /^(\s*- \w+:)/, "\r\\1"
+- output.each_value do |year|
+  - year.each do |conf|
+    %hr
+    %pre= conf.to_yaml.gsub(/^(\s*- [\s\w]+:)/, "\r\\1").gsub(/(    )\-/, "\\1\*")
+
+-#%pre=output.to_yaml.gsub /^(\s*- [\s\w]+:)/, "\r\\1"
