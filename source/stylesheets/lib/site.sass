@@ -172,10 +172,12 @@ input#s
     max-width: 1000px
     margin: 0 auto
 
-  li:hover > a, a:focus
+  li:hover > a,
+  a:focus
     color: white
     background: linear-gradient(to top, rgba(255, 255, 255, 0.2) 6px, transparent 90%)
 
+  .active,
   .current-menu-item,
   .current-menu-ancestor,
   .current_page_item,
@@ -193,8 +195,7 @@ input#s
     padding-left: 20px
 
   li
-    > a,
-    a
+    > a, a
       font-weight: normal !important
       -moz-transition: all 0.15s
       -webkit-transition: all 0.15s
@@ -203,6 +204,7 @@ input#s
       color: white
       padding: 0 1em
       line-height: 2.4
+      border-radius: 0
 
 /*** General style for pages **
 
