@@ -17,22 +17,13 @@ $header-padding: 20px
     right: 0
 
 body
-  &.custom-background
-    //background-color: #555
-  //background-color: #555
   padding: 0
-  //font-family: 'Liberation Sans',Helvetica,Arial,sans-serif
-  //font-family: 'Open Sans',Helvetica,Arial,sans-serif
   font-family: Open Sans,Helvetica,Arial,sans-serif
   font-weight: 400
 
 #page
   margin: 0 auto
   max-width: 100%
-  /*
-   *box-shadow: 0 0 75px rgba(0, 0, 0, 0.25);
-   *border: 1px solid #ddd;
-   *border-width: 0 1px 1px;
 
 .one-column #page
   max-width: 100%
@@ -41,34 +32,13 @@ body
   max-width: 1000px
   margin: 0 auto
 
-/*** Header **
-
-/* Header sizes & title on standard pages
-
-/*
- *#branding h1,
- *#branding h2 {
- *  display: none;
- *}
- *
- *#branding {
- *  height: 138px;
- *}
-
-/* Header sizes & title on the home page
-
-/*
- *body.home #branding h1,
- *body.home #branding h2 {
- *  display: block;
- *}
- *
- *body.home #branding {
- *  height: 220px;
- *}
-
 #branding
   height: $header-height
+  position: relative
+  border: none
+  overflow: hidden
+  background: url(../images/header-transparent.png) no-repeat 100% 0 #a40000
+
 
   a:hover
     color: white
@@ -77,13 +47,8 @@ body
     width: auto
     float: left
 
-  border: none
-  overflow: hidden
-  background: url(header-transparent.png) no-repeat 100% 0 #a40000
-
   .hgroup
     max-width: 1000px
-    //padding: 45px 50px
     margin: 0 auto
     position: relative
 
@@ -141,7 +106,7 @@ body
         width: 80% !important
         border: 1px solid #999 !important
 
-  .blog 
+  .blog
     /* Make room for search on the blog page
     #main
       padding-top: 60px
@@ -193,54 +158,56 @@ input#s
 /* Restyle the navigation bar
 
 #access
-  font-family: Interstate,'Liberation Sans',Helvetica,Arial,sans-serif
-  /*  text-transform: uppercase;
-  li:hover > a, a:focus
-    /*
-     *background: #c00;
-     *background: rgba(220,0,0,0.5);
-    color: white
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.2) 6px, transparent 90%)
-  .current-menu-item > a, .current-menu-ancestor > a, .current_page_item > a, .current_page_ancestor > a
-    /*
-     *background: #c00;
-    background: linear-gradient(to top, white 6px, rgba(255, 255, 255, 0.2) 6px, transparent 90%) !important
-
-  div
-    max-width: 1000px
-    margin: 0 auto
-    //padding: 0 7.6%
-    
-  ul
-    margin: 0
-    padding-left: 20px
-
-  li > a, a
-    font-weight: normal !important
-    -moz-transition: all 0.15s
-    -webkit-transition: all 0.15s
-    transition: all 0.15s
-    font-size: 190%
-    color: white
-    padding: 0 1em
-    line-height: 2.4
   background: #000
   background: rgba(0, 0, 0, 0.3)
   position: absolute
   bottom: 0
   margin: 0
   box-shadow: none
+  float: left
+  width: 100%
+  font-family: Interstate,'Liberation Sans',Helvetica,Arial,sans-serif
+
+  > nav
+    max-width: 1000px
+    margin: 0 auto
+
+  li:hover > a, a:focus
+    color: white
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.2) 6px, transparent 90%)
+
+  .current-menu-item,
+  .current-menu-ancestor,
+  .current_page_item,
+  .current_page_ancestor
+    > a
+      background: linear-gradient(to top, white 6px, rgba(255, 255, 255, 0.2) 6px, transparent 90%) !important
+
+  div
+    max-width: 1000px
+    margin: 0 auto
+    //padding: 0 7.6%
+
+  ul
+    margin: 0
+    padding-left: 20px
+
+  li
+    > a,
+    a
+      font-weight: normal !important
+      -moz-transition: all 0.15s
+      -webkit-transition: all 0.15s
+      transition: all 0.15s
+      font-size: 190%
+      color: white
+      padding: 0 1em
+      line-height: 2.4
 
 /*** General style for pages **
 
 #site-title
   font-family: Interstate,'Liberation Sans',Helvetica,Arial,sans-serif
-
-h1, h2, h3, h4
-  //color: #555
-  //font-family: Interstate,'Liberation Sans',Helvetica,Arial,sans-serif
-
-//.entry-content
 
 #content
   h1, h2, h3, h4
@@ -257,21 +224,12 @@ body.page #content h2
 
 #content
   h1
-    //color: #c00
-    //text-transform: uppercase;
-    //font-size: 26pt
     padding-top: 1.5em
 
   .entry-header,
   .entry-content
     h1
       padding-top: 0
-      //font-size: 150%
-      //color: #3565a4
-      //color: #555
-
-      &:first-child
-        //font-size: 200%
 
 .entry-content,
 .entry-summary
@@ -319,10 +277,6 @@ body.page #content h2
       .imgcol
         text-align: left
         padding: 0 0 0 2.5%
-
-/* Alternate sides
-
-/* Call to action
 
 .call-to-action
   width: 100%
@@ -372,21 +326,14 @@ body.page #content h2
 .mission
   background-color: #fff7b2
   line-height: 1.5
-  //height: 80px
   margin: 20px 0 40px
-  //margin-top: -1.625em
-  //margin-bottom: 1.625em
 
 .mission-text
-  //font-family: Interstate,'Liberation Sans',Helvetica,Arial,sans-serif
-  //color: #888a85
   color: #5d5a41
   width: 90%
   margin: 0 auto
   padding: 1.5em 0
   font-size: 130%
-  //top: 18%
-  //position: relative
 
   strong
     color: #000
@@ -403,7 +350,6 @@ body.page #content h2
   font-size: 170%
   text-transform: none
   font-weight: normal
-  //color: black
   letter-spacing: normal
   line-height: normal
   /* Cheat a little to make "Upcoming events" fit (and not wrap)
