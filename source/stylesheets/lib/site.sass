@@ -33,19 +33,20 @@ body
   margin: 0 auto
 
 #branding
-  height: $header-height
+  //height: $header-height
+  padding: 25px 0 100px
   position: relative
   border: none
   overflow: hidden
   background: url(../images/header-transparent.png) no-repeat 100% 0 #a40000
 
-
   a:hover
     color: white
 
-  img
+  .logo
     width: auto
     float: left
+    padding-left: 20px
 
   .hgroup
     max-width: 1000px
@@ -60,7 +61,6 @@ body
     margin-right: $header-padding
 
 
-
 /* General header style
 
 @media screen and (min-width: 651px)
@@ -72,10 +72,11 @@ body
     padding: 0
     margin: 0
     /* Vertically align with the logo
-    line-height: 156px
+    //line-height: 156px
+    line-height: 46px // Set to size of the logo
 
     a
-      text-shadow: none !important
+      //text-shadow: none !important
       font-size: 40px
       font-weight: normal
 
@@ -132,7 +133,7 @@ body
     position: static
 
     a
-      text-shadow: none !important
+      //text-shadow: none !important
       //font-size: 40px
       font-weight: normal
 
@@ -144,7 +145,8 @@ body
 #branding
   h1, h2, .hgroup a
     color: white
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.35)
+    //text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.35)
+
   h1
     /*  text-transform: uppercase;
     /*
@@ -210,8 +212,24 @@ input#s
 
 #site-title
   font-family: Interstate,'Liberation Sans',Helvetica,Arial,sans-serif
+  font-size: 40px
+
+
+@import bootstrap/variables
+@import bootstrap/mixins
+@import bootstrap/grid
+
+#page
+  @extend .row
+
+#content,
+#footer
+  @extend .col-md-10
+  @extend .col-md-offset-1
 
 #content
+  padding-top: 2em
+
   h1, h2, h3, h4
     color: #777
     font-weight: normal
@@ -228,9 +246,7 @@ body.page #content h2
   h1
     padding-top: 1.5em
 
-  .entry-header,
-  .entry-content
-    h1
+    &:first-child
       padding-top: 0
 
 .entry-content,
