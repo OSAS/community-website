@@ -1,23 +1,18 @@
----
-pageable: true
----
+.mission
+  .mission-text
+    :markdown
 
-- content_for :head do
-  %link(href="/blog/feed.xml" rel="alternate" title="Atom feed" type="application/atom+xml")
+      Red Hat's mission: To be the catalyst in communities of customers,
+      contributors, and partners creating better technology **the open
+      source way**.
 
-- if defined? page_number && page_number < 2
+:markdown
 
-  -# First-page only stuff here
-  -# (If a blog is included below, then it may paginate)
+  # Placeholder
 
-.row
+  This page is currently a placeholder. We'll want to have the blog and
+  other stuff here.
 
-  %section.blog-posts
-
-    %section.container
-
-      %h2
-        = data.site.name
-        News
-
-      = partial :blog_posts, locals: locals
+  Please use the navigation above for now to see the other pages in
+  progress (including some of the blog stuff that will be on this page
+  as well).
