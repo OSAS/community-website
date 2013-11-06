@@ -17,12 +17,12 @@ installed.)
 
 ### As user
 
-`bundle install`
+`bundle`
 
 
 ## Updating
 
-When there are new gems in `Gemfile`, just run `bundle install` again.
+When there are new gems in `Gemfile`, just run `bundle` again.
 
 
 ## Running
