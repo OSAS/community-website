@@ -7,7 +7,7 @@ logo: logo.png
 owner: Red Hat, Inc.
 
 # The year your site was established (for the copyright)
-founding_year: 2013 # Defaults to current year if commented
+founding_year: 2012 # Defaults to current year if commented
 
 # Manual copyright string, to override the automatic one
 #copyright: "&copy; 2013 YOUR_NAME_HERE"
