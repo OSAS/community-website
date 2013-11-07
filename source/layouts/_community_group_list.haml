@@ -29,10 +29,9 @@
                 - group.each do |item|
 
                   - image_name = item.image || item.name.parameterize
-                  - if File.exists? root + '/source/' + image_path("#{group_type}/#{image_name}.png")
 
+                  - if File.exists? root + '/source/' + image_path("#{group_type}/#{image_name}.png").gsub(/\?.*/, '').gsub(/^\.\./, '')
                     %li= link_to image_tag("#{group_type}/#{image_name}.png", alt: item.name), item.url, class: "item-#{image_name}", target: "_blank"
-
 
 
       - unless hide_secondary
