@@ -15,7 +15,7 @@
 
   - data[group_type].each do |name, group|
 
-    .category
+    .category{class: "category--#{name.parameterize}"}
       %h2{id: name.parameterize}= name
 
       .projects
