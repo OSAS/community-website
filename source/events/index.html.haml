@@ -19,10 +19,7 @@ title: Speaking Engagements
 
 #quicklinks
   %h2
-    QUICKLINKS GO HERE
-
-  .warning-message
-    (This needs to be filtered)
+    Quicklinks
 
   =# data.events.class
 
@@ -65,31 +62,31 @@ title: Speaking Engagements
               = markdown conf.description
 
 
-      - if conf.talks
+        - if conf.talks
 
-        - conf.talks.each do |talk|
+          - conf.talks.each do |talk|
 
-          - talk_slug = "#{conf_slug.parameterize}--#{talk.title.parameterize}"
+            - talk_slug = "#{conf_slug.parameterize}--#{talk.title.parameterize}"
 
-          .vevent.talk
+            .vevent.talk
 
-            %h3.summary{:id => talk_slug}
-              %a{:href => "##{talk_slug}"}
-                = talk.title
+              %h3.summary{:id => talk_slug}
+                %a{:href => "##{talk_slug}"}
+                  = talk.title
 
-            %h4.location.hidden
-              %a{:href => "https://maps.google.com/maps?q=" + conf.location, :target => "_blank"}
+              %h4.location.hidden
+                %a{:href => "https://maps.google.com/maps?q=" + conf.location, :target => "_blank"}
 
-            %h4.speaker= talk.speaker
+              %h4.speaker= talk.speaker
 
-            %h4.time
-              -# FIXME: Make the times real
-              %abbr.dtstart{:title => "2013-11-19T18:00:00Z"} Tue Nov 19 2013, 18:00
-              \-
-              %abbr.dtend{:title => "2013-11-19T20:00:00Z"} 20:00
+              %h4.time
+                -# FIXME: Make the times real
+                %abbr.dtstart{:title => "2013-11-19T18:00:00Z"} Tue Nov 19 2013, 18:00
+                \-
+                %abbr.dtend{:title => "2013-11-19T20:00:00Z"} 20:00
 
-            .description
-              %p.hidden.speaker-hidden
-                %b= "Speaker: #{talk.speaker}"
+              .description
+                %p.hidden.speaker-hidden
+                  %b= "Speaker: #{talk.speaker}"
 
-              = markdown talk.description
+                = markdown talk.description
