@@ -57,17 +57,24 @@ layout: false
     snippet_time
   end
 
-  def display_time snippet_time, event_tz = 'UTC'
-    snippet_time.strftime('%B %d, %Y %H:%M %Z') if snippet_time
+  def display_time snippet_time, event_tz = 'UTC', only_date
+    if snippet_time
+      time_string = '%Y-%m-%d'
+
+      time_string << ' %H:%M %Z' unless only_date
+      #time_string << '%Z'
+
+      snippet_time.strftime(time_string)
+    end
   end
 
   def parse_and_display_time snippet, event_tz = 'UTC', only_date = false
-    display_time(parse_time(snippet, event_tz, only_date))
+    display_time(parse_time(snippet, event_tz), only_date)
   end
 
   output = {}
 
-- doc.css('.conference').first(25).each do |conf|
+- doc.css('.conference').each do |conf|
 
   -#%pre= (Geocoder.search conf.css('.conference-info .location').text).inspect
   -# geo = Geocoder.search conf.css('.conference-info .location').text
@@ -94,9 +101,8 @@ layout: false
       "name" => conf.css('h2.summary').text,
       #"shortname" => conf.css('h2.summary').text.gsub(/[ \.:-]/, '_').camelize.classify,
       "location" => conf.css('.conference-info .location').text,
-      #"timezone" => conf.css('.date').text[/[a-zA-Z\+\-0-9]*$/],
-      "start" => parse_and_display_time(conf.css('.conference-info .dtstart'), local_timezone),
-      "end" => parse_and_display_time(conf.css('.conference-info .dtend'), local_timezone),
+      "start" => parse_and_display_time(conf.css('.conference-info .dtstart'), local_timezone, true),
+      "end" => parse_and_display_time(conf.css('.conference-info .dtend'), local_timezone, true),
     }
 
     # Make end time optional
@@ -106,7 +112,7 @@ layout: false
     this_conf['description'] = description unless description.empty?
 
     conf.css('.talk').each do |talk|
-      this_conf['timezone'] ||= talk.css('.time').text[/[a-zA-Z\+\-0-9]*$/]
+      this_conf['timezone'] ||= tz_lookup talk.css('.time').text[/[a-zA-Z\+\-0-9]*$/]
 
       this_talk = {
         "title" => talk.css('.summary').text,
@@ -119,12 +125,35 @@ layout: false
       this_conf['talks'].push this_talk
     end
 
-    output[conf_start_time.year] ||= []
-    output[conf_start_time.year].push this_conf
+    if defined? conf_start_time.year
+      output[conf_start_time.year] ||= []
+      output[conf_start_time.year].push this_conf
+    else
+      output['unknown'] ||= []
+      output['unknown'].push this_conf
+    end
 
-- output.each_value do |year|
+- output.each do |year_name, year|
+  %hr
+  %h2= year_name
   - year.each do |conf|
+    :ruby
+      path = "#{root}/data/events/#{year_name}/";
+
+      FileUtils.mkdir_p(path) unless File.exists?(path)
+
+      file_name = conf['name'].gsub(/[ \.:-]/, '_').camelize.classify + '.yml'
+
     %hr
-    %pre= conf.to_yaml.gsub(/^(\s*- [\s\w]+:)/, "\r\\1").gsub(/(    )\-/, "\\1\*")
+    -#%h3= conf['name'].gsub(/[ \.:-]/, '_').camelize.classify if defined? conf['name']
+
+    - conf_yaml = conf.to_yaml.gsub(/^(\s*- [\s\w]+:)/, "\r\\1").gsub(/(    )\-/, "\\1\*").gsub(/\: \|\-/, ': |').gsub(/'([0-9\-]*)'/, '\1').gsub(/^---$/, '').strip
+    %pre= conf_yaml
+
+    :ruby
+      open("#{path}/#{file_name}", "w") do |f|
+        f << conf_yaml
+      end
+
 
 -#%pre=output.to_yaml.gsub /^(\s*- [\s\w]+:)/, "\r\\1"
