@@ -10,24 +10,38 @@ layout: false
   require 'chronic'
   #require 'geocoder'
 
+  def isotime_with_zone time_string, time_zone = "UTC"
+    old_zone = Time.zone rescue "UTC"
+    Time.zone = tz_lookup time_zone rescue "UTC"
+    Chronic.time_class = Time.zone
+
+    result = (Date.parse time_string rescue Chronic::parse time_string).iso8601
+
+    Time.zone = old_zone
+
+    result
+  end
+
+  # Local helper to look up timezones
   def tz_lookup time_zone
+    return @tzc[time_zone] || time_zone if defined? @tzc
+
     ## Build timezone abbriviation dictionary
-    tzc = {}
+    @tzc ||= {}
 
     # Prioritize US & Indian timezones
     (ActiveSupport::TimeZone.us_zones + [ActiveSupport::TimeZone.new('Asia/Kolkata')] + ActiveSupport::TimeZone.all).each do | zone|
       daylight_abbr = zone.parse('Aug 1').strftime('%Z')
       standard_abbr = zone.parse('Dec 1').strftime('%Z')
 
-      # It's important to give priority to standard, as there are some clashes
+      # It's important to give priority to "standard" time,
+      # as there are some clashes
       # (Sadly, that's just the way it is)
-      tzc[standard_abbr] = zone.name unless tzc[standard_abbr]
-      tzc[daylight_abbr] = zone.name unless tzc[daylight_abbr]
+      @tzc[standard_abbr] = zone.name unless @tzc[standard_abbr]
+      @tzc[daylight_abbr] = zone.name unless @tzc[daylight_abbr]
     end
 
-    #Time.find_zone(zone_string) ? zone_string : 'UTC'
-
-    tzc[time_zone] || time_zone || time_zone
+    @tzc[time_zone] || time_zone
   end
 
   geocache = {}
@@ -64,7 +78,15 @@ layout: false
       time_string << ' %H:%M %Z' unless only_date
       #time_string << '%Z'
 
-      snippet_time.strftime(time_string)
+      old_zone = Time.zone rescue "UTC"
+      Time.zone = tz_lookup time_zone rescue "UTC"
+      Chronic.time_class = Time.zone
+
+      result = snippet_time.strftime(time_string)
+
+      Time.zone = old_zone
+
+      result
     end
   end
 
@@ -151,9 +173,33 @@ layout: false
     %pre= conf_yaml
 
     :ruby
-      open("#{path}/#{file_name}", "w") do |f|
-        f << conf_yaml
+      yaml_file = "#{path}/#{file_name}"
+
+      existing_doc = File.exists?(yaml_file) && IO.read(yaml_file)
+
+      if existing_doc and conf_yaml.strip != existing_doc.strip
+        puts conf['name']
+        if conf['location']
+          yaml_file = yaml_file.gsub(/\.yml/, '') + "-" + conf['location'].split(',').first.gsub(/[ \.:-]/, '_').camelize.classify + "-" + conf['start'] + ".yml"
+        end
+        #if defined? conf.location and conf.location
+          #yaml_file += "-" + conf.location.split(',').first.parameterize
+          #puts conf.location
+          #puts conf.location.split(',').parameterize
+        #elsif defined? conf.start and conf.start
+          #yaml_file += "-" + conf.start
+        #else
+          #iter++
+          #yaml_file += "-#{iter}"
+        #end
       end
 
+      puts yaml_file
+
+      open(yaml_file, "w").write(conf_yaml)
+
+      #open(yaml_file, "w") do |f|
+        #f << conf_yaml
+      #end
 
 -#%pre=output.to_yaml.gsub /^(\s*- [\s\w]+:)/, "\r\\1"
