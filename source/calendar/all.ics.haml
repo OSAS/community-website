@@ -1,0 +1,65 @@
+---
+layout: false
+---
+
+:ruby
+  require 'icalendar'
+  require 'date'
+  require 'nokogiri'
+
+  #include 'Icalendar' # limit namespace overlap
+
+  # Local helper for markdown-izing text
+  def markdown content
+    Tilt['markdown'].new { content.strip }.render if content
+  end
+
+  def word_unwrap content
+    content.to_s.gsub(/\n\n/, '!ಠ_ಠ!').gsub(/\n/, ' ').squeeze(' ').gsub(/!ಠ_ಠ!/, "\n\n")
+  end
+
+  cal = Icalendar::Calendar.new
+
+
+  data.events.each do |year_name, year|
+
+    year.each do |conf_slug, conf|
+
+      event = Icalendar::Event.new
+
+      event.start = conf.start
+      event.end   = conf.end
+
+      #event.uid   = (conf.start.to_s + "-" + conf.name).parameterize
+      event.uid = event.uid.gsub(/@.*/, "@#{data.site.domain}")
+
+      event.summary     = conf.name
+      event.location    = conf.location
+      event.description = word_unwrap Nokogiri::HTML(markdown(conf.description)).text
+
+      cal.add_event(event)
+
+
+      if conf.talks
+        conf.talks.each do |talk|
+          event = Icalendar::Event.new
+
+          # Fix
+          event.start = talk.start
+          event.end   = talk.end
+
+          event.uid = event.uid.gsub(/@.*/, "@#{data.site.domain}")
+
+          event.summary     = talk.name
+          event.location    = talk.location
+          event.description = word_unwrap Nokogiri::HTML(markdown(talk.description)).text
+
+          cal.add_event(event)
+        end
+      end
+
+    end
+
+  end
+
+= cal.to_ical
