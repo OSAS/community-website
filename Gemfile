@@ -83,3 +83,5 @@ gem 'chronic'
 #gem 'tzinfo-data'
 #gem 'json'
 #gem 'timezone'
+
+gem 'icalendar'
