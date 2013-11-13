@@ -2,14 +2,6 @@
 title: Speaking Engagements
 ---
 
-:ruby
-
-  # Local helper for markdown-izing text
-
-  def markdown content
-    Tilt['markdown'].new { content }.render if content
-  end
-
 :markdown
   # Speaking Engagements
 
@@ -17,19 +9,83 @@ title: Speaking Engagements
 
   [Subscribe to all Red Hat events](/calendar/all.ics) in your calendar.
 
+
+:ruby
+
+  require 'chronic'
+
+  # Local helper for markdown-izing text
+  def markdown content
+    Tilt['markdown'].new { content }.render if content
+  end
+
+  # Local helper to look up timezones
+  def tz_lookup time_zone
+    return @tzc[time_zone] || time_zone if defined? @tzc
+
+    ## Build timezone abbriviation dictionary
+    @tzc ||= {}
+
+    # Prioritize US & Indian timezones
+    (ActiveSupport::TimeZone.us_zones + [ActiveSupport::TimeZone.new('Asia/Kolkata')] + ActiveSupport::TimeZone.all).each do | zone|
+      daylight_abbr = zone.parse('Aug 1').strftime('%Z')
+      standard_abbr = zone.parse('Dec 1').strftime('%Z')
+
+      # It's important to give priority to "standard" time,
+      # as there are some clashes
+      # (Sadly, that's just the way it is)
+      @tzc[standard_abbr] = zone.name unless @tzc[standard_abbr]
+      @tzc[daylight_abbr] = zone.name unless @tzc[daylight_abbr]
+    end
+
+    tz_lookup time_zone
+  end
+
+  def strftime_zone time_string, time_zone = "UTC", time_fmt
+    old_zone = Time.zone rescue "UTC"
+    Time.zone = tz_lookup time_zone rescue "UTC"
+
+    #result = time_string.to_time.getlocal.strftime(time_fmt)
+    result = Time.zone.parse(time_string).strftime(time_fmt)
+
+    Time.zone = old_zone
+
+    result
+  end
+
+  current_events = []
+
+  # Filter events to only include today + future events
+  current_events = data.events.each_with_object({}) do |(year_name, year), h|
+    current_time = Time.now
+
+    h[year_name] = year.select do |conf_slug, conf|
+      matches = false
+
+      matches = true if Chronic::parse(conf.end || conf.start) >= current_time
+
+      if conf.talks and not matches
+        conf.talks.each do |talk|
+          if talk.end && Chronic::parse(talk.end) >= current_time
+            matches = true
+          end
+        end
+      end
+
+      matches
+    end
+  end
+
+
 #quicklinks
   %h2
     Quicklinks
 
-  =# data.events.class
-
-  - data.events.sort.each do |year_name, year|
-
-    -#%h3= year_name
+  - current_events.each do |year_name, year|
 
     %ul
 
-      - year.sort.each do |conf_slug, conf|
+      - year.each do |conf_slug, conf|
 
         %li
           %a{:href => "##{conf_slug.parameterize}"}
@@ -37,11 +93,12 @@ title: Speaking Engagements
 
 #all-events
 
-  - data.events.each do |year_name, year|
+  - current_events.each do |year_name, year|
 
     - year.each do |conf_slug, conf|
 
-      .conference{"data-expired" => "false", "data-start" => "2013-11-19"}
+      -# FIXME: Fix the date
+      .conference{"data-expired" => "false", "data-start" => conf.start}
         %a.top{:href => "#quicklinks"}Back to top
 
         .vevent
@@ -79,11 +136,24 @@ title: Speaking Engagements
 
               %h4.speaker= talk.speaker
 
-              %h4.time
-                -# FIXME: Make the times real
-                %abbr.dtstart{:title => "2013-11-19T18:00:00Z"} Tue Nov 19 2013, 18:00
-                \-
-                %abbr.dtend{:title => "2013-11-19T20:00:00Z"} 20:00
+              - if talk.location
+                %h4.location= talk.location
+
+              - if talk.start
+                %h4.time
+                  -# FIXME: Deal with local timezones
+                  - timezone = talk.timezone || conf.timezone || tz_lookup(talk.start[/[a-zA-Z+0-9:]+$/])
+
+                  - if talk.end
+                    %abbr.dtstart{:title => talk.start.to_time.iso8601}
+                      = strftime_zone talk.start, timezone, '%a %e %b %Y %l:%M%P'
+                    &ndash;
+                    %abbr.dtend{:title => talk.start.to_time.iso8601}
+                      = strftime_zone talk.end, timezone, '%l:%M%P %Z'
+
+                  - else
+                    %abbr.dtstart{:title => talk.start.to_time.iso8601}
+                      = strftime_zone talk.start, timezone, '%a %e %b %Y %l:%M%P %Z'
 
               .description
                 %p.hidden.speaker-hidden
