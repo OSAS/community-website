@@ -2,6 +2,7 @@
   require 'icalendar'
   require 'date'
   require 'nokogiri'
+  require 'chronic'
 
   #include 'Icalendar' # limit namespace overlap
 
@@ -14,48 +15,101 @@
     content.to_s.gsub(/\n\n/, '!ಠ_ಠ!').gsub(/\n/, ' ').squeeze(' ').gsub(/!ಠ_ಠ!/, "\n\n")
   end
 
-  cal = Icalendar::Calendar.new
+  def isotime_with_zone time_string, time_zone = "UTC"
+    old_zone = Time.zone rescue "UTC"
+    Time.zone = tz_lookup time_zone rescue "UTC"
+    Chronic.time_class = Time.zone
 
+    result = (Date.parse time_string rescue Chronic::parse time_string).iso8601
+
+    Time.zone = old_zone
+
+    result
+  end
+
+  # Local helper to look up timezones
+  def tz_lookup time_zone
+    return @tzc[time_zone] || time_zone if defined? @tzc
+
+    ## Build timezone abbriviation dictionary
+    @tzc ||= {}
+
+    # Prioritize US & Indian timezones
+    (ActiveSupport::TimeZone.us_zones + [ActiveSupport::TimeZone.new('Asia/Kolkata')] + ActiveSupport::TimeZone.all).each do | zone|
+      daylight_abbr = zone.parse('Aug 1').strftime('%Z')
+      standard_abbr = zone.parse('Dec 1').strftime('%Z')
+
+      # It's important to give priority to "standard" time,
+      # as there are some clashes
+      # (Sadly, that's just the way it is)
+      @tzc[standard_abbr] = zone.name unless @tzc[standard_abbr]
+      @tzc[daylight_abbr] = zone.name unless @tzc[daylight_abbr]
+    end
+
+    @tzc[time_zone] || time_zone
+  end
+
+  ######################################################################
+
+  cal = Icalendar::Calendar.new
 
   data.events.each do |year_name, year|
 
     year.each do |conf_slug, conf|
 
-      event = Icalendar::Event.new
+      conference = Icalendar::Event.new
 
-      event.start = conf.start
-      event.end   = conf.end
+      conference.uid = conference.uid.gsub(/@.*/, "@#{data.site.domain}")
 
-      #event.uid   = (conf.start.to_s + "-" + conf.name).parameterize
-      event.uid = event.uid.gsub(/@.*/, "@#{data.site.domain}")
+      conference.summary     = conf.name
+      conference.location    = conf.location
+      conference.description = word_unwrap Nokogiri::HTML(markdown(conf.description)).text
 
-      event.summary     = conf.name
-      event.location    = conf.location
-      event.description = word_unwrap Nokogiri::HTML(markdown(conf.description)).text
-
-      cal.add_event(event)
-
+      conference.start = conf.start
+      conference.end   = (conf.end || conf.start) # support 1-day confs
 
       if conf.talks
+        talk_times = []
+
         conf.talks.each do |talk|
           event = Icalendar::Event.new
-
-          # Fix
-          event.start = talk.start
-          event.end   = talk.end
 
           event.uid = event.uid.gsub(/@.*/, "@#{data.site.domain}")
 
           event.summary     = talk.name
-          event.location    = talk.location
+          event.location    = talk.location || conf.location
           event.description = word_unwrap Nokogiri::HTML(markdown(talk.description)).text
 
-          cal.add_event(event)
+          if talk.start && talk.end
+            timezone = tz_lookup(talk.timezone || conf.timezone || talk.start[/[a-zA-Z+0-9:]+$/])
+
+            event.start = isotime_with_zone talk.start, timezone
+            event.end   = isotime_with_zone talk.end, timezone
+
+            # Keep track of all talk times, so conf. dates can be optional
+            talk_times.push event.start
+            talk_times.push event.end
+
+            # Only add talks with date and time
+            # There are some TBA events that are displayed,
+            # but those don't belong in an .ics file
+            cal.add_event(event)
+          end
         end
+
+        # Rewrite conference start and end based on talks,
+        # if start and end times were not given
+        if talk_times.min && !conference.start
+          conference.start = talk_times.min.split(/T/).first
+        end
+        if talk_times.max && !conference.end
+          conference.end = talk_times.max.split(/T/).first
+        end
+
       end
 
+      cal.add_event(conference)
     end
-
   end
 
 %pre= cal.to_ical
