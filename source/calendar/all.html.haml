@@ -26,7 +26,7 @@ layout: false
 
     result = Chronic::parse(time_string).utc.strftime('%Y%m%dT%H%M%SZ')
 
-    puts "#{time_string} :: #{time_zone} :: #{result}"
+    #puts "#{time_string} :: #{time_zone} :: #{result}"
 
     Time.zone = old_zone
 
