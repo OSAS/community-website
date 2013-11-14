@@ -49,12 +49,8 @@ layout: false
   #extend Geocoder::Model::ActiveRecord
   #Geocoder.configure(cache: geocache)
 
-  def markdownize snippet, indent_num = 4, line_width = 76
-    #line_width = 68
-    #indent = '    '
-
+  def markdownize snippet, indent_num = 4, line_width = 72
     snippet.css('.hidden').remove
-    #word_wrap((ReverseMarkdown.parse_string snippet.to_html), line_width).gsub(/\n/, "\n#{indent}")
 
     word_wrap(ReverseMarkdown.parse_string(snippet.to_html).strip, line_width)
   end
@@ -162,9 +158,11 @@ layout: false
     :ruby
       path = "#{root}/data/events/#{year_name}/";
 
-      FileUtils.mkdir_p(path) unless File.exists?(path)
+      # Uncomment the next line to actually create dirs
+      #FileUtils.mkdir_p(path) unless File.exists?(path)
 
-      file_name = conf['name'].gsub(/[ \.:-]/, '_').camelize.classify + '.yml'
+      #file_name = conf['name'].gsub(/[ \.:-]/, '_').camelize.classify + '.yml'
+      file_name = conf['name'].gsub(/[\.]/, '') + '.yml'
 
     %hr
     -#%h3= conf['name'].gsub(/[ \.:-]/, '_').camelize.classify if defined? conf['name']
@@ -196,10 +194,7 @@ layout: false
 
       puts yaml_file
 
-      open(yaml_file, "w").write(conf_yaml)
-
-      #open(yaml_file, "w") do |f|
-        #f << conf_yaml
-      #end
+      # Uncomment next line to actually write data
+      #open(yaml_file, "w").write(conf_yaml)
 
 -#%pre=output.to_yaml.gsub /^(\s*- [\s\w]+:)/, "\r\\1"
