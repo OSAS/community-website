@@ -62,7 +62,9 @@ title: Speaking Engagements
     h[year_name] = year.select do |conf_slug, conf|
       matches = false
 
-      matches = true if Chronic::parse(conf.end || conf.start) >= current_time
+      if conf.start
+        matches = true if Chronic::parse(conf.end || conf.start) >= current_time
+      end
 
       if conf.talks and not matches
         conf.talks.each do |talk|
@@ -97,7 +99,6 @@ title: Speaking Engagements
 
     - year.each do |conf_slug, conf|
 
-      -# FIXME: Fix the date
       .conference{"data-expired" => "false", "data-start" => conf.start}
         %a.top{:href => "#quicklinks"}Back to top
 
@@ -107,13 +108,15 @@ title: Speaking Engagements
               = conf.name
 
           .conference-info
-            %h3.location
-              %a{:href => "https://maps.google.com/maps?q=" + conf.location, :target => "_blank"}
-                = conf.location
+            - if conf.location
+              %h3.location
+                %a{:href => "https://maps.google.com/maps?q=" + conf.location, :target => "_blank"}
+                  = conf.location
 
-            %h3.date
-              %abbr.dtstart{:title => conf.start}= conf.start
-              %abbr.dtend.hidden{:title => conf.start || conf.end}= conf.end || conf.start
+            - if conf.start
+              %h3.date
+                %abbr.dtstart{:title => conf.start}= conf.start
+                %abbr.dtend.hidden{:title => conf.start || conf.end}= conf.end || conf.start
 
             .description
               = markdown conf.description
@@ -131,8 +134,12 @@ title: Speaking Engagements
                 %a{:href => "##{talk_slug}"}
                   = talk.title
 
-              %h4.location.hidden
-                %a{:href => "https://maps.google.com/maps?q=" + conf.location, :target => "_blank"}
+              - if talk.location
+                %h4.location
+                  %a{:href => "https://maps.google.com/maps?q=" + talk.location, :target => "_blank"}
+              - elsif conf.location
+                %h4.location.hidden
+                  %a{:href => "https://maps.google.com/maps?q=" + conf.location, :target => "_blank"}
 
               %h4.speaker= talk.speaker
 
