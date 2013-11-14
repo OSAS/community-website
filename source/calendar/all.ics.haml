@@ -19,12 +19,14 @@ layout: false
     content.to_s.gsub(/\n\n/, '!ಠ_ಠ!').gsub(/\n/, ' ').squeeze(' ').gsub(/!ಠ_ಠ!/, "\n\n")
   end
 
-  def isotime_with_zone time_string, time_zone = "UTC"
+  def vcal_time time_string, time_zone = "UTC"
     old_zone = Time.zone rescue "UTC"
     Time.zone = tz_lookup time_zone rescue "UTC"
     Chronic.time_class = Time.zone
 
-    result = Chronic::parse(time_string).iso8601
+    result = Chronic::parse(time_string).utc.strftime('%Y%m%dT%H%M%SZ')
+
+    puts "#{time_string} :: #{time_zone} :: #{result}"
 
     Time.zone = old_zone
 
@@ -89,8 +91,13 @@ layout: false
           if talk.start && talk.end
             timezone = tz_lookup(talk.timezone || conf.timezone || talk.start[/[a-zA-Z+0-9:]+$/])
 
-            event.start = isotime_with_zone talk.start, timezone
-            event.end   = isotime_with_zone talk.end, timezone
+            # Workaround for IST collision
+            if talk.start =~ /IST$/ && event.location =~ /UK|United Kingdom|Dublin|Edinburgh|Ireland/i
+              timezone = "Europe/Dublin"
+            end
+
+            event.start = vcal_time talk.start, timezone
+            event.end   = vcal_time talk.end, timezone
 
             # Keep track of all talk times, so conf. dates can be optional
             talk_times.push event.start
