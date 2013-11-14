@@ -94,6 +94,8 @@ layout: false
             # Workaround for IST collision
             if talk.start =~ /IST$/ && event.location =~ /UK|United Kingdom|Dublin|Edinburgh|Ireland/i
               timezone = "Europe/Dublin"
+            elsif talk.start =~ /IST$/
+              timezone = "Asia/Kolkata"
             end
 
             event.start = vcal_time talk.start, timezone
