@@ -232,8 +232,12 @@ input#s
   @extend .col-md-offset-1
 
 #content
-  padding-top: 2em
+  padding-top: 3em
   //max-width: 1000px
+  //@media screen and (min-width: $container-desktop)
+
+  @media screen and (min-width: 1200px)
+    padding: 3em 4em 5em
 
   h1, h2, h3, h4
     color: #777
