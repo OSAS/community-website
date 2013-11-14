@@ -80,9 +80,11 @@ layout: false
 
           event.uid = event.uid.gsub(/@.*/, "@#{data.site.domain}")
 
+          description_text = "Speaker: #{talk.speaker}\n\n#{talk.description.strip}"
+
           event.summary     = talk.title
           event.location    = talk.location || conf.location
-          event.description = word_unwrap Nokogiri::HTML(markdown(talk.description)).text
+          event.description = word_unwrap Nokogiri::HTML(markdown(description_text)).text
 
           if talk.start && talk.end
             timezone = tz_lookup(talk.timezone || conf.timezone || talk.start[/[a-zA-Z+0-9:]+$/])
