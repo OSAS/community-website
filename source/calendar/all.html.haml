@@ -82,7 +82,7 @@ layout: false
 
           description_text = "Speaker: #{talk.speaker}\n\n#{talk.description.strip}"
 
-          event.summary     = talk.title
+          event.summary     = talk.title.gsub(/:/, '\\:')
           event.location    = talk.location || conf.location
           event.description = word_unwrap Nokogiri::HTML(markdown(description_text)).text
 
