@@ -24,7 +24,7 @@ layout: false
     Time.zone = tz_lookup time_zone rescue "UTC"
     Chronic.time_class = Time.zone
 
-    result = (Date.parse time_string rescue Chronic::parse time_string).iso8601
+    result = Chronic::parse(time_string).iso8601
 
     Time.zone = old_zone
 
@@ -80,7 +80,7 @@ layout: false
 
           event.uid = event.uid.gsub(/@.*/, "@#{data.site.domain}")
 
-          event.summary     = talk.name
+          event.summary     = talk.title
           event.location    = talk.location || conf.location
           event.description = word_unwrap Nokogiri::HTML(markdown(talk.description)).text
 
