@@ -1,0 +1,3 @@
+[submodule "data/events"]
+	path = data/events
+	url = /home/garrett/Source/rh-events-yaml
