@@ -24,7 +24,7 @@ layout: false
 
       conference.summary     = conf.name
       conference.location    = conf.location
-      conference.description = word_unwrap Nokogiri::HTML(markdown(conf.description)).text
+      conference.description = word_unwrap Nokogiri::HTML(markdown_to_html(conf.description)).text
 
       conference.start = conf.start
       conference.end   = (conf.end || conf.start) # support 1-day confs
@@ -41,7 +41,7 @@ layout: false
 
           event.summary     = talk.title.gsub(/:/, '\\:')
           event.location    = talk.location || conf.location
-          event.description = word_unwrap Nokogiri::HTML(markdown(description_text)).text
+          event.description = word_unwrap Nokogiri::HTML(markdown_to_html(description_text)).text
 
           if talk.start && talk.end
             timezone = tz_lookup(talk.timezone || conf.timezone || talk.start[/[a-zA-Z+0-9:]+$/])
