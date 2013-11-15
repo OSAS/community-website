@@ -12,47 +12,6 @@ title: Speaking Engagements
 
 :ruby
 
-  require 'chronic'
-
-  # Local helper for markdown-izing text
-  def markdown content
-    Tilt['markdown'].new { content }.render if content
-  end
-
-  # Local helper to look up timezones
-  def tz_lookup time_zone
-    return @tzc[time_zone] || time_zone if defined? @tzc
-
-    ## Build timezone abbriviation dictionary
-    @tzc ||= {}
-
-    # Prioritize US & Indian timezones
-    (ActiveSupport::TimeZone.us_zones + [ActiveSupport::TimeZone.new('Asia/Kolkata')] + ActiveSupport::TimeZone.all).each do | zone|
-      daylight_abbr = zone.parse('Aug 1').strftime('%Z')
-      standard_abbr = zone.parse('Dec 1').strftime('%Z')
-
-      # It's important to give priority to "standard" time,
-      # as there are some clashes
-      # (Sadly, that's just the way it is)
-      @tzc[standard_abbr] = zone.name unless @tzc[standard_abbr]
-      @tzc[daylight_abbr] = zone.name unless @tzc[daylight_abbr]
-    end
-
-    tz_lookup time_zone
-  end
-
-  def strftime_zone time_string, time_zone = "UTC", time_fmt
-    old_zone = Time.zone rescue "UTC"
-    Time.zone = tz_lookup time_zone rescue "UTC"
-
-    #result = time_string.to_time.getlocal.strftime(time_fmt)
-    result = Time.zone.parse(time_string).strftime(time_fmt)
-
-    Time.zone = old_zone
-
-    result
-  end
-
   current_events = []
 
   # Filter events to only include today + future events
