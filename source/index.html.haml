@@ -1,18 +1,30 @@
-.mission
-  .mission-text
-    :markdown
+---
+pageable: true
+---
 
-      Red Hat's mission: To be the catalyst in communities of customers,
-      contributors, and partners creating better technology **the open
-      source way**.
+- if defined? page_number && page_number < 2
 
-:markdown
+  .mission
+    .mission-text
+      :markdown
 
-  # Placeholder
+        Red Hat's mission: To be the catalyst in communities of
+        customers, contributors, and partners creating better technology
+        **the open source way**.
 
-  This page is currently a placeholder. We'll want to have the blog and
-  other stuff here.
 
-  Please use the navigation above for now to see the other pages in
-  progress (including some of the blog stuff that will be on this page
-  as well).
+
+.row
+  .col-md-8
+
+    %section.container.blog-posts
+
+      %h2 Red Hat Community News
+
+      = partial :blog_posts, locals: locals
+
+  .col-md-4
+
+    %h2 Upcoming Events
+
+    =link_to "View all upcoming events&hellip;"
