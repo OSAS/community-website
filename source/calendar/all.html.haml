@@ -10,51 +10,6 @@ layout: false
 
   #include 'Icalendar' # limit namespace overlap
 
-  # Local helper for markdown-izing text
-  def markdown content
-    Tilt['markdown'].new { content.strip }.render if content
-  end
-
-  def word_unwrap content
-    content.to_s.gsub(/\n\n/, '!ಠ_ಠ!').gsub(/\n/, ' ').squeeze(' ').gsub(/!ಠ_ಠ!/, "\n\n")
-  end
-
-  def vcal_time time_string, time_zone = "UTC"
-    old_zone = Time.zone rescue "UTC"
-    Time.zone = tz_lookup time_zone rescue "UTC"
-    Chronic.time_class = Time.zone
-
-    result = Chronic::parse(time_string).utc.strftime('%Y%m%dT%H%M%SZ')
-
-    #puts "#{time_string} :: #{time_zone} :: #{result}"
-
-    Time.zone = old_zone
-
-    result
-  end
-
-  # Local helper to look up timezones
-  def tz_lookup time_zone
-    return @tzc[time_zone] || time_zone if defined? @tzc
-
-    ## Build timezone abbriviation dictionary
-    @tzc ||= {}
-
-    # Prioritize US & Indian timezones
-    (ActiveSupport::TimeZone.us_zones + [ActiveSupport::TimeZone.new('Asia/Kolkata')] + ActiveSupport::TimeZone.all).each do | zone|
-      daylight_abbr = zone.parse('Aug 1').strftime('%Z')
-      standard_abbr = zone.parse('Dec 1').strftime('%Z')
-
-      # It's important to give priority to "standard" time,
-      # as there are some clashes
-      # (Sadly, that's just the way it is)
-      @tzc[standard_abbr] = zone.name unless @tzc[standard_abbr]
-      @tzc[daylight_abbr] = zone.name unless @tzc[daylight_abbr]
-    end
-
-    @tzc[time_zone] || time_zone
-  end
-
   ######################################################################
 
   cal = Icalendar::Calendar.new
