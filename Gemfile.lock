@@ -16,6 +16,7 @@ GEM
     bootstrap-sass (3.0.0.0)
       sass (~> 3.2)
     builder (3.2.2)
+    chronic (0.10.2)
     chunky_png (1.2.9)
     coderay (1.1.0)
     coffee-script (2.2.0)
@@ -51,6 +52,7 @@ GEM
     hike (1.2.3)
     http_parser.rb (0.5.3)
     i18n (0.6.5)
+    icalendar (1.4.5)
     kramdown (1.2.0)
     less (2.4.0)
       commonjs (~> 0.2.7)
@@ -139,6 +141,8 @@ GEM
       ffi (>= 0.5.0)
     redcarpet (3.0.0)
     ref (1.0.5)
+    reverse_markdown (0.4.6)
+      nokogiri
     rouge (0.3.10)
       thor
     ruby18_source_location (0.2)
@@ -176,6 +180,8 @@ DEPENDENCIES
   bootstrap-navbar!
   bootstrap-sass (= 3.0.0)
   builder (~> 3.0)
+  chronic
+  icalendar
   less
   middleman (~> 3.2)
   middleman-blog
@@ -191,6 +197,7 @@ DEPENDENCIES
   pry-debugger
   pry-stack_explorer
   redcarpet
+  reverse_markdown
   ruby18_source_location
   therubyracer
   wdm (~> 0.1.0)
