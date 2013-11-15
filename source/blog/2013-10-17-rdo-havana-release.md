@@ -8,6 +8,10 @@ title: RDO Havana Release
 wordpress_id: 496
 categories:
 - Blog
+tags:
+- Havana
+- OpenStack
+- RDO
 ---
 
 RDO congratulates the OpenStack Foundation on the [release of OpenStack 2013.2, code named Havana](http://www.openstack.org/software/havana/press-release), the latest version of the OpenStack cloud platform.
