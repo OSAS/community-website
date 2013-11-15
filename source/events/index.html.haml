@@ -78,7 +78,7 @@ title: Speaking Engagements
                 %abbr.dtend.hidden{:title => conf.start || conf.end}= conf.end || conf.start
 
             .description
-              = markdown conf.description
+              = markdown_to_html conf.description
 
 
         - if conf.talks
@@ -125,4 +125,4 @@ title: Speaking Engagements
                 %p.hidden.speaker-hidden
                   %b= "Speaker: #{talk.speaker}"
 
-                = markdown talk.description
+                = markdown_to_html talk.description

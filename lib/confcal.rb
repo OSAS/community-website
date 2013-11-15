@@ -9,14 +9,6 @@ class ConfCal < Middleman::Extension
 
   helpers do
 
-    def markdown content
-      Tilt['markdown'].new { content.strip }.render if content
-    end
-
-    def word_unwrap content
-      content.to_s.gsub(/\n\n/, '!ಠ_ಠ!').gsub(/\n/, ' ').squeeze(' ').gsub(/!ಠ_ಠ!/, "\n\n")
-    end
-
     def tz_lookup time_zone
       return @tzc[time_zone] || time_zone if defined? @tzc
 
@@ -42,7 +34,6 @@ class ConfCal < Middleman::Extension
       old_zone = Time.zone rescue "UTC"
       Time.zone = tz_lookup time_zone rescue "UTC"
 
-      #result = time_string.to_time.getlocal.strftime(time_fmt)
       result = Time.zone.parse(time_string).strftime(time_fmt)
 
       Time.zone = old_zone
