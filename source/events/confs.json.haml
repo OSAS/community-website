@@ -1,0 +1,58 @@
+---
+layout: false
+---
+
+:ruby
+
+  conferences = []
+
+  data.events.each do |year_name, year|
+
+    conferences += year.map do |conf_slug, conf|
+
+      time_pool = [
+        Chronic::parse(conf.start),
+        Chronic::parse(conf.end)
+      ]
+
+      if conf.talks
+        conf.talks.each do |talk|
+          time_pool.push Chronic::parse(talk.start)
+          time_pool.push Chronic::parse(talk.end)
+        end
+      end
+
+      time_pool.compact!
+
+      current = time_pool.max.to_time > Time.now
+
+      if conf.type && conf.type == 'series'
+        if conf.talks
+          conf.talks.each do |talk|
+            item = {
+              title: talk.title,
+              start: Chronic::parse(talk.start).strftime("%Y-%m-%d"),
+              end: Chronic::parse(talk.end).strftime("%Y-%m-%d"),
+              url: current ? "##{conf_slug.parameterize}--#{talk.title.parameterize}" : false,
+              allDay: true
+            }
+
+            conferences.push item
+          end
+        end
+
+        nil # Conference-level data shouldn't be returned
+      else
+        {
+          title: conf.name,
+          start: conf.start || time_pool.min,
+          end: conf.end || conf.start || time_pool.max.split(/T/).first,
+          url: current ? "##{conf_slug.parameterize}" : false,
+          allDay: true
+        }
+      end
+    end
+  end
+
+
+= conferences.compact.to_json.gsub(/},/, "},\r")
