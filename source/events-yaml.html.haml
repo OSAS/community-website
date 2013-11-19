@@ -176,7 +176,7 @@ layout: false
       existing_doc = File.exists?(yaml_file) && IO.read(yaml_file)
 
       if existing_doc and conf_yaml.strip != existing_doc.strip
-        puts conf['name']
+        #puts conf['name']
         if conf['location']
           yaml_file = yaml_file.gsub(/\.yml/, '') + "-" + conf['location'].split(',').first.gsub(/[ \.:-]/, '_').camelize.classify + "-" + conf['start'] + ".yml"
         end
@@ -192,7 +192,7 @@ layout: false
         #end
       end
 
-      puts yaml_file
+      #puts yaml_file
 
       # Uncomment next line to actually write data
       #open(yaml_file, "w").write(conf_yaml)
