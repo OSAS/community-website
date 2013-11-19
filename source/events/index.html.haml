@@ -2,127 +2,135 @@
 title: Speaking Engagements
 ---
 
-:markdown
-  # Speaking Engagements
+-# FIXME: remove inline styles
 
-  Our employees give talks and host events related to their work in open source. Want to learn more about Red Hat’s participation as a catalyst in communities? Come to one of these upcoming events!
+.entry-content
+  #calendar-widget(style="float:right; width:40%;")
 
-  [Subscribe to all Red Hat events](/calendar/all.ics) in your calendar.
+  .page-blurb(style="float:left; width:60%;")
+    :markdown
+      # Speaking Engagements
+
+      Our employees give talks and host events related to their work in open source. Want to learn more about Red Hat’s participation as a catalyst in communities? Come to one of these upcoming events!
+
+      [Subscribe to all Red Hat events](/calendar/all.ics) in your calendar.
 
 
-:ruby
+%section#events-content(style="clear:both;")
 
-  current_events = []
+  :ruby
 
-  # Filter events to only include today + future events
-  current_events = data.events.each_with_object({}) do |(year_name, year), h|
-    current_time = Time.now
+    current_events = []
 
-    h[year_name] = year.select do |conf_slug, conf|
-      matches = false
+    # Filter events to only include today + future events
+    current_events = data.events.each_with_object({}) do |(year_name, year), h|
+      current_time = Time.now
 
-      if conf.start
-        matches = true if Chronic::parse(conf.end || conf.start) >= current_time
-      end
+      h[year_name] = year.select do |conf_slug, conf|
+        matches = false
 
-      if conf.talks and not matches
-        conf.talks.each do |talk|
-          if talk.end && Chronic::parse(talk.end) >= current_time
-            matches = true
+        if conf.start
+          matches = true if Chronic::parse(conf.end || conf.start) >= current_time
+        end
+
+        if conf.talks and not matches
+          conf.talks.each do |talk|
+            if talk.end && Chronic::parse(talk.end) >= current_time
+              matches = true
+            end
           end
         end
+
+        matches
       end
-
-      matches
     end
-  end
 
 
-#quicklinks
-  %h2
-    Quicklinks
+  #quicklinks
+    %h2
+      Quicklinks
 
-  - current_events.each do |year_name, year|
+    - current_events.each do |year_name, year|
 
-    %ul
+      %ul
+
+        - year.each do |conf_slug, conf|
+
+          %li
+            %a{:href => "##{conf_slug.parameterize}"}
+              = conf.name
+
+  #all-events
+
+    - current_events.each do |year_name, year|
 
       - year.each do |conf_slug, conf|
 
-        %li
-          %a{:href => "##{conf_slug.parameterize}"}
-            = conf.name
+        .conference{"data-expired" => "false", "data-start" => conf.start}
+          %a.top{:href => "#quicklinks"}Back to top
 
-#all-events
+          .vevent
+            %h2.event.summary{:id => conf_slug.parameterize}
+              %a{:href => "##{conf_slug.parameterize}", :title => "Link to this conference directly"}
+                = conf.name
 
-  - current_events.each do |year_name, year|
-
-    - year.each do |conf_slug, conf|
-
-      .conference{"data-expired" => "false", "data-start" => conf.start}
-        %a.top{:href => "#quicklinks"}Back to top
-
-        .vevent
-          %h2.event.summary{:id => conf_slug.parameterize}
-            %a{:href => "##{conf_slug.parameterize}", :title => "Link to this conference directly"}
-              = conf.name
-
-          .conference-info
-            - if conf.location
-              %h3.location
-                %a{:href => "https://maps.google.com/maps?q=" + conf.location, :target => "_blank"}
-                  = conf.location
-
-            - if conf.start
-              %h3.date
-                %abbr.dtstart{:title => conf.start}= conf.start
-                %abbr.dtend.hidden{:title => conf.start || conf.end}= conf.end || conf.start
-
-            .description
-              = markdown_to_html conf.description
-
-
-        - if conf.talks
-
-          - conf.talks.each do |talk|
-
-            - talk_slug = "#{conf_slug.parameterize}--#{talk.title.parameterize}"
-
-            .vevent.talk
-
-              %h3.summary{:id => talk_slug}
-                %a{:href => "##{talk_slug}"}
-                  = talk.title
-
-              - if talk.location
-                %h4.location
-                  %a{:href => "https://maps.google.com/maps?q=" + talk.location, :target => "_blank"}
-              - elsif conf.location
-                %h4.location.hidden
+            .conference-info
+              - if conf.location
+                %h3.location
                   %a{:href => "https://maps.google.com/maps?q=" + conf.location, :target => "_blank"}
+                    = conf.location
 
-              %h4.speaker= talk.speaker
-
-              - if talk.location
-                %h4.location= talk.location
-
-              - if talk.start
-                %h4.time
-                  -# FIXME: Deal with local timezones
-                  - timezone = talk.timezone || conf.timezone || tz_lookup(talk.start[/[a-zA-Z+0-9:]+$/])
-
-                  - if talk.end
-                    %abbr.dtstart{:title => talk.start.to_time.iso8601}
-                      = strftime_zone talk.start, timezone, '%a %e %b %Y %l:%M%P'
-                    &ndash;
-                    %abbr.dtend{:title => talk.start.to_time.iso8601}
-                      = strftime_zone talk.end, timezone, '%l:%M%P %Z'
-
-                  - else
-                    %abbr.dtstart{:title => talk.start.to_time.iso8601}
-                      = strftime_zone talk.start, timezone, '%a %e %b %Y %l:%M%P %Z'
+              - if conf.start
+                %h3.date
+                  %abbr.dtstart{:title => conf.start}= conf.start
+                  %abbr.dtend.hidden{:title => conf.start || conf.end}= conf.end || conf.start
 
               .description
-                %p.hidden.speaker-hidden
-                  %b= "Speaker: #{talk.speaker}"
+                = markdown_to_html conf.description
 
-                = markdown_to_html talk.description
+
+          - if conf.talks
+
+            - conf.talks.each do |talk|
+
+              - talk_slug = "#{conf_slug.parameterize}--#{talk.title.parameterize}"
+
+              .vevent.talk
+
+                %h3.summary{:id => talk_slug}
+                  %a{:href => "##{talk_slug}"}
+                    = talk.title
+
+                - if talk.location
+                  %h4.location
+                    %a{:href => "https://maps.google.com/maps?q=" + talk.location, :target => "_blank"}
+                - elsif conf.location
+                  %h4.location.hidden
+                    %a{:href => "https://maps.google.com/maps?q=" + conf.location, :target => "_blank"}
+
+                %h4.speaker= talk.speaker
+
+                - if talk.location
+                  %h4.location= talk.location
+
+                - if talk.start
+                  %h4.time
+                    -# FIXME: Deal with local timezones
+                    - timezone = talk.timezone || conf.timezone || tz_lookup(talk.start[/[a-zA-Z+0-9:]+$/])
+
+                    - if talk.end
+                      %abbr.dtstart{:title => talk.start.to_time.iso8601}
+                        = strftime_zone talk.start, timezone, '%a %e %b %Y %l:%M%P'
+                      &ndash;
+                      %abbr.dtend{:title => talk.start.to_time.iso8601}
+                        = strftime_zone talk.end, timezone, '%l:%M%P %Z'
+
+                    - else
+                      %abbr.dtstart{:title => talk.start.to_time.iso8601}
+                        = strftime_zone talk.start, timezone, '%a %e %b %Y %l:%M%P %Z'
+
+                .description
+                  %p.hidden.speaker-hidden
+                    %b= "Speaker: #{talk.speaker}"
+
+                  = markdown_to_html talk.description
