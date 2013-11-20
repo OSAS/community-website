@@ -15,16 +15,28 @@ pageable: true
 
 
 .row
-  .col-md-8
+  .blog-posts.col-sm-8
 
-    %section.container.blog-posts
+    %section.container
 
       %h2 Red Hat Community News
 
       = partial :blog_posts, locals: locals
 
-  .col-md-4
+  .upcoming-events.col-sm-4
 
     %h2 Upcoming Events
 
-    =link_to "View all upcoming events&hellip;"
+    %dl.upcoming-list
+      - current_events.each do |year_name, year|
+        - year.each do |conf_slug, conf|
+
+          - if conf.start
+            %dd.upcoming-date
+              %span.day= conf.start.strftime('%-d')
+              %span.month= conf.start.strftime('%b')
+            %dt.upcoming-conf
+              %a{:href => "/events/##{conf_slug.parameterize}"}
+                = conf.name
+
+    .more=link_to "View all upcoming events&hellip;", "/events/"
