@@ -194,61 +194,54 @@
   .room, .time
     color: #999
 
-.page-template-calendar-page-php .entry-header, #calendar-upcoming
+.page-template-calendar-page-php .entry-header
   display: none
 
 /** Upcoming widget *
 
-.has-upcoming #calendar-upcoming
-  display: block
+.upcoming-events
 
-#calendar-upcoming h2
-  margin-bottom: 0
+  .upcoming-list
+    margin-top: 0
 
-.upcoming-date, .upcoming-conf
-  line-height: 1.4
+  > .more
+    margin-top: 3px
+    padding-left: 2ex
+
+%upcoming-item
   vertical-align: top
+  //line-height: 1.4em
+  //line-height: 1.6
 
 .upcoming-date
+  @extend %upcoming-item
   clear: both
   display: inline-block
-  margin: 2ex 0 0
+  //margin: 2ex 0 0
   text-align: right
   text-transform: uppercase
   width: 8ex
   color: #999
-  font-size: 0.7em
+  //font-size: 0.7em
   font-family: Interstate,'Liberation Sans',Helvetica,Arial,sans-serif
-  b
+
+  .day
     color: #555
     font-weight: strong
 
-#calendar-upcoming > .more
-  /* font-size: 0.85em;
-  margin-top: 3px
+  .month
+    display: inline-block
+    text-align: left
+    width: 4ex
 
 .upcoming-conf
-  /* font-size: 0.85em;
-  margin-top: 3px
+  @extend %upcoming-item
   margin-left: 9ex
 
-#calendar-upcoming > .more
-  /* text-align: center;
+  a
+    font-size: 1.2em
+    padding: 4px 0
+    display: inline-block
 
 .upcoming-date + .upcoming-conf
-  margin-top: -1.31em
-
-.upcoming.loading
-  min-height: 16px
-
-/** Position the upcoming widget *
-
-.has-upcoming
-  #calendar-upcoming
-    float: left
-    /* width: 25%;
-    /* margin-left: 5%;
-    margin: 0px 0px 2.2em
-  #spotlight
-    float: left
-    width: 70%
+  margin-top: -1.8em
