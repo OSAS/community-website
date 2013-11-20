@@ -53,6 +53,55 @@ class ConfCal < Middleman::Extension
       result
     end
 
+    def sort_events events = data.events
+      sorted_events = {}
+
+      events = events.each do |year_name, year|
+        sorted_events[year_name] = year.sort_by do |conf_slug, conf|
+          talk_times = [ conf.start ]
+
+          if conf.talks
+            conf.talks.each do |talk|
+              talk_times.push Chronic::parse(talk.start) if defined? talk.start
+            end
+          end
+
+          talk_times.min
+        end
+      end
+
+      sorted_events
+    end
+
+    # Filter events to only include today + future events (and cache it)
+    def current_events events = data.events
+      return sort_events @cur_ev if defined? @cur_ev
+
+      @cur_ev = events.each_with_object({}) do |(year_name, year), h|
+        current_time = Time.now
+
+        h[year_name] = year.select do |conf_slug, conf|
+          matches = false
+
+          if conf.start
+            matches = true if Chronic::parse(conf.end || conf.start) >= current_time
+          end
+
+          if conf.talks and not matches
+            conf.talks.each do |talk|
+              if talk.end && Chronic::parse(talk.end) >= current_time
+                matches = true
+              end
+            end
+          end
+
+          matches
+        end
+      end
+
+      current_events
+    end
+
   end
 end
 
