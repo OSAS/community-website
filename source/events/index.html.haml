@@ -15,35 +15,6 @@ title: Speaking Engagements
   .col-sm-5
     #calendar-widget(style="width:100%;")
 
-
-:ruby
-
-  current_events = []
-
-  # Filter events to only include today + future events
-  current_events = data.events.each_with_object({}) do |(year_name, year), h|
-    current_time = Time.now
-
-    h[year_name] = year.select do |conf_slug, conf|
-      matches = false
-
-      if conf.start
-        matches = true if Chronic::parse(conf.end || conf.start) >= current_time
-      end
-
-      if conf.talks and not matches
-        conf.talks.each do |talk|
-          if talk.end && Chronic::parse(talk.end) >= current_time
-            matches = true
-          end
-        end
-      end
-
-      matches
-    end
-  end
-
-
 #quicklinks
   %h2
     Quicklinks
