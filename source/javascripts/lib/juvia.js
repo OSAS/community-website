@@ -1,14 +1,16 @@
 (function() {
   var options = {
-    container  : 'comments',
-    site_key   : 's6hagzwq3m418dh7118x148mov9nx08',
-    topic_key  : location.pathname,
+    container  : '#blog-comments',
+    site_key   : '3uxgji3zhp1x1rwnfuyvx7t2d0zwlh1',
+    topic_key  : location.pathname.match(/(\/[^\/]*)\/?$/)[1],
     topic_url  : location.href,
     topic_title  : document.title || location.href,
     include_base : !window.Juvia,
-    include_css  : !window.Juvia,
+    include_css  : false,
     comment_order: 'latest-first'
   };
+
+  console.log(options);
 
   function makeQueryString(options) {
     var key, params = [];
@@ -29,7 +31,7 @@
     }
 
     var result =
-      'https://first-jeb.rhcloud.com/api/show_topic.js' +
+      '//comment-osasteam.rhcloud.com/api/show_topic.js' +
       '?_c=' + window._juviaRequestCounter +
       '&' + makeQueryString(options);
     window._juviaRequestCounter++;
