@@ -18,8 +18,20 @@
 /* Juvia widgets
 
 .juvia-help
-  @extend .glyphicon
-  @extend .glyphicon-question-sign
+  $help-icon-size: 22px
+  vertical-align: middle
+  overflow: hidden
+  display: inline-block
+  width: $help-icon-size
+  height: $help-icon-size
+  line-height: $help-icon-size
+
+  &:before
+    @extend .glyphicon
+    @extend .glyphicon-question-sign
+    font-size: $help-icon-size
+    vertical-align: top
+    line-height: 16px
 
 .juvia-field
   input,
@@ -64,10 +76,6 @@
   @extend .col-sm-4
   text-align: right
   opacity: 0.7
-
-.juvia-data
-  //@extend .row
-  //@extend .col-sm-offset-2
 
 .juvia-comment-content
   @extend .col-sm-10
