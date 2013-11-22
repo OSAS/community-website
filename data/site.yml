@@ -10,7 +10,7 @@ owner: Red Hat, Inc.
 founding_year: 2012 # Defaults to current year if commented
 
 # Manual copyright string, to override the automatic one
-#copyright: "&copy; 2013 YOUR_NAME_HERE"
+copyright: "Copyright &copy; 2012 &ndash; 2013 Red Hat, Inc."
 
 
 ## If unspecified, timezone defaults to UTC
