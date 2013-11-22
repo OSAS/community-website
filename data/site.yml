@@ -25,9 +25,11 @@ copyright: "Copyright &copy; 2012 &ndash; 2013 Red Hat, Inc."
 # To have page-specific tags added, please add a YAML list to "tags:"
 # in that page's frontmatter block (the part at the top between ---)
 keywords:
-  - Middleman
-  - Springboard
-  - Static site
+  - Red Hat
+  - Open Source
+  - Free Software
+  - Community
+  - Software
 
 ##
 # Deployment: OpenShift
