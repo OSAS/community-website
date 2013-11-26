@@ -50,9 +50,16 @@ title: Speaking Engagements
                   = conf.location
 
             - if conf.start
+
               %h3.date
-                %abbr.dtstart{:title => conf.start}= conf.start
-                %abbr.dtend.hidden{:title => conf.start || conf.end}= conf.end || conf.start
+                %abbr.dtstart{:title => conf.start}= pretty_date conf.start
+
+                - if conf.end && conf.end != conf.start
+                  &ndash;
+                  %abbr.dtend{:title => conf.end}= pretty_date conf.end
+
+                - else
+                  %abbr.dtend.hidden{:title => conf.start}= pretty_date conf.start
 
             .description
               = markdown_to_html conf.description
@@ -84,7 +91,6 @@ title: Speaking Engagements
 
               - if talk.start
                 %h4.time
-                  -# FIXME: Deal with local timezones
                   - timezone = talk.timezone || conf.timezone || tz_lookup(talk.start[/[a-zA-Z+0-9:]+$/])
 
                   - if talk.end
