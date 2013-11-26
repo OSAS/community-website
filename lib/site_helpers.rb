@@ -11,8 +11,13 @@ class SiteHelpers < Middleman::Extension
     end
 
     def pretty_date(sometime)
+      return unless sometime
+
+      sometime = Time.parse(sometime) if sometime.class == String
+
       format = "%A %e %B"
       format << " %Y" unless sometime.year == Time.now.year
+
       sometime.to_time.strftime(format) rescue ""
     end
 
