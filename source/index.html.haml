@@ -15,7 +15,8 @@ pageable: true
 
 
 .row
-  .blog-posts.col-sm-8
+
+  %section.blog-posts.col-sm-8
 
     %section.container
 
@@ -23,38 +24,63 @@ pageable: true
 
       = partial :blog_posts, locals: locals
 
-  .upcoming-events.col-sm-4
 
-    %h2 Now &amp; Upcoming
+  %section.sidebar.col-sm-4
 
-    %dl.upcoming-list
-      - max_events = 10
-      - event_count = 0
+    %section.upcoming-events
 
-      - current_events.each do |year_name, year|
-        - year.each do |conf_slug, conf|
-          - if conf.type && conf.type == 'series'
-            - if conf.talks
-              - conf.talks.each do |talk|
-                - event_count += 1
+      %h2 Now &amp; Upcoming
 
-                - unless event_count > max_events
-                  %dd.upcoming-date
-                    %span.day= Date.parse(talk.start).strftime('%-d')
-                    %span.month= Date.parse(talk.start).strftime('%b')
-                  %dt.upcoming-event
-                    %a{:href => "/events/##{conf_slug.parameterize}--#{talk.title.parameterize}"}
-                      = talk.title
+      %dl.upcoming-list
+        - max_events = 10
+        - event_count = 0
 
-          - elsif conf.start
-            - event_count += 1
+        - current_events.each do |year_name, year|
+          - year.each do |conf_slug, conf|
+            - if conf.type && conf.type == 'series'
+              - if conf.talks
+                - conf.talks.each do |talk|
+                  - event_count += 1
 
-            - unless event_count > max_events
-              %dd.upcoming-date
-                %span.day= conf.start.strftime('%-d')
-                %span.month= conf.start.strftime('%b')
-              %dt.upcoming-event
-                %a{:href => "/events/##{conf_slug.parameterize}"}
-                  = conf.name
+                  - unless event_count > max_events
+                    %dd.upcoming-date
+                      %span.day= Date.parse(talk.start).strftime('%-d')
+                      %span.month= Date.parse(talk.start).strftime('%b')
+                    %dt.upcoming-event
+                      %a{:href => "/events/##{conf_slug.parameterize}--#{talk.title.parameterize}"}
+                        = talk.title
 
-      .more=link_to "View all current events&hellip;", "/events/"
+            - elsif conf.start
+              - event_count += 1
+
+              - unless event_count > max_events
+                %dd.upcoming-date
+                  %span.day= conf.start.strftime('%-d')
+                  %span.month= conf.start.strftime('%b')
+                %dt.upcoming-event
+                  %a{:href => "/events/##{conf_slug.parameterize}"}
+                    = conf.name
+
+        .more=link_to "View all current events&hellip;", "/events/"
+
+
+    %section.contributions
+
+      :markdown
+        ## Contributions
+
+        Red Hat helps make the software you trust.
+
+        * Linux
+        * Fedora
+        * Apache
+        * GNOME
+        * OpenStack
+        * LibreOffice
+
+        [See more contributions&hellip;](software/)
+
+
+    -#%section.previous-posts
+
+      %h2 Previous Posts
