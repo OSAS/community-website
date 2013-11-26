@@ -10,9 +10,10 @@ class SiteHelpers < Middleman::Extension
       r.sub(/\/$/, '')
     end
 
-    # FIXME: This is a WIP; it's not working though...
     def pretty_date(sometime)
-      sometime.to_time.strftime('%A %e %B %Y') rescue ""
+      format = "%A %e %B"
+      format << " %Y" unless sometime.year == Time.now.year
+      sometime.to_time.strftime(format) rescue ""
     end
 
     # Use the title from frontmatter metadata,
