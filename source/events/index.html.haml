@@ -52,14 +52,14 @@ title: Speaking Engagements
             - if conf.start
 
               %h3.date
-                %abbr.dtstart{:title => conf.start}= pretty_date conf.start
+                %abbr.dtstart{:title => conf.start}= pretty_date conf.start, "short"
 
                 - if conf.end && conf.end != conf.start
                   &ndash;
-                  %abbr.dtend{:title => conf.end}= pretty_date conf.end
+                  %abbr.dtend{:title => conf.end}= pretty_date conf.end, "short"
 
                 - else
-                  %abbr.dtend.hidden{:title => conf.start}= pretty_date conf.start
+                  %abbr.dtend.hidden{:title => conf.start}= pretty_date conf.start, "short"
 
             .description
               = markdown_to_html conf.description
