@@ -226,13 +226,10 @@ input#s
 #page
   @extend .row
 
-#content,
-#footer
+#content
   @extend .col-md-10
   @extend .col-md-offset-1
 
-
-#content
   padding-top: 3em
   //max-width: 1000px
   //@media screen and (min-width: $container-desktop)
@@ -260,9 +257,13 @@ body.page #content h2
       padding-top: 0
 
 #footer
-  margin: 2em 0 0
-  padding: 2em
+  clear: both
+  margin: 3em 0 0
+  padding: 3em
   font-size: 0.85em
+  background: #f6f6f6
+  border-top: 1px solid #eee
+  color: #999
 
   .last-modified
     display: none
