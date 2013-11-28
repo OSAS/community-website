@@ -3,7 +3,7 @@ $(function() {
 
   if ($widget.length) {
 
-    $.get('confs.json', function(data){
+    $.get('/events/confs.json', function(data){
       $widget.fullCalendar({
         editable: false,
         header: {

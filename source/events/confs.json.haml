@@ -26,14 +26,19 @@ layout: false
 
       current = time_pool.max.to_time > Time.now
 
+      page = "/events/#{year_name}/"
+
       if conf.type && conf.type == 'series'
         if conf.talks
           conf.talks.each do |talk|
+            fragment = "##{conf_slug.parameterize}--#{talk.title.parameterize}"
+
             item = {
               title: talk.title,
               start: Chronic::parse(talk.start).strftime("%Y-%m-%d"),
               end: Chronic::parse(talk.end).strftime("%Y-%m-%d"),
-              url: current ? "##{conf_slug.parameterize}--#{talk.title.parameterize}" : false,
+              url: current ? fragment : page + fragment,
+              className: current ? "current" : "old",
               allDay: true
             }
 
@@ -43,11 +48,14 @@ layout: false
 
         nil # Conference-level data shouldn't be returned
       else
+        fragment = "##{conf_slug.parameterize}"
+
         {
           title: conf.name,
           start: conf.start || time_pool.min,
           end: conf.end || conf.start || time_pool.max.split(/T/).first,
-          url: current ? "##{conf_slug.parameterize}" : false,
+          url: current ? fragment : page + fragment,
+          className: current ? "current" : "old",
           allDay: true
         }
       end

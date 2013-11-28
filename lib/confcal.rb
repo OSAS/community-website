@@ -56,17 +56,20 @@ class ConfCal < Middleman::Extension
     def sort_events events = data.events
       sorted_events = {}
 
+      # FIXME: Sort talks also
+
       events = events.each do |year_name, year|
         sorted_events[year_name] = year.sort_by do |conf_slug, conf|
-          talk_times = [ conf.start ]
+          talk_times = [ defined? conf.start.to_date ? conf.start : nil ]
 
           if conf.talks
             conf.talks.each do |talk|
-              talk_times.push Chronic::parse(talk.start) if defined? talk.start
+              talk_time = Chronic::parse talk.start
+              talk_times.push talk_time.to_date if defined?(talk.start) && talk_time
             end
           end
 
-          talk_times.min
+          talk_times.compact.min
         end
       end
 
@@ -74,22 +77,27 @@ class ConfCal < Middleman::Extension
     end
 
     # Filter events to only include today + future events (and cache it)
-    def current_events events = data.events
-      return sort_events @cur_ev if defined? @cur_ev
+    def current_events events = data.events, time_start = Time.now, time_end = Time.now + 60*60*24*365
+      if defined?(@cur_ev) && @cur_ev[time_start] && @cur_ev[time_start][time_end]
+        return @cur_ev[time_start][time_end]
+      end
 
-      @cur_ev = events.each_with_object({}) do |(year_name, year), h|
-        current_time = Time.now
+      @cur_ev ||= {}
+      @cur_ev[time_start] ||= {}
 
+      @cur_ev[time_start][time_end] = events.each_with_object({}) do |(year_name, year), h|
         h[year_name] = year.select do |conf_slug, conf|
           matches = false
 
           if conf.start
-            matches = true if Chronic::parse(conf.end || conf.start) >= current_time
+            conf_date = Chronic::parse(conf.end || conf.start)
+            matches = true if conf_date >= time_start && conf_date < time_end
           end
 
           if conf.talks and not matches
             conf.talks.each do |talk|
-              if talk.end && Chronic::parse(talk.end) >= current_time
+              talk_date = Chronic::parse(talk.end)
+              if talk.end && talk_date >= time_start && talk_date < time_end
                 matches = true
               end
             end
@@ -99,7 +107,11 @@ class ConfCal < Middleman::Extension
         end
       end
 
-      current_events
+      @cur_ev[time_start][time_end].reject! {|year_name, year| year.empty?}
+
+      @cur_ev[time_start][time_end] = sort_events @cur_ev[time_start][time_end]
+
+      current_events events, time_start, time_end
     end
 
   end

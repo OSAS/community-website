@@ -1,8 +1,7 @@
 /* Based on FullCalendar v1.6.4 Stylesheet
- * Docs & License: http://arshaw.com/fullcalendar/
- * (c) 2013 Adam Shaw
- *
- * Port to SASS and several style modifications by Garrett LeSage
+  Docs & License: http://arshaw.com/fullcalendar/
+  (c) 2013 Adam Shaw
+  Port to SASS and several style modifications by Garrett LeSage
 
 .fc
   direction: ltr
@@ -19,7 +18,6 @@
     vertical-align: top
 
 /* Header
- *------------------------------------------------------------------------
 
 .fc-header td
   white-space: nowrap
@@ -64,7 +62,6 @@
 /* buttons edges butting together
 /* button layering (for border precedence)
 /* Content
- *------------------------------------------------------------------------
 
 .fc-content
   clear: both
@@ -76,7 +73,6 @@
   overflow: hidden
 
 /* Cell Styles
- *------------------------------------------------------------------------
 
 .fc-widget-header, .fc-widget-content
   /* <td>, usually
@@ -95,7 +91,6 @@
   /* for IE
 
 /* Buttons
- *------------------------------------------------------------------------
 
 .fc-button
   position: relative
@@ -191,7 +186,6 @@
   box-shadow: none
 
 /* Global Event Styles
- *------------------------------------------------------------------------
 
 .fc-event-container >
   *
@@ -209,11 +203,22 @@
 
 /* Color linked elements with a link-like blue
 a.fc-event
-  background-color: #44aaff
-  border: 1px solid #2288dd
   color: white
   text-decoration: none
   cursor: pointer
+
+  &.current
+    background-color: #44aaff
+    border-color: #2288dd
+
+  &.old
+    background-color: #b39eaf
+    border-color: #9d8d9e
+
+  &:hover,
+  &:active,
+  &:focus
+    color: white
 
 .fc-event-draggable
   cursor: pointer
@@ -241,7 +246,6 @@ a.fc-event
   /*
 
 /* Horizontal Events
- *------------------------------------------------------------------------
 
 .fc-event-hori
   border-width: 1px 0
@@ -278,7 +282,6 @@ a.fc-event
     /* IE6 had 0 height
 
 /* Reusable Separate-border Table
- *------------------------------------------------------------
 
 table.fc-border-separate
   border-collapse: separate
@@ -296,7 +299,6 @@ table.fc-border-separate
       border-top-width: 0
 
 /* Month View, Basic Week View, Basic Day View
- *------------------------------------------------------------------------
 
 .fc-grid th
   text-align: center
@@ -335,7 +337,6 @@ table.fc-border-separate
     float: right
 
 /* Agenda Week View, Agenda Day View
- *------------------------------------------------------------------------
 
 .fc-agenda-days th
   text-align: center
@@ -404,7 +405,6 @@ table.fc-border-separate
         /* doesn't work with background in IE6/7
 
 /* Vertical Events
- *------------------------------------------------------------------------
 
 .fc-event-vert
   border-width: 0 1px
