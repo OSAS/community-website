@@ -142,6 +142,11 @@ page "/.htacces.html", :directory_index => false
 proxy "/.htaccess", "/.htaccess.html", :locals => {}, :ignore => true
 
 ready do
+  # Add yearly calendar pages
+  data.events.each do |year, data|
+    proxy "/events/#{year}.html", "events/index.html", locals: {year: year}
+  end
+
   # Add author pages
   sitemap.resources.group_by {|p| p.data["author"]}.each do |author, pages|
     proxy "/blog/author/#{author.parameterize.downcase}.html", "author.html", locals: {author: author, pages: pages}, :ignore => true if author
@@ -175,6 +180,9 @@ activate :site_helpers
 
 require 'lib/blog_helpers.rb'
 activate :blog_helpers
+
+require 'lib/confcal.rb'
+activate :confcal
 
 
 ###
