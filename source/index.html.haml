@@ -35,7 +35,7 @@ pageable: true
         - max_events = 10
         - event_count = 0
 
-        - current_events.each do |year_name, year|
+        - current_events.each do |year_label, year|
           - year.each do |conf_slug, conf|
             - if conf.type && conf.type == 'series'
               - if conf.talks

@@ -59,9 +59,9 @@ layout: false
 
   cal = Icalendar::Calendar.new
 
-  data.events.each do |year_name, year|
+  data.events.each do |year_label, year|
 
-    unless year_name[/schema/]
+    unless year_label[/schema/]
 
       year.each do |conf_slug, conf|
 

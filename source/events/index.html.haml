@@ -37,7 +37,7 @@ title: Speaking Engagements
     %h2
       Quicklinks
 
-    - relevant_events.each do |year_name, year|
+    - relevant_events.each do |year_label, year|
 
       %ul
 
@@ -50,7 +50,7 @@ title: Speaking Engagements
 
   #all-events
 
-    - relevant_events.each do |year_name, year|
+    - relevant_events.each do |year_label, year|
 
       - year.each do |conf_slug, conf|
 

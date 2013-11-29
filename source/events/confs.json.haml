@@ -6,9 +6,9 @@ layout: false
 
   conferences = []
 
-  data.events.each do |year_name, year|
+  data.events.each do |year_label, year|
 
-    unless year_name[/schema/]
+    unless year_label[/schema/]
 
       conferences += year.map do |conf_slug, conf|
 
@@ -28,7 +28,7 @@ layout: false
 
         current = time_pool.max.to_time > Time.now
 
-        page = "/events/#{year_name}/"
+        page = "/events/#{year_label}/"
 
         if conf.type && conf.type == 'series'
           if conf.talks
