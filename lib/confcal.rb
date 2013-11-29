@@ -58,8 +58,8 @@ class ConfCal < Middleman::Extension
 
       # FIXME: Sort talks also
 
-      events = events.each do |year_name, year|
-        sorted_events[year_name] = year.sort_by do |conf_slug, conf|
+      events = events.each do |year_label, year|
+        sorted_events[year_label] = year.sort_by do |conf_slug, conf|
           talk_times = []
 
           if conf.talks
@@ -87,10 +87,10 @@ class ConfCal < Middleman::Extension
       @cur_ev ||= {}
       @cur_ev[time_start] ||= {}
 
-      @cur_ev[time_start][time_end] = events.each_with_object({}) do |(year_name, year), h|
-        unless year_name[/schema/]
+      @cur_ev[time_start][time_end] = events.each_with_object({}) do |(year_label, year), h|
+        unless year_label[/schema/]
 
-          h[year_name] = year.select do |conf_slug, conf|
+          h[year_label] = year.select do |conf_slug, conf|
             matches = false
 
             if conf.start
@@ -113,7 +113,7 @@ class ConfCal < Middleman::Extension
 
       end
 
-      @cur_ev[time_start][time_end].reject! {|year_name, year| year.empty?}
+      @cur_ev[time_start][time_end].reject! {|year_label, year| year.empty?}
 
       @cur_ev[time_start][time_end] = sort_events @cur_ev[time_start][time_end]
 

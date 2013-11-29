@@ -151,12 +151,12 @@ layout: false
       output['unknown'].push this_conf
     end
 
-- output.each do |year_name, year|
+- output.each do |year_label, year|
   %hr
-  %h2= year_name
+  %h2= year_label
   - year.each do |conf|
     :ruby
-      path = "#{root}/data/events/#{year_name}/";
+      path = "#{root}/data/events/#{year_label}/";
 
       # Uncomment the next line to actually create dirs
       #FileUtils.mkdir_p(path) unless File.exists?(path)
