@@ -60,7 +60,7 @@ class ConfCal < Middleman::Extension
 
       events = events.each do |year_name, year|
         sorted_events[year_name] = year.sort_by do |conf_slug, conf|
-          talk_times = [ defined? conf.start.to_date ? conf.start : nil ]
+          talk_times = []
 
           if conf.talks
             conf.talks.each do |talk|
@@ -68,6 +68,8 @@ class ConfCal < Middleman::Extension
               talk_times.push talk_time.to_date if defined?(talk.start) && talk_time
             end
           end
+
+          talk_times.push conf.start.to_date if conf.start
 
           talk_times.compact.min
         end
@@ -86,25 +88,29 @@ class ConfCal < Middleman::Extension
       @cur_ev[time_start] ||= {}
 
       @cur_ev[time_start][time_end] = events.each_with_object({}) do |(year_name, year), h|
-        h[year_name] = year.select do |conf_slug, conf|
-          matches = false
+        unless year_name[/schema/]
 
-          if conf.start
-            conf_date = Chronic::parse(conf.end || conf.start)
-            matches = true if conf_date >= time_start && conf_date < time_end
-          end
+          h[year_name] = year.select do |conf_slug, conf|
+            matches = false
 
-          if conf.talks and not matches
-            conf.talks.each do |talk|
-              talk_date = Chronic::parse(talk.end)
-              if talk.end && talk_date >= time_start && talk_date < time_end
-                matches = true
+            if conf.start
+              conf_date = Chronic::parse(conf.end || conf.start)
+              matches = true if conf_date >= time_start && conf_date < time_end
+            end
+
+            if conf.talks and not matches
+              conf.talks.each do |talk|
+                talk_date = Chronic::parse(talk.end)
+                if talk.end && talk_date >= time_start && talk_date < time_end
+                  matches = true
+                end
               end
             end
-          end
 
-          matches
+            matches
+          end
         end
+
       end
 
       @cur_ev[time_start][time_end].reject! {|year_name, year| year.empty?}
