@@ -11,8 +11,6 @@
       comment_order: 'latest-first'
     };
 
-    console.log(options);
-
     function makeQueryString(options) {
       var key, params = [];
       for (key in options) {
@@ -36,6 +34,7 @@
         '?_c=' + window._juviaRequestCounter +
         '&' + makeQueryString(options);
       window._juviaRequestCounter++;
+
       return result;
     }
 
