@@ -41,7 +41,7 @@ title: Speaking Engagements
 
       %ul
 
-        - year.each do |conf_label, conf|
+        - year.sort_by {|cn, c| cn.downcase}.each do |conf_label, conf|
 
           %li
             %a{:href => "##{conf_label.parameterize}"}
