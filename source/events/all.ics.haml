@@ -12,6 +12,8 @@ layout: false
 
   cal = Icalendar::Calendar.new
 
+  cal.x_wr_calname = data.site.name
+
   data.events.each do |year_label, year|
 
     unless year_label[/schema/]
