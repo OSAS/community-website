@@ -41,10 +41,10 @@ title: Speaking Engagements
 
       %ul
 
-        - year.each do |conf_slug, conf|
+        - year.each do |conf_label, conf|
 
           %li
-            %a{:href => "##{conf_slug.parameterize}"}
+            %a{:href => "##{conf_label.parameterize}"}
               = conf.name
 
 
@@ -52,14 +52,14 @@ title: Speaking Engagements
 
     - relevant_events.each do |year_label, year|
 
-      - year.each do |conf_slug, conf|
+      - year.each do |conf_label, conf|
 
         .conference{"data-expired" => "false", "data-start" => conf.start}
           %a.top{:href => "#quicklinks"}Back to top
 
           .vevent
-            %h2.event.summary{:id => conf_slug.parameterize}
-              %a{:href => "##{conf_slug.parameterize}", :title => "Link to this conference directly"}
+            %h2.event.summary{:id => conf_label.parameterize}
+              %a{:href => "##{conf_label.parameterize}", :title => "Link to this conference directly"}
                 = conf.name
 
             .conference-info
@@ -88,12 +88,12 @@ title: Speaking Engagements
 
             - conf.talks.each do |talk|
 
-              - talk_slug = "#{conf_slug.parameterize}--#{talk.title.parameterize}"
+              - talk_label = "#{conf_label.parameterize}--#{talk.title.parameterize}"
 
               .vevent.talk
 
-                %h3.summary{:id => talk_slug}
-                  %a{:href => "##{talk_slug}"}
+                %h3.summary{:id => talk_label}
+                  %a{:href => "##{talk_label}"}
                     = talk.title
 
                 - if talk.location

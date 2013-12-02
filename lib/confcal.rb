@@ -60,7 +60,7 @@ class ConfCal < Middleman::Extension
 
       events = events.each do |year_label, year|
 
-        sorted_events[year_label] = year.sort_by do |conf_slug, conf|
+        sorted_events[year_label] = year.sort_by do |conf_label, conf|
           talk_times = [ conf.start ]
 
           if conf.talks
@@ -91,7 +91,7 @@ class ConfCal < Middleman::Extension
       @cur_ev[time_start][time_end] = events.each_with_object({}) do |(year_label, year), h|
         unless year_label[/schema/]
 
-          h[year_label] = year.select do |conf_slug, conf|
+          h[year_label] = year.select do |conf_label, conf|
             matches = false
 
             if conf.start
