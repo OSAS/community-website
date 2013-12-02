@@ -36,7 +36,7 @@ pageable: true
         - event_count = 0
 
         - current_events.each do |year_label, year|
-          - year.each do |conf_slug, conf|
+          - year.each do |conf_label, conf|
             - if conf.type && conf.type == 'series'
               - if conf.talks
                 - conf.talks.each do |talk|
@@ -47,7 +47,7 @@ pageable: true
                       %span.day= Date.parse(talk.start).strftime('%-d')
                       %span.month= Date.parse(talk.start).strftime('%b')
                     %dt.upcoming-event
-                      %a{:href => "/events/##{conf_slug.parameterize}--#{talk.title.parameterize}"}
+                      %a{:href => "/events/##{conf_label.parameterize}--#{talk.title.parameterize}"}
                         = talk.title
 
             - elsif conf.start
@@ -58,7 +58,7 @@ pageable: true
                   %span.day= conf.start.strftime('%-d')
                   %span.month= conf.start.strftime('%b')
                 %dt.upcoming-event
-                  %a{:href => "/events/##{conf_slug.parameterize}"}
+                  %a{:href => "/events/##{conf_label.parameterize}"}
                     = conf.name
 
         .more=link_to "View all current events&hellip;", "/events/"

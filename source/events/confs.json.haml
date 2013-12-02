@@ -10,7 +10,7 @@ layout: false
 
     unless year_label[/schema/]
 
-      conferences += year.map do |conf_slug, conf|
+      conferences += year.map do |conf_label, conf|
 
         time_pool = [
           Chronic::parse(conf.start),
@@ -33,7 +33,7 @@ layout: false
         if conf.type && conf.type == 'series'
           if conf.talks
             conf.talks.each do |talk|
-              fragment = "##{conf_slug.parameterize}--#{talk.title.parameterize}"
+              fragment = "##{conf_label.parameterize}--#{talk.title.parameterize}"
 
               item = {
                 title: talk.title,
@@ -50,7 +50,7 @@ layout: false
 
           nil # Conference-level data shouldn't be returned
         else
-          fragment = "##{conf_slug.parameterize}"
+          fragment = "##{conf_label.parameterize}"
 
           {
             title: conf.name,
