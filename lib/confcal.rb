@@ -59,20 +59,21 @@ class ConfCal < Middleman::Extension
       # FIXME: Sort talks also
 
       events = events.each do |year_label, year|
+
         sorted_events[year_label] = year.sort_by do |conf_slug, conf|
-          talk_times = []
+          talk_times = [ conf.start ]
 
           if conf.talks
             conf.talks.each do |talk|
               talk_time = Chronic::parse talk.start
-              talk_times.push talk_time.to_date if defined?(talk.start) && talk_time
+              talk_times.push talk_time.to_date if talk_time
             end
           end
 
-          talk_times.push conf.start.to_date if conf.start
-
-          talk_times.compact.min
+          # If no date in conf or talks: sort to bottom by faking far future
+          talk_times.compact.min || "3000-1-1".to_date
         end
+
       end
 
       sorted_events
