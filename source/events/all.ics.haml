@@ -27,7 +27,10 @@ layout: false
         conference.description = markdown_to_plaintext conf.description
 
         conference.start = conf.start
-        conference.end   = (conf.end || conf.start) # support 1-day confs
+
+        # DTEND is unintuitively day + 1 (next day) for date-only events
+        # according to RFC 5545 section 3.6.1 (page 53)
+        conference.end   = conf.end + 1 if conf.end
 
         if conf.talks
           talk_times = []
@@ -70,10 +73,10 @@ layout: false
           # Rewrite conference start and end based on talks,
           # if start and end times were not given
           if talk_times.min && !conference.start
-            conference.start = talk_times.min.split(/T/).first
+            conference.start = talk_times.min.split(/T/).first.to_date
           end
           if talk_times.max && !conference.end
-            conference.end = talk_times.max.split(/T/).first
+            conference.end = talk_times.max.split(/T/).first.to_date + 1
           end
 
         end
@@ -85,4 +88,4 @@ layout: false
 
   end
 
-= cal.to_ical
+= cal.to_ical.gsub(/(BEGIN:VEVENT)/, "\n\\0").gsub(/\r\n/, "\n")
