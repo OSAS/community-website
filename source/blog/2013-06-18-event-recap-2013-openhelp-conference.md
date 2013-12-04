@@ -14,9 +14,10 @@ tags:
 - StackOverflow
 ---
 
-[caption id="attachment_297" align="alignnone" width="604"][![Photo by Siobhan McKeown](https://community-osasteam.rhcloud.com/wp-content/uploads/2013/06/openhelpSiobhanMcKeown.jpg)](https://community-osasteam.rhcloud.com/wp-content/uploads/2013/06/openhelpSiobhanMcKeown.jpg) Photo by Siobhan McKeown[/caption]
-
 This weekend I attended the [Open Help Conference](http://openhelpconference.com/) in Cincinnati. It was smallish, and so there was a lot of good conversation and brainstorming. The focus was both documentation and support, which are, of course, deeply intertwined.
+
+![Photo by Siobhan McKeown](blog/openhelpSiobhanMcKeown.jpg)
+<center>_Photo by Siobhan McKeown_</center>
 
 Siobhan McKeown, from the Wordpress documentation team, was at the conference, and took amazing notes, so I'm going to link to her writeup for each talk.
 

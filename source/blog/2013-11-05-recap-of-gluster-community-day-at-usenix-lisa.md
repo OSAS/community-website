@@ -15,7 +15,7 @@ tags:
 - USENIX
 ---
 
-![orange-ant-250px](https://community-osasteam.rhcloud.com/wp-content/uploads/2013/11/orange-ant-250px-150x150.png) Yesterday we had the opportunity to run a Gluster Community Day at [USENIX LISA](https://www.usenix.org/conference/lisa13) in Washington D.C. Turns out it was well worth the time, as we had a fantastic group turn up for some really excellent talks.
+![orange-ant-250px](blog/orange-ant-250px-150x150.png) Yesterday we had the opportunity to run a Gluster Community Day at [USENIX LISA](https://www.usenix.org/conference/lisa13) in Washington D.C. Turns out it was well worth the time, as we had a fantastic group turn up for some really excellent talks.
 
 The crowd wasn't large, but it was clearly a group that was interested in GlusterFS and [associated projects](https://forge.gluster.org/), like [puppet-gluster](https://forge.gluster.org/puppet-gluster). Having the right crowd is almost always better than having a big, but disinterested, crowd.
 
