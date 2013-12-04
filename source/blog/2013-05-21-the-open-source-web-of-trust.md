@@ -24,17 +24,12 @@ With the aid of Josh Bressers, lead of Red Hat's Product Security Team, let's lo
 
 The basic argument, in simplified straw man form, looks like this:
 
-
-
-	
   * Open source is no more secure than closed source.
 
-	
   * You don't review every line of open source code; you trust the projects.
 
-	
-  * Since you don't review every line of code, trusting your closed source vendor is the same as trusting an open source project.
-
+  * Since you don't review every line of code, trusting your closed
+    source vendor is the same as trusting an open source project.
 
 This almost makes sense--but according to Josh, this is what actually happens:
 

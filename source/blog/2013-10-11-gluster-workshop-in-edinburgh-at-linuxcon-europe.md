@@ -19,8 +19,6 @@ If you're attending [LinuxCon Europe](http://events.linuxfoundation.org/events/l
 
 The program starts at a very reasonable 10 a.m. This full-day, free workshop includes talks on using Gluster with OpenStack, KVM/QEMU, and how to develop apps to integrate with GlusterFS. This is a chance for developers and admins to learn first-hand what GlusterFS and related open software-defined storage projects in the Gluster Community can accomplish in cloud and virtualized environments.
 
-
-
 	
   * State of Gluster (John Mark Walker)
 
@@ -35,6 +33,5 @@ The program starts at a very reasonable 10 a.m. This full-day, free workshop inc
 
 	
   * Developing Apps and Integrating with GlusterFS (Justin Clift)
-
 
 Please join us on October 24th at the Sheraton next to the Edinburgh International Conference Centre. Registration for the Gluster Workshop is free, sign up today on the [LinuxCon/CloudOpen sign-up page](https://www.regonline.com/Register/Checkin.aspx?EventID=1320865 ) (Note: Select "attendee" rather than speaker.)

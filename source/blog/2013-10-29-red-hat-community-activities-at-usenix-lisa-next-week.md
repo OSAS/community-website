@@ -21,8 +21,6 @@ First, on Monday, we have a [Gluster Community Day](https://glusterday-lisa.even
 
 We're also running two Birds of a Feather (BoF) sessions at LISA, and there's a community organized BoF that is also of interest:
 
-
-
 	
   * **Fedora BoF:** on [Wednesday from 7:30 to 8:30](https://www.usenix.org/conference/lisa13/birds-feather-sessions#fedora) in Lincoln 4
 
@@ -31,7 +29,6 @@ We're also running two Birds of a Feather (BoF) sessions at LISA, and there's a 
 
 	
   * **Red Hat System Administrators BoF**: Wednesday from 7:30 to 8:30 in Thurgood Marshall North
-
 
 There's also a Red Hat and a Fedora booth at LISA this year, come see us in 418 and 420. And don't miss the great talks at LISA given by Red Hatters, including:
 
@@ -43,6 +40,5 @@ There's also a Red Hat and a Fedora booth at LISA this year, come see us in 418 
 
 	
   * **[Secure Linux Containers](https://www.usenix.org/conference/lisa13/secure-linux-containers-thu)**: Dan Walsh
-
 
 See you in Washington, D.C.!

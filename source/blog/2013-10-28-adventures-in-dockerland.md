@@ -25,8 +25,6 @@ So, the last month or so I’ve been working on making Docker work in Fedora (an
 
 I started looking at possible replacements for the copy-on-write support, and there are a few possibilities availible:
 
-
-
 	
   * overlayfs
 
@@ -38,7 +36,6 @@ I started looking at possible replacements for the copy-on-write support, and th
 
 	
   * lvm thin provisioning
-
 
 Overlayfs is a different union filesystem implementation than AUFS, and the one that seems most likely to land upstream. But that is happening slowly, if at all. Long-term I think this is the best option, but right now it is out of the question.
 
@@ -69,7 +66,6 @@ So, we set up a single large block device on which we create a device-mapper “
 
 	
   6. Mount it and use as the root in the new container.
-
 
 And of course, these devices will be reused (with corresponding steps skipped) as needed by other images/containers.
 

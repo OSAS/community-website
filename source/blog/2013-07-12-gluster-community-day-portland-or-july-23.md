@@ -14,8 +14,6 @@ We have an amazing [community day scheduled in Portland, OR](http://glusterday-p
 
 Here are just a few of the highlights:
 
-
-
 	
   * Theron Conrey will talk about the integration points between [OpenStack](http://www.openstack.org/) and GlusterFS
 
@@ -39,7 +37,6 @@ Here are just a few of the highlights:
 
 	
   * Last, but not least, I’ll talk about the state of the Gluster community, the imminent release of GlusterFS 3.4, and the Gluster Forge
-
 
 If you’re interested in OpenStack, CloudStack, Hadoop, and how they intersect with GlusterFS, this will be a great day for learning.
 

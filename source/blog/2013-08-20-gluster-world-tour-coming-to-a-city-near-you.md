@@ -21,8 +21,6 @@ What is a ‘Gluster Community Day?’ It’s a day for in-depth sessions, use c
 
 We have several upcoming, and many more that we’re planning. Below is a list of those that we have locked in – check back at gluster.org/meetups/ or meetup.com/Gluster to always see the latest list:
 
-
-
 	
   * [August 27 – San Francisco](http://www.meetup.com/GlusterFS-Silicon-Valley/events/124722542/) – Rackspace has generously agreed to host this Community Day
 
@@ -37,7 +35,6 @@ We have several upcoming, and many more that we’re planning. Below is a list o
 
 	
   * [October 24 – Edinburgh, Scotland](http://events.linuxfoundation.org/events/linuxcon-europe) – Co-located with LinuxCon/CloudOpen Europe
-
 
 And we’re actively seeking venues in Germany, France, Netherlands, Hong Kong, Singapore, Seoul, Bangalore, Chennai and Taipei. If you’d like to submit a venue for consideration, please send it to cfp (at) gluster.org
 

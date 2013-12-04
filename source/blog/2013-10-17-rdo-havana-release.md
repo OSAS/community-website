@@ -16,11 +16,7 @@ tags:
 
 RDO congratulates the OpenStack Foundation on the [release of OpenStack 2013.2, code named Havana](http://www.openstack.org/software/havana/press-release), the latest version of the OpenStack cloud platform.
 
-
-
-
 And, right on the heels of that, we're pleased to announce RDO Havana, our packaging of OpenStack Havana for easy deployment on Red Hat derivative operating systems - RHEL, Fedora, CentOS, Scientific Linux, and other RPM-based linux distributions. You can obtain and deploy RDO Havana immedately using the instructions at [http://openstack.redhat.com/QuickStartLatest](http://openstack.redhat.com/QuickStartLatest)  (Note: The RDO Havana package hasn't gone GA just yet, but we'll have the upstream release packaged up real soon.)
-
 
 OpenStack Havana introduces new functionality, and numerous improvements to existing functionality, and was created by contributors from over 100 different companies, as well as numerous independent developers, making thousands of different changes since the Grizzly release in April. (See [http://www.stackalytics.com/](http://www.stackalytics.com/) if you're into statistics.) We're very proud to have been part of that, and we have a lot to be proud of.
 
@@ -40,14 +36,9 @@ Looking forward, we're excited about what's coming in future releases. And the b
 
 * Savanna: enables deployment of Hadoop clusters on top of OpenStack.
 
-
 * Marconi: queuing and notification services.
 
-
-
-
 * TripleO: operating OpenStack clouds running on top of OpenStack
-
 
 and so many more. We're closely watching these projects, and participating in many of them, so that we can help create that future. Because, while the RDO project is about packaging and distributing upstream OpenStack, most of the folks involved in RDO are also actively working on the next release of OpenStack, even as we are celebrating this release.
 

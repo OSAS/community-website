@@ -21,4 +21,3 @@ Many thanks to all the people who participated, and helped make RDO, as well as 
 
 We'll be holding these test days on a regular basis, so watch the [RDO Forum](http://openstack.redhat.com/forum/), or follow us on [Twitter](http://twitter.com/rdocommunity), for word of the next one, which is tentatively scheduled for October 29th/30th following the Havana release.
 
-

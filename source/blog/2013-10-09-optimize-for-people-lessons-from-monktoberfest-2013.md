@@ -25,17 +25,13 @@ Instead of splitting into multiple tracks, the [official schedule](http://lanyrd
 
 Blissfully, the conference starts at 10 a.m. instead of the usual early morning start. It'd be nice to see other conferences take a cue from Monktoberfest on this. When you're attending a tech conference, you're almost certainly going to be out later than you would when you're in your normal work schedule. There's also the matter of having most of your day consumed with the conference instead of regular work – meaning that an extra hour in the morning for calls or email is a life-saver.
 
-
 ## Standout Talks
-
 
 The speaker line-up at Monktoberfest has always been impressive, but I also appreciate that the line-up changes dramatically from year to year. Some conferences tend to have the same folks speaking every year – but this year's slate of speakers is entirely different than [last year's](http://lanyrd.com/2012/monktoberfest/). (Excepting Stephen O'Grady, but he was emceeing the event, not giving a prepared talk.)
 
 Thinking about a startup? Zack Urlocker's "Scaling the Machine" talk and Alex Payne's "[Letter to a Young Programmer](https://al3x.net/2013/05/23/letter-to-a-young-programmer.html)" address two aspects of startup life. Urlocker tackling the practical, Payne providing insight to counter the romantic view and conventional wisdom of working at startups.
 
 Urlocker provided some advice and insight that would be good not only for those thinking about or running a startup, but also for those who run/work with open source projects. For example:
-
-
 
 	
   * Start with a minimum viable product.
@@ -54,7 +50,6 @@ Urlocker provided some advice and insight that would be good not only for those 
 
 	
   * Velocity trumps everything.
-
 
 Another stand-out was Deirdré Straughan's [Marketing Your Tech Talent](http://www.slideshare.net/deirdrestraughan/marketing-your-tech-talent-26841731). Safe to say, having worked as a tech journalist and for companies trying to promote their technologies, Straughan's advice is both excellent and underutilized.
 
@@ -76,9 +71,7 @@ Kids start with Scratch programming, and move on to designing their own Websites
 
 The biggest hurdle? Finding enough volunteers to reach all the kids that are interested. Sandvik spent some time during her presentation to encourage the audience to volunteer.
 
-
 ## A Word About the Beer
-
 
 Sandvik's talk brought us around full circle, really, to the core of Monktoberfest: get the right people together over a beer (or several) and good things can happen.
 
