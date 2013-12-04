@@ -21,16 +21,12 @@ http://www.youtube.com/watch?v=dy8lPtZ7B14
 
 The Gluster framework makes use of the app "prove" which is provided, for Fedora and related OSes, by the package "perl-Test-Harness." (note: to figure out which package to install, I used the command "yum provides prove")
 
-    
     sudo yum install -y perl-Test-Harness
-
 
 To get the test framework itself, I headed over to the [shiny new Gluster Forge](http://www.gluster.org/2013/04/introducing-the-gluster-community-forge/) to grab the source code, pull it down, to my test machine, and check out the 3.4 release branch:
 
-    
     git clone git://forge.gluster.org/glusterfs-core/glusterfs.git
     git checkout origin/release-3.4
-
 
 When Gluster Fest commences, there will be new glusterfs 3.4 beta 1 packages to install and test out, but for my pre 'Fest test, I built new packages from the source I pulled down from git.
 
@@ -38,34 +34,24 @@ My colleague [Justin Clift](https://twitter.com/realjustinclift) has written up 
 
 With my freshly-built glusterfs, glusterfs-server & glusterfs-fuse packages installed, I entered the glusterfs source directory and ran one of the "basic" tests. Note: before you run any of these tests, be aware that they delete "/var/lib/glusterd/*" in the course of creating test volumes and data and cleaning up after themselves. For more README-type information, [see the README](https://forge.gluster.org/glusterfs-core/glusterfs/blobs/master/tests/README).
 
-    
     cd glusterfs
     sudo prove ./tests/basic/bd.t
 
-
 The test returned a passing result, which is great, but kind of boring. More interestingly, the second test I ran did not run successfully:
 
-    
     sudo prove ./tests/basic/mount.t
-
 
 This test returned an error while attempting to mount a test volume over the NFS protocol, which is one of the ways you can consume Gluster storage.
 
-    
     mount.nfs: access denied by server while mounting MY_HOSTNAME:/patchy
-
 
 Debugging time! Following guidance gleaned from the #gluster irc channel, I edited the mount.t test file to add a line containing "set -x" following the first instance of "cleanup;" in the file. I ran the test again, and it spit out a good deal more output, including the command being run to try and mount the volume:
 
-    
     mount -t nfs -o vers=3,nolock,soft,intr MY_HOSTNAME:/patchy /mnt/nfs/0
-
 
 I could see that the test was, rightly, attempting to mount the volume with NFS version 3 (Gluster's built-in NFS server doesn't support version 4), so that wasn't the problem. I also checked my SELinux log for denials (sudo tail -f /var/log/audit/audit.log | grep denied) and didn't find any issues. I consulted my /var/log/messages as well, and found the following error message:
 
-    
     rpc.mountd[5465]: refused mount request from MY_IP_ADDRESS for /patchy (/patchy): unmatched host
-
 
 After a little while Googling around, I remembered something I'd encountered while tangling with [Gluster / oVirt integration last year](http://blog.jebpages.com/archives/ovirt-3-1-glusterized/): Gluster's NFS server doesn't play nice with another running NFS server. I checked to see if I had an NFS server running on my test machine (sudo service nfs-server status), and, sure enough, I did.
 

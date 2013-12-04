@@ -12,8 +12,4 @@ categories:
 
 Free and open source creates better software. That's why Red Hat collaborates to build better technology the open source way, regardless of where it is hosted or who started it.
 
-
-
-
-
 We collaborate, and the best technology wins. That's good -- not just for Red Hat, but for everyone.

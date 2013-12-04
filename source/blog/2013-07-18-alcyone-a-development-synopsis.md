@@ -19,7 +19,6 @@ tags:
 
 ## Purpose
 
-
 The Alcyone is a home-built MIDI controller, using the Raspberry Pi as a central controlling component.
 
 ![alcyone](blog/alcyone.jpg)
@@ -30,9 +29,7 @@ Notes taken during the development of the Alcyone can be found on my blog using 
 
 Source code for the project (including this document and a [Fritzing](http://fritzing.org/) schematic) can be found on [GitHub](https://github.com/jottinger/alcyone). The progenitor project of the Alcyone, based on the [Arduino Uno](http://arduino.cc/en/Main/ArduinoBoardUno), is also available on GitHub under the repository name of [Frankenpedal](https://github.com/jottinger/frankenpedal) - this code is not likely to be useful, but it might be interesting for historical purposes, and Arduino users may be able to use some of its features for other projects.
 
-
 ### Rationale
-
 
 The Alcyone was designed with two primary purposes in mind.
 
@@ -46,9 +43,7 @@ Another secondary purpose was to look at how an open source mindset might be app
 
 Platforms like [Fedora](http://fedoraproject.org) provided an ecosystem in which this kind of approach is very much the norm, so there's little work involved in encouraging participation; users in these communities **expect** to participate, which is not only useful but very encouraging.
 
-
 ### The Name
-
 
 "Alcyone" is pronounced "al-SEE-on-ee." The _correct_ pronunciation of the word is "al-SIGH-on-ee," but I prefer my pronunciation because it’s easier... as you'll see from this explanation.
 
@@ -59,8 +54,6 @@ The Taurus was originally designed as a part of a synthesizer ensemble from Moog
 The Taurus, however, became very popular, through its use in bands like Rush, Genesis, ELP (from whom the explanation of the Constellation comes) and others.
 
 "Alcyone" as a name followed this linear thought:
-
-
 
 	
   1. Taurus is a constellation, and the Taurus synthesizer was part of an ensemble called the "Constellation."
@@ -74,36 +67,23 @@ The Taurus, however, became very popular, through its use in bands like Rush, Ge
 	
   4. Taurus' _next_ brightest star is Alcyone, one of the Pleiades; Alcyone is the name of a Greek tragic heroine, so there’s some measure of appeal for mythology's sake as well.
 
-
 The warped pronunciation came from "halcyon," which is a variant of (the mythological) Alcyone's name; "halcyon" uses the "ee" form of the "y," and it's easier for me to pronounce, to boot.
 
-
 ### Scope
-
 
 The Alcyone is "merely" a MIDI controller; it does not generate any sound in and of itself, although this would be a welcomed capability.
 
 This is discussed further in "Onboard Sound."The actual processing power is provided through a [Raspberry Pi](http://raspberrypi.org), and the Raspberry Pi's audio output is only 11 bits, which is better than, say, a Nintendo DS or some ancient digital synthesizers, but is far inferior to CD quality, and is nowhere near what I would like for actual audio creation.
 
-
 ## Terms
-
-
-
 
 ### MIDI
 
-
 [MIDI](http://www.midi.org) stands for "Musical Instrument Digital Interface," and is an industry-standard protocol for electronic instruments. It is based on three types of events (note events, control events, and global events) and uses a serial connection at 31250 baud.
-
 
 ## Architecture
 
-
-
-
 ### Hardware
-
 
 The Alcyone uses a very simple internal electronic design.
 
@@ -129,9 +109,7 @@ The pedals are connected to power (+5v) and wired to the MCP23008s; the digital 
 
 A powered USB hub is also part of the hardware installation; the hub has one device installed, a wireless networking dongle. The powered hub is necessary because the Raspberry Pi does not carry enough current to reliably power most wireless dongles.
 
-
 #### Why Wireless TCP/IP?
-
 
 The wireless networking is part of a software choice made fairly early in the implementation cycle.
 
@@ -153,15 +131,11 @@ For this, I used two packages: `[hostapd](http://hostap.epitest.fi/hostapd/)` an
 
 Setting up the network after installation of these packages was trivial. Honestly, the documentation from eLinux.org is done well enough to follow literally.
 
-
 ### Software
-
 
 The software for the Alcyone comes in two artifacts: the actual embedded code (the code running on the Raspberry Pi) and an external client app (currently targeted towards Android).
 
-
 #### Embedded Software
-
 
 The embedded platform is running a single application, called "alcyone" of all things, written in [C++](http://cplusplus.com). C++ was chosen because the original test program was written on an Arduino Uno, which tends to encourage the use of Arduino "sketches," which are themselves a form of C++ code (mostly with really odd library support).
 
@@ -194,7 +168,6 @@ Therefore, if the current octave is 3, and the transposition setting is 1 (meani
     
     2 + 3*12 + 1 = 39
 
-
 This actually yielded a bug in the initial demonstration of the Alcyone. If the transposition settings were changed while a note was being played, the "note off" event would be for the wrong note! The reason should be fairly apparent.
 
 Assume the "note on" event is for note 39 (as in the calculation above). Now let us set the transposition to 0 (i.e., reset it). Now, when the pedal is released, the "note off" value is calculated… at 38, instead of 39.
@@ -204,8 +177,6 @@ The "note off" event thus doesn't correspond to the "note on" event, and therefo
 This is corrected by the use of another data element, the "last note sent by this pedal." Thus, note off events take the note value from this dataset, rather than recalculating the note value when the pedal is released.
 
 Thus, the pedal press/release cycle follows this process:
-
-
 
 	
   1. Physically depress pedal (poor, sad pedal)
@@ -225,7 +196,6 @@ Thus, the pedal press/release cycle follows this process:
 	
   6. Send MIDI off based on the note in the internal array
 
-
 MIDI actually required a number of changes to the Linux configuration for the Raspberry Pi.
 
 The Pi's serial driver does not actually support 31250 baud, the baud rate required by the MIDI specification. Therefore, I had to [overclock the serial chip](http://www.enigmastation.com/posts/alcyone-beta-midi-end-to-end-with-the-raspberry-pi/), by modifying `/boot/config.txt`:
@@ -234,13 +204,11 @@ The Pi's serial driver does not actually support 31250 baud, the baud rate requi
     init_uart_clock=2441406
     init_uart_baud=38400
 
-
 Next, I needed to disable the serial console, which uses the RX/TX pins that I needed for MIDI, through modification of `/boot/cmdline.txt`:
 
     
     dwc_otg.lpm_enable=0 console=tty1 console=tty1 root=/dev/mmcblk0p2 /
     rootfstype=ext4 elevator=deadline rootwait bcm2708.uart_clock=3000000
-
 
 Lastly, I needed to disable the TTY that would normally get assigned to the RX/TX pins, as well, by modifying `/etc/inittab`:
 
@@ -248,155 +216,39 @@ Lastly, I needed to disable the TTY that would normally get assigned to the RX/T
     #Spawn a getty on Raspberry Pi serial line
     #T0:23:respawn:/sbin/getty -L ttyAMA0 115200 vt100
 
-
 The last thread is a simple web server, based on [web++.hpp](http://konteck.github.io/wpp/). This is an #include file (thus the ".hpp") that provides HTTP services; the Alcyone application provides one web service endpoint (mapped to the root url, so "/"), which looks for an HTTP parameter, "message."
 
 This parameter is a number, which corresponds to a simple wire protocol for the Alcyone’s services. The number is an encoded byte, based on the following table:
-
-
-
-
-
-
-
-
-
 
 Message
 Payload
 Notes
 
-
-
-
-
-
-
-
-
-
 `MSG_MIDI_RESET`
-
-
-
-
-
 
 _0001 xxxx_
 
-
-
-
-
-
-
-
-
-
-
-
 `MSG_MIDI_CHANNEL_CHANGE`
-
-
-
-
-
 
 _0010 vvvv_
 
-
-
-
-
-
-
-
-
-
-
-
 `MSG_MIDI_OCTAVE_CHANGE`
-
-
-
-
-
 
 _0100 vvvv_
 
-
-
-
-
-
-
-
-
-
-
-
 `MSG_MIDI_TRANSPOSITION_CHANGE`
-
-
-
-
-
 
 _1000 vvvv_
 
-
-
-
-
-
-
-
-
-
-
-
 `MSG_RESET`
-
-
-
-
-
 
 _1111 xxxx_
 
-
-
-
-
-
-
-
-
-
-
-
 `MSG_REQUEST_STATUS`
-
-
-
-
-
 
 _0011 xxxx_
 
-
-
-
-
-
 Responds with three bytes: octave, transposition, channel
-
-
-
-
-
-
-
 
 In this table, _xxxx_ is an "ignored value," _vvvv_ is "down if zero".
 
@@ -404,9 +256,7 @@ The server is a simple loop; it processes a request, has an internal `switch/cas
 
 No matter what the requested operation is, the Alcyone responds with three integers in plain text, which correspond to the current octave, the current transposition setting, and the current MIDI channel.
 
-
 #### External Client Software
-
 
 The external Alcyone client is written as an [Android](http://www.android.com) application.
 
@@ -416,17 +266,13 @@ A menu offers access to two more features (MIDI and device resets) as well as a 
 
 Every time one of the buttons is pressed (or one of the resets is used) an HTTP request with the command is sent to the Alcyone; the response will always contain the current device status, so the data is refreshed and redisplayed.
 
-
 ### Ergonomics
-
 
 An implemented schematic and working software (both embedded and external) are all well and good, but they all ignore the actual aspect of _playing_ the Alcyone.
 
 The Alcyone is designed to be played by standing guitarists (because I tend to stand when I play guitar, of course.) It is not likely to be played with delicacy.
 
 In order to be useful, it needs to be mounted in a case that offers the following qualities:
-
-
 
 	
   1. Must be heavy enough to allow stability for the pedals. It would be unfortunate for the musician if the pedals moved during performance (as many stage configurations are laid out for the convenience of the performer, and often monitors are aimed in specific ways). It would be even less fortunate for an audience member if the Alcyone were to somehow be launched at him or her.
@@ -437,22 +283,17 @@ In order to be useful, it needs to be mounted in a case that offers the followin
 	
   3. Must have the pedals low enough so that the musician’s ankle is comfortable while playing the instrument.
 
-
 Two of the pedals actually broke in shipping, which I can't (and wouldn't) blame on the seller; the parts were packed about as well as they could have been (with perhaps the exception of blown foam, but... really.)
 
 I ended up taking wood for a picket fence and cutting it down to size to match the existing pedals (roughly six inches long) and replacing all of the "white keys" with the wooden keys. These are more likely to be immediately durable than the original organ pedals (which would be decades old), although there's probably still room for improvement.
 
 As for the actual external container, the Alcyone received a wooden case built from 2x4 wood and shellacked fencing; this gives it a rustic look (which has its own appeal, for various reasons) and is tough enough to handle rough treatment. With proper reinforcement, the Alcyone is strong enough for an adult to stand on, although I definitely wouldn't recommend jumping on it.
 
-
 ## Improvements
-
 
 As a working testing environment (a functional ongoing experiment, if you like), the Alcyone has a number of areas in which it can gain new features. Some features are appropriate for the actual physical form factor; others are generic to MIDI controllers and thus would be appropriate to devices that use the Alcyone's basic electronic architecture.
 
-
 ### Onboard Sound
-
 
 The first enhancement, and by far the one asked about most, is the potential for onboard sound generation.
 
@@ -474,9 +315,7 @@ While still desirable at some point, until the Pi supports both better audio and
 
 With that said, future designs should probably consider addressing this, assuming their onboard audio is of higher quality.
 
-
 ### Pressure Sensitivity
-
 
 The Alcyone's original conception was that of bass pedals. Typically, bass notes don't use a _lot_ of dynamic range, and as the device is played with feet, dynamics aren't likely to matter anyway. (Usually you're stepping on the darned thing with most of your weight.)
 
@@ -490,9 +329,7 @@ There are certainly ways to address pressure and velocity, using ADC converters 
 
 It's possible that reading the converted data (from the analog input to digital form) is too slow for a full keyboard - I haven't tested. It’s something to think about.
 
-
 ### Platform-neutral external client
-
 
 The external client right now runs on Android, largely because that's the type of device I have. However, many musicians use Apple devices (the [iPhone](http://www.apple.com/iphone/) and [iPad](http://www.apple.com/ipad/)).
 
@@ -504,9 +341,7 @@ Probably any web server would do, because loads would be _very_ infrequent.
 
 With that said, however, the possibility of Bluetooth as a network transport works against this idea.
 
-
 ### Bluetooth instead of wireless TCP/IP
-
 
 TCP/IP is trivial. However, the TCP/IP dongles available _typically_ consume more power than the Raspberry Pi can reliably deliver. (There are some that are rated low-power enough that the Pi can indeed use them, provided other power drains aren't too high.)
 
@@ -516,9 +351,7 @@ Another alternative is the use of Bluetooth, which has broadcasting dongles that
 
 This is probably preferable to TCP/IP; I just haven't purchased a Bluetooth dongle with which to test (yet), and the software stack would also become more complex.
 
-
 ## Summary
-
 
 The Alcyone was built as a device to fulfill two basic requirements.
 

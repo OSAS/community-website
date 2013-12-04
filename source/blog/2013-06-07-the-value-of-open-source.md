@@ -10,7 +10,7 @@ categories:
 - Blog
 ---
 
-_These are notes related to the presentation ["Community Catalysts: The Value of Open Source Community Development"](http://www.redhat.com/summit/sessions/index.html#424), to be presented by Dave Neary at the Red Hat Summit 2013, in Boston on Wednesday, June 12th, at 3:40pm EDT - if you're at the summit be sure to attend!_
+_These are notes related to the presentation ["Community Catalysts: The Value of Open Source Community Development"](http://www.redhat.com/summit/sessions/index.html#424), to be presented by Dave Neary at the Red Hat Summit 2013, in Boston on Wednesday, June 12th, at 3:40pm EDT -- if you're at the summit be sure to attend!_
 
 Red Hat is an open source company. Everything we do is open source. We "do" open source software because we see value in it.
 

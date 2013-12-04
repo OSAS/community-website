@@ -20,12 +20,7 @@ LinuxCon and CloudOpen Europe are just a few days away, and the line-up for talk
 
 The [full schedule is on Sched.org](http://linuxconcloudopeneu2013.sched.org/), which makes it really easy to keep track of the talks you don't want to miss. Also, don't miss the [Gluster Workshop](http://community.redhat.com/gluster-workshop-in-edinburgh-at-linuxcon-europe/) on Thursday.
 
-
 ## Monday, October 21
-
-
-
-
 
 	
   * **[11:00am New Storage Technologies and Linux: Shingled Drives and Persistent Memory](http://linuxconcloudopeneu2013.sched.org/event/7bcdab7c08484c8613c7ca62c85e43d6)** – Ric Wheeler
@@ -39,14 +34,7 @@ The [full schedule is on Sched.org](http://linuxconcloudopeneu2013.sched.org/), 
 	
   * **[4:40pm Everything I Know About the Cloud, I Learned from Game of Thrones](http://linuxconcloudopeneu2013.sched.org/event/0bddce7fb84f372780d06d1c03175262)** – Joe Brockmeier
 
-
-
-
 ## Tuesday, October 22
-
-
-
-
 
 	
   * **[10:50am An Introduction to OpenDaylight's First Release](http://linuxconcloudopeneu2013.sched.org/event/c3bc1d3a71a68e2d6e4adba4e014787f)** – Chris Wright
@@ -69,14 +57,7 @@ The [full schedule is on Sched.org](http://linuxconcloudopeneu2013.sched.org/), 
 	
   * **[4:50pm Linux and New Storage Challenges: Adapting to Faster and Larger Storage](http://linuxconcloudopeneu2013.sched.org/event/1d0bb4a4eb79823a9717a1c37f9f9902)** – Ric Wheeler
 
-
-
-
 ## Wednesday, October 23
-
-
-
-
 
 	
   * **[11:15am Empowering Data Center Virtualization Using KVM](http://linuxconcloudopeneu2013.sched.org/event/fd38c73d59fe7dd9db74135dd53f236b)** – Livnat Peer
@@ -107,5 +88,4 @@ The [full schedule is on Sched.org](http://linuxconcloudopeneu2013.sched.org/), 
 
 	
   * **[4:50pm Make Your Mobile Web App Go Hybrid with Apache Cordova](http://linuxconcloudopeneu2013.sched.org/event/8e02c72f970fb8b7ed9664847ce0c0ce)** – Shekhar Gulati
-
 
