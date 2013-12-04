@@ -194,7 +194,7 @@ For many attendees, Thursday was the last day at Akademy, although there were so
 
 
 
-![RH_akademy](http://community.redhat.com/wp-content/uploads/2013/08/RH_akademy.jpg)
+![RH_akademy](blog/RH_akademy.jpg)
 
 
 

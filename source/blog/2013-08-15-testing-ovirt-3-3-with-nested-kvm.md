@@ -52,13 +52,13 @@ Next, you need to enable the mac-spoofing option in oVirt’s web admin console,
 After vdsm restarts, you can check to see that your hooks are installed in your host’s "Host Hooks" tab:
 
 
-![hookemvdsm.png](http://community.redhat.com/wp-content/uploads/2013/08/hookemvdsm.png)
+![hookemvdsm.png](blog/hookemvdsm.png)
 
 
 With the nestedvt vdsm hook installed, every guest launched from your nested-enabled hosts will inherit its own KVM-hosting capability. To enable the mac-spoofing, you have to visit the Custom Properties tab of the Edit Server Virtual Machine dialog, select "macspoof" from the "Please select a key" dropdown menu, and set the value to "true."
 
 
-![macspoof.png](http://community.redhat.com/wp-content/uploads/2013/08/macspoof.png)
+![macspoof.png](blog/macspoof.png)
 
 
 On my test machine, an HP ProLiant DL380p Gen8 with Sandybridge-family processors, I found that shortly after launching Fedora guest VM on my nested KVM hypervisor, the nested guest would pause and refuse to re-start. Casting about online for a solution, I found other, similar-sounding nested VM pause reports, with a suggested solution of running the problematic VMs with a earlier processor definition.
@@ -66,7 +66,7 @@ On my test machine, an HP ProLiant DL380p Gen8 with Sandybridge-family processor
 I got around this issue by changing the processor definition for my guest hypervisor from Sandybridge to Nehalem. oVirt makes this switch fairly easy — I took care of it by changing my cluster CPU type Sandybridge to Nehalem.
 
 
-![clusterchange.png](http://community.redhat.com/wp-content/uploads/2013/08/clusterchange.png)
+![clusterchange.png](blog/clusterchange.png)
 
 
 Nested KVM comes with a performance hit, but I’ve had no trouble testing oVirt (and other forms of KVM-based virtualization, such as OpenStack) in oVirt-hosted virtual machines.

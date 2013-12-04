@@ -22,7 +22,7 @@ tags:
 
 The Alcyone is a home-built MIDI controller, using the Raspberry Pi as a central controlling component.
 
-![alcyone](http://community.redhat.com/wp-content/uploads/2013/07/alcyone.jpg)
+![alcyone](blog/alcyone.jpg)
 
 The Alcyone is an ongoing design, so this document will address not only existing components, but will also address potential future enhancements. Rationales for architectural choices will be offered where appropriate, with the understanding that some choices were made "just because," out of ignorance, necessity, or mere personal preference.
 

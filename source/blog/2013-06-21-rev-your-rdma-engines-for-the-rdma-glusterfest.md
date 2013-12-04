@@ -25,7 +25,7 @@ As an added bonus, use the [gluster-users mailing list](http://supercolony.glust
 Find a new bug that is confirmed by the Gluster QE team, and I’ll send you a free t-shirt (see image below).
 
 
-![gluster-shirt.png](http://community.redhat.com/wp-content/uploads/2013/06/gluster-shirt.png)
+![gluster-shirt.png](blog/gluster-shirt.png)
 
 
 Testing is underway now, and wraps up at 00:00 UTC on Saturday, June 22 (aka 5pm PT/8pm ET on Friday, June 21).

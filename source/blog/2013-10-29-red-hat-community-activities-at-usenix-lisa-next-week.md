@@ -15,7 +15,7 @@ tags:
 - USENIX LISA
 ---
 
-![USENIX LISA '13](https://community-osasteam.rhcloud.com/wp-content/uploads/2013/10/lisa13_banner_lucky_125.png)USENIX LISA 13 is rapidly approaching. Now in its 27th year (!) the Large Installation System Administration (LISA) Conference is going to be held in Washington D.C. from November 3rd through 8th, with a number of activities and talks of interest to Red Hat communities.
+![USENIX LISA '13](blog/lisa13_banner_lucky_125.png)USENIX LISA 13 is rapidly approaching. Now in its 27th year (!) the Large Installation System Administration (LISA) Conference is going to be held in Washington D.C. from November 3rd through 8th, with a number of activities and talks of interest to Red Hat communities.
 
 First, on Monday, we have a [Gluster Community Day](https://glusterday-lisa.eventbrite.com/). It's free to attend, but seats are limited - so make sure to sign up right away. Note that you don't have to be attending the rest of LISA to attend.
 
