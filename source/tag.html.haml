@@ -51,4 +51,4 @@ per_page: 12
 
   .tag-cloud
     - blog.tags.sort_by {|tag_name, d| tag_name.downcase}.each do |tag_name, tag_data|
-      %span.tag= link_to tag_name, "/blog/tag/#{tag_name.downcase}/", style: tag_size(tag_data.count, min_size, max_size)
+      %span.tag= link_to tag_name, "/blog/tag/#{tag_name.parameterize.downcase}/", style: tag_size(tag_data.count, min_size, max_size)
