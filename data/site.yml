@@ -1,6 +1,7 @@
 name: Red Hat Open Source Community
 domain: community.redhat.com
 logo: logo.png
+twitter: redhatopen
 
 # optional, set to true if your site uses SSL by default
 #ssl: true
