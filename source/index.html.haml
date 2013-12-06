@@ -2,6 +2,9 @@
 pageable: true
 ---
 
+- content_for :head do
+  %link(href="/blog/feed.xml" rel="alternate" title="Atom feed" type="application/atom+xml")
+
 - if defined? page_number && page_number < 2
 
   .mission
