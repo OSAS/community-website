@@ -17,8 +17,10 @@ installed.)
 
 ### As user
 
+`git submodule init && git submodule update`
 `bundle`
 
+If you clone the repo with `--recursive`, you can skip the submodule step above.
 
 ## Updating
 
