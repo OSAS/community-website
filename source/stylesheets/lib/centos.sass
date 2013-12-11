@@ -46,8 +46,9 @@
       margin: 1em 0
 
   @media screen and (min-width: 60em)
+    $gutter: 4ex
+
     .sect2:not(:first-child) .sect3
-      $gutter: 4ex
       width: 50%
       float: left
 
@@ -57,3 +58,18 @@
 
       &:nth-child(odd)
         padding-left: $gutter/2
+
+    .section_centos_and_variants + .sect2 .sect3
+      clear: none !important
+
+      &:not(:first-child)
+        padding-left: $gutter/2
+        padding-right: 0
+
+    // Hardcode to not be a floater (reset half-page layout)
+    .section_general_questions + .sect2 .sect3
+      float: none
+      margin-left: 0
+      margin-right: 0
+      padding: 2em 0 0 !important
+      width: 100%
