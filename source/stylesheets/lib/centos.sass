@@ -48,23 +48,36 @@
   @media screen and (min-width: 60em)
     $gutter: 4ex
 
+    %content-half-left
+      clear: both
+      padding-right: $gutter/2
+      padding-left: 0
+
+    %content-half-right
+      padding-right: 0
+      padding-left: $gutter/2
+
     .sect2:not(:first-child) .sect3
       width: 50%
       float: left
 
       &:nth-child(even)
-        clear: both
-        padding-right: $gutter/2
+        @extend %content-half-left
 
       &:nth-child(odd)
-        padding-left: $gutter/2
+        @extend %content-half-right
 
-    .section_centos_and_variants + .sect2 .sect3
-      clear: none !important
+    // Special-case Variants in action
+    // (due to the huge text of the first answer)
+    .section_centos_and_variants
+      + .sect2 .sect3
+        clear: none !important
+        &:nth-child(even)
+          @extend %content-half-right
 
-      &:not(:first-child)
-        padding-left: $gutter/2
-        padding-right: 0
+      + .sect2 h3 + .sect3
+        &:nth-child(even)
+          @extend %content-half-left
 
     // Hardcode to not be a floater (reset half-page layout)
     .section_general_questions + .sect2 .sect3
