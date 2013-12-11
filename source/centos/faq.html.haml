@@ -1,0 +1,43 @@
+---
+---
+
+:ruby
+  doc = Asciidoctor::Document.new open("#{root}/source/centos/faq-document.ad")
+  html = Nokogiri::HTML doc.render
+
+-# Really, this should be in <body>, but CSS doesn't care, so it's a workaround
+%section.source-ad.centos_faq
+
+  -# Title & preamble
+  %h1= doc.doctitle
+  = html.css('#preamble')
+
+
+  -# Table of contents
+  %ul.toc#toc
+    - html.css('.sect1').each do |section|
+      - heading = section.css('h2')
+
+      %li.section.sectlevel1
+        = link_to heading.text, "##{heading.attr('id')}"
+
+        - subsections = section.css('.sect2')
+
+        - if subsections.count > 0
+          %ul.subsection.sectlevel2
+            - subsections.each do |subsection|
+              - heading = subsection.css('h3')
+              %li= link_to heading.text, "##{heading.attr('id')}"
+
+
+  -# Output the sections & top links
+  - html.css('.sect1').each do |section|
+
+    - subsections = section.css('.sect2').remove
+
+    = section
+    =# link_to "Back to top", "#toc", class: "top"
+
+    - subsections.each do |subsection|
+      = subsection
+      = link_to "Back to top", "#toc", class: "top"
