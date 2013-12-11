@@ -6,32 +6,30 @@ as "bundler".
 
 ## Initial setup
 
-On Fedora, you can run:
+```bash
+sudo yum install -y ruby-devel rubygems gcc-c++ curl-devel rubygem-bundler
+git clone --recursive git@gitlab.osas.lab.eng.rdu2.redhat.com:garrett/community-middleman.git
+cd community-middleman
+bundle install
+```
 
-### As root
-
-(Only necessary if you don't have ruby, ruby gems, and bundler
-installed.)
-
-`sudo yum install -y ruby-devel rubygems gcc-c++ curl-devel rubygem-bundler`
-
-### As user
-
+If you don't clone the repo with `--recursive`, make sure to run
 `git submodule init && git submodule update`
-`bundle`
-
-If you clone the repo with `--recursive`, you can skip the submodule step above.
-
-## Updating
-
-When there are new gems in `Gemfile`, just run `bundle` again.
 
 
 ## Running
 
 As we're using gems locally with bundler, you need to run via `bundle exec`:
 
-`bundle exec middleman`
+`bundle exec middleman server`
+
+('server' is optional, but it helps if you're going through
+command-history in bash or zsh with control-r)
+
+
+## Updating
+
+When there are new gems in `Gemfile`, just run `bundle` again.
 
 
 ## Customizing your site
