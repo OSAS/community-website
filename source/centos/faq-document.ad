@@ -345,6 +345,8 @@ Yes, the CentOS Project will add options to the installer to provide access to t
 
 === git.centos.org
 
+==== What is git.centos.org?
+
 git.centos.org is a repository to house the source code included in CentOS releases, based on the popular open source distributed version control system. It is the canonical repository for the CentOS Project, and for SIGs working on variants.
 
 
