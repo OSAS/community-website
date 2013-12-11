@@ -32,6 +32,9 @@
 
     - subsections = section.css('.sect2').remove
 
+    - if section.css(".sectionbody").text.strip.empty?
+      - section.css(".sectionbody").remove
+
     -# Add a class to make targeting a section easier
     - section['class'] += " section" + section.css('h2').attr('id')
 
