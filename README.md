@@ -6,7 +6,7 @@ as "bundler".
 
 ## Initial setup
 
-```bash
+```
 sudo yum install -y ruby-devel rubygems gcc-c++ curl-devel rubygem-bundler
 git clone --recursive git@gitlab.osas.lab.eng.rdu2.redhat.com:garrett/community-middleman.git
 cd community-middleman
@@ -21,10 +21,13 @@ If you don't clone the repo with `--recursive`, make sure to run
 
 As we're using gems locally with bundler, you need to run via `bundle exec`:
 
-`bundle exec middleman server`
+```
+bundle exec middleman server
+```
 
 ('server' is optional, but it helps if you're going through
-command-history in bash or zsh with control-r)
+command-history in bash or zsh with control-r, versus other middleman
+commands like `console`, `build`, or `deploy`)
 
 
 ## Updating
@@ -45,4 +48,11 @@ FIXME: Right now, please reference data/site.yml
 
 ### Actual deployment
 
-`bundle exec middleman deploy`
+You'll need to be added to the `osasteam` group on OpenShift and have
+your public key added to your profile.
+
+Afterward, deployment is a simple single command:
+
+```
+bundle exec middleman deploy
+```
