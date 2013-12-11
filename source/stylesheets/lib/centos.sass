@@ -1,48 +1,28 @@
 .centos_faq
 
-  //.toc
-
-    ul, li
-      margin: 0
-      padding: 0
-
-    li
-      list-style: none
-      width: 100%
-
-    .sectlevel1,
-    .sectlevel2
-      // NOOP
-
-    .sectlevel1 > li
-      width: 50%
-      float: left
-
-    .sectlevel2
-
-    .sectlevel1 > li:first,
-    li > .sectlevel2 + li
-      clear: both
-      font-size: 125%
-
-
   @media screen and (min-width: 992px)
-    .toc
-      $toc-columns: 3
-      columns: $toc-columns
-      -moz-columns: $toc-columns
-      -webkit-columns: $toc-columns
 
   .toc
-    .sectlevel1 > li > a
-      font-size: 120%
-      padding-top: 1em
-      display: inline-block
+    $toc-columns: 18em
+    $toc-gap: 2ex
+    columns: $toc-columns
+    -moz-columns: $toc-columns
+    -webkit-columns: $toc-columns
+    column-gap: $toc-gap
+    -moz-column-gap: $toc-gap
+    -webkit-column-gap: $toc-gap
+    padding: 1em
 
-    li > .sectlevel2 + li
+    margin: 2em auto 0
 
-    .sectlevel2
+    .sectlevel1
+      padding: 1em 0
       display: inline-block
+      vertical-align: top
+      width: 100%
+
+      > a
+        font-size: 125%
 
     ul, li
       margin: 0
@@ -52,8 +32,18 @@
     ul > li
       padding-left: 2ex
 
+
   .sect1, .sect2
     clear: both
+
+  #preamble
+    .paragraph:first-child p
+      font-size: 150%
+      color: #777
+      background: #eee
+      border-radius: 6px
+      padding: 1em 2em
+      margin: 1em 0
 
   @media screen and (min-width: 60em)
     .sect2:not(:first-child) .sect3
