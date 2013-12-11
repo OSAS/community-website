@@ -13,6 +13,9 @@ Red Hat has worked with the CentOS Project to establish a merit-based open gover
 
 === CentOS
 
+
+==== What is CentOS?
+
 Today, the CentOS Project produces CentOS, a popular community Linux distribution built from much of the Red Hat Enterprise Linux codebase and other sources. Over the coming year, the CentOS Project will expand its mission to establish CentOS as a leading community platform for emerging open source technologies coming from other projects such as OpenStack.
 
 
@@ -355,26 +358,9 @@ git.centos.org is a repository to house the source code included in CentOS relea
 As with other Linux distributions, github can be a place for working on package code, but packages to be included in CentOS releases will have to be accepted into the CentOS project’s official git repository.
 
 
-==== Can I include code that may be free to redistribute but without source?
-
-In general, no, with some exceptions that we expect to match guidelines for the Fedora Project (for example, https://fedoraproject.org/wiki/Licensing:Main#Binary_Firmware). All code, binary, and firmware inclusions in CentOS will be handled by the Core SIG or a mature variant SIG.
-
-You can find the appropriate group here and ask them directly about the code you are interested in: http://wiki.centos.org/SpecialInterestGroup.
-
-
 ==== How can I propose a package for inclusion in CentOS?
 
 Refer to the page at http://wiki.centos.org/SpecialInterestGroup/ProposingPackages (NOTE: link does not yet exist) for information on proposing packages for inclusion through one of the CentOS SIGs.
-
-
-==== What about CentOS Extras?
-
-CentOS Extras will continue as before, alongside new package repositories for housing variant-specific packages.
-
-
-==== If the source is available in git for a fix, and the community chooses to push a fixed/updated binary ahead of Red Hat, will this be acceptable?
-
-As long as the Core SIG or a variant SIG accepts it into the CentOS Project's official git repository, and it meets the policies for contributions, then yes, that is fine and in most cases highly desired, as it extends the relevance and audience of the community.
 
 
 ==== Do contributions to CentOS require a "Contributor License Agreement?"
@@ -382,9 +368,26 @@ As long as the Core SIG or a variant SIG accepts it into the CentOS Project's of
 No. All that is required is that contributors license their work under the same license as the code they are contributing to/working on.
 
 
+==== Can I include code that may be free to redistribute but without source?
+
+In general, no, with some exceptions that we expect to match guidelines for the Fedora Project (for example, https://fedoraproject.org/wiki/Licensing:Main#Binary_Firmware). All code, binary, and firmware inclusions in CentOS will be handled by the Core SIG or a mature variant SIG.
+
+You can find the appropriate group here and ask them directly about the code you are interested in: http://wiki.centos.org/SpecialInterestGroup.
+
+
+==== If the source is available in git for a fix, and the community chooses to push a fixed/updated binary ahead of Red Hat, will this be acceptable?
+
+As long as the Core SIG or a variant SIG accepts it into the CentOS Project's official git repository, and it meets the policies for contributions, then yes, that is fine and in most cases highly desired, as it extends the relevance and audience of the community.
+
+
 ==== How do variants differ from software delivered by EPEL?
 
 http://fedoraproject.org/wiki/EPEL[Extra Packages for Enterprise Linux (EPEL)] is a Fedora Special Interest Group that creates, maintains, and manages a high quality set of additional packages for Red Hat Enterprise Linux, CentOS, and related distributions. Packages, utilities, and applications available through EPEL are designed to augment existing installations without replacing existing components. Variants, on the other hand, might replace packages already included in the CentOS distribution. In addition, SIGs do not have to meet specific quality criteria when creating a variant.
+
+
+==== What about CentOS Extras?
+
+CentOS Extras will continue as before, alongside new package repositories for housing variant-specific packages.
 
 
 == CentOS Trademark
