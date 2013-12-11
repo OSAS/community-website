@@ -1,10 +1,6 @@
 = Red Hat + CentOS
-:toc:
-:toc-placement!:
-:toc-title:
 
-
-Red Hat and the CentOS are building a new CentOS, capable of driving forward development and adoption of next-generation open source projects.
+Red Hat and the CentOS Project are building a new CentOS, capable of driving forward development and adoption of next-generation open source projects.
 
 Red Hat will contribute its resources and expertise in building thriving open source communities to help establish more open project governance, broaden opportunities for participation, and provide new ways for CentOS users and contributors to collaborate on next-generation technologies such as cloud, virtualization, and Software-Defined Networking (SDN).
 
@@ -12,9 +8,8 @@ With Red Hat’s contributions and investment, the CentOS Project will be better
 
 Red Hat has worked with the CentOS Project to establish a merit-based open governance model for the CentOS Project, allowing for greater contribution and participation through increased transparency and access.
 
-toc::[]
 
-== General questions (and answers)
+== General questions
 
 === CentOS
 
