@@ -16,7 +16,7 @@
 
 
   -# Table of contents
-  %ul.toc#toc
+  %ul#toc.toc.hidden-print
     - html.css('.sect1').each do |section|
       - heading = section.css('h2')
 
@@ -44,8 +44,8 @@
     - section['class'] += " section" + section.css('h2').attr('id')
 
     = section
-    =# link_to "Back to top", "#toc", class: "top"
+    =# link_to "Back to top", "#toc", class: "top hidden-print"
 
     - subsections.each do |subsection|
       = subsection
-      = link_to "Back to top", "#toc", class: "top"
+      = link_to "Back to top", "#toc", class: "top hidden-print"
