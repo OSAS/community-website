@@ -50,7 +50,11 @@ gem "builder", "~> 3.0"
 # Better JSON lib
 gem "oj"
 
-gem 'rails-assets-jquery'
+# Lock jQuery to 1.x, for better IE support (6 - 8)
+# Fixes and features are backported from 2.x to 1.x; only diff is IE support.
+# see http://blog.jquery.com/2013/01/15/jquery-1-9-final-jquery-2-0-beta-migrate-final-released/
+gem 'rails-assets-jquery', '~> 1'
+
 gem 'rails-assets-fullcalendar'
 
 
