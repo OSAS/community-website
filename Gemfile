@@ -1,6 +1,7 @@
 # If you have OpenSSL installed, we recommend updating
 # the following line to use "https"
-source 'http://rubygems.org'
+source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 gem "middleman", "~>3.2"
 
@@ -49,6 +50,8 @@ gem "builder", "~> 3.0"
 # Better JSON lib
 gem "oj"
 
+gem 'rails-assets-jquery'
+
 
 #####
 # Bootstrap
@@ -56,13 +59,6 @@ gem "oj"
 # Bootstrap, as SASS 3 version (there's a bug in 3.0.1+, so we're
 # locking to 3.0.0 for now
 gem "bootstrap-sass", "3.0.0"
-
-# Bootstrap 3 version of navbar (from a fork; temporary also):
-gem "bootstrap-navbar", github: "delynn/bootstrap-navbar"
-
-# Bootstrap-navbar integration for Middleman
-gem "middleman-bootstrap-navbar"
-
 
 #####
 # Formats
