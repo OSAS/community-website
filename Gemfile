@@ -51,6 +51,7 @@ gem "builder", "~> 3.0"
 gem "oj"
 
 gem 'rails-assets-jquery'
+gem 'rails-assets-fullcalendar'
 
 
 #####
