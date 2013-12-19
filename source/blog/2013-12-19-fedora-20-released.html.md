@@ -4,9 +4,13 @@ comments: true
 date: 2013-12-19 18:42 UTC
 layout: post
 title: Fedora 20 Released
-tags: Fedora, release, upgrades
 categories:
 - Blog
+tags:
+- Fedora
+- release
+- ARM
+- cloud
 ---
 
 The [Fedora Project](http://fedoraproject.org/) has announced the release of Fedora 20, just in time for the holidays! Code-named "Heisenbug," the Fedora 20 release comes in close to the 10th anniversary of the first Fedora release. 
