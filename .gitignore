@@ -18,3 +18,4 @@
 
 # Ignore emacs .. erm its backup files..
 *~
+*.swp

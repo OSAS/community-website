@@ -40,6 +40,13 @@ When there are new gems in `Gemfile`, just run `bundle` again.
 
 The site can be easily customized by editing `data/site.yml`.
 
+## Adding a Post
+
+To add a post to the community blog (or any blog managed by middleman) use:
+
+```
+bundle middleman article TITLE
+```
 
 ## Deploying
 
