@@ -1,7 +1,7 @@
 ---
 author: jzb
 comments: true
-date: 2013-12-17 18:42 UTC
+date: 2013-12-19 18:42 UTC
 layout: post
 title: Fedora 20 Released
 tags: Fedora, release, upgrades
