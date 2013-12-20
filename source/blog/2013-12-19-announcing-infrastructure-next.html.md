@@ -28,7 +28,9 @@ Right after [FOSDEM](http://fosdem.org) and [CfgMgmtCamp](http://cfgmgmtcamp.eu/
 
 ## Agenda
 
-The full agenda is coming soon, but expect presentations on open source storage, virtualization, cloud management, and other topics relevant to managing a Software-Defined Data Center. Want to present at Infrastructure.Next? Drop me a note at jzb@redhat.com.
+The full agenda is coming soon, but expect presentations on open source storage, virtualization, cloud management, and other topics relevant to managing a Software-Defined Data Center. We'll have contributors and experts from projects like [Fedora](http://fedoraproject.org/), [GlusterFS](http://www.gluster.org/), [oVirt](http://www.ovirt.org/Home), [RDO](http://openstack.redhat.com/Main_Page), and others.
+
+**Want to present at Infrastructure.Next? Drop me a note at jzb@redhat.com.**
 
 We'll also have the foyer open for hallway track sessions to let attendees share best practices, cautionary tales, and make connections for future projects.
 
