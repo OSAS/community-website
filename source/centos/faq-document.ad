@@ -138,7 +138,7 @@ If you have any questions, you can reach the Governing Board directly via their 
 
 ==== How do I join the mirror network?
 
-Please refer to http://wiki.centos.org/Mirrors/HowToJoin [Note: ARoss & Jperrin working on new links/language]
+Please refer to http://wiki.centos.org/Mirrors/HowToJoin.
 
 
 == What this means for Red Hat
@@ -217,7 +217,7 @@ It is also more cost effective to standardize on Red Hat Enterprise Linux than i
 
 ==== Can companies now use CentOS mixed into their Red Hat Enterprise Linux environment?
 
-Red Hat’s participation in the CentOS Project is not a recommendation by Red Hat to deploy a mixed CentOS and Red Hat Enterprise Linux environment. Red Hat Enterprise Linux subscription support does not extend to any use of CentOS or other community projects. Additionally, it is more expensive to maintain a mixed environment of Red Hat Enterprise Linux and CentOS than it is to standardize on Red Hat Enterprise Linux. Organizations that standardize on Red Hat Enterprise Linux experience a lower TCO with more efficient operations, less downtime and a more productive IT staff. Refer to Understanding Linux Deployment Strategies: The Business Case for Standardizing on Red Hat Enterprise Linux for details. LINK TK
+Red Hat’s participation in the CentOS Project is not a recommendation by Red Hat to deploy a mixed CentOS and Red Hat Enterprise Linux environment. Red Hat Enterprise Linux subscription support does not extend to any use of CentOS or other community projects. Additionally, it is more expensive to maintain a mixed environment of Red Hat Enterprise Linux and CentOS than it is to standardize on Red Hat Enterprise Linux. Organizations that standardize on Red Hat Enterprise Linux experience a lower TCO with more efficient operations, less downtime and a more productive IT staff. Refer to https://engage.redhat.com/forms/linux-deployment-strategies[Understanding Linux Deployment Strategies: The Business Case for Standardizing on Red Hat Enterprise Linux] for details.
 
 
 ==== Does Red Hat now recommend using CentOS for production environments?
@@ -273,7 +273,7 @@ Red Hat's developer offerings are designed to make it easier for corporate, ISV,
 Yes. Going forward, the source code repository at git.centos.org will replace and obsolete the Red Hat Enterprise Linux source rpms on ftp.redhat.com. Git provides an attractive alternative to ftp because it saves time, reduces human error, and makes it easier for CentOS users to collaborate on and build their own distributions, including those of SIGs.
 
 
-==== What does Red Hat’s involvement with the CentOS Project mean for other distributions based on the Red Hat Enterprise Linux codebase?=
+==== What does Red Hat’s involvement with the CentOS Project mean for other distributions based on the Red Hat Enterprise Linux codebase?
 
 We anticipate that Red Hat's participation in CentOS will make it a more attractive option than other derivatives of Red Hat Enterprise Linux for groups that want to work on open source projects such as OpenStack. Otherwise Red Hat’s involvement in the CentOS Project should have no impact on other distributions that are based on the Red Hat Enterprise Linux codebase.
 
@@ -282,7 +282,7 @@ We anticipate that Red Hat's participation in CentOS will make it a more attract
 
 Both the CentOS Board and the CentOS subprojects (SIGs) structure use a governance model that is merit-based. The CentOS Project will have a Governing Board, using merit-based principles to provide a proven environment for collaboration.
 
-For more details on the board operations and structure refer to http://www.centos.org/governance (NOTE: link not yet live.)
+For more details on the board operations and structure refer to http://www.centos.org/about/governance.
 
 
 === Governing Board
@@ -330,7 +330,7 @@ Decisions about components to include, about whether to backport features or mov
 
 ==== How do I create a variant?
 
-You can create an unofficial variant based on official CentOS using the tools and instructions provided at http://wiki.centos.org/Variants/MakeYourOwn. (NOTE: link does not yet exist.) If you wish to start a formal CentOS variant project, refer to the page http://wiki.centos.org/SpecialInterestGroup about starting a CentOS SIG.
+You can create an unofficial variant based on official CentOS using the tools and instructions provided at http://wiki.centos.org/Variants/MakeYourOwn. If you wish to start a formal CentOS variant project, refer to the page http://wiki.centos.org/SpecialInterestGroup about starting a CentOS SIG.
 
 
 ==== Must all CentOS variants be fully compatible with each other?
@@ -357,7 +357,7 @@ As with other Linux distributions, github can be a place for working on package 
 
 ==== How can I propose a package for inclusion in CentOS?
 
-Refer to the page at http://wiki.centos.org/SpecialInterestGroup/ProposingPackages (NOTE: link does not yet exist) for information on proposing packages for inclusion through one of the CentOS SIGs.
+Refer to the page at http://wiki.centos.org/SpecialInterestGroup/ProposingPackages for information on proposing packages for inclusion through one of the CentOS SIGs.
 
 
 ==== Do contributions to CentOS require a "Contributor License Agreement?"
