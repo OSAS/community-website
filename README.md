@@ -16,6 +16,7 @@ bundle install
 If you don't clone the repo with `--recursive`, make sure to run
 `git submodule init && git submodule update`
 
+Note, you need to have your SSH key on GitHub and be added to the OSAS/rh-events repo as a contributor to be able to clone this recursively. Otherwise Git will bomb out due to permissions issues.
 
 ## Running
 
@@ -39,6 +40,13 @@ When there are new gems in `Gemfile`, just run `bundle` again.
 
 The site can be easily customized by editing `data/site.yml`.
 
+## Adding a Post
+
+To add a post to the community blog (or any blog managed by middleman) use:
+
+```
+bundle middleman article TITLE
+```
 
 ## Deploying
 

@@ -1,11 +1,6 @@
-GIT
-  remote: git://github.com/delynn/bootstrap-navbar.git
-  revision: fadb3742224a3a3ddc5199fd5f6fe6a8f61d2055
-  specs:
-    bootstrap-navbar (0.0.13)
-
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     activesupport (3.2.16)
       i18n (~> 0.6, >= 0.6.4)
@@ -78,9 +73,6 @@ GEM
       addressable (~> 2.3.5)
       middleman-core (~> 3.2)
       tzinfo (>= 0.3.0)
-    middleman-bootstrap-navbar (0.0.7)
-      bootstrap-navbar (~> 0.0.13)
-      middleman-core (>= 3.0)
     middleman-core (3.2.0)
       activesupport (~> 3.2.6)
       bundler (~> 1.1)
@@ -137,6 +129,9 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rails-assets-fullcalendar (1.6.4)
+      rails-assets-jquery (~> 1.10.2)
+    rails-assets-jquery (1.10.2)
     rb-fsevent (0.9.3)
     rb-inotify (0.9.2)
       ffi (>= 0.5.0)
@@ -183,7 +178,6 @@ PLATFORMS
 
 DEPENDENCIES
   asciidoctor
-  bootstrap-navbar!
   bootstrap-sass (= 3.0.0)
   builder (~> 3.0)
   chronic
@@ -191,7 +185,6 @@ DEPENDENCIES
   less
   middleman (~> 3.2)
   middleman-blog
-  middleman-bootstrap-navbar
   middleman-deploy
   middleman-favicon-maker
   middleman-livereload
@@ -202,6 +195,8 @@ DEPENDENCIES
   pry
   pry-debugger
   pry-stack_explorer
+  rails-assets-fullcalendar
+  rails-assets-jquery (~> 1)
   redcarpet
   reverse_markdown
   ruby18_source_location

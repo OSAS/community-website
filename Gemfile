@@ -1,6 +1,7 @@
 # If you have OpenSSL installed, we recommend updating
 # the following line to use "https"
-source 'http://rubygems.org'
+source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 gem "middleman", "~>3.2"
 
@@ -49,6 +50,13 @@ gem "builder", "~> 3.0"
 # Better JSON lib
 gem "oj"
 
+# Lock jQuery to 1.x, for better IE support (6 - 8)
+# Fixes and features are backported from 2.x to 1.x; only diff is IE support.
+# see http://blog.jquery.com/2013/01/15/jquery-1-9-final-jquery-2-0-beta-migrate-final-released/
+gem 'rails-assets-jquery', '~> 1'
+
+gem 'rails-assets-fullcalendar'
+
 
 #####
 # Bootstrap
@@ -56,13 +64,6 @@ gem "oj"
 # Bootstrap, as SASS 3 version (there's a bug in 3.0.1+, so we're
 # locking to 3.0.0 for now
 gem "bootstrap-sass", "3.0.0"
-
-# Bootstrap 3 version of navbar (from a fork; temporary also):
-gem "bootstrap-navbar", github: "delynn/bootstrap-navbar"
-
-# Bootstrap-navbar integration for Middleman
-gem "middleman-bootstrap-navbar"
-
 
 #####
 # Formats
