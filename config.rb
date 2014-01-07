@@ -138,6 +138,9 @@ page "/.htacces.html", :directory_index => false
 
 proxy "/.htaccess", "/.htaccess.html", :locals => {}, :ignore => true
 
+proxy "/centos-faq/index.html", "/centos/faq.html", :ignore => true
+ignore "/centos/faq-document.html"
+
 ready do
   # Add yearly calendar pages
   data.events.each do |year, data|
