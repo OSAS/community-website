@@ -446,3 +446,11 @@ Yes, if you comply with the licenses applicable to the software and content in t
 A Linux distribution can only be called CentOS if it is built on code in git.centos.org, is signed with the appropriate keys, and released by the CentOS Project. If you were to rebuild CentOS source code on your own, you could not call the result CentOS.
 
 If you are interested in support for an architecture, then you may want to start a new special interest group around that technology. For more information, refer to http://wiki.centos.org/SpecialInterestGroup and http://www.centos.org/variants.
+
+== More Information
+
+* Press release: http://www.redhat.com/about/news/press-archive/2014/1/red-hat-and-centos-join-forces
+* CentOS website: http://www.centos.org
+* Project governance: http://www.centos.org/about/governance
+* CentOS variants: http://www.centos.org/variants
+* About CentOS: http://www.centos.org/about
