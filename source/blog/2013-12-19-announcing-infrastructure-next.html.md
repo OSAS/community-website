@@ -24,7 +24,8 @@ Red Hat will be sponsoring a new one-day event in Ghent, Belgium on 5 February 2
 
 Right after [FOSDEM](http://fosdem.org) and [CfgMgmtCamp](http://cfgmgmtcamp.eu/), Infrastructure.Next will be held at the [SchoonMeersen Campus of the University College Ghent](http://www.hogent.be/over-hogent/campussen/schoonmeersen/). The campus is walking distance from Ghent's central train station, or two minutes from the E40 highway. 
 
-<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Valentin+Vaerwyckweg+1+9000+Gent&amp;ie=UTF8&amp;hq=&amp;hnear=Valentin+Vaerwyckweg,+9000+Gent,+Oost-Vlaanderen,+Vlaams+Gewest,+Belgium&amp;t=m&amp;z=14&amp;iwloc=A&amp;ll=51.035203,3.701371&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?q=Valentin+Vaerwyckweg+1+9000+Gent&amp;ie=UTF8&amp;hq=&amp;hnear=Valentin+Vaerwyckweg,+9000+Gent,+Oost-Vlaanderen,+Vlaams+Gewest,+Belgium&amp;t=m&amp;z=14&amp;iwloc=A&amp;ll=51.035203,3.701371&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+<iframe class="map" width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Valentin+Vaerwyckweg+1+9000+Gent&amp;ie=UTF8&amp;hq=&amp;hnear=Valentin+Vaerwyckweg,+9000+Gent,+Oost-Vlaanderen,+Vlaams+Gewest,+Belgium&amp;t=m&amp;z=14&amp;iwloc=A&amp;ll=51.035203,3.701371&amp;output=embed"></iframe>
+[View larger map](https://maps.google.com/maps?q=Valentin+Vaerwyckweg+1+9000+Gent&amp;ie=UTF8&amp;hq=&amp;hnear=Valentin+Vaerwyckweg,+9000+Gent,+Oost-Vlaanderen,+Vlaams+Gewest,+Belgium&amp;t=m&amp;z=14&amp;iwloc=A&amp;ll=51.035203,3.701371&amp;source=embed)
 
 ## Agenda
 
