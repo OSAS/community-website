@@ -21,6 +21,10 @@ Software foundations:
   - name: OpenStack Foundation
     url: http://www.openstack.org/
 
+  - name: Python Foundation
+    image: python-software-foundation
+    url: http://python.org/psf/
+
 
 Operating system:
 
