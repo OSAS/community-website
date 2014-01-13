@@ -108,6 +108,16 @@ title: Speaking Engagements
                 - if talk.location
                   %h4.location= talk.location
 
+                - if talk.room
+                  %h4.room
+                    %dfn Room:
+                    = talk.room
+
+                - if talk.track
+                  %h4.track
+                    %dfn Track:
+                    = talk.track
+
                 - if talk.start
                   %h4.time
                     - timezone = talk.timezone || conf.timezone || tz_lookup(talk.start[/[a-zA-Z+0-9:]+$/])

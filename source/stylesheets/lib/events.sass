@@ -122,7 +122,7 @@
       .description
         float: right
         width: 60%
-        margin-top: -1.5em
+        margin-top: -2.5em
 
 #all-events
   .conference
@@ -166,11 +166,16 @@
     overflow: hidden
     h4
       overflow: hidden
-      &.room, &.time
+
+      &:not(.speaker)
         font-size: 10px
         letter-spacing: 0.1em
-        line-height: 2.6em
         text-transform: uppercase
+        margin: 1em 0 0
+
+      dfn
+        text-decoration: normal
+        font-style: normal
     h3
       font-size: 14pt
       line-height: 1.1
@@ -192,8 +197,6 @@
       cursor: pointer
     &:hover::after
       visibility: visible
-  .room, .time
-    color: #999
 
 .page-template-calendar-page-php .entry-header
   display: none
