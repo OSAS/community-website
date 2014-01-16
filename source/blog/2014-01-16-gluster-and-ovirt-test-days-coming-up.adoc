@@ -1,0 +1,27 @@
+---
+title: Gluster and oVirt Test Days Coming Up
+date: 2014-01-16 01:04 UTC
+layout: post
+author: Jason Brooks
+categories:
+- Blog
+tags:
+- oVirt
+- Gluster
+---
+
+If you're a fan of scale-out storage, datacenter virtualization, or (like me) a mixture of the two, you'll want to mark your calendar for this pair of upcoming test days for the http://www.gluster.org[Gluster] and http://www.ovirt.org[oVirt] projects.
+
+This weekend, from Friday the 17th at midnight UTC to Monday the 20th at midnight UTC, the Gluster project is having a test weekend (aka Glusterfest) for its 3.5 release. There's a breakdown of all the features slated for 3.5 on the release's http://www.gluster.org/community/documentation/index.php/Planning35[planning page]. 
+
+For this Glusterfest iteration, the project hopes to smooth the process of multi-node testing with the availability of https://twitter.com/purpleidea[James Shubin's] https://forge.gluster.org/puppet-gluster/[Puppet-Gluster module]. James recently wrote the how-to post, https://ttboj.wordpress.com/2014/01/08/automatically-deploying-glusterfs-with-puppet-gluster-vagrant/[Automatically deploying GlusterFS with Puppet-Gluster + Vagrant], which ought to come in handy this weekend.
+
+After giving James' post a run-through myself, I'm interested in trying it out with this https://github.com/pradels/vagrant-ovirt[Vagrant oVirt/RHEV Provider] I found on github. 
+
+Speaking of oVirt, the project has its own test day coming up on January 24th, this one for the project's http://www.ovirt.org/OVirt_3.4_release_management[3.4 release]. 
+
+The oVirt 3.4 feature I'm most excited about is the http://www.ovirt.org/Features/Self_Hosted_Engine[Self Hosted Engine] option, in which one or more oVirt compute nodes can host the oVirt management engine. This feature promises to eliminate the engine as a single point of failure, as well as free up the separate machine that's typically used to host the engine.
+
+If you're raring to jump on the 3.4 code right away, alpha packages are now available. Check out these http://www.ovirt.org/OVirt_3.4.0_release_notes[release notes] for more information about how to get rolling. 
+
+For more information on this weekend's Glusterfest, check out the Gluster http://www.gluster.org/community/documentation/index.php/GlusterFest[project wiki]. To find out more about next week's oVirt 3.4 Test Day, check out the oVirt http://www.ovirt.org/OVirt_3.4_TestDay[project wiki].
