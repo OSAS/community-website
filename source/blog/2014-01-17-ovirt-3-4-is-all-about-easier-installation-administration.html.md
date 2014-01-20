@@ -11,7 +11,7 @@ categories:
 
 As the new year gets underway, the [oVirt](http://ovirt.org) development team is well on its way to preparing oVirt 3.4 for release. There's some pretty nice features coming up in the next point release for oVirt, making a better platform than ever for virtualization management.
 
-One of the most exciting features is hosted engine, which will enable oVirt engine to be run as a virtual machine (VM) on the host it manages. Hosted engine will solve the basic chicken-and-the egg problem when you have to kickstart an oVirt system. The hosted engine solution enables oVirt to be used as a virtual appliance, because you won't have to install it, it will already come pre-installed and ready for configuration. The oVirt team has invested a lot in making oVirt installation easier, and providing a virtual appliance is a big step towards that goal.
+One of the most exciting features is hosted engine, which will enable oVirt engine to be run as a virtual machine (VM) on the host it manages. Hosted engine will solve the basic chicken-and-the egg problem when you have to solve the basic challenge of deploying and running an oVirt engine inside a VM. In later releases, the hosted engine solution enables oVirt to be used as a virtual appliance, because you won’t have to install it, it will already come pre-installed and ready for configuration. The oVirt team has invested a lot in making oVirt installation easier, and providing a virtual appliance is a big step towards that goal.
 
 And, thanks to efforts from IBM and the El Dorado Research Center in Brazil, the upcoming oVirt release will have PPC64 support, which gives oVirt a cross-architecture capability not found in competing virtualization platforms.
 
