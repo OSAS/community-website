@@ -18,7 +18,7 @@ For this Glusterfest iteration, the project hopes to smooth the process of multi
 
 After giving James' post a run-through myself, I'm interested in trying it out with this https://github.com/pradels/vagrant-ovirt[Vagrant oVirt/RHEV Provider] I found on github. 
 
-Speaking of oVirt, the project has its own test day coming up on January 24th, this one for the project's http://www.ovirt.org/OVirt_3.4_release_management[3.4 release]. 
+Speaking of oVirt, the project has its own test day coming up on January 23rd, this one for the project's http://www.ovirt.org/OVirt_3.4_release_management[3.4 release]. 
 
 The oVirt 3.4 feature I'm most excited about is the http://www.ovirt.org/Features/Self_Hosted_Engine[Self Hosted Engine] option, in which one or more oVirt compute nodes can host the oVirt management engine. This feature promises to eliminate the engine as a single point of failure, as well as free up the separate machine that's typically used to host the engine.
 
