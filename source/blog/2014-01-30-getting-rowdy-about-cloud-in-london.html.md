@@ -24,6 +24,8 @@ One of the other mandates for the event was to have a vendor-neutral forum, and 
 
 Few speakers enjoy being the first on the schedule, even when the program has a much more humane start time of 10 a.m. But *someone* has to go first, and I picked OpenShift Developer Advocate <a href="https://twitter.com/thesteve0">Steven Citron-Pousty</a> in part because I know he's a good sport, but mostly because I knew he'd get a discussion going and set the tone for the rest of the day. 
 
+READMORE
+
 Indeed, <a href="http://www.slideshare.net/scitronpousty/london-cloud-summit-2014-raising-the-tide">his presentation on raising the tide</a> to get developers in the cloud generated a huge discussion and certainly helped wake the audience up (along with the coffee we provided because... coffee) and ensured lively discussion for the entire program. 
 
 Citron-Pousty identified several things that are hampering developers in their ability to move to PaaS platforms. For example, he noted documentation is often insufficent, developers aren't taught to think of composable server pieces instead of minutiae, and there's often a difference between the local and "cloud" development experience. 
