@@ -21,9 +21,7 @@ The weather, of course, is only a small (but undeniable) slice of the appeal to 
 
 ## Special Events
 
-Speaking of special events, you won't want to miss [Infrastructure.Next @ SCALE](http://lanyrd.com/2014/infra-at-scale/). You can sign up (free) on Eventbrite:
-
-<div style="width:100%; text-align:left;" ><iframe  src="https://www.eventbrite.com/tickets-external?eid=10161524393&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Online Ticketing</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/infrastructurenext-scale-tickets-10161524393?ref=etckt">Infrastructure.Next SCALE</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
+Speaking of special events, you won't want to miss [Infrastructure.Next @ SCALE](http://lanyrd.com/2014/infra-at-scale/). 
 
 Note that anyone attending SCALE is welcome to attend some/all the talks, but we do ask that folks register so we have an idea of attendance. See the schedule at the end of this post.
 
