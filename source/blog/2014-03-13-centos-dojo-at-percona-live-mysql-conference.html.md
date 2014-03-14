@@ -14,7 +14,7 @@ tags:
 - DevOps
 ---
 
-<img src="images/blog/CentOS_200x.png"> Monday, March 31st, is [Open Source Appreciation Day](http://www.percona.com/live/mysql-conference-2014/program/open-source-appreciation-day) at the [Percona Live MySQL Conference](http://www.percona.com/live/mysql-conference-2014/program/open-source-appreciation-day) at the Santa Clara Convention Center, and we're pleased to announce that we'll be running a [CentOS Dojo](http://wiki.centos.org/Events/Dojo/SantaClara2014) as part of the program.
+<img src="http://community.redhat.com/images/blog/CentOS_200x.png"> Monday, March 31st, is [Open Source Appreciation Day](http://www.percona.com/live/mysql-conference-2014/program/open-source-appreciation-day) at the [Percona Live MySQL Conference](http://www.percona.com/live/mysql-conference-2014/program/open-source-appreciation-day) at the Santa Clara Convention Center, and we're pleased to announce that we'll be running a [CentOS Dojo](http://wiki.centos.org/Events/Dojo/SantaClara2014) as part of the program.
 
 Every Dojo is a bit different, but we always aim for useful talks with practical information on getting things done with (and on) CentOS and other open source solutions. Since we're co-locating with the Percona Live MySQL Conference, we've got several MySQL-related talks, and plenty of info on logging, metrics, and more. We've also got a peek into the future for folks ready to take a look at systemd, and an opportunity for Q&A on CentOS itself. 
 
