@@ -13,7 +13,7 @@ tags:
 categories:
 - Blog
 ---
-Now in its tenth year, [Google Summer of Code](http://www.google-melange.com/gsoc/homepage/google/gsoc2014) (GSoC) is ramping up for 2014 students, and applications to participate must by submitted by March 21 at 19:00 UTC. This year Fedora, oVirt, and JBoss are inlcuded in the impressive list of [190 mentoring organizations](http://www.google-melange.com/gsoc/org/list/public/google/gsoc2014). 
+Now in its tenth year, [Google Summer of Code](http://www.google-melange.com/gsoc/homepage/google/gsoc2014) (GSoC) is ramping up for 2014 students, and applications to participate must by submitted by March 21 at 19:00 UTC. This year Fedora, oVirt, and JBoss are included in the impressive list of [190 mentoring organizations](http://www.google-melange.com/gsoc/org/list/public/google/gsoc2014). 
 
 ## Fedora
 
