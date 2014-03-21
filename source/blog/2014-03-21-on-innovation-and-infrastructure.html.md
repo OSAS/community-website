@@ -21,6 +21,8 @@ Another big reason for the interest in this article was the conclusion... that i
 
 "But the churn feels more problematic now, in part because it deprives the new guard as well as the old — and by extension, it deprives us all. In pursuing the latest and the coolest, young engineers ignore opportunities in less-sexy areas of tech such as semiconductors, data storage, and networking, the products that form the foundation on which all of Web 2.0 rests. Without a good router to provide reliable Wi-Fi, your Dropbox file-sharing application is not going to sync; without Nvidia’s graphics processing unit, your BuzzFeed GIF is not going to make anyone laugh. The talent — and there's a ton of it— flowing into Silicon Valley cares little about improving these infrastructural elements. What they care about is coming up with more web apps."
 
+## The New Shiny
+
 Actually this is not a new phenomenon: People are always more interested in building or using the latest shiny automobile than fundamentally improving the roads on which that car has to drive. But as anyone who suffered through this Winter in North America knows, making sure the roads are in good shape is not something that should be a passing concern. 
 
 Infrastructure, by definition, is not sexy. If I build a better router or submit a nice patch to the Linux kernel, my efforts will be appreciated, but no one is likely to acquire my company for billions of dollars. But if I build a new app with vague social media potential and no revenue to speak of, well, then ka-ching!
