@@ -33,7 +33,7 @@ commands like `console`, `build`, or `deploy`)
 
 ## Updating
 
-When there are new gems in `Gemfile`, just run `bundle` again.
+When there are new gems in `Gemfile`, just run `bundle install` again.
 
 
 ## Customizing your site
