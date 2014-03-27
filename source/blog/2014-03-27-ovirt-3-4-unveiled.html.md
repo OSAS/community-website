@@ -19,6 +19,8 @@ The new hosted engine, for instance, enables the oVirt engine to be run as a vir
 
 Work contributed from IBM and the El Dorado Research Center in Brazil gives oVirt 3.4 PPC64 support, making oVirt a true cross-architecture virtualization platform. At the same time, we've made efforts to continue integrating with other projects and solutions that users want, such as oVirt guest agents for openSUSE and Ubuntu. 
 
+READMORE
+
 ## Making It Great
 
 There are other platforms out there to manage your virtual machines, and if you need something to run your mission-critical production systems, then just being "free as in beer" is not going to be enough. For oVirt, it's not just about being free, it's about being great. 
