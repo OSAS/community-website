@@ -2,17 +2,10 @@
 
   %hr.visible-print
 
-  :ruby
-    footer_links = {
-      "Privacy Policy" => "http://www.redhat.com/legal/privacy_statement.html",
-      "Terms of Use" => "http://www.redhat.com/legal/legal_statement.html",
-      "Contact Us" => "http://www.redhat.com/about/contact/",
-      "About Red Hat" => "http://www.redhat.com/about/"
-    }
-
-  %ul.footer-nav-list
-    - footer_links.each do |name, url|
-      %li= link_to name, url, target: "_blank"
+  - if data.site.footer_links
+    %ul.footer-nav-list
+      - data.site.footer_links.each do |name, url|
+        %li= link_to name.strip, url.strip, target: "_blank"
 
   =# data.site.founding_year
   - founding = data.site.founding_year

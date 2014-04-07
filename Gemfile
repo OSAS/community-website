@@ -65,6 +65,7 @@ gem 'rails-assets-fullcalendar'
 # locking to 3.0.0 for now
 gem "bootstrap-sass", "3.0.0"
 
+
 #####
 # Formats
 
