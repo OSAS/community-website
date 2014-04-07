@@ -24,9 +24,11 @@ copyright: "Copyright &copy; 2012 &ndash; 2013 Red Hat, Inc."
 
 
 # Optional footer links
-#footer_links:
-  #About: /about
-  #Offsite example: http://example.com/
+footer_links:
+  Privacy Policy: http://www.redhat.com/legal/privacy_statement.html
+  Terms of Use: http://www.redhat.com/legal/legal_statement.html
+  Contact Us: http://www.redhat.com/about/contact/
+  About Red Hat: http://www.redhat.com/about/
 
 
 ## If unspecified, timezone defaults to UTC
