@@ -45,7 +45,7 @@ The site can be easily customized by editing `data/site.yml`.
 To add a post to the community blog (or any blog managed by middleman) use:
 
 ```
-bundle middleman article TITLE
+bundle exec middleman article "Your title here"
 ```
 
 ## Deploying
