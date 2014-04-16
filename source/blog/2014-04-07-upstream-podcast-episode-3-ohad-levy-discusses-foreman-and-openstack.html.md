@@ -11,6 +11,7 @@ tags:
 - Foreman
 - OpenStack
 - FOSDEM
+- Podcast
 ---
 
 In this episode of Upstream, [Rich Bowen](http://twitter.com/rbowen) interviews [Ohad Levy](https://twitter.com/ohadlevy) of the [Foreman project](http://theforeman.org/). Levy discusses using Foreman to deploy OpenStack, and more! 
