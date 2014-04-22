@@ -43,7 +43,7 @@ READMORE
 + [Red Hat's Embrace of Containers Could End Linux Dependencies](http://www.fierceenterprisecommunications.com/story/red-hats-embrace-containers-could-end-linux-dependencies/2014-04-21)
 by [Scott M. Fulton III](https://twitter.com/SMFulton3)
 
-+ [It’s All About the App, as Red Hat Drives Containerized Application Delivery](http://www.datacenterknowledge.com/archives/2014/04/17/its-all-about-the-app-as-red-hat-drives-containerized-application-delivery/) by John Rath](https://twitter.com/datacenter)
++ [It’s All About the App, as Red Hat Drives Containerized Application Delivery](http://www.datacenterknowledge.com/archives/2014/04/17/its-all-about-the-app-as-red-hat-drives-containerized-application-delivery/) by [John Rath](https://twitter.com/datacenter)
 
 + [Red Hat Sets Docker as Nucleus of 'Project Atomic'](http://www.infoworld.com/t/linux/red-hat-sets-docker-nucleus-of-project-atomic-240669) by [Serdar Yegulalp](https://twitter.com/syegulalp)
 
