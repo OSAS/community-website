@@ -12,7 +12,7 @@ tags:
 categories:
 - Blog
 ---
-<img src="images/blog/lfnw-logo.png"> Will you be at the 15th annual [LinuxFest NorthWest](http://www.linuxfestnorthwest.org) conference in Bellingham, Washington? The 2014 LFNW will be held April 26-27, and the festivities start Friday evening with a [Fedora-sponsored Board Game Night](https://www.facebook.com/events/638447742875793). You can also catch up with the Fedora folks at their booth in the expo hall this weekend.
+<img src="http://community.redhat.com/images/blog/lfnw-logo.png"> Will you be at the 15th annual [LinuxFest NorthWest](http://www.linuxfestnorthwest.org) conference in Bellingham, Washington? The 2014 LFNW will be held April 26-27, and the festivities start Friday evening with a [Fedora-sponsored Board Game Night](https://www.facebook.com/events/638447742875793). You can also catch up with the Fedora folks at their booth in the expo hall this weekend.
 
 On Saturday, Joe Brockmeier will be speaking at 10AM on the topic of [Understanding Software Collections](http://linuxfestnorthwest.org/2014/sessions/understanding-software-collections). 
 
