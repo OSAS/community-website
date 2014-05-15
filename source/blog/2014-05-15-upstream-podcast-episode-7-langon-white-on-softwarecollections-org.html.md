@@ -2,7 +2,7 @@
 layout: post
 author: rendsley
 comments: true
-title: "Upstream Podcast Episode 7: Langon White on SoftwareCollections.org"
+title: "Upstream Podcast Episode 7: Langdon White on SoftwareCollections.org"
 date: 2014-05-15 16:00 UTC
 tags:
 - Red Hat Summit
