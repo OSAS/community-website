@@ -2,7 +2,7 @@
 author: jzb
 layout: post
 comments: true
-title: Announcing Open Cloud Day @ OSCON
+title: "Announcing Open Cloud Day @ OSCON: Call for Papers Live!"
 date: 2014-05-15 19:02 UTC
 tags:
 - Cloud
