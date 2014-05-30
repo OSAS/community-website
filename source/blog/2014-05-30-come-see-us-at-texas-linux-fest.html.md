@@ -14,7 +14,7 @@ tags:
 categories:
 - Blog
 ---
-<img src="community.redhat.com/images/blog/TLF_200x200.png"> [Texas Linux Fest](http://texaslinuxfest.org/) will be held June 13-14 in Austin, Texas at the [Austin Convention Center](http://texaslinuxfest.org/venue), and several Red Hatters will be on the scene. 
+<img src="http://community.redhat.com/images/blog/TLF_200x200.png"> [Texas Linux Fest](http://texaslinuxfest.org/) will be held June 13-14 in Austin, Texas at the [Austin Convention Center](http://texaslinuxfest.org/venue), and several Red Hatters will be on the scene. 
 
 Friday from 8AM-12PM, TxLF attendees can learn about the upcoming RHEL 7 release in the [RHEL 7 and Beyond](http://texaslinuxfest.org/content/rhel-7-and-beyond) track. The agenda includes:
 
