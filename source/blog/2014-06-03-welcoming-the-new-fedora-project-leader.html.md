@@ -1,7 +1,14 @@
 ---
+author: jzb
+comments: true
+layout: post
 title: Welcoming the New Fedora Project Leader
 date: 2014-06-03 14:58 UTC
 tags:
+- Fedora
+- FPL
+categories:
+- Blog
 ---
 <img src="http://community.redhat.com/images/blog/fedora-logo.png"> After more than two years' service as Fedora Project Leader (FPL), [Robyn Bergeron announced that she is stepping down](http://robyn.io/2014/05/19/thanks-to-you-im-much-obliged/) to pass the reins to a new FPL. Today, Robyn [announced her successor](http://robyn.io/2014/06/03/new-fpl/), Matthew Miller.
 
