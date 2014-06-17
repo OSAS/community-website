@@ -27,7 +27,7 @@ Have feedback? Want to guest on the show? Shout out to [@jzb](http://twitter.com
 
 ##Upstream Archives
 
-* Upstream: Episode 7. [Langon White on SoftwareCollections.org](http://community.redhat.com/blog/2014/05/upstream-podcast-episode-7-langon-white-on-softwarecollections-org/) ([MP3](http://upstream.jellycast.com/files/audio/2014-05-15-Langdon-White-Upstream.mp3))
+* Upstream: Episode 7. [Langdon White on SoftwareCollections.org](http://community.redhat.com/blog/2014/05/upstream-podcast-episode-7-langon-white-on-softwarecollections-org/) ([MP3](http://upstream.jellycast.com/files/audio/2014-05-15-Langdon-White-Upstream.mp3))
 * Upstream: Episode 6. [Marvin Humphrey of the Apache Software Foundation Talks Apache](http://community.redhat.com/blog/2014/05/upstream-podcast-episode-6/) ([MP3](http://upstream.jellycast.com/files/audio/2014-05-08-Marvin_Humphrey-Upstream.mp3))
 * Upstream: Episode 5. [Colin Walters on Project Atomic and rpm-ostree](http://community.redhat.com/blog/2014/04/upstream-podcast-episode-5-colin-walters-on-project-atomic-and-rpm-ostree/) ([MP3](http://upstream.jellycast.com/files/audio/2014-04-15-Colin.mp3))
 * Upstream: Episode 4. [Shane Curcuru on Brand Management and Trademarks ](http://community.redhat.com/blog/2014/04/upstream-podcast-4/) ([MP3](http://upstream.jellycast.com/files/audio/2014-04-08-Shane.mp3))
