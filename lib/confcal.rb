@@ -1,3 +1,7 @@
+# Work around a bug in activesupport-3.2.16/lib/active_support/time_with_zone.rb 
+# it need that module for 1.hours to work
+require 'active_support/core_ext/numeric/time'
+
 class ConfCal < Middleman::Extension
   def initialize(app, options_hash={}, &block)
     require 'chronic'
