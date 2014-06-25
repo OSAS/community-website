@@ -10,7 +10,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/miq.jpg"> At the OpenStack Summit in May 2014, Red Hat [announced](http://www.redhat.com/about/news/press-archive/2014/5/red-hat-announces-manageiq-community-for-open-source-cloud-management) the formation of the [ManageIQ](http://manageiq.org/) community. Since then we've launched the ManageIQ [G+ Community](https://plus.google.com/u/0/communities/115645322794739557548) page, [G+ ManageIQ](https://plus.google.com/u/0/b/107788933173548514771/107788933173548514771/posts) project page, and the [ManageIQ Community](https://www.facebook.com/manageiq) Facebook page. 
+![ManageIQ logo](/images/blog/manageiq-vertical.png)
+At the OpenStack Summit in May 2014, Red Hat [announced](http://www.redhat.com/about/news/press-archive/2014/5/red-hat-announces-manageiq-community-for-open-source-cloud-management) the formation of the [ManageIQ](http://manageiq.org/) community. Since then we've launched the ManageIQ [G+ Community](https://plus.google.com/u/0/communities/115645322794739557548) page, [G+ ManageIQ](https://plus.google.com/u/0/b/107788933173548514771/107788933173548514771/posts) project page, and the [ManageIQ Community](https://www.facebook.com/manageiq) Facebook page.
 
 And now there's a [ManageIQ YouTube channel](https://www.youtube.com/user/ManageIQVideo) with videos to help you get up to speed, with some really useful videos already online:
 
