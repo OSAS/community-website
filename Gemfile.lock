@@ -94,6 +94,8 @@ GEM
       middleman-core (>= 3.0.2)
       multi_json (~> 1.0)
       rack-livereload
+    middleman-piwik (0.2.0)
+      middleman-core (~> 3.2)
     middleman-sprockets (3.2.0)
       middleman-core (~> 3.2)
       sprockets (~> 2.1)
@@ -188,6 +190,7 @@ DEPENDENCIES
   middleman-deploy
   middleman-favicon-maker
   middleman-livereload
+  middleman-piwik
   middleman-syntax
   nokogiri
   oj
