@@ -7,7 +7,7 @@ as "bundler".
 ## Initial setup
 
 ```
-sudo yum install -y ruby-devel rubygems gcc-c++ curl-devel rubygem-bundler
+sudo yum install -y ruby-devel rubygems gcc-c++ curl-devel rubygem-bundler make
 git clone --recursive git@gitlab.osas.lab.eng.rdu2.redhat.com:garrett/community-middleman.git
 cd community-middleman
 bundle install
