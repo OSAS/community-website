@@ -17,6 +17,6 @@ categories:
 
 Open Cloud Day will have a packed schedule with speakers from Red Hat, Disney, Nginx, Puppet Labs, Chef, Apache CloudStack, Bitergia, the OpenShift Foundation, and many others. We'll have DevOps expert John Willis, Caroline McCrory of GigaOM Research, our own Steven Pousty of OpenShift fame, and Alan Sill from Texas Tech University. Check out the full schedule on the OSCON site. 
 
-If you're attending OSCON, even with a Expo Hall pass, you're eligible to attend Open Cloud Day. If you haven't already signed up for OSCON, you can [register today](https://en.oreilly.com/oscon2014/public/register). 
+If you're attending OSCON, even with a Expo Hall pass, you're eligible to attend Open Cloud Day. If you haven't already signed up for OSCON, you can [register today](https://en.oreilly.com/oscon2014/public/register). Note, you can use the REDHAT25 discount code to get a 25% discount on the 2-day or higher value passes. 
 
 We'll have a few more announcements next week, so stay tuned for that! Also a thanks to our co-sponsors, [Apache CloudStack](http://cloudstack.apache.org), [Chef](http://www.getchef.com/), and [The OpenStack Foundation](http://www.openstack.org/foundation/). See you at OSCON!
