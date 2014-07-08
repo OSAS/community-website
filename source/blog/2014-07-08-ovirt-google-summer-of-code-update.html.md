@@ -17,6 +17,8 @@ categories:
 
 So whenever we have a chance to participate in broader events in the open source community, we relish it. We were excited, then, to be a part of this year's [Google Summer of Code](https://www.google-melange.com/gsoc/homepage/google/gsoc2014).
 
+READMORE
+
 This is the first time [oVirt has participated](http://www.ovirt.org/Summer_of_Code) in the Google Summer of Code, so we decided to focus on two small, well-defined tasks. Together with our two outstanding students, Tomasz Kolek and Utkarsh Singh,  we formed two working groups, each one consisting of a student and a seasoned oVirt mentor, focusing on one of the tasks at hand.
 
 The first oVirt GSOC project is [integrating virt-sparsify](http://libguestfs.org/virt-sparsify.1.html). Virt-sparsify is a utility from the libguestfs suite of tools designed to free up in a virtual machine's disk, consecutively freeing up valuable storage resources on the host. Although the libguestfs suite has been around for several years, oVirt has just recently begun leveraging its capabilities, and adding virt-sparsify's capabilities is another important step in the right direction.
