@@ -1,6 +1,11 @@
 name: Red Hat Open Source Community
 subhead: Open Source Community
 domain: community.redhat.com
+
+# Be sure to set up and install Juvia before enabling!
+#has_comments: true
+
+# Optional logo. If commented out, it will not be used.
 logo: logo.png
 twitter: redhatopen
 
@@ -16,6 +21,14 @@ founding_year: 2012 # Defaults to current year if commented
 
 # Manual copyright string, to override the automatic one
 copyright: "Copyright &copy; 2012 &ndash; 2013 Red Hat, Inc."
+
+
+# Optional footer links
+footer_links:
+  Privacy Policy: http://www.redhat.com/legal/privacy_statement.html
+  Terms of Use: http://www.redhat.com/legal/legal_statement.html
+  Contact Us: http://www.redhat.com/about/contact/
+  About Red Hat: http://www.redhat.com/about/
 
 
 ## If unspecified, timezone defaults to UTC
