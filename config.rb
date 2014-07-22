@@ -63,8 +63,6 @@ activate :blog do |blog|
   blog.permalink = ":year/:month/:title.html"
   blog.year_link = ":year.html"
   blog.month_link = ":year/:month.html"
-  #blog.day_link = ":year/:month/:day.html"
-
 
   blog.taglink = "tag/:tag.html"
 
@@ -74,7 +72,13 @@ activate :blog do |blog|
   blog.paginate = true
   blog.per_page = 10
   blog.page_link = "page=:num"
+
+  # Day archives are overrated (and not used) - part 1/2
+  blog.day_link = "IGNORE.html" #":year/:month/:day.html"
 end
+
+# Day archives are overrated (and not used) - part 2/2
+ignore "/blog/IGNORE.html"
 
 #activate :authors
 #activate :drafts
