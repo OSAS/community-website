@@ -105,7 +105,7 @@ gem 'chronic'
 #gem 'json'
 #gem 'timezone'
 
-gem 'icalendar'
+gem 'icalendar', '~> 1.5'
 gem 'font-awesome-middleman'
 
 # RSS/Atom parsing
