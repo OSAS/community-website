@@ -18,7 +18,7 @@ While oVirt was designed to run across separate management and virtualization ho
 
 The problem with AIO is that it leaves you with one of your most important workloads (the oVirt engine) stuck running on a single piece of hardware, where it can't easily be moved around -- a very un-virt scenario. Hosted Engine gives those of us interested in getting oVirt rolling on a single server a new deployment option, and one that promises to scale out more nicely than possible with the AIO plugin.
 
-In this post, I'm going to walk through the installation and first steps of a basic oVirt install using the Hosted Engine feature. 
+In this post, I'm going to walk through the installation and first steps of a basic oVirt install using the Hosted Engine feature.
 
 READMORE
 
@@ -36,45 +36,53 @@ __Storage:__ The hosted engine feature requires NFS storage to house the VM that
 
 I'm starting out with a test machine with 8GB of RAM and 4 processor cores, running CentOS 6.5 with all updates applied. I've identified three IP addresses on my network to use for this test (one for my first host, one for the hosted engine, and one for my second host), and I've edited the /etc/hosts file on my first host so that these addresses will resolve properly:
 
->`10.10.10.1 ovirt34.osas.lab`
-
->`10.10.10.2 ovirt-hosted.osas.lab`
-
->`10.10.10.3 ovirt34-2.osas.lab`
+```
+10.10.10.1 ovirt34.osas.lab
+10.10.10.2 ovirt-hosted.osas.lab
+10.10.10.3 ovirt34-2.osas.lab
+```
 
 First, we need to configure the oVirt software repository on the first host:
 
->`sudo yum localinstall -y http://ovirt.org/releases/ovirt-release.noarch.rpm`
+```
+sudo yum localinstall -y http://ovirt.org/releases/ovirt-release.noarch.rpm
+```
 
 Because I'm using CentOS, I must also configure the EPEL repository:
 
->`sudo yum localinstall -y http://ftp.osuosl.org/pub/fedora-epel/6/i386/epel-release-6-8.noarch.rpm`
+```
+sudo yum localinstall -y http://ftp.osuosl.org/pub/fedora-epel/6/i386/epel-release-6-8.noarch.rpm
+```
 
 _(If you're using Fedora, you'll need to enable the virt-preview repo, as well, by editing "/etc/yum.repos.d/fedora-virt-preview.repo")_
 
 Next, install the hosted engine packages, along with [screen](http://www.gnu.org/software/screen/), which can come in handy during the deployment process:
 
->`sudo yum install -y ovirt-hosted-engine-setup screen`
+```
+sudo yum install -y ovirt-hosted-engine-setup screen
+```
 
 Decide on your installation media for the VM that will host your engine. PXE, ISO image, and OVF-formatted disk image are your installation options. Here, I'm using an ISO image, and creating a temporary directory to which oVirt will have access to house the image during the install process:
 
->`mkdir /home/tmp && cd /home/tmp`
-
->`curl -O http://mirrors.kernel.org/centos/6.5/isos/x86_64/CentOS-6.5-x86_64-minimal.iso`
-
->`chown -R 36:36 /home/tmp`
+```
+mkdir /home/tmp && cd /home/tmp
+curl -O http://mirrors.kernel.org/centos/6.5/isos/x86_64/CentOS-6.5-x86_64-minimal.iso
+chown -R 36:36 /home/tmp
+```
 
 I mentioned that the hosted engine requires NFS storage. I started and enabled rpcbind and nfslock on my host to allow the installer to mount my NFS share:
 
->`sudo service rpcbind start && sudo chkconfig rpcbind on`
-
->`sudo service nfslock start && sudo chkconfig nfslock on`
+```
+sudo service rpcbind start && sudo chkconfig rpcbind on
+sudo service nfslock start && sudo chkconfig nfslock on
+```
 
 Fire up screen and kick off the installation process:
 
->`screen`
-
->`hosted-engine --deploy`
+```
+screen
+hosted-engine --deploy
+```
 
 Follow along with the script, answering its questions. The default answers are fine, but you'll need to supply the path to your NFS share, the type and path to the media you'll be using to install your engine-hosting VM, the host name you've picked out for the hosted engine, and the password you'll be using for the engine admin user.
 
@@ -90,7 +98,7 @@ When the OS installation on your new VM is complete, head back to the terminal w
 
 <img src="/images/blog/ovirt34-deploy-host-1b.png" align="center">
 
-The VM will reboot, and when it's back up, it's time to install oVirt engine. Either through vnc or through an ssh session (ssh is nicer for copying and pasting commands), access your newly-created VM, and ensure that everything is in order. 
+The VM will reboot, and when it's back up, it's time to install oVirt engine. Either through vnc or through an ssh session (ssh is nicer for copying and pasting commands), access your newly-created VM, and ensure that everything is in order.
 
 * If needed, modify /etc/hosts in the new VM with the same IP address / host name mappings we set up on the first host.
 * If you didn't take care of it during the OS installation, fix your network settings to give the VM the correct host name and IP address, as well.
@@ -98,14 +106,17 @@ The VM will reboot, and when it's back up, it's time to install oVirt engine. Ei
 
 Now, just as we did on our first host, we need to configure the oVirt and EPEL software repositories on our hosted engine VM:
 
->`sudo yum localinstall -y http://ovirt.org/releases/ovirt-release.noarch.rpm`
->`sudo yum localinstall -y http://ftp.osuosl.org/pub/fedora-epel/6/i386/epel-release-6-8.noarch.rpm`
+```
+sudo yum localinstall -y http://ovirt.org/releases/ovirt-release.noarch.rpm
+sudo yum localinstall -y http://ftp.osuosl.org/pub/fedora-epel/6/i386/epel-release-6-8.noarch.rpm
+```
 
 Next, we'll install and then set up ovirt-engine:
 
->`sudo yum install -y ovirt-engine`
-
->`sudo engine-setup`
+```
+sudo yum install -y ovirt-engine
+sudo engine-setup
+```
 
 <img src="/images/blog/ovirt34-configure-engine-1.png" align="center">
 
@@ -119,7 +130,9 @@ The installer will register itself as a virtualization host on the oVirt engine 
 
 It can take a few minutes for the HA services to notice that the engine is down, to check that there's a machine available to host the engine, and to start up the hosted engine VM. You can watch these services do their thing by tailing their log files:
 
->`sudo tail -f /var/log/ovirt-hosted-engine-ha/*`
+```
+sudo tail -f /var/log/ovirt-hosted-engine-ha/*
+```
 
 Once that process is complete, the script will exit and you should be ready to configure storage and run a VM.
 
@@ -129,7 +142,7 @@ Another handy new feature in oVirt 3.4 is a [simpler model](http://www.ovirt.org
 
 I point this out because, when setting up our first storage domain (the storage on which the hosted VM lives always remains separate from the rest of your data domains) it's not necessary to commit to one storage type.
 
-I used an external NFS server for my hosted engine storage, and I'll use another share on that same server for the data domain that will host my VM images. 
+I used an external NFS server for my hosted engine storage, and I'll use another share on that same server for the data domain that will host my VM images.
 
 Head to your oVirt engine console at the address of your hosted engine VM, log in with the user name `admin` and the password you chose during setup, and visit the "Storage" tab in the console.
 
@@ -171,19 +184,22 @@ Start out with another machine that meets the same requirements (hardware, softw
 
 Next, install the packages you need and start services for NFS mount:
 
->`sudo yum install -y http://ovirt.org/releases/ovirt-release.noarch.rpm` `&&` `sudo yum install -y http://ftp.osuosl.org/pub/fedora-epel/6/i386/epel-release-6-8.noarch.rpm` `&&` `sudo yum install -y screen ovirt-hosted-engine-setup` `&&` `sudo service rpcbind start` `&&` `sudo chkconfig rpcbind on` `&&` `sudo service nfslock start` `&&` `sudo chkconfig nfslock on`
+```
+sudo yum install -y http://ovirt.org/releases/ovirt-release.noarch.rpm` `&&` `sudo yum install -y http://ftp.osuosl.org/pub/fedora-epel/6/i386/epel-release-6-8.noarch.rpm` `&&` `sudo yum install -y screen ovirt-hosted-engine-setup` `&&` `sudo service rpcbind start` `&&` `sudo chkconfig rpcbind on` `&&` `sudo service nfslock start` `&&` `sudo chkconfig nfslock on
+```
 
 Deploy the second host:
 
->`screen`
+```
+screen
+sudo hosted-engine --deploy
+```
 
->`sudo hosted-engine --deploy`
-
-Again, follow the prompts, supplying your NFS share information for the hosted engine. 
+Again, follow the prompts, supplying your NFS share information for the hosted engine.
 
 When your second machine reaches the NFS share, it will recognize an existing data domain and ask if you're installing a second host. Answer Yes, and assign this host number 2. The installer will ask for the address and credentials from your first host in order to fetch the rest of the setup answers it requires.
 
-Once the process completes, and the ha services on your hosts have time to scope each other out, you should be able to see your second host's report itself as ready for hosted engine duty in the "General" tab of its lower pane in the oVirt admin console. 
+Once the process completes, and the ha services on your hosts have time to scope each other out, you should be able to see your second host's report itself as ready for hosted engine duty in the "General" tab of its lower pane in the oVirt admin console.
 
 <img src="/images/blog/ovirt34-second-host-1.png" align="center">
 
@@ -195,17 +211,23 @@ The ovirt-hosted-ha agent and broker that run on each of your hosts keep tabs on
 
 You can signal that one of your hosts shouldn't be used for hosting the engine, because, for instance, it's ungoing maintenance, you can run the command:
 
->`hosted-engine  --set-maintenance --mode=local`
+```
+hosted-engine  --set-maintenance --mode=local
+```
 
 To put your whole setup into maintenance mode, you can run the command:
 
->`hosted-engine  --set-maintenance --mode=global`
+```
+hosted-engine  --set-maintenance --mode=global
+```
 
 You should do this before performing updates on the engine, so that when the engine goes down for the update, your hosts don't mistakenly swing into action to rectify the planned downtime.
 
 To return the system to normal condition, run the command:
 
->`hosted-engine  --set-maintenance --mode=none`
+```
+hosted-engine  --set-maintenance --mode=none
+```
 
 ## Till Next Time
 
