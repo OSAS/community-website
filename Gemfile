@@ -62,7 +62,7 @@ gem "oj"
 # see http://blog.jquery.com/2013/01/15/jquery-1-9-final-jquery-2-0-beta-migrate-final-released/
 gem 'rails-assets-jquery', '~> 1'
 
-gem 'rails-assets-fullcalendar'
+gem 'rails-assets-fullcalendar', '~> 1.6.4'
 
 
 #####
