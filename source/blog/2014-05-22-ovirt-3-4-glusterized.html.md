@@ -23,6 +23,17 @@ In this post, I'm going to walk through that latter option -- setting up a pair 
 
 READMORE
 
+**NOTE:** People have been [running into](http://lists.ovirt.org/pipermail/users/2014-July/026088.html) [some issues](https://bugzilla.redhat.com/show_bug.cgi?id=1097639) with converged Gluster + oVirt setups like the one I describe here.
+
+It's important to use CTDB, or something like it, to provide for [automated IP failover]((https://access.redhat.com/documentation/en-US/Red_Hat_Storage/2.1/html/Administration_Guide/ch09s05.html)). While it may seem reasonable to simply use "localhost" as the NFS mount point for the hosted engine storage, and rely on Gluster to handle the replication between the servers, this ends up not working reliably. 
+
+In my own lab, I'm running a setup like the one below, but with three machines, each serving as virt+storage hosts, with replica 3 Gluster volumes to ensure that a 51% quorum is maintained when one of the machines is down for maintenance.
+
+My planned outages, where (as described below) I first stop the ctdb service on the to-be-shutdown machine, thereby prompting another node to pick up the job, have run smoothly.
+
+I recently tested with an unplanned outage, where I pulled the plug (stopped via power management) on the machine hosting my Gluster NFS storage. Here the handoff left much to be desired -- it took 18 minutes for oVirt engine to become fully available again. However, it took the only other VM I had running at the time (which wasn't on the downed machine) never went offline, as is the norm for oVirt engine outages.
+
+
 ## Prerequisites
 
 The prerequisites are the same as for the [Up and Running with oVirt 3.4](http://community.redhat.com/blog/2014/03/up-and-running-with-ovirt-3-4/) walkthrough, with the addition of a healthy-sized disk or partition to use for our Gluster volumes. The hosted engine VM will require 20GB, and you'll want to have plenty of storage space left over for the VMs you'll create and manage with oVirt.
@@ -228,6 +239,15 @@ XX.XX.XX.XX/24 eth0
 ### Second Machine Only
 
 ````
+chkconfig rpcbind on
+````
+````
+service rpcbind start
+````
+````
+yum install -y nfs-utils ctdb
+````
+````
 mkdir -p /mnt/lock
 ````
 ````
@@ -299,7 +319,7 @@ gluster volume create data replica 2 $YOUR_FIRST_MACHINE:/gluster/data0 $YOUR_OT
 gluster volume set data storage.owner-uid 36 && gluster volume set data storage.owner-gid 36
 ````
 ````
-gluster volume set engine group virt
+gluster volume set storage group virt
 ````
 ````
 gluster volume start data
