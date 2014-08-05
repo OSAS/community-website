@@ -17,7 +17,7 @@ The first beta of glusterfs 3.4 is [scheduled for release](http://www.gluster.or
 
 Since I plan on participating in the testing, I thought it'd be a good idea to study up on Gluster's new test framework. You can learn all about the test framework in [the video](http://www.youtube.com/watch?v=dy8lPtZ7B14) below, but I'll also walk you through a brief testing experience of my own using the pre-beta code running on my Fedora 18 test machine.
 
-http://www.youtube.com/watch?v=dy8lPtZ7B14
+<iframe width="560" height="315" src="//www.youtube.com/embed/dy8lPtZ7B14" frameborder="0" allowfullscreen></iframe>
 
 The Gluster framework makes use of the app "prove" which is provided, for Fedora and related OSes, by the package "perl-Test-Harness." (note: to figure out which package to install, I used the command "yum provides prove")
 
