@@ -11,6 +11,7 @@ tags:
 categories:
 - Blog
 ---
+<img src="/images/blog/flock-logo-bg-300x174.png" />
 [Flock 2014](http://flock2014.sched.org/grid/#.U-JKjvFwa1E), the conference for Fedora contributors, is being held from August 6-9 in Prague. If you couldn't attend in person, but you'd like to follow along remotely, check out the [Flock YouTube channel](https://www.youtube.com/channel/UCQIXiF6fxPCtHw_XwHFq6nA) for live streaming and video archives.
 
 Links to August 6 videos:
