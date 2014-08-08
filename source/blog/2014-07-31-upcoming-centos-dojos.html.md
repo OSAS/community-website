@@ -1,16 +1,16 @@
 ---
-comments: true
-layout: post
-author: rendsley
 title: Upcoming CentOS Dojos
 date: 2014-07-31 14:16 UTC
+author: rendsley
 tags:
 - CentOS
 - Dojo
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/CentOS_200x.png"> [CentOS Dojos](http://wiki.centos.org/Events) are one-day sysadmin-centric events held around the world, and the next one is August 4 in Cologne, Germany. 
+
+![](blog/CentOS_200x.png)
+[CentOS Dojos](http://wiki.centos.org/Events) are one-day sysadmin-centric events held around the world, and the next one is August 4 in Cologne, Germany.
 
 To get a better idea of what to expect at a CentOS Dojo, you can watch recordings of past events on the [CentOS YouTube channel](https://www.youtube.com/channel/UC-IoMrffK5xG1UI-skkTlcA).
 

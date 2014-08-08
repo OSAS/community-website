@@ -1,15 +1,15 @@
 ---
-title: OSCON 2014&#58; From a Slightly Different View
+title: "OSCON 2014: From a Slightly Different View"
 date: 2014-08-06 20:07 UTC
 author: dbryant
-comments: true
-layout: post
 tags:
 - OSCON
 categories:
 - Blog
 ---
-<img src="/images/blog/osconbooth.png">Since 2005, I've attended nearly every OSCON in one capacity or another, including speaking on open source in government, open source health IT, and open source foundations 101; moderating panels; or just doing booth duty for one of my favorite non-profits. [This year's event](http://www.oscon.com/oscon2014) coincided with my first month as a [Red Hat employee](http://community.redhat.com/blog/2014/07/welcoming-deb-bryant-senior-director-osas/) and as a member of the Open Source and Standards team (OSAS). 
+
+![](blog/osconbooth.png)
+Since 2005, I've attended nearly every OSCON in one capacity or another, including speaking on open source in government, open source health IT, and open source foundations 101; moderating panels; or just doing booth duty for one of my favorite non-profits. [This year's event](http://www.oscon.com/oscon2014) coincided with my first month as a [Red Hat employee](http://community.redhat.com/blog/2014/07/welcoming-deb-bryant-senior-director-osas/) and as a member of the Open Source and Standards team (OSAS).
 
 In addition to the insight I gained by meeting with many of my team members who were attending and contributing to the conference, other highlights for me included:
 
