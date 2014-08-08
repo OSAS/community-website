@@ -67,5 +67,5 @@ categories:
 
 Check back for an update on the August 8 streaming schedule as it becomes available.
 
-Visit the [Fedora Magazine](http://fedoramagazine.org/) site for reports from the event and [links to IRC channels](http://fedoramagazine.org/flock-2014-stream-links-1/), and follow the #flocktofedora hashtag on Twitter.
+Visit the [Fedora Magazine](http://fedoramagazine.org/) site for reports from the event and [links to IRC channels](http://fedoramagazine.org/flock-2014-stream-links-1/), and follow the [#flocktofedora hashtag on Twitter](https://twitter.com/search?f=realtime&q=%23flocktofedora).
 
