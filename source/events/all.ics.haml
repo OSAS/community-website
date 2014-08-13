@@ -16,7 +16,7 @@ layout: false
 
   data.events.each do |year_label, year|
 
-    unless year_label[/schema/]
+    if year_label[/\d{4}/]
 
       year.each do |conf_label, conf|
 

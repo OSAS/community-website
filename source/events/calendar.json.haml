@@ -8,7 +8,7 @@ layout: false
 
   data.events.each do |year_label, year|
 
-    unless year_label[/schema/]
+    if year_label[/\d{4}/]
 
       conferences += year.map do |conf_label, conf|
 
