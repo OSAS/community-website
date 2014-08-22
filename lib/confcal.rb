@@ -93,7 +93,7 @@ class ConfCal < Middleman::Extension
       @cur_ev[time_start] ||= {}
 
       @cur_ev[time_start][time_end] = events.each_with_object({}) do |(year_label, year), h|
-        unless year_label[/schema/]
+        if year_label[/\d{4}/]
 
           h[year_label] = year.select do |conf_label, conf|
             matches = false
