@@ -193,6 +193,22 @@ activate :confcal
 
 
 ###
+# Monkey patches
+###
+
+helpers do
+  alias_method :_asset_path, :asset_path
+
+  # Strip "/source/" off of media
+  # (Workaround for Prose.io compatibility)
+  def asset_path(kind, source)
+    source.gsub!(/^\/source/, '') if kind == :images
+    _asset_path(kind, source)
+  end
+end
+
+
+###
 # Development-only configuration
 ###
 #
