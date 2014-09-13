@@ -733,7 +733,7 @@ Cloud and Virtualisation:
     url: http://www.ovirt.org/Building_oVirt_engine
 
   - name: OVMF
-    url: http://sourceforge.net/apps/mediawiki/tianocore/index.php?title=OVMF
+    url: http://tianocore.github.io/ovmf/
 
   - name: Oz
     url: http://www.aeolusproject.org/oz.html
