@@ -17,10 +17,11 @@ categories:
 Calling OpenStack users! Want to help make OpenStack dead easy to install on CentOS, Fedora, and/or RHEL? Join us for the next test days in early October. The OpenStack Juno release is getting closer and the [RDO community is planning to run test days](https://openstack.redhat.com/RDO_test_day_Juno_milestone_3) on October 1, 2014 and October 2, 2014. 
 
 The RDO team will be providing packages for CentOS, Fedora, and RHEL:
-* CentOS 7
-* RHEL 6.5 
-* RHEL 7
-* Fedora 20
+
+- CentOS 7
+- RHEL 6.5 
+- RHEL 7
+- Fedora 20
 
 You'll want to have a **fresh** install of one (or more, if you're ambitious) of the operating systems listed, and join the RDO team on Freenode in the #rdo channel. 
 
