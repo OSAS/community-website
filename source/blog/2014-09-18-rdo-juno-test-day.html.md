@@ -3,7 +3,7 @@ author: Rich Bowen
 comments: true
 layout: post
 title: RDO Test Days for OpenStack Juno M3
-date: 2014-09-18 19:55 UTC
+date: 2014-09-18 19:30 UTC
 tags:
 - CentOS
 - RHEL
@@ -30,9 +30,9 @@ READMORE
 
 The RDO team has [test cases](https://openstack.redhat.com/RDO_test_day_Juno_milestone_3_test_cases) on the site that cover Packstack-based installation of networking, storage, and miscellaneous components. Additional test cases ahead of the test days are, of course, welcome. 
 
-Look to see if any [workarounds are required](https://openstack.redhat.com/Workarounds) for your platform before running tests. (Example: [Could not enable mysqld on CentOS 7](https://bugzilla.redhat.com/show_bug.cgi?id=1138701)].)
+Look to see if any [workarounds are required](https://openstack.redhat.com/Workarounds) for your platform before running tests. (Example: [Could not enable mysqld on CentOS 7](https://bugzilla.redhat.com/show_bug.cgi?id=1138701).)
 
-Plan to keep copious notes. Even if you've installed OpenStack 100 times, the best testing is done when looking at the process as a beginner. Step through tests deliberately, keep good notes, and [review others' notes](https://etherpad.openstack.org/p/rdo_juno_test_day_oct_2014 ). 
+Plan to keep copious notes. Even if you've installed OpenStack 100 times, the best testing is done when looking at the process as a beginner. Step through tests deliberately, keep good notes, and [review others' notes](https://etherpad.openstack.org/p/rdo_juno_test_day_oct_2014). 
 
 Be ready to report any problems to [Bugzilla](https://bugzilla.redhat.com/), and add results to the [TestedSetups](https://openstack.redhat.com/TestedSetups) page. 
 
