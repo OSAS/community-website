@@ -1,5 +1,5 @@
 ---
-author: quaid
+author: Karsten Wade
 comments: true
 date: 2014-01-07 21:38 UTC
 layout: post
@@ -28,4 +28,3 @@ My relationship to this new effort is pretty integral. I've been acting as the p
 * Project governance: http://www.centos.org/about/governance
 * CentOS variants: http://www.centos.org/variants
 * About CentOS: http://www.centos.org/about
-
