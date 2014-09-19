@@ -22,6 +22,7 @@ The RDO team will be providing packages for CentOS, Fedora, and RHEL:
 - RHEL 6.5 
 - RHEL 7
 - Fedora 20
+- Fedora 21
 
 You'll want to have a **fresh** install of one (or more, if you're ambitious) of the operating systems listed, and join the RDO team on Freenode in the #rdo channel. 
 
