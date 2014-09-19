@@ -25,6 +25,9 @@ title: Speaking Engagements
     current_events
   end
 
+  # Ensure relevant_events is always sorted by year
+  relevant_events = relevant_events.sort_by {|k, v| k}
+
 
 - unless relevant_events.count > 0
 
