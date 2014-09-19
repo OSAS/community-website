@@ -62,8 +62,10 @@ mlipchuk:
 ncoghlan:
   name: Nick Coghlan
   
-obarenhoim:
+obarenboim:
   name: Oleg Barenboim
+  description: |
+    Follow Oleg Barenboin on Twitter at: @chessbyte.
   
 pmcgarry:
   name: Patrick McGarry
