@@ -34,15 +34,6 @@ glesage:
 glikins:
   name: Gina Likins
 
-jbrockmeier:
-  name: Joe Brockmeier
-  twitter: jzb
-  googleplus: JoeBrockmeier
-  description: |
-     Joe Brockmeier works for Red Hat on the Open Source and Standards
-     team. Passionate fan of Linux and open source, Vim, music, art,
-     cats, and polar bears. Not necessarily in that order.
-
 jbrooks:
   name: Jason Brooks
   twitter: jasonbrooks
@@ -52,6 +43,15 @@ johnmark:
 
 jottinger:
   name: Joseph Ottinger
+  
+jzb:
+  name: Joe Brockmeier
+  twitter: jzb
+  googleplus: JoeBrockmeier
+  description: |
+     Joe Brockmeier works for Red Hat on the Open Source and Standards
+     team. Passionate fan of Linux and open source, Vim, music, art,
+     cats, and polar bears. Not necessarily in that order.
   
 kwade:
   name: Karsten Wade
