@@ -1,8 +1,8 @@
 ---
-author: Rikki Endsley
+author: rendsley
 comments: true
 layout: post
-title: Back to School: Upcoming University Outreach Events
+title: Back to School - Upcoming University Outreach Events
 date: 2014-09-04 16:59 UTC
 tags:
 - Education
