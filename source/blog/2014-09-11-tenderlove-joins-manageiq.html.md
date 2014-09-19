@@ -3,7 +3,7 @@ title: "Aaron Patterson (aka tenderlove) joins ManageIQ Team"
 comments: true
 layout: post
 date: 2014-09-11 10:31 UTC
-author: chessbyte
+author: Oleg Barenboim
 tags:
 - manageiq
 - tenderlove
@@ -20,4 +20,3 @@ Aaron is also on the Ruby and Rails security teams. He is the top contributor to
 Aaron will be splitting his time in continuing to move the Ruby and Rails communities forward as well as helping us with the ManageIQ project. Some of the things Aaron will focus on for ManageIQ are getting our software to Ruby 2.x and Rails 4.x, removing the need for our own Rails extensions and forks, and helping to tackle our technical debt.
 
 We look forward to great contributions from Aaron to the Ruby, Rails, and ManageIQ communities!
-
