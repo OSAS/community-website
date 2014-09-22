@@ -4,6 +4,11 @@ admin:
   
 alarsson:
   name: Alexander Larsson
+  twitter: gnomealex
+    Alexander works in the Red Hat Desktop group and primarily works on Gtk+
+    and the Gnome desktop, but has also been involved in other things like
+    Spice and Docker. He works from Stockholm, Sweden. 
+    Follow him on Twitter at @gnomealex.
 
 bproffitt:
   name: Brian Proffitt
@@ -14,6 +19,14 @@ dallen:
   
 dbryant:
   name: Deb Bryant
+  twitter: debbryant
+    Deb Bryant is senior director, Open Source and Standards at Red Hat, where 
+    she helps make upstream communities wildly successful. Deb serves on 
+    numerous boards with public trust agendas and an emphasis on open source 
+    software as enabling technology and is a long-time advocate for the use of 
+    open source and in the pubic sector.  She's based in Portland, Oregon in 
+    part because the water is great and rumored to be laced with Open.
+    Follow her on Twitter at: @debbryant.
   
 dcleal:
   name: Dominic Cleal
@@ -53,9 +66,6 @@ jzb:
      team. Passionate fan of Linux and open source, Vim, music, art,
      cats, and polar bears. Not necessarily in that order.
   
-kwade:
-  name: Karsten Wade
-  
 mlipchuk:
   name: Maor Lipchuk
   
@@ -70,6 +80,15 @@ obarenboim:
 pmcgarry:
   name: Patrick McGarry
   twitter: scuttlemonkey
+  
+quaid:
+  name: Karsten Wade
+  twitter: quaid
+    Karsten 'quaid' Wade is a long-time Red Hat community gardener and member of 
+    the Open Source and Standards team working mainly on the CentOS Project. His 
+    passion for the open source way (http://theopensourceway.org) fits in well 
+    with his love of family, urban farming, and pedicabbing (to name but three). 
+    He lives in Santa Cruz, CA, and you can find him all online as @quaid.
   
 rbowen:
   name: Rich Bowen
