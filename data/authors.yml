@@ -78,6 +78,15 @@ jzb:
      Joe jzb Brockmeier works for Red Hat on the Open Source and Standards
      team. Passionate fan of Linux and open source, Vim, music, art,
      cats, and polar bears. Not necessarily in that order.
+
+kwade:
+  name: quaid
+  twitter: quaid
+    Karsten 'quaid' Wade is a long-time Red Hat community gardener and member of 
+    the Open Source and Standards team working mainly on the CentOS Project. His 
+    passion for the open source way (http://theopensourceway.org) fits in well 
+    with his love of family, urban farming, and pedicabbing (to name but three). 
+    He lives in Santa Cruz, CA, and you can find him all online as @quaid.
   
 mlipchuk:
   name: Maor Lipchuk
@@ -101,15 +110,6 @@ obarenboim:
 pmcgarry:
   name: Patrick McGarry
   twitter: scuttlemonkey
-  
-kwade:
-  name: quaid
-  twitter: quaid
-    Karsten 'quaid' Wade is a long-time Red Hat community gardener and member of 
-    the Open Source and Standards team working mainly on the CentOS Project. His 
-    passion for the open source way (http://theopensourceway.org) fits in well 
-    with his love of family, urban farming, and pedicabbing (to name but three). 
-    He lives in Santa Cruz, CA, and you can find him all online as @quaid.
   
 rbowen:
   name: Rich Bowen
