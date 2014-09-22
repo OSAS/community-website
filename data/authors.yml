@@ -71,11 +71,11 @@ jottinger:
   name: Joseph Ottinger
   
 jzb:
-  name: Joe Brockmeier
+  name: jzb
   twitter: jzb
   googleplus: JoeBrockmeier
   description: |
-     Joe Brockmeier works for Red Hat on the Open Source and Standards
+     Joe jzb Brockmeier works for Red Hat on the Open Source and Standards
      team. Passionate fan of Linux and open source, Vim, music, art,
      cats, and polar bears. Not necessarily in that order.
   
@@ -102,8 +102,8 @@ pmcgarry:
   name: Patrick McGarry
   twitter: scuttlemonkey
   
-quaid:
-  name: Karsten Wade
+kwade:
+  name: quaid
   twitter: quaid
     Karsten 'quaid' Wade is a long-time Red Hat community gardener and member of 
     the Open Source and Standards team working mainly on the CentOS Project. His 
@@ -114,10 +114,10 @@ quaid:
 rbowen:
   name: Rich Bowen
   twitter: rbowen
-    Rich Bowen has been doing open source for almost 20 years. He's a member of 
-    the Apache Software Foundation, where he's involved in the Apache Web Server 
-    project, and serves as Executive Vice President and board member. He's an 
-    avid runner, geocacher, and writer. Rich is the OpenStack Community Liaison 
+    Rich Bowen has been doing open source for almost 20 years. Rich is a member of 
+    the Apache Software Foundation, where he is involved in the Apache Web Server 
+    project, and serves as Executive Vice President and board member. He is an 
+    avid runner, geocacher, writer, and the OpenStack Community Liaison 
     for the RDO project (openstack.redhat.com). Find him on Twitter at: @rbowen.
 
 rendsley:
