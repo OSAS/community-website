@@ -1,5 +1,5 @@
 ---
-author: Rich Bowen
+author: rbowen
 comments: true
 layout: post
 title: RDO Test Days for OpenStack Juno M3
