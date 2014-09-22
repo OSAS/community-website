@@ -13,6 +13,10 @@ alarsson:
 bproffitt:
   name: Brian Proffitt
   twitter: thetechscribe
+    Brian Proffitt is the Community Liaison for oVirt (http://www.ovirt.org), a 
+    virtual datacenter management platform built for organizations of any size. 
+    A former technology journalist, Brian is also an adjunct instructor at the 
+    University of Notre Dame. Follow him on Twitter at: @TheTechScribe
   
 dallen:
   name: Dan Allen
@@ -33,6 +37,15 @@ dcleal:
   
 dneary:
   name: Dave Neary
+  twitter: nearyd
+    Dave Neary is part of Red Hat's Open Source and Standards team, driving
+    adoption and community growth for projects including oVirt, RDO, a 
+    distribution of OpenStack for Red Hat-based operating systems, Gluster, and 
+    Fedora. Dave is currently concentrating on projects related to Network 
+    Function Virtualization and Software Defined Networking. Dave has been 
+    active in free and open source communities for more than 15 years as a 
+    consultant, community manager, trainer and developer. 
+    Find him on Twitter as: @nearyd.
   
 ewillson:
   name: Eco Willson
@@ -71,6 +84,14 @@ mlipchuk:
   
 ncoghlan:
   name: Nick Coghlan
+  twitter: ncoghlan_dev
+    Nick Coghlan is a deployment architect at Red Hat, providing guidance on how 
+    open source principles and practices are applied to the development, 
+    deployment and operation of various tools and services at Red Hat, including 
+    bugzilla.redhat.com and beaker.fedoraproject.org. In addition to working on 
+    automation infrastructure for Red Hat, Nick is also an active upstream 
+    CPython core developer and a Director of the Python Software Foundation. 
+    Find him on Twitter at: @ncoghlan_dev
   
 obarenboim:
   name: Oleg Barenboim
@@ -92,6 +113,12 @@ quaid:
   
 rbowen:
   name: Rich Bowen
+  twitter: rbowen
+    Rich Bowen has been doing open source for almost 20 years. He's a member of 
+    the Apache Software Foundation, where he's involved in the Apache Web Server 
+    project, and serves as Executive Vice President and board member. He's an 
+    avid runner, geocacher, and writer. Rich is the OpenStack Community Liaison 
+    for the RDO project (openstack.redhat.com). Find him on Twitter at: @rbowen.
 
 rendsley:
   name: Rikki Endsley
@@ -119,6 +146,10 @@ rturk:
   
 tcallaway:
   name: Tom Callaway
+  twitter: spotrh
+    Worshipped by lemurs throughout the known universe, Red Hat employee since 
+    2001, currently working on promoting Open Source in higher education. Enjoys 
+    sci-fi, pinball, traveling, and hockey. Find him on Twitter at: @spotrh.
 
 tconrey:
   name: Theron Conrey
