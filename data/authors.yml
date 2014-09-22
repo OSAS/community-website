@@ -13,6 +13,7 @@ alarsson:
 bproffitt:
   name: Brian Proffitt
   twitter: thetechscribe
+  description: |
     Brian Proffitt is the Community Liaison for oVirt (http://www.ovirt.org), a 
     virtual datacenter management platform built for organizations of any size. 
     A former technology journalist, Brian is also an adjunct instructor at the 
@@ -24,6 +25,7 @@ dallen:
 dbryant:
   name: Deb Bryant
   twitter: debbryant
+  description: |
     Deb Bryant is senior director, Open Source and Standards at Red Hat, where 
     she helps make upstream communities wildly successful. Deb serves on 
     numerous boards with public trust agendas and an emphasis on open source 
@@ -38,6 +40,7 @@ dcleal:
 dneary:
   name: Dave Neary
   twitter: nearyd
+  description: |
     Dave Neary is part the Open Source and Standards team at Red Hat, driving
     adoption and community growth for projects including oVirt, RDO, a 
     distribution of OpenStack for Red Hat-based operating systems, Gluster, and 
@@ -82,6 +85,7 @@ jzb:
 quaid:
   name: quaid
   twitter: quaid
+  description: |
     Karsten (quaid) Wade is a long-time Red Hat community gardener and member of 
     the Open Source and Standards team working mainly on the CentOS Project. His 
     passion for the open source way (http://theopensourceway.org) fits in well 
@@ -94,6 +98,7 @@ mlipchuk:
 ncoghlan:
   name: Nick Coghlan
   twitter: ncoghlan_dev
+  description: |
     Nick Coghlan is a deployment architect at Red Hat, providing guidance on how 
     open source principles and practices are applied to the development, 
     deployment and operation of various tools and services at Red Hat, including 
@@ -114,6 +119,7 @@ pmcgarry:
 rbowen:
   name: Rich Bowen
   twitter: rbowen
+  description: |
     Rich Bowen has been doing open source for almost 20 years. Rich is a member of 
     the Apache Software Foundation, where he is involved in the Apache Web Server 
     project, and serves as Executive Vice President and board member. He is an 
@@ -147,6 +153,7 @@ rturk:
 tcallaway:
   name: Tom Callaway
   twitter: spotrh
+  description: |
     Worshipped by lemurs throughout the known universe, Red Hat employee since 
     2001, currently working on promoting Open Source in higher education. Enjoys 
     sci-fi, pinball, traveling, and hockey. Find him on Twitter at: @spotrh.
