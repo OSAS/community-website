@@ -1,5 +1,5 @@
 ---
-author: Karsten Wade
+author: quaid
 layout: post
 comments: true
 title: "CentOS Dojos: An Overview and Invite to Orlando"
