@@ -16,6 +16,3 @@ categories:
 The [Open Source Initiative](http://opensource.org/) and the [Apereo Foundation](https://www.apereo.org/), a higher education-focused open source initiative, have organized the [Open Communities Reception](http://www.educause.edu/annual-conference/2014/open-reception) at Educause 2014. The reception is co-sponsored my several open initiatives supporting higher education, including: [Asahi.net](http://anisakai.com/), [BigBlueButton](http://bigbluebutton.org/), [ESUP](https://www.esup-portail.org/), [IMS Global](http://www.imsglobal.org/), [OERu](http://oeru.org/), [OSCELOT](http://www.oscelot.org/), [Red Hat](http://www.redhat.com/en), [SoLAR](http://solaresearch.org/), and the [University of Southern Queensland](http://ocw.usq.edu.au/). The reception provides a great chance for attendees to meet and get to know each other.
 
 Visit [the Educause 2014 website](https://www.educause.edu/annual-conference) to learn more about the event and to [register](https://www.educause.edu/annual-conference/registration) to attend in person or via the virtual conference.
-
-
-<img src="http://community.redhat.com/images/blog/educause14-lg.png">
