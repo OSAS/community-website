@@ -117,6 +117,19 @@ obarenboim:
   name: Oleg Barenboim
   description: |
     Follow Oleg Barenboin on Twitter at: @chessbyte.
+    
+pmasson:
+  name: Patrick Masson
+  twitter: massonpj
+  description: |
+    Patrick Masson is the General Manager of the Open Source Initiative. Prior 
+    to the OSI, Patrick worked in a variety of roles within higher education: 
+    programmer analyst (UCLA), director of technology (SUNY), chief technology
+    officer (UMass), and chief information officer (SUNY). He has worked with a 
+    variety of open source projects specific to higher education, including 
+    Sakai, uPortal, and Moodle, and currently he teaches Open Source Principles 
+    and Practices at the University of Albany. Find him on Twitter: @massonpj.
+
   
 pmcgarry:
   name: scuttlemonkey
