@@ -1,10 +1,9 @@
-
 ---
 author: bkp
 comments: true
 layout: post
 title: oVirt 2014 Workshop Registration Opens
-date: 2014-09-23 21:30 UTC
+date: 2014-09-23 21:40 UTC
 tags:
 - oVirt
 - KVM
@@ -23,4 +22,3 @@ The 2014 oVirt workshop will be co-located with the [KVM Forum](http//events.lin
 
 Attendees can [register free-of-charge for the Workshop](https://www.regonline.com/Register/Checkin.aspx?EventID=1625495
 ), and [LinuxCon EU](http://events.linuxfoundation.org/events/linuxcon-europe/extend-the-experience/co-located-events), [CloudOpen Europe](http://events.linuxfoundation.org/events/cloudopen-europe/extend-the-experience/co-located-events), [Embedded Linux Conference](http://events.linuxfoundation.org/events/embedded-linux-conference-europe/extend-the-experience/co-located-events), and [KVM Forum](http://events.linuxfoundation.org/events/kvm-forum/extend-the-experience/co-located-events) attendees can add this free Workshop to their itineraries when registering.
-
