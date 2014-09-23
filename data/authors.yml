@@ -94,6 +94,12 @@ quaid:
   
 mlipchuk:
   name: Maor Lipchuk
+  twitter:
+  description: |
+    Maor Lipchuk has worked as a Senior Software Engineer in the oVirt project 
+    for the past four years. He currently is working in the Storage team. Maor 
+    likes to travel, so if you need any help with oVirt, feel free to invite him 
+    for a visit.
   
 ncoghlan:
   name: Nick Coghlan
