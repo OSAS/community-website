@@ -64,6 +64,8 @@ GEM
     icalendar (1.5.4)
     json (1.8.1)
     kramdown (1.4.0)
+    launchy (2.4.2)
+      addressable (~> 2.3)
     less (2.6.0)
       commonjs (~> 0.2.7)
     libv8 (3.16.14.3)
@@ -214,6 +216,7 @@ DEPENDENCIES
   font-awesome-middleman
   icalendar (~> 1.5)
   kramdown
+  launchy
   less
   middleman (~> 3.3.3)
   middleman-blog
@@ -233,6 +236,7 @@ DEPENDENCIES
   rails-assets-jquery (~> 1)
   reverse_markdown
   ruby18_source_location
+  slop
   stringex
   therubyracer
   wdm (~> 0.1.0)
