@@ -24,6 +24,8 @@ The Open Platform for [NFV (OPNFV) project launched](https://www.opnfv.org/news-
 
 As a founding member of the project at the highest Platinum level, Red Hat recognizes the project's potential to change the telco industry, and is committed to bringing the company’s strengths to the table in support. One of the key challenges for the project will be to ensure that code developed for NFV is submitted and accepted upstream in the relevant projects, and Red Hat has a wealth of experience upstream in these communities and in affecting change across a number of projects.
 
+READMORE
+
 OPNFV was created as a continuation of the work of the European Telecommunications Standards Institute (ETSI) NFV Industry Standardization Group [3], which created a set of NFV use-cases [4] representing common workloads that operators would like to deploy on a platform. From these use-cases, you can identify gaps in the underlying virtualization platform that need to be plugged to enable NFV. We have not waited for the OPNFV project to launch before rolling up our sleeves and getting to work. The NFV working group in the OpenStack project [5] has already started creating feature requests and submitting patches to OpenStack and its dependencies in advance of the Juno release in October [6].
 
 Given existing efforts in ETSI and OpenStack, what gap does OPNFV fill? The creation of an NFV platform is a broader effort than just OpenStack -- the high throughput and low latency requirements of certain network functions will need engineering work throughout the network stack, from enabling hardware acceleration features such as SR-IOV and NUMA in the kernel on the hypervisor, to enabling the guest kernel to hand off packet processing to user-space, and everything in between.
@@ -33,7 +35,8 @@ OPNFV will look at the problem holistically, and for each project included in th
 Starting this week at the OPNFV technical steering committee kick-off, we look forward to ensuring that OpenStack and OpenDaylight form the heart of a great NFV platform that this industry effort can support and adopt.
 For more information about OPNFV, see the [FAQ](https://www.opnfv.org/news-faq/faq) and [white paper](https://www.opnfv.org/sites/opnfv/files/pages/files/opnfv_whitepaper_092914.pdf).
 
-##Resources
+### Resources
+
 
 * [Telecom Industry and Vendors Unite to Build Common Open Platform to Accelerate Network Functions Virtualization](http://www.linuxfoundation.org/news-media/announcements/2014/09/telecom-industry-and-vendors-unite-build-common-open-platform)
 * [OPNFV.org](https://www.opnfv.org/)
