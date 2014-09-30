@@ -14,7 +14,7 @@ gem "middleman-livereload"
 
 # Debugger / REPL alternative to irb
 gem 'pry'
-gem 'pry-debugger'
+#gem 'pry-debugger'
 gem 'pry-stack_explorer'
 gem 'middleman-pry'
 
