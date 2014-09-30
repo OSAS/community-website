@@ -1,5 +1,5 @@
 ---
-author: scuttlemonkey
+author: pmcgarry
 layout: post
 comments: true
 title: Ceph Student Devs Hit Midterm for Google Summer of Code 2014

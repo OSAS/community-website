@@ -1,5 +1,5 @@
 ---
-author: eco
+author: ewillson
 layout: post
 comments: true
 title: More Fun with Gluster Docker Images

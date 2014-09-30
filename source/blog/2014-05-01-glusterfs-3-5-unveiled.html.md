@@ -1,5 +1,5 @@
 ---
-author: eco
+author: ewillson
 layout: post
 comments: true
 title: GlusterFS 3.5 Unveiled

@@ -1,7 +1,7 @@
 ---
 title: Gluster Site Relaunches
 date: 2014-07-10 20:37 UTC
-author: eco
+author: ewillson
 tags:
   - Gluster
   - Middleman

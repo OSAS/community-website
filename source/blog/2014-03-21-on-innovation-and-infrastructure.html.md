@@ -1,5 +1,5 @@
 ---
-author: bproffitt
+author: bkp
 comments: true
 title: On Innovation and Infrastructure
 date: 2014-03-21 13:55 UTC

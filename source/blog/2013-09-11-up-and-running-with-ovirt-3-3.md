@@ -1,5 +1,5 @@
 ---
-author: Jason Brooks
+author: jbrooks
 comments: true
 date: 2013-09-11 16:46:31+00:00
 layout: post

@@ -1,5 +1,5 @@
 ---
-author: scuttlemonkey
+author: pmcgarry
 comments: true
 layout: post
 title: Next Ceph Developer Summit Fast Approaching

@@ -2,7 +2,7 @@
 title: oVirt 3.4, Glusterized
 layout: post
 comments: true
-author: Jason Brooks
+author: jbrooks
 date: 2014-05-22 00:08 UTC
 tags:
 - oVirt

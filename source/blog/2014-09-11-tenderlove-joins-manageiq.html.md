@@ -3,7 +3,7 @@ title: "Aaron Patterson (aka tenderlove) joins ManageIQ Team"
 comments: true
 layout: post
 date: 2014-09-11 10:31 UTC
-author: Oleg Barenboim
+author: obarenboim
 tags:
 - manageiq
 - tenderlove

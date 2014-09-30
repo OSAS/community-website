@@ -1,5 +1,5 @@
 ---
-author: spot
+author: tcallaway
 comments: true
 layout: post
 title: How the First Minor in FOSS Grew From an Idea into FOSS@MAGIC

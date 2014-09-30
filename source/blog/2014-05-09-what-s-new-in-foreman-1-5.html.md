@@ -1,5 +1,5 @@
 ---
-author: dominic
+author: dcleal
 layout: post
 comments: true
 title: What's New in Foreman 1.5
