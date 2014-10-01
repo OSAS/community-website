@@ -110,3 +110,9 @@ gem 'font-awesome-middleman'
 
 # RSS/Atom parsing
 gem "feedjira"
+
+# Command line parser
+gem "slop"
+
+# XDG launcher
+gem "launchy"
