@@ -20,6 +20,8 @@ categories:
 
 This week the OpenDaylight project had its second major code release, code-named Helium, which is a major advancement for the project. The release includes more than 4,700 contributions from 183 engineers, representing [20 companies](http://spectrometer.opendaylight.org/?project_type=all&metric=commits). More than 300 commits came from the affiliation "independent", which also shows the breadth of the project's appeal. 
 
+READMORE
+
 The new release includes significant improvements developed by Red Hat engineers, especially in the areas of OVSDB (Open vSwitch Database), SFC (service function chaining), performance analysis and enhancements, and AAA (authorization, authentication, accounting). 
 
 ###OVSDB
