@@ -18,7 +18,7 @@ categories:
 
 [OpenDaylight](http://opendaylight.org ) is an open source SDN controller. In its short lifetime, OpenDaylight has gained support from a diverse set of companies and individuals who are eager to see an open source controller serve the networking needs of traditional IT, cloud infrastructure platforms, traditional virtualization management, and fleets of containers. Cisco released the initial code in 2013 and the project now includes 41 paying members. Red Hat is a founding member of the project at Platinum level. 
 
-This week the OpenDaylight project had its second major code release, code-named Helium, which is a major advancement for the project. The release includes more than 4,700 contributions from 183 engineers, representing [20 companies](http://spectrometer.opendaylight.org/?project_type=all&metric=commits). More than 300 commits came from the affiliation "independent", which also shows the breadth of the project's appeal. 
+This week the OpenDaylight project had its second major code release, code-named Helium, which is a big advancement for the project. The release includes more than 4,700 contributions from 183 engineers, representing [20 companies](http://spectrometer.opendaylight.org/?project_type=all&metric=commits). More than 300 commits came from the affiliation "independent", which also shows the breadth of the project's appeal. 
 
 READMORE
 
