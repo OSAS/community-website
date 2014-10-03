@@ -1,18 +1,10 @@
 ---
 title: Avoid Shellshock and the Bash Plague with ManageIQ
-date: 2014-09-29 14:42 UTC
 author: johnmark
+date: 2014-09-29 14:42:00.000000000 Z
+tags: shellshock, bash plague, security, policy engine, fleecing, smart state analysis
 comments: true
-layout: post
-tags:
-- shellshock
-- bash plague
-- security
-- policy engine
-- fleecing
-- smart state analysis
-categories:
-- Blog
+published: true
 ---
 
 Unless you've been under a rock the last few days, you've no doubt heard of the Shellshock vulnerability affecting a large number of *nix machines with the Bash shell installed. Note: Bash doesn't even need to be the default shell - plenty of 'Dash' users are also affected. Luckily, there's a way to avoid this mess - a policy management engine in ManageIQ, combined with VM fleecing, that lets you route around the vulnerability, turning off VMs that are vulnerable. This video gives you the goods:
