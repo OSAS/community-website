@@ -18,6 +18,8 @@ Oleg Barenboim will discuss where we are, engineering-wise, and then Xavier Leca
 
 There are two tracks in the design summit, extend and design. The extend track is all about how you can utilize ManageIQ, color outside the lines, and push it beyond the scope of what it does "out of the box".
 
+READMORE
+
 **John Hardy and Brad Ascar give Tour de Force of ManageIQ**
 
 If you've ever been curious about how to do more with ManageIQ and automate All of the Things, the first day will be a wonderful experience for you. From utilizing state machines and navigating the ManageIQ object model to mastering the powerful policy engine and using ManageIQ as a RESTful backend platform, these talks are key to understanding how to tailor ManageIQ for your environment. For additional information on these topics, see their [recent podcast](http://youtu.be/riRz18yqwfI). 
