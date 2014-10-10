@@ -25,6 +25,8 @@ When we broke out into our smaller discussions, one attendee at my table asked h
 
 I confessed that working from home gives me clutter blindness, so I don't notice how much I messed things up between Monday and Friday, and I'm not really tempted to go do the dishes (sadly, a true story). If you work from an office, on the other hand, you walk into your house each evening and see it with fresh eyes.
 
+READMORE
+
 ## Solitary Confinement
 
 We also discussed how we "fight loneliness" in our remote work environments. Although I don't feel lonely, I did admit that meeting people in my community has been challenging because I spend so many hours home alone. To help get out of my fortress of solitude, I've started doing volunteer work, plan to join a local running club, and will start having regular meetups with other Red Hat employees at a local coffee shop. 
@@ -53,39 +55,4 @@ Several BoF attendees mentioned how the remote work option allows flexibility to
 
 Attendees generally agreed that meeting colleagues in person helps with remote collaboration, so if this face time doesn't happen during a new hire's orientation, it should happen at a conference, retreat, or visit to an office. In my experience, the sooner team members meet in person, the easier it is to collaborate remotely. 
 
-If your organization doesn't currently offer remote work options, consider digging into data to explain why allowing work from home is [good for business](http://www.forbes.com/sites/jeannemeister/2013/04/01/flexible-workspaces-another-workplace-perk-or-a-must-have-to-attract-top-talent/). And if they still won't budge, consider other options. [Competitive organizations](http://www.flexjobs.com/blog/post/100-top-companies-for-remote-jobs/) know that landing top talent means being a little flexible, even when it comes to where that talent chooses works. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+If your organization doesn't currently offer remote work options, consider digging into data to explain why allowing work from home is [good for business](http://www.forbes.com/sites/jeannemeister/2013/04/01/flexible-workspaces-another-workplace-perk-or-a-must-have-to-attract-top-talent/). And if they still won't budge, consider other options. [Competitive organizations](http://www.flexjobs.com/blog/post/100-top-companies-for-remote-jobs/) know that landing top talent means being a little flexible, even when it comes to where that talent chooses works.
