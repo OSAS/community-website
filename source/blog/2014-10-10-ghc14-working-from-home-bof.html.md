@@ -19,13 +19,13 @@ When the BoF started, Lauren encouraged the attendees, who were scattered across
 
 Lauren said that her goals in the BoF were to build a work from home community, share tips and techniques for being successful remote employees, and, most ambitiously, to develop a plan for making the work from home option available for new employees of other organizations.
 
+READMORE
+
 ## Finding Focus
 
 When we broke out into our smaller discussions, one attendee at my table asked how we were able to focus on our work instead of, for example, running into the kitchen to do the dishes piling up in the sink. Some of us have dedicated work spaces, which helps, whereas others found that working away from colleagues made it easier to focus on work. And as one member of my table pointed out, working in an office provides plenty of distractions and interruptions of its own. 
 
 I confessed that working from home gives me clutter blindness, so I don't notice how much I messed things up between Monday and Friday, and I'm not really tempted to go do the dishes (sadly, a true story). If you work from an office, on the other hand, you walk into your house each evening and see it with fresh eyes.
-
-READMORE
 
 ## Solitary Confinement
 
