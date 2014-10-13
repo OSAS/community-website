@@ -3,7 +3,7 @@ title: GNOME Boxes 3.14, Unboxed
 author: jbrooks
 date: 2014-10-15 13:00:00.000000000 Z
 comments: true
-published: true
+published: false
 ---
 
 Welcome to the inaugural edition of Boxes of Boxes, a virtualization, containerization, and turduckenization column that'll appear every other Wednesday here at community.redhat.com.
