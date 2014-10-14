@@ -1,10 +1,15 @@
 ---
-title: 'CentOS Community Update: All About SIGs'
 author: quaid
-date: 2014-10-14 08:55:43.000000000 Z
-tags: CentOS, Linux, SIG
-published: false
 comments: true
+layout: post
+title: "CentOS Community Update -- All About SIGs"
+date: 2014-10-14 09:00 UTC
+tags:
+- CentOS
+- Linux
+- SIGs
+categories:
+- Blog
 ---
 
 <img src="http://community.redhat.com/images/blog/CentOS_200x.png">Welcome to a new column that is publishing at least twice monthly on Tuesdays on community.redhat.com to talk about what is happening in the expanding [CentOS Project](http://www.centos.org).
