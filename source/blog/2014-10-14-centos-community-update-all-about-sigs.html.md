@@ -24,6 +24,8 @@ Because the entirety of the CentOS developers are now contributing more broadly 
 
 Here is a quick overview of the various SIGs that are active or becoming active soon. In future columns, we’ll go more in to one or two SIGs at a time to show what is happening in detail.
 
+READMORE
+
 # Fresh and Getting Started:
 
  * [Cloud](http://wiki.centos.org/SpecialInterestGroup/Cloud) - The Cloud SIG focuses on what is needed for running a Cloud Infrastructure / Hypervisor for on-premise clouds. The SIG also supports other SIGs and projects looking to consume some of the shared resources around on-premise cloud infrastructure.
