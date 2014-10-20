@@ -191,6 +191,8 @@ activate :blog_helpers
 require 'lib/confcal.rb'
 activate :confcal
 
+require 'lib/monkeypatch_blog_date.rb'
+
 
 ###
 # Development-only configuration
