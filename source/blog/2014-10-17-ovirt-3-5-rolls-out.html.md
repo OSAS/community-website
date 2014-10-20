@@ -1,15 +1,11 @@
 ---
 author: bkp
-comments: true
-layout: post
 title: oVirt 3.5 Rolls Out
 date: 2014-10-17 12:00 UTC
 tags:
 - oVirt
 - KVM
 - Virtualization
-categories:
-- Blog
 ---
 <img src="http://community.redhat.com/images/blog/oVirt-logo.png"> To say that October was a big month for [oVirt](http://www.ovirt.org) would be a little bit of an understatement.
 
