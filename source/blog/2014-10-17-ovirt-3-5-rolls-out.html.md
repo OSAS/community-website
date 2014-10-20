@@ -7,7 +7,7 @@ tags:
 - KVM
 - Virtualization
 ---
-<img src="http://community.redhat.com/images/blog/oVirt-logo.png"> To say that October was a big month for [oVirt](http://www.ovirt.org) would be a little bit of an understatement.
+![oVirt logo](blog/oVirt-logo.png) To say that October was a big month for [oVirt](http://www.ovirt.org) would be a little bit of an understatement.
 
 This past week was the [KVM Forum](http://events.linuxfoundation.org/events/kvm-forum), a three-day event in Düsseldorf that brought together the entire KVM community, which included oVirt users and developers. The October 16th [oVirt Workshop](http://www.ovirt.org/KVM_Forum_Workshop_Oct_2014), a free-of-charge event co-located with the KVM Forum, focused on the oVirt datacenter platform and its use in business and academic worlds.
 
