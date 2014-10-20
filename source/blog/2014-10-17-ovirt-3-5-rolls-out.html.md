@@ -17,7 +17,7 @@ To finish off the events, the oVirt team has released the next iteration of oVir
 
 As the upstream development project for [Red Hat Enterprise Virtualization](http://www.redhat.com/en/technologies/virtualization), [UDS Enterprise](https://www.udsenterprise.com/en/), and [Wind River Open Virtualization](http://www.windriver.com/announces/open_virtualization/), oVirt’s integrated virtualization enables enterprises to manage virtual machines with a robust toolset, without the need to re-develop applications to conform to cloud platforms' APIs. oVirt also offers advanced virtualization capabilities, including high availability, live VM migration, live storage migration, the ability to self-host the oVirt engine on a managed virtual machine, and more. 
 
-##What's Happening with oVirt 3.5?
+## What's Happening with oVirt 3.5?
 
 * '''[Live Merge](http://www.ovirt.org/Features/Live_Merge)''': If an image has one or more snapshots, oVirt 3.5's merge command will combine the data of one volume into another. Live merges can be performed with data pulled from one snapshot into another snapshot. The engine can merge multiple disks at the same time and each merge can independently fail or succeed in each operation.
 
