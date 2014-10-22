@@ -45,15 +45,7 @@ READMORE
 
 ### Infrastructure.Next Schedule
 
-<!-- Add this where you want the output to appear -->
-<div class="lanyrd-target-schedule">
-    <a href="http://lanyrd.com/2014/infra-at-scale/schedule/"
-        class="lanyrd-schedule"
-        data-lanyrd-speakers
-        data-lanyrd-speakerlabels>
-        Schedule for Infrastructure.Next @ SCALE on Lanyrd
-    </a>
-</div>
+{:.lanyrd-target-schedule}
+<a href="http://lanyrd.com/2014/infra-at-scale/schedule/" class="lanyrd-schedule" data-lanyrd-speakers data-lanyrd-speakerlabels>Schedule for Infrastructure.Next @ SCALE on Lanyrd</a>
 
-<!-- Add this to the end of body -->
 <script src="http://cdn.lanyrd.net/badges/embed-v1.min.js"></script>
