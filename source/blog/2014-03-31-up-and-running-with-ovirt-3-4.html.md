@@ -12,7 +12,7 @@ tags:
 - ovirt
 - virtualization
 ---
-<a href="http://www.ovirt.org">![](blog/oVirt-logo.png){:align=right}</a>Last week, the oVirt Project [delivered a new version](http://lists.ovirt.org/pipermail/announce/2014-March/000098.html) of its open source virtualization management system, complete with a feature I've eagerly awaited for the past two years. The feature, called [Hosted Engine](http://www.ovirt.org/OVirt_3.4_Release_Notes#Hosted_Engine), enables oVirt admins to host the system's management server (aka the engine) on one of the virtualization hosts it manages.
+[![](blog/oVirt-logo.png){:align=right}](http://www.ovirt.org)Last week, the oVirt Project [delivered a new version](http://lists.ovirt.org/pipermail/announce/2014-March/000098.html) of its open source virtualization management system, complete with a feature I've eagerly awaited for the past two years. The feature, called [Hosted Engine](http://www.ovirt.org/OVirt_3.4_Release_Notes#Hosted_Engine), enables oVirt admins to host the system's management server (aka the engine) on one of the virtualization hosts it manages.
 
 While oVirt was designed to run across separate management and virtualization hosts, it's been possible from early on (version 3.0) to [hack up a machine](http://blog.jebpages.com/archives/how-to-get-up-and-running-with-ovirt/) to serve both roles. In subsequent releases, the project approved and refined this installation option into an easy-to-use All-in-One (AIO) installation plugin.
 

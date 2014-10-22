@@ -13,7 +13,7 @@ tags:
 categories:
 - Blog
 ---
-<a href="http://openstack.redhat.com/">![](blog/rdo-logo.png)</a> A year ago today &ndash; April 15, 2013 &ndash; [we announced](http://www.redhat.com/about/news/press-archive/2013/4/red-hat-advances-its-openstack-enterprise-and-community-technologies-and-roadmap) the [RDO](http://www.redhat.com/products/enterprise-linux/openstack-platform/) effort. We started the project in an effort to make it less painful to deploy an OpenStack cloud on CentOS, Fedora, or Red Hat Enterprise Linux. A lot has changed over the past year, but our mission remains the same.
+[![](blog/rdo-logo.png)](http://openstack.redhat.com/) A year ago today &ndash; April 15, 2013 &ndash; [we announced](http://www.redhat.com/about/news/press-archive/2013/4/red-hat-advances-its-openstack-enterprise-and-community-technologies-and-roadmap) the [RDO](http://www.redhat.com/products/enterprise-linux/openstack-platform/) effort. We started the project in an effort to make it less painful to deploy an OpenStack cloud on CentOS, Fedora, or Red Hat Enterprise Linux. A lot has changed over the past year, but our mission remains the same.
 
 We've grown from a handful of people to more than 2,000 people registered on the [forum](http://openstack.redhat.com/forum/) and wiki. We've also got a following on Twitter and Google+, and an active group of experts fielding questions on the [ask.openstack.org](https://ask.openstack.org/en/questions/) Q&A website.
 
