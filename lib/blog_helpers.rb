@@ -30,7 +30,7 @@ class BlogHelpers < Middleman::Extension
         markdown_to_html desc
       end
 
-      author_card nickname
+      @author_card[nickname]
     end
 
     def author_gravatar nickname
@@ -49,7 +49,7 @@ class BlogHelpers < Middleman::Extension
         Oj.load g_json
       end
 
-      author_gravatar nickname
+      @author_gravatar[nickname]
     end
 
     def author_photo nickname
