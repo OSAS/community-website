@@ -11,7 +11,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/oscon-logo.jpg"> If you missed [Open Cloud Day](http://www.oscon.com/oscon2014/public/content/open-cloud-day) at OSCON, you missed some spectacular presentations. We had a fantastic line-up and a sensational audience with brilliant questions. Did I mention it was really, really good? 
+![](blog/oscon-logo.jpg)
+If you missed [Open Cloud Day](http://www.oscon.com/oscon2014/public/content/open-cloud-day) at OSCON, you missed some spectacular presentations. We had a fantastic line-up and a sensational audience with brilliant questions. Did I mention it was really, really good? 
 
 But the purpose of this post isn't to gloat about being there, but to share some of the goodness with everyone else. Today's choice cut is Red Hat's own [Steven Citron-Pousty](https://twitter.com/thesteve0), who helps spread the word about [OpenShift](https://www.openshift.com/). (And if you were at Open Cloud Day, you might enjoy giving it a second viewing.)
 

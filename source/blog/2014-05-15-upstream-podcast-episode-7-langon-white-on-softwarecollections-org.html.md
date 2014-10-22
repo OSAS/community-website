@@ -13,7 +13,8 @@ categories:
 - Blog
 - Podcast
 ---
-<img src="http://community.redhat.com/images/blog/upstream-mic.jpg"> At Red Hat Summit 2014, Joe Brockmeier caught up with Langdon White, Developer Evangelist for Red Hat Enterprise Linux. 
+![](blog/upstream-mic.jpg)
+At Red Hat Summit 2014, Joe Brockmeier caught up with Langdon White, Developer Evangelist for Red Hat Enterprise Linux. 
 
 Langdon talks about SoftwareCollections.org, which was created to give the community a way to participate around the upstream of the Red Hat Enterprise tool chain. In this interview, Langdon discusses what software collections are and when you'd want to use them.
 

@@ -17,7 +17,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/ada_logo.png"> The Ada Initiative is an organization dedicated to addressing gender diversity head-on, with a specific focus on open source and open data communities. Their mission is critical, and their work is much-needed by our community.
+![](blog/ada_logo.png)
+The Ada Initiative is an organization dedicated to addressing gender diversity head-on, with a specific focus on open source and open data communities. Their mission is critical, and their work is much-needed by our community.
 
 In a [blog post](http://ceph.com/community/support-ada-initiative-challenge-open-storage-community/) this week, Sage Weil, principal architect of the Ceph project at Red Hat, has agreed to match $8,192 of Ada Initiative contributions dollar-for-dollar during their fundraiser. In his post, Sage writes, "As Inktank and as DreamHost we were proud to be early supporters of the Ada Initiative.  Today, I am proud to continue that support with a personal challenge to the open source storage community." 
 

@@ -12,7 +12,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/rdo-logo.png"> [OpenStack Icehouse](http://openstack.org/icehouse), the ninth release of the OpenStack cloud platform, rolled out on April 17, and on April 29 (Tuesday), the RDO release manager Pádraig Brady [announced the availability of the RDO packaging of Icehouse](https://www.redhat.com/archives/rdo-list/2014-April/msg00105.html) on the rdo-list mailing list.
+![](blog/rdo-logo.png)
+[OpenStack Icehouse](http://openstack.org/icehouse), the ninth release of the OpenStack cloud platform, rolled out on April 17, and on April 29 (Tuesday), the RDO release manager Pádraig Brady [announced the availability of the RDO packaging of Icehouse](https://www.redhat.com/archives/rdo-list/2014-April/msg00105.html) on the rdo-list mailing list.
 
 RDO is a packaging of upstream OpenStack for easy deployment on CentOS, Fedora, and Red Hat Enterprise Linux. Because deploying OpenStack can be such a challenge, RDO greatly simplifies this using Puppet scripts and a quick three-step process to getting up and running &ndash; just follow the [Quick Start Guide](http://openstack.redhat.com/Quickstart).
 

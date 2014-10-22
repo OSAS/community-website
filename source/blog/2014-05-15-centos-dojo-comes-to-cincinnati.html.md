@@ -16,7 +16,8 @@ categories:
 - Blog
 ---
 
-<img src="http://community.redhat.com/images/blog/CentOS_200x.png"> If you live in, around, or near Cincinnati, Ohio, then come join us on June 4th at the [University of Cincinnati's School of Information Technology](http://cech.uc.edu/it.html) for a [one-day CentOS Dojo](http://wiki.centos.org/Events/Dojo/Cincinnati2014).
+![](blog/CentOS_200x.png)
+If you live in, around, or near Cincinnati, Ohio, then come join us on June 4th at the [University of Cincinnati's School of Information Technology](http://cech.uc.edu/it.html) for a [one-day CentOS Dojo](http://wiki.centos.org/Events/Dojo/Cincinnati2014).
 
 Never been to a Dojo before? Here's what to expect: the CentOS Dojos are one-day events to bring together people from the CentOS communities to talk about systems adminstration, best practices, and emerging technologies of interest. We aim to bring together expert and local speakers to talk about the things that practicioners care about most, and to share stories from experiences working with CentOS in all kinds of scenarios.
 

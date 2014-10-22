@@ -11,7 +11,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/fl_postcard.jpg"> Recently Red Hatters have been hopping from plane to plane as they visit university campuses across the US to promote open source software and concepts to higher education communities. Here's where you'll find them next:
+![](blog/fl_postcard.jpg)
+Recently Red Hatters have been hopping from plane to plane as they visit university campuses across the US to promote open source software and concepts to higher education communities. Here's where you'll find them next:
 
 - University of Wisconsin-Madison [Fall Career Fair](http://www.today.wisc.edu/events/view/74464) (Tuesday, September 23, 4:00 - 8:00 PM)
 

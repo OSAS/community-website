@@ -15,7 +15,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/CentOS_200x.png"> As I help plan for an upcoming [CentOS Dojo in Orlando, FL](http://wiki.centos.org/Events/Dojo/Orlando2014) at [Fossetcon](http://fossetcon.org) on Thursday, September 11th. I've had a chance to [think over](http://iquaid.org/2014/09/05/centos-dojo-in-orlando-at-fossetcon-11-sep/) all the aspects of this unique event.
+![](blog/CentOS_200x.png)
+As I help plan for an upcoming [CentOS Dojo in Orlando, FL](http://wiki.centos.org/Events/Dojo/Orlando2014) at [Fossetcon](http://fossetcon.org) on Thursday, September 11th. I've had a chance to [think over](http://iquaid.org/2014/09/05/centos-dojo-in-orlando-at-fossetcon-11-sep/) all the aspects of this unique event.
 
 What makes a [CentOS Dojo](http://wiki.centos.org/Events/Dojo) interesting is part of what makes it unique. Events by a Linux distro community are usually about the distro itself, and Dojos focus mainly on cool things done on top of or with the core or modified distro. Most Dojo talks focus on these areas of emerging technologies beyond just the Linux system itself, all in the domain of systems administration, operations, and best practises.
 

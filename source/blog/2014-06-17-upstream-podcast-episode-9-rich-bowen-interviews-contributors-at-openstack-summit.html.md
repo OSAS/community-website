@@ -13,7 +13,8 @@ categories:
 - Blog
 - Podcast
 ---
-<img src="http://community.redhat.com/images/blog/upstream-mic.jpg"> [Rich Bowen](https://twitter.com/rbowen) spent a little time last month at the [OpenStack Summit in Atlanta, GA](https://www.openstack.org/summit/openstack-summit-atlanta-2014/), and had a chance to catch up with some of the upstream contributors to OpenStack. 
+![](blog/upstream-mic.jpg)
+[Rich Bowen](https://twitter.com/rbowen) spent a little time last month at the [OpenStack Summit in Atlanta, GA](https://www.openstack.org/summit/openstack-summit-atlanta-2014/), and had a chance to catch up with some of the upstream contributors to OpenStack. 
 
 In this short podcast, you'll hear from several OpenStack contributors directly from the show floor at OpenStack Summit. 
 

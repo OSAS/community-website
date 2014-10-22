@@ -11,7 +11,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/oVirt-logo.png"> oVirt 3.5 is in beta phase this month, as the community progresses toward the latest release of the open source datacenter virtual management platform.
+![](blog/oVirt-logo.png)
+oVirt 3.5 is in beta phase this month, as the community progresses toward the latest release of the open source datacenter virtual management platform.
 
 Right out of the gate, users are going to notice an all-new look and feel to the oVirt interface, as the UX  team rolls out phase one of the new [PatternFly interface](http://www.ovirt.org/Features/NewLookAndFeelPatternFlyPhase1).
 

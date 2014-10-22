@@ -13,7 +13,8 @@ categories:
 - Blog
 ---
 
-<img src="http://community.redhat.com/images/blog/ceph-logo.png"> Although many people at this point have heard Sage’s history of [where Ceph came from](http://ceph.com/community/people-profile/sage-weil/), I am still often asked questions like "what was the original use case for Ceph?" 
+![](blog/ceph-logo.png)
+Although many people at this point have heard Sage’s history of [where Ceph came from](http://ceph.com/community/people-profile/sage-weil/), I am still often asked questions like "what was the original use case for Ceph?" 
 
 So, in honor of the 10th birthday of Ceph, I thought it might be helpful (and hopefully interesting, given how much I love to hear Sage tell the story) to share Ceph’s origin story and the road to where we are today.  
 

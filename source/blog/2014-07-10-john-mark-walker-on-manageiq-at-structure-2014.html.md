@@ -10,7 +10,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/manageiq-vertical.png"> In case you didn't make it to [Structure 2014](http://events.gigaom.com/structure-2014/), you can catch this short YouTube clip of open source ecosystems manager John Mark Walker discussing ManageIQ. 
+![](blog/manageiq-vertical.png)
+In case you didn't make it to [Structure 2014](http://events.gigaom.com/structure-2014/), you can catch this short YouTube clip of open source ecosystems manager John Mark Walker discussing ManageIQ. 
 
 Don't miss the [Birds of a Feather](http://community.redhat.com/blog/2014/07/manageiq-birds-of-a-feather-at-oscon/) at OSCON on ManageIQ as well. 
 

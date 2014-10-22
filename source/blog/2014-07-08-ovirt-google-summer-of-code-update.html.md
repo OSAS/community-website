@@ -13,7 +13,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/oVirt-logo.png"> oVirt's stance as the first truly open and comprehensive data center virtualization management provides a venue for user and developer cooperation. The heart of the project is oVirt's open source code, and the open governance of the community, modeled after the Apache Foundation, Eclipse, LVM, and many other well-functioning Linux communities.
+![](blog/oVirt-logo.png)
+oVirt's stance as the first truly open and comprehensive data center virtualization management provides a venue for user and developer cooperation. The heart of the project is oVirt's open source code, and the open governance of the community, modeled after the Apache Foundation, Eclipse, LVM, and many other well-functioning Linux communities.
 
 So whenever we have a chance to participate in broader events in the open source community, we relish it. We were excited, then, to be a part of this year's [Google Summer of Code](https://www.google-melange.com/gsoc/homepage/google/gsoc2014).
 

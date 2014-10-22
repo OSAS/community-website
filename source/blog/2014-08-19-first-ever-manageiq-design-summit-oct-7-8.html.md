@@ -13,7 +13,8 @@ categories:
 - Blog
 ---
 
-<img src="http://community.redhat.com/images/blog/manageiq-logo-glyph.png" height="150" width="150"> As we wind down the [Anand release cycle](/blog/2014-08-15-planning-the-b-release.html.md), the next one is winding up: a vote to [determine the next release name](http://talk.manageiq.org/t/planning-the-b-release/115), a [call for feature blueprints](http://talk.manageiq.org/t/about-the-blueprints-category/122), and a call for participation for the [very first ManageIQ Design Summit](http://miqdevsummit14.eventbrite.com/).
+![](blog/manageiq-logo-glyph.png)
+As we wind down the [Anand release cycle](/blog/2014-08-15-planning-the-b-release.html.md), the next one is winding up: a vote to [determine the next release name](http://talk.manageiq.org/t/planning-the-b-release/115), a [call for feature blueprints](http://talk.manageiq.org/t/about-the-blueprints-category/122), and a call for participation for the [very first ManageIQ Design Summit](http://miqdevsummit14.eventbrite.com/).
 
 - [RSVP for the ManageIQ Design Summit](http://miqdevsummit14.eventbrite.com/)
 

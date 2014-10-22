@@ -11,7 +11,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/lfsquare.jpg"> Last week I attended [LinuxCon North America](http://events.linuxfoundation.org/events/linuxcon-north-america) in Chicago. As always when I go to a conference, there are about five things going on at any moment, and you have to decide where to be and what to do, and then wish you'd done the other thing.
+![](blog/lfsquare.jpg)
+Last week I attended [LinuxCon North America](http://events.linuxfoundation.org/events/linuxcon-north-america) in Chicago. As always when I go to a conference, there are about five things going on at any moment, and you have to decide where to be and what to do, and then wish you'd done the other thing.
 
 I spent most of the time working the Red Hat booth, talking to people about [RDO](http://openstack.redhat.com/Main_Page), [OpenShift](https://www.openshift.com/), [Atomic](http://www.projectatomic.io/), and, of course, 3D printing.
 

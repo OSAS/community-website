@@ -12,7 +12,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/openhelp.png"> The [2014 Open Help Conference & Sprints](http://openhelpconference.com/) takes place this weekend, June 14-18, in downtown Cincinnati at the [Garfield Suites Hotel](http://www.garfieldsuiteshotel.com/). 
+![](blog/openhelp.png)
+The [2014 Open Help Conference & Sprints](http://openhelpconference.com/) takes place this weekend, June 14-18, in downtown Cincinnati at the [Garfield Suites Hotel](http://www.garfieldsuiteshotel.com/). 
 
 Rich Bowen, OpenStack Community Liaison at Red Hat and a director of the Apache Software Foundation, will be speaking on Saturday, June 14, and he will share some insights gleaned from 15 years of working on documentation and answering the newbies.
 

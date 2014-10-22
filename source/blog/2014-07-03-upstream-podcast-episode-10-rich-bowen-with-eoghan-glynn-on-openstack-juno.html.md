@@ -12,7 +12,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/upstream-mic.jpg"> In this episode of *Upstream*, Rich Bowen shares a recording of Eoghan Glynn discussing the Ceilometer project for the OpenStack Juno release. It's a bit longer than the usual *Upstream* episode, but contains a **lot** of great information on Ceilometer for the Juno release.
+![](blog/upstream-mic.jpg)
+In this episode of *Upstream*, Rich Bowen shares a recording of Eoghan Glynn discussing the Ceilometer project for the OpenStack Juno release. It's a bit longer than the usual *Upstream* episode, but contains a **lot** of great information on Ceilometer for the Juno release.
 
 <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/157172856&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 

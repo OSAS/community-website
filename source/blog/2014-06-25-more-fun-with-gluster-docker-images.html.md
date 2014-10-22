@@ -13,7 +13,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/gluster-ant.png"> Recently another [Docker image for Gluster](http://www.gluster.org/2014/06/community-gluster-image-on-docker/) was released. More people getting [Gluster](http://www.gluster.org/) images into Docker is fantastic news, but because Docker is essentially brand spanking new, few of us are experts. With that in mind, explaining WHY this is great news might be helpful.  
+![](blog/gluster-ant.png)
+Recently another [Docker image for Gluster](http://www.gluster.org/2014/06/community-gluster-image-on-docker/) was released. More people getting [Gluster](http://www.gluster.org/) images into Docker is fantastic news, but because Docker is essentially brand spanking new, few of us are experts. With that in mind, explaining WHY this is great news might be helpful.  
 
 In the simplest terms, Docker (also referred to as containers), is a way to deploy machine images. *Big deal, we already have kickstart and virtualization, who needs another way to deploy?* Anyone who obsesses about near-instant provisioning with absolutely minimal resource consumption, that's who. In other words, pretty much all of us. An example from my test machine shows that launching the container takes a whopping two seconds:
 
