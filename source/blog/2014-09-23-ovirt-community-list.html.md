@@ -11,7 +11,7 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/oVirt-logo.png">
+![](blog/oVirt-logo.png)
 There is a perception in IT that when it comes to open source software, the community "upstream" version of the software is where you go to test and develop your systems, but it's the commercial "downstream" version that gets put into actual production. Indeed, for many end users and customers of open source software, this pretty much reflects the reality. After all, why not have the best support and deployment options available for your production systems? The old "one-throat-to-choke" trope still has a powerful attraction in the IT community.
 
 But not always.

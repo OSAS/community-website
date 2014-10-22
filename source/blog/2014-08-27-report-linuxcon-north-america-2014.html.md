@@ -22,7 +22,7 @@ READMORE
 
 Although I didn't attend many talks, I made it to a few, and some of these were really great.
 
-<img src="http://community.redhat.com/images/blog/2014_linuxcon_3d.jpg">
+![](blog/2014_linuxcon_3d.jpg)
 
 Rikki Endsley's talk "[You Know, for Kids! 7 Ideas for Improving Tech Education in Schools](http://sched.co/1jQnCxA)" was largely a story about an unfortunate experience in a high school programming class, and the lessons learned from it. I'm very interested in stories like this, primarily because I want to teach my daughters, but also, my son, how to deal with gender discrimination in their various interests, although it seems particularly troublesome in geekly pursuits.
 

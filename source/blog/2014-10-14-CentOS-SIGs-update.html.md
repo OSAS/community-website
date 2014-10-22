@@ -12,7 +12,7 @@ categories:
 - Blog
 ---
 
-<img src="http://community.redhat.com/images/blog/CentOS_200x.png">Welcome to a new column that is publishing at least twice monthly on Tuesdays on community.redhat.com to talk about what is happening in the expanding [CentOS Project](http://www.centos.org).
+![](blog/CentOS_200x.png) Welcome to a new column that is publishing at least twice monthly on Tuesdays on community.redhat.com to talk about what is happening in the expanding [CentOS Project](http://www.centos.org).
 
 One of the most exciting aspects of the expanding CentOS Project is the work being done by [Special Interest Groups](http://wiki.centos.org/SpecialInterestGroup/), or SIGs, to bring emerging technologies to the CentOS community.
 

@@ -13,7 +13,7 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/ghc14.png">The Thursday afternoon [Advancing the Work from Home Option](http://gracehopper.org/2014-schedule/) Birds of a Feather (BoF) session, led by IBM engineer Lauren J. Schaefer, offered a chance for attendees to share tips for working from home, to network, and to brainstorm on how to encourage other organizations to offer opportunities for working remotely. Although Lauren led the BoF, attendees actively contributed to the discussion in smaller groups and then summarized what they discussed for the room of approximately 80 women.
+![](blog/ghc14.png)The Thursday afternoon [Advancing the Work from Home Option](http://gracehopper.org/2014-schedule/) Birds of a Feather (BoF) session, led by IBM engineer Lauren J. Schaefer, offered a chance for attendees to share tips for working from home, to network, and to brainstorm on how to encourage other organizations to offer opportunities for working remotely. Although Lauren led the BoF, attendees actively contributed to the discussion in smaller groups and then summarized what they discussed for the room of approximately 80 women.
 
 When the BoF started, Lauren encouraged the attendees, who were scattered across the tables throughout the room, to gather together and fill the seats at fewer tables to help foster the smaller group conversations. I sat at a table full of women from Thomson Reuters, Apple, Microsoft, and GitHub, for example. Lauren took a poll of attendees and we learned that the majority rarely work at home, several occasionally work at home, and a few women (myself included) work from home full-time. The women at my table reflected the mix of attendees gathered in the room. 
 

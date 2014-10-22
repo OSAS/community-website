@@ -13,7 +13,7 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/rdo-logo.png">
+![](blog/rdo-logo.png)
 Calling OpenStack users! Want to help make OpenStack dead easy to install on CentOS, Fedora, and/or RHEL? Join us for the next test days in early October. The OpenStack Juno release is getting closer and the [RDO community is planning to run test days](https://openstack.redhat.com/RDO_test_day_Juno_milestone_3) on October 1, 2014 and October 2, 2014. 
 
 The RDO team will be providing packages for CentOS, Fedora, and RHEL:

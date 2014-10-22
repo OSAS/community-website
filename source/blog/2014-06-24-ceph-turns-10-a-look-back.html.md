@@ -25,7 +25,7 @@ The history of Ceph can be broken down into four distinct segments:
 3. Commercialization (Inktank)
 4. Acquisition (Red Hat)
 
-<img src="http://community.redhat.com/images/blog/authors_over_time.png">
+![](blog/authors_over_time.png)
 
 It’s pretty amazing to see where Ceph started, all of the hard work by so many people through each of the first three stages, and the exciting possibilities in the most recent phase that is just beginning under [Red Hat’s stewardship](http://ceph.com/community/red-hat-to-acquire-inktank/).  
 
@@ -42,7 +42,7 @@ During this early work, several pieces of infrastructure would emerge, including
 
 The early stages of the project also resulted in a name---Ceph is short of Cephalopod, a class of mollusks that includes the octopus, squid, and cuttlefish---and a cute logo (that has since been changed):
 
-<img src="http://community.redhat.com/images/blog/octopus_logo.png">
+![](blog/octopus_logo.png)
 
 As Sage neared the end of his research, he started talking to many traditional storage vendors about Ceph and his work surrounding the project. After watching many of his peers get hired into industry and have their interesting and innovative work abandoned or absorbed into the large proprietary systems, he realized that the industry giants wanted “you” and not your project. Coupled with the fact that the open source alternatives either didn’t scale very well, had limited community and/or architecture, or were missing some of the key enterprise features (snapshots, cloning, quotas), Sage decided to take a different path.
 
@@ -72,7 +72,7 @@ As participation grew, Sage started thinking more about the community and establ
 
 The move that really started Ceph down the road to commercialization was that DreamHost decided they were going to build an S3-compatible object storage service using Ceph. Now Sage and team were obliged to start really focusing on stability, paying back the technical debt that had accumulated over time, and start thinking about things such as testing automation and code review.  The upside of this, however, was that they were able to expand the engineering team.  
 
-<img src="http://community.redhat.com/images/blog/dreamobjects.png">
+![](blog/dreamobjects.png)
 
 With the growing need for automated testing, the team started evaluating different potential tools that might fit the bill; however, because Ceph is a highly distributed system with active kernel development, the usual suspects that suffice for typical LAMP applications didn’t seem to fit the bill. Thus, [Teuthology](https://github.com/ceph/teuthology) was born.
 
@@ -111,7 +111,7 @@ Acquisition (Red Hat)
 
 Although this phase in Ceph’s life is just beginning, going from calling yourself *the Red Hat of storage* to being the storage of Red Hat has been an interesting change. The core Ceph team is all excited about what the resources and long-standing open source culture at Red Hat will be able to offer in the way of acceleration and expansion of the Ceph platform. Below you can see the history at a glance, and hopefully the milestones will just keep coming.
 
-<img src="http://community.redhat.com/images/blog/timeline_cropped.png">
+![](blog/timeline_cropped.png)
 
 Because Red Hat is a pure open source model, we have already seen great progress for the Ceph community in the release of Calamari as open source. As FOSS developers, we were all a little conflicted about having to build a proprietary piece of software, but the acquisition by Red Hat allowed us to quickly give this tool back to the community for development and consumption. I expect many more advancements to come in the name of open source.
 

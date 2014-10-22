@@ -14,7 +14,7 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/opendaylight_logo.png">Whether you are deploying applications in containers, VMs, or on bare metal, being able to group related services together into private networks and control the traffic flowing into and out of your infrastructure is important. The SDN controller fulfills that role by allowing you to define network policy centrally and have that policy applied at the edges of your network, in the physical and virtual network switches. 
+![](blog/opendaylight_logo.png)Whether you are deploying applications in containers, VMs, or on bare metal, being able to group related services together into private networks and control the traffic flowing into and out of your infrastructure is important. The SDN controller fulfills that role by allowing you to define network policy centrally and have that policy applied at the edges of your network, in the physical and virtual network switches. 
 
 [OpenDaylight](http://opendaylight.org ) is an open source SDN controller. In its short lifetime, OpenDaylight has gained support from a diverse set of companies and individuals who are eager to see an open source controller serve the networking needs of traditional IT, cloud infrastructure platforms, traditional virtualization management, and fleets of containers. Cisco released the initial code in 2013 and the project now includes 41 paying members. Red Hat is a founding member of the project at Platinum level. 
 
