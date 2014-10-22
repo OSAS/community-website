@@ -20,7 +20,7 @@ READMORE
 
 This is a major interface improvement for oVirt, integrating the Bootstrap3 CSS library into ovirt-engine via [PatternFly open interface project](https://www.patternfly.org/). Working in the PatternFly framework will give oVirt a common set of interface tools with other enterprise-ready tools using PatternFly. As indicated earlier, this it the first phase of several that the oVirt project will undergo to shift completely to a PatternFly-based interface.
 
-<img src="http://www.ovirt.org/images/f/f7/OVirt-LAF-Admin-Banner-Only.png">
+![](http://www.ovirt.org/images/f/f7/OVirt-LAF-Admin-Banner-Only.png)
 
 But the changes will go beyond just looks. Big improvements are coming under the hood, too. The Authentication, Authorization, and Accounting (AAA) system in oVirt is getting a significant overhaul, to provide a clear separation of authentication from authorization. This separation will enable oVirt to have more flexibility in both authentication and authorization, such as authenticating with a tool other than Kerberos, if desired. Even more useful, a developer API will be exposed to enable coders to create custom extensions for authentication and authorization.
 

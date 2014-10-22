@@ -14,7 +14,7 @@ tags:
 - OpenShift
 ---
 
-<a href="https://www.socallinuxexpo.org/scale12x"><img src="blog/scale12x.png" align="left"></a> Last week's [Twelfth Annual Southern California Linux Expo](https://www.socallinuxexpo.org/scale12x) (SCALE 12x) had a little something for everyone. Young or old, new users to old hands, serious issues to silly games, the program ran the gamut from Friday to Sunday evening. And, for those who made the trek from climates that actually have seasons, the Los Angeles setting offered some welcome warmth and sunshine. 
+<a href="https://www.socallinuxexpo.org/scale12x">![](blog/scale12x.png" align="left)</a> Last week's [Twelfth Annual Southern California Linux Expo](https://www.socallinuxexpo.org/scale12x) (SCALE 12x) had a little something for everyone. Young or old, new users to old hands, serious issues to silly games, the program ran the gamut from Friday to Sunday evening. And, for those who made the trek from climates that actually have seasons, the Los Angeles setting offered some welcome warmth and sunshine. 
 
 Friday kicked off with a slew of one-day tracks like Build a Cloud Day, PuppetCamp, DevOps Day LA, a Fedora Activity Day, and [Infrastructure.Next](http://lanyrd.com/2014/infra-at-scale/). Friday's daytime track has been growing at SCALE for a few years, and this year it was really packed with tracks and a full house of attendees.
 

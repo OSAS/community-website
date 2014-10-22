@@ -12,7 +12,7 @@ tags:
 categories:
 - Blog
 ---
-<a href="https://www.openstack.org/summit/openstack-summit-atlanta-2014/"><img src="blog/OpenStackATL.png"></a> [The OpenStack Summit 2014](https://www.openstack.org/summit/openstack-summit-atlanta-2014/) takes place May 12-16 in Atlanta, Georgia and [this year's schedule is chock full of panels, workshops, and presentations by Red Hatters involved with OpenStack.
+<a href="https://www.openstack.org/summit/openstack-summit-atlanta-2014/">![](blog/OpenStackATL.png)</a> [The OpenStack Summit 2014](https://www.openstack.org/summit/openstack-summit-atlanta-2014/) takes place May 12-16 in Atlanta, Georgia and [this year's schedule is chock full of panels, workshops, and presentations by Red Hatters involved with OpenStack.
 ](http://openstacksummitmay2014atlanta.sched.org/). 
 
 If you're at OpenStack Summit, you can catch talks on plans for OpenStack Neutron, how to use OpenDaylight with OpenStack, how Heat will help simplify deployment and management of cloud workloads, using Packstack and Foreman to deploy Red Hat Enterprise Linux OpenStack Platform, and much more.

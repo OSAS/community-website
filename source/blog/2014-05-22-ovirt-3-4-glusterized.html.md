@@ -13,7 +13,7 @@ tags:
 categories:
 - Blog
 ---
-<a href="http://www.ovirt.org"><img src="blog/oVirt-logo.png" align="right"></a>oVirt's [Hosted Engine](http://www.ovirt.org/Features/Self_Hosted_Engine) feature, introduced in the project's [3.4 release](http://www.ovirt.org/OVirt_3.4_Release_Notes), enables the open source virtualization system to host its own management server, which means one fewer required machine, and more self-sufficiency for your oVirt installation. 
+<a href="http://www.ovirt.org">![](blog/oVirt-logo.png){:align=right}</a>oVirt's [Hosted Engine](http://www.ovirt.org/Features/Self_Hosted_Engine) feature, introduced in the project's [3.4 release](http://www.ovirt.org/OVirt_3.4_Release_Notes), enables the open source virtualization system to host its own management server, which means one fewer required machine, and more self-sufficiency for your oVirt installation. 
 
 While a self-sufficient oVirt installation has been achievable for some time using the project's ["All-in-One"](http://www.ovirt.org/Feature/AllInOne) method of running an oVirt virtualization host and management server together on one machine, the Hosted Engine feature allows multiple machines to partake in the hosting duties, eliminating any one host as a single point of failure.
 

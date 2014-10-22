@@ -15,7 +15,7 @@ tags:
 categories:
 - Blog
 ---
-<a href="https://www.socallinuxexpo.org/scale12x"><img src="blog/scale12x.png" align="left"></a>[FOSDEM](http://fosdem.org/) is a wonderful conference, but if you're going to plan an event for the colder months (at least in the Northern Hemisphere), why not do it somewhere warm? Like sunny Los Angeles? That's a tiny part of the appeal behind [the Southern California Linux Expo](https://www.socallinuxexpo.org/scale12x) (SCALE), now going strong in its 12th year. 
+<a href="https://www.socallinuxexpo.org/scale12x">![](blog/scale12x.png" align="left)</a>[FOSDEM](http://fosdem.org/) is a wonderful conference, but if you're going to plan an event for the colder months (at least in the Northern Hemisphere), why not do it somewhere warm? Like sunny Los Angeles? That's a tiny part of the appeal behind [the Southern California Linux Expo](https://www.socallinuxexpo.org/scale12x) (SCALE), now going strong in its 12th year. 
 
 The weather, of course, is only a small (but undeniable) slice of the appeal to SCALE. What brings in droves of developers, admins, and enthusiasts is the unbeatable slate of [speakers](https://www.socallinuxexpo.org/scale12x/speakers) with outstanding [talks](https://www.socallinuxexpo.org/scale12x/schedule), [special events](https://www.socallinuxexpo.org/scale12x/events), and more. 
 
