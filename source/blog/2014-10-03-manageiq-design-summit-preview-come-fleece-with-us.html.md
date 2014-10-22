@@ -7,7 +7,7 @@ comments: true
 published: true
 ---
 
-<a href="http://miqdevsummit14.eventbrite.com/" target="_blank"><img src="/images/blog/miq-summit-sheep.png" width="375"></a> 
+<a href="http://miqdevsummit14.eventbrite.com/" target="_blank"><img src="blog/miq-summit-sheep.png" width="375"></a> 
 Next week is the first ever [ManageIQ Design Summit](http://miqdevsummit14.eventbrite.com/), and the agenda looks great - a real opportunity to learn more about cloud management in general, and how we're shapping the roadmap of ManageIQ in particular. Here are some of the highlights of what you'll see:
 
 **Event Kick-off - October 7, 9am**
