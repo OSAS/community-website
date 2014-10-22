@@ -48,7 +48,7 @@ The event was sponsored by Red Hat, but would also not have been possible withou
 
 ## Is Bigger Better?
 
-Contrasted with the [London Cloud Summit](http://community.redhat.com/blog/2014/01/getting-rowdy-about-cloud-in-london/) the audience was a tad more subdued. No doubt, part of this was due to event fatigue. After three or four days of conferences, the spirit may be willing, but the flesh is just barely getting by on coffee and sheer willpower. 
+Contrasted with the [London Cloud Summit](/blog/2014/01/getting-rowdy-about-cloud-in-london/) the audience was a tad more subdued. No doubt, part of this was due to event fatigue. After three or four days of conferences, the spirit may be willing, but the flesh is just barely getting by on coffee and sheer willpower. 
 
 But, more than that, a larger crowd and larger room plays against the feeling of intimacy required to have a really good interaction. As we plan more events for 2014, we need to find a sweet spot between reaching the most people and ensuring that those in attendance are deeply engaged and getting the most out of the event. 
 

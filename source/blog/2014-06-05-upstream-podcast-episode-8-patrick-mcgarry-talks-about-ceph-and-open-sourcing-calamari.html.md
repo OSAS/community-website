@@ -22,16 +22,16 @@ Tuesday, I had a chance to chat with Patrick McGarry of the Ceph team and talk a
 
 Or you can [grab the MP3 directly](http://upstream.jellycast.com/files/audio/2014-06-03-Patrick.mp3). 
 
-If you’d like to keep up with the Upstream podcast, keep an eye on this [blog](http://community.redhat.com/), our [@redhatopen Twitter feed](https://twitter.com/redhatopen), [Facebook page](https://www.facebook.com/redhatopen), and [RSS Feed](http://upstream.jellycast.com/podcast/feed/2).
+If you’d like to keep up with the Upstream podcast, keep an eye on this [blog](/), our [@redhatopen Twitter feed](https://twitter.com/redhatopen), [Facebook page](https://www.facebook.com/redhatopen), and [RSS Feed](http://upstream.jellycast.com/podcast/feed/2).
 
 Have feedback? Want to guest on the show? Shout out to [@jzb](http://twitter.com/jzb) on Twitter.
 
 ##Upstream Archives
 
-* Upstream: Episode 7. [Langdon White on SoftwareCollections.org](http://community.redhat.com/blog/2014/05/upstream-podcast-episode-7-langon-white-on-softwarecollections-org/) ([MP3](http://upstream.jellycast.com/files/audio/2014-05-15-Langdon-White-Upstream.mp3))
-* Upstream: Episode 6. [Marvin Humphrey of the Apache Software Foundation Talks Apache](http://community.redhat.com/blog/2014/05/upstream-podcast-episode-6/) ([MP3](http://upstream.jellycast.com/files/audio/2014-05-08-Marvin_Humphrey-Upstream.mp3))
-* Upstream: Episode 5. [Colin Walters on Project Atomic and rpm-ostree](http://community.redhat.com/blog/2014/04/upstream-podcast-episode-5-colin-walters-on-project-atomic-and-rpm-ostree/) ([MP3](http://upstream.jellycast.com/files/audio/2014-04-15-Colin.mp3))
-* Upstream: Episode 4. [Shane Curcuru on Brand Management and Trademarks ](http://community.redhat.com/blog/2014/04/upstream-podcast-4/) ([MP3](http://upstream.jellycast.com/files/audio/2014-04-08-Shane.mp3))
-* Upstream: Episode 3. [Ohad Levy Discusses Foreman and OpenStack ](http://community.redhat.com/blog/2014/04/upstream-podcast-episode-3-ohad-levy-discusses-foreman-and-openstack/) ([MP3](http://upstream.jellycast.com/files/audio/Ohad_Levy_Podcast.mp3))
-* Upstream: Episode 2. [Bradley Kuhn on the Software Freedom Conservancy](http://community.redhat.com/blog/2014/03/upstream-episode-2-interview-with-bradley-kuhn/) ([MP3](http://upstream.jellycast.com/files/audio/2014-03-24-Bradley-Kuhn.mp3))
-* Upstream: Episode 1. [Leslie Hawthorn on Why Checking Your Privilege is Good For You](http://community.redhat.com/blog/2014/03/new-podcast-and-interview-with-leslie-hawthorn/) ([MP3](http://upstream.jellycast.com/files/audio/2014-03-06-Leslie-Hawthorn.mp3))
+* Upstream: Episode 7. [Langdon White on SoftwareCollections.org](/blog/2014/05/upstream-podcast-episode-7-langon-white-on-softwarecollections-org/) ([MP3](http://upstream.jellycast.com/files/audio/2014-05-15-Langdon-White-Upstream.mp3))
+* Upstream: Episode 6. [Marvin Humphrey of the Apache Software Foundation Talks Apache](/blog/2014/05/upstream-podcast-episode-6/) ([MP3](http://upstream.jellycast.com/files/audio/2014-05-08-Marvin_Humphrey-Upstream.mp3))
+* Upstream: Episode 5. [Colin Walters on Project Atomic and rpm-ostree](/blog/2014/04/upstream-podcast-episode-5-colin-walters-on-project-atomic-and-rpm-ostree/) ([MP3](http://upstream.jellycast.com/files/audio/2014-04-15-Colin.mp3))
+* Upstream: Episode 4. [Shane Curcuru on Brand Management and Trademarks ](/blog/2014/04/upstream-podcast-4/) ([MP3](http://upstream.jellycast.com/files/audio/2014-04-08-Shane.mp3))
+* Upstream: Episode 3. [Ohad Levy Discusses Foreman and OpenStack ](/blog/2014/04/upstream-podcast-episode-3-ohad-levy-discusses-foreman-and-openstack/) ([MP3](http://upstream.jellycast.com/files/audio/Ohad_Levy_Podcast.mp3))
+* Upstream: Episode 2. [Bradley Kuhn on the Software Freedom Conservancy](/blog/2014/03/upstream-episode-2-interview-with-bradley-kuhn/) ([MP3](http://upstream.jellycast.com/files/audio/2014-03-24-Bradley-Kuhn.mp3))
+* Upstream: Episode 1. [Leslie Hawthorn on Why Checking Your Privilege is Good For You](/blog/2014/03/new-podcast-and-interview-with-leslie-hawthorn/) ([MP3](http://upstream.jellycast.com/files/audio/2014-03-06-Leslie-Hawthorn.mp3))

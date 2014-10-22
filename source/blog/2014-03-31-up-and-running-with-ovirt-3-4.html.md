@@ -24,13 +24,13 @@ READMORE
 
 ## Prerequisites
 
-__Hardware:__ You’ll need a machine with at least 4GB RAM and processors with [hardware virtualization extensions](http://en.wikipedia.org/wiki/X86_virtualization#Hardware-assisted_virtualization). A physical machine is best, but you can test oVirt using [nested KVM](http://community.redhat.com/testing-ovirt-3-3-with-nested-kvm/) as well.
+__Hardware:__ You’ll need a machine with at least 4GB RAM and processors with [hardware virtualization extensions](http://en.wikipedia.org/wiki/X86_virtualization#Hardware-assisted_virtualization). A physical machine is best, but you can test oVirt using [nested KVM](/testing-ovirt-3-3-with-nested-kvm/) as well.
 
 __Software:__ oVirt 3.4 runs on the 64-bit editions of Fedora 19 or Red Hat Enterprise Linux 6.5 (or on an up-to-date version of one of the RHEL-based Linux distributions such as CentOS or Scientific Linux).
 
 __Network:__ Your test machine’s host name must resolve properly, either through your network’s DNS, or through the /etc/hosts file on your virt host(s), on the VM that will host the oVirt engine, and on any clients from which you plan on administering oVirt.
 
-__Storage:__ The hosted engine feature requires NFS storage to house the VM that will host the engine. For this walkthrough, I'll be using an external NFS server for this -- I'll examine the topic of a setup with [fully-converged storage, courtesy of GlusterFS](http://community.redhat.com/blog/2014/05/ovirt-3-4-glusterized/), in a separate post.
+__Storage:__ The hosted engine feature requires NFS storage to house the VM that will host the engine. For this walkthrough, I'll be using an external NFS server for this -- I'll examine the topic of a setup with [fully-converged storage, courtesy of GlusterFS](/blog/2014/05/ovirt-3-4-glusterized/), in a separate post.
 
 ## Installing oVirt with Hosted Engine
 
@@ -233,7 +233,7 @@ hosted-engine  --set-maintenance --mode=none
 
 That's enough for this post. If you run into trouble following this walkthrough, I’ll be happy to help you get up and running or get pointed in the right direction. On IRC, I’m jbrooks, ping me in the #ovirt room on OFTC or write a comment below.
 
-Stay tuned for a followup post about [GlusterFS & converged storage](http://community.redhat.com/blog/2014/05/ovirt-3-4-glusterized/).
+Stay tuned for a followup post about [GlusterFS & converged storage](/blog/2014/05/ovirt-3-4-glusterized/).
 
 If you’re interested in getting involved with the oVirt Project, you can find all the mailing list, issue tracker, source repository, and wiki information you need [here](http://www.ovirt.org/Community).
 

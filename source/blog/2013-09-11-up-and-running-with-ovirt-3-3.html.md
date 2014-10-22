@@ -22,7 +22,7 @@ oVirt 3.3 also sports an overhauled All-in-One (AIO) setup plugin, which makes i
 ## Prerequisites
 
 	
-  * Hardware: You’ll need a machine with at least 4GB RAM and processors with hardware virtualization extensions. A physical machine is best, but you can test oVirt effectively using [nested KVM](http://community.redhat.com/testing-ovirt-3-3-with-nested-kvm/) as well.
+  * Hardware: You’ll need a machine with at least 4GB RAM and processors with hardware virtualization extensions. A physical machine is best, but you can test oVirt effectively using [nested KVM](/testing-ovirt-3-3-with-nested-kvm/) as well.
 
 	
   * Software: oVirt 3.3 runs on the 64-bit editions of Fedora 19 or Red Hat Enterprise Linux 6.4 (or on the equivalent version of one of the RHEL-based Linux distributions such as CentOS or Scientific Linux).
@@ -166,7 +166,7 @@ After a few moments, the status of your new vm will switch from red to green, an
 
 oVirt defaults to the SPICE protocol for new VMs, which means you’ll need the virt-viewer package installed on your client machine. If a SPICE client isn’t available to you, you can opt for VNC by stopping your VM, clicking "Edit," "Console," "Show Advanced Options," and choosing VNC from the "Protocol" drop down menu.
 
-That’s enough for this blog post, but stay tuned for more oVirt 3.3 how-to posts. In particular, I have walkthroughs in the works for [making use of oVirt’s new and improved Gluster storage support](http://community.redhat.com/ovirt-3-3-glusterized/), and for making oVirt and OpenStack play nicely together.
+That’s enough for this blog post, but stay tuned for more oVirt 3.3 how-to posts. In particular, I have walkthroughs in the works for [making use of oVirt’s new and improved Gluster storage support](/ovirt-3-3-glusterized/), and for making oVirt and OpenStack play nicely together.
 
 If you’re interested in getting involved with the project, you can find all the mailing list, issue tracker, source repository, and wiki information you need [here](http://www.ovirt.org/Community).
 

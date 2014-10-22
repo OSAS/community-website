@@ -9,7 +9,7 @@ published: true
 
 The CentOS Project is increasing its efforts to empower contributors to produce and collaborate on new CentOS Variants, in which groups of contributors combine the CentOS core with newer or otherwise custom components to suit that group’s needs.
 
-[Xen4CentOS](http://wiki.centos.org/Manuals/ReleaseNotes/Xen4-01), which combines CentOS 6 with components from the Xen project and the ["longterm maintenance"](https://www.kernel.org/releases.html) release of the Linux kernel, is an example of an existing variant project. For more on variants, refer to [the CentOS Project site](http://centos.org/variants/) and [the CentOS and Variants](http://community.redhat.com/centos-faq/#_centos_and_variants) section of our FAQ.
+[Xen4CentOS](http://wiki.centos.org/Manuals/ReleaseNotes/Xen4-01), which combines CentOS 6 with components from the Xen project and the ["longterm maintenance"](https://www.kernel.org/releases.html) release of the Linux kernel, is an example of an existing variant project. For more on variants, refer to [the CentOS Project site](http://centos.org/variants/) and [the CentOS and Variants](/centos-faq/#_centos_and_variants) section of our FAQ.
 
 The contributor groups behind variants are called Special Interest Groups. For more on SIGs, refer to [the CentOS Project wiki](http://wiki.centos.org/SpecialInterestGroup).
 

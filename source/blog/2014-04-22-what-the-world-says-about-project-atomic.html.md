@@ -34,7 +34,7 @@ READMORE
 
 + [Dan Walsh Talks SELinux, Docker, and Project Atomic](http://www.buzzsprout.com/11627/166857-dan-walsh-talks-selinux-docker)
 + [The Cloudcast #139 - Docker, Project Atomic & OpenShift](http://www.thecloudcast.net/2014/04/the-cloudcast-139-docker-project-atomic.html)
-+ [Upstream Podcast Episode 5: Colin Walters on Project Atomic and rpm-ostree](http://community.redhat.com/blog/2014/04/upstream-podcast-episode-5-colin-walters-on-project-atomic-and-rpm-ostree/)
++ [Upstream Podcast Episode 5: Colin Walters on Project Atomic and rpm-ostree](/blog/2014/04/upstream-podcast-episode-5-colin-walters-on-project-atomic-and-rpm-ostree/)
 
 ##Project Atomic in the News
 

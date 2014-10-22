@@ -15,7 +15,7 @@ tags:
 - ovirt
 ---
 
-The All-in-One install I detailed in [Up and Running with oVirt 3.3](http://community.redhat.com/up-and-running-with-ovirt-3-3/) includes everything you need to run virtual machines and get a feel for what oVirt can do, but the downside of the local storage domain type is that it limits you to that single All in One (AIO) node.
+The All-in-One install I detailed in [Up and Running with oVirt 3.3](/up-and-running-with-ovirt-3-3/) includes everything you need to run virtual machines and get a feel for what oVirt can do, but the downside of the local storage domain type is that it limits you to that single All in One (AIO) node.
 
 You can shift your AIO install to a shared storage configuration to invite additional nodes to the party, and oVirt has supported the usual shared storage suspects such as NFS and iSCSI since the beginning.
 

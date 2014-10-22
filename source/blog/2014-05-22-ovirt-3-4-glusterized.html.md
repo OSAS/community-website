@@ -17,7 +17,7 @@ categories:
 
 While a self-sufficient oVirt installation has been achievable for some time using the project's ["All-in-One"](http://www.ovirt.org/Feature/AllInOne) method of running an oVirt virtualization host and management server together on one machine, the Hosted Engine feature allows multiple machines to partake in the hosting duties, eliminating any one host as a single point of failure.
 
-The Hosted Engine feature relies on NFS storage to house the management VM. Running an NFS server on one of our virtualization hosts would make that host a new single point of failure, which means we need either to tap an external NFS filer (the approach I took in [the walkthrough](http://community.redhat.com/blog/2014/03/up-and-running-with-ovirt-3-4/) I posted here recently) or we need to figure out how to make our oVirt hosts serve up their own, replicated NFS storage.
+The Hosted Engine feature relies on NFS storage to house the management VM. Running an NFS server on one of our virtualization hosts would make that host a new single point of failure, which means we need either to tap an external NFS filer (the approach I took in [the walkthrough](/blog/2014/03/up-and-running-with-ovirt-3-4/) I posted here recently) or we need to figure out how to make our oVirt hosts serve up their own, replicated NFS storage.
 
 In this post, I'm going to walk through that latter option -- setting up a pair of CentOS 6 machines to serve as oVirt virtualization hosts that together provide the NFS storage required for the Hosted Engine feature, using [Gluster](http://www.gluster.org/) for this replicated storage and for NFS and [CTDB](https://ctdb.samba.org/) to provide a virtual IP address mount point for the storage.
 
@@ -36,7 +36,7 @@ I recently tested with an unplanned outage, where I pulled the plug (stopped via
 
 ## Prerequisites
 
-The prerequisites are the same as for the [Up and Running with oVirt 3.4](http://community.redhat.com/blog/2014/03/up-and-running-with-ovirt-3-4/) walkthrough, with the addition of a healthy-sized disk or partition to use for our Gluster volumes. The hosted engine VM will require 20GB, and you'll want to have plenty of storage space left over for the VMs you'll create and manage with oVirt.
+The prerequisites are the same as for the [Up and Running with oVirt 3.4](/blog/2014/03/up-and-running-with-ovirt-3-4/) walkthrough, with the addition of a healthy-sized disk or partition to use for our Gluster volumes. The hosted engine VM will require 20GB, and you'll want to have plenty of storage space left over for the VMs you'll create and manage with oVirt.
 
 For networking, you can get away with a single network adapter, but for best results, you'll want three: one for the CTDB heartbeat, one for Gluster traffic, and one for oVirt management traffic and everything else. No matter how you arrange your networking, your two hosts will need to be able to reach other on your network(s). If need be, edit `/etc/hosts` on both of your machines to establish the right ip address / host name mappings.
 
@@ -328,7 +328,7 @@ gluster volume start data
 
 ## Finish Hosted oVirt Installation
 
-With our Gluster-provided NFS storage for the oVirt engine VM arranged, we can proceed with the Hosted Engine installation. See the "Installing oVirt with Hosted Engine" heading in the [Up & Running walkthrough](http://community.redhat.com/blog/2014/03/up-and-running-with-ovirt-3-4/) and follow the steps there.
+With our Gluster-provided NFS storage for the oVirt engine VM arranged, we can proceed with the Hosted Engine installation. See the "Installing oVirt with Hosted Engine" heading in the [Up & Running walkthrough](/blog/2014/03/up-and-running-with-ovirt-3-4/) and follow the steps there.
 
 As you do, keep these things in mind:
 

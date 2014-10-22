@@ -19,7 +19,7 @@ What I love about all of this is how it creates the balance between the forceful
 
 My relationship to this new effort is pretty integral. I’ve been acting as the project lead and have been one of the project architects since the beginning. In addition, I’m going to be joining the CentOS Governing Board and acting in the role of the Red Hat [liaison](http://www.centos.org/about/governance/board-responsibilities/#red-hat-liaison-responsibilities). Finally, I have the honor of the being the team manager for the new CentOS team working in the CTO’s office as part of our [Open Source and Standards Group](http://community.redhat.com) meaning I get to be the buffer and champion internally for Johnny Hughes, Jim Perrin, Fabian Arrotin, and Karanbir Singh.
 
-- FAQ: [http://community.redhat.com/centos-faq](http://community.redhat.com/centos-faq)
+- FAQ: [/centos-faq](http://community.redhat.com/centos-faq)
 - Press release permalink: [http://www.redhat.com/about/news/press-archive/2014/1/red-hat-and-centos-join-forces](http://www.redhat.com/about/news/press-archive/2014/1/red-hat-and-centos-join-forces)
 - CentOS website: [http://www.centos.org](http://www.centos.org)
 - Project governance: [http://www.centos.org/about/governance](http://www.centos.org/about/governance)

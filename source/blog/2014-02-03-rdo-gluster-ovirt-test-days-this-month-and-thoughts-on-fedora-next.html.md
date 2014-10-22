@@ -19,7 +19,7 @@ The beta3 packages for Gluster 3.5 are expected to hit FTP this week, with a Glu
 
 ### oVirt: February 11th and February 19th
 
-[oVirt 3.4](http://community.redhat.com/blog/2014/01/ovirt-3.4-all-about-easier-installation-administration/) is nigh, with a [projected general availability](http://www.ovirt.org/OVirt_3.4_release_management) date of February 24th.
+[oVirt 3.4](/blog/2014/01/ovirt-3.4-all-about-easier-installation-administration/) is nigh, with a [projected general availability](http://www.ovirt.org/OVirt_3.4_release_management) date of February 24th.
 
 Leading up to the final 3.4 release, there’s a pair of test days scheduled for shaking out as many issues as possible ahead of the release. For more information, see the [3.4 test days page](http://www.ovirt.org/OVirt_3.4_TestDay) on the oVirt project wiki.
 
