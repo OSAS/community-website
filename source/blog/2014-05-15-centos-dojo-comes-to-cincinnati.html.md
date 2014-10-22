@@ -12,7 +12,7 @@ tags:
 - OpenStack
 - Software Collections
 - SCL
-categories: 
+categories:
 - Blog
 ---
 

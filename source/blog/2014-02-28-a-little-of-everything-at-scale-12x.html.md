@@ -4,7 +4,7 @@ comments: true
 date: 2014-02-28 16:06 UTC
 layout: post
 title: A Little of Everything at SCALE 12x
-categories: 
+categories:
 - Blog
 tags:
 - Fedora

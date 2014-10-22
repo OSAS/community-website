@@ -10,7 +10,7 @@ tags:
 - KVM
 - IaaS
 - Cloud
-categories: 
+categories:
 - Blog
 ---
 <a href="http://openstack.redhat.com/"><img src="http://community.redhat.com/images/blog/rdo-logo.png"></a> A year ago today &ndash; April 15, 2013 &ndash; [we announced](http://www.redhat.com/about/news/press-archive/2013/4/red-hat-advances-its-openstack-enterprise-and-community-technologies-and-roadmap) the [RDO](http://www.redhat.com/products/enterprise-linux/openstack-platform/) effort. We started the project in an effort to make it less painful to deploy an OpenStack cloud on CentOS, Fedora, or Red Hat Enterprise Linux. A lot has changed over the past year, but our mission remains the same.

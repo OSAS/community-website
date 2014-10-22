@@ -19,7 +19,7 @@ Calling OpenStack users! Want to help make OpenStack dead easy to install on Cen
 The RDO team will be providing packages for CentOS, Fedora, and RHEL:
 
 - CentOS 7
-- RHEL 6.5 
+- RHEL 6.5
 - RHEL 7
 - Fedora 20
 - Fedora 21

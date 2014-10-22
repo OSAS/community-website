@@ -3,7 +3,7 @@ author: rturk
 comments: true
 layout: post
 title: Ceph's Sage Weil Challenges Open Source Storage Community to Donate to the Ada Initiative
-date: 2014-10-03 
+date: 2014-10-03
 tags:
 - Ceph
 - Gluster

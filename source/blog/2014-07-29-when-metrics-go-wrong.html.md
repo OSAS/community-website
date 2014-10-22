@@ -4,7 +4,7 @@ comments: true
 layout: post
 title: When Metrics Go Wrong
 date: 2014-07-29 15:37 UTC
-tags: 
+tags:
 - Metrics
 categories:
 - Blog

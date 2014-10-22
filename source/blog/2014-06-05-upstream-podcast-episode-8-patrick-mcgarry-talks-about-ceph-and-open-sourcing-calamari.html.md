@@ -10,7 +10,7 @@ tags:
 - Upstream
 - Calamari
 - Storage
-categories: 
+categories:
 - Blog
 ---
 ![](blog/upstream-mic.jpg)

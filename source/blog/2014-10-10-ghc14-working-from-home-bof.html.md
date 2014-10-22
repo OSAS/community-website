@@ -3,7 +3,7 @@ author: rendsley
 comments: true
 layout: post
 title: "GHC '14: Advancing the Work from Home Option"
-date: 2014-10-10 
+date: 2014-10-10
 tags:
 - GHC14
 - Open Source

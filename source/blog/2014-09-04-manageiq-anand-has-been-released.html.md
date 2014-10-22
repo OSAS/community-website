@@ -1,5 +1,5 @@
 ---
-author: johnmark 
+author: johnmark
 layout: post
 comments: true
 title: "ManageIQ Anand Has Been Released"

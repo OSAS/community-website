@@ -9,7 +9,7 @@ tags:
 - ASF
 - Podcast
 - Upstream
-categories: 
+categories:
 - Blog
 - Podcast
 ---

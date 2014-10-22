@@ -1,5 +1,5 @@
 ---
-author: johnmark 
+author: johnmark
 comments: true
 layout: post
 title: First Ever ManageIQ Design Summit - Oct 7-8

@@ -8,7 +8,7 @@ categories:
 - Blog
 tags:
 - MySQL
-- CentOS 
+- CentOS
 - systemd
 - Logstash
 - DevOps
