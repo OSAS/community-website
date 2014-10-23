@@ -1,8 +1,8 @@
 ---
 title: User Stories, Dialogs Are Central Theme of oVirt Workshop
 author: bkp
-date: 2014-10-23 19:27:01.000000000 Z
-published: false
+date: 2014-10-23 19:27 UTC
+published: true
 comments: true
 ---
 
