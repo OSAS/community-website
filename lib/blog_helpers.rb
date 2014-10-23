@@ -24,10 +24,13 @@ class BlogHelpers < Middleman::Extension
       author = data.authors[nickname]
 
       @author_card[nickname] = if author && author['description']
-        author['description']
+        desc = author['description'].dup
+        desc.gsub!(/@(\w+)/, '[@\1](https://twitter.com/\1)') # Twitter-link!
+
+        markdown_to_html desc
       end
 
-      author_card nickname
+      @author_card[nickname]
     end
 
     def author_gravatar nickname
@@ -46,7 +49,7 @@ class BlogHelpers < Middleman::Extension
         Oj.load g_json
       end
 
-      author_gravatar nickname
+      @author_gravatar[nickname]
     end
 
     def author_photo nickname

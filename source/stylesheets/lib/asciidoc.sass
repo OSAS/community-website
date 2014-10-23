@@ -12,5 +12,17 @@
   .sect2 h3
     padding-top: 1em
 
-  .sect1, .sect2, .sect3, .sect4, .sect5, .sect6
+  %section-padding
     padding-bottom: 2em
+
+  /* Additional space for ToC'd docs (It's wacky, but works…) */
+  .top
+    + .sect1
+      @extend %section-padding
+      + .sect2
+        @extend %section-padding
+        .sect3, .sect4, .sect5, .sect6
+          @extend %section-padding
+    + .sect2
+      .sect3, .sect4, .sect5, .sect6
+        @extend %section-padding
