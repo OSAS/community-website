@@ -23,6 +23,7 @@ In this post, I'm going to walk through that latter option -- setting up a pair 
 
 READMORE
 
+{:.alert.alert-warning}
 **NOTE:** People have been [running into](http://lists.ovirt.org/pipermail/users/2014-July/026088.html) [some issues](https://bugzilla.redhat.com/show_bug.cgi?id=1097639) with converged Gluster + oVirt setups like the one I describe here.
 
 It's important to use CTDB, or something like it, to provide for [automated IP failover]((https://access.redhat.com/documentation/en-US/Red_Hat_Storage/2.1/html/Administration_Guide/ch09s05.html)). While it may seem reasonable to simply use "localhost" as the NFS mount point for the hosted engine storage, and rely on Gluster to handle the replication between the servers, this ends up not working reliably. 
@@ -40,6 +41,7 @@ The prerequisites are the same as for the [Up and Running with oVirt 3.4](/blog/
 
 For networking, you can get away with a single network adapter, but for best results, you'll want three: one for the CTDB heartbeat, one for Gluster traffic, and one for oVirt management traffic and everything else. No matter how you arrange your networking, your two hosts will need to be able to reach other on your network(s). If need be, edit `/etc/hosts` on both of your machines to establish the right ip address / host name mappings.
 
+{:.alert.alert-warning}
 _NOTE:_ Unless I indicate otherwise, you'll need to perform the steps that follow on both of your machines.
 
 ## Prepare Partition for Gluster
@@ -151,6 +153,7 @@ Edit `/etc/sysconfig/iptables` to include the rules you'll need for Gluster, oVi
 COMMIT
 ````
 
+{:.alert.alert-warning}
 _NOTE:_ During the oVirt Hosted Engine install process, which we'll get to shortly, the installer script will ask if you want it to configure your iptables. You should answer no, but if you answer yes on accident, the installer will saved a backup copy of the previous configuration as something like `/etc/sysconfig/iptables.$DATE` and you can just copy that back over. Keep an eye on this, because your pair of machines will have to communicate with each other for Gluster, for CTDB, for NFS, etc.
 
 
