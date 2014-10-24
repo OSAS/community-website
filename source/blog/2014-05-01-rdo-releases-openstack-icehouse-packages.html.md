@@ -19,7 +19,7 @@ RDO is a packaging of upstream OpenStack for easy deployment on CentOS, Fedora, 
 
 We're very excited about the new features in the Icehouse release &ndash; more than 350 new features, developed by more than 1,200 contributors &ndash; and the new incubated projects that are going to make OpenStack even better in future releases. And we're proud to be a [leader in making those changes happen](http://activity.openstack.org/dash/releases/index.html?data_dir=data/icehouse).
 
-Come talk with us at the [OpenStack Summit](/events/#openstacksummitus) about how you're using OpenStack in your organization, and to see how you can get involved in the [RDO project](http://openstack.redhat.com/).
+Come talk with us at the [OpenStack Summit](/events/2014/#openstacksummitus) about how you're using OpenStack in your organization, and to see how you can get involved in the [RDO project](http://openstack.redhat.com/).
 
 The [OpenStack Summit](https://www.openstack.org/summit/openstack-summit-atlanta-2014/) will be held May 12-16 in Atlanta. 
 
