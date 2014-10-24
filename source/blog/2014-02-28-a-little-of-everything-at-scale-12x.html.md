@@ -22,7 +22,7 @@ READMORE
 
 ## Infrastructure.Next Full House
 
-The room for Infrastructure.Next had seating for about 80 people, and it was often packed to standing room only. The program at SCALE was similar to [Ghent](/blog/2014/02/infrastructure-next-debuts-in-ghent/), starting with Jim Perrin discussing the changes since [Red Hat joined forces with CentOS](http://community.redhat.com/blog/2014/01/red-hat-and-centos-join-forces/), CentOS [SIGs and variants](http://community.redhat.com/blog/2014/01/centos-sig-and-variant-activity/), and CentOS in general. He also fielded quite a few questions from the audience, as there was plenty of interest in how CentOS would evolve.
+The room for Infrastructure.Next had seating for about 80 people, and it was often packed to standing room only. The program at SCALE was similar to [Ghent](/blog/2014/02/infrastructure-next-debuts-in-ghent/), starting with Jim Perrin discussing the changes since [Red Hat joined forces with CentOS](/blog/2014/01/red-hat-and-centos-join-forces/), CentOS [SIGs and variants](/blog/2014/01/centos-sig-and-variant-activity/), and CentOS in general. He also fielded quite a few questions from the audience, as there was plenty of interest in how CentOS would evolve.
 
 Jason Brooks debuted "[How to Assemble A Cutting Edge Cloud Stack With Minimal Bleeding](http://lanyrd.com/2014/infra-at-scale/scwgcw/)." Brooks spends a lot of time [testing oVirt, Gluster, CentOS, Fedora, and other projects](/blog/author/jbrooks/) and trying to get them to play nicely with one another. Putting together a stable IaaS or infrastructure setup from leading-edge projects can be a little tricky, so Brooks offered tips on troubleshooting and retaining sanity while working with the latest and greatest. 
 

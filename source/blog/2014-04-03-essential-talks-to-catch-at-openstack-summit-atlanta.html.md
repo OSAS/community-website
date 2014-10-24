@@ -78,6 +78,6 @@ Liz Blanchard tells how the UX group helps shape features and improve overall us
 
 + [The Massachusetts Open Cloud (MOC) - A New Model to Operate and Innovate in a Vendor-Neutral Cloud](/events/#openstacksummitus--the-massachusetts-open-cloud-moc-a-new-model-to-operate-and-innovate-in-a-vendor-neutral-cloud): James Cuff, Jan Mark Holzer, and Orran Krieger discuss the vision and status of the  project, the central role OpenStack plays in its implementation, and some of the required changes needed in OpenStack to enable a multi-provider open cloud.
 
-For more information about these talks, visit: [/events/#openstacksummitus](http://community.redhat.com/events/#openstacksummitus).
+For more information about these talks, visit: [/events/#openstacksummitus](/events/#openstacksummitus).
 
 For more details on the OpenStack Summit and to register, see [https://www.openstack.org/summit/openstack-summit-atlanta-2014/](https://www.openstack.org/summit/openstack-summit-atlanta-2014/).

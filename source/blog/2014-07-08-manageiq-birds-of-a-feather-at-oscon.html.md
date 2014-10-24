@@ -13,7 +13,7 @@ categories:
 - Blog
 ---
 ![](blog/manageiq-vertical.png?1404334153)
-Not long after announcing the formation of the [ManageIQ](http://manageiq.org/) community at OpenStack Summit, the project released a series of [YouTube HowTo videos](https://community.redhat.com/blog/2014/06/master-manageiq-with-helpful-howto-videos/). 
+Not long after announcing the formation of the [ManageIQ](http://manageiq.org/) community at OpenStack Summit, the project released a series of [YouTube HowTo videos](/blog/2014/06/master-manageiq-with-helpful-howto-videos/). 
 
 This month, OSCON attendees can learn more about ManageIQ at the [Taming Hybrid Clouds with ManageIQ](http://www.oscon.com/oscon2014/public/schedule/detail/37708) birds of a feather (BoF) session on Tuesday, July 22nd. If you want to use cloud APIs in applications, or want a single management interface for cloud and virtualization platforms, you should make sure to attend.
 
