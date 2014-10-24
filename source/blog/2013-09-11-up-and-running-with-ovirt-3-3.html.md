@@ -15,6 +15,10 @@ tags:
 - virtualization
 ---
 
+{:.alert.alert-warning}
+There's [a new version of "Up and running with oVirt"](/blog/2014/03/up-and-running-with-ovirt-3-4/),
+updated for oVirt 3.4.
+
 The [oVirt Project](https://twitter.com/redhatopen) is now putting the finishing touches on version 3.3 of its KVM-based virtualization management platform. The release will be feature-packed, including expanded support for Gluster storage, new integration points for OpenStack’s [Neutron networking](http://www.youtube.com/watch?v=S16AfFylcHk) and [Glance image](http://www.youtube.com/watch?v=_Nyi1xyiQnY) services, and a raft of new [extensibility and usability upgrades](http://www.ovirt.org/OVirt_3.3_release_notes).
 
 oVirt 3.3 also sports an overhauled All-in-One (AIO) setup plugin, which makes it easy to get up and running with oVirt on a single machine to see what oVirt can do for you.
