@@ -18,7 +18,7 @@ tags:
 
 LinuxCon and CloudOpen Europe are just a few days away, and the line-up for talks looks **really** good. If you're putting together your schedule, we have a couple of suggestions for talks that you'd probably find interesting.
 
-The [full schedule is on Sched.org](http://linuxconcloudopeneu2013.sched.org/), which makes it really easy to keep track of the talks you don't want to miss. Also, don't miss the [Gluster Workshop](/gluster-workshop-in-edinburgh-at-linuxcon-europe/) on Thursday.
+The [full schedule is on Sched.org](http://linuxconcloudopeneu2013.sched.org/), which makes it really easy to keep track of the talks you don't want to miss. Also, don't miss the [Gluster Workshop](/blog/2013/10/gluster-workshop-in-edinburgh-at-linuxcon-europe/) on Thursday.
 
 ## Monday, October 21
 
