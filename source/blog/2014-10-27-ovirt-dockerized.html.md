@@ -3,7 +3,7 @@ title: 'oVirt Dockerized: Part 1'
 author: bkp
 date: 2014-10-27 20:23:17.000000000 Z
 tags: ovirt, containers, Docker, virtualization, Linux
-published: false
+published: true
 comments: true
 ---
 
