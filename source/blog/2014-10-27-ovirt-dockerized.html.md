@@ -7,7 +7,7 @@ published: true
 comments: true
 ---
 
-As we moved toward the [release of oVirt 3.5.0](http://www.ovirt.org/OVirt_3.5_Release_Notes), the oVirt team started exploring how can we maximize the ease of the deployment process. Steps have already been taken in that direction, with the migration to [otopi based setup infra](http://www.ovirt.org/Features/Otopi_Infra_Migration), [hosted engine](http://www.ovirt.org/Features/Self_Hosted_Engine), and [oVirt virtual appliance](http://www.ovirt.org/Feature/oVirtAppliance). But still there is nothing like “Poof! I got oVirt!!” for any major Linux distribution. Until now. 
+<img src="http://community.redhat.com/images/blog/oVirt-logo.png">As we moved toward the [release of oVirt 3.5.0](http://www.ovirt.org/OVirt_3.5_Release_Notes), the oVirt team started exploring how can we maximize the ease of the deployment process. Steps have already been taken in that direction, with the migration to [otopi based setup infra](http://www.ovirt.org/Features/Otopi_Infra_Migration), [hosted engine](http://www.ovirt.org/Features/Self_Hosted_Engine), and [oVirt virtual appliance](http://www.ovirt.org/Feature/oVirtAppliance). But still there is nothing like “Poof! I got oVirt!!” for any major Linux distribution. Until now. 
 
 Running oVirt now can take only a matter of seconds. Depending on your Internet connection, by the time you finish reading this article, you could have an ovirt-engine 3.5.0 GA instance up and running, thanks to [Docker](https://www.docker.com/whatisdocker/).
 
