@@ -57,4 +57,4 @@ The prerequisites for this operation include installing the docker-io package an
 
 <pre>sudo service docker start</pre>
 
-Check back for Part 2 tomorrow and learn how to run oVirt with a remote database and as a standalone container, how to build an interactive configuration, and how to clean up your environment.
+Check back for [Part 2](http://community.redhat.com/blog/2014/10/ovirt-dockerized-part-2/) tomorrow and learn how to run oVirt with a remote database and as a standalone container, how to build an interactive configuration, and how to clean up your environment.
