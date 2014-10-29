@@ -2,7 +2,7 @@
 title: Up and Running with oVirt 3.5
 author: jbrooks
 date: 2014-10-29 13:00:00.000000000 Z
-published: false
+published: true
 comments: true
 ---
 
