@@ -17,6 +17,8 @@ One of the most exciting aspects of the expanding CentOS Project is the work bei
 
 The work of these SIGs happens on top of the CentOS Linux core release, providing new software alongside the core in the form of repositories or images. In some cases SIGs may replace core packages as part of making a variant targeted at a specific audience. SIGs can do this because members must come from the involved upstream project, and thus are authoritative about what that software and its community needs
 
+READMORE
+
 There has been significant interest all year long to get new SIGs up and running, which has taken its fair share of time in each case. This is mainly because we are building the scaffolding in real time for an open and participatory community that can help set the direction of the CentOS Project.
 
 Because the entirety of the CentOS developers are now contributing more broadly across the Project, we're all adjusting to the way some things are moving faster and others more slowly. In order to maintain velocity, in some cases we're creating policy and process in real time, and still learning how best to share all that.
@@ -55,4 +57,3 @@ Find CentOS online at:
  * Twitter - [@centos](https://twitter.com/centos) and [@centosevents](https://twitter.com/centosevents)
  * [G+ CentOS](https://plus.google.com/+CentOS/)
  * [CentOS Facebook Group](https://www.facebook.com/groups/centosproject/)
-

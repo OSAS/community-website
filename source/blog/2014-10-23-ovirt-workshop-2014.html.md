@@ -12,6 +12,8 @@ The day started with a well-received presentation from Michal Skrivanek on [what
 
 Next up, Antoni Segura Puimedon walked everyone through the details of how [oVirt and OpenStack are integrating](http://blog.antoni.me/oVirt2014/#/), which generated some good discussion, primarily because of all of the technologies out in enterprise IT, people are very interested in OpenStack and how they can use it. This is a topic worth exploring in detail in the near future.
 
+READMORE
+
 Barak Azulay then talked about ways [oVirt works with Foreman](http://www.ovirt.org/images/a/ae/OVirt-Foreman-DUS.odp). Foreman integration has been a big part of the oVirt story over the past year, as admins and users make the jump to better life-cycle management. Combining that kind of management with a superior virtual machine manager makes a lot of sense.
 
 After the break, Federico Simoncelli rolled out a look at how oVirt is progressing in the world of a hot topic in IT right now: Docker. There are two ways [oVirt will work with Docker](http://www.ovirt.org/images/d/dd/2014-ovirt-docker-integration.pdf): using oVirt to manage Docker containers directly (with a little help from Kubernetes for orchestration), and by containerizing oVirt Engine to run inside Docker and create the fastest and simplest oVirt install ever.

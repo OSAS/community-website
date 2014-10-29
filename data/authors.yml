@@ -100,6 +100,13 @@ mlipchuk:
     for the past four years. He is currently working in the Storage team. Maor
     likes to travel, so if you need any help with oVirt, feel free to invite him
     for a visit.
+    
+mgoldboim:
+   name: Moran Goldboim
+   twitter:
+   description: |
+     Moran Goldboim is a Supervisor of Software Engineering at Red Hat, based in 
+     Ra'anana, Israel.
 
 ncoghlan:
   name: Nick Coghlan
