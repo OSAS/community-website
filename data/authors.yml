@@ -91,6 +91,14 @@ quaid:
     passion for [the open source way](http://theopensourceway.org) fits in well
     with his love of family, urban farming, and pedicabbing (to name but three).
     He lives in Santa Cruz, CA, and you can find him all online as @quaid.
+    
+kchamarthy:
+  name: Kashyap Chamarthy
+  twitter:
+  description: |
+    Kashyap Chamarthy works as part of Red Hat's cloud engineering group,
+    focusing his contributions on interactions between OpenStack and its
+    underlying virtualization components.     
 
 mlipchuk:
   name: Maor Lipchuk
