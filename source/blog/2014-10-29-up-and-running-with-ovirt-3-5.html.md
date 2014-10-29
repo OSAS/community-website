@@ -2,8 +2,9 @@
 title: Up and Running with oVirt 3.5
 author: jbrooks
 date: 2014-10-29 13:00:00.000000000 Z
-published: true
+tags: centos, ovirt, gluster, virtualization
 comments: true
+published: true
 ---
 
 <a href="http://www.ovirt.org"><img src="/images/blog/oVirt-logo.png" align="right"></a>Last week, version 3.5 of oVirt, the open source virtualization management system, [hit FTP mirrors](http://lists.ovirt.org/pipermail/announce/2014-October/000138.html) sporting a slate of fixes and enhancements, including a new-look user interface, and support for using CentOS 7 machines as virtualization hosts.
@@ -64,6 +65,8 @@ Next, install the hosted engine packages, along with [screen](http://www.gnu.org
 sudo yum install -y ovirt-hosted-engine-setup screen glusterfs-server nfs-utils netstat vdsm-gluster system-storage-manager
 ```
 
+_I'm experiencing an SELinux issue in which glusterd isn't functional until after a reboot, so go ahead and reboot after installing these packages._
+
 ## Gluster Preparations
 
 We need a partition to store our Gluster bricks. For simplicity, I'm using a single XFS partition, and my Gluster bricks will be directories within this partition. I use system-storage-manager to manage my storage.
@@ -94,7 +97,9 @@ Next, we'll create some mount points for our Gluster volumes-to-be. We'll have s
 mkdir -p /gluster/{engine,data}/brick
 ````
 
-Now, edit `/etc/glusterfs/glusterd.vol`, uncomment the line `option base-port 49152` and change the value `49152` to `50152`. This change works around a conflict between the ports used by libvirt for live migration, and the ports Gluster uses for its bricks.
+Now, edit `/etc/glusterfs/glusterd.vol`, uncomment the line `option base-port 49152` and change the value `49152` to `50152`. This change works around a conflict between the ports used by libvirt for live migration, and the ports Gluster uses for its bricks. 
+
+_This modification appears to cause an SELinux issue, see [bug 1158622](https://bugzilla.redhat.com/show_bug.cgi?id=1158622), and put SELinux into permissive mode w/ `setenforce 0` to work around it._ 
 
 Now start the Gluster service and configure it to auto-start after subsequent reboots:
 
@@ -142,8 +147,6 @@ chown -R 36:36 /home/tmp
 ```
 
 Now we should be ready to fire up `screen` and kick off the installation process:
-
-_But first, and temporarily, we need to `setenforce 0` because I'm getting an selinux error preventing me from mounting our gluster nfs volume_
 
 ````
 screen
