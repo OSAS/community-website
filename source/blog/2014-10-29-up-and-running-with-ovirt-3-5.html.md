@@ -14,7 +14,7 @@ As with every new oVirt release, I'm here to suggest a path to getting up and ru
 * [oVirt All in One plugin](http://www.ovirt.org/Feature/AllInOne): Run the oVirt management server and virtualization host components on a single machine with local storage. This is a more permanent version of the Live ISO approach, and [had been](http://community.redhat.com/blog/2013/09/up-and-running-with-ovirt-3-3/) my favored kick-the-tires option until the rise of...
 * [oVirt Hosted Engine](http://www.ovirt.org/Features/Self_Hosted_Engine): The self-hosted engine approach consists of an oVirt virtualization host that serves up its own management engine. This route is a bit more complicated than those above, but I like it because:
   * oVirt 3.5 supports CentOS 7 as a virtualization host, but not as a host for the management engine. Running oVirt Engine in a separate VM allows you to put CentOS 7 on your metal, and keep CentOS 6 around for the engine.
-  * With the All in One approach, your management engine is married to the machine it's installed on, limiting your expansion options. The Hosted Engine can move among hosts.
+  * With the All-in-One approach, your management engine is married to the machine it's installed on, limiting your expansion options. The Hosted Engine can move among hosts.
   
 For this howto, I'll be walking through the steps you can follow to get oVirt 3.5 up and running on a single machine with a self-hosted engine, and with self-hosted storage, courtesty of GlusterFS. 
 
