@@ -14,7 +14,7 @@ comments: true
 In this scenario, the oVirt container is connected to the data containers and are linked within the same namespace
 
 <pre>cd oVirt-Dockerized/Run && sudo make ovirt-run</pre>
-<img src="/images/blog/ovirt-multi-container.png" align="center">
+<img src="/images/blog/ovirt-dockerized_newpt2.png" align="center">
 
 READMORE
 
