@@ -29,13 +29,13 @@ The first candidate for “dockerization” was the oVirt Engine. I wanted to us
 
 <img src="/images/blog/ovirt-configuration.png" align="right">
 
-In the base image ([Dockerfile](https://github.com/mgoldboi/oVirt-Dockerized/blob/master/DockerFiles/ovirt-rpm/Dockerfile)), I decided to go with oVirt's RPM deployment over a Fedora 20 container, and use [systemd hack](http://developerblog.redhat.com/2014/05/05/running-systemd-within-docker-container/) so we can run oVirt in systemd along with the other services oVirt uses.
+In the base image ([Dockerfile](https://github.com/mgoldboi/oVirt-Dockerized/blob/master/Build/DockerFiles/ovirt-rpm/Dockerfile), I decided to go with oVirt's RPM deployment over a Fedora 20 container, and use [systemd hack](http://developerblog.redhat.com/2014/05/05/running-systemd-within-docker-container/) so we can run oVirt in systemd along with the other services oVirt uses.
 
-To have the “poof” installation effect, [another image](https://github.com/mgoldboi/oVirt-Dockerized/blob/master/DockerFiles/ovirt/Dockerfile) adds a layer of configuration on top of of the base RPM-deployment image. In this configuration layer, we can configure oVirt to work with a remote database, add or remove oVirt capabilities, and basically create a custom configuration. All of which is built atop the same base image.
+To have the “poof” installation effect, [another image](https://github.com/mgoldboi/oVirt-Dockerized/blob/master/Build/DockerFiles/ovirt-SA/Dockerfile) adds a layer of configuration on top of of the base RPM-deployment image. In this configuration layer, we can configure oVirt to work with a remote database, add or remove oVirt capabilities, and basically create a custom configuration. All of which is built atop the same base image.
 
 Working in layers also gives us the option of updating and triggering the containers' build process in a chain. If the Fedora container has been updated with some packages, for example, it can trigger an additional rebuild of the RPM deployment layer, which, once finished, will trigger a new configuration layer build.
 
-Anyone familiar with Docker might expect that the next step would be adding an engine-setup answer file to the container (allowing the configuration of oVirt in a non-interactive mode with a set of parameters), and then running engine-setup from within <code>docker build</code>. That wasn’t the case. Because setup uses systemd during the oVirt configuration process, it fails a Docker build process. 
+Anyone familiar with Docker might expect that the next step would be adding an engine-setup answer file to the container (allowing the configuration of oVirt in a non-interactive mode with a set of parameters), and then running engine-setup from within Docker build. That wasn’t the case. Because setup uses systemd during the oVirt configuration process, it fails a Docker build process. 
 
 Another option is to run the RPM container in [detached mode](https://docs.docker.com/reference/run/#detached-d) and run systemd, connect to it using ssh, and run engine-setup successfully, but I really wanted to be able to do things “automatically.” 
 
@@ -45,7 +45,7 @@ To allow some persistent storage, I initially went with the specific ovirt-engin
 
 I then tried to separate oVirt to its different components and follow the Docker principle that each service should run within its own container. Taking out the [database to run in its own container](https://registry.hub.docker.com/u/mgoldboi/ovirt-sa-configured-3.5.0/) was the first step.
 
-To continue separating the different components of oVirt, data warehouse (DWH) and oVirt reports were aimed to be packaged in a separate container each; however, a bi-directional link between the containers is [yet to be implemented within Docker](https://github.com/docker/docker/pull/8138). Once this feature is supported, doing this separation will be trivial.
+To continue and separating the different components of oVirt, the data warehouse (DWH) and oVirt reports were aimed to be packaged in a separate container each. To be independent of IP addresses, I have used the Docker capability to link containers together under the same namespace. However, the bidirectional link between containers feature has yet to be implemented in Docker. Once this feature is supported, it will be trivial to perform this separation and have all links working in the product (e.g., getting to the Reports container from the landing page on the Engine).
 
 # The Fun Part
 
