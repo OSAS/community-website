@@ -4,7 +4,7 @@ author: kchamarthy
 date: 2014-10-30 14:28:08.000000000 Z
 tags: oVirt, KVM, KVM Summit, LinuxCon, Linux Foundation, libvirt, virtualization,
   cloud, CloudOpen, Linux
-published: false
+published: true
 comments: true
 ---
 
