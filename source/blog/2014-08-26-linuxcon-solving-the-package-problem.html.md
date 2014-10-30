@@ -16,7 +16,8 @@ categories:
 - Blog
 ---
 
-<img src="http://community.redhat.com/images/blog/lfsquare.jpg"> In the beginning, there were source tarballs and `make` and `make install`, and they were good. And then the distribution developers said "let there be package managers" and it was good. Lo, the users fought with dependencies, and the developers said "let there be Yum, and APT" and it was good. And then users said "but I want newer software, and multiple versions of Python, and what happens if an update breaks?" and there was a great befuddlement. 
+![](blog/lfsquare.jpg)
+In the beginning, there were source tarballs and `make` and `make install`, and they were good. And then the distribution developers said "let there be package managers" and it was good. Lo, the users fought with dependencies, and the developers said "let there be Yum, and APT" and it was good. And then users said "but I want newer software, and multiple versions of Python, and what happens if an update breaks?" and there was a great befuddlement. 
 
 Last week at LinuxCon, I had the opportunity to give a talk on "Solving the Package Problem." For those who attended the talk, or the generally curious, there's an embedded copy of the slides below. But I'll also try to make a quick summary of the talk here for those who weren't around or would like a version they can read.
 

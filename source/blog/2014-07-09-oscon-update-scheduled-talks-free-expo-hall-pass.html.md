@@ -13,9 +13,10 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/oscon-logo.jpg"> We're all getting excited about [OSCON](http://www.oscon.com/oscon2014) in Portland later this month. If you'd like to meet us in the Expo Hall, use the code EXPOFREE to get a free pass. With a [free Expo Hall pass](http://www.oscon.com/oscon2014/public/content/expoplus?imm_mid=0bf617&cmp=em-prog-confreg-home-os14_em7_eh_plus_pass_sol), attendees can meet with dozens of exhibitors and get hands-on demos of their products. 
+![](blog/oscon-logo.jpg)
+We're all getting excited about [OSCON](http://www.oscon.com/oscon2014) in Portland later this month. If you'd like to meet us in the Expo Hall, use the code EXPOFREE to get a free pass. With a [free Expo Hall pass](http://www.oscon.com/oscon2014/public/content/expoplus?imm_mid=0bf617&cmp=em-prog-confreg-home-os14_em7_eh_plus_pass_sol), attendees can meet with dozens of exhibitors and get hands-on demos of their products. 
 
-The pass also will get you into [Open Cloud Day](http://community.redhat.com/blog/2014/07/join-us-for-open-cloud-day-at-oscon/), [Birds of a Feather](http://www.oscon.com/oscon2014/public/cfp/327) sessions, parties (including the [OpenStack birthday party](http://www.oscon.com/oscon2014/public/schedule/detail/37476)), and much more.
+The pass also will get you into [Open Cloud Day](/blog/2014/07/join-us-for-open-cloud-day-at-oscon/), [Birds of a Feather](http://www.oscon.com/oscon2014/public/cfp/327) sessions, parties (including the [OpenStack birthday party](http://www.oscon.com/oscon2014/public/schedule/detail/37476)), and much more.
 
 If you've also registered to attend the conference, here are a few talks to check out:
 

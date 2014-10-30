@@ -21,7 +21,7 @@ For the ninth time, the Fedora Project is participating in GSoC. Fedora contribu
 
 ## oVirt
 
-The oVirt team is excited to be involved with GSoC for the first time and [offered a preview](http://community.redhat.com/blog/2014/03/preview-of-ovirt-in-google-summer-of-code-2014/) of what they have planned on our blog. The team has been brainstorming ideas, but also encourages participating students to propose ideas that would fit within the mandate of creating a world-class datacenter virtualization environment or better the open source ecosystem as a whole.
+The oVirt team is excited to be involved with GSoC for the first time and [offered a preview](/blog/2014/03/preview-of-ovirt-in-google-summer-of-code-2014/) of what they have planned on our blog. The team has been brainstorming ideas, but also encourages participating students to propose ideas that would fit within the mandate of creating a world-class datacenter virtualization environment or better the open source ecosystem as a whole.
 
 ## JBoss
 

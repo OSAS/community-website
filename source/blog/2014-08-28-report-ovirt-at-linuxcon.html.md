@@ -11,7 +11,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/oVirt-logo.png"> One of the biggest conferences in the Linux community these days is surely LinuxCon, and this year's [LinuxCon North America](http://events.linuxfoundation.org/events/linuxcon-north-america) did not disappoint.
+![](blog/oVirt-logo.png)
+One of the biggest conferences in the Linux community these days is surely LinuxCon, and this year's [LinuxCon North America](http://events.linuxfoundation.org/events/linuxcon-north-america) did not disappoint.
 
 Red Hat was there in force, with representatives from the [oVirt](http://www.ovirt.org), [RDO](http://openstack.redhat.com), [Fedora](http://fedoraproject.org/), [Project Atomic](http://projectatomic.io), [ManageIQ](http://manageiq.org/), [OpenShift](https://www.openshift.com/) and [Gluster](http://gluster.org/) communities being represented in sessions and in the booth (which was quite crowded at times). The [Ceph](http://ceph.com/) crew had their own booth, based on an earlier arrangement with the show organizers, but we still teased them about being stand-offish anyway.
 

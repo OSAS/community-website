@@ -69,4 +69,4 @@ Out of the proverbial box, oVirt is already a fantastic platform for managing yo
 
 ## Getting oVirt 3.3
 
-Ready to take oVirt for a test drive? Head over to the [oVirt download page](http://www.ovirt.org/Download) and check out Jason Brooks' [Getting Started with oVirt 3.3 Guide](http://community.redhat.com/up-and-running-with-ovirt-3-3/). Have questions? [You can find us on IRC](http://www.ovirt.org/Community) or [subscribe to the users mailing list](http://www.ovirt.org/Mailing_lists#Users) to get help from others using oVirt.
+Ready to take oVirt for a test drive? Head over to the [oVirt download page](http://www.ovirt.org/Download) and check out Jason Brooks' [Getting Started with oVirt 3.3 Guide](/blog/2013/09/up-and-running-with-ovirt-3-3). Have questions? [You can find us on IRC](http://www.ovirt.org/Community) or [subscribe to the users mailing list](http://www.ovirt.org/Mailing_lists#Users) to get help from others using oVirt.

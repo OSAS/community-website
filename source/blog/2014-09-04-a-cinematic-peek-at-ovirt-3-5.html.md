@@ -11,7 +11,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/oVirt-logo.png"> Things have seemed a bit quiet on the oVirt front recently, but rest assured, they are not.
+![](blog/oVirt-logo.png)
+Things have seemed a bit quiet on the oVirt front recently, but rest assured, they are not.
 
 The community has been hard at work putting the finishing touches on oVirt 3.5, which is due for GA release soon, so if they've been quieter than usual, that's why. But they're still around, and every once in a while, they will show off a little more of what they are doing. Recently, the community has produced four new videos, three of them focused on the upcoming 3.5 release.
 

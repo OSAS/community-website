@@ -13,7 +13,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/oscon-logo.jpg"> Heading to OSCON? Or near Portland and want to get up to speed on the latest and greatest in cloud? Join us for [Open Cloud Day at OSCON](http://www.oscon.com/oscon2014/public/content/open-cloud-day), Monday, July 21st. 
+![](blog/oscon-logo.jpg)
+Heading to OSCON? Or near Portland and want to get up to speed on the latest and greatest in cloud? Join us for [Open Cloud Day at OSCON](http://www.oscon.com/oscon2014/public/content/open-cloud-day), Monday, July 21st. 
 
 Open Cloud Day will have a packed schedule with speakers from Red Hat, Disney, Nginx, Puppet Labs, Chef, Apache CloudStack, Bitergia, the OpenShift Foundation, and many others. We'll have DevOps expert John Willis, Caroline McCrory of GigaOM Research, our own Steven Pousty of OpenShift fame, and Alan Sill from Texas Tech University. Check out the full schedule on the OSCON site. 
 

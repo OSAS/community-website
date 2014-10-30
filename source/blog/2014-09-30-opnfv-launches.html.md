@@ -7,7 +7,8 @@ comments: true
 published: true
 ---
 
-<img src="http://community.redhat.com/images/blog/opnfv_logo.jpg"> In recent years, the telecommunications industry has looked toward Network Function Virtualization (NFV) to revolutionize the way that telco services are developed and delivered to customers. A "network function" is any service that acts on the data passing through the network. In the typical datacenter, this would include services like a firewall, a VPN endpoint, or an intrusion detection system. In the telco industry, network functions also cover voice, data and internet services, broadband and cellular network services, and the delivery of video content, such as streaming TV.
+![](blog/opnfv_logo.jpg)
+In recent years, the telecommunications industry has looked toward Network Function Virtualization (NFV) to revolutionize the way that telco services are developed and delivered to customers. A "network function" is any service that acts on the data passing through the network. In the typical datacenter, this would include services like a firewall, a VPN endpoint, or an intrusion detection system. In the telco industry, network functions also cover voice, data and internet services, broadband and cellular network services, and the delivery of video content, such as streaming TV.
 
 Traditionally these network services have been provided by big, expensive, custom-built servers that require a multi-year investment for the network operators, so progress tends to be in fits and starts because previous investments are amortized before replacement features are deployed.
 

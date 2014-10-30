@@ -4,7 +4,7 @@ comments: true
 layout: post
 title: Preview of oVirt in Google Summer of Code 2014
 date: 2014-03-13 19:19 UTC
-categories: 
+categories:
 - Blog
 tags:
 - oVirt

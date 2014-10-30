@@ -14,7 +14,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/oscon-logo.jpg"> Red Hat, along with Chef, Citrix, and the OpenStack Foundation, are sponsoring [Open Cloud Day](http://www.oscon.com/oscon2014/public/cfp/337) at OSCON on Monday, July 21st. 
+![](blog/oscon-logo.jpg)
+Red Hat, along with Chef, Citrix, and the OpenStack Foundation, are sponsoring [Open Cloud Day](http://www.oscon.com/oscon2014/public/cfp/337) at OSCON on Monday, July 21st. 
 
 The Open Cloud Day at OSCON is a look at the “state of cloud” in 2014, gathering industry practitioners to give their take on the state of public and private cloud, IaaS, and PaaS platforms, and where the industry is going in 2014 and beyond.
 

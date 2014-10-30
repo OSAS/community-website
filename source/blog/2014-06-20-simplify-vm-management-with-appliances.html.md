@@ -11,7 +11,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/oVirt-logo.png"> The [oVirt project](http://www.ovirt.org/Home) is rolling nicely along, as the team keeps moving forward toward oVirt 3.5. I will focus more on that in a later post, but today I wanted to talk about a cool side project within oVirt that's been made public: the oVirt Engine Virtual Appliance.
+![](blog/oVirt-logo.png)
+The [oVirt project](http://www.ovirt.org/Home) is rolling nicely along, as the team keeps moving forward toward oVirt 3.5. I will focus more on that in a later post, but today I wanted to talk about a cool side project within oVirt that's been made public: the oVirt Engine Virtual Appliance.
 
 Fabian Deutsch, one of the developers on the oVirt Node project, gives a [pretty good outline of what this new virtual appliance](http://dummdida.tumblr.com/post/88944206100/say-hello-to-the-ovirt-engine-virtual-appliance) can do. He writes, "Well, imagine a cloud image with oVirt Engine 3.5 and its dependencies pre-installed, and a sane default answer file for ovirt-engine-setup. All of this delivered in an OVA file. The intention is to get you a running oVirt Engine without much hassle. Furthermore this appliance can be used in conjunction with the Self Hosted Engine feature, and the upcoming oVirt Node Hosted Engine plugin (note the *Node* within)."
 

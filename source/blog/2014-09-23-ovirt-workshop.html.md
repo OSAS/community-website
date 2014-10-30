@@ -13,7 +13,7 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/oVirt-logo.png">
+![](blog/oVirt-logo.png)
 As oVirt strives to become the best open source and comprehensive data center virtualization management suite, and its community  rapidly evolves and grows, one of the ways its vibrant community connects is through our Global Workshops. The events are conducted solely to introduce new users and veteran oVirt admins to new features and techniques found in oVirt, and to provide a forum for our users to connect directly with the development team behind oVirt.
 
 With that in mind, I am pleased to announce that registration is now open for the [2014 oVirt Workshop](http://www.ovirt.org/KVM_Forum_Workshop_Oct_2014).

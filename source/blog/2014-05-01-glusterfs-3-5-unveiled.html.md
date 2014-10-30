@@ -9,7 +9,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/gluster-ant.png"> We are pleased to announce that GlusterFS 3.5 is now available. The latest release includes several long-awaited features such as improved logging, file snapshotting, on-wire compression, and at-rest encryption.
+![](blog/gluster-ant.png)
+We are pleased to announce that GlusterFS 3.5 is now available. The latest release includes several long-awaited features such as improved logging, file snapshotting, on-wire compression, and at-rest encryption.
 
 You can [download GlusterFS 3.5](http://download.gluster.org/pub/gluster/glusterfs/) now.
 

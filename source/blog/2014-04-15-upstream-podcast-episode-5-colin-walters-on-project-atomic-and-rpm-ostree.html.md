@@ -23,12 +23,12 @@ To learn more about Project Atomic, visit [projectatomic.io](http://www.projecta
 
 Follow the Project Atomic on [Twitter](https://twitter.com/ProjectAtomic), [Facebook](https://www.facebook.com/projectatomic), and [Google+](http://plus.google.com/108727025270662383247). 
 
-If you’d like to keep up with the Upstream podcast, keep an eye on this [blog](http://community.redhat.com/), our [@redhatopen Twitter feed](https://twitter.com/redhatopen), [Facebook page](https://www.facebook.com/redhatopen), [iTunes feed](itpc://upstream.jellycast.com/podcast/feed/2), and [RSS Feed](http://upstream.jellycast.com/podcast/feed/2).
+If you’d like to keep up with the Upstream podcast, keep an eye on this [blog](/), our [@redhatopen Twitter feed](https://twitter.com/redhatopen), [Facebook page](https://www.facebook.com/redhatopen), [iTunes feed](itpc://upstream.jellycast.com/podcast/feed/2), and [RSS Feed](http://upstream.jellycast.com/podcast/feed/2).
 
 ##Upstream Archives
 
-* Upstream: Episode 4. [Interview with Shane Curcuru](http://community.redhat.com/blog/2014/04/upstream-podcast-4/)
-* Upstream: Episode 3. [Interview with Ohad Levy](http://community.redhat.com/blog/2014/04/upstream-podcast-episode-3-ohad-levy-discusses-foreman-and-openstack/)
-* Upstream: Episode 2. [Interview with Bradley Kuhn](http://community.redhat.com/blog/2014/03/upstream-episode-2-interview-with-bradley-kuhn/)
-* Upstream: Episode 1. [Interview with Leslie Hawthorn](http://community.redhat.com/blog/2014/03/new-podcast-and-interview-with-leslie-hawthorn/)
+* Upstream: Episode 4. [Interview with Shane Curcuru](/blog/2014/04/upstream-podcast-4/)
+* Upstream: Episode 3. [Interview with Ohad Levy](/blog/2014/04/upstream-podcast-episode-3-ohad-levy-discusses-foreman-and-openstack/)
+* Upstream: Episode 2. [Interview with Bradley Kuhn](/blog/2014/03/upstream-episode-2-interview-with-bradley-kuhn/)
+* Upstream: Episode 1. [Interview with Leslie Hawthorn](/blog/2014/03/new-podcast-and-interview-with-leslie-hawthorn/)
 

@@ -10,7 +10,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/fedora-logo.png"> After more than two years' service as Fedora Project Leader (FPL), [Robyn Bergeron announced that she is stepping down](http://robyn.io/2014/05/19/thanks-to-you-im-much-obliged/) to pass the reins to a new FPL. Today, Robyn [announced her successor](http://robyn.io/2014/06/03/new-fpl/), Matthew Miller.
+![](blog/fedora-logo.png)
+After more than two years' service as Fedora Project Leader (FPL), [Robyn Bergeron announced that she is stepping down](http://robyn.io/2014/05/19/thanks-to-you-im-much-obliged/) to pass the reins to a new FPL. Today, Robyn [announced her successor](http://robyn.io/2014/06/03/new-fpl/), Matthew Miller.
 
 Matthew has been active in Fedora for (as Robyn puts it) "since the 'literal dawn of Fedora time'", from organizing FUDCons around Boston University to being driving force behind [the Fedora.Next initiative](http://fedoramagazine.org/fedora-present-and-future-a-fedora-next-2014-update-part-i-why/) and the Fedora Cloud Workgroup. Cloud is a theme of FPLs of late, with Robyn being instrumental in [starting and running the Cloud SIG back in 2010](http://www.linux-magazine.com/Online/News/Beyond-FUDCon-with-Robyn-Bergeron-Fedora-Program-Manager).
 

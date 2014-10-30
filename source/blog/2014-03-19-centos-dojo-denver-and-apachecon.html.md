@@ -13,7 +13,7 @@ categories:
 - Blog
 ---
 
-<img src="/images/blog/apachecon_denver.png"> A couple of really exciting events coming up for folks in or around Denver (or who don't mind a wee bit of travel) in early April. [ApacheCon](http://events.linuxfoundation.org/events/apachecon-north-america/) will be running from the 7th through the 9th, followed by the first [CentOS Dojo Denver](http://wiki.centos.org/Events/Dojo/Denver2014) on the 10th. 
+![](blog/apachecon_denver.png) A couple of really exciting events coming up for folks in or around Denver (or who don't mind a wee bit of travel) in early April. [ApacheCon](http://events.linuxfoundation.org/events/apachecon-north-america/) will be running from the 7th through the 9th, followed by the first [CentOS Dojo Denver](http://wiki.centos.org/Events/Dojo/Denver2014) on the 10th. 
 
 The ApacheCon schedule is looking pretty fantastic, with a line-up that encompasses big data, logging, cloud, software frameworks, development and architecture, and much more. We're pleased to note that several folks from Red Hat will be speaking at ApacheCon, including:
 

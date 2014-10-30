@@ -13,7 +13,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/self-logo.png"> [SouthEast LinuxFest](http://www.southeastlinuxfest.org/) (SELF) will be held this weekend, June 20-22, in Charlotte, North Carolina. Now in its sixth year, you won't want to miss this community run conference for open source enthusiasts of all skill levels.
+![](blog/self-logo.png)
+[SouthEast LinuxFest](http://www.southeastlinuxfest.org/) (SELF) will be held this weekend, June 20-22, in Charlotte, North Carolina. Now in its sixth year, you won't want to miss this community run conference for open source enthusiasts of all skill levels.
 
 Registration to attend is free, but if you want to get the official t-shirt, Saturday lunch, and drink tickets for the parties, go with the $65 [Supporting Attendee registration](http://www.southeastlinuxfest.org/?product=supporting-attendee-registration) option. That's still a great deal for three days of conference talks, hallway tracks, and networking.
 

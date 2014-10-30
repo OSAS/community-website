@@ -35,16 +35,8 @@ Right after [FOSDEM](http://fosdem.org) and [CfgMgmtCamp](http://cfgmgmtcamp.eu/
 
 ## Agenda
 
-<!-- Add this where you want the output to appear -->
-<div class="lanyrd-target-schedule">
-    <a href="http://lanyrd.com/2014/infranext/schedule/"
-        class="lanyrd-schedule"
-        data-lanyrd-speakers>
-        Schedule for Infrastructure.Next Ghent on Lanyrd
-    </a>
-</div>
-
-<!-- Add this to the end of body -->
+{:.lanyrd-target-schedule}
+<a href="http://lanyrd.com/2014/infranext/schedule/" class="lanyrd-schedule" data-lanyrd-speakers>Schedule for Infrastructure.Next Ghent on Lanyrd</a>
 <script src="http://cdn.lanyrd.net/badges/embed-v1.min.js"></script>
 
 We'll also have the foyer open for hallway track sessions to let attendees share best practices, cautionary tales, and make connections for future projects.

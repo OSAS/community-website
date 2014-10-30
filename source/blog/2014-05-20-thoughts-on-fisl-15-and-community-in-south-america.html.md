@@ -13,7 +13,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/fisl.png"> Red Hat has a unique opportunity to reach out and connect with a global free and open source software community. In recent months, it has become apparent that certain regions in that community feel less of a connection to Red Hat and its varied community efforts. South America is one such region, and this trip was undertaken with the goal to discover what, if anything, Red Hat and the OSAS team can do to maximize its relationship with South American communities.
+![](blog/fisl.png)
+Red Hat has a unique opportunity to reach out and connect with a global free and open source software community. In recent months, it has become apparent that certain regions in that community feel less of a connection to Red Hat and its varied community efforts. South America is one such region, and this trip was undertaken with the goal to discover what, if anything, Red Hat and the OSAS team can do to maximize its relationship with South American communities.
 
 ## CentOS Dojo
 

@@ -15,7 +15,7 @@ tags:
 categories:
 - Blog
 ---
-<a href="https://www.socallinuxexpo.org/scale12x"><img src="/images/blog/scale12x.png" align="left"></a>[FOSDEM](http://fosdem.org/) is a wonderful conference, but if you're going to plan an event for the colder months (at least in the Northern Hemisphere), why not do it somewhere warm? Like sunny Los Angeles? That's a tiny part of the appeal behind [the Southern California Linux Expo](https://www.socallinuxexpo.org/scale12x) (SCALE), now going strong in its 12th year. 
+[![](blog/scale12x.png)](https://www.socallinuxexpo.org/scale12x)[FOSDEM](http://fosdem.org/) is a wonderful conference, but if you're going to plan an event for the colder months (at least in the Northern Hemisphere), why not do it somewhere warm? Like sunny Los Angeles? That's a tiny part of the appeal behind [the Southern California Linux Expo](https://www.socallinuxexpo.org/scale12x) (SCALE), now going strong in its 12th year. 
 
 The weather, of course, is only a small (but undeniable) slice of the appeal to SCALE. What brings in droves of developers, admins, and enthusiasts is the unbeatable slate of [speakers](https://www.socallinuxexpo.org/scale12x/speakers) with outstanding [talks](https://www.socallinuxexpo.org/scale12x/schedule), [special events](https://www.socallinuxexpo.org/scale12x/events), and more. 
 
@@ -45,15 +45,7 @@ READMORE
 
 ### Infrastructure.Next Schedule
 
-<!-- Add this where you want the output to appear -->
-<div class="lanyrd-target-schedule">
-    <a href="http://lanyrd.com/2014/infra-at-scale/schedule/"
-        class="lanyrd-schedule"
-        data-lanyrd-speakers
-        data-lanyrd-speakerlabels>
-        Schedule for Infrastructure.Next @ SCALE on Lanyrd
-    </a>
-</div>
+{:.lanyrd-target-schedule}
+<a href="http://lanyrd.com/2014/infra-at-scale/schedule/" class="lanyrd-schedule" data-lanyrd-speakers data-lanyrd-speakerlabels>Schedule for Infrastructure.Next @ SCALE on Lanyrd</a>
 
-<!-- Add this to the end of body -->
 <script src="http://cdn.lanyrd.net/badges/embed-v1.min.js"></script>

@@ -4,12 +4,13 @@ comments: true
 layout: post
 title: When Metrics Go Wrong
 date: 2014-07-29 15:37 UTC
-tags: 
+tags:
 - Metrics
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/metrics-dneary-post.jpg"> Metrics are great. They can give you situational awareness about what's going on in your community, help you identify issues that you need to fix, and prove the effectiveness (or lack thereof) of community initiatives. But sometimes things go wrong. 
+![](blog/metrics-dneary-post.jpg)
+Metrics are great. They can give you situational awareness about what's going on in your community, help you identify issues that you need to fix, and prove the effectiveness (or lack thereof) of community initiatives. But sometimes things go wrong. 
 
 Good metrics should lead to action, but sometimes, if you're not careful, you can end up with results you didn't intend. The very act of measuring something, and communicating that measurement, creates an incentive in the community. And sometimes the incentives you create do not match the behavior you want to encourage. (This is called [The Cobra Effect](http://freakonomics.com/2012/10/11/the-cobra-effect-a-new-freakonomics-radio-podcast/).)
 

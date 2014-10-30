@@ -9,7 +9,7 @@ tags:
 - ASF
 - Podcast
 - Upstream
-categories: 
+categories:
 - Blog
 - Podcast
 ---
@@ -20,11 +20,11 @@ In our fourth episode, Joe Brockmeier talks to Shane Curcuru, Vice President of 
 
 Visit the ASF Web site to learn more about [Apache trademarks](http://www.apache.org/foundation/marks/) and [projects](http://projects.apache.org/).
 
-If you’d like to keep up with the Upstream podcast, keep an eye on this [blog](http://community.redhat.com/), our [Twitter feed](https://twitter.com/redhatopen), [Facebook page](https://www.facebook.com/redhatopen), and [RSS Feed](http://upstream.jellycast.com/podcast/feed/2).
+If you’d like to keep up with the Upstream podcast, keep an eye on this [blog](/), our [Twitter feed](https://twitter.com/redhatopen), [Facebook page](https://www.facebook.com/redhatopen), and [RSS Feed](http://upstream.jellycast.com/podcast/feed/2).
 
 ##Upstream Archives
 
-+ Upstream: [Episode 3. Interview with Ohad Levy](http://community.redhat.com/blog/2014/04/upstream-podcast-episode-3-ohad-levy-discusses-foreman-and-openstack/)
-+ Upstream: [Episode 2. Interview with Bradley Kuhn](http://community.redhat.com/blog/2014/03/upstream-episode-2-interview-with-bradley-kuhn/)
-+ Upstream: [Episode 1. Interview with Leslie Hawthorn](http://community.redhat.com/blog/2014/03/new-podcast-and-interview-with-leslie-hawthorn/)
++ Upstream: [Episode 3. Interview with Ohad Levy](/blog/2014/04/upstream-podcast-episode-3-ohad-levy-discusses-foreman-and-openstack/)
++ Upstream: [Episode 2. Interview with Bradley Kuhn](/blog/2014/03/upstream-episode-2-interview-with-bradley-kuhn/)
++ Upstream: [Episode 1. Interview with Leslie Hawthorn](/blog/2014/03/new-podcast-and-interview-with-leslie-hawthorn/)
 

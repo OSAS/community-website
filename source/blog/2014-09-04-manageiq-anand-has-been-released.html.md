@@ -1,5 +1,5 @@
 ---
-author: johnmark 
+author: johnmark
 layout: post
 comments: true
 title: "ManageIQ Anand Has Been Released"
@@ -11,7 +11,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/manageiq-vertical.png"> ManageIQ is the world's leading open source cloud management platform. Use ManageIQ as your gateway to services running on public cloud infrastructure, such as AWS or OpenStack-based clouds, or private virtualization platforms such as VSphere, Hyper-V or RHEV/oVirt. The hybrid, open source nature of ManageIQ is why we call it "your gateway to the open cloud." ManageIQ ensures that the promise of the open cloud remains viable in today's competitive landscape.  
+![](blog/manageiq-vertical.png)
+ManageIQ is the world's leading open source cloud management platform. Use ManageIQ as your gateway to services running on public cloud infrastructure, such as AWS or OpenStack-based clouds, or private virtualization platforms such as VSphere, Hyper-V or RHEV/oVirt. The hybrid, open source nature of ManageIQ is why we call it "your gateway to the open cloud." ManageIQ ensures that the promise of the open cloud remains viable in today's competitive landscape.  
 
 ManageIQ was once the eponymous proprietary product of a startup with a rich history in systems management. After acquisition by Red Hat, it was released under the CloudForms brand, with the intent of releasing it as an open source project and community. We launched the community back in June of this year, along with the first source code availability, and now we have the first release under our belts.
 

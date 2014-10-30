@@ -10,7 +10,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/foreman.png"> [Foreman 1.5](http://projects.theforeman.org/) has been [released](http://projects.theforeman.org/rb/release/4), bringing a host of new features to the popular systems management tool, including improved Puppet management and new levels of integration with FreeIPA and virtualization projects.
+![](blog/foreman.png)
+[Foreman 1.5](http://projects.theforeman.org/) has been [released](http://projects.theforeman.org/rb/release/4), bringing a host of new features to the popular systems management tool, including improved Puppet management and new levels of integration with FreeIPA and virtualization projects.
 
 Foreman is an open source project that helps system administrators manage servers throughout their lifecycle, from initial provisioning and configuration to orchestration and monitoring. Using Puppet or Chef and Foreman's smart proxy architecture, you can easily automate repetitive tasks, quickly deploy applications, and proactively manage change, both on-premise with VMs and bare-metal or in the cloud. Here's what's new in the latest release:
 

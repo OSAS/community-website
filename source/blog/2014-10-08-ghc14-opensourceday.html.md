@@ -17,7 +17,7 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/ghc14.png">The 2014 [Grace Hopper Celebration of Women in Computing](http://gracehopper.org/) is this week, October 8-10, in Phoenix, Arizona, with 8,000 attendees expected to converge on the annual event. Open source skills can give you a big advantage in the tech industry, so it's fitting that GHC '14 kicks off with a bunch of open source action. 
+![](blog/ghc14.png)The 2014 [Grace Hopper Celebration of Women in Computing](http://gracehopper.org/) is this week, October 8-10, in Phoenix, Arizona, with 8,000 attendees expected to converge on the annual event. Open source skills can give you a big advantage in the tech industry, so it's fitting that GHC '14 kicks off with a bunch of open source action. 
 
 According to Priyanka Sarkar in a recent article on OpenSource.com, [FOSS Skills That Will Get You Hired This Year](http://www.opensourceforu.com/2014/05/foss-skills-will-get-hired-year/), candidates with OpenStack, web and mobile app development, and programming experience, for example, are in demand. These are a few of the areas that will be covered in Wednesday's [Grace Hopper Open Source Day](http://gracehopper.org/open-source-day/), which includes a Code-a-thon for Humanity as attendees pick up new (or improve current) open source skills. Registered code-a-thon attendees can choose to work with participating organizations, such as OpenStack. In the OpenStack workshop, for example, attendees with basic familiarity with SSH clients get a crash course in cloud computing, OpenStack, and how OpenStack is used in humanitarian apps. 
 

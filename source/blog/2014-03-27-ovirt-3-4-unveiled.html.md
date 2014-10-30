@@ -4,7 +4,7 @@ comments: yes
 layout: post
 title: oVirt 3.4 Unveiled
 date: 2014-03-27 14:45 UTC
-tags: 
+tags:
 - oVirt
 - Virtualization
 - KVM

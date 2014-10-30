@@ -11,7 +11,8 @@ tags:
 categories:
 - Blog
 ---
-<img src="http://community.redhat.com/images/blog/lfsquare.jpg"> Next week, many of us will be headed to Chicago for [LinuxCon+CloudOpen](http://events.linuxfoundation.org/events/linuxcon-north-america). If you haven't registered yet, it's not too late. [Register now](https://www.regonline.com/register/checkin.aspx?EventId=1311650&MethodId=0&EventSessionId=&startnewreg=1) with discount code LC14RH20 to save 20% off registration. 
+![](blog/lfsquare.jpg)
+Next week, many of us will be headed to Chicago for [LinuxCon+CloudOpen](http://events.linuxfoundation.org/events/linuxcon-north-america). If you haven't registered yet, it's not too late. [Register now](https://www.regonline.com/register/checkin.aspx?EventId=1311650&MethodId=0&EventSessionId=&startnewreg=1) with discount code LC14RH20 to save 20% off registration. 
 
 READMORE
 

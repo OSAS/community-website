@@ -12,7 +12,8 @@ categories:
 - Blog
 ---
 
-<img src="http://community.redhat.com/images/blog/ceph-logo.png"> The countdown is on for the June 24th Ceph Summit, when Ceph core developers and the community can [get together](http://ceph.com/community/ceph-developer-summit-gh/) (virtually) to discuss what's coming in the next Ceph release. Although we're sticking to our quarterly schedule, this summit will be slightly different from previous summits. 
+![](blog/ceph-logo.png)
+The countdown is on for the June 24th Ceph Summit, when Ceph core developers and the community can [get together](http://ceph.com/community/ceph-developer-summit-gh/) (virtually) to discuss what's coming in the next Ceph release. Although we're sticking to our quarterly schedule, this summit will be slightly different from previous summits. 
 
 Usually we hold a summit right around the time of a major release (Dumpling, Emperor, Firefly); however, the Firefly release was held up for several weeks, so this summit will still be discussing work going into Giant and looking ahead to Hammer.
 
