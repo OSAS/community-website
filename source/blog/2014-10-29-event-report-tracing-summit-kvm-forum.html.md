@@ -2,7 +2,7 @@
 title: 'Event Report: Tracing Summit & KVM Forum'
 author: kchamarthy
 date: 2014-10-29 23:54:29.000000000 Z
-published: false
+published: true
 comments: true
 ---
 
