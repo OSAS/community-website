@@ -8,7 +8,8 @@ published: true
 comments: true
 ---
 
-<img src="/images/blog/logo_kvmforum_crop.png" align="left">[LinuxCon](http://events.linuxfoundation.org/events/linuxcon-europe)/[CloudOpen](http://events.linuxfoundation.org/events/cloudopen-europe) (Europe), [KVM Forum](http://events.linuxfoundation.org/events/kvm-forum), [Linux Plumbers Conference](http://www.linuxplumbersconf.org/2014/), and a few other Linux Foundation events were co-located in October in Düsseldorf, Germany. The Linux Foundation events were held at an excellent venue, Congress Center Düsseldorf, on the bank of Rhine river. 
+![](blog/logo_kvmforum_crop.png)
+[LinuxCon](http://events.linuxfoundation.org/events/linuxcon-europe)/[CloudOpen](http://events.linuxfoundation.org/events/cloudopen-europe) (Europe), [KVM Forum](http://events.linuxfoundation.org/events/kvm-forum), [Linux Plumbers Conference](http://www.linuxplumbersconf.org/2014/), and a few other Linux Foundation events were co-located in October in Düsseldorf, Germany. The Linux Foundation events were held at an excellent venue, Congress Center Düsseldorf, on the bank of Rhine river. 
 
 In case you're not familiar with the KVM Forum, it's a developer event that mainly focuses on KVM, QEMU, and libvirt projects and their integration work. I spent most of my time at KVM Forum, with an occasional shuffle to LinuxCon/CloudOpen events to give a talk or to attend a discussion.
 
