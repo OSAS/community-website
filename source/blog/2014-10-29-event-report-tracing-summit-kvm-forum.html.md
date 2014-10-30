@@ -2,6 +2,8 @@
 title: 'Event Report: Tracing Summit & KVM Forum'
 author: kchamarthy
 date: 2014-10-29 23:54:29.000000000 Z
+tags: oVirt, KVM, KVM Summit, LinuxCon, Linux Foundation, libvirt, virtualization,
+  cloud, CloudOpen, Linux
 published: false
 comments: true
 ---
@@ -38,10 +40,12 @@ Thursday I attended Daniel Berrange's talk, [OpenStack Performance Optimization 
 Next he discussed four specific topics and their configuration details in the context of Nova and libvirt: NUMA config, Large pages, CPU pinning, I/O devices (assigining PCI devices on a local NUMA node). His [slides (PDF)](http://people.redhat.com/berrange/kvm-forum-2014/kvm-forum-2014-openstack-perf.pdf) are available online.
 
 If you are interested in virtualization, here are a few other KVM Forum talk videos available online now:
+
 * [Automatic NUMA Balancing](http://youtu.be/mjVw_oe1hEA) by Rik van Riel
 * [Towards Multi-Threaded Device Emulation in QEMU](http://youtu.be/KVD9FVlbqmY) by Stefan Hajnoczi
 * [Memory Externalization with userfaultfd](http://youtu.be/pC8cWWRVSPw) by Andrea Arcangeli & Dr. David Alan Gilbert
 * [More Block Device Configuration](http://youtu.be/VYGSD0aK2mk) by Kevin Wolf and Max Reitz
+
 See the KVM Forum channel on YouTube for additional videos.
 
 ## Also Read
