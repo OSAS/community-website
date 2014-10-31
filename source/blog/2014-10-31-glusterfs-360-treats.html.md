@@ -3,7 +3,7 @@ title: 'Lots of Sweet Treats Packed into GlusterFS 3.6.0 '
 author: rendsley
 date: 2014-10-31 16:53:36 UTC
 tags: Gluster, GlusterFS, file system, storage
-published: false
+published: true
 comments: true
 ---
 
