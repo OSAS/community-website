@@ -1,11 +1,11 @@
 ---
 title: 'Event Report: Tracing Summit & KVM Forum'
 author: kchamarthy
-date: 2014-10-30 14:28:08.000000000 Z
+date: 2014-10-30 14:28:08 UTC
 tags: oVirt, KVM, KVM Summit, LinuxCon, Linux Foundation, libvirt, virtualization,
   cloud, CloudOpen, Linux
-published: true
 comments: true
+published: true
 ---
 
 ![](blog/logo_kvmforum_crop.png)
@@ -13,8 +13,8 @@ comments: true
 
 In case you're not familiar with the KVM Forum, it's a developer event that mainly focuses on KVM, QEMU, and libvirt projects and their integration work. I spent most of my time at KVM Forum, with an occasional shuffle to LinuxCon/CloudOpen events to give a talk or to attend a discussion.
 
-Tracing Summit
-==============
+## Tracing Summit
+
 On the first day of LinuxCon and related events, I attended [Stefan Hajnoczi](http://blog.vmsplice.net/)'s talk,  [User Case Study: Tracing in the QEMU Emulator](http://sched.co/1typxjj), which was part of the [Tracing Summit](http://tracingsummit.org/wiki/TracingSummit2014). Stefan is QEMU's tracing sybsystem maintainer (along with Block and Network subsystems). His talk was about how QEMU project uses tracing and how it integrates different types of tracers. He began by outlining QEMU's architecture: QEMU is a user space process on the host and the guest runs as part of QEMU. The KVM Kernel module switches between host and guest modes. QEMU performs I/O on behalf of the user (e.g., if the virtual machine wants to send a network packet, QEMU will do that for you). Each guest vCPU is a thread on the host when using KVM.
 
 READMORE
@@ -25,8 +25,8 @@ Next he discussed the QEMU's 'tracetool', a Python script that generates tracing
 
 Slides (PDF) from his talk are [posted online](http://vmsplice.net/~stefan/stefanha-tracing-summit-2014.pdf). 
 
-KVM Forum, LinuxCon, and CloudOpen
-============================
+## KVM Forum, LinuxCon, and CloudOpen
+
 ![](blog/logo_kvmforum.png){:align="right"} KVM Forum started on Tuesday, and I caught Paolo Bonzini's KVM Keynote ([Video](http://www.youtube.com/watch?v=7aA7FQAbHsE)). Traditionally, KVM Forum kicks off with this keynote by the current KVM maintainer, discussing the state of KVM in the past year or so, highlights, architecture support and improvements, optimizations, benchmark details, and so on. (Keynote slides are [available online](http://events.linuxfoundation.org/sites/events/files/slides/kvmforum14-kvm.pdf) (PDF).)
 
 After the keynote, I attended Andrew Honig's [Security Hardening of KVM](http://sched.co/1zF98ZT) talk. Andrew took a deep dive into security aspects of KVM at the kernel level. Google Compute Engine uses KVM, but Andrew mentioned that they don't use QEMU as user space with KVM, rather as "something else" (without exactly naming what that something is). He also discussed different types of KVM vulnerabilities (including specific CVEs), how to reduce the attack surface, and approaches to move attack surfaces to user space VMM. He concluded by talking about a couple of new I/O controls (ioctls) that they're experimenting with at Google.
