@@ -92,14 +92,14 @@ quaid:
     passion for [the open source way](http://theopensourceway.org) fits in well
     with his love of family, urban farming, and pedicabbing (to name but three).
     He lives in Santa Cruz, CA, and you can find him all online as @quaid.
-    
+
 kchamarthy:
   name: Kashyap Chamarthy
   twitter:
   description: |
     Kashyap Chamarthy works in the Red Hat cloud engineering group,
     focusing his contributions on interactions between OpenStack and its
-    underlying virtualization components.     
+    underlying virtualization components.
 
 mlipchuk:
   name: Maor Lipchuk
@@ -109,21 +109,21 @@ mlipchuk:
     for the past four years. He is currently working in the Storage team. Maor
     likes to travel, so if you need any help with oVirt, feel free to invite him
     for a visit.
-    
+
 msivak:
    name: Martin Sivák
    twitter:
    description: |
-     Martin Sivák is a Senior Software Engineer for Red Hat Czech in Brno and 
-     has been working for Red Hat for the past seven years. He spends most of 
-     his time working with the installer team and is now responsible for the 
+     Martin Sivák is a Senior Software Engineer for Red Hat Czech in Brno and
+     has been working for Red Hat for the past seven years. He spends most of
+     his time working with the installer team and is now responsible for the
      MoM and VDSM parts of the quality-of-service effort for oVirt.
-     
+
 mgoldboim:
    name: Moran Goldboim
    twitter:
    description: |
-     Moran Goldboim is a Supervisor of Software Engineering at Red Hat, based in 
+     Moran Goldboim is a Supervisor of Software Engineering at Red Hat, based in
      Ra'anana, Israel.
 
 ncoghlan:
@@ -154,7 +154,6 @@ pmasson:
     variety of open source projects specific to higher education, including
     Sakai, uPortal, and Moodle, and currently he teaches Open Source Principles
     and Practices at the University of Albany. Find him on Twitter: @massonpj.
-
 
 pmcgarry:
   name: Patrick McGarry
