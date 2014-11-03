@@ -5,6 +5,7 @@ admin:
 alarsson:
   name: Alexander Larsson
   twitter: gnomealex
+  description: |
     Alexander works in the Red Hat Desktop group and primarily works on Gtk+
     and the Gnome desktop, but has also been involved in other things like
     Spice and Docker. He works from Stockholm, Sweden.
