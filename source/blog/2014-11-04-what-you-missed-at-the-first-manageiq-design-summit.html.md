@@ -42,7 +42,7 @@ READMORE
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/_MW4dEPmslU" frameborder="0" allowfullscreen></iframe>
 
-* Advanced Policy Management - Brad Ascar talks about how to ManageIQ as an advanced policy engine for cloud and virtualization:
+* Advanced Policy Management - Brad Ascar talks about how to use ManageIQ as an advanced policy engine for cloud and virtualization:
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/yc_3QeLAz_U" frameborder="0" allowfullscreen></iframe>
 
@@ -66,7 +66,7 @@ READMORE
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/CHKAj7QX5IQ" frameborder="0" allowfullscreen></iframe>
 
-* Smart State Analysis, aka VM Fleecing - Rich Oliveri talk about how to "fleece" VMs (i.e., perform smart state analysis):
+* Smart State Analysis, aka VM Fleecing - Rich Oliveri talks about how to "fleece" VMs (i.e., perform smart state analysis):
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/QIKO-OoiWec" frameborder="0" allowfullscreen></iframe>
 
