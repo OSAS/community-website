@@ -16,6 +16,8 @@ If you missed the first ManagIQ Design Summit, or you couldn't catch every sessi
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/x-jO4vUX3KE" frameborder="0" allowfullscreen></iframe>
 
+READMORE
+
 * Intro and Vision - Oleg Barenboim and Jason Frey provide an introduction to what the developer team hopes to accomplish with the upcoming Botvinnik release:
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/lokMmVCavas" frameborder="0" allowfullscreen></iframe>
