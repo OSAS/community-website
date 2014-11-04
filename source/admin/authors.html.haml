@@ -1,0 +1,299 @@
+---
+title: Edit Authors
+page_classes: admin admin-authors
+no_container: true
+layout: admin
+---
+
+%nav.headerbar
+  .left-side
+    =link_to "« Back to admin overview", "/admin/", {class: "btn btn-primary", id: "backButton"}
+  .right-side
+    %button{id: "addButton", class: "btn btn-warning"} Add author
+    %button{id: "saveButton", class: "btn btn-success"} Save all
+
+  .center-text
+    #status
+
+
+%section.ui.row
+
+  #authors-list.authors-list.col-sm-3
+    %input#filter.form-control{name: "filter", autocomplete: "off", placeholder: "Filter author list"}
+
+    %section.list-group
+      - data.authors.each do |nick, author|
+        .author-selection.list-group-item{"data-nick" => nick}
+          %a.name.list-group-item-heading{href: "##{nick}"}= author.name
+          .list-group-item-text
+            %span.nickname= nick
+            - if author.alias
+              \/
+              %span.alias= author.alias
+
+  %form#authors.form.form-horizontal.col-sm-9
+    - data.authors.each do |nick, author|
+      .author-card{class: "author-#{nick}", "data-nick" => nick}
+        .form-group
+          %label.key.control-label.col-sm-2 Nickname
+          .col-sm-2
+            %input.nickname.field-nickname.form-control{value: nick}
+
+        - defaults = {}
+        - %w[name description twitter googleplus facebook github gravatar].each {|s| defaults[s] = ''}
+
+        - defaults.merge(author).each do |key, val|
+          .form-group{"data-field" => key}
+            - field = "#{nick}[#{key}]"
+            - id = "field-#{nick}-#{key}"
+            - classname = "field-#{key}"
+
+            %label.key.control-label.col-sm-2{for: id, "data-field" => key}= key.to_s.humanize.gsub(/Googleplus/, 'Google+').gsub(/Github/, 'GitHub ID')
+
+            - if key == "description"
+              .col-sm-10
+                %textarea.form-control{name: field, id: id, "data-field" => key, class: classname}= val.strip.gsub(/(\S)\n(\S)/,'\\1 \\2')
+
+            - else
+              .col-sm-4
+                %input.form-control{id: id, class: classname, name: field, "data-field" => key, value: "#{val.to_s.strip}"}
+
+    -#%button{id: "deleteButton", "data-toggle" => "modal", "data-target" => "#deleteDialog", class: "btn btn-danger"} Delete author
+    %input.hidden{type: "submit"}
+
+
+/* Delete dialog
+#deleteDialog.modal{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-body
+        %h4#myModalLabel.modal-title= "Delete <code>#{}</code>?"
+
+        .alert.alert-danger
+          %i.fa.fa-warning
+          %strong Warning:
+          You cannot undo this action, unless the post has
+          been already committed to git.
+
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Cancel
+        %button#delete-action.btn.btn-danger{"data-dismiss" => "modal", :type => "button"} Delete post
+
+
+- content_for :tail do
+  :coffee
+    $filter = $('#filter')
+    $authors = $('#authors')
+    $authorsList = $('#authors-list')
+    $save = $('#saveButton')
+    $status = $('#status')
+    $backButton = $('#backButton')
+    $addButton = $('#addButton')
+    sortTimer = null
+
+
+    showAuthor = (context)->
+      nick = $(context).data('nick')
+
+      $authors
+        .find('.author-card:visible').hide().end()
+        .find('[data-nick=' + nick + ']').show()
+
+
+    updateAuthorList = ()->
+      author = $filter.val().toLowerCase().trim()
+      $authorsList.find('.author-selection').hide()
+      findAuthor(author).show()
+
+
+    findAuthor = (str)->
+      $authorsList.find('.author-selection').filter(-> $(@).text().toLowerCase().match(str.toLowerCase()))
+
+
+    highlightAuthor = (item)->
+      # Support author string matching
+      item = findAuthor(item) if typeof(item) == "string"
+
+      # Default to first item, unless specified
+      item = $authorsList.find('.author-selection:visible').first() unless item
+
+      $('#authors-list .active').removeClass 'active'
+      $(item).addClass('active').find('a').focus()
+
+      text = $('a', item).text()
+
+      $.cookie('admin-author-selected', text, {expires: 7}) if text
+      showAuthor item
+
+
+    selectNextPrev = (e, npstr = "next")->
+      nextprev = if npstr == "prev" then "prevAll" else "nextAll"
+      $item = $(e.target).closest('.author-selection:visible,input')[nextprev](':visible').first()
+      highlightAuthor $item
+      e.preventDefault()
+
+
+    sortAuthorList = ->
+      clearTimeout sortTimer
+
+      sortTimer = setTimeout ->
+        $active = $authorsList.find('.active')
+        $list = $authorsList.find('.list-group')
+
+        sorted = $authorsList.find('.author-selection').sort (a,b) ->
+          $(a).find('.nickname').text() > $(b).find('.nickname').text()
+
+        $list
+          .html(sorted)
+          .animate({scrollTop:  $list.scrollTop() + $active.position().top}, 500)
+      , 500
+
+
+    updateName = (e) ->
+      $card = $(@).parents('.author-card')
+      nick = $card.find('.field-nickname').val()
+      name = $card.find('.field-name').val()
+
+      # Rewrite field names to match nickname
+      $card
+        .attr('data-nick', nick)
+        .find('.form-group').each (item) ->
+          field = $(@).data('field')
+          id = 'field-' + nick + '-' + field
+
+          $(@)
+            .find('label')
+              .attr('for', id)
+              .end()
+            .find('.form-control')
+              .attr('id', id)
+              .end()
+
+          $(@).find('.form-control').attr('name', nick + '[' + field + ']') if field
+
+      $authorsList.find('.active')
+        .find('.nickname').text(nick).end()
+        .find('.name').text(name).end()
+
+      do sortAuthorList
+
+
+    addAuthor = ->
+      nick = 'anewauthor'
+
+      if $('.author-card[data-nick=' + nick + ']').length > 0
+        highlightAuthor nick
+      else
+        $newName = $authorsList.find('.author-selection:first')
+          .clone()
+          .attr('data-nick', nick)
+          .find('.name').text('A new author').end()
+          .find('.nickname').text(nick).end()
+
+        $newAuthorData = $authors.find('.author-card:first')
+          .clone()
+          .attr('data-nick', nick)
+          .attr('className', "author-card author-" + nick)
+          .find('input').each ->
+            $(@).val('')
+          .end()
+
+        $newName.prependTo $authorsList.find('.list-group')
+        $newAuthorData.prependTo $authors
+
+      highlightAuthor nick
+
+      setTimeout ->
+        $authors.find('.nickname:visible').focus().select()
+      , 50
+
+
+    showStatus = (str, delay = 2000) ->
+      $status.stop().fadeOut 50, ->
+        $status.html(str).fadeIn 100, ->
+          $status.delay(delay).fadeOut 300
+
+
+    saveForm = (callback)->
+      showStatus 'Saving...'
+      $.post '/admin/api/update-authors/', $authors.serializeArray(), (data)->
+        showStatus 'Saved!'
+        callback() if typeof(callback) == "function"
+
+
+    $ ->
+      do LiveReload.shutDown
+
+      $('#authors .author-card').hide()
+
+      # Highlight last selected author, or default to a search on $USER
+      highlightAuthor($.cookie('admin-author-selected') || "#{ENV['USER']}")
+
+      $filter.focus()
+
+      $authorsList
+
+        .on 'mouseup', '.list-group-item', (e)->
+          $(@).find('a').focus()
+          highlightAuthor(@)
+          showAuthor(@)
+          e.preventDefault()
+          e.stopPropagation()
+
+        .on 'click', 'a', (e)->
+          e.preventDefault()
+
+        .on 'focus', 'a', (e)->
+          $(@).parent('.list-group-item').addClass('hover')
+
+        .on 'blur', 'a', (e)->
+          $(@).parent('.list-group-item').removeClass('hover')
+
+        .on 'keyup', $filter, (e)->
+          return true if e.altKey or e.ctrlKey
+
+          updateAuthorList()
+          highlightAuthor() if e.key.match /^[\w\s]$/
+
+        .on 'keydown', (e)->
+          return true if e.altKey or e.ctrlKey
+
+          switch e.key
+            when "ArrowDown", "Down"
+              selectNextPrev e
+              e.preventDefault()
+            when "ArrowUp", "Up"
+              selectNextPrev e, "prev"
+              e.preventDefault()
+            when "ArrowRight", "Right", "Tab"
+              $('#authors .author-card:visible input').first().focus()
+              e.preventDefault()
+            #when "Tab"
+              #selectNextPrev e, ("prev" if e.shiftKey)
+              #e.preventDefault()
+            else
+              $filter.focus()
+
+      $authors
+        .on 'change', 'input.nickname,input.field-name', updateName
+        .on 'keyup', 'input.nickname,input.field-name', updateName
+
+        .on 'submit', (e) ->
+          do saveForm
+          do e.preventDefault
+
+      $save.on 'click', saveForm
+
+      $addButton.on 'click', addAuthor
+
+      $backButton.on 'click', (e)->
+        # Only activate the link when saving is done, via a callback
+        saveForm => window.location = $(@).attr('href')
+        do e.preventDefault
+
+      $(document)
+        .on 'keyup', (e)->
+          switch e.key
+            when "Escape", "Esc"
+              $filter.val('').focus()
+              updateAuthorList()
