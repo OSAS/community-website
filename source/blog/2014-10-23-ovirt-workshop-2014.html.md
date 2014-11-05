@@ -6,7 +6,7 @@ published: true
 comments: true
 ---
 
-<img src="/images/blog/oVirt-logo.png">The latest iteration of the oVirt Workshop rolled into Düsseldorf on October 16th, with loads of new content to share with participants and the start of new dialogs about the future of the open source virtual datacenter management platform.
+![](blog/oVirt-logo.png)The latest iteration of the oVirt Workshop rolled into Düsseldorf on October 16th, with loads of new content to share with participants and the start of new dialogs about the future of the open source virtual datacenter management platform.
 
 The day started with a well-received presentation from Michal Skrivanek on [what's new in oVirt 3.5](http://www.ovirt.org/images/f/f1/Whats_new_in_3.5.pdf), which unbeknownst to the attendees, would be released the very next day.
 

@@ -50,4 +50,4 @@ If you are interested in virtualization, here are a few other KVM Forum talk vid
 See the KVM Forum channel on YouTube for additional videos.
 
 ## Also Read
-* [User Stories, Dialogs Are Central Theme of oVirt Workshop](http://community.redhat.com/blog/2014/10/ovirt-workshop-2014/)
+* [User Stories, Dialogs Are Central Theme of oVirt Workshop](/blog/2014/10/ovirt-workshop-2014/)

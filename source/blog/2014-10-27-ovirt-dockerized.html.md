@@ -27,7 +27,7 @@ As a rule for this project, I decided to make sure I could automate the build/co
 
 The first candidate for “dockerization” was the oVirt Engine. I wanted to use the Docker layers structure, creating a base image with oVirt packages deployed, and then add a configuration layer on top of that base image.
 
-<img src="/images/blog/ovirt-configuration.png" align="right">
+![](blog/ovirt-configuration.png){:align="right"}
 
 In the base image ([Dockerfile](https://github.com/mgoldboi/oVirt-Dockerized/blob/master/Build/DockerFiles/ovirt-rpm/Dockerfile), I decided to go with oVirt's RPM deployment over a Fedora 20 container, and use [systemd hack](http://developerblog.redhat.com/2014/05/05/running-systemd-within-docker-container/) so we can run oVirt in systemd along with the other services oVirt uses.
 
@@ -57,4 +57,4 @@ The prerequisites for this operation include installing the docker-io package an
 
 <pre>sudo service docker start</pre>
 
-Check back for [Part 2](http://community.redhat.com/blog/2014/10/ovirt-dockerized-part-2/) tomorrow and learn how to run oVirt with a remote database and as a standalone container, how to build an interactive configuration, and how to clean up your environment.
+Check back for [Part 2](/blog/2014/10/ovirt-dockerized-part-2/) tomorrow and learn how to run oVirt with a remote database and as a standalone container, how to build an interactive configuration, and how to clean up your environment.

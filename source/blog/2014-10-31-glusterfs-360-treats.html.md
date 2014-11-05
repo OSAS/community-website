@@ -7,7 +7,7 @@ published: true
 comments: true
 ---
 
-<img src="http://community.redhat.com/images/blog/gluster-ant.png">GlusterFS 3.6.0 rolled out today and includes new features and stability improvements. Highlights include:
+![](blog/gluster-ant.png)GlusterFS 3.6.0 rolled out today and includes new features and stability improvements. Highlights include:
 
 * [Better SSL Support](http://http://www.gluster.org/community/documentation/index.php/Features/better-ssl)
 * [Erasure Coding](http://http://www.gluster.org/community/documentation/index.php/Features/disperse)

@@ -7,14 +7,14 @@ published: true
 comments: true
 ---
 
-<img src="http://community.redhat.com/images/blog/oVirt-logo.png">Yesterday in [oVirt Dockerized: Part 1](http://community.redhat.com/blog/2014/10/ovirt-dockerized/), we learned how to run oVirt on a virtual machine or server, and the "fun part" of making oVirt go. In Part 2, we dive deeper into running oVirt with a remote database and as a standalone container, interactive configuration of an oVirt container, and how to clean up your environment.
+![](blog/oVirt-logo.png)Yesterday in [oVirt Dockerized: Part 1](/blog/2014/10/ovirt-dockerized/), we learned how to run oVirt on a virtual machine or server, and the "fun part" of making oVirt go. In Part 2, we dive deeper into running oVirt with a remote database and as a standalone container, interactive configuration of an oVirt container, and how to clean up your environment.
 
 ## Run oVirt with a Remote Database
 
 In this scenario, the oVirt container is connected to the data containers and are linked within the same namespace
 
 <pre>cd oVirt-Dockerized/Run && sudo make ovirt-run</pre>
-<img src="/images/blog/ovirt-dockerized_newpt2.png" align="center">
+![](blog/ovirt-dockerized_newpt2.png){:align="center"}
 
 READMORE
 

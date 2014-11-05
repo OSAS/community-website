@@ -7,7 +7,7 @@ comments: true
 published: true
 ---
 
-<img src="http://community.redhat.com/images/blog/oVirt-logo.png"> In this article, I will talk about a new project we have just published as part of our [oVirt 3.5 release](http://www.ovirt.org/OVirt_3.5_Release_Notes). The new scheduler I am going to describe will enable you to perform non-trivial migration steps to utilize a cluster's resources better. The scheduler will also help you with starting a new VM that does not immediately fit any of your nodes.
+![](blog/oVirt-logo.png) In this article, I will talk about a new project we have just published as part of our [oVirt 3.5 release](http://www.ovirt.org/OVirt_3.5_Release_Notes). The new scheduler I am going to describe will enable you to perform non-trivial migration steps to utilize a cluster's resources better. The scheduler will also help you with starting a new VM that does not immediately fit any of your nodes.
 
 ## Introduction to oVirt Scheduling
 
