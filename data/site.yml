@@ -31,6 +31,15 @@ footer_links:
   About Red Hat: http://www.redhat.com/about/
 
 
+blog_disclaimer: |
+  This article originally appeared on
+  [community.redhat.com](http://community.redhat.com/).
+  Follow the community on Twitter at
+  [@redhatopen](https://twitter.com/redhatopen), and find us on
+  [Facebook](https://www.facebook.com/redhatopen) and
+  [Google+](https://plus.google.com/u/0/b/113258037797946990391/113258037797946990391/posts).
+
+
 ## If unspecified, timezone defaults to UTC
 ## For more TZs, see the top of:
 ## https://github.com/rails/rails/blob/master/activesupport/lib/active_support/values/time_zone.rb
