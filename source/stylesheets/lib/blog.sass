@@ -71,8 +71,11 @@ article.post
   img
     border-radius: 48px
 
-.author-blurb.with-photo
-  @extend .col-md-10
+.author-blurb
+  overflow: hidden
+
+  .with-photo
+    @extend .col-md-10
 
 .post-content
   margin-top: 2em
@@ -118,3 +121,13 @@ article.post
 
     a
       vertical-align: middle
+
+
+/* Disclaimer
+
+.blog-disclaimer
+  border-top: 1px solid #ccc
+  clear: both
+  color: #777
+  margin: 3em 0 0
+  padding: 3em 0 0
