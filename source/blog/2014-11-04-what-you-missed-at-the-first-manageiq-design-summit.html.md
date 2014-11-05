@@ -83,5 +83,3 @@ READMORE
 <iframe width="420" height="315" src="//www.youtube.com/embed/OSGr9kshEAk" frameborder="0" allowfullscreen></iframe>
 
 To keep current on upcoming events, follow [ManageIQ on Twitter](https://twitter.com/manageiq), and join the conversation in IRC at #manageiq channel on irc.freenode.net
-
-*This article originally appeared on [community.redhat.com](http://community.redhat.com/). Follow the community on Twitter at [@redhatopen](https://twitter.com/redhatopen), and find us on [Facebook](https://www.facebook.com/redhatopen) and [G+](https://plus.google.com/u/0/b/113258037797946990391/113258037797946990391/posts).*

@@ -51,5 +51,3 @@ See the KVM Forum channel on YouTube for additional videos.
 
 ## Also Read
 * [User Stories, Dialogs Are Central Theme of oVirt Workshop](http://community.redhat.com/blog/2014/10/ovirt-workshop-2014/)
-
-*This article originally appeared on [community.redhat.com](http://community.redhat.com/). Follow the community on Twitter at [@redhatopen](https://twitter.com/redhatopen), and find us on [Facebook](https://www.facebook.com/redhatopen) and [G+](https://plus.google.com/u/0/b/113258037797946990391/113258037797946990391/posts).*
