@@ -4,7 +4,7 @@ author: bkp
 date: 2014-11-05 19:49:15 UTC
 tags: Docker, oVirt, CentOS, Project Atomic, USENIX, LISA, devops, sys admin, dojo,
   Linux, cloud, containers
-published: false
+published: true
 comments: true
 ---
 
