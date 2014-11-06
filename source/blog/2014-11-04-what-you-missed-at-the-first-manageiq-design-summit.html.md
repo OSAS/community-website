@@ -8,7 +8,8 @@ published: true
 comments: true
 ---
 
-![](blog/manageiq-logo.png)The first [ManageIQ Design Summit](/blog/2014/10/manageiq-design-summit-preview-come-fleece-with-us/) was held October 7-8 in Mahwah, New Jersey. Seventy-four attendees, representing 17 companies, 7 countries, and 3 continents, met for two days of training and camaraderie around the new ManageIQ Community. Booz Allen co-sponsored the event, and a cadre of their developers and program managers attended and led sessions.
+![](blog/manageiq-vertical.png)
+The first [ManageIQ Design Summit](/blog/2014/10/manageiq-design-summit-preview-come-fleece-with-us/) was held October 7-8 in Mahwah, New Jersey. Seventy-four attendees, representing 17 companies, 7 countries, and 3 continents, met for two days of training and camaraderie around the new ManageIQ Community. Booz Allen co-sponsored the event, and a cadre of their developers and program managers attended and led sessions.
 
 If you missed the first ManagIQ Design Summit, or you couldn't catch every session, check out the [ManageIQ YouTube channel](http://www.youtube.com/user/ManageIQVideo) for archives from the event.
 

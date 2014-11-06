@@ -29,7 +29,7 @@ READMORE
 
 * Wednesday, November 12 BoF: [Docker and Kubernetes Containerized Applications](https://www.usenix.org/conference/lisa14/birds-feather-sessions#docker) BoF led by Mark Lamourine
 
-* Wednesday, November 12 BoF: ["Fedora Server: Returning to Our Roots "](http://community.redhat.com/events/#lisa14--fedora-server-returning-to-our-roots) BoF led by Joe Brockmeier
+* Wednesday, November 12 BoF: ["Fedora Server: Returning to Our Roots "](http://community.redhat.com/events/#lisa14--fedora-server-returning-to-our-roots) BoF led by Stephen Gallagher
 
 * Thursday, November 13: Identity management is a tricky bit of business, especially in the open source world, where solutions abound. Brian Atkisson will highlight these systems and discuss how Red Hat integrates them all in his talk, [Open Source Identity Management in the Enterprise](https://www.usenix.org/conference/lisa14/conference-program/presentation/atkisson).
 
