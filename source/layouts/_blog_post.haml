@@ -144,7 +144,7 @@
             = author_link(author, "View all posts by #{author_name author} &raquo;")
 
 
-  - if data.site.blog_disclaimer
+  - if article_view && data.site.blog_disclaimer
     %footer.blog-disclaimer= markdown_to_html data.site.blog_disclaimer
 
 
