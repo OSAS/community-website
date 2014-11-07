@@ -3,7 +3,7 @@ title: Breaking Down Language Barriers in Open Source
 author: rranjan
 date: 2014-11-07 16:56:20 UTC
 tags: GILT, localization, translation, open source, Linux, language
-published: false
+published: true
 comments: true
 ---
 
@@ -16,4 +16,4 @@ READMORE
 
 In early September, I attended one such gathering of volunteers at Sathyabama University in Chennai, India. About 150 participants of three different languages - Hindi, Telugu, and Tamil - attended the [TechnoSummit2014](https://technosummit.org/). Dyvik Chenna, Arun Prakash, Chandrakant Dhutadmal, Naresh Kumar, Anthuvan Jerald, Franklin Francis, and Shreyas Narayanan were a few of the attendees who helped make the event a great success. See Franklin's [event report](http://geekzune.wordpress.com/2014/09/22/localization-l10n/) for more about the gathering.
 
-I feel proud that I am small part of the great work being done to break down language barriers in technology. Check back on this community blog for updates on the efforts people are making to close the digital divide in the areas of GILT (globalization [g11n], internationalization [i18n], localization [l10n], and translation). [Let me know](https://twitter.com/kajha) if you have stories to share. 
+I feel proud that I am small part of the great work being done to break down language barriers in technology. Check back on this community blog for updates on the efforts people are making to close the digital divide in the areas of GILT (globalization [g11n], internationalization [i18n], localization [l10n], and translation). [Let me know](https://twitter.com/kajha) if you have stories to share.
