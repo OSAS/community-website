@@ -19,9 +19,10 @@ In her [Sunday keynote](http://youtu.be/Hqy5Yks09ZQ), [OpenShift](https://www.op
 
 Lennart Regebro's [keynote about Python 3](http://youtu.be/Tm_q5KPLaGk) was practical , and after explaining why everyone should support it, he provided a real world example of how to add  support to an existing project. Lennart also mentioned a number of useful tools, tips, and techniques that would be good references for anyone looking to start. For example, he discussed tools specific to porting to 3, such as [Can I Use Python 3](https://caniusepython3.com/) to check dependencies that may be blocking the transition, and [2to3](http://python3porting.com/2to3.html) for a first automated attempt at converting the code. He also mentioned tools that help make the process easier, including [tox](https://tox.readthedocs.org/en/latest/) and [virtualenv](http://virtualenv.readthedocs.org/en/latest/). Lennart's slides with references and strategies are available [on GitHub](https://github.com/regebro/BigBad3).
 
-If you couldn't make it to the event, or if you missed some of the talks, be sure to check out the collection of video archives available in the [PyCon Ireland YouTube channel](https://www.youtube.com/user/pyconireland), including. Diane Mueller's keynote, “Beyond the Cathedral & Bazaar: The New Era of Cross Community Collaboration."
+If you couldn't make it to the event, or if you missed some of the talks, be sure to check out the collection of video archives available in the [PyCon Ireland YouTube channel](https://www.youtube.com/user/pyconireland), including, Diane Mueller's keynote, “Beyond the Cathedral & Bazaar: The New Era of Cross Community Collaboration."
+
 <iframe width="560" height="315" src="//www.youtube.com/embed/Hqy5Yks09ZQ?list=PLedkOvWdiOl3BQCpHphyslI3_vtpHRuj3" frameborder="0" allowfullscreen></iframe>
 
 Follow [PyCon Ireland on Twitter](https://twitter.com/pyconireland) to stay updated on 2015 event plans.
 
-*Thanks to Pádraig Brady, Dan Kenigsberg, and Lucas Gomes for contributing to this article. *
+*Thanks to Pádraig Brady, Dan Kenigsberg, and Lucas Gomes for contributing to this article.
