@@ -7,7 +7,7 @@ published: true
 comments: true
 ---
 
-![](blog/pyconie-logo.png) Now in its fifth year, [PyCon Ireland](http://python.ie/pycon/2014) is an annual conference organized by the Python Ireland community. Like the previous year, the weekend conference was held in Dublin and included a healthy mix of talks and workshops. Two days of sprints on projects such as Django and PyPy followed. Over the years, and most notably this year, the content has evolved from covering low-level implementation details, to higher-level applications of Python and the plethora of modules now available. 
+![](blog/pyconie-logo.jpg) Now in its fifth year, [PyCon Ireland](http://python.ie/pycon/2014) is an annual conference organized by the Python Ireland community. Like the previous year, the weekend conference was held in Dublin and included a healthy mix of talks and workshops. Two days of sprints on projects such as Django and PyPy followed. Over the years, and most notably this year, the content has evolved from covering low-level implementation details, to higher-level applications of Python and the plethora of modules now available. 
 
 Many companies, including Red Hat, sponsored the event, and given the interactions at the booths and the various recruiter talks, the job market seems vibrant and competitive for Python developers. More than 350 people attended this year, and the conference once again sold out in advance. ![](blog/pyconie_keynote.jpg){:align=right}
 
