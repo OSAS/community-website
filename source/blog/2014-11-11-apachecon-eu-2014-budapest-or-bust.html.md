@@ -38,6 +38,8 @@ comments: true
 
 Follow ApacheCon on Twitter at [@ApacheCon](https://twitter.com/ApacheCon) and with the #apachecon hashtag.
 
+READMORE
+
 Check out [The Apache Foundation YouTube](https://www.youtube.com/user/TheApacheFoundation/feed) channel for recordings from past events, including:
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/bCTDlN_KBFc" frameborder="0" allowfullscreen></iframe>
