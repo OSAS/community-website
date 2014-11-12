@@ -3,7 +3,7 @@ title: Open World Forum 2014 Report
 author: bkp
 date: 2014-11-12 19:18:53 UTC
 tags: oVirt, Project Atomic, Virtualization, Containers, Docker, OpenStack, RDO
-published: false
+published: true
 comments: true
 ---
 
