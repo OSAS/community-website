@@ -3,7 +3,7 @@ title: Up and Running with oVirt 3.5, Part Two
 author: jbrooks
 date: 2014-11-13 14:00:00 UTC
 tags: ovirt, centos, gluster, glusterization, virtualization, storage
-published: false
+published: true
 comments: true
 ---
 
