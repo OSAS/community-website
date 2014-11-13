@@ -48,7 +48,7 @@ You should end up with your hosted engine volume unmounted (you can check with `
 For convenience, I'm going to smush together as many of the steps (already covered in part one) needed to prepare our two additional CentOS 7 minimal machines to join our installation as possible. On machines **two and three**, you need to:
 
 ````
-# systemctl disable firewalld && systemctl enable iptables && systemctl disable NetworkManager && systemctl stop NetworkManager && yum localinstall -y http://resources.ovirt.org/pub/yum-repo/ovirt-release35.rpm && yum install -y ovirt-hosted-engine-setup screen glusterfs-server nfs-utils netstat vdsm-gluster system-storage-manager ctdb && systemctl reboot
+# systemctl disable firewalld && systemctl enable iptables && systemctl disable NetworkManager && systemctl stop NetworkManager && yum localinstall -y http://resources.ovirt.org/pub/yum-repo/ovirt-release35.rpm && yum install -y ovirt-hosted-engine-setup screen glusterfs-server nfs-utils vdsm-gluster system-storage-manager ctdb && systemctl reboot
 ````
 
 ## Configure your firewall
