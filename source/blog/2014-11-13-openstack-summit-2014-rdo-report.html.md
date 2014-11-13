@@ -11,9 +11,9 @@ comments: true
 
 Releases are named in alphabetical order, after something near the location of the summit. In this case, the [International Prototype Kilgram](http://en.wikipedia.org/wiki/Kilogram#International_prototype_kilogram), which is stored in Sèvres, just outside of Paris.
 
-![](blog/rh_booth.jpg) This is the third Summit that I've attended - the first two being in Hong Kong and Atlanta - and I'm always impressed with the sheer quantity of content jammed into the time, the depth of those sessions, and of the questions that attendees ask. This is a deep technical conference, and the attendees are the people who are actually doing the work in this space.
+This is the third Summit that I've attended - the first two being in Hong Kong and Atlanta - and I'm always impressed with the sheer quantity of content jammed into the time, the depth of those sessions, and of the questions that attendees ask. This is a deep technical conference, and the attendees are the people who are actually doing the work in this space.
 
-Red Hat engineers were involved in presenting more than 20 sessions, which run the first three days of the conference. The second half of the event is the design summit, where the various project teams discuss features and enhancements that will be developed for the upcoming release.
+![](blog/rh_booth.jpg) Red Hat engineers were involved in presenting more than 20 sessions, which run the first three days of the conference. The second half of the event is the design summit, where the various project teams discuss features and enhancements that will be developed for the upcoming release.
 
 READMORE
 
