@@ -1,7 +1,7 @@
 ---
 title: Up and Running with oVirt 3.5
 author: jbrooks
-date: 2014-10-29 13:00:00.000000000 Z
+date: 2014-10-29 13:00:00 UTC
 tags: centos, ovirt, gluster, virtualization
 comments: true
 published: true
@@ -20,7 +20,7 @@ As with every new oVirt release, I'm here to suggest a path to getting up and ru
   
 For this howto, I'll be walking through the steps you can follow to get oVirt 3.5 up and running on a single machine with a self-hosted engine, and with self-hosted storage, courtesty of GlusterFS. 
 
-In my next post, I'll describe how to add two more machines to the mix to give yourself an installation hardy enough to bring a machine down for updates and maintainence without everything grinding to a halt.
+In my [next post](blog/2014/11/up-and-running-with-ovirt-3-5-part-two/), I'll describe how to add two more machines to the mix to give yourself an installation hardy enough to bring a machine down for updates and maintainence without everything grinding to a halt.
 
 If you have access to good external NFS or iSCSI storage to use with your oVirt exploration, I'll point out where you can skip the GlusterFS bits and use your external storage resource.
 
@@ -36,7 +36,7 @@ __Network:__ Your test machine’s host name must resolve properly, either throu
 
 __Storage:__ The hosted engine feature requires NFS or iSCSI storage to house the VM that will host the engine. For this walkthrough, I'll be using a Gluster-based NFS share hosted from my test machine. If you prefer to use external iSCSI or NFS storage, that'll work, too.
 
-## Installing oVirt with Hosted Engine
+## Installing oVirt with hosted engine
 
 I'm starting out with a test machine with 8 GB of RAM and 4 processor cores, running a minimal installation of CentOS 7 with all updates applied. 
 
@@ -51,107 +51,106 @@ I'm also adding a second host name, `ovirt-mount.osas.lab`, to use as my NFS mou
 The oVirt 3.5 release notes suggest disabling NetworkManager and firewalld in favor of the tried and true network and iptables services:
 
 ````
-sudo systemctl disable firewalld && sudo systemctl stop firewalld
-sudo systemctl disable NetworkManager && sudo systemctl stop NetworkManager
+# systemctl disable firewalld && systemctl stop firewalld
+# systemctl disable NetworkManager && systemctl stop NetworkManager
 ````
 
 Next, we need to configure the oVirt software repository on the first host:
 
 ```
-sudo yum localinstall -y http://resources.ovirt.org/pub/yum-repo/ovirt-release35.rpm
+# yum localinstall -y http://resources.ovirt.org/pub/yum-repo/ovirt-release35.rpm
 ```
 Next, install the hosted engine packages, along with [screen](http://www.gnu.org/software/screen/), which can come in handy during the deployment process:
 
 ```
-sudo yum install -y ovirt-hosted-engine-setup screen glusterfs-server nfs-utils netstat vdsm-gluster system-storage-manager
+# yum install -y ovirt-hosted-engine-setup screen glusterfs-server nfs-utils netstat vdsm-gluster system-storage-manager
 ```
 
 _I'm experiencing an SELinux issue in which glusterd isn't functional until after a reboot, so go ahead and reboot after installing these packages._
 
-## Gluster Preparations
+## Gluster preparations
 
 We need a partition to store our Gluster bricks. For simplicity, I'm using a single XFS partition, and my Gluster bricks will be directories within this partition. I use system-storage-manager to manage my storage.
 
 _If you're skipping the local Gluster storage, and using external NFS or iSCSI storage, you can skip this step._ 
 
 ````
-sudo ssm add -p gluster $YOUR_DEVICE_NAME
-sudo ssm create -p gluster --fstype xfs -n gluster
+# ssm add -p gluster $YOUR_DEVICE_NAME
+# ssm create -p gluster --fstype xfs -n gluster
 ````
 
 Next, modify your `/etc/fstab` to add the new partition:
 
 ````
-mkdir /gluster
-blkid /dev/gluster/gluster
+# mkdir /gluster
+# blkid /dev/gluster/gluster
 ````
 
 Edit your `/etc/fstab` and add a line like the one below before running `mount -a` to mount your new partition:
 
 ````
-UUID=$YOUR_UUID /gluster xfs defaults 1 2
+UUID=$YOUR_UUID /gluster xfs defaults 0 0
 ````
 
 Next, we'll create some mount points for our Gluster volumes-to-be. We'll have separate Gluster volumes for our hosted engine, and for our oVirt data domain:
 
 ````
-mkdir -p /gluster/{engine,data}/brick
+# mkdir -p /gluster/{engine,data}/brick
 ````
-
-Now, edit `/etc/glusterfs/glusterd.vol`, uncomment the line `option base-port 49152` and change the value `49152` to `50152`. This change works around a conflict between the ports used by libvirt for live migration, and the ports Gluster uses for its bricks. 
-
-_This modification appears to cause an SELinux issue, see [bug 1158622](https://bugzilla.redhat.com/show_bug.cgi?id=1158622), and put SELinux into permissive mode w/ `setenforce 0` to work around it._ 
 
 Now start the Gluster service and configure it to auto-start after subsequent reboots:
 
 ````
-sudo systemctl start glusterd && sudo systemctl enable glusterd
+# systemctl start glusterd && systemctl enable glusterd
 ````
 
 Next, we create our gluster volumes, substituting your machine's hostname:
 
 ````
-gluster volume create engine $HOSTNAME:/gluster/engine/brick
-gluster volume create data $HOSTNAME:/gluster/data/brick
+# gluster volume create engine $HOSTNAME:/gluster/engine/brick
+# gluster volume create data $HOSTNAME:/gluster/data/brick
 ````
 
-Now, create a file on your machine by the name of `/var/lib/glusterd/groups/virt`, and populate it with the contents of [this file on github](https://raw.githubusercontent.com/gluster/glusterfs/master/extras/group-virt.example). This file contains a set of virt-related volume options, and the following command applies those options to our engine and data volumes:
+Now, apply a set of virt-related volume options to our engine and data volumes:
 
 ````
-gluster volume set engine group virt
-gluster volume set data group virt
+# gluster volume set engine group virt
+# gluster volume set data group virt
 ````
+
 We also need to set the correct permissions on all our volumes:
 
 ````
-gluster volume set engine storage.owner-uid 36 && gluster volume set engine storage.owner-gid 36
-gluster volume set data storage.owner-uid 36 && gluster volume set data storage.owner-gid 36
+#  gluster volume set engine storage.owner-uid 36 && gluster volume set engine storage.owner-gid 36
+# gluster volume set data storage.owner-uid 36 && gluster volume set data storage.owner-gid 36
 ````
 
 Finally, we need to start our volumes:
 
 ````
-gluster volume start engine
-gluster volume start data
+# gluster volume start engine
+# gluster volume start data
 ````
 
 Before moving ahead, run `gluster volume status` to make sure that the NFS server associated with your `engine` volume is up and running, because we're about to need it.
 
-## Installing the Hosted Engine
+Due to a conflict between Gluster's built-in NFS server and NFS client-locking, it's necessary to disable file locking in the `/etc/nfsmount.conf` file with the line `Lock=False` to ensure that Gluster will reliably both serve up and access the engine volume over NFS.
+
+## Installing the hosted engine
 
 PXE, ISO image, and OVF-formatted disk image are our installation media options for the VM that will host our engine. Here, I'm using an ISO image, and creating a temporary directory to which oVirt will have access to house the image during the install process:
 
 ```
-mkdir /home/tmp && cd /home/tmp
-curl -O http://mirrors.kernel.org/centos/6.6/isos/x86_64/CentOS-6.6-x86_64-minimal.iso
-chown -R 36:36 /home/tmp
+# mkdir /home/tmp && cd /home/tmp
+# curl -O http://mirrors.kernel.org/centos/6.6/isos/x86_64/CentOS-6.6-x86_64-minimal.iso
+# chown -R 36:36 /home/tmp
 ```
 
 Now we should be ready to fire up `screen` and kick off the installation process:
 
 ````
-screen
-hosted-engine --deploy
+# screen
+# hosted-engine --deploy
 ````
 
 Follow along with the script, answering its questions. The default answers are fine, but you'll need to supply the path to your NFS share, the type and path to the media you'll be using to install your engine-hosting VM, the host name you've picked out for the hosted engine, and the password you'll be using for the engine admin user.
@@ -178,14 +177,14 @@ The VM will reboot, and when it's back up, it's time to install oVirt engine. Ei
 Now, just as we did on our first host, we need to configure the oVirt software repository on our hosted engine VM:
 
 ````
-sudo yum localinstall -y http://resources.ovirt.org/pub/yum-repo/ovirt-release35.rpm
+# yum localinstall -y http://resources.ovirt.org/pub/yum-repo/ovirt-release35.rpm
 ````
 
 Next, we'll install and then set up ovirt-engine:
 
 ```
-sudo yum install -y ovirt-engine
-sudo engine-setup
+# yum install -y ovirt-engine
+# engine-setup
 ```
 
 ![](blog/ovirt35-configure-engine-1.png){:align="center"}
@@ -201,12 +200,12 @@ The installer will register itself as a virtualization host on the oVirt engine 
 It can take a few minutes for the HA services to notice that the engine is down, to check that there's a machine available to host the engine, and to start up the hosted engine VM. You can watch these services do their thing by tailing their log files:
 
 ```
-sudo tail -f /var/log/ovirt-hosted-engine-ha/*
+# tail -f /var/log/ovirt-hosted-engine-ha/*
 ```
 
 Once that process is complete, the script will exit and you should be ready to configure storage and run a VM.
 
-## Configuring Storage
+## Configuring storage
 
 Head to your oVirt engine console at the address of your hosted engine VM, log in with the user name `admin` and the password you chose during setup, and visit the "Storage" tab in the console.
 
@@ -216,7 +215,7 @@ In the "Export Path" field, enter the remote path to your Gluster volume, and hi
 
 ![](blog/ovirt35-configure-storage-1.png){:align="center"}
 
-## Running Your First VM
+## Running your first VM
 
 Since version 3.4, oVirt engine has come pre-configured with a public Glance instance managed by the oVirt project. We'll tap this resource to launch our first VM.
 
@@ -241,11 +240,11 @@ Now, back at the Virtual Machines list, right-click your new VM, and choose "Run
 ![](blog/ovirt34-run-vm-1d.png){:align="center"}
 
 
-## Till Next Time
+## Till next time
 
 That's enough for this post. If you run into trouble following this walkthrough, I’ll be happy to help you get up and running or get pointed in the right direction. On IRC, I’m jbrooks, ping me in the #ovirt room on OFTC, write a comment below, or give me a shout on Twitter [@jasonbrooks](https://twitter.com/jasonbrooks).
 
-Stay tuned for a followup post about adding two more machines to our oVirt+Gluster setup, so that you can bring down one of the machines for maintenance or upgrades without having to shut the whole thing down.
+Stay tuned for a [followup post](blog/2014/11/up-and-running-with-ovirt-3-5-part-two/) about adding two more machines to our oVirt+Gluster setup, so that you can bring down one of the machines for maintenance or upgrades without having to shut the whole thing down.
 
 If you’re interested in getting involved with the oVirt Project, you can find all the mailing list, issue tracker, source repository, and wiki information you need [here](http://www.ovirt.org/Community).
 
