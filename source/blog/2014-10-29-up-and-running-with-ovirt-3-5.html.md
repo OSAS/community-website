@@ -63,7 +63,7 @@ Next, we need to configure the oVirt software repository on the first host:
 Next, install the hosted engine packages, along with [screen](http://www.gnu.org/software/screen/), which can come in handy during the deployment process:
 
 ```
-# yum install -y ovirt-hosted-engine-setup screen glusterfs-server nfs-utils netstat vdsm-gluster system-storage-manager
+# yum install -y ovirt-hosted-engine-setup screen glusterfs-server nfs-utils vdsm-gluster system-storage-manager
 ```
 
 _I'm experiencing an SELinux issue in which glusterd isn't functional until after a reboot, so go ahead and reboot after installing these packages._
