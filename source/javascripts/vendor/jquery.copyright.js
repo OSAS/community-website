@@ -29,13 +29,19 @@
     }
 
     Copyright.prototype.getSelectedText = function() {
-        var text = "";
+        var fragment = undefined;
+        var range = undefined;
+
         if (window.getSelection) {
-            text = window.getSelection().toString();
+            range = window.getSelection().getRangeAt(0);
         } else if (document.selection) {
-            text = document.selection.createRange().text;
+            range = document.selection.createRange();
         }
-        return text;
+
+        fragment = range.cloneContents();
+        fragment.length = range.toString().length;
+
+        return fragment;
     };
 
     Copyright.prototype.setSelectionRange = function() {
@@ -97,7 +103,7 @@
             if (typeof it.options.processing == "function") {
                 selectText = it.options.processing(selectText);
             }
-            selectText += it.options.text;
+            $(selectText).append(it.options.text);
         }
 
         var div = $("<div/>", {
