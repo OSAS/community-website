@@ -13,3 +13,11 @@
 
       - else
         = yield
+
+  - if data.site.blog_disclaimer
+    - disclaimer = markdown_to_html data.site.blog_disclaimer
+
+    - content_for :tail do
+      :coffee
+        $('article.post').copyright
+          text: '<hr>#{disclaimer.tr("\n", ' ').tr("'", "\'")}'
