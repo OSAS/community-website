@@ -6,7 +6,7 @@ published: true
 comments: true
 ---
 
-![](blog/pyconie-logo.png) Doing exciting work with open source cloud, containers, virtualization, or other interesting technologies? Want to show it off to other folks in the FOSS community from around the world? Then don't miss these opportunities to get the word out about your work! 
+![](blog/luggage.jpg) Doing exciting work with open source cloud, containers, virtualization, or other interesting technologies? Want to show it off to other folks in the FOSS community from around the world? Then don't miss these opportunities to get the word out about your work! 
 
 ## Linux.conf.au Clouds, Containers, and Orchestration Miniconf
 
