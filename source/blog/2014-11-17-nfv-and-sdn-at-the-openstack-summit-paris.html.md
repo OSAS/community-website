@@ -17,7 +17,7 @@ Added to that,  SDN vendors made a number of prominent announcements. For exampl
 
 Saying that NFV was a prominent theme during the conference would be an understatement. 
 
-##NFV Videos from Paris
+## NFV Videos from Paris
 
 The  OpenStack Foundation quickly uploaded [session videos](https://www.openstack.org/summit/openstack-paris-summit-2014/session-videos/), and the following sessions provide a taste of the NFV content:
 
