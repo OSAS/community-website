@@ -16,7 +16,9 @@ READMORE
 Added to that,  SDN vendors made a number of prominent announcements. For example, three new open source SDN projects were announced: [MidoNet](http://midonet.org/), [Akanda](https://github.com/dreamhost/akanda), and [ONOS](http://onlab.us/).
 
 Saying that NFV was a prominent theme during the conference would be an understatement. 
-NFV videos from Paris
+
+##NFV Videos from Paris
+
 The  OpenStack Foundation quickly uploaded [session videos](https://www.openstack.org/summit/openstack-paris-summit-2014/session-videos/), and the following sessions provide a taste of the NFV content:
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/uBlE9GatNz4" frameborder="0" allowfullscreen></iframe>
