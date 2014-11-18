@@ -3,7 +3,7 @@ title: Fedora Council Elections Start Today
 author: jzb
 date: 2014-11-18 16:16:51 UTC
 tags: Fedora, Community, Fedora Council
-published: false
+published: true
 comments: true
 ---
 
@@ -25,4 +25,4 @@ READMORE
 
 Voting is open to all Fedora Contributors. More details are available on the [elections page](https://fedoraproject.org/wiki/Elections). 
 
-Note that Fedora uses range voting, which means you should vote for as many (or as few) candidates as you like. The candidate receiving the most votes will serve a full term; the runner-up will serve a half-term. 
+Note that Fedora uses range voting, which means you should vote for as many (or as few) candidates as you like. The candidate receiving the most votes will serve a full term; the runner-up will serve a half-term.
