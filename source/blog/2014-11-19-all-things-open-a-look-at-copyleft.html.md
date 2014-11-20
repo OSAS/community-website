@@ -14,15 +14,21 @@ I wasn't a total IP ignoramous. I even took a graduate-level class in media law 
 
 But (here's the admission) I thought "copyleft" was a specific license. I learned otherwise when Andrew Hall, a lawyer with Fenwick and West, LLP, who specializes in IP law, explained in his [Open Source Licensing & Business Models](http://allthingsopen.org/talks/open-source-licensing-business-models/) talk that copyleft is not a specific license, but rather a term that describes all licenses that allow derivative works, but require derivates (if distributed) to use the same license as the original work.
 
-Ahhhh! Now that makes more sense. He went on to explain that not all open source licenses are copyleft -- there are permissive licenses (like the BSD and MIT licenses), which mean that software released under that license can be used in programs that are distributed under any other type of license, including proprietary ones. The whole talk was similarly enlightening. 
+Ahhhh! Now that makes more sense. He went on to explain that not all open source licenses are copyleft -- there are permissive licenses (like the BSD and MIT licenses), which mean that software released under that license can be used in programs that are distributed under any other type of license, including proprietary ones. The whole talk was similarly enlightening, and he covered copyright in great detail. Fortunately, Hall's talk was recorded:
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/OhQD6WD_KYE" frameborder="0" allowfullscreen></iframe>
 
 To learn more about the concept of copyleft, visit [copyleft.org](http://copyleft.org/), a new site the Software Freedom Conservancy and the Free Software Foundation [announced](https://www.fsf.org/news/software-freedom-conservancy-and-free-software-foundation-announce-copyleft.org) earlier this month.  
 
-If you'd like to see what else happened at the event, the [All Things Open YouTube](https://www.youtube.com/channel/UCBhXFK70DbOU15N2BhDQVTg) channel now has video archives from several of the talks, including:
+If you'd like to see what else happened at the event, the [All Things Open YouTube](https://www.youtube.com/channel/UCBhXFK70DbOU15N2BhDQVTg) channel now has video archives from many of the talks, including:
 
 * The Culture of Open Source panel:
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/7dMLXvgtjAg" frameborder="0" allowfullscreen></iframe>
+
+* Introduction to PaaS for Application Developers (by Steven Pousty)
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/eHHIjMbRUK8" frameborder="0" allowfullscreen></iframe>
 
 * OpenStack + OpenShift ^ xPaaS (by Burr Sutter):
 
@@ -32,6 +38,6 @@ If you'd like to see what else happened at the event, the [All Things Open YouTu
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/UymcMyQmUBs" frameborder="0" allowfullscreen></iframe> 
 
-* Technology's Impact on Society (by Doug Cutting):
+* OSAS Open Standards Panel:
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/iELqT2o2dis" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/aK9xXls9qsA" frameborder="0" allowfullscreen></iframe>
