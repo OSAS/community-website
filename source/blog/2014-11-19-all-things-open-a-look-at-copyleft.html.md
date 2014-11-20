@@ -34,9 +34,13 @@ If you'd like to see what else happened at the event, the [All Things Open YouTu
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/NQzmCheG-6w" frameborder="0" allowfullscreen></iframe>
 
-* Women in Open Source (by DeLisa Alexander):
+* Women in Open Source Keynote (by DeLisa Alexander):
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/UymcMyQmUBs" frameborder="0" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="//www.youtube.com/embed/aB_DAEHLbIY" frameborder="0" allowfullscreen></iframe>
+
+* Women in Open Source Panel (moderated by DeLisa Alexander, featuring Dr. Megan Squire, Elizabeth Joseph, Erica Stanley, Estelle Weyl, and Karen Sandler)
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/Sy6T_f7tnPs" frameborder="0" allowfullscreen></iframe>
 
 * OSAS Open Standards Panel:
 
