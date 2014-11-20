@@ -4,7 +4,7 @@ author: glikins
 date: 2014-11-19 18:55:47 UTC
 tags: copyleft, open source, OpenStack, OpenShift, PaaS, culture, All Things Open,
   diversity
-published: false
+published: true
 comments: true
 ---
 
