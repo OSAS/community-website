@@ -3,7 +3,7 @@ title: 'One Year Later: Paul Cormier on Red Hat and the CentOS Project'
 author: quaid
 date: 2014-11-26 15:45:11 UTC
 tags: Red Hat, Linux, CentOS, community
-published: false
+published: true
 comments: true
 ---
 
