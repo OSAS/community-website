@@ -108,6 +108,9 @@ kchamarthy:
     focusing his contributions on interactions between OpenStack and its
     underlying virtualization components.
 
+misc:
+  name: Michael Scherer
+
 mlipchuk:
   name: Maor Lipchuk
   twitter:
