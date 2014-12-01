@@ -4,7 +4,7 @@ author: misc
 date: 2014-12-01 15:20:24 UTC
 tags: 'Project Atomic, operating system, conference, rumprun, DragonFlyBSD, BSD, CoreOS,
   Puppet, CentOS, '
-published: false
+published: true
 comments: true
 ---
 
@@ -54,4 +54,4 @@ The day ended with a discussion session around a few drinks before attendees hea
 
 Overall the event was interesting, covered a wide range of topics, and highlighted new directions. No doubt some of the approaches explored are going to be important for the future. 
  
-A big thanks to the New Directions in Operating Systems organization team for putting on a well-executed event, and kudos to Justin Cormack for having the idea for the event and for getting such high-quality talks. 
+A big thanks to the New Directions in Operating Systems organization team for putting on a well-executed event, and kudos to Justin Cormack for having the idea for the event and for getting such high-quality talks.
