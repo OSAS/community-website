@@ -3,7 +3,7 @@ title: Report from ApacheCon Budapest 2014
 author: rbowen
 date: 2014-12-01 17:23:00 UTC
 tags: Apache, ApacheCon, event, Linux Foundation, httpd, Docker, Apache Software Foundation
-published: false
+published: true
 comments: true
 ---
 
@@ -43,5 +43,3 @@ And then, so fast, it was Wednesday evening. David Nalley gave his keynote about
 The lightning talks were a big hit this time around, with a great mix of serious and lighthearted talks, all in five minutes or less and MC’ed by the inimitable Joe Brockmeier.
 
 On the whole, I was very pleased with this conference. If there’s anything that disappointed me about the conference, it’s only the number of old friends who couldn’t make it. I hope that everyone who couldn’t make it to Budapest is able to come to Austin to celebrate the 25th ApacheCon, and the 20th anniversary of the first release of the Apache HTTP Server.
-
- 
