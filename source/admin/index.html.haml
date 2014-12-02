@@ -38,6 +38,13 @@ hide_footer: true
       =link_to "Development", "/", {target: "_blank"}
 
 
+%section.site-admin
+
+  %h2 Site admin
+
+  =link_to "Edit authors&hellip;", "authors/", {class: "btn btn-primary"}
+
+
 %form.form.form-horizontal.newpost#newpost{action: "/admin/api/create", method: "post"}
   %h2 Create a new blog post
   .col-sm-6
