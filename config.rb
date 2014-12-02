@@ -195,6 +195,27 @@ require 'lib/monkeypatch_blog_date.rb'
 
 
 ###
+# Monkeypatch blog 'published?' to support an environtmental variable to
+# publish every blog post — even drafts!
+#
+# This is especially useful when building for a preview server.
+#
+# Enable by setting the environtmental variable PUBLISH_DRAFTS=true
+# Example: PUBLISH_DRAFTS=true ./run-server.sh build
+###
+
+module Middleman::Blog::BlogArticle
+  alias_method :_published?, :published?
+
+  def published?
+    return true if ENV['PUBLISH_DRAFTS']
+
+    _published?
+  end
+end
+
+
+###
 # Development-only configuration
 ###
 #
