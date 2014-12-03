@@ -3,8 +3,8 @@ title: Report from ApacheCon Budapest 2014
 author: rbowen
 date: 2014-12-01 17:23:00 UTC
 tags: Apache, ApacheCon, event, Linux Foundation, httpd, Docker, Apache Software Foundation
-published: true
 comments: true
+published: true
 ---
 
 ![](blog/cake_button.jpg) In November, the [Apache Software Foundation](http://www.apache.org/), with the help of the [Linux Foundation](http://events.linuxfoundation.org) event team, hosted [ApacheCon Europe](http://events.linuxfoundation.org/events/apachecon-europe) in lovely Budapest, Hungary at the gorgeous [Corinthia Hotel](http://www.corinthia.com/hotels/budapest/).
@@ -12,6 +12,8 @@ comments: true
 If my count is right, this was the [24th event](http://wiki.apache.org/apachecon/ApacheConHistory) to bear the name *ApacheCon*, and the 8th time we’ve done it in Europe. Also, we were celebrating the 15th anniversary of the Apache Software Foundation, which incorporated in June of 1999.
 
 Every ApacheCon has its own set of memories, from Douglas Adams pacing the stage in London, to the ApacheCon Jam Sessions in Dublin, to the Segway tours in San Diego, to the funeral march in New Orleans. And Budapest was no different – a wonderful event with lots of great memories.
+
+READMORE
 
 On Sunday night, I had dinner with the TAC’ers. The [Apache Travel Assistance Committee](http://www.apache.org/travel/) is a program by which we get people to ApacheCon who could otherwise not afford to be there. This is critical to the mission of the ASF, because it builds the community in an inclusive way, rather than limiting it to people with the funds to travel. TAC recipients have to give back a little – they provide session chair services, introducing speakers and counting attendees. A large percentage of our former TAC recipients have become deeply involved in the ASF, more than paying off the investment we make in them.
 
