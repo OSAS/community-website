@@ -3,8 +3,8 @@ title: RDO Packaging
 author: rbowen
 date: 2014-12-09 22:16:21 UTC
 tags: RDO, CentOS, Fedora, Red Hat Enterprise Linux, OpenStack
-published: false
 comments: true
+published: true
 ---
 
 ![](blog/rdo-openstacksummit_sm.jpg)When we started the [RDO project](https://openstack.redhat.com/Main_Page) back in April of 2013, the main focus was on producing a distribution of OpenStack that made it easy to deploy on CentOS, Fedora, and Red Hat Enterprise Linux. While we put time into making it easy for the community around that distribution to grow and support itself, most of the technical work was done inside Red Hat, and there were parts of it that weren't very visible to the community.
