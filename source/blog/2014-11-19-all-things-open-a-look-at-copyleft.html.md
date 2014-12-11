@@ -4,8 +4,8 @@ author: glikins
 date: 2014-11-19 18:55:47 UTC
 tags: copyleft, open source, OpenStack, OpenShift, PaaS, culture, All Things Open,
   diversity
-published: true
 comments: true
+published: true
 ---
 
 ![](blog/allthingsopen_sm.png) I have a somewhat embarrassing admission: I've been working in (or at least near) open source software for a little more than two years and, before [All Things Open](http://allthingsopen.org/) last month, I didn't really understood the subtleties around different types of open source licenses.
@@ -13,6 +13,8 @@ comments: true
 I wasn't a total IP ignoramous. I even took a graduate-level class in media law while I was in journalism school and we covered copyright in *great* detail. So, I understood that according to US law, everything was copyrighted upon creation (or more accurately, when fixed in a set medium). And I understood that there were open source licenses that essentially released works from copyright.
 
 But (here's the admission) I thought "copyleft" was a specific license. I learned otherwise when Andrew Hall, a lawyer with Fenwick and West, LLP, who specializes in IP law, explained in his [Open Source Licensing & Business Models](http://allthingsopen.org/talks/open-source-licensing-business-models/) talk that copyleft is not a specific license, but rather a term that describes all licenses that allow derivative works, but require derivates (if distributed) to use the same license as the original work.
+
+READMORE
 
 Ahhhh! Now that makes more sense. He went on to explain that not all open source licenses are copyleft -- there are permissive licenses (like the BSD and MIT licenses), which mean that software released under that license can be used in programs that are distributed under any other type of license, including proprietary ones. The whole talk was similarly enlightening, and he covered copyright in great detail. Fortunately, Hall's talk was recorded:
 

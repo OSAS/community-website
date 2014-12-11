@@ -15,6 +15,8 @@ It's time to prioritize opening up the RDO development process and make the tech
 
 A month ago in Paris, at the OpenStack Summit, 40 or 50 RDO enthusiasts gathered to discuss the RDO community and what we can do to make it more inclusive. The number one thing that was asked for was more documentation around the process, and transparency into the CI results, so that everyone can see what's going on and know where they can jump in.
 
+READMORE
+
 Our first step in this direction is to document the packaging process. The [RDO OpenStack Packing document](http://redhat-openstack.github.io/openstack-packaging-doc/rdo-packaging.html) is still a work in process, but we felt that getting it out into the open was more important than waiting until it was perfect. 
 
 If you want to get more involved in the RDO community, this is a great place to get started. We're hoping that people that are interested in specific parts of OpenStack will step up to package those bits. The more people that are doing this, the faster we can move on everything. Everyone benefits. And more eyes on all of the moving parts ensures greater quality all around.

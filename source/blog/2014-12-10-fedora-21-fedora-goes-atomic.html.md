@@ -13,6 +13,8 @@ Fedora's [Cloud flavor](https://getfedora.org/en/cloud/) is further divided into
 
 **Applications:** Fedora Atomic is built to host applications in [docker](https://www.docker.com/whatisdocker/) containers, which provide a simple-to-use means of getting at all the workload-hosting goodness that's built into Linux, but that tends to require some assembly. 
 
+READMORE
+
 If you're looking for examples of containerized applications to run, both the [Fedora](https://github.com/fedora-cloud/Fedora-Dockerfiles) and [CentOS](https://github.com/CentOS/CentOS-Dockerfiles) projects maintain repositories of popular open source applications in containerized form. 
 
 **System Updates:** Like every other Fedora distribution, Fedora Atomic is built from RPMs, but thanks to a project called [rpm-ostree](http://www.projectatomic.io/docs/os-updates/), system updates are atomic; either the whole set of updates applies, or none of them do, and Fedora Atomic automatically keeps the previous version of the OS available for rollback in case something doesn't work out as expected.

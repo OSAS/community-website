@@ -2,8 +2,8 @@
 title: Upcoming Events and Calls for Papers
 author: jzb
 date: 2014-11-14 02:51:12 UTC
-published: true
 comments: true
+published: true
 ---
 
 ![](blog/luggage.jpg) Doing exciting work with open source cloud, containers, virtualization, or other interesting technologies? Want to show it off to other folks in the FOSS community from around the world? Then don't miss these opportunities to get the word out about your work! 
@@ -15,6 +15,7 @@ comments: true
 ```
 "Software-defined everything," DevOps, and cloud are driving open source further and faster than we might have imagined possible just a decade ago. Most recently, Docker containers and orchestration have opened up all kinds of new opportunities to develop, deploy, and manage software from the developer's desktop well into production.
 ```
+READMORE 
 
 Find out more on the [main page](http://dissociatedpress.net/miniconf/) for the miniconf, and get the [full details for the submission template](http://dissociatedpress.net/miniconf/format/).
 
@@ -39,7 +40,7 @@ You can see all the Devrooms on the main [FOSDEM site](https://fosdem.org/2015/n
 
 ## DevConf.cz
 
-Just a few days from FOSDEM, and a hop, skip, and jump over to Brno &ndash; [DevConf.cz](http://www.devconf.cz/) will be bringing about 1,000 developers, quality engineers, system administrators, and users from the Fedora, JBoss, and Red Hat communities. 
+Just a few days from FOSDEM, and a hop, skip, and jump over to Brno – [DevConf.cz](http://www.devconf.cz/) will be bringing about 1,000 developers, quality engineers, system administrators, and users from the Fedora, JBoss, and Red Hat communities. 
 
 The DevConf.cz [call for participation](http://www.devconf.cz/cfp) is open through December 1st. 
 
