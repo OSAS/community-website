@@ -1,22 +1,13 @@
 ---
+title: CentOS Community Update -- All About SIGs
 author: quaid
+date: 2014-10-14 14:00:00 UTC
+tags: CentOS, Linux, SIGs
 comments: true
-layout: post
-title: "CentOS Community Update -- All About SIGs"
-date: 2014-10-14 14:00 UTC
-tags:
-- CentOS
-- Linux
-- SIGs
-categories:
-- Blog
+published: true
 ---
 
-![](blog/CentOS_200x.png) Welcome to a new column that is publishing at least twice monthly on Tuesdays on community.redhat.com to talk about what is happening in the expanding [CentOS Project](http://www.centos.org).
-
-One of the most exciting aspects of the expanding CentOS Project is the work being done by [Special Interest Groups](http://wiki.centos.org/SpecialInterestGroup/), or SIGs, to bring emerging technologies to the CentOS community.
-
-The work of these SIGs happens on top of the CentOS Linux core release, providing new software alongside the core in the form of repositories or images. In some cases SIGs may replace core packages as part of making a variant targeted at a specific audience. SIGs can do this because members must come from the involved upstream project, and thus are authoritative about what that software and its community needs
+![](blog/CentOS_200x.png) One of the most exciting aspects of the expanding CentOS Project is the work being done by [Special Interest Groups](http://wiki.centos.org/SpecialInterestGroup/), or SIGs, to bring emerging technologies to the CentOS community. The work of these SIGs happens on top of the CentOS Linux core release, providing new software alongside the core in the form of repositories or images. In some cases SIGs may replace core packages as part of making a variant targeted at a specific audience. SIGs can do this because members must come from the involved upstream project, and thus are authoritative about what that software and its community needs
 
 READMORE
 
