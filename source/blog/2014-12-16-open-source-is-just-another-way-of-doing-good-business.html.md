@@ -3,8 +3,8 @@ title: Open Source Is Just Another Way of Doing Good Business
 author: bkp
 date: 2014-12-16 15:22:37 UTC
 tags: Linux, open source, data, big data, software, Hortonworks, Cloudera, Cask
-published: false
 comments: true
+published: true
 ---
 
 ![](blog/bolt.jpg) Red Hat has been doing what it's doing for quite a while now, and so far, it seems to be working out pretty well. Every once in a while, though, along comes a little independent validation about the viability of open source in the business world that deserves to be called out.
