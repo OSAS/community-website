@@ -15,6 +15,8 @@ This is a tricky question to answer to those not in the IT community. If I say t
 
 With those not in IT, not only are we not in the same ballpark, but there's not even a mutual understanding of the rules of the game being played.
 
+READMORE
+
 My father-in-law was the one asking this time, and I have helped him enough battling his Windows machine troubles over the years that he's picked up many of the lessons I have tried to impart. ("Open this kind of email, and kiss your data goodbye"&mdash;that sort of thing.) As something to help explain open source in general, here is what I (with my wife chiming in at times) told him.
 
 Imagine, I began, the software running on your computer as a collection of books in a library. Some books are new, some are old, some are interesting, and some are not. But whatever the books are about, they share one trait: they are books. They are come-as-they-are, static. The words on the pages are indelible, written by the authors and forever appearing as the book was published. 

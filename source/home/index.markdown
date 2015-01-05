@@ -8,7 +8,7 @@ title: Creating better technology the open source way
 wordpress_id: 41
 ---
 
-Red Hat's mission is to be the catalyst in communities of customers, contributors, and partners creating better technology the open source way.
+Red Hat's mission is to be the catalyst in communities of customers, contributors, and partners creating better technology (the open source way)[http://theopensourceway.org].
 
 
 
