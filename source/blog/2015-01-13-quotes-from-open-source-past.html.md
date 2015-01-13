@@ -7,7 +7,7 @@ comments: true
 published: true
 ---
 
-![](blog/Tux.png) Here's one:
+![](blog/Tux_sm.png) Here's one:
 
 "Linux is not in the public domain. Linux is a cancer that attaches itself in an intellectual property sense to everything it touches. That's the way that the license works." - Steve Ballmer, CEO, Microsoft, June 2001.
 
