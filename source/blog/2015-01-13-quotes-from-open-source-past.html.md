@@ -21,6 +21,8 @@ Mundie's remarks were part of an early trial balloon for Microsoft's concept of 
 
 Recent events have left me feeling nostalgic and looking back over the years at my rather odd career path... particularly the years around the turn of the century, when everyone with a proprietary license on their software seemed to have a mad on for Linux. 
 
+READMORE
+
 The early 2000s were a tumultuous time for Linux, and free and open source software in general. IBM had put $1 billion of skin in the game, and suddenly potential customers were waking up to the fact there was a stable, less-expensive way to run a server that saved a lot of time and money compared to using products from the aforementioned Microsoft or Sun Microsystems. Curiously, most of those folks also discovered they were running Linux already, as IT administrators had long before figured out the benefits of Linux.
 
 With the sudden attention came a scramble to deride this plucky young operating system. Through marketing, PR, and even the occasional lawsuit, Linux's sudden fame also came with a target.
