@@ -20,7 +20,7 @@ As with every new oVirt release, I'm here to suggest a path to getting up and ru
   
 For this howto, I'll be walking through the steps you can follow to get oVirt 3.5 up and running on a single machine with a self-hosted engine, and with self-hosted storage, courtesty of GlusterFS. 
 
-In my [next post](blog/2014/11/up-and-running-with-ovirt-3-5-part-two/), I'll describe how to add two more machines to the mix to give yourself an installation hardy enough to bring a machine down for updates and maintainence without everything grinding to a halt.
+In my [next post](/blog/2014/11/up-and-running-with-ovirt-3-5-part-two/), I'll describe how to add two more machines to the mix to give yourself an installation hardy enough to bring a machine down for updates and maintainence without everything grinding to a halt.
 
 If you have access to good external NFS or iSCSI storage to use with your oVirt exploration, I'll point out where you can skip the GlusterFS bits and use your external storage resource.
 

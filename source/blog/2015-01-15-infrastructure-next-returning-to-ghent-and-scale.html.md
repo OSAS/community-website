@@ -2,7 +2,7 @@
 title: Infrastructure.Next Returning to Ghent and SCALE
 author: jzb
 date: 2015-01-15 14:43:05 UTC
-published: false
+published: true
 comments: true
 ---
 
