@@ -81,8 +81,8 @@ jpichon:
   twitter: jpichon_net
   description: |
     Julie Pichon is a Red Hat software engineer in Dublin, Ireland. She
-    works
-    on the OpenStack project. Follow Julie on Twitter at: @jpichon_net.
+    works on the OpenStack project. Follow Julie on Twitter at:
+    @jpichon_net.
 
 jzb:
   name: Joe Brockmeier
@@ -208,7 +208,7 @@ rendsley:
   twitter: rikkiends
   description: |
     Rikki Endsley works at Red Hat on the Open Source and Standards team.
-    She lives in Austin, Texas. Follow her on Twitter at: @rikkiends.
+    Follow her on Twitter at: @rikkiends.
 
 rranjan:
   name: Rajesh Ranjan
