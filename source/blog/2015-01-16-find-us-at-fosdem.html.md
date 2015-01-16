@@ -6,9 +6,9 @@ comments: true
 published: true
 ---
 
-![](blog/fosdem2015.png) At the end of the month, more than 5,000 people from around the world will gather in Brussels for [FOSDEM 2015](https://fosdem.org/2015/)  January 31 and February 1. The event is free and registration is not required, so if you're in the area (or can get there), FOSDEM is a great way to expand your international network *and* your skillset. 
+![](blog/fosdem2015.png) At the end of the month, more than 5,000 people from around the world will gather in Brussels for [FOSDEM 2015](https://fosdem.org/2015/) ( January 31 and February 1). The event is free and registration is not required, so if you're in the area (or can get there), FOSDEM is a great way to expand your international network *and* your skillset. 
 
-The [schedule is now online](https://fosdem.org/2015/schedule/), but check back before the event to confirm that talks and speakers haven't been shifted around at the last minute. Here are a few of the many sessions you can attend to learn more about our projects:
+The [schedule is now online](https://fosdem.org/2015/schedule/), but check back before the event to confirm that talks and speakers haven't been shifted around at the last minute. Here is a sample of sessions you can attend to learn more about our projects:
 
 * Arik Hadas will explain [how to move virtual machines to oVirt](https://fosdem.org/2015/schedule/event/v2v/), and he'll provide a preview of the upcoming integration with virt-v2v.
 * Attend [Federico Simoncelli](https://twitter.com/simon3z)'s talk to find out about the ongoing effort to [integrate oVirt virtualization and Gluster storage](https://fosdem.org/2015/schedule/event/hyperconvergence/) resources in single commodity boxes that can scale horizontally. 
@@ -36,4 +36,4 @@ The [CentOS Dojo Brussels](http://wiki.centos.org/Events/Dojo/Brussels2015) will
 
 Seating is limited, so [register online](http://www.eventbrite.co.uk/e/centos-dojo-brussels-belgium-jan-30th-2015-tickets-14956180338) before it fills up.
 
-If you can't make it to Brussels, maybe we'll see you at another upcoming event. Keep an eye on our [event calendar](http://community.redhat.com/events/) for updates on where we'll be next. 
+If you can't make it to Brussels, maybe we'll see you at another upcoming event. Keep an eye on our [event calendar](http://community.redhat.com/events/) for updates on where we'll be next.
