@@ -3,8 +3,8 @@ title: 'RDO Quickstart: Doing the Neutron Dance'
 author: jbrooks
 date: 2015-01-20 17:34:01 UTC
 tags: RDO, Openstack, CentOS, Fedora, HowTo
-published: false
 comments: true
+published: true
 ---
 
 [RDO](https://openstack.redhat.com/Main_Page), the community-oriented OpenStack distribution for CentOS, Fedora, and their kin, is super-easy to get up and running, as a [recently posted](https://plus.google.com/+RichBowen/posts/M9VRQBs5Rxx) YouTube video illustrates:
