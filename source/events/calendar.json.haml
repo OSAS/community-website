@@ -54,8 +54,8 @@ layout: false
 
           {
             title: conf.name,
-            start: conf.start || time_pool.min,
-            end: conf.end || conf.start || time_pool.max.split(/T/).first,
+            start: conf.start || time_pool.min.to_date,
+            end: conf.end || conf.start || time_pool.max.to_date,
             url: current ? fragment : page + fragment,
             className: current ? "current" : "old",
             allDay: true
