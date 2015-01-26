@@ -2,6 +2,8 @@
 title: Find Us at FOSDEM
 author: rendsley
 date: 2015-01-16 20:23:13 UTC
+tags: FOSDEM, CentOS, Xen, GlusterFS, Gluster, Ceph, oVirt, Docker, containers, ManageIQ,
+  cloud, virtualization
 comments: true
 published: true
 ---
@@ -13,7 +15,7 @@ The [schedule is now online](https://fosdem.org/2015/schedule/), but check back 
 * Arik Hadas will explain [how to move virtual machines to oVirt](https://fosdem.org/2015/schedule/event/v2v/), and he'll provide a preview of the upcoming integration with virt-v2v.
 * Attend [Federico Simoncelli](https://twitter.com/simon3z)'s talk to find out about the ongoing effort to [integrate oVirt virtualization and Gluster storage](https://fosdem.org/2015/schedule/event/hyperconvergence/) resources in single commodity boxes that can scale horizontally. 
 * Federico will also give a talk on [Docker integration in oVirt and IaaS](https://fosdem.org/2015/schedule/event/dockerovirt/).
-* Do you want to learn about [smart virtual machine scheduling in an oVirt cluster](https://fosdem.org/2015/schedule/event/smartvmsched/)? If so, check out [Martin Sivák](https://twitter.com/MarSikcz)'s talk. 
+* Do you want to learn about [smart virtual machine scheduling in an oVirt cluster](https://fosdem.org/2015/schedule/event/smartvmsched/)? If so, check out Roy Golan's talk. 
 * Find out about [utilizing NUMA architecture in oVirt](https://fosdem.org/2015/schedule/event/numaovirt/) by attending [Doron Fediuck](https://twitter.com/doron_f)'s session.
 * [Niels de Vos](https://twitter.com/nixpanic) will provide [an overview of GlusterFS](https://fosdem.org/2015/schedule/event/glusterfsoverview/) and discuss future directions for the project.
 * Do you want to learn about [CentOS SIGs](http://community.redhat.com/blog/2014/10/CentOS-SIGs-update/)? Check out the [CentOS Virt SIG talk](https://fosdem.org/2015/schedule/event/immutable/) by George Dunlap.
