@@ -151,6 +151,7 @@ ignore "/centos/faq-document.html"
 ready do
   # Add yearly calendar pages
   data.events.each do |year, data|
+    next unless year.match(/[0-9]{4}/)
     proxy "/events/#{year}.html", "events/index.html", locals: {year: year}
   end
 
