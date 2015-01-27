@@ -85,14 +85,17 @@ class ConfCal < Middleman::Extension
 
     # Filter events to only include today + future events (and cache it)
     def current_events events = data.events, time_start = Time.now, time_end = Time.now + 60*60*24*365
-      if defined?(@cur_ev) && @cur_ev[time_start] && @cur_ev[time_start][time_end]
-        return @cur_ev[time_start][time_end]
+      date_start = time_start.to_date.to_s
+      date_end = time_end.to_date.to_s
+
+      if defined?($cur_ev) && $cur_ev[date_start] && $cur_ev[date_start][date_end]
+        return $cur_ev[date_start][date_end]
       end
 
-      @cur_ev ||= {}
-      @cur_ev[time_start] ||= {}
+      $cur_ev ||= {}
+      $cur_ev[date_start] ||= {}
 
-      @cur_ev[time_start][time_end] = events.each_with_object({}) do |(year_label, year), h|
+      $cur_ev[date_start][date_end] = events.each_with_object({}) do |(year_label, year), h|
         if year_label[/\d{4}/]
 
           h[year_label] = year.select do |conf_label, conf|
@@ -100,13 +103,13 @@ class ConfCal < Middleman::Extension
 
             if conf.start
               conf_date = Chronic::parse(conf.end || conf.start)
-              matches = true if conf_date >= time_start && conf_date < time_end
+              matches = true if conf_date >= date_start && conf_date < date_end
             end
 
             if conf.talks and not matches
               conf.talks.each do |talk|
                 talk_date = Chronic::parse(talk.end)
-                if talk.end && talk_date >= time_start && talk_date < time_end
+                if talk.end && talk_date >= date_start && talk_date < date_end
                   matches = true
                 end
               end
@@ -118,11 +121,11 @@ class ConfCal < Middleman::Extension
 
       end
 
-      @cur_ev[time_start][time_end].reject! {|year_label, year| year.empty?}
+      $cur_ev[date_start][date_end].reject! {|year_label, year| year.empty?}
 
-      @cur_ev[time_start][time_end] = sort_events @cur_ev[time_start][time_end]
+      $cur_ev[date_start][date_end] = sort_events $cur_ev[date_start][date_end]
 
-      current_events events, time_start, time_end
+      current_events events, date_start, date_end
     end
 
   end
