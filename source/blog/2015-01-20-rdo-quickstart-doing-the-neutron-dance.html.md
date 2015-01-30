@@ -107,7 +107,13 @@ Now networking will work... more effectively. You can log in to your OpenStack i
 
 Assuming you've added rules opening access to ICMP and SSH in your instance's security group, you should be able to ping and ssh to your VMs from other machines on your network.
 
+In my tests, I found that after rebooting the AIO machine, I had to disassociate and then reassociate the floating IP address I'd given to my VM for that floating IP to continue working. This led to some head-scratching debugging moments!
+
 Remember, this setup remains an all-in-one affair -- in order to make multiple nodes play nicely together, we need to do some more configuration, but we'll leave that topic for another time.
+
+**UPDATE:** Making multiple nodes play nicely together is actually pretty straightforward, courtesy, I believe, of neutron. To add a second compute node to the AIO setup I described above, I simply installed CentOS 7 on a second machine, stopped and disabled NetworkManager (which may not have been necessary), and edited the packstack answer file generated on packstack's first run.
+
+The answer file, named something like `packstack-answers-*.txt`, contains a line that starts `CONFIG_COMPUTE_HOSTS=` and lists the IP address of my single AIO machine. To add that second compute node, simply append a comma followed by the new IP address, and then save and exit the file. Rerun packstack with `packstack --answer-file=$YOURANSWERFILE` and when it's finished, you'll have two compute nodes, with working networking. You needn't even mess with the br-ex configuration on the second node.
 
 If you need any help with this walkthrough, or if you have suggestions on how I can improve it, ping me on IRC in the #rdo room on the FreeNode network, leave a comment below, or poke me on Twitter at [@jasonbrooks](https://twitter.com/jasonbrooks).
 
