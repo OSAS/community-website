@@ -3,8 +3,8 @@ title: RDO at the CentOS Dojo
 author: rbowen
 date: 2015-01-30 14:37:08 UTC
 tags: CentOS, Dojo, RDO, OpenStack, FOSDEM
-published: false
 comments: true
+published: true
 ---
 
 ![](blog/centosdojo_fosdem.jpg) On the Friday before FOSDEM, we gathered at the IBM offices in
