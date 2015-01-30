@@ -2,11 +2,12 @@
 title: RDO at the CentOS Dojo
 author: rbowen
 date: 2015-01-30 14:37:08 UTC
+tags: CentOS, Dojo, RDO, OpenStack, FOSDEM
 published: false
 comments: true
 ---
 
-On the Friday before FOSDEM, we gathered at the IBM offices in
+![](blog/centosdojo_fosdem.jpg) On the Friday before FOSDEM, we gathered at the IBM offices in
 Brussels for the [CentOS Dojo](http://wiki.centos.org/Events/Dojo/Brussels2015). 
 
 This morning, Haikel Guemar led a hands-on
@@ -37,3 +38,10 @@ do to make events like this more successful in the future. If you were
 in attendance and have any suggestions, please send your comments to the
 [rdo-list](https://www.redhat.com/mailman/listinfo/rdo-list) mailing
 list, so that we can help more people have a successful experience.
+
+RDO:
+*Follow the RDO community on Twitter at [@RDOCommunity](https://twitter.com/rdocommunity), and on  [Facebook](https://www.facebook.com/rdocommunity) and [G+](https://plus.google.com/communities/110409030763231732154). Subscribe to the [rdo-list mailing list](http://www.redhat.com/mailman/listinfo/rdo-list) for technical questions, or to the [newsletter mailing list](http://www.redhat.com/mailman/listinfo/rdo-newsletter) for monthly community updates.*
+
+CentOS:
+*Follow CentOS on Twitter at [@CentOS](https://twitter.com/centos) and learn more about the dojos by following [@CentOSEvents](https://twitter.com/centosevents). You can also keep up with the CentOS community on [G+](https://plus.google.com/u/0/b/113258037797946990391/+CentOS/posts) and [Facebook](https://www.facebook.com/groups/centosproject/), and in [IRC](http://wiki.centos.org/irc).*
+
