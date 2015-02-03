@@ -9,6 +9,8 @@ published: true
 
 ![](blog/fosdem2015.png)FOSDEM is one of the world's biggest gatherings of free and open source developers, and it takes a *lot* of work to put the entire thing together. Almost magically, the event is staffed and managed by volunteers and put on free of cost to the attendees. If you were one of the thousands of folks attending FOSDEM this past weekend in Brussels, you might have found yourself sitting in a devroom thinking, "Hey, I'd like to put one of these together next year!" If so, read on. 
 
+READMORE
+
 For this year's FOSDEM, I was one of the organizers for the Infrastructure-as-a-Service (IaaS) and Virtualization devrooms. Last year I stepped in at the last minute to run the Distributions devroom. Although I haven't been running devrooms nearly as long as many organizers, it was a learning experience that might benefit others who are interested in organizing one in the future.
 
 The standard disclaimer should apply here: This is my experience running a devroom; each room is different, and there's slight differences in the way the FOSDEM organizers do things each year. Also, in no way should this be taken as me saying "we did everything right" this year. Mistakes were made, and there's **always** room for improvement.
