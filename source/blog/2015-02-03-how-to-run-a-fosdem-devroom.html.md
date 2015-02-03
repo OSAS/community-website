@@ -107,7 +107,6 @@ Note that part of the job is making sure that the room is in as good a condition
 
 If you've made it this far, I hope you've picked up something useful about running a devroom. It's not easy, but not nearly as hard as it is to organize FOSDEM itself. A big thanks to the FOSDEM folks for all the work they do to put on FOSDEM, and to ULB for hosting it year after year. 
 
-Also a big thanks to the other devroom organizers, especially the folks who worked on the IaaS and virtualization devrooms with me this year: Dave Lester, Lars Kurth, Thierry Carrez, Itamar Heim, and Gibelli. And volunteers who helped staff the devroom, including Brian Proffitt, John Mark Walker, and Ian McLeod. Apologies if I missed anyone -- I place the blame on post-FOSDEM brain fog. 
+Also a big thanks to the other devroom organizers, especially the folks who worked on the IaaS and virtualization devrooms with me this year: Dave Lester, Lars Kurth, Thierry Carrez, Itamar Heim, and Luca Gibelli. And volunteers who helped staff the devroom, including Brian Proffitt, John Mark Walker, and Ian McLeod. Apologies if I missed anyone -- I place the blame on post-FOSDEM brain fog. 
 
 If this seems useful enough, I might try to compile a "HOWTO" for next year's crop of organizers. Have feedback? Let me know by email -- the username is "jzb" and the domain should be pretty obvious. Cheers!
-
