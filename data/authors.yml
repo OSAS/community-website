@@ -13,6 +13,11 @@ alarsson:
     Spice and Docker. He works from Stockholm, Sweden. Follow him on Twitter
     at @gnomealex.
 
+bkearney:
+  name: Bryan Kearney
+  twitter: "@bryan_kearney"
+  description: Bryan Kearney is a Sr. Engineering Manager at Red Hat.
+
 bkp:
   name: Brian Proffitt
   twitter: thetechscribe
@@ -235,3 +240,10 @@ tcallaway:
 
 tconrey:
   name: Theron Conrey
+
+thildred:
+  name: Tim Hildred
+  description: |
+    Tim Hildred is an internal communications specialist at Red Hat. He was
+    born on the east coast of North America, and now lives on the east coast
+    of Australia.
