@@ -244,7 +244,7 @@ Now, back at the Virtual Machines list, right-click your new VM, and choose "Run
 
 That's enough for this post. If you run into trouble following this walkthrough, I’ll be happy to help you get up and running or get pointed in the right direction. On IRC, I’m jbrooks, ping me in the #ovirt room on OFTC, write a comment below, or give me a shout on Twitter [@jasonbrooks](https://twitter.com/jasonbrooks).
 
-Stay tuned for a [followup post](blog/2014/11/up-and-running-with-ovirt-3-5-part-two/) about adding two more machines to our oVirt+Gluster setup, so that you can bring down one of the machines for maintenance or upgrades without having to shut the whole thing down.
+Stay tuned for a [followup post](/blog/2014/11/up-and-running-with-ovirt-3-5-part-two/) about adding two more machines to our oVirt+Gluster setup, so that you can bring down one of the machines for maintenance or upgrades without having to shut the whole thing down.
 
 If you’re interested in getting involved with the oVirt Project, you can find all the mailing list, issue tracker, source repository, and wiki information you need [here](http://www.ovirt.org/Community).
 
