@@ -7,7 +7,7 @@ comments: true
 published: true
 ---
 
-Next week in Los Angeles, I'll be [giving a talk](http://www.socallinuxexpo.org/scale/13x/presentations/solving-np-hard-scheduling-problems-ovirt-and-optaplanner) at the [SCALE 13x](http://www.socallinuxexpo.org/scale/13x) conference on oVirt's new [OptaPlanner-powered](http://www.optaplanner.org/) scheduling adviser.
+![](blog/oVirt-logo.png) Next week in Los Angeles, I'll be [giving a talk](http://www.socallinuxexpo.org/scale/13x/presentations/solving-np-hard-scheduling-problems-ovirt-and-optaplanner) at the [SCALE 13x](http://www.socallinuxexpo.org/scale/13x) conference on oVirt's new [OptaPlanner-powered](http://www.optaplanner.org/) scheduling adviser.
 
 Martin Sivák wrote a [great post](http://community.redhat.com/blog/2014/11/smart-vm-scheduling-in-ovirt-clusters/) about the feature a couple of months ago, but didn't cover its installation process, which still has a few rough edges. 
 
