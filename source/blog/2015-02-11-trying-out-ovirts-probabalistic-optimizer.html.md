@@ -1,5 +1,5 @@
 ---
-title: Trying out oVirt's Probabalistic Optimizer
+title: "Trying out oVirt's Probabalistic Optimizer"
 author: jbrooks
 date: 2015-02-11 21:57:48 UTC
 tags: ovirt, scale, optaplanner, docker
