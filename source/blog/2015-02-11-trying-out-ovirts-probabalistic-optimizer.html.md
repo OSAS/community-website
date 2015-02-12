@@ -1,5 +1,5 @@
 ---
-title: "Trying out oVirt's Probabalistic Optimizer"
+title: "Trying out oVirt's Probabilistic Optimizer"
 author: jbrooks
 date: 2015-02-11 21:57:48 UTC
 tags: ovirt, scale, optaplanner, docker
@@ -11,7 +11,7 @@ published: true
 
 Martin Sivák wrote a [great post](http://community.redhat.com/blog/2014/11/smart-vm-scheduling-in-ovirt-clusters/) about the feature a couple of months ago, but didn't cover its installation process, which still has a few rough edges. 
 
-Read on to learn how to install the optimizer, and start applying fancy probabalistic fu to your oVirt VM launches and migrations.
+Read on to learn how to install the optimizer, and start applying fancy probabilistic fu to your oVirt VM launches and migrations.
 
 READMORE
 
