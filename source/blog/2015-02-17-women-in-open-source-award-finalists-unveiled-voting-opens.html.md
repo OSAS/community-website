@@ -12,7 +12,7 @@ More than 100 nominations were narrowed down to 10 finalists for the [Women in O
 
 Awards will be given in two categories, Community and Academic. The finalists for the Community Award are:
 
-* Shauna GordonMcKeon, program director at OpenHatch
+* Shauna Gordon-McKeon, program director at OpenHatch
 * Elizabeth K. Joseph, systems engineer at HP
 * Deb Nicholson, community outreach director at MediaGoblin
 * Karen Sandler, executive director at the Software Freedom Conservancy
