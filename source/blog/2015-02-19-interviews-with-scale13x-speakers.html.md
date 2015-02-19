@@ -2,7 +2,7 @@
 title: Interviews with SCALE13x Speakers
 author: rendsley
 date: 2015-02-19 00:02:44 UTC
-published: false
+published: true
 comments: true
 ---
 
