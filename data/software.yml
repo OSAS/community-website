@@ -108,6 +108,9 @@ Operating system:
   - name: Gnulib
     url: http://www.gnu.org/software/gnulib/
 
+  - name: GnuTLS
+    url: http://www.gnutls.org/
+
   - name: grep
     url: http://www.gnu.org/software/grep/
 
