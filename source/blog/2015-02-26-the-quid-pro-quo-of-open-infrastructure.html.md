@@ -27,6 +27,8 @@ Rather, the model potentially applies to any organization that invests in
 software development or customization for their own use or on behalf of
 their clients.
 
+READMORE
+
 Generalizing the Red Hat model to other organizations in this way creates what
 I call the *[quid pro quo](https://www.google.com/search?q=define:+quid+pro+quo)
 of open infrastructure*. The organization commits to making its custom
@@ -177,4 +179,3 @@ already tackled, and affords more time for us to focus on addressing
 [organizations](http://www.redhat.com/en/technologies/linux-platforms). Solving
 such problems, and sharing the results, is how new waves of infrastructure
 innovation begin.
-
