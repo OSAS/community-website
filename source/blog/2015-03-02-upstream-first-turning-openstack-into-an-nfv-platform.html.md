@@ -18,6 +18,8 @@ Red Hat is a company with a policy we call “upstream first” - we work to get
 
 The simplest answer is because it is the cheapest, most sustainable way to innovate on an open source platform.  To explain why, I will explore what it means to build on top of open source projects, the different approaches people take to doing it, and the costs associated with each approach.
 
+READMORE
+
 ## Private fork
 
 ![No Interaction](blog/no_interaction.png)
