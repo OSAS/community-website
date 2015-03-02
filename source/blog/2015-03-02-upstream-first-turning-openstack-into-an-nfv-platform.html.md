@@ -1,11 +1,11 @@
 ---
 title: 'Upstream First: Turning OpenStack into an NFV platform'
 author: dneary
-date: 2015-02-27 22:38:58 UTC
+date: 2015-03-02 16:03:51 UTC
 tags: Red Hat, NFV, Virtualization, Linux Foundation, OPNFV, Telecommunications, open
   source
-published: false
 comments: true
+published: true
 ---
 
 NFV (Network Function Virtualization) has taken the telecommunications world by storm in recent years. Communicatns service providers plan to run their core services in virtual machines, running on a standardized, open source platform. This promises to reduce both capital and operation costs, and most importantly, to accelerate the delivery of new services to market through increased agility.
