@@ -8,15 +8,15 @@ comments: true
 published: true
 ---
 
-NFV (Network Function Virtualization) has taken the telecommunications world by storm in recent years. Communicatns service providers plan to run their core services in virtual machines, running on a standardized, open source platform. This promises to reduce both capital and operation costs, and most importantly, to accelerate the delivery of new services to market through increased agility.
+NFV (Network Function Virtualization) has taken the telecommunications world by storm in recent years. Communications service providers plan to run their core services in virtual machines, running on a standardized, open source platform. This promises to reduce both capital and operation costs, and most importantly, to accelerate the delivery of new services to market through increased agility.
 
 The [Open Platform for NFV](http://http://opnfv.org/) (OPNFV) project is deploying a collection of open source projects, including [OpenStack](http://http://openstack.org/) as the Infrastructure-as-a-Service layer, [OpenDaylight](http://http://opendaylight.org/) and [Open vSwitch](http://http://openvswitch.org/) for virtual network, [Ceph](http://http://ceph.com/) for virtual storage, and [libvirt](http://http://libvirt.org/) and [qemu/KVM](http://http://qemu.org/) for virtual compute. OpenStack and OpenDaylight are themselves collections of multiple projects, each with their own set of maintainers. All told, the OPNFV platform consists of around 20 different projects, many of which will need to be changed to satisfy the performance and reliability constraints of an NFV platform.
 
-How vendors make and distribute those changes will vary from one to another, with some attempting to maintain differentiation by developing features in private and integrating them in their products, without first doing the work to have those changes integrated into the upstream open source projects.
+How vendors make and distribute those changes will vary from one to another. Some participants will attempt to maintain differentiation by developing features in private, and integrating them in their products, without ensuring the changes will be integrated into the upstream open source projects. Others will propose changes at the same time as they are released in a product.
 
-Red Hat is a company with a policy we call “upstream first” - we work to get features integrated into open source projects before we integrate them into our product offerings. Why? Wouldn't it be easier just to develop features for our customers, and let the upstream projects figure out what they care about? What are the costs associated with the upstream first approach?
+Red Hat is a company with a policy we call “upstream first” - we work to get features integrated into open source projects before we integrate them into our product offerings. Wouldn't it be easier just to develop features for our customers, and let the upstream projects figure out what they care about? What are the costs associated with the upstream first approach? Why do we take this approach?
 
-The simplest answer is because it is the cheapest, most sustainable way to innovate on an open source platform.  To explain why, I will explore what it means to build on top of open source projects, the different approaches people take to doing it, and the costs associated with each approach.
+The short answer is because it is the cheapest, most sustainable way to innovate on an open source platform.  To explain why, I will explore what it means to build on top of open source projects, the different approaches people take to doing it, and the costs associated with each approach.
 
 READMORE
 
