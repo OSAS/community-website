@@ -14,16 +14,8 @@ Standard bodies:
   - name: OASIS
     url: https://www.oasis-open.org/
 
-  - name: OMG Object Management Group
-    image: omg
-    url: http://www.omg.org/
-
   - name: OpenGroup
     url: http://www.opengroup.org/
-
-  - name: W3C Web Consortium
-    name: w3c
-    url: http://www.w3.org/
 
 
 Software standards:
