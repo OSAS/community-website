@@ -31,6 +31,9 @@ Operating system:
   - name: Fedora
     url: https://fedoraproject.org
 
+  - name: CentOS
+    url: http://centos.org
+
   - name: Cygwin
     url: http://www.cygwin.com/
 
