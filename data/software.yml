@@ -274,11 +274,26 @@ Operating system:
     url: http://fedoraproject.org/wiki/Yum
 
 
+Containers:
+
+  - name: Docker
+    url: https://www.docker.com/
+  
+  - name: Project Atomic
+    image: projectatomic
+    url: http://www.projectatomic.io/
+
+  - name: Kubernetes
+    url: http://kubernetes.io/
+
+  - name: Cockpit
+    url: http://cockpit-project.org
+
+
 Desktop:
 
   - name: GNOME
-    url: https://gnome.org/
-
+    url: https://gnome.org
   - name: Xorg
     url: http://www.x.org/wiki/
 
@@ -673,8 +688,8 @@ Cloud and Virtualisation:
   - name: OpenShift
     url: https://github.com/openshift
 
-  - name: Aeolus
-    url: http://www.aeolusproject.org/
+  - name: ManageIQ
+    url: http://manageiq.org/
 
   - name: OpenStack
     url: http://openstack.org
@@ -806,6 +821,9 @@ Storage and Compute:
 
   - name: Cluster
     url: http://bonsai.hgc.jp/~mdehoon/software/cluster/
+
+  - name: Ceph
+    url: http://ceph.com
 
   ###
 
