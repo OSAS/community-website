@@ -42,7 +42,7 @@ layout: false
 
             event.uid = event.uid.gsub(/@.*/, "@#{data.site.domain}")
 
-            description_text = "Speaker: #{talk.speaker}\n\n#{talk.description.strip}"
+            description_text = "Speaker: #{talk.speaker}\n\n#{talk.description.to_s.strip}"
 
             event.summary     = talk.title.gsub(/:/, '\\:')
             event.location    = talk.location || conf.location
