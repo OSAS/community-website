@@ -3,6 +3,10 @@ Standard bodies:
   - name: DMTF
     url: http://dmtf.org/
 
+  - name: ETSI European Telecommunications Standards Institute
+    image: etsi
+    url: http://www.etsi.org/
+
   - name: IETF Internet Engineering Task Force
     image: ietf
     url: http://www.ietf.org/
