@@ -32,8 +32,6 @@ Software foundations:
 
 Operating system:
 
-  - name: Fedora
-    url: https://fedoraproject.org
 
   - name: CentOS
     url: http://centos.org
@@ -41,13 +39,16 @@ Operating system:
   - name: Cygwin
     url: http://www.cygwin.com/
 
-  - name: Linux Kernel
-    image: linux
-    url: http://www.kernel.org
+  - name: Fedora
+    url: https://fedoraproject.org
 
   - name: GNU Project
     image: gnu
     url: http://gnu.org/
+
+  - name: Linux Kernel
+    image: linux
+    url: http://www.kernel.org
 
   - name: SE Linux
     image: selinux
@@ -58,59 +59,74 @@ Operating system:
   - name: anaconda
     url: http://fedoraproject.org/wiki/Anaconda
 
-  - name: appliance-tools
-    url: http://thincrust.net/
-
   - name: attr
     url: http://savannah.nongnu.org/projects/attr
 
   - name: Autofs
-    url: http://www.autofs.org/
-
-  - name: binutils
-    url: http://www.gnu.org/software/binutils/
+    url: http://linux.die.net/man/5/autofs
 
   - name: candlepin
-    url: https://fedorahosted.org/candlepin/
+    url: http://www.candlepinproject.org/
 
   - name: cobbler
-    url: http://cobbler.github.com/
+    url: http://www.cobblerd.org/
 
-  - name: coreutils
-    url: http://www.gnu.org/software/coreutils/
+  - name: Completely Fair Scheduler
+    url: https://www.kernel.org/doc/Documentation/scheduler/sched-design-CFS.txt
 
-  - name: cpio
-    url: http://www.gnu.org/software/cpio/
+  - name: Control Group Configuration Library
+    url: http://sourceforge.net/projects/libcg/
 
-  - name: cppi
-    url: http://www.gnu.org/software/cppi/
-
-  - name: CPU scheduler
-    url: http://www.kernel.org/
-
-  - name: crypto
-    url: http://www.kernel.org/
+  - name: Crypto API
+    url: http://www.chronox.de/crypto-API/
 
   - name: DeviceKit
     url: http://www.freedesktop.org/wiki/Software/DeviceKit
 
-  - name: diffutils
-    url: http://www.gnu.org/software/diffutils/
+  - name: DistributionUtilities
+    url: https://wiki.python.org/moin/DistributionUtilities
 
   - name: Dracut
-    url: https://dracut.wiki.kernel.org/
+    url: https://dracut.wiki.kernel.org/index.php/Main_Page
+
+  - name: Editline Library
+    url: http://www.thrysoee.dk/editline/
 
   - name: elfutils
     url: https://fedorahosted.org/elfutils/
 
+  - name: FedoraLiveCD
+    url: http://fedoraproject.org/wiki/FedoraLiveCD
+
   - name: func
     url: https://fedorahosted.org/func/
 
-  - name: gawk
+  - name: GNU awk
     url: http://www.gnu.org/software/gawk/
 
-  - name: glibc
+  - name: GNU C Library
     url: http://www.gnu.org/software/libc/
+
+  - name: GNU coreutils
+    url: http://www.gnu.org/software/coreutils/
+
+  - name: GNU cpio
+    url: http://www.gnu.org/software/cpio/
+
+  - name: GNU cppi
+    url: http://www.gnu.org/software/cppi/
+
+  - name: GNU Grep
+    url: http://www.gnu.org/software/grep/
+
+  - name: GNU Grub
+    url: http://www.gnu.org/software/grub/
+
+  - name: GNU Parted
+    url: http://www.gnu.org/software/parted/
+
+  - name: GNU sed
+    url: http://www.gnu.org/software/sed/
 
   - name: Gnulib
     url: http://www.gnu.org/software/gnulib/
@@ -118,50 +134,26 @@ Operating system:
   - name: GnuTLS
     url: http://www.gnutls.org/
 
-  - name: grep
-    url: http://www.gnu.org/software/grep/
-
-  - name: grub
-    url: http://www.gnu.org/software/grub/
-
-  - name: gssproxy
+  - name: gss-proxy
     url: https://github.com/nicowilliams/gss-proxy
 
   - name: gzip
     url: http://www.gzip.org/
 
-  - name: idutils
+  - name: ID Utils
     url: http://www.gnu.org/software/idutils/
 
-  - name: IPSec
+  - name: IPSec-Tools
     url: http://ipsec-tools.sourceforge.net/
 
   - name: iptraf-ng
     url: https://fedorahosted.org/iptraf-ng/
 
   - name: Java
-    url: http://fedoraproject.org/wiki/SIGs/Java
-
-  - name: Kernel Audit
-    url: http://people.redhat.com/sgrubb/audit/
-
-  - name: Kernel cryptography libraries
-    url: http://vger.kernel.org/vger-lists.html#linux-crypto
+    url: http://www.oracle.com/technetwork/java/index.html
 
   - name: Koji
     url: http://fedoraproject.org/wiki/Koji
-
-  - name: libcgroup
-    url: http://libcg.sourceforge.net/
-
-  - name: libdhash
-    url: https://fedorahosted.org/sssd/
-
-  - name: libedit
-    url: http://www.thrysoee.dk/editline/
-
-  - name: libpath\_utils
-    url: https://fedorahosted.org/sssd/
 
   - name: libuser
     url: https://fedorahosted.org/libuser/
@@ -172,23 +164,26 @@ Operating system:
   - name: libxslt
     url: http://xmlsoft.org/XSLT/
 
-  - name: livecd-tools
-    url: http://git.fedorahosted.org/git/livecd
+  - name: Linux Audit
+    url: http://people.redhat.com/sgrubb/audit/
+
+  - name: Linux PAM
+    url: http://en.wikipedia.org/wiki/Linux_PAM
 
   - name: lynx
     url: http://lynx.isc.org/
 
-  - name: mock
+  - name: Mock
     url: http://fedoraproject.org/wiki/Projects/Mock
 
-  - name: netcat6
-    url: http://www.deepspace6.net/projects/netcat6.html
-
-  - name: Netfilter
+  - name: netfilter
     url: http://www.netfilter.org/
 
   - name: NetworkManager
     url: http://projects.gnome.org/NetworkManager/
+
+  - name: nmap
+    url: http://nmap.org/
 
   - name: OpenSSH
     url: http://www.openssh.com/
@@ -197,24 +192,18 @@ Operating system:
     url: http://www.openssl.org/
 
   - name: PackageKit
-    url: http://www.packagekit.org/
-
-  - name: PAM
-    url: http://en.wikipedia.org/wiki/Linux_PAM
-
-  - name: parted
-    url: http://www.gnu.org/software/parted/
+    url: http://www.freedesktop.org/software/PackageKit/
 
   - name: polkit
     url: http://www.freedesktop.org/wiki/Software/polkit
 
   - name: psmisc
-    url: http://sourceforge.net/projects/psmisc/
+    url: http://psmisc.sourceforge.net/
 
   - name: Pulp
     url: http://pulpproject.org/
 
-  - name: pulseaudio
+  - name: PulseAudio
     url: http://freedesktop.org/wiki/Software/PulseAudio
 
   - name: pungi
@@ -223,22 +212,19 @@ Operating system:
   - name: pynfs
     url: http://www.citi.umich.edu/projects/nfsv4/pynfs/
 
-  - name: Python distro tools
-    url: https://fedorahosted.org/web/
-
   - name: python-nss
     url: http://www.mozilla.org/projects/security/pki/python-nss/
+
+  - name: Red Hat Update Agent
+    url: http://en.wikipedia.org/wiki/Up2date
 
   - name: rpm
     url: http://rpm.org/
 
-  - name: rsyslog
+  - name: RSYSLOG
     url: http://www.rsyslog.com/
 
-  - name: sed
-    url: http://www.gnu.org/software/sed/
-
-  - name: setroubleshoot
+  - name: SETroubleshoot
     url: https://fedorahosted.org/setroubleshoot/
 
   - name: Spacewalk
@@ -247,8 +233,8 @@ Operating system:
   - name: syslog-ng
     url: http://www.balabit.com/network-security/syslog-ng
 
-  - name: System-config-tools
-    url: https://fedorahosted.org/web/
+  - name: System Security Services Daemon
+    url: https://fedorahosted.org/sssd/
 
   - name: systemd
     url: http://www.freedesktop.org/wiki/Software/systemd
@@ -257,22 +243,25 @@ Operating system:
     url: http://tin.org/
 
   - name: udev
-    url: http://www.kernel.org/
+    url: http://www.freedesktop.org/software/systemd/libudev/
 
   - name: udisks
     url: http://www.freedesktop.org/wiki/Software/udisks
 
-  - name: up2date
-    url: http://en.wikipedia.org/wiki/Up2date
+  - name: Thin Crust
+    url: http://thincrust.net/
 
-  - name: upower
+  - name: UPower
     url: http://upower.freedesktop.org/
 
-  - name: util-linux-ng
+  - name: util-linux
     url: https://github.com/karelzak/util-linux
 
   - name: Virtual memory manager
     url: http://www.kernel.org/
+
+  - name: Wildfly
+    url: http://wildfly.org/
 
   - name: yum
     url: http://fedoraproject.org/wiki/Yum
@@ -280,30 +269,36 @@ Operating system:
 
 Containers:
 
+  - name: Cockpit
+    url: http://cockpit-project.org
+
   - name: Docker
     url: https://www.docker.com/
-  
-  - name: Project Atomic
-    image: projectatomic
-    url: http://www.projectatomic.io/
 
   - name: Kubernetes
     url: http://kubernetes.io/
 
-  - name: Cockpit
-    url: http://cockpit-project.org
+  - name: Project Atomic
+    image: projectatomic
+    url: http://www.projectatomic.io/
+
+  ###
+
+  - name: Flannel
+    url: https://github.com/coreos/flannel
 
 
 Desktop:
 
-  - name: GNOME
-    url: https://gnome.org
-  - name: Xorg
-    url: http://www.x.org/wiki/
+  - name: Evolution
+    url: http://projects.gnome.org/evolution/
 
   - name: freedesktop.org
     image: freedesktop
     url: http://www.freedesktop.org/
+
+  - name: GNOME
+    url: https://gnome.org
 
   - name: LibreOffice
     url: http://www.libreoffice.org/
@@ -312,28 +307,25 @@ Desktop:
     image: firefox
     url: http://www.mozilla.org/en-US/firefox/new/
 
-  - name: Evolution
-    url: http://projects.gnome.org/evolution/
+  - name: Xorg
+    url: http://www.x.org/wiki/
 
   ###
 
-  - name: avahi
+  - name: Avahi
     url: http://avahi.org/
 
-  - name: cairo
+  - name: Cairo
     url: http://cairographics.org/
 
   - name: colord
     url: http://www.freedesktop.org/software/colord/
 
-  - name: Dbus
+  - name: D-Bus
     url: http://www.freedesktop.org/wiki/Software/dbus
 
-  - name: Drivers
-    url: http://www.x.org/wiki
-
-  - name: Evolution-data-server
-    url: http://www.go-evolution.org/EDS_Architecture
+  - name: EDS
+    url: https://developer.gnome.org/eds/unstable
 
   - name: Evolution-exchange
     url: http://projects.gnome.org/evolution/
@@ -341,87 +333,92 @@ Desktop:
   - name: fontconfig
     url: http://www.freedesktop.org/wiki/Software/fontconfig
 
-  - name: gamin
+  - name: Gamin
     url: http://people.gnome.org/~veillard/gamin/
 
-  - name: glib, gtk+
-    url: http://www.gtk.org/
+  - name: glib
+    url: https://developer.gnome.org/glib/stable/
+
+  - name: GNOME Keyring
+    url: https://wiki.gnome.org/action/show/Projects/GnomeKeyring
+
+  - name: GNOME Power Manager
+    url: https://projects.gnome.org/gnome-power-manager/
 
   - name: GNOME Shell
-    url: https://live.gnome.org/GnomeShell
+    url: https://wiki.gnome.org/Projects/GnomeShell
 
-  - name: Gnome-bluetooth
-    url: https://live.gnome.org/GnomeBluetooth
+  - name: GNOME Videos
+    url: https://wiki.gnome.org/Apps/Videos
 
-  - name: Gnome-control-center
+  - name: GNOME-bluetooth
+    url: https://wiki.gnome.org/Projects/GnomeBluetooth
+
+  - name: GNOME-control-center
     url: http://git.gnome.org/browse/gnome-control-center/
 
-  - name: Gnome-disk-utils
+  - name: gnome-disk-utility
     url: http://git.gnome.org/browse/gnome-disk-utility/
-
-  - name: Gnome-keyring
-    url: https://live.gnome.org/GnomeKeyring
-
-  - name: Gnome-power-manager
-    url: http://projects.gnome.org/gnome-power-manager/
 
   - name: Gnome-user-share
     url: http://git.gnome.org/browse/gnome-user-share/
+
+  - name: GTK+
+    url: http://www.gtk.org/
 
   - name: gvfs
     url: http://git.gnome.org/browse/gvfs/
 
   - name: libminidump
-    url: http://projects.gnome.org/gnome-power-manager/
+    url: http://cgit.freedesktop.org/libminidump
 
   - name: libnotify
     url: http://www.galago-project.org/news/index.php
 
-  - name: LibreOffice – file filters
-    url: http://www.libreoffice.org/
-
   - name: LibreOffice Calc
-    url: http://www.libreoffice.org/
+    url: http://www.libreoffice.org/discover/calc/
+
+  - name: LibreOffice - File Filters
+    url: https://help.libreoffice.org/Common/About_Import_and_Export_Filters
 
   - name: LibreOffice Writer
-    url: http://www.libreoffice.org/
+    url: http://www.libreoffice.org/discover/writer/
 
   - name: nautilus
-    url: https://live.gnome.org/Nautilus
+    url: https://wiki.gnome.org/action/show/Apps/Nautilus
 
   - name: PackageKit
-    url: http://www.packagekit.org/
+    url: http://www.freedesktop.org/software/PackageKit/
 
   - name: pango
     url: http://www.pango.org/
 
-  - name: Piglit
+  - name: PatternFly
+    url: https://www.patternfly.org
+
+  - name: piglit
     url: http://cgit.freedesktop.org/piglit/
 
   - name: pixman
     url: http://cgit.freedesktop.org/pixman/
 
-  - name: polkit-qt-1
+  - name: Polkit Qt
     url: https://projects.kde.org/projects/kdesupport/polkit-qt-1
 
-  - name: poppler
+  - name: Poppler
     url: http://poppler.freedesktop.org/
 
-  - name: totem
-    url: http://projects.gnome.org/totem/index.html
-
-  - name: UDisks Solid back-end
+  - name: udisks
     url: http://www.freedesktop.org/wiki/Software/udisks
 
   - name: Wayland
     url: http://wayland.freedesktop.org/
 
-  - name: Xinput
-    url: http://www.x.org/wiki/XInputSpec
-
   - name: XrandR
-    url: http://www.x.org/wiki/Projects/XRandR
+    url: http://cgit.freedesktop.org/xorg/app/xrandr/
 
+  - name: xinput
+    url: http://www.x.org/archive/current/doc/man/man1/xinput.1.xhtml
 
 Middleware and Identity:
 
@@ -429,28 +426,56 @@ Middleware and Identity:
     url: http://apache.org
 
   - name: Apache Tomcat
+    image: tomcat
     url: http://tomcat.apache.org/
-
-  - name: JBoss Application Server 7
-    image: jboss
-    url: http://www.jboss.org/
-
-  - name: Hibernate
-    url: http://www.hibernate.org/
 
   - name: freeIPA
     url: http://freeipa.org/page/Main_Page
 
+  - name: Hibernate
+    url: http://www.hibernate.org/
+
+  - name: JBoss Application Server
+    image: jboss
+    url: http://www.jboss.org/
+
   ###
 
   - name: 389 project
-    url: http://port389.org/wiki/Main_Page
-
-  - name: ActiveMQ
-    url: https://activemq.apache.org/
+    url: http://port389.org/
 
   - name: AeroGear
     url: http://aerogear.org
+
+  - name: Æsh
+    url: http://aeshell.github.io/
+
+  - name: Apache ActiveMQ
+    url: https://activemq.apache.org/
+
+  - name: Apache Camel
+    url: http://camel.apache.org/
+
+  - name: Apache CXF
+    url: http://cxf.apache.org/
+
+  - name: Apache DeltaSpike
+    url: https://cwiki.apache.org/confluence/display/DeltaSpike/
+
+  - name: Apache HTTP Server Project
+    url: http://httpd.apache.org
+
+  - name: Apache Karaf
+    url: https://karaf.apache.org/
+
+  - name: Apache ODE
+    url: http://ode.apache.org
+
+  - name: Apache Qpid
+    url: http://qpid.apache.org/
+
+  - name: Apache ServiceMix
+    url: https://servicemix.apache.org/
 
   - name: APIviz
     url: http://code.google.com/p/apiviz/
@@ -461,224 +486,204 @@ Middleware and Identity:
   - name: AuthHub
     url: https://fedorahosted.org/AuthHub/
 
-  - name: Blacktie
-    url: http://jboss.org/blacktie
-
-  - name: Boxgrinder
+  - name: BoxGrinder
     url: http://boxgrinder.org
 
   - name: Byteman
-    url: http://jboss.org/byteman
-
-  - name: Camel
-    url: http://camel.apache.org/
+    url: http://byteman.jboss.org/
 
   - name: CapeDwarf
-    url: http://jboss.org/capedwarf
+    url: http://capedwarf.org/
 
-  - name: Certmonger
+  - name: certmonger
     url: https://fedorahosted.org/certmonger/
 
   - name: CRaSH
-    url: http://www.julienviet.com/crash/
+    url: http://www.crashub.org/
 
-  - name: CXF
-    url: http://cxf.apache.org/
+  - name: Dashbuilder
+    url: http://dashbuilder.org
 
-  - name: Data Grids
+  - name: Data Grids for the Java Platform
     url: http://jcp.org/en/jsr/detail?id=347
 
-  - name: DeltaSpike
-    url: https://cwiki.apache.org/confluence/display/DeltaSpike/
-
   - name: Dogtag
-    url: http://pki.fedoraproject.org/
+    url: http://pki.fedoraproject.org/wiki/PKI_Main_Page
 
   - name: Drools
-    url: http://jboss.org/drools
+    url: http://www.drools.org/
 
-  - name: EJB 3.0
-    url: http://jboss.org/ejb3
-
-  - name: EJB Client Library
-    url: https://github.com/jbossas/jandex
+  - name: EJB 3
+    url: http://ejb3.jboss.org/
 
   - name: Embedded Jopr
-    url: http://jboss.org/embjopr
+    url: http://embjopr.jboss.org/
 
   - name: Errai
-    url: http://jboss.org/errai
+    url: http://erraiframework.org/
 
-  - name: exo JCR
-    url: http://jboss.org/exojcr
+  - name: eXo JCR
+    url: http://exojcr.jboss.org/
 
   - name: GateIn Portal
-    url: http://jboss.org/gatein
+    url: http://gatein.jboss.org/
 
   - name: HornetQ
-    url: http://jboss.org/hornetq
-
-  - name: httpd
-    url: http://httpd.apache.org
+    url: http://hornetq.jboss.org/
 
   - name: Immutant
-    url: http://immutant.org
+    url: http://immutant.org/
 
   - name: Infinispan
-    url: http://jboss.org/infinispan
+    url: http://infinispan.org/
 
   - name: IronJacamar
-    url: http://jboss.org/ironjacamar
+    url: http://www.ironjacamar.org/
+
+  - name: Jandex
+    url: https://github.com/wildfly/jandex
 
   - name: JBoss AS Server Manager
     url: https://issues.jboss.org/browse/JBASM
 
   - name: JBoss Clustering
-    url: http://jboss.org/jbossclustering
+    url: http://jbossclustering.jboss.org/
 
-  - name: JBoss Developer Framework
-    url: http://jboss.org/jdf
+  - name: JBoss Developer Studio
+    url: http://www.jboss.org/products/devstudio/overview/
 
   - name: JBoss ESB
-    url: http://jboss.org/jbossesb
+    url: http://jbossesb.jboss.org/
 
   - name: JBoss Forge
-    url: http://jboss.org/forge
+    url: http://forge.jboss.org/
 
-  - name: JBoss Logging
-    url: https://github.com/jboss-logging
-
-  - name: JBoss Mass
-    url: http://jboss.org/mass/MAT
-
-  - name: JBoss Portlet Bridge
-    url: http://jboss.org/portletbridge
+  - name: JBoss Migration Center
+    url: http://jboss.org/migration/
 
   - name: JBoss Profiler
-    url: http://jboss.org/jbossprofiler
+    url: http://jbossprofiler.jboss.org/
 
   - name: JBoss Remoting
-    url: http://jboss.org/jbossremoting
+    url: http://jbossremoting.jboss.org/
 
   - name: JBoss Serialization
-    url: http://jboss.org/serialization
+    url: http://serialization.jboss.org/
 
   - name: JBoss Tools
-    url: http://jboss.org/tools
+    url: http://tools.jboss.org/
 
-  - name: JBoss Transactions
-    url: http://jboss.org/jbosstm
+  - name: jboss-logging
+    url: https://github.com/jboss-logging
 
   - name: JBoss Web Services
-    url: http://jboss.org/jbossws
+    url: http://jbossws.jboss.org/
 
   - name: jBPM
-    url: http://jboss.org/jbpm
+    url: http://www.jbpm.org/
 
   - name: JGroups
     url: http://jgroups.org
 
-  - name: jreadline
-    url: https://github.com/stalep/jreadline
+  - name: Jreadline
+    url: https://github.com/qmx/jreadline
 
   - name: JSFUnit
-    url: http://jboss.org/jsfunit
+    url: http://jsfunit.jboss.org/
 
   - name: jUDDI
     url: http://juddi.apache.org
 
-  - name: Karaf
-    url: https://karaf.apache.org/
-
-  - name: MIT Kerberos
+  - name: Kerberos
     url: http://web.mit.edu/kerberos/
 
-  - name: mod\_cluster
-    url: http://jboss.org/mod_cluster
+ - name: Keycloak
+    url: https://keycloak.jboss.org/
+
+  - name: mod_cluster
+    url: http://mod-cluster.jboss.org/
 
   - name: ModeShape
-    url: http://jboss.org/modeshape
+    url: http://modeshape.jboss.org/
+
+  - name: Narayana
+    url: http://narayana.io/
 
   - name: Netty
     url: https://netty.io/
 
-  - name: ODE
-    url: http://ode.apache.org
-
   - name: PicketBox
-    url: http://jboss.org/picketbox
+    url: http://picketbox.jboss.org/
 
   - name: PicketLink
-    url: http://jboss.org/picketlink/IDM
+    url: http://picketlink.org/
+
+  - name: Portlet Bridge
+    url: http://portletbridge.jboss.org/
 
   - name: PressGang
-    url: http://jboss.org/pressgang
-
-  - name: Qpid
-    url: http://qpid.apache.org/
+    url: http://pressgang.jboss.org/
 
   - name: RESTEasy
-    url: http://jboss.org/resteasy
+    url: http://resteasy.jboss.org/
 
   - name: RHQ
-    url: http://rhq-project.org
+    url: http://rhq-project.github.io/rhq/
 
   - name: RichFaces
-    url: http://jboss.org/richfaces
+    url: http://richfaces.jboss.org/
 
   - name: RiftSaw
-    url: http://jboss.org/riftsaw
+    url: http://riftsaw.jboss.org/
 
   - name: Savara
-    url: http://jboss.org/savara
+    url: http://savara.jboss.org/
 
   - name: Scribble
-    url: http://jboss.org/scribble
-
-  - name: Seam 3
-    url: http://seamframework.org/Seam3
-
-  - name: ServiceMix
-    url: https://servicemix.apache.org/
+    url: http://www.scribble.org/
 
   - name: ShrinkWrap
-    url: http://jboss.org/shrinkwrap
+    url: http://arquillian.org/guides/shrinkwrap_introduction/
 
-  - name: Slapi-NIS
+  - name: slapi-nis
     url: https://fedorahosted.org/slapi-nis/
 
   - name: Snowdrop
-    url: http://jboss.org/snowdrop
-
-  - name: SSSD
-    url: https://fedorahosted.org/sssd/
+    url: http://snowdrop.jboss.org/
 
   - name: Stilts
     url: http://stilts.projectodd.org
 
   - name: SwitchYard
-    url: http://jboss.org/switchyard
+    url: http://switchyard.jboss.org/
 
   - name: Tattletale
-    url: http://jboss.org/tattletale
+    url: http://tattletale.jboss.org/
 
   - name: Teiid
-    url: http://jboss.org/teiid
+    url: http://teiid.jboss.org/
 
   - name: TorqueBox
     url: http://torquebox.org
 
+  - name: UberFire
+    url: http://uberfireframework.org
+
   - name: Weld
-    url: http://seamframework.org/Weld
+    url: http://weld.cdi-spec.org/
 
   - name: Wise
-    url: http://jboss.org/wise
+    url: http://wise.jboss.org/
 
   - name: XNIO
-    url: http://jboss.org/xnio
+    url: http://xnio.jboss.org/
 
 
 Cloud and Virtualisation:
+
+  - name: Apache Deltacloud
+    image: deltacloud
+    url: http://deltacloud.apache.org/
 
   - name: KVM
     url: http://www.linux-kvm.org/page/Main_Page
@@ -686,112 +691,123 @@ Cloud and Virtualisation:
   - name: libvirt
     url: http://libvirt.org/
 
-  - name: oVirt
-    url: http://www.ovirt.org/
-
-  - name: OpenShift
-    url: https://github.com/openshift
-
   - name: ManageIQ
     url: http://manageiq.org/
+
+  - name: OpenDaylight
+    url: http://www.opendaylight.org
+
+  - name: OpenShift Origin
+    image: openshift
+    url: https://github.com/openshift
 
   - name: OpenStack
     url: http://openstack.org
 
-  - name: Deltacloud
-    url: http://deltacloud.apache.org/
+  - name: oVirt
+    url: http://www.ovirt.org/
+
 
   ###
 
+  - name: aeolus-configure
+    url: https://github.com/aeolusproject/aeolus-configure
+
   - name: Audrey
-    url: http://www.aeolusproject.org/audrey.html
+    url: https://github.com/aeolusproject/audrey
 
   - name: Augeas
     url: http://augeas.net
 
   - name: Boxes
-    url: https://live.gnome.org/Boxes
+    url: https://wiki.gnome.org/action/show/Apps/Boxes
 
   - name: Conductor
-    url: http://www.aeolusproject.org/conductor.html
+    url: https://github.com/aeolusproject/conductor
 
-  - name: Configure
-    url: http://www.aeolusproject.org/configure.html
+  - name: DPDK
+    url: http://www.dpdk.org
 
-  - name: Image Factory
-    url: http://www.aeolusproject.org/imagefactory.html
-
-  - name: Image Warehouse
-    url: http://www.aeolusproject.org/imagewarehouse.html
+  - name: imagefactory
+    url: http://imgfac.org/
 
   - name: Katello
     url: http://www.katello.org/
 
+  - name: Kimchi
+    url: https://github.com/kimchi-project/kimchi
+
   - name: libguestfs
     url: http://libguestfs.org/
 
-  - name: libvirt support
-    url: http://libvirt.org/
-
   - name: Matahari
-    url: http://matahariproject.org/
+    url: https://fedoraproject.org/wiki/Features/Matahari
 
-  - name: OpenStack Dashboard
-    url: http://horizon.openstack.org/
+  - name: moVirt
+    url: http://www.ovirt.org/Project_moVirt
+
+  - name: Open vSwitch
+    url: http://openvswitch.org/
 
   - name: OpenStack Glance
-    url: http://glance.openstack.org
+    url: http://docs.openstack.org/developer/glance/
+
+  - name: OpenStack Horizon
+    url: http://docs.openstack.org/developer/horizon/
 
   - name: OpenStack Keystone
-    url: http://keystone.openstack.org/
+    url: http://docs.openstack.org/developer/keystone/
+
+  - name: OpenStack Neutron
+    url: http://docs.openstack.org/developer/neutron/
 
   - name: OpenStack Nova
-    url: http://nova.openstack.org/
-
-  - name: OpenStack Quantum
-    url: http://quantum.openstack.org
+    url: http://docs.openstack.org/developer/nova/
 
   - name: OpenStack Swift
-    url: http://swift.openstack.org
+    url: http://docs.openstack.org/developer/swift/
 
-  - name: Ovirt-engine
-    url: http://www.ovirt.org/Building_oVirt_engine
+  - name: OPNFV
+    url: http://www.opnfv.org
+
+  - name: oVirt Engine
+    url: http://www.ovirt.org/OVirt_Engine_Development_Environment
+
+  - name: oVirt Node
+    url: http://www.ovirt.org/Category:Node
 
   - name: OVMF
-    url: http://tianocore.github.io/ovmf/
+    url: http://www.tianocore.org/ovmf/
 
   - name: Oz
-    url: http://www.aeolusproject.org/oz.html
+    url: https://github.com/clalancette/oz/wiki
 
   - name: QEMU
     url: http://wiki.qemu.org/Main_Page
 
-  - name: smokestack
-    url: http://wiki.openstack.org/smokestack
+  - name: Smokestack
+    url: https://wiki.openstack.org/wiki/Smokestack
 
   - name: Spherical
-    url: http://aeolusproject.org/
+    url: https://github.com/aeolusproject/spherical
 
-  - name: Spice server
+  - name: Spice
     url: http://spice-space.org/home.html
 
   - name: Spice-gtk
-    url: http://spice-space.org/page/Spice-Gtk
+    url: http://www.spice-space.org/page/Spice-Gtk
 
   - name: Spice-protocol
-    url: http://spice-space.org/home.html
+    url: http://www.spice-space.org/docs/spice_protocol.pdf
 
   - name: The Foreman
     url: http://theforeman.org/
 
   - name: vdagent
-    url: http://spice-space.org/home.html
+    url: http://www.spice-space.org/page/Whiteboard/AgentProtocol
 
   - name: vdsm
     url: http://wiki.ovirt.org/Category:Vdsm
-
-  - name: Virt-manager
-    url: http://virt-manager.org/
 
   - name: Virt-clone
     url: http://virt-manager.org/
@@ -802,14 +818,17 @@ Cloud and Virtualisation:
   - name: Virt-Install
     url: http://virt-manager.org/
 
+  - name: Virt-manager
+    url: http://virt-manager.org/
+
   - name: Virt-viewer
     url: http://virt-manager.org/
 
 
 Storage and Compute:
 
-  - name: PostgreSQL
-    url: http://www.postgresql.org/
+  - name: Ceph
+    url: http://ceph.com
 
   - name: Gluster
     url: http://www.gluster.org/
@@ -820,34 +839,28 @@ Storage and Compute:
   - name: LVM2
     url: http://sourceware.org/lvm2/
 
+  - name: PostgreSQL
+    url: http://www.postgresql.org/
+
   - name: Samba
     url: http://www.samba.org/
 
-  - name: Cluster
-    url: http://bonsai.hgc.jp/~mdehoon/software/cluster/
-
-  - name: Ceph
-    url: http://ceph.com
-
   ###
 
-  - name: btrfs
+  - name: Btrfs
     url: https://btrfs.wiki.kernel.org/index.php/Main_Page
 
-  - name: cachefs
-    url: http://en.gentoo-wiki.com/wiki/CacheFS
+  - name: CacheFS
+    url: https://code.google.com/p/cachefs/
 
   - name: CIFS
     url: http://www.samba.org/cifs/
 
-  - name: Cluster
-    url: https://fedorahosted.org/cluster/wiki/HomePage
-
-  - name: Cluster3
+  - name: Cluster 3
     url: http://bonsai.hgc.jp/~mdehoon/software/cluster/
 
   - name: Corosync
-    url: http://www.corosync.org/
+    url: http://corosync.github.io/corosync/
 
   - name: Cumin
     url: https://fedorahosted.org/grid/wiki/Cumin
@@ -859,43 +872,52 @@ Storage and Compute:
     url: http://sourceware.org/cluster/dlm/
 
   - name: ext3
-    url: https://ext4.wiki.kernel.org/index.php/Main_Page
+    url: https://www.kernel.org/doc/Documentation/filesystems/ext3.txt
 
   - name: ext4
     url: https://ext4.wiki.kernel.org/index.php/Main_Page
 
+  - name: fence-agents
+    url: https://github.com/ClusterLabs/fence-agents
+
+  - name: fence-virt
+    url: https://github.com/ClusterLabs/fence-virt
+
   - name: GFS
-    url: https://fedorahosted.org/cluster/wiki/HomePage
+    url: https://sourceware.org/cluster/gfs/
 
   - name: GFS2
-    url: http://sourceware.org/cluster/gfs/
+    url: https://git.fedorahosted.org/git/gfs2-utils.git
 
   - name: libibverbs
-    url: http://packages.debian.org/sid/libibverbs-dev
+    url: https://packages.debian.org/sid/libibverbs-dev
 
   - name: libqb
-    url: https://github.com/asalkeld/libqb/wiki
+    url: https://github.com/ClusterLabs/libqb/wiki
 
-  - name: luci
+  - name: libstoragemgmt
+    url: https://github.com/libstorage/libstoragemgmt/
+
+  - name: Linux Infiniband Project
+    url: http://infiniband.sourceforge.net/
+
+  - name: linux-nfs
+    url: http://wiki.linux-nfs.org/wiki/index.php/Main_Page
+
+  - name: Luci
     url: https://fedorahosted.org/cluster/wiki/Luci
 
   - name: LVM2
     url: http://sourceware.org/lvm2/
 
-  - name: NFSv4
-    url: http://wiki.linux-nfs.org/wiki/index.php/Main_Page
+  - name: NFS-Ganesha
+    url: https://github.com/nfs-ganesha/nfs-ganesha/wiki
 
   - name: openais
-    url: http://www.openais.org/doku.php
-
-  - name: openib
-    url: http://infiniband.sourceforge.net/
-
-  - name: Open vSwitch
-    url: http://openvswitch.org/
+    url: https://oss.oracle.com/osswiki/OpenAIS.html
 
   - name: pacemaker
-    url: http://clusterlabs.org/
+    url: http://clusterlabs.org/pacemaker.html
 
   - name: rgmanager
     url: https://fedorahosted.org/cluster/wiki/RGManager
@@ -904,7 +926,7 @@ Storage and Compute:
     url: http://www.samba.org/
 
   - name: vfs
-    url: http://kernel.org/
+    url: https://www.kernel.org/doc/Documentation/filesystems/vfs.txt
 
   - name: Wallaby
     url: http://getwallaby.com/
@@ -915,6 +937,9 @@ Storage and Compute:
 
 Developer Tools:
 
+  - name: Eclipse
+    url: http://www.eclipse.org
+
   - name: GCC
     url: http://gcc.gnu.org/
 
@@ -923,37 +948,28 @@ Developer Tools:
 
   ###
 
-  - name: Eclipse
-    url: http://www.eclipse.org
+  - name: Apache Maven
+    url: https://maven.apache.org/
 
-  - name: Open JDK
-    url: http://openjdk.java.net/
-
-  - name: binutils
-    url: http://www.gnu.org/software/binutils/
-
-  - name: Eclipse CDT
-    url: http://www.eclipse.org/cdt/
+  - name: Beaker
+    url: https://beaker-project.org/
 
   - name: Ceylon
     url: http://ceylon-lang.org
 
   - name: Ceylon IDE
-    url: http://ceylon-lang.org/documentation/current/ide
+    url: http://ceylon-lang.org/documentation/1.1/ide/
 
-  - name: diffutil
-    url: http://www.gnu.org/software/diffutils/
+  - name: Eclipse CDT
+    url: http://www.eclipse.org/cdt/
 
-  - name: dyninst
-    url: http://www.dyninst.org/
-
-  - name: Eclipse
-    url: http://eclipse.org
+  - name: Eclipse Linux Tools Project
+    url: http://www.eclipse.org/linuxtools/
 
   - name: elfutils
     url: https://fedorahosted.org/elfutils/
 
-  - name: g++
+  - name: gcc
     url: http://gcc.gnu.org
 
   - name: gcj
@@ -962,38 +978,47 @@ Developer Tools:
   - name: gdb
     url: http://sourceware.org/gdb/
 
+  - name: GNU Binutils
+    url: http://www.gnu.org/software/binutils/
+
+  - name: GNU Diffutils
+    url: http://www.gnu.org/software/diffutils/
+
+  - name: GNU M4
+    url: http://www.gnu.org/software/m4/
+
+  - name: GNU Patch
+    url: http://savannah.gnu.org/projects/patch/
+
   - name: JRuby
     url: http://jruby.org/
 
-  - name: Eclipse Linux Tools project
-    url: http://www.eclipse.org/linuxtools/
+  - name: Maven Integration for Eclipse
+    url: http://www.eclipse.org/m2e/
 
-  - name: m2e-wtp
-    url: http://www.eclipse.org/proposals/technology.m2e.m2e-wtp/
-
-  - name: m4
-    url: http://www.gnu.org/software/m4/
-
-  - name: Maven
-    url: https://maven.apache.org/
+  - name: Maven Integration for Web Tools Platform
+    url: https://www.eclipse.org/m2e-wtp/
 
   - name: OpenJDK
     url: http://openjdk.java.net/
 
-  - name: oprofile
+  - name: OProfile
     url: http://oprofile.sourceforge.net/news/
 
-  - name: papi
+  - name: PAPI
     url: http://icl.cs.utk.edu/papi/
 
-  - name: patch
-    url: http://www.gnu.org/software/patch/
+  - name: Paradyn
+    url: http://www.dyninst.org/
 
   - name: patchutils
     url: http://cyberelk.net/tim/software/patchutils/
 
-  - name: pcp
-    url: http://oss.sgi.com/projects/pcp/
+  - name: Performance Co-Pilot
+    url: http://www.pcp.io/
+
+  - name: rpmgrill
+    url: https://git.fedorahosted.org/git/rpmgrill.git
 
   - name: suds
     url: https://fedorahosted.org/suds/
