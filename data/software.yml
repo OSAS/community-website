@@ -1,4 +1,5 @@
- Software foundations:
+
+Software foundations:
 
   - name: Document Foundation
     image: documentfoundation
@@ -420,6 +421,7 @@ Desktop:
   - name: xinput
     url: http://www.x.org/archive/current/doc/man/man1/xinput.1.xhtml
 
+
 Middleware and Identity:
 
   - name: Apache
@@ -597,7 +599,7 @@ Middleware and Identity:
   - name: Kerberos
     url: http://web.mit.edu/kerberos/
 
- - name: Keycloak
+  - name: Keycloak
     url: https://keycloak.jboss.org/
 
   - name: mod_cluster
@@ -1034,3 +1036,4 @@ Developer Tools:
 
   - name: vc-dwim
     url: http://www.gnu.org/software/vc-dwim/
+
