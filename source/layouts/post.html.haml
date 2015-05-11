@@ -20,4 +20,5 @@
     - content_for :tail do
       :coffee
         $('article.post').copyright
-          text: '<hr>#{disclaimer.tr("\n", ' ').tr("'", "\'")}'
+          text: '<hr>#{disclaimer.tr("\n", ' ').tr("'", "\'")}',
+          minlength: 500
