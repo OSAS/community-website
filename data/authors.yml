@@ -77,6 +77,10 @@ jbrooks:
 
 johnmark:
   name: John Mark Walker
+  twitter: johnmark
+  description: |
+    John Mark Walker is the Open Source Ecosystems Manager on the Open Source
+    and Standards team at Red Hat.
 
 jottinger:
   name: Joseph Ottinger
