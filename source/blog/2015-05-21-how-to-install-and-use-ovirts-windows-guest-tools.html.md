@@ -17,6 +17,8 @@ The oVirt Windows Guest Tools (oVirt WGT) installer, which made its debut in oVi
   * oVirt Guest Agent, which reports to oVirt Manager information such as IP addresses and FQDN of the VM.
   * Spice Guest Agent, which provides functions such as copy-and-paste between the client and the VM, as well making it possible to seamlessly go in and out of the VM's console with a mouse pointer. Without this agent, you would need to "release" your mouse pointer each time you want to go outside of the console.
     
+READMORE
+
 ### Getting and Installing oVirt WGT
 
 Getting the tools is quite easy -- all you have to do is to make sure you have installed the `ovirt-guest-tools-iso` RPM package. The current package for 3.5 at the time of writing this article is ovirt-guest-tools-iso-3.5-7.noarch.rpm.
