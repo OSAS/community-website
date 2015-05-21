@@ -79,8 +79,8 @@ johnmark:
   name: John Mark Walker
   twitter: johnmark
   description: |
-    John Mark Walker is the Open Source Ecosystems Manager on the Open Source
-    and Standards team at Red Hat.
+    John Mark Walker is the Open Source Ecosystems Manager on the Open
+    Source and Standards team at Red Hat.
 
 jottinger:
   name: Joseph Ottinger
@@ -108,6 +108,10 @@ kchamarthy:
     Kashyap Chamarthy works in the Red Hat cloud engineering group, focusing
     his contributions on interactions between OpenStack and its underlying
     virtualization components.
+
+lveyde:
+  name: Lev Veyde
+  description: Lev Veyde is a Software Engineer at Red Hat, based in Ra'anana, Israel.
 
 mgoldboim:
   name: Moran Goldboim
