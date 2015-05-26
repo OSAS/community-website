@@ -3,8 +3,8 @@ title: Highlights From RDO Meeting at OpenStack Summit
 author: rbowen
 date: 2015-05-26 19:29:33 UTC
 tags: RDO, OpenStack Summit
-published: false
 comments: true
+published: true
 ---
 
 On Thursday morning at the OpenStack Summit in Vancouver, roughly 60 RDO enthusiasts gathered to discuss a variety of topics around the RDO project. Officially we had just 40 minutes, but since we were followed by a coffee break, we went overtime by about 20 minutes, and there was still some hallway discussion following that.
