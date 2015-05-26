@@ -1,9 +1,9 @@
 ---
 title: How to Install oVirt's Windows Guest Tools
 author: lveyde
-date: 2015-05-21 22:25:31 UTC
-tags: ovirt, windows
-published: false
+date: 2015-05-26 13:00 UTC
+tags: ovirt, windows, virtualization
+published: true
 comments: true
 ---
 
