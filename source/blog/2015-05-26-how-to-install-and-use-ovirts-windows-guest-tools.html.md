@@ -1,10 +1,10 @@
 ---
 title: How to Install oVirt's Windows Guest Tools
 author: lveyde
-date: 2015-05-21 22:25:31 UTC
-tags: ovirt, windows
-published: false
+date: 2015-05-26 16:40:45 UTC
+tags: ovirt, windows, virtualization
 comments: true
+published: true
 ---
 
 The oVirt Windows Guest Tools (oVirt WGT) installer, which made its debut in oVirt version 3.5, allows users to optimize Windows VMs for oVirt by easing the installation of:
