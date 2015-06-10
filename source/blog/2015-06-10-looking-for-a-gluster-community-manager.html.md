@@ -1,7 +1,7 @@
 ---
 title: Looking for a Gluster Community Manager
 author: Tom Callaway
-tags: gluster 
+tags: gluster, glusterfs
 date: 2015-06-10 08:36:01 EDT
 comments: true
 ---
