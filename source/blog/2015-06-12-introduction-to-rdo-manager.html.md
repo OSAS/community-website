@@ -11,7 +11,7 @@ Last month at the [RDO meetup](https://www.rdoproject.org/forum/discussion/1018/
 
 If the embedded player below doesn't work for you, you can listen [HERE](http://drbacchus.com/podcasts/openstack/RDO_Manager.mp3).
 
-<audio controls="controls"><source type="audio/mpeg" src="http://drbacchus.com/podcasts/openstack/RDO_Manager.mp3?_=1" /><a href="http://drbacchus.com/podcasts/openstack/RDO_Manager.mp3">http://drbacchus.com/podcasts/openstack/RDO_Manager.mp3</a></audio>
+<audio controls="controls"><source type="audio/mpeg" src="http://drbacchus.com/podcasts/openstack/RDO_Manager.mp3?_=1" /></audio>
 
 For additional information:
 
