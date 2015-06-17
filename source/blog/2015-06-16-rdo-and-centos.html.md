@@ -1,7 +1,7 @@
 ---
 title: RDO and CentOS
 author: rbowen
-date: 2015-06-12 16:48:20 UTC
+date: 2015-06-16 16:48:20 UTC
 tags: upstream,podcast,rdo,openstack,centos
 comments: true
 published: true
