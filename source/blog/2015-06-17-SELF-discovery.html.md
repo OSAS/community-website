@@ -14,7 +14,7 @@ OSAS was well-represented at SELF, presenting on a variety of topics that displa
 
 READMORE
 
-###Presentation SELFies
+### Presentation SELFies
 
 Tom Callaway, Gluster Community Lead, gave his popular and funny talk on Understanding FOSS Licenses, including a primer on why licenses for the dead are most likely non-free.
 
