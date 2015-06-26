@@ -158,7 +158,7 @@ Follow along with the script, answering its questions. The default answers are f
 My NFS path looks like `ovirtmount.osas.lab:/engine`. I'm using that secondary host name I mentioned earlier in the howto, the hosting of which will, in the next post, be shared among my virt+storage machines.
 
 
-![](blog/ovirt35-deploy-host-1.png){:align="center"}
+![](blog/ovirt34-deploy-host-1.png){:align="center"}
 
 Once you've supplied all these answers, and confirmed your choices, the installer will launch a VM and provide you with an address and password for accessing the VM with the vnc client of your choice. Fire up a vnc client, enter the address provided and enter the password provided to access the VM.
 
@@ -187,7 +187,7 @@ Next, we'll install and then set up ovirt-engine:
 # engine-setup
 ```
 
-![](blog/ovirt35-configure-engine-1.png){:align="center"}
+![](blog/ovirt34-configure-engine-1.png){:align="center"}
 
 Go through the engine-setup script, answering its questions. You'll be fine accepting all the default answers, but make sure to supply the same admin password that you chose earlier, while running `hosted-engine --deploy`.
 
@@ -195,7 +195,7 @@ When the installation process completes, head back to the terminal where you're 
 
 The installer will register itself as a virtualization host on the oVirt engine instance we've just installed. Once this completes, the installer will tell you to shut down your VM so that the ovirt-engine-ha services on the first host can restart the engine VM as a monitored service.
 
-![](blog/ovirt35-configure-engine-1a.png){:align="center"}
+![](blog/ovirt34-configure-engine-1a.png){:align="center"}
 
 It can take a few minutes for the HA services to notice that the engine is down, to check that there's a machine available to host the engine, and to start up the hosted engine VM. You can watch these services do their thing by tailing their log files:
 
@@ -213,7 +213,7 @@ Click "New Domain," give your new domain a name, and choose Data / GlusterFS fro
 
 In the "Export Path" field, enter the remote path to your Gluster volume, and hit the OK button to proceed. It'll take a bit of time for your new storage domain to initialize and come online, but once it does, you'll be ready to launch your first VM.
 
-![](blog/ovirt35-configure-storage-1.png){:align="center"}
+![](blog/ovirt34-configure-storage-1.png){:align="center"}
 
 ## Running your first VM
 
@@ -227,7 +227,7 @@ The image will be copied from the oVirt project's public Glance repository to th
 
 Next, head to the "Virtual Machines" tab in the console, click "New VM," choose "Linux" from the "Operating System" drop down menu, supply a name for your VM, and choose the "ovirtmgmt/ovirtmgmt" network in the drop down menu next to "nic1" before hitting the "OK" button. For additional configuration, such as setting RAM and CPU values and using cloud-init, there's a "Show Advanced Options" button in the dialog, but you can revisit that later.
 
-![](blog/ovirt35-run-vm-1a.png){:align="center"}
+![](blog/ovirt34-run-vm-1a.png){:align="center"}
 
 Next you'll get a "Guide Me" dialog box that will ask you to configure a virtual disk. Click the "Configure Virtual Disks" button, check the "Attach Disk" box at the upper left part of the dialog, select the Glance disk image we just downloaded, and hit the "OK" button to continue. Dismiss the "Guide Me" dialog by hitting the "Configure Later" button.
 
