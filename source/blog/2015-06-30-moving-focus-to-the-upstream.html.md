@@ -10,6 +10,8 @@ published: true
 
 One of the best open source bug trackers for development today is Bugzilla, and it's the system oVirt uses for issue tracking, along with many other projects in which Red Hat is involved. It is also the same tracker used for one of oVirt's downstream commercial products, [Red Hat Enterprise Virtualization](http://www.redhat.com/en/technologies/virtualization) (RHEV). And therein lies a little bit of a problem--a problem we are happy to say is getting solved with an even more open policy on issue and bug tracking. 
 
+READMORE
+
 Currently, oVirt is a set of synced sub-projects within the broader RHEV project. At first this might seem that Red Hat is just being maniacal in its control of oVirt, but it really isn't the case. This set up goes back to the origins of oVirt has a proprietary commercial product first, which then later became an open source project. In this circumstance, it made sense to have bug tracking focus on downstream RHEV and not upstream oVirt. 
 
 But, over time, it became clear that this situation was no longer viable. Logistically, all of the oVirt sub projects were getting more and more complex, and tracking them as separate upstream issues in an issue tracker focused on the downstream was getting too unwieldy. From a governance standpoint it was weird too--development has always been focused on oVirt first, ever since oVirt was converted to open source code. But the system used for issue tracking was more complete and useful for downstream development and QE. We had, in effect, walled off a part of our development process, because it was hard to file more complete issues in Bugzilla for oVirt proper. 
