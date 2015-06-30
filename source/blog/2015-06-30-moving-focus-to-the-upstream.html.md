@@ -6,7 +6,7 @@ tags: oVirt, Bugzilla, RHEV
 comments: true
 published: true
 ---
-![oVirt logo](blog/ovirt-logo.png) When code with the complexity of [oVirt](http://www.ovirt.org) gets developed, one of the more critical pieces of tooling to have is an issue tracker. Issue trackers--which work for any size coding project, really--enable developers and quality engineers to make note of features to add and the progress in which they are getting added. They also help project participants identify faulty behaviors and prioritize them for repair. This latter use is why issue trackers are also known as bug trackers. 
+![oVirt logo](blog/oVirt-logo.png) When code with the complexity of [oVirt](http://www.ovirt.org) gets developed, one of the more critical pieces of tooling to have is an issue tracker. Issue trackers--which work for any size coding project, really--enable developers and quality engineers to make note of features to add and the progress in which they are getting added. They also help project participants identify faulty behaviors and prioritize them for repair. This latter use is why issue trackers are also known as bug trackers. 
 
 One of the best open source bug trackers for development today is Bugzilla, and it's the system oVirt uses for issue tracking, along with many other projects in which Red Hat is involved. It is also the same tracker used for one of oVirt's downstream commercial products, [Red Hat Enterprise Virtualization](http://www.redhat.com/en/technologies/virtualization) (RHEV). And therein lies a little bit of a problem--a problem we are happy to say is getting solved with an even more open policy on issue and bug tracking. 
 
