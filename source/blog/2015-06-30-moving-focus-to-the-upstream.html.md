@@ -2,7 +2,7 @@
 title: Moving Focus to the Upstream
 author: bkp
 date: 2015-06-30 07:00 UTC
-tags: oVirt, Bugzilla, RHEV, 
+tags: oVirt, Bugzilla, RHEV
 comments: true
 published: true
 ---
