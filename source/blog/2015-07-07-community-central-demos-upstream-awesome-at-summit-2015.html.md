@@ -28,7 +28,11 @@ One project that I was personally excited to have join us this year at Community
 
 Community Central also hosted a special-guest organization, [USENIX](https://www.usenix.org/), a non-profit that hosts some of the most technically forward-thinking conferences in the world.
 
-In the center of it all was our version of community theater. No chintzy versions of "A Chorus Line" here (they turned my idea down)--this theater was actually host to experts from the various projects listed above sharing with audiences what was going on with their projects and how they were integrating with other projects in the room and throughout the open source community. 
+In the center of it all was our version of community theater. No chintzy versions of "A Chorus Line" here--this theater was actually host to experts from the various projects listed above sharing with audiences what was going on with their projects and how they were integrating with other projects in the room and throughout the open source community. Of course, we couldn't help but let some of our weird humor slip through.
+
+![Bowen vs. Proffitt in a Virtual(ization) Cage Match](blog/communitytheater2015_600.JPG)
 
 Overall, the event was a success for the OSAS team, since visitors were asking great questions and seemed to come away from the Community Central room with an even greater understanding of some of the upstream work Red Hat does. Which is all we could have hoped for.
+
+_(Images courtesy of Deborah Bryant and Jennifer Madriaga)_
 
