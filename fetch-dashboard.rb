@@ -56,34 +56,36 @@ sites.each do |site|
       pb_empty = '-' * ((1 - pb_done) * pb_width).to_i
       print "\r#{pb_str}: #{(pb_done * 100).to_i}% #{pb_bar}#{pb_empty}"
 
-      filename = "#{prefix}/#{stat}/static.json"
+      %w(static evolutionary).each do |type|
+        type_short = type.slice(0, 4)
+        filename = "#{prefix}/#{type_short}/#{stat}.json"
+        remote_path = "#{uri.path}#{stat}-#{type}.json"
 
-      remote_path = "#{uri.path}#{stat}-static.json"
+        # Skip heads if path doesn't exist
+        response = prefix_exist ? h.head(remote_path) : nil
 
-      # Skip heads if path doesn't exist
-      response = prefix_exist ? h.head(remote_path) : nil
+        # Only operate on found remote files
+        if !response || response.code.match(/^2/)
+          # mtimes may result in nil/false; it works fine for comparison below
+          mtime = response && Time.parse(response.header['last-modified']).utc
+          mtime_file = File.exist?(filename) && File.mtime(filename).utc
 
-      # Only operate on found remote files
-      if !response || response.code.match(/^2/)
-        # mtimes may result in nil/false; it works fine for comparison below
-        mtime = response && Time.parse(response.header['last-modified']).utc
-        mtime_file = File.exist?(filename) && File.mtime(filename).utc
+          # Download unless it's the same exact time local as remote
+          unless File.exist?(filename) && mtime_file == mtime
+            remote = h.get remote_path
+            # Use GET for mtime if we skipped HEAD
+            mtime ||= Time.parse(remote.header['last-modified']).utc
 
-        # Download unless it's the same exact time local as remote
-        unless File.exist?(filename) && mtime_file == mtime
-          remote = h.get remote_path
-          # Use GET for mtime if we skipped HEAD
-          mtime ||= Time.parse(remote.header['last-modified']).utc
+            # Ensure path exists & write file with proper date
+            FileUtils.mkdir_p File.dirname(filename)
+            File.write filename, remote.body
+            FileUtils.touch filename, mtime: mtime
+          end
 
-          # Ensure path exists & write file with proper date
-          FileUtils.mkdir_p File.dirname(filename)
-          File.write filename, remote.body
-          FileUtils.touch filename, mtime: mtime
+        else
+          code = response ? response.code : remote.code
+          puts "Got a #{code} when trying to download #{uri.host}#{remote_path}"
         end
-
-      else
-        code = response ? response.code : remote.code
-        puts "Got a #{code} when trying to download #{uri.host}#{remote_path}"
       end
     end
 
