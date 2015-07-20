@@ -12,10 +12,12 @@ base_dir = 'data/dashboard'
 sites = [
   {
     name: 'oVirt',
+    dashboard: 'http://www.ovirt.org/stats/',
     url: 'http://www.ovirt.org/stats/data/json/',
     stats: %w(irc its mls scm)
   }, {
     name: 'RDO',
+    dashboard: 'https://www.rdoproject.org/stats/',
     url: 'https://www.rdoproject.org/stats/data/json/',
     stats: %w(irc its mediawiki mls qaforums scm)
   }
