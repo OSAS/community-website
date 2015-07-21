@@ -20,6 +20,11 @@ sites = [
     dashboard: 'https://www.rdoproject.org/stats/',
     url: 'https://www.rdoproject.org/stats/data/json/',
     stats: %w(irc its mediawiki mls qaforums scm)
+  }, {
+    name: 'ManageIQ',
+    dashboard: 'http://projects.bitergia.com/redhat-manageiq-dashboard/browser/',
+    url: 'http://projects.bitergia.com/redhat-manageiq-dashboard/browser/data/json/',
+    stats: %w(irc its scm scr qaforums downloads)
   }
 ]
 
