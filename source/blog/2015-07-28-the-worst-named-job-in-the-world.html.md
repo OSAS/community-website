@@ -18,7 +18,7 @@ And so on.
 
 READMORE
 
-Discouraging is that none of the results have links to anything to what what is often referred to in the free and open source software community as "community manager"--that vague role of organizer, advocate, and general doer-of-things persona found at the vanguard of many FLOSS projects. Nothing about people like me or any of the fine folks you might meet at events like the [Community Leadership Summit](http://www.communityleadershipsummit.com/). Not even Jono Bacon! 
+Discouraging is that none of the results have links to anything to what is often referred to in the free and open source software community as "community manager"--that vague role of organizer, advocate, and general doer-of-things persona found at the vanguard of many FLOSS projects. Nothing about people like me or any of the fine folks you might meet at events like the [Community Leadership Summit](http://www.communityleadershipsummit.com/). Not even Jono Bacon! 
 
 You might think this is just a round of self-defeatism, but it's actually indicative of a larger problem within the FLOSS community management community: nobody knows just what it is we do. And because of this, members of this occupation are increasingly (and wrongly) shoved into doing work that not only wastes their time and that of their employers', but also fails to deliver the full value of what a community manager can do.
 
