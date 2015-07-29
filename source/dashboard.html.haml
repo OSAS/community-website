@@ -386,67 +386,13 @@
     .row{class: "dashboard-item dashboard-overview"}
       %h2 Project comparisons
 
-      .col-md-4.developer-types
-        %h3 Types of developers
-
-        - data.dashboard.each do |label, project|
-          - scm = project.stat.scm
-          - p = {}
-          - p[:core] = (scm.core / scm.authors.to_f * 100).round(2)
-          - p[:regular] = (scm.regular / scm.authors.to_f * 100).round(2)
-          - p[:occasional] = (scm.occasional / scm.authors.to_f * 100).round(2)
-
-          .developer-breakdown
-            %span.label
-              = project.details.name
-              %span.hidden &mdash;
-            %span.bar
-              - %w(core regular occasional).each do |type|
-                - percent = (scm[type].to_f / scm.authors * 100).round(2)
-                - title = "#{scm[type]} #{type} developers"
-                %span.core{style:"width:#{percent}%", class: type, title: title}
-                  %strong.value= scm[type]
-                  %span.label.hidden= "#{type}#{type.match(/^o/) ? '' : ','}"
-
     - data.dashboard.each do |label, project|
       - stat = project.stat
+      - scm = stat.scm
       .row{class: "dashboard-item dashboard-#{label}"}
 
         .col-md-12
           %h2{id: "#{label}-stats"}= project.details.name
-
-        .card.col-md-6
-          - scm = stat.scm
-
-          %h3 Types of developers
-          .stats.center
-            Total developers:
-            %strong= stat.scm.authors
-
-          - devtypes = %w(core regular occasional)
-          - devtypes.each do |devtype|
-            .pie-crust{class: devtype}
-              - idName = "#{label}Pie-#{devtype}"
-              %strong.val= scm[devtype]
-              %canvas.pie{id: idName}
-                - content_for :tail do
-                  :ruby
-                    pie_color = [color3, color2, color1]
-                    grey = '#e5e5e5'
-                    index = -1
-                    info = devtypes.reverse.map do |type|
-                      index += 1
-                      chartPie(type.titleize, devtype == type ? pie_color[index] : grey, scm[type])
-                    end.to_json
-                  :coffee
-                    @#{idName} = @chart("##{idName}", "Doughnut", #{info}, #{optionsPie})
-
-              %span.label= devtype
-
-        -#%pre= project.evol.scm.to_yaml
-        -#%pre= project.evol.scm.authors
-        -#%pre= project.evol.scm.committers.each
-        -#%pre= project.evol.scm.date.map(&:to_date).last(2)
 
         .card.col-md-6.active-new
           %h3 Active &amp; new developers
