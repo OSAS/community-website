@@ -6,7 +6,7 @@ tags: GNOME, conferences
 comments: false
 published: true
 ---
-![GUADEC logo](blog/GUADEC_2015.png) Next week, hundreds of GNOME developers and users will arrive in Gothenburg, Sweden for GUADEC, GNOME's annual flagship conference. GNOME is a free software desktop environment with a focus on ease of use and accessibility for all. It is the default desktop environment for many distributions, including Fedora, CentOS, and Red Hat Enterprise Linux.
+![GUADEC logo](blog/GUADEC_2015.png) Next week, hundreds of GNOME developers and users will arrive in Gothenburg, Sweden for [GUADEC](https://2015.guadec.org/), GNOME's annual flagship conference. GNOME is a free software desktop environment with a focus on ease of use and accessibility for all. It is the default desktop environment for many distributions, including Fedora, CentOS, and Red Hat Enterprise Linux.
 
 GUADEC is where the GNOME community meets to plan new features and to get to know the  people they see online every day. Because GNOME works on every layer of the stack, GUADEC draws developers working on everything from applications to the kernel. The technologies showcased at GUADEC are often used in surprising places, such as virtualization and container software.
 
