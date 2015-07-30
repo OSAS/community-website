@@ -114,9 +114,9 @@
       ###
       # Figure out duration of time and make a string
       ###
-      duration = ' (' + @getDuration(data.labels) + ')'
+      duration = ' (' + @getDuration(data.labels) + ')' if data.labels.length != 12
 
-      $(name).before('<h4>' + data.heading + duration + '</h4>') if data.heading
+      $(name).before('<h4>' + data.heading + (duration ? '') + '</h4>') if data.heading
       $(name).after(result.generateLegend()) if makeLegend
 
       return chart
