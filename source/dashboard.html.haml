@@ -25,7 +25,9 @@
     # scaleShowLabels: true,
     # scaleShowVerticalLines: false,
     # showScale: false,
-    legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li style=\"color:<%=datasets[i].fillColor%>\"><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+    tooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %> <%= datasetLabel %>",
+    multiTooltipTemplate: "<%= value %> <%= datasetLabel %>",
+    legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li style=\"color:<%=datasets[i].fillColor%>\"><%if(datasets[i].label){%><%= sentence(datasets[i].label) %><%}%></li><%}%></ul>"
   }
 
   # In CoffeeScript, this gets merged with the above options
@@ -88,6 +90,9 @@
     ###
     @optionsLine = #{optionsLine.to_json}
     @optionsLineSimple = $.extend {}, optionsLine, #{optionsLineSimple.to_json}
+
+    @sentence = (string) ->
+      string.replace /^(.)/g, (letter) -> letter.toUpperCase()
 
     ###
     # Given dates, return the duration
@@ -473,8 +478,8 @@
                 info = {
                   labels: lastMonths(d.date, months),
                   datasets: [
-                    chartLine('Active authors', 'orange', lastMonths(d.authors, months)),
-                    chartLine('New authors (each month)', '#3c0', lastMonths(d.newauthors, months)),
+                    chartLine('active authors', 'orange', lastMonths(d.authors, months)),
+                    chartLine('new authors (each month)', '#3c0', lastMonths(d.newauthors, months)),
                   ]
                 }.to_json
               :coffee
@@ -501,7 +506,7 @@
                   info = {
                     labels: lastMonths(d.date, months),
                     datasets: [
-                      chartLine('New authors', '#bae', lastMonths(newauthors, months)),
+                      chartLine('new authors', '#bae', lastMonths(newauthors, months)),
                     ]
                   }.to_json
                 :coffee
@@ -562,10 +567,10 @@
                     heading: 'Bugtracker info',
                     labels: lastMonths(d.date, months),
                     datasets: [
-                      chartLine('Opened', '#5c0', opened_m),
-                      chartLine('Closed', 'slateblue', closed_m),
+                      chartLine('opened', '#5c0', opened_m),
+                      chartLine('closed', 'slateblue', closed_m),
                       #chartLine('Balance', '#ccc', balance_m),
-                      chartLine('Total', 'red', total_m),
+                      chartLine('total', 'red', total_m),
                       # chartLine('Total opened', 'orange', total_opened),
                       # chartLine('Total closed', 'blue', total_closed),
                     ]
@@ -618,7 +623,7 @@
                     heading: 'Messages sent',
                     labels: lastMonths(d.date, months),
                     datasets: [
-                      chartLine('Authors', 'purple', lastMonths(d.sent, months)),
+                      chartLine('authors', 'purple', lastMonths(d.sent, months)),
                       # chartLine('New authors', 'lightgreen', lastMonths(d.newsenders, months)),
                     ]
                   }.to_json
@@ -643,9 +648,9 @@
                   heading: 'Active people vs. messages per person',
                   labels: lastMonths(d.date, months),
                   datasets: [
-                    chartLine('People', 'orange', lastMonths(d.senders, months)),
-                    chartLine('Messages per person', 'green', lastMonths(per, months)),
-                    # chartLine('New authors', 'lightgreen', lastMonths(d.newsenders, months)),
+                    chartLine('people', 'orange', lastMonths(d.senders, months)),
+                    chartLine('messages per person', 'green', lastMonths(per, months)),
+                    # chartLine('new authors', 'lightgreen', lastMonths(d.newsenders, months)),
                   ]
                 }
 
@@ -677,13 +682,13 @@
                     heading: 'List stuff',
                     labels: lastMonths(d.date, months),
                     datasets: [
-                      #chartLine('Authors', 'green', lastMonths(d.sent, months)),
-                      #chartLine('Authors', 'orange', lastMonths(d.sent_response, months)),
-                      #chartLine('Authors', 'purple', lastMonths(d.organizations, months)),
-                      chartLine('Senders', 'blue', lastMonths(d.senders, months)),
-                      #chartLine('Authors', 'gray', lastMonths(d.senders_init, months)),
-                      #chartLine('Authors', 'brown', lastMonths(d.senders_response, months)),
-                      chartLine('Threads', 'teal', lastMonths(d.threads, months)),
+                      #chartLine('authors', 'green', lastMonths(d.sent, months)),
+                      #chartLine('authors', 'orange', lastMonths(d.sent_response, months)),
+                      #chartLine('authors', 'purple', lastMonths(d.organizations, months)),
+                      chartLine('senders', 'blue', lastMonths(d.senders, months)),
+                      #chartLine('authors', 'gray', lastMonths(d.senders_init, months)),
+                      #chartLine('authors', 'brown', lastMonths(d.senders_response, months)),
+                      chartLine('threads', 'teal', lastMonths(d.threads, months)),
                     ]
                   }.to_json
                 :coffee
@@ -711,11 +716,11 @@
                     heading: 'New questions vs. answers',
                     labels: lastMonths(d.date, months),
                     datasets: [
-                      chartLine('New answers', 'green', lastMonths(d.asent, months)),
-                      # chartLine('Authors', 'green', lastMonths(d.participants, months)),
-                      # chartLine('Authors', 'orange', lastMonths(d.asenders, months)),
-                      # chartLine('Questions', 'purple', lastMonths(d.qsenders, months)),
-                      chartLine('New questions', 'purple', lastMonths(d.qsent, months)),
+                      chartLine('new answers', 'green', lastMonths(d.asent, months)),
+                      # chartLine('authors', 'green', lastMonths(d.participants, months)),
+                      # chartLine('authors', 'orange', lastMonths(d.asenders, months)),
+                      # chartLine('questions', 'purple', lastMonths(d.qsenders, months)),
+                      chartLine('new questions', 'purple', lastMonths(d.qsent, months)),
                     ]
                   }.to_json
                 :coffee
