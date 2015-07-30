@@ -472,14 +472,15 @@
                 @#{label}Line = @chart("##{label}Line", "Line", #{info})
 
           .growth
-
-            All-time contributor growth
+            - months = project.evol.scm.date.count - 1
+            All-time contributor growth:
+            = "#{months} months"
             %canvas{id: "#{label}Growth", width: 64, height: 52, style: "max-width:100%;"}
               - content_for :tail do
                 :ruby
                   d = project.evol.scm
-                  # months = d.authors.reject { |d| d == 0 }.count - 1
-                  months = 12
+                  months = d.authors.reject { |d| d == 0 }.count - 1
+                  # months = 12
 
                   author_count = 0
                   newauthors = d.authors.reject { |d| d == 0 }.inject([]) do |r, el|
