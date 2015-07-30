@@ -236,6 +236,16 @@ rturk:
   name: Ross Turk
   twitter: rossturk
 
+shaunm:
+  name: Shaun McCance
+  twitter: shaunm
+  description: |
+    Shaun McCance is the Community Documentation Liaison in the Open Source 
+    and Standards team at Red Hat, where he helps various open source projects
+    improve their documentation community. He's the former GNOME documentation
+    team lead, and has been working on open source documentation for over a
+    decade. Follow him on Twitter at @shaunm.
+
 tcallaway:
   name: Tom Callaway
   twitter: spotrh
