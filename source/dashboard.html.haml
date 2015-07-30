@@ -25,16 +25,18 @@
     # scaleShowLabels: true,
     # scaleShowVerticalLines: false,
     # showScale: false,
-    legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li style=\"color:<%=datasets[i].pointColor%>\"><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+    legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li style=\"color:<%=datasets[i].fillColor%>\"><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
   }
 
   # In CoffeeScript, this gets merged with the above options
   optionsLineSimple = {
-    pointDot: false,
-    datasetStrokeWidth: 2,
     datasetFill: true,
-    showScale: false,
+    datasetStroke: false,
+    datasetStrokeWidth: 2,
     legend: false,
+    pointDot: false,
+    showScale: false,
+    showTooltips: false,
   }
 
   # Helper to easily do SASS from within Ruby
@@ -46,11 +48,18 @@
   def chartLine(label, color, info)
     {
       data: info,
+      originalColor: sass("#{color}"),
       fillColor: sass("rgba(mix(#{color}, #fff, 70), 0.25)"),
+      # Override the fillColor, since we've set things to not fill
+      # and it'd be nice to pass the original color back to the legend
+      # as this list is processed, and only a few things escape to the
+      # legendTemplate
+      fillColor: sass("#{color}"),
+      # subtleFillColor: sass("rgba(mix(#{color}, #fff, 70), 0.25)"),
       label: label,
       pointColor: sass("mix(#{color}, #fff, 70)"),
-      pointHighlightFill: sass("mix(#{color}, #000, 90)"),
-      pointHighlightStroke: sass("mix(#{color}, #000, 90)"),
+      pointHighlightFill: sass("mix(#{color}, #000, 100)"),
+      pointHighlightStroke: sass("mix(#{color}, #000, 100)"),
       pointStrokeColor: "transparent",
       strokeColor: sass("mix(#{color}, #fff, 40)"),
       originalColor: sass("color")
