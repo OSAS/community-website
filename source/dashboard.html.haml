@@ -569,77 +569,6 @@
             -#%pre= project.evol.its.to_json.gsub(/],/, "\\0\n")
 
 
-        - if stat.mls
-          .card.col-md-6
-            %h3 Mailing lists
-
-            .stats.center
-              Mailing list participants:
-              %strong= stat.mls.senders
-              -#%pre= stat.mls.to_yaml
-              -#%pre= project.evol.mls.to_yaml
-
-            %canvas{id: "#{label}list", width: 900, height: 300, style: "max-width:100%"}
-              - content_for :tail do
-                :ruby
-                  d = project.evol.mls
-                  # months = d.date.count - 1
-                  # months = d.sent.reject { |d| d == 0 }.count - 1
-                  # months = months > 12 ? 12: months
-                  months = 12
-
-                  info = {
-                    heading: 'List stuff',
-                    labels: lastMonths(d.date, months),
-                    datasets: [
-                      #chartLine('Authors', 'green', lastMonths(d.sent, months)),
-                      #chartLine('Authors', 'orange', lastMonths(d.sent_response, months)),
-                      #chartLine('Authors', 'purple', lastMonths(d.organizations, months)),
-                      chartLine('Senders', 'blue', lastMonths(d.senders, months)),
-                      #chartLine('Authors', 'gray', lastMonths(d.senders_init, months)),
-                      #chartLine('Authors', 'brown', lastMonths(d.senders_response, months)),
-                      chartLine('Threads', 'teal', lastMonths(d.threads, months)),
-                    ]
-                  }.to_json
-                :coffee
-                  @#{label}list = @chart("##{label}list", "Line", #{info})
-
-        - if stat.qaforums
-          .card.col-md-6
-            %h3 Forum
-
-            .stats.center
-              .qsenders
-                Total people asking questions:
-                %strong= stat.qaforums.qsenders
-
-            %canvas{id: "#{label}forumsent", width: 900, height: 200, style: "max-width:100%"}
-              - content_for :tail do
-                :ruby
-                  d = project.evol.qaforums
-                  # months = d.date.count - 1
-                  # months = d.sent.reject { |d| d == 0 }.count - 1
-                  # months = months > 12 ? 12: months
-                  months = 12
-
-                  info = {
-                    heading: 'New questions vs. answers',
-                    labels: lastMonths(d.date, months),
-                    datasets: [
-                      chartLine('New answers', 'green', lastMonths(d.asent, months)),
-                      # chartLine('Authors', 'green', lastMonths(d.participants, months)),
-                      # chartLine('Authors', 'orange', lastMonths(d.asenders, months)),
-                      # chartLine('Questions', 'purple', lastMonths(d.qsenders, months)),
-                      chartLine('New questions', 'purple', lastMonths(d.qsent, months)),
-                    ]
-                  }.to_json
-                :coffee
-                  @#{label}forumsent = @chart("##{label}forumsent", "Line", #{info})
-
-            -#%pre= project.evol.qaforums.to_yaml
-
-
-
         - if stat.irc
           .card.col-md-6
             %h3 IRC conversions
@@ -717,6 +646,75 @@
                 :coffee
                   @#{label}IRC = @chart("##{label}IRC", "Line", #{info.to_json})
 
+
+        - if stat.mls
+          .card.col-md-6
+            %h3 Mailing lists
+
+            .stats.center
+              Mailing list participants:
+              %strong= stat.mls.senders
+              -#%pre= stat.mls.to_yaml
+              -#%pre= project.evol.mls.to_yaml
+
+            %canvas{id: "#{label}list", width: 900, height: 300, style: "max-width:100%"}
+              - content_for :tail do
+                :ruby
+                  d = project.evol.mls
+                  # months = d.date.count - 1
+                  # months = d.sent.reject { |d| d == 0 }.count - 1
+                  # months = months > 12 ? 12: months
+                  months = 12
+
+                  info = {
+                    heading: 'List stuff',
+                    labels: lastMonths(d.date, months),
+                    datasets: [
+                      #chartLine('Authors', 'green', lastMonths(d.sent, months)),
+                      #chartLine('Authors', 'orange', lastMonths(d.sent_response, months)),
+                      #chartLine('Authors', 'purple', lastMonths(d.organizations, months)),
+                      chartLine('Senders', 'blue', lastMonths(d.senders, months)),
+                      #chartLine('Authors', 'gray', lastMonths(d.senders_init, months)),
+                      #chartLine('Authors', 'brown', lastMonths(d.senders_response, months)),
+                      chartLine('Threads', 'teal', lastMonths(d.threads, months)),
+                    ]
+                  }.to_json
+                :coffee
+                  @#{label}list = @chart("##{label}list", "Line", #{info})
+
+        - if stat.qaforums
+          .card.col-md-6
+            %h3 Forum
+
+            .stats.center
+              .qsenders
+                Total people asking questions:
+                %strong= stat.qaforums.qsenders
+
+            %canvas{id: "#{label}forumsent", width: 900, height: 200, style: "max-width:100%"}
+              - content_for :tail do
+                :ruby
+                  d = project.evol.qaforums
+                  # months = d.date.count - 1
+                  # months = d.sent.reject { |d| d == 0 }.count - 1
+                  # months = months > 12 ? 12: months
+                  months = 12
+
+                  info = {
+                    heading: 'New questions vs. answers',
+                    labels: lastMonths(d.date, months),
+                    datasets: [
+                      chartLine('New answers', 'green', lastMonths(d.asent, months)),
+                      # chartLine('Authors', 'green', lastMonths(d.participants, months)),
+                      # chartLine('Authors', 'orange', lastMonths(d.asenders, months)),
+                      # chartLine('Questions', 'purple', lastMonths(d.qsenders, months)),
+                      chartLine('New questions', 'purple', lastMonths(d.qsent, months)),
+                    ]
+                  }.to_json
+                :coffee
+                  @#{label}forumsent = @chart("##{label}forumsent", "Line", #{info})
+
+            -#%pre= project.evol.qaforums.to_yaml
 
         .col-md-12
           .pull-right= link_to "View the complete #{project.details.name} dashboard&hellip;", project.details.dashboard
