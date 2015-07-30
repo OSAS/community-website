@@ -412,9 +412,6 @@
   .dashboard
     %h1 Community dashboard
 
-    .row{class: "dashboard-item dashboard-overview"}
-      %h2 Project comparisons
-
     - data.dashboard.each do |label, project|
       - stat = project.stat
       - scm = stat.scm
