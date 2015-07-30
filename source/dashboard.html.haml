@@ -7,38 +7,35 @@
 
   optionsLine = {
     animation: false,
-    # showScale: false,
+    # bezierCurve: false,
+    bezierCurveTension: 0.4,
+    datasetFill: false,
+    # datasetStroke: true,
+    # datasetStrokeWidth: 2,
+    # maintainAspectRatio: false,
     # pointDot: false,
     pointDotRadius: 1.5,
     pointDotStrokeWidth: 3,
     pointHistDetectionRadius: 0,
+    # responsive: true,
     scaleBeginAtZero: true,
     # scaleLineWidth: 1,
-    # responsive: true,
-    # maintainAspectRatio: false,
-    # scaleShowLabels: true,
     scaleShowGridLines: false,
-    # pointDot: false,
     # scaleShowHorizontalLines: false,
+    # scaleShowLabels: true,
     # scaleShowVerticalLines: false,
-    datasetFill: false,
-    # bezierCurve: false,
-    bezierCurveTension: 0.4,
-    # datasetStroke: true,
-    # datasetStrokeWidth: 2,
+    # showScale: false,
     legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li style=\"color:<%=datasets[i].pointColor%>\"><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
   }
 
-  optionsLineSimple = optionsLine.dup
-  optionsLineSimple[:pointDot] = false
-  optionsLineSimple[:datasetStrokeWidth] = 2
-  optionsLineSimple[:datasetFill] = true
-  optionsLineSimple[:showScale] = false
-  optionsLineSimple[:legend] = false
-  # optionsLineSimple[:scaleShowLabels] = false
-
-  optionsLine = optionsLine.to_json
-  optionsLineSimple = optionsLineSimple.to_json
+  # In CoffeeScript, this gets merged with the above options
+  optionsLineSimple = {
+    pointDot: false,
+    datasetStrokeWidth: 2,
+    datasetFill: true,
+    showScale: false,
+    legend: false,
+  }
 
   # Helper to easily do SASS from within Ruby
   def sass(cmd)
@@ -80,8 +77,8 @@
     ###
     # Typical options
     ###
-    @optionsLine = #{optionsLine}
-    @optionsLineSimple = #{optionsLineSimple}
+    @optionsLine = #{optionsLine.to_json}
+    @optionsLineSimple = $.extend {}, optionsLine, #{optionsLineSimple.to_json}
 
     ###
     # Given dates, return the duration
