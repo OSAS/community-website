@@ -7,18 +7,18 @@
 
   optionsLine = {
     animation: false,
-    showScale: false,
+    # showScale: false,
     # pointDot: false,
-    pointDotRadius: 3,
-    pointDotStrokeWidth: 1,
+    pointDotRadius: 1.5,
+    pointDotStrokeWidth: 3,
     pointHistDetectionRadius: 0,
-    scaleBeginAtZero: false,
+    scaleBeginAtZero: true,
     # scaleLineWidth: 1,
     # responsive: true,
-    maintainAspectRatio: false,
-    scaleShowLabels: true,
+    # maintainAspectRatio: false,
+    # scaleShowLabels: true,
     scaleShowGridLines: false,
-    pointDot: false,
+    # pointDot: false,
     # scaleShowHorizontalLines: false,
     # scaleShowVerticalLines: false,
     datasetFill: false,
@@ -34,6 +34,7 @@
   optionsLineSimple[:datasetStrokeWidth] = 2
   optionsLineSimple[:datasetFill] = true
   optionsLineSimple[:showScale] = false
+  optionsLineSimple[:legend] = false
   # optionsLineSimple[:scaleShowLabels] = false
 
   optionsLine = optionsLine.to_json
@@ -50,10 +51,10 @@
       data: info,
       fillColor: sass("rgba(mix(#{color}, #fff, 70), 0.25)"),
       label: label,
-      pointColor: sass("mix(#{color}, #fff, 100)"),
-      pointHighlightFill: sass("mix(#{color}, #000, 100)"),
-      pointHighlightStroke: "#fff",
-      pointStrokeColor: "#fff",
+      pointColor: sass("mix(#{color}, #fff, 70)"),
+      pointHighlightFill: sass("mix(#{color}, #000, 90)"),
+      pointHighlightStroke: sass("mix(#{color}, #000, 90)"),
+      pointStrokeColor: "transparent",
       strokeColor: sass("mix(#{color}, #fff, 40)"),
       originalColor: sass("color")
     }
@@ -76,10 +77,52 @@
 
 - content_for :tail do
   :coffee
-    @chart = (name, type, data, options) ->
-      ctx = $(name).get(0).getContext('2d')
-      new Chart(ctx)[type](data, options)
+    ###
+    # Typical options
+    ###
+    @optionsLine = #{optionsLine}
+    @optionsLineSimple = #{optionsLineSimple}
 
+    ###
+    # Given dates, return the duration
+    ###
+    @getDuration = (dates) ->
+      # first = dates[0].split(/\s/)
+      # last = dates[dates.length - 1].split(/\s/)
+      # yearDiff = if (first[1] == last[1]) then (' ' + first[1]) else ''
+      # first[0] + yearDiff + ' - ' + last[0] + ' ' + last[1]
+
+      dates.length + ' months'
+
+    ###
+    # Common chart creation code, to prevent duplication
+    ###
+    @chart = (name, type, data, opts = @optionsLine) ->
+      ctx = $(name).get(0).getContext('2d')
+      result = new Chart(ctx)[type](data, opts)
+
+      ###
+      # Nuke labels from X
+      ###
+      result.scale.xLabels = ['']
+      # Re-render with nuked labels
+      result.render(true)
+
+      ###
+      # Should a legend be made?
+      # Yes, if not explictly turned off and contains multiple datasets
+      ###
+      makeLegend = opts.legend != false && data.datasets.length > 1
+
+      ###
+      # Figure out duration of time and make a string
+      ###
+      duration = ' (' + @getDuration(data.labels) + ')'
+
+      $(name).before('<h4>' + data.heading + duration + '</h4>') if data.heading
+      $(name).after(result.generateLegend()) if makeLegend
+
+      return chart
 
 - content_for :head do
   %style
@@ -421,18 +464,18 @@
             - content_for :tail do
               :ruby
                 d = project.evol.scm
-                months = d.authors.reject { |d| d == 0 }.count - 1
+                # months = d.authors.reject { |d| d == 0 }.count - 1
+                months = 12
 
                 info = {
-                  labels: lastMonths(d.date, months).map { |_| '' },
+                  labels: lastMonths(d.date, months),
                   datasets: [
                     chartLine('Active authors', 'orange', lastMonths(d.authors, months)),
                     chartLine('New authors (each month)', '#3c0', lastMonths(d.newauthors, months)),
                   ]
                 }.to_json
               :coffee
-                @#{label}Line = @chart("##{label}Line", "Line", #{info}, #{optionsLine})
-                $("##{label}Line").after(@#{label}Line.generateLegend())
+                @#{label}Line = @chart("##{label}Line", "Line", #{info})
 
           .growth
 
@@ -441,7 +484,8 @@
               - content_for :tail do
                 :ruby
                   d = project.evol.scm
-                  months = d.authors.reject { |d| d == 0 }.count - 1
+                  # months = d.authors.reject { |d| d == 0 }.count - 1
+                  months = 12
 
                   author_count = 0
                   newauthors = d.authors.reject { |d| d == 0 }.inject([]) do |r, el|
@@ -457,7 +501,7 @@
                     ]
                   }.to_json
                 :coffee
-                  @#{label}Growth = @chart("##{label}Growth", "Line", #{info}, #{optionsLineSimple})
+                  @#{label}Growth = @chart("##{label}Growth", "Line", #{info}, @optionsLineSimple)
 
         - if stat.its
           .card.col-md-6
@@ -468,28 +512,30 @@
               %strong= stat.its.allhistory_participants
               -#%pre= stat.its.to_yaml
 
-            %h4 Bugtracker info
             %canvas{id: "#{label}bug", width: 900, height: 300, style: "max-width:100%"}
-
               - content_for :tail do
                 :ruby
                   d = project.evol.its
                   # months = d.date.count - 1
                   months = d.opened.reject { |d| d == 0 }.count - 1
                   # months = months > 12 ? 12: months
-                  # months = 12
-                  opened = lastMonths(d.opened, months)
-                  closed = lastMonths(d.closed, months)
+                  months = 12
+                  opened = d.opened
+                  closed = d.closed
+                  opened_m = lastMonths(d.opened, months)
+                  closed_m = lastMonths(d.closed, months)
                   #balance = []
 
                   balance = opened.inject([]) do |memo, el|
                     #counter += 1
                     #memo << el / closed[memo.count]
-                    memo << closed[memo.count] / (el + 0.0) * 100
+                    memo << (closed[memo.count] / (el + 0.0) * 100).round(1)
                     # balance.push(opened[counter])# - closed[counter])
                     #balance.push el
                     memo
                   end
+
+                  balance_m = lastMonths(balance, months)
 
                   total_opened = opened.inject([]) do |memo, el|
                     memo << (memo.last || 0) + el
@@ -506,20 +552,22 @@
                     memo
                   end
 
+                  total_m = lastMonths(total, months)
+
                   info = {
-                    labels: lastMonths(d.date, months).map {|_| ''},
+                    heading: 'Bugtracker info',
+                    labels: lastMonths(d.date, months),
                     datasets: [
-                      chartLine('Opened', '#5c0', opened),
-                      chartLine('Closed', 'slateblue', closed),
-                      chartLine('Balance', '#ccc', balance),
-                      chartLine('Total', 'red', total),
-                      chartLine('Total opened', 'orange', total_opened),
-                      chartLine('Total closed', 'blue', total_closed),
+                      chartLine('Opened', '#5c0', opened_m),
+                      chartLine('Closed', 'slateblue', closed_m),
+                      chartLine('Balance', '#ccc', balance_m),
+                      chartLine('Total', 'red', total_m),
+                      # chartLine('Total opened', 'orange', total_opened),
+                      # chartLine('Total closed', 'blue', total_closed),
                     ]
                   }.to_json
                 :coffee
-                  @#{label}bug = @chart("##{label}bug", "Line", #{info}, #{optionsLine})
-                  $("##{label}bug").after(@#{label}bug.generateLegend())
+                  @#{label}bug = @chart("##{label}bug", "Line", #{info})
 
             -#%pre= project.evol.its.to_json.gsub(/],/, "\\0\n")
 
@@ -534,9 +582,7 @@
               -#%pre= stat.mls.to_yaml
               -#%pre= project.evol.mls.to_yaml
 
-            %h4 List stuff
             %canvas{id: "#{label}list", width: 900, height: 300, style: "max-width:100%"}
-
               - content_for :tail do
                 :ruby
                   d = project.evol.mls
@@ -546,6 +592,7 @@
                   months = 12
 
                   info = {
+                    heading: 'List stuff',
                     labels: lastMonths(d.date, months),
                     datasets: [
                       #chartLine('Authors', 'green', lastMonths(d.sent, months)),
@@ -558,8 +605,7 @@
                     ]
                   }.to_json
                 :coffee
-                  @#{label}list = @chart("##{label}list", "Line", #{info}, #{optionsLine})
-                  $("##{label}list").after(@#{label}list.generateLegend())
+                  @#{label}list = @chart("##{label}list", "Line", #{info})
 
         - if stat.qaforums
           .card.col-md-6
@@ -570,9 +616,7 @@
                 Total people asking questions:
                 %strong= stat.qaforums.qsenders
 
-            %h4 New questions vs. answers
             %canvas{id: "#{label}forumsent", width: 900, height: 200, style: "max-width:100%"}
-
               - content_for :tail do
                 :ruby
                   d = project.evol.qaforums
@@ -582,6 +626,7 @@
                   months = 12
 
                   info = {
+                    heading: 'New questions vs. answers',
                     labels: lastMonths(d.date, months),
                     datasets: [
                       chartLine('New answers', 'green', lastMonths(d.asent, months)),
@@ -592,8 +637,8 @@
                     ]
                   }.to_json
                 :coffee
-                  @#{label}forumsent = @chart("##{label}forumsent", "Line", #{info}, #{optionsLine})
-                  $("##{label}forumsent").after(@#{label}forumsent.generateLegend())
+                  @#{label}forumsent = @chart("##{label}forumsent", "Line", #{info})
+
             -#%pre= project.evol.qaforums.to_yaml
 
 
@@ -628,7 +673,6 @@
                   %strong= stat.irc.sent_365 / stat.irc.senders_365
                 -#%pre=project.evol.irc
 
-            %h4 Messages sent
             %canvas{id: "#{label}IRCsent", width: 900, height: 220, style: "max-width:100%"}
               - content_for :tail do
                 :ruby
@@ -638,6 +682,7 @@
                   months = months > 12 ? 12: months
 
                   info = {
+                    heading: 'Messages sent',
                     labels: lastMonths(d.date, months),
                     datasets: [
                       chartLine('Authors', 'purple', lastMonths(d.sent, months)),
@@ -645,9 +690,8 @@
                     ]
                   }.to_json
                 :coffee
-                  @#{label}IRCsent = @chart("##{label}IRCsent", "Line", #{info}, #{optionsLine})
+                  @#{label}IRCsent = @chart("##{label}IRCsent", "Line", #{info})
 
-            %h4 Active people vs. messages per person
             %canvas{id: "#{label}IRC", width: 900, height: 200, style: "max-width:100%"}
               :ruby
                 d = project.evol.irc
@@ -663,7 +707,8 @@
                 end
 
                 info = {
-                  labels: lastMonths(d.date, months).map {|_| ''},
+                  heading: 'Active people vs. messages per person',
+                  labels: lastMonths(d.date, months),
                   datasets: [
                     chartLine('People', 'orange', lastMonths(d.senders, months)),
                     chartLine('Messages per person', 'green', lastMonths(per, months)),
@@ -673,9 +718,7 @@
 
               - content_for :tail do
                 :coffee
-                  @#{label}IRC = @chart("##{label}IRC", "Line", #{info.to_json}, #{optionsLine})
-                  $("##{label}IRC").after(@#{label}IRC.generateLegend())
-
+                  @#{label}IRC = @chart("##{label}IRC", "Line", #{info.to_json})
 
 
         .col-md-12
