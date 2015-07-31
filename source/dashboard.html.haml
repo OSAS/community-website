@@ -31,14 +31,14 @@
   end
 
   color = {
-    red: '#c55',
-    blue: '#2a8fd5',
-    green: '#139222',
-    orange: '#e17b14',
-    purple: '#8641cb',
-    pink: '#ff00e8',
-    teal: '#088',
-    grey: '#aaa',
+    red:     '#d91515',
+    blue:    '#0097ff',
+    green:   '#00720d',
+    orange:  '#ffa143',
+    purple:  '#d71ecd',
+    pink:    '#ff00e8',
+    teal:    '#088',
+    grey:    '#aaa',
   }
 
   # Extend color with light and dark variants
@@ -270,8 +270,8 @@
                 info = {
                   labels: lastMonths(d.date, months),
                   datasets: [
-                    chartLine('active authors', color[:orange], lastMonths(d.authors, months)),
-                    chartLine('new authors (each month)', color[:darkgreen], lastMonths(d.newauthors, months)),
+                    chartLine('active authors', color[:purple], lastMonths(d.authors, months)),
+                    chartLine('new authors (each month)', color[:green], lastMonths(d.newauthors, months)),
                   ]
                 }.to_json
               :coffee
@@ -359,9 +359,9 @@
                     heading: 'Bugtracker info',
                     labels: lastMonths(d.date, months),
                     datasets: [
-                      chartLine('total', color[:blue], total_m),
-                      chartLine('opened', color[:darkgreen], opened_m),
-                      chartLine('closed', color[:lightorange], closed_m),
+                      chartLine('total', color[:darkred], total_m),
+                      chartLine('opened', color[:green], opened_m),
+                      chartLine('closed', color[:orange], closed_m),
                     ]
                   }.to_json
                 :coffee
@@ -412,7 +412,7 @@
                     heading: 'Messages sent',
                     labels: lastMonths(d.date, months),
                     datasets: [
-                      chartLine('authors', color[:lightpurple], lastMonths(d.sent, months)),
+                      chartLine('authors', color[:purple], lastMonths(d.sent, months)),
                     ]
                   }.to_json
                 :coffee
@@ -436,7 +436,7 @@
                   heading: 'Active people vs. messages per person',
                   labels: lastMonths(d.date, months),
                   datasets: [
-                    chartLine('people', color[:lightblue], lastMonths(d.senders, months)),
+                    chartLine('people', color[:blue], lastMonths(d.senders, months)),
                     chartLine('messages per person', color[:darkred], lastMonths(per, months)),
                   ]
                 }
@@ -498,7 +498,7 @@
                     heading: 'New questions vs. answers',
                     labels: lastMonths(d.date, months),
                     datasets: [
-                      chartLine('new answers', color[:darkgreen], lastMonths(d.asent, months)),
+                      chartLine('new answers', color[:green], lastMonths(d.asent, months)),
                       chartLine('new questions', color[:lightpink], lastMonths(d.qsent, months)),
                     ]
                   }.to_json
