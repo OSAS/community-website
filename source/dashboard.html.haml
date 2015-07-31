@@ -31,7 +31,7 @@
   end
 
   color = {
-    red: '#900',
+    red: '#c55',
     blue: '#2a8fd5',
     green: '#139222',
     orange: '#e17b14',
@@ -44,8 +44,8 @@
   # Extend color with light and dark variants
   color = color.inject({}) do |h, (k, v)|
     h[k] = v
-    h["dark#{k.to_s}".to_sym] = sass("darken(#{v}, 5)")
-    h["light#{k.to_s}".to_sym] = sass("lighten(#{v}, 10)")
+    h["dark#{k.to_s}".to_sym] = sass("darken(#{v}, 10)")
+    h["light#{k.to_s}".to_sym] = sass("lighten(#{v}, 15)")
     h["extradark#{k.to_s}".to_sym] = sass("mix(#{v}, black, 70)")
     h["extralight#{k.to_s}".to_sym] = sass("mix(#{v}, white, 50)")
     h
@@ -270,7 +270,7 @@
                 info = {
                   labels: lastMonths(d.date, months),
                   datasets: [
-                    chartLine('active authors', color[:lightorange], lastMonths(d.authors, months)),
+                    chartLine('active authors', color[:orange], lastMonths(d.authors, months)),
                     chartLine('new authors (each month)', color[:darkgreen], lastMonths(d.newauthors, months)),
                   ]
                 }.to_json
@@ -412,7 +412,7 @@
                     heading: 'Messages sent',
                     labels: lastMonths(d.date, months),
                     datasets: [
-                      chartLine('authors', color[:purple], lastMonths(d.sent, months)),
+                      chartLine('authors', color[:lightpurple], lastMonths(d.sent, months)),
                     ]
                   }.to_json
                 :coffee
