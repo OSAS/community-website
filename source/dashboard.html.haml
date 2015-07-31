@@ -213,6 +213,40 @@
           min-width: 10ex
 
 
+      .project-info
+        padding: 2rem 0
+        position: relative
+        min-height: 10rem
+        text-align: left
+
+        h2
+          margin: 0 1rem 0 0
+          position: relative
+          height: 5rem
+          //min-height: 5rem
+          //bottom: -2.5rem
+          display: inline-block
+          //background: orange
+
+          .logo
+            display: inline-block
+            width: auto
+            height: 100%
+            //position: absolute
+            //bottom: 2.5rem
+            //max-width: 90%
+            //background: blue
+
+        .title,
+        .description
+          display: inline-block
+          vertical-align: top
+
+        .description
+          padding-top: 2.5rem
+          max-width: 75%
+
+
 - if data[:dashboard]
 
   .dashboard
@@ -223,8 +257,26 @@
       - scm = stat.scm
       .row{class: "dashboard-item dashboard-#{label}"}
 
-        .col-md-12
-          %h2{id: "#{label}-stats"}= project.details.name
+        .project-info.col-md-12
+
+          .title
+            %h2{id: "#{label}-stats"}
+              = image_tag "dashboard/#{label}.svg", alt: project.details.name, class: 'logo'
+
+          .description
+            :markdown
+              Foo bar blah
+              Foo bar blah
+              Foo bar blah
+              Foo bar blah
+              Foo bar blah
+              Foo bar blah
+              Foo bar blah
+              Foo bar blah
+              Foo bar blah
+              Foo bar blah
+              Foo bar blah
+              Foo bar blah
 
         .card.col-md-6.active-new
           %h3 Active &amp; new developers
