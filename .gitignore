@@ -13,6 +13,7 @@
 # Ignore Sass' cache
 /.sass-cache
 /.cache
+data/dashboard/
 
 # Ignore .DS_store file
 .DS_Store
