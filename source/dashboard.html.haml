@@ -1,0 +1,418 @@
+:ruby
+  require 'sass'
+
+  optionsLine = {
+    animation: false,
+    datasetFill: false,
+    pointDotRadius: 1.5,
+    pointDotStrokeWidth: 3,
+    pointHistDetectionRadius: 0,
+    scaleBeginAtZero: true,
+    scaleShowGridLines: false,
+    tooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %> <%= datasetLabel %>",
+    multiTooltipTemplate: "<%= value %> <%= datasetLabel %>",
+    legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li style=\"color:<%=datasets[i].fillColor%>\"><%if(datasets[i].label){%><%= sentence(datasets[i].label) %><%}%></li><%}%></ul>"
+  }
+
+  # In CoffeeScript, this gets merged with the above options
+  optionsLineSimple = {
+    datasetFill: true,
+    datasetStroke: false,
+    datasetStrokeWidth: 2,
+    legend: false,
+    pointDot: false,
+    showScale: false,
+    showTooltips: false,
+  }
+
+  # Helper to easily do SASS from within Ruby
+  def sass(cmd)
+    Sass::Script::Parser.parse(cmd, 0, 0).perform(Sass::Environment.new).to_s
+  end
+
+  color = {
+    red:     '#d91515',
+    blue:    '#0097ff',
+    green:   '#00720d',
+    orange:  '#ffa143',
+    purple:  '#d71ecd',
+    pink:    '#ff00e8',
+    teal:    '#088',
+    grey:    '#aaa',
+  }
+
+  # Extend color with light and dark variants
+  color = color.inject({}) do |h, (k, v)|
+    h[k] = v
+    h["dark#{k.to_s}".to_sym] = sass("darken(#{v}, 10)")
+    h["light#{k.to_s}".to_sym] = sass("lighten(#{v}, 15)")
+    h["extradark#{k.to_s}".to_sym] = sass("mix(#{v}, black, 70)")
+    h["extralight#{k.to_s}".to_sym] = sass("mix(#{v}, white, 50)")
+    h
+  end
+
+  # Process chart info for a line
+  def chartLine(label, color, info)
+    {
+      data: info,
+      originalColor: sass("#{color}"),
+      fillColor: sass("rgba(mix(#{color}, #fff, 70), 0.25)"),
+      # Override the fillColor, since we've set things to not fill
+      # and it'd be nice to pass the original color back to the legend
+      # as this list is processed, and only a few things escape to the
+      # legendTemplate
+      fillColor: sass("#{color}"),
+      label: label,
+      pointColor: sass("mix(#{color}, #fff, 70)"),
+      pointHighlightFill: sass("mix(#{color}, #000, 100)"),
+      pointHighlightStroke: sass("mix(#{color}, #000, 100)"),
+      pointStrokeColor: "transparent",
+      strokeColor: sass("mix(#{color}, #fff, 40)"),
+      originalColor: sass("color")
+    }
+  end
+
+  # Process chart info for a pie piece
+  def chartPie(label, color, info)
+    {
+      value: info,
+      color: sass(color),
+      highlight: sass("mix(#{color}, #fff, 75)"),
+      label: label
+    }
+  end
+
+  # Take the last X months (default = 12), minus current (which is incomplete)
+  def lastMonths(info, months = 12)
+    info.last(months + 1).take(months)
+  end
+
+- content_for :tail do
+  :coffee
+    ###
+    # Typical options
+    ###
+    @optionsLine = #{optionsLine.to_json}
+    @optionsLineSimple = $.extend {}, optionsLine, #{optionsLineSimple.to_json}
+
+    @sentence = (string) ->
+      string.replace /^(.)/g, (letter) -> letter.toUpperCase()
+
+    ###
+    # Given dates, return the duration
+    ###
+    @getDuration = (dates) ->
+      dates.length + ' months'
+
+    ###
+    # Common chart creation code, to prevent duplication
+    ###
+    @chart = (name, type, data, opts = @optionsLine) ->
+      ctx = $(name).get(0).getContext('2d')
+      result = new Chart(ctx)[type](data, opts)
+
+      ###
+      # Nuke labels from X
+      ###
+      result.scale.xLabels = ['']
+      # Re-render with nuked labels
+      result.render(true)
+
+      ###
+      # Should a legend be made?
+      # Yes, if not explictly turned off and contains multiple datasets
+      ###
+      makeLegend = opts.legend != false && data.datasets.length > 1
+
+      ###
+      # Figure out duration of time and make a string
+      ###
+      duration = ' (' + @getDuration(data.labels) + ')' if data.labels.length != 12
+
+      $(name).before('<h4>' + data.heading + (duration ? '') + '</h4>') if data.heading
+      $(name).after(result.generateLegend()) if makeLegend
+
+      return chart
+
+- if data[:dashboard]
+
+  .dashboard
+    #intro
+      %h1 Open Source and Standards Community Dashboard
+
+      .summary
+        :markdown
+          Red Hat's Open Source and Standards (OSAS) group has worked with Bitergia to capture some interesting data from some of the upstream projects that Red Hat is deeply involved with. On this page, you'll find information about various vital signs from projects like oVirt, RDO, ManageIQ, and Gluster. 
+
+      %hr
+
+    #statistics
+      - data.dashboard.each do |label, project|
+        - stat = project.stat
+        - scm = stat.scm
+        .row{class: "dashboard-item dashboard-#{label}"}
+
+          .project-info.col-md-12
+
+            .title
+              %h2{id: "#{label}-stats"}
+                = link_to "##{label}-stats" do
+                  = image_tag "dashboard/#{label}.svg", alt: project.details.name, class: 'logo'
+
+            - if project.details.summary
+              .description= project.details.summary
+
+            - if project.details.site
+              .website
+                %strong Site:
+                = link_to project.details.site, project.details.site
+
+          .card.col-md-6.active-new
+            %h3 Active &amp; new developers
+
+            .stats
+              .year.col-md-6
+                .active-year
+                  Active this year:
+                  %strong= scm.authors_365
+                .new-year
+                  New this year:
+                  %strong= scm.newauthors_365
+
+              .month.col-md-6
+                .active-month
+                  Active this month:
+                  %strong= scm.authors_30
+                .new-month
+                  New this month:
+                  %strong= scm.newauthors_30
+
+                .active-avg
+                  Monthly average, active:
+                  - aa = lastMonths(project.evol.scm.authors)
+                  %strong= (aa.reduce(&:+) / aa.count.to_f).round(1)
+                .new-avg
+                  Monthly average, new:
+                  - na = lastMonths(project.evol.scm.newauthors)
+                  %strong= (na.reduce(&:+) / na.count.to_f).round(1)
+
+            %canvas{id: "#{label}Line", width: 900, height: 250, style: "max-width:100%"}
+              - content_for :tail do
+                :ruby
+                  d = project.evol.scm
+                  months = 12
+
+                  info = {
+                    labels: lastMonths(d.date, months),
+                    datasets: [
+                      chartLine('active authors', color[:purple], lastMonths(d.authors, months)),
+                      chartLine('new authors (each month)', color[:green], lastMonths(d.newauthors, months)),
+                    ]
+                  }.to_json
+                :coffee
+                  @#{label}Line = @chart("##{label}Line", "Line", #{info})
+
+            .growth
+              - months = project.evol.scm.date.count - 1
+              All-time contributor growth
+              = "(over #{months} months)"
+
+              %canvas{id: "#{label}Growth", style: "max-width:100%;"}
+                - content_for :tail do
+                  :ruby
+                    d = project.evol.scm
+                    months = d.authors.reject { |d| d == 0 }.count - 1
+
+                    author_count = 0
+                    newauthors = d.authors.reject { |d| d == 0 }.inject([]) do |r, el|
+                      author_count += el
+                      r.push author_count
+                    end
+
+
+                    info = {
+                      labels: lastMonths(d.date, months),
+                      datasets: [
+                        chartLine('new authors', color[:extralightgreen], lastMonths(newauthors, months)),
+                      ]
+                    }.to_json
+                  :coffee
+                    @#{label}Growth = @chart("##{label}Growth", "Line", #{info}, @optionsLineSimple)
+
+          - if stat.its
+            .card.col-md-6
+              %h3 Issue tracking
+
+              .stats.center
+                Ticket participants:
+                %strong= stat.its.allhistory_participants
+
+              %canvas{id: "#{label}bug", width: 900, height: 300, style: "max-width:100%"}
+                - content_for :tail do
+                  :ruby
+                    d = project.evol.its
+                    months = d.opened.reject { |d| d == 0 }.count - 1
+                    months = 12
+                    opened = d.opened
+                    closed = d.closed
+                    opened_m = lastMonths(d.opened, months)
+                    closed_m = lastMonths(d.closed, months)
+
+                    total_opened = opened.inject([]) do |memo, el|
+                      memo << (memo.last || 0) + el
+                      memo
+                    end
+
+                    total_closed = closed.inject([]) do |memo, el|
+                      memo << (memo.last || 0) + el
+                      memo
+                    end
+
+                    total = total_opened.inject([]) do |memo, el|
+                      memo << el - total_closed[memo.count]
+                      memo
+                    end
+
+                    total_m = lastMonths(total, months)
+
+                    info = {
+                      heading: 'Bugtracker info',
+                      labels: lastMonths(d.date, months),
+                      datasets: [
+                        chartLine('total', color[:darkred], total_m),
+                        chartLine('opened', color[:green], opened_m),
+                        chartLine('closed', color[:orange], closed_m),
+                      ]
+                    }.to_json
+                  :coffee
+                    @#{label}bug = @chart("##{label}bug", "Line", #{info})
+
+          - if stat.irc
+            .card.col-md-6
+              %h3 IRC conversions
+
+              .stats
+                .col-md-6
+                  %h4 People on IRC
+                  .people
+                    Total:
+                    %strong= stat.irc.senders
+                  .people-month
+                    This month:
+                    %strong= stat.irc.senders_30
+                  .people-year
+                    This year:
+                    %strong= stat.irc.senders_365
+                .col-md-6
+                  %h4 Activity per person
+                  .activity
+                    Total:
+                    %strong= stat.irc.sent / stat.irc.senders
+                  .activity-month
+                    This month:
+                    %strong= stat.irc.sent_30 / stat.irc.senders_30
+                  .activity-year
+                    This year:
+                    %strong= stat.irc.sent_365 / stat.irc.senders_365
+
+              %canvas{id: "#{label}IRCsent", width: 900, height: 220, style: "max-width:100%"}
+                - content_for :tail do
+                  :ruby
+                    d = project.evol.irc
+                    months = d.sent.reject { |d| d == 0 }.count - 1
+                    months = months > 12 ? 12: months
+
+                    info = {
+                      heading: 'Messages sent',
+                      labels: lastMonths(d.date, months),
+                      datasets: [
+                        chartLine('authors', color[:purple], lastMonths(d.sent, months)),
+                      ]
+                    }.to_json
+                  :coffee
+                    @#{label}IRCsent = @chart("##{label}IRCsent", "Line", #{info})
+
+              %canvas{id: "#{label}IRC", width: 900, height: 200, style: "max-width:100%"}
+                :ruby
+                  d = project.evol.irc
+                  months = d.senders.reject { |d| d == 0 }.count - 1
+                  months = months > 12 ? 12: months
+
+                  i = 0
+                  per = d.sent.map do |v|
+                    i += 1
+                    v == 0 ? 0 : ((v + 0.0) / d.senders[i - 1]).round(1)
+                  end
+
+                  info = {
+                    heading: 'Active people vs. messages per person',
+                    labels: lastMonths(d.date, months),
+                    datasets: [
+                      chartLine('people', color[:blue], lastMonths(d.senders, months)),
+                      chartLine('messages per person', color[:darkred], lastMonths(per, months)),
+                    ]
+                  }
+
+                - content_for :tail do
+                  :coffee
+                    @#{label}IRC = @chart("##{label}IRC", "Line", #{info.to_json})
+
+
+          - if stat.mls
+            .card.col-md-6
+              %h3 Mailing lists
+
+              .stats.center
+                Mailing list participants:
+                %strong= stat.mls.senders
+
+              %canvas{id: "#{label}list", width: 900, height: 300, style: "max-width:100%"}
+                - content_for :tail do
+                  :ruby
+                    d = project.evol.mls
+                    months = 12
+
+                    info = {
+                      heading: 'List stuff',
+                      labels: lastMonths(d.date, months),
+                      datasets: [
+                        chartLine('senders', color[:lightblue], lastMonths(d.senders, months)),
+                        chartLine('threads', color[:darkred], lastMonths(d.threads, months)),
+                      ]
+                    }.to_json
+                  :coffee
+                    @#{label}list = @chart("##{label}list", "Line", #{info})
+
+          - if stat.qaforums
+            .card.col-md-6
+              %h3 Forum
+
+              .stats.center
+                .qsenders
+                  Total people asking questions:
+                  %strong= stat.qaforums.qsenders
+
+              %canvas{id: "#{label}forumsent", width: 900, height: 200, style: "max-width:100%"}
+                - content_for :tail do
+                  :ruby
+                    d = project.evol.qaforums
+                    months = 12
+
+                    info = {
+                      heading: 'New questions vs. answers',
+                      labels: lastMonths(d.date, months),
+                      datasets: [
+                        chartLine('new answers', color[:green], lastMonths(d.asent, months)),
+                        chartLine('new questions', color[:lightpink], lastMonths(d.qsent, months)),
+                      ]
+                    }.to_json
+                  :coffee
+                    @#{label}forumsent = @chart("##{label}forumsent", "Line", #{info})
+
+          .col-md-12
+            .pull-right= link_to "View the complete #{project.details.name} dashboard&hellip;", project.details.dashboard
+
+- else
+  %p
+    %strong Error:
+    Dashboard data not found.

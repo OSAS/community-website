@@ -116,3 +116,5 @@ gem "slop"
 
 # XDG launcher
 gem "launchy"
+
+gem 'rails-assets-chartjs'
