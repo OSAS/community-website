@@ -214,9 +214,10 @@
 
             .growth
               - months = project.evol.scm.date.count - 1
-              All-time contributor growth:
-              = "#{months} months"
-              %canvas{id: "#{label}Growth", width: 64, height: 52, style: "max-width:100%;"}
+              All-time contributor growth
+              = "(over #{months} months)"
+
+              %canvas{id: "#{label}Growth", style: "max-width:100%;"}
                 - content_for :tail do
                   :ruby
                     d = project.evol.scm
