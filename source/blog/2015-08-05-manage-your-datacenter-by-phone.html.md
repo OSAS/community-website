@@ -14,6 +14,6 @@ moVirt contains three main features: Monitoring of virtual machine health, such 
 
 This last feature is exceptionally cool, since a user can make use of a mobile device's camera to gather additional data like host status, resource utilization, and VMs running on a physical server.
 
-moVirt is the product of a lot of great work from oVirt developers, as well as interns from the GNOME [Outreachy Project](https://www.gnome.org/outreachy/), who have [been instrumental](http://www.sphoortijoglekar.com/blog/OPW/moVirt_1.html) in pushing moVirt to this initial release.
+moVirt is the product of a lot of great work from oVirt developers, as well as interns from the GNOME [Outreachy Project](https://www.gnome.org/outreachy/), who have [been instrumental](http://www.sphoortijoglekar.com/blog/OPW/moVirt_1.html) in [pushing moVirt](http://noisedoll.blogspot.ru/) to this [initial release](https://yixinzhang0225.wordpress.com/).
 
 If you have an Android device and are using oVirt to manage your data center, [check out these moVirt demos](https://www.youtube.com/channel/UCX2a6qOrCrUYGQCGLlHz2-A) and then download the app for yourself!
