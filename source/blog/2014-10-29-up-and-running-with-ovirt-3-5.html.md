@@ -24,6 +24,12 @@ In my [next post](/blog/2014/11/up-and-running-with-ovirt-3-5-part-two/), I'll d
 
 If you have access to good external NFS or iSCSI storage to use with your oVirt exploration, I'll point out where you can skip the GlusterFS bits and use your external storage resource.
 
+**IMPORTANT NOTE:** 
+
+I want to stress that this converged virtualization and storage scenario is a bleeding-edge configuration. Many of the ways you might use oVirt and Gluster are available in commercially-supported configurations using RHEV and RHS, but at this time, this oVirt+Gluster mashup isn't one of them. What's more, this configuration is not "supported" by the oVirt project proper, a state that should change somewhat in oVirt 3.6, which is set to include an official [converged setup option](http://www.ovirt.org/Features/Self_Hosted_Engine_Hyper_Converged_Gluster_Support).
+
+I do use this converged setup in my own lab, and it does work reliably for me, but for a multi-host setup it's crucial to use three (not two) gluster replicas, and it's important that you use CTDB, or something like it, to provide for automated IP failover. While it may seem reasonable to simply use "localhost" as the NFS mount point for the hosted engine storage, and rely on Gluster to handle the replication between the servers, this will lead to split brain issues.
+
 READMORE
 
 ## Prerequisites
