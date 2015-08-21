@@ -292,7 +292,7 @@ For more details on the board operations and structure refer to http://www.cento
 
 The Governing Board is responsible for the oversight of the CentOS Project, including the creation of new SIGs. The board also has the responsibility to ensure the goals of the CentOS Project and community, and the CentOS brand and marks, are protected. The board serves as the final authority within the CentOS Project, including SIGs.
 
-Members of the current CentOS Project team, together with additional individuals from Red Hat who have been working with the team, will form the initial board. The current composition of the board can be found at http://www.centos.org/about/#the-governing-team.
+Members of the current CentOS Project team, together with additional individuals from Red Hat who have been working with the team, will form the initial board. The current composition of the board can be found at https://www.centos.org/about/governance/#current-sitting-board.
 
 
 ==== Will Red Hat have a majority on the CentOS Governing Board?
@@ -302,7 +302,7 @@ Between current CentOS Project team members hired by Red Hat, and existing Red H
 
 ==== What is considered to be merit for the purposes of joining the new Governing Board?
 
-For information about the CentOS Governing Board, refer to http://www.centos.org/governance.
+For information about the CentOS Governing Board, refer to http://www.centos.org/about/governance.
 
 
 == CentOS and Variants
