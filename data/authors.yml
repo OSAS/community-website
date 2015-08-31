@@ -240,7 +240,7 @@ shaunm:
   name: Shaun McCance
   twitter: shaunm
   description: |
-    Shaun McCance is the Community Documentation Liaison in the Open Source 
+    Shaun McCance is the Community Documentation Liaison in the Open Source
     and Standards team at Red Hat, where he helps various open source projects
     improve their documentation community. He's the former GNOME documentation
     team lead, and has been working on open source documentation for over a
@@ -264,3 +264,8 @@ thildred:
     Tim Hildred is an internal communications specialist at Red Hat. He was
     born on the east coast of North America, and now lives on the east coast
     of Australia.
+
+valentina:
+  name: Valentina Mukhamedzhanova
+  description: |
+    Valentina Mukhamedzhanova is a Software Engineer at Red Hat working on yum package manager in RHEL. She is a Linux, Python, and open-source enthusiast. Her contributions include code, translations, podcasts, and screencasts..
