@@ -3,6 +3,8 @@ title: Event Report--LinuxCon NA 2015
 author: bkp
 date: 2015-09-02 17:52 UTC
 tags: LinuxCon, oVirt, KVM, Infrastructure.Next
+comments: true
+published: true
 ---
 
 ![LF logo](blog/lfsquare.jpg) Pretty much going to go out on limb here and make the call: if you didn't find something that interested you at this year's pantheon of LinuxCon North America events, then you may want to start using Windows. Except Microsoft was there too, so you're out of luck. And Apple, so just settle down.
