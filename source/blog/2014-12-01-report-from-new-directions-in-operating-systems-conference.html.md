@@ -24,7 +24,7 @@ After the break, we went back into a rather high-level talk by [Gareth Rushgrove
 [distributed key-value store](https://github.com/coreos/etcd) used by [CoreOS](https://coreos.com/) and [Kubernetes](https://github.com/googlecloudplatform/kubernetes),  
 among others. 
  
-Then it was time for me to take the stage. My talk, which was about Project Atomic, explained the technology, and I provided a potential use case, with the [Gluster.org](http://gluster.org/) web infrastructure. I spoke about OSTree, the need for SELinux, the basics of the system, and the philosophy behind it. Finally I discussed the problems that still need to be resolved and for which we do not yet have best practices. The talk seemed to be well received, even if I didn't got any questions after. 
+Then it was time for me to take the stage. My talk, which was about Project Atomic, explained the technology, and I provided a potential use case, with the [Gluster.org](http://www.gluster.org/) web infrastructure. I spoke about OSTree, the need for SELinux, the basics of the system, and the philosophy behind it. Finally I discussed the problems that still need to be resolved and for which we do not yet have best practices. The talk seemed to be well received, even if I didn't got any questions after. 
  
 My presentation was followed by two lighting talks before the lunch break. The first one was about an OpenSolaris/IllumOS variant named [Trillix](trillix.org ), which was given by its creator, Peter Tribble. He started with an overview of the current derivatives, and explained why he decided to create a new one (which included his desire to learn more, because others didn't work as he wanted, and as a platform to experiment).  
  

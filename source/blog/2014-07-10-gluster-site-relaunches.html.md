@@ -7,7 +7,7 @@ tags:
   - Middleman
 ---
 
-![](blog/antmascot.png) This week we are excited to give the [gluster.org](http://gluster.org/) website a facelift. In addition to the updated graphics and layout, we are now using the [Middleman](http://middlemanapp.com/) site generator to allow the site to be statically generated.
+![](blog/antmascot.png) This week we are excited to give the [gluster.org](http://www.gluster.org/) website a facelift. In addition to the updated graphics and layout, we are now using the [Middleman](http://middlemanapp.com/) site generator to allow the site to be statically generated.
 
 In addition to a new look and layout, the site has new navigation and a “Spotlight” section on the front page. We are still maintaining a legacy version of the site, so any old bookmarks you have should work just fine.
 

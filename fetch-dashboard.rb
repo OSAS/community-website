@@ -29,14 +29,14 @@ sites = [
     summary: "Control applications and workloads across cloud platforms, from one end of a virtual machine's lifecycle to another.",
     dashboard: 'http://projects.bitergia.com/redhat-manageiq-dashboard/browser/',
     url: 'http://projects.bitergia.com/redhat-manageiq-dashboard/browser/data/json/',
-    site: 'https://manageiq.org/',
+    site: 'https://www.manageiq.org/',
     stats: %w(irc its scm scr qaforums downloads)
   }, {
     name: 'Gluster',
     summary: 'GlusterFS is a scalable network filesystem. Using common off-the-shelf hardware, you can create large, distributed storage solutions for media streaming, data analysis, and other data- and bandwidth-intensive tasks.',
     dashboard: 'http://projects.bitergia.com/redhat-glusterfs-dashboard/browser/',
     url: 'http://projects.bitergia.com/redhat-glusterfs-dashboard/browser/data/json/',
-    site: 'https://gluster.org/',
+    site: 'https://www.gluster.org/',
     stats: %w(irc its scm mls downloads)
   }
 ]
