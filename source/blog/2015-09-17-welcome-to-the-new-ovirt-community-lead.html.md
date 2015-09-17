@@ -22,4 +22,4 @@ Mikey brings a strong set of skills to her new job with the oVirt community. Her
 
 Mikey also plans to capitalize on her event experience by speaking at the upcoming [LinuxCon EU](http://events.linuxfoundation.org/events/linuxcon-europe), co-organizing [PyCon CZ](http://cz.pycon.org/), and--a sure sign that life is about circles--advocating oVirt as much as possible at [FOSDEM](https://fosdem.org/2016/) in early 2016.
 
-The OSAS team is excited to have another new community lead on board, and is looking forward to working with Mikey.
+The OSAS team is pleased to welcome Mikey aboard! We're excited to continue supporting the oVirt community, so please reach out to Mikey if you have interest in being involved with oVirt!
