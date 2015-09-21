@@ -20,7 +20,7 @@ This time around, we want to focus this round of testing on Infiniband and RDMA 
 
 For a description of how to do this, see the [GlusterFest page](http://www.gluster.org/community/documentation/index.php/GlusterFest) on the community wiki. Run the tests, report the results, and report any bugs you found as a result.
 
-As an added bonus, use the [gluster-users mailing list](http://supercolony.gluster.org/mailman/listinfo/gluster-users) as another outlet for your testing. After reporting the results on the GlusterFest page, report them on the list, too, and other users can confirm – or counter – your results.
+As an added bonus, use the [gluster-users mailing list](http://lists.gluster.org/mailman/listinfo/gluster-users) as another outlet for your testing. After reporting the results on the GlusterFest page, report them on the list, too, and other users can confirm – or counter – your results.
 
 Find a new bug that is confirmed by the Gluster QE team, and I’ll send you a free t-shirt (see image below).
 
