@@ -17,7 +17,17 @@ alarsson:
     Alexander works in the Red Hat Desktop group and primarily works on Gtk+
     and the Gnome desktop, but has also been involved in other things like
     Spice and Docker. He works from Stockholm, Sweden. Follow him on Twitter
-    at @gnomealex.
+    @gnomealex.
+
+bex:
+  name: Brian Exelbierd
+  twitter: bexelbie
+  description: |
+    Brian (bex) Exelbierd is a Software Engineer for the Open Source and
+    Standards team at Red Hat. Brian supports the Project Atomic technologies
+    with both code and documenation.  In addition to development, Brian has a
+    background in Higher Education and traditional IT roles.  Follow him on
+    Twitter @bexelbie.
 
 bkearney:
   name: Bryan Kearney
