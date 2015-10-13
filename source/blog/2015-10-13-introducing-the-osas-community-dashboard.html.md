@@ -6,7 +6,7 @@ tags: community, oVirt, RDO, Gluster, ManageIQ
 comments: true
 published: true
 ---
-Red Hat's Open Source and Standards (OSAS) group, working with [Bitergia](http://www.bitegia.com), is [capturing interesting data](Dashboard/) from some of the upstream projects with which Red Hat is deeply involved. On this page, you'll find various vital signs from projects like [oVirt](http://www.ovirt.org), [RDO](https://www.rdoproject.org), [ManageIQ](http://manageiq.org/), and [Gluster](http://gluster.org/).
+Red Hat's Open Source and Standards (OSAS) group, working with [Bitergia](http://www.bitegia.com), is [capturing interesting data](dashboard/) from some of the upstream projects with which Red Hat is deeply involved. On this page, you'll find various vital signs from projects like [oVirt](http://www.ovirt.org), [RDO](https://www.rdoproject.org), [ManageIQ](http://manageiq.org/), and [Gluster](http://gluster.org/).
 
 It's useful for folks who are familiar with an open source project to be able to see, at a glance, the general trends for things like mailing list activity, IRC discussions, or how many bugs/issues are being opened and closed.
 
@@ -28,4 +28,4 @@ The only real way to judge a project's health is by measuring it against itself 
 
 ## More to Come
 
-What you're seeing on the [dashboard](Dashboard/) today isn't the final word on how we measure our project's success. We'll be continuing to look for ways to gather, and share, information about our projects. Have ideas? We'd love to hear from you!
+What you're seeing on the [dashboard](dashboard/) today isn't the final word on how we measure our project's success. We'll be continuing to look for ways to gather, and share, information about our projects. Have ideas? We'd love to hear from you!
