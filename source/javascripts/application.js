@@ -1,5 +1,5 @@
 //= require jquery
-//= require moment
+//= require momentjs
 //= require fullcalendar
 //= require chartjs
 //= require_tree ./vendor

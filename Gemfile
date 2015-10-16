@@ -64,7 +64,6 @@ gem 'rails-assets-jquery', '~> 1'
 
 gem 'rails-assets-momentjs'
 gem 'rails-assets-fullcalendar'
-gem 'icalendar', '~> 1.5'
 
 #####
 # Bootstrap
@@ -106,8 +105,8 @@ gem 'chronic'
 #gem 'json'
 #gem 'timezone'
 
-gem 'icalendar', '~> 1.5'
 gem 'font-awesome-middleman'
+gem 'icalendar', '~> 1.5'
 
 # RSS/Atom parsing
 gem "feedjira"
