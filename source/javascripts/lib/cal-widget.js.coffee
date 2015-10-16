@@ -45,6 +45,8 @@ $ ->
 
     # Set class on past events
     adjustClasses = (event, element, view) ->
+      return unless event.end
+
       past = event.end.isBefore now
 
       $(element[0]).removeClass('current').addClass('old') if past
