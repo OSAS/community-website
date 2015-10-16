@@ -42,7 +42,10 @@ sites = [
 ]
 
 # Current terminal width, in characters, used for the progressbar
-screen_width = IO.console.winsize[1]
+
+if IO.console
+  screen_width = IO.console.winsize[1]
+end
 
 sites.each do |site|
   site_name = site[:name]
@@ -57,10 +60,12 @@ sites.each do |site|
     prefix = "#{base_dir}/#{site_name.downcase}"
     prefix_exist = Dir.exist?(prefix)
 
-    # Progressbar settings (per site)
-    pb_action = prefix_exist ? 'Freshening' : 'Downloading'
-    pb_str = "#{pb_action} #{site_name} dashboard data"
-    pb_width = screen_width - pb_str.length - 10
+    if IO.console
+      # Progressbar settings (per site)
+      pb_action = prefix_exist ? 'Freshening' : 'Downloading'
+      pb_str = "#{pb_action} #{site_name} dashboard data"
+      pb_width = screen_width - pb_str.length - 10
+    end
 
     # Re-use the site config above by outputting specific metadata to files
     FileUtils.mkdir_p prefix
@@ -68,11 +73,13 @@ sites.each do |site|
 
     site[:stats].each do |stat|
       # Calculate and ouput our progressbar!
-      pb_current -= 1
-      pb_done = (pb_total - pb_current).to_f / pb_total.to_f
-      pb_bar = '#' * (pb_done * pb_width).to_i
-      pb_empty = '-' * ((1 - pb_done) * pb_width).to_i
-      print "\r#{pb_str}: #{(pb_done * 100).to_i}% #{pb_bar}#{pb_empty}"
+      if IO.console
+        pb_current -= 1
+        pb_done = (pb_total - pb_current).to_f / pb_total.to_f
+        pb_bar = '#' * (pb_done * pb_width).to_i
+        pb_empty = '-' * ((1 - pb_done) * pb_width).to_i
+        print "\r#{pb_str}: #{(pb_done * 100).to_i}% #{pb_bar}#{pb_empty}"
+      end
 
       %w(static evolutionary).each do |type|
         type_short = type.slice(0, 4)
@@ -107,8 +114,8 @@ sites.each do |site|
       end
     end
 
-    puts ''
+    puts '' if IO.console
   end
 end
 
-puts ''
+puts '' if IO.console
