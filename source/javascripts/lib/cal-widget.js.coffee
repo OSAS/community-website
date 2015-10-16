@@ -61,6 +61,7 @@ $ ->
         editable: false
         eventLimit: 4
         contentHeight: "auto"
+        timezone: "local"
         header:
           left: "title"
           firstDay: 1
