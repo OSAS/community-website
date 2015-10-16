@@ -65,7 +65,6 @@ $ ->
           left: "title"
           firstDay: 1
           center: ""
-          aspectRatio: 1
           right: "today prev,next"
         events: data
         eventMouseover: tooltipShow
