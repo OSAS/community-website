@@ -152,6 +152,11 @@ mgoldboim:
     Moran Goldboim is a Supervisor of Software Engineering at Red Hat, based
     in Ra'anana, Israel.
 
+mikey:
+  name: Mikey Ariel
+  description: |
+    Mikey Ariel is the Community Lead for the oVirt Project, based in the Czech Republic. Follow her on Twitter @ThatDocsLady.
+
 misc:
   name: Michael Scherer
   description: |
