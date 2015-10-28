@@ -155,7 +155,9 @@ mgoldboim:
 mikey:
   name: Mikey Ariel
   description: |
-    Mikey Ariel is the Community Lead for the oVirt Project, based in the Czech Republic. Follow her on Twitter @ThatDocsLady.
+    Mikey Ariel is the community lead for the Open Virtualization (oVirt) project, based in Czech Republic. Prior to diving into the world of community gardening, Mikey spent the better part of 7 years working as a technical writer for enterprise software solutions, including Red Hat's JBoss Fuse and OpenStack Platform, as well as a sporadic scrum master and agile coach specializing in non-development teams.
+
+    In her ever-decreasing spare time, Mikey serves as a community lead for Write the Docs Europe, workshop organizer for Django Girls, documentation coach for open source projects, passionate public speaker at tech conferences about all things docs, DevOps, and community, and generally sleeps very little. Follow her on Twitter @ThatDocsLady.
 
 misc:
   name: Michael Scherer
