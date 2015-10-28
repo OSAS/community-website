@@ -1,5 +1,5 @@
 ---
-title: Call For Proposals--FOSDEM 2016 Virtualization & IaaS DevRoom
+title: Call For Proposals&mdash;FOSDEM 2016 Virtualization & IaaS DevRoom
 date: 2015-10-28 15:04 UTC
 author: mikey
 tags: oVirt, community, FOSDEM
