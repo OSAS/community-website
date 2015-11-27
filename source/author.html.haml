@@ -13,10 +13,8 @@
 
   - if pages
 
-    - pages.each do |page|
+    - pages.select{ |p| defined? p.date }.sort_by(&:date).reverse.each do |page|
       - if (defined? page.title) && (defined? page.published && page.published?)
-
-        -#%li= page.public_methods
         = partial :blog_post, locals: {article: page, summarize: 400}
 
 - else
