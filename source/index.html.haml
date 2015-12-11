@@ -44,7 +44,7 @@ pageable: true
                 - conf.talks.each do |talk|
                   - event_count += 1
 
-                  - unless event_count > max_events
+                  - unless event_count > max_events || Date.parse(talk.start) < Time.now.to_date
                     %dd.upcoming-date
                       %span.day= Date.parse(talk.start).strftime('%-d')
                       %span.month= Date.parse(talk.start).strftime('%b')
