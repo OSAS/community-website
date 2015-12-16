@@ -103,15 +103,15 @@ READMORE
 
 Pushing out a release announcement would seem to be relatively straightforward, but in order to get the most impact from your announcement, it should be written in a way that's going to be most likely to be picked up by the media.
 
-Here, then, is a template for a release announcement, with some guidelines.
+Here, then, is a template for a release announcement, with some guidelines. Please note, this is a guide only, and boilerplating exactly what we have here may not be effective for your project.
 
-Be matter-of-factual about information shared in public statements. Avoid hyperbole ("the bestest project ever made!!!" and speculation ("the only project that can do this"). As tempting as it is, release announcements should not opportunities to hype your project. Media outlets will rapidly disregard such hyperbole and possible avoid spreading the word about your release altogether.
+Be matter-of-factual about information shared in public statements. Avoid hyperbole ("the bestest project ever made!!!" and speculation ("the only project that can do this"). As tempting as it is, release announcements should not opportunities to hype your project. You *can* take the opportunity to thank your hard-working community, however; this not only gives credit where credit is due, but also emphasizes the free and open source nature of the project. Media outlets will rapidly disregard such hyperbole and possible avoid spreading the word about your release altogether.
 
 Be clear, concise, and use facts and supportable information. This will help get your announcement more broadly disseminated.
 
 --
 
-Project X, the open-source, openly governed *[main purpose of project]* project, today announced the general availability of Project X *x.y*, a community-driven *[description of project]*. This latest community release includes several new features, including *[list of newest features]*.
+Project X, the *[main purpose of project: goals, functions, governance]* project, today announced the general availability of Project X *x.y*, a community-driven *[description of project]*. This latest community release includes several new features, including *[list of newest features]*.
 
 Developed by a global community, Project X *[a detailed paragraph of what the project is, what it does, and any other pertinent information should be included here.]*
 
