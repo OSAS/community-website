@@ -8,7 +8,7 @@ published: true
 ---
 One of the major functions of any open source project is releasing software, with the goal of reaching as many users as possible. To help our projects succeed, we need to ensure that we get the message out in a timely fashion, to the widest relevant audience, and with the right information.
 
-With that in mind, we've crafted a set of guidelines for coordinating release announcements to ensure that your excellent work doesn't get lost in the shuffle. Remember that these are only guides; you own community practices can be different.
+With that in mind, we've crafted a set of guidelines for coordinating release announcements to ensure that your excellent work doesn't get lost in the shuffle. Remember that these are only guides; your own community practices can be different.
 
 READMORE
 
@@ -22,18 +22,21 @@ READMORE
 ## Track: RC and Final Release for Major Point Release *X*.0
 
 *No less than three weeks from release date:*
- * Create a collaborative document (Etherpad, Google Doc) to include highlighted features for the release announcement, press release, and blog.
+
+  * Create a collaborative document (Etherpad, Google Doc) to include highlighted features for the release announcement, press release, and blog.
 
 *Two weeks from release date:*
- * Generate a changelog that includes notable changes to the release that will need to be documented and included within the main changelog file.
- * Merge any relevant content from the updated changelog into the release announcement, press release, and blog.
- * Create press release and send to PR for vesting
+
+  * Generate a changelog that includes notable changes to the release that will need to be documented and included within the main changelog file.
+  * Merge any relevant content from the updated changelog into the release announcement, press release, and blog.
+  * Create press release and send to PR for vesting
 
 *One week from release date:*
 
   * Have social media content in place for scheduled/live distribution before, during, and after release date.
 
 *Three days from release date:*
+
   * Release manager, engineering lead sign off on release announcement and blog.
   * PR signs off on press release.
 
