@@ -681,7 +681,7 @@ Middleware and Identity:
     url: http://xnio.jboss.org/
 
 
-Cloud and Virtualisation:
+Cloud and Virtualization:
 
   - name: Apache Deltacloud
     image: deltacloud
@@ -942,7 +942,7 @@ Developer Tools:
   - name: Eclipse
     url: http://www.eclipse.org
 
-  - name: GCC
+  - name: gcc
     url: http://gcc.gnu.org/
 
   - name: Python
@@ -1036,4 +1036,3 @@ Developer Tools:
 
   - name: vc-dwim
     url: http://www.gnu.org/software/vc-dwim/
-
