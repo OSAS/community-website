@@ -58,6 +58,11 @@ dbryant:
     Portland, Oregon in part because the water is great and rumored to be
     laced with Open. Follow her on Twitter at: @debbryant.
 
+dcaro:
+  name: David Caro
+  description: |
+    David Caro is a DevelOpser, mix between ops and developer, working as continuous integration engineer at Red Hat for the RHEVM project. David is always looking for new and better ways to automate stuff, for now by writing mostly python and bash scripts, but never afraid to learn new languages (ruby, perl, java, groovy, clojure, rust... he's written hello worlds in all of them). David is also interested in software architecture, from SOA to microservices, it's always a good conversation starter.
+
 dcleal:
   name: Dominic Cleal
 
