@@ -8,7 +8,7 @@ comments: true
 ---
 ![Linux.conf.au logo](blog/linuxconfau200.jpeg)
 
-Every year a (relatively) large number of Red Hatters descend upon a town/city in Australia or New Zealand for linux.conf.au. This is a blog of my week and a brain dump of sessions I attended or feel would be of value to my colleagues at Red Hat and in the borader open source community.
+Every year a (relatively) large number of Red Hatters descend upon a town/city in Australia or New Zealand for linux.conf.au. This is a blog of my week and a brain dump of sessions I attended or feel would be of value to my colleagues at Red Hat and in the broader open source community.
 
 As a nomadic and volunteer-run event, [linux.conf.au](http://lcabythebay.org.au/) moves location each year around Australia and NZ, with a new team and a new focus. For 2016, the location was Geelong Australia from 1-5 February, with around 600 attendees from over 30 countries.
 
