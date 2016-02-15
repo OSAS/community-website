@@ -311,13 +311,22 @@
                   %h4 Activity per person
                   .activity
                     Total:
-                    %strong= stat.irc.sent / stat.irc.senders
+                    - if stat.irc.senders > 0
+                      %strong= stat.irc.sent / stat.irc.senders
+                    - else
+                      %strong 0
                   .activity-month
                     This month:
-                    %strong= stat.irc.sent_30 / stat.irc.senders_30
+                    - if stat.irc.senders_30 > 0
+                      %strong= stat.irc.sent_30 / stat.irc.senders_30
+                    - else
+                      %strong 0
                   .activity-year
                     This year:
-                    %strong= stat.irc.sent_365 / stat.irc.senders_365
+                    - if stat.irc.senders_365 > 0
+                      %strong= stat.irc.sent_365 / stat.irc.senders_365
+                    - else
+                      %strong 0
 
               %canvas{id: "#{label}IRCsent", width: 900, height: 220, style: "max-width:100%"}
                 - content_for :tail do
