@@ -97,7 +97,7 @@ Tim Serong from SuSE gave a 101 session on Ceph, and I sadly missed Jamie Bainbr
 ### Special Mentions
 
 * The amazing Donna Benjamin ran a Community Leadership Summit with Jono Bacon in attendance
-* [Fraser Tweedale] ran a functional programming mini-conf.
+* Fraser Tweedale ran a functional programming mini-conf.
 
 The day finished with the Professional Delegates Networking session out at Little Creatures Brewery. Great to catch old friends and make new ones.
 
