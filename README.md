@@ -8,12 +8,7 @@ as "bundler".
 
 ### Fedora, RHEL, & CentOS
 
-```
-sudo yum install -y ruby-devel rubygems gcc-c++ curl-devel rubygem-bundler make
-git clone --recursive git@gitlab.osas.lab.eng.rdu2.redhat.com:garrett/community-middleman.git
-cd community-middleman
-bundle install
-```
+./setup.sh
 
 If you don't clone the repo with `--recursive`, make sure to run
 `git submodule init && git submodule update`
@@ -23,11 +18,7 @@ Note, you need to have your SSH key on GitHub and be added to the OSAS/rh-events
 ## Running a local server
 
 1. Start a local Middleman server that uses local gems by typing
-   `bundle exec middleman server`
-
-   (Note: 'server' is optional, but it helps if you're going through
-   command-history in bash or zsh with control-r, versus other middleman
-   commands like `console`, `build`, or `deploy`)
+   `./run-server.sh`
 
 2. Next, browse to <http://0.0.0.0:4567>
 
@@ -40,7 +31,8 @@ Note, you need to have your SSH key on GitHub and be added to the OSAS/rh-events
 
 ## Updating
 
-When there are new gems in `Gemfile`, just run `bundle install` again.
+The `./run-server.sh` script handles changes in the `Gemfile` by including
+a `bundle install` before running Middleman.
 
 
 ## Customizing your site
@@ -50,35 +42,28 @@ The site can be easily customized by editing `data/site.yml`.
 
 ## Adding a Post
 
-To add a post to the community blog (or any blog managed by middleman) use:
+To add a post to the community blog:
 
 ```
-bundle exec middleman article "Your title here"
+./create-post.rb "Your title here"
 ```
+
+There are many command line flags and options you can pass to the
+create-post script. Run `./create-post.rb` by itself to see all of them.
+
 
 ## Deploying
 
-### Setting up deployment
+The Community website is auto-deployed based on git, a few minutes after
+a file is committed and pushed to the git repository.
 
-FIXME: Right now, please reference <data/site.yml>
-
-
-### Actual deployment
-
-You'll need to be added to the `osasteam` group on OpenShift and have
-your public key added to your profile.
-
-After copying your public key to the remote server and configuring your
-site in <data/site.yml>, deployment is one simple command:
-```
-bundle exec middleman deploy
-```
+Please do not deploy the site manually.
 
 
 ### Add new features (parsers, etc.)
 
 Simply add a new `gem 'some-gem-here'` line in the `Gemfile` and run
-`bundle install`
+`bundle install`, or restart `./run-server.sh`
 
 
 ## More info
