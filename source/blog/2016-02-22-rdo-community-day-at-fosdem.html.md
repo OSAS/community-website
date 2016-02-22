@@ -5,9 +5,7 @@ tags: RDO, openstack, FOSDEM, CentOS
 date: 2016-02-22 09:24:19 EST
 ---
 
-Time does get away from me!
-
-It's been three weeks now since I was in Brussels for
+![RDO logo](blog/rdo-logo.png) Time does get away from me! It's been three weeks now since I was in Brussels for
 [FOSDEM](https://fosdem.org/2016/). On
 the day before FOSDEM started, we held the first [RDO Community
 Day](https://www.rdoproject.org/events/rdo-day-fosdem-2016/) as
@@ -16,10 +14,12 @@ Dojo](https://wiki.centos.org/Events/Dojo/Brussels2016).
 (Mark your calendars, we're definitely doing
 this again next year!)
 
-Rewinding a little ... last year at FOSDEM, we had  a few RDO
+Rewinding a little... last year at FOSDEM, we had  a few RDO
 presentations as part of the CentOS Dojo. This was very well received,
 and at the RDO meetup at the OpenStack Summit in Vancouver, we decided
 to make it into a whole day.
+
+READMORE
 
 We once again co-located with the CentOS Dojo, because it just makes
 sense. CentOS has been a very important partner to the RDO project in
@@ -47,4 +47,3 @@ we don't have video for it.
 
 A huge thank you to everyone that attended and spoke, and also to IBM
 for supporting us by providing the excellent facility.
-
