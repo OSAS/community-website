@@ -3,6 +3,8 @@ title: Welcome to the new oVirt.org Website
 date: 2016-02-19 16:32 UTC
 author: mikey
 tags: oVirt
+published: true
+comments: true
 ---
 
 ![oVirt logo](blog/ovirt-logo.png) As part of their efforts to upgrade the [ovirt.org website](http://www.ovirt.org) and improve the community experience, the oVirt community has migrated the oVirt website from a MediaWiki site to a static site, authored in [Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/) and published with [Middleman](https://middlemanapp.com/). This was a major project that took more than six months and involved many contributors from all aspects of the project.
