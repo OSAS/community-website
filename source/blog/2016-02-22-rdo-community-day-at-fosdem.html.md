@@ -3,10 +3,11 @@ title: RDO Community Day at FOSDEM
 author: rbowen
 tags: RDO, openstack, FOSDEM, CentOS
 date: 2016-02-22 09:24:19 EST
+published: true
+comments: true
 ---
 
-![RDO logo](blog/rdo-logo.png) Time does get away from me! It's been three weeks now since I was in Brussels for
-[FOSDEM](https://fosdem.org/2016/). On
+![RDO logo](blog/rdo-logo.png) Time does get away from me! It's been three weeks now since I was in Brussels for [FOSDEM](https://fosdem.org/2016/). On
 the day before FOSDEM started, we held the first [RDO Community
 Day](https://www.rdoproject.org/events/rdo-day-fosdem-2016/) as
 part of the [CentOS

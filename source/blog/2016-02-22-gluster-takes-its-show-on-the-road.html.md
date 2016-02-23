@@ -28,10 +28,6 @@ working on getting the hardware in the build infrastructure and testing
 environment, the Gluster packages will be one of the first SIG projects
 going to use that.
 
-I was surprised to see two engineers from Nutanix attend
-the talk. They were very attentive when others asked about VM workloads
-and hyper-convergence-related topics.
-
 The CentOS team maintains a Gluster environment for virtual machines. It
 is possible for CentOS projects to request a VM, and this VM will be
 located on their OpenNebula "cloud" backed by Gluster. This is a small
@@ -72,7 +68,7 @@ got a request to present something at the [next NLUUG conference](https://www.nl
 
 ## Gluster Developer Gatherings, Red Hat, Brno
 
-This was mainly informal chats about different topics listed in [this Google Doc](https://docs.google.com/document/d/1BhaqTsp_cLcLbkUATQ4WNVT1KcNiFDVRNGkmAe6Z_3c). We encouraged each topic to add a link to an etherpad where notes
+This was mainly informal chats about different topics. We encouraged each topic to add a link to an etherpad where notes
 are kept. The presenters of the sessions are expected to send a summary
 based on the notes to the (community) mailing lists, which I won't cover here.
 
