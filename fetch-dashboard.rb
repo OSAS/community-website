@@ -13,15 +13,15 @@ sites = [
   {
     name: 'oVirt',
     summary: 'A virtualization platform with an easy-to-use web interface that manages virtual machines, storage, and virtualized networks. oVirt is open source, freely available, and powered by KVM on Linux.',
-    dashboard: 'http://www.ovirt.org/stats/',
-    url: 'http://www.ovirt.org/stats/data/json/',
+    dashboard: 'http://projects.bitergia.com/redhat-ovirt-dashboard/browser/',
+    url: 'http://projects.bitergia.com/redhat-ovirt-dashboard/browser/data/json/',
     site: 'https://ovirt.org/',
     stats: %w(irc its mls scm)
   }, {
     name: 'RDO',
     summary: 'A community of people using and deploying OpenStack® on Red Hat Enterprise Linux, Fedora, and other Linux distributions based on these.',
-    dashboard: 'https://www.rdoproject.org/stats/',
-    url: 'https://www.rdoproject.org/stats/data/json/',
+    dashboard: 'http://projects.bitergia.com/redhat-rdo-dashboard/browser/',
+    url: 'http://projects.bitergia.com/redhat-rdo-dashboard/browser/data/json/',
     site: 'https://rdoproject.org/',
     stats: %w(irc its mediawiki mls qaforums scm)
   }, {
