@@ -13,7 +13,7 @@ Vijay Bellur, Gluster Project Lead, did a short talk on Gluster.Next, our ongoin
 READMORE
 
 * What is Gluster.Next?
-* How are we building Gluster.Next –
+* How are we building Gluster.Next
   * DHTv2, NSR, Glusterd 2.0, Heketi, Brick multiplexing, Quality of Service
 * Why are we building Gluster.Next
 * When is this planned for release
