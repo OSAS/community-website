@@ -41,3 +41,5 @@ But there are better ways to ask such questions. If you go in with a chip on you
 It should be noted, by the way, that project maintainers and owners can take this ideas and apply them in the other direction: make it easy to learn a project's ins and outs, define contributor paths, set transparent project goals, listen, and avoid nerd rage. It goes both ways.
 
 Online communication is hard, because social cues you get with face-to-face conversations are missing. But effective and consistent communications strategies can make life in FOSS easier and cut down on the flame wars.
+
+*(Image under U.S. government public domain.)*
