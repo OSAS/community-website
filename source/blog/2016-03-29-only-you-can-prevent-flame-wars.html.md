@@ -1,7 +1,7 @@
 ---
 title: Only You Can Prevent Flame Wars
 date: 2016-03-29 19:56 UTC
-tags:
+tags: community
 author: bkp
 published: true
 comments: true
