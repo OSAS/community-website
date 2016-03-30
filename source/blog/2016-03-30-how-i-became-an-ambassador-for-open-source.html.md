@@ -14,7 +14,7 @@ Fast forward five years: that's when things started to change.
 
 READMORE
 
-My open organization story didn't involve talking to Red Hatters or FOSS evangelists. It was just a typical weekday, and I was bored. So I decided to do some research on Red Hat, and I found Jim Whitehurst's Twitter profile. I clicked on a URL there, and found myself reading Jim's "[first impressions of an open organization](http://www.redhat.com/en/explore/the-open-organization-book)." Jim's job interview instantly caught my eye. Everything seemed different, from how he had to pay for drinks and food, to how he had an unusually casual job interview that attempted to truly understand him. It was fascinating. I knew I needed to read this book, from which could learn a great deal.
+My open organization story didn't involve talking to Red Hatters or FOSS evangelists. It was just a typical weekday, and I was bored. So I decided to do some research on Red Hat, and I found Jim Whitehurst's Twitter profile. I clicked on a URL there, and found myself reading Jim's "[first impressions of an open organization](http://www.redhat.com/en/explore/the-open-organization-book)." Jim's job interview instantly caught my eye. Everything seemed different, from how he had to pay for drinks and food, to how he had an unusually casual job interview that attempted to truly understand him. It was fascinating. I knew I needed to read this book, from which I could learn a great deal.
 
 Reading about Red Hat's culture and contributions to FOSS inspired me to do something great for open source. Wanting to experience the open source culture that Red Hat celebrates and, recalling that the [Fedora Project](https://getfedora.org/) was a project Red Hat sponsors, I decided to contribute to Fedora.
 
