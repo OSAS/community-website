@@ -24,7 +24,7 @@ amye:
   twitter: amye
   description: |
     Amye is the Gluster Community Lead at Red Hat. Previously, she was a project manager working in Drupal to expand out the world one website and infrastructure build at a time. Follow her on Twitter
-    @amye.    
+    @amye.
 
 bex:
   name: Brian Exelbierd
@@ -316,7 +316,7 @@ tcallaway:
     Worshipped by lemurs throughout the known universe, Red Hat employee
     since 2001, currently working on promoting Open Source in higher
     education. Enjoys sci-fi, pinball, traveling, and hockey. Find him on
-    Twitter at: @spotrh.
+    Twitter at @spotrh.
 
 tconrey:
   name: Theron Conrey
@@ -332,3 +332,8 @@ valentina:
   name: Valentina Mukhamedzhanova
   description: |
     Valentina Mukhamedzhanova is a Software Engineer at Red Hat working on yum package manager in RHEL. She is a Linux, Python, and open-source enthusiast. Her contributions include code, translations, podcasts, and screencasts.
+
+whuiren:
+  name: Woo Huiren
+  description: |
+    Woo Huiren is a Fedora Ambassador with a goal of transforming Singapore's proprietary landscape to an open source garden filled with flowers. Currently still studying Information Technology in a local polytechnic. A full-stack PHP and NodeJS developer, Woo Loves freedom and enjoys helping others. Find him on Twitter at @woohuiren.

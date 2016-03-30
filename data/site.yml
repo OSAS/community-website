@@ -20,7 +20,7 @@ owner: Red Hat, Inc.
 founding_year: 2012 # Defaults to current year if commented
 
 # Manual copyright string, to override the automatic one
-copyright: "Copyright &copy; 2012 &ndash; 2013 Red Hat, Inc."
+copyright: "Copyright &copy; 2012 &ndash; 2016 Red Hat, Inc."
 
 
 # Optional footer links
