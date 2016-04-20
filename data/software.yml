@@ -394,9 +394,6 @@ Desktop:
   - name: pango
     url: http://www.pango.org/
 
-  - name: PatternFly
-    url: https://www.patternfly.org
-
   - name: piglit
     url: http://cgit.freedesktop.org/piglit/
 
@@ -944,6 +941,9 @@ Developer Tools:
 
   - name: gcc
     url: http://gcc.gnu.org/
+
+  - name: PatternFly
+    url: https://www.patternfly.org
 
   - name: Python
     url: http://python.org

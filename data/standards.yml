@@ -1,4 +1,4 @@
-Standard bodies:
+Standard Bodies:
 
   - name: DMTF
     url: http://dmtf.org/
@@ -22,7 +22,7 @@ Standard bodies:
     url: http://www.opengroup.org/
 
 
-Software standards:
+Software Standards:
 
   - name: C++
     image: c++
@@ -47,12 +47,16 @@ Software standards:
     image: osgi
     url: http://www.osgi.org/
 
+  - name: PatternFly
+    image: patternfly
+    url: https://www.patternfly.org
+
   - name: UEFI Forum
     image: uefi
     url: http://www.uefi.org/
 
 
-Security standards:
+Security Standards:
 
   - name: CSA Cloud Security Alliance
     image: csa
@@ -63,7 +67,7 @@ Security standards:
     url: http://www.trustedcomputinggroup.org/
 
 
-Benchmark standards:
+Benchmark Standards:
 
   - name: SPEC Standard Performance Evaluation Corporation
     image: spec
