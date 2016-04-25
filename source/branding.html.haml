@@ -1,6 +1,7 @@
 ---
 title: Red Hat Community Brand Guide
 page_classes: brand-guide
+stylesheet: brandguide
 ---
 
 :ruby
@@ -13,11 +14,12 @@ page_classes: brand-guide
   # Output HTML for the color table
   def format_color_table colors
     capture_haml do
-      haml_tag :table, {class: "table"} do
+      haml_tag :table, {class: "table color-table"} do
         haml_tag :tr, {} do
+          color_width = (100 / colors.count).floor
           colors.each do |color|
             next if color[:hex].nil?
-            haml_tag :td, {style: "#{color_contrast color[:hex]}"} do
+            haml_tag :td, {style: "#{color_contrast color[:hex]}", class: "brand-color-#{color[:name].parameterize}", width: "#{color_width}%"} do
               haml_tag :strong, color[:name]
               haml_tag :ul do
                 haml_tag :li, "Hex: #{color[:hex]}"
@@ -68,30 +70,34 @@ page_classes: brand-guide
 
   This document details the visual style and identity of a number of our upstream and downstream community projects. Just like the communities themselves, the exact set of projects we work with is subject to change. When you have an opportunity to work with open source communities, and have questions about branding, the brand standards has another piece of advice: “Get involved. Contact an active member to find out how you can help.”
 
-  ## Keep Things Open
+  ### Keep Things Open
+  {:.no_toc}
 
   Since we are helping communities that work through open collaboration, we need to avoid building boundaries for other designers. Always strive to use free and open elements in your designs - images that you have created yourself, and fonts that are released under the SIL Open Font License. This way others can build on your work without having to fear breaking copyright or licensing agreements. [Open Font Library](https://fontlibrary.org/) and [Google Fonts](https://www.google.com/fonts) are great resources for finding free fonts.
 
   Also remember to use open file formats like SVG so your files can be opened and edited by others using open source tools like Inkscape. While open source tools like GIMP can open images in Photoshop PSD format, there are some limitations with certain layer modes and object types. For this reason, also think though your designs and try to think how you could best share your assets in case someone needs to create derived works from them. You are not just fulfilling a design assignment, you are also helping a project shape its identity, and the community needs to be able to build on top of your work.
 
-  ## Table of Contents
+  * * *
+
+  ### Table of Contents
+  {:.no_toc}
 
   1. ToC
   {:toc}
 
   * * *
 
-  # Common Branding
+  ## Common Branding
 
   There are situations when you need to represent several of our community brands at once, like a shared booth at an event or a brochure covering several projects. This is where you should adapt the [Red Hat style guide](http://brand.redhat.com) to tie the projects together with a common style. This also creates a visual link to Red Hat which works well if you are representing community projects at a Red Hat event, for example.
 
   ![](/images/branding/image15.png)
 
-  ### Typeface
+  #### Typeface
 
   Red Hat branding uses the commercially licensed font called Interstate. There is an open source variant of it called [Overpass](http://overpassfont.org), that can be used to substitute it on the web. It is available in Fedora in a package called overpass-fonts.  Please see the [Brand Standards section about typeface](http://brand.redhat.com/elements/typography/) for more details.
 
-  ### Color palette
+  #### Color palette
 
   We are using the Red Hat secondary colors to represent community projects. If your design uses common branding, you should generally use only the projects’ logos to represent them. The main visual palette and style of your design should follow the Red Hat brand guidelines to keep things consistent. When your design represents only one project, you can use the color palette and visual style of that particular project.
 
@@ -127,7 +133,7 @@ page_classes: brand-guide
   "}
 
 
-  # Fedora
+  ## Fedora
 
   ![fedora_logo.png](/images/branding/image06.png)
 
@@ -135,25 +141,25 @@ page_classes: brand-guide
 
   ![Montserrat_sample.png](/images/branding/image00.png)
 
-  ## Key Message
+  ### Key Message
 
   The Fedora Project is a community project that leads the advancement of free and open source software and content. The Fedora community produces and releases a complete Linux-based operating system. This distribution incorporates leading-edge technologies that are built by Free software developers around the globe. The Fedora Project contributes everything it builds back to the Free and open source world, and anyone can participate.
 
   ![OpenSans-sample.png](/images/branding/image11.png)
 
-  ## Visual Style
+  ### Visual Style
 
   Fedora project has its own design team, so you should work with them, especially if you have questions about the visual style. They use the Fedora tickets to manage their workflow, so the easiest way to get in touch is to [file a new ticket](https://fedorahosted.org/design-team/newticket).
 
   The [Fedora Logo Usage Guidelines](https://fedoraproject.org/wiki/Logo/UsageGuidelines) on the Fedora wiki has a lot more information and details about the brand and visual style, so if you are about to design something for Fedora, make sure you study it carefully!
 
-  ### Font and Text Styles
+  #### Font and Text Styles
 
   Fedora recommends using Open Sans for regular text content, and  Montserrat for headlines and titles.
 
   Open Sans is packaged for Fedora - you'll need to install the texlive-opensans package. Open Sans may also be downloaded from the [Open Sans website](http://www.opensans.com/). Montserrat may be downloaded from [Font Squirrel website](https://www.fontsquirrel.com/fonts/montserrat). Both fonts are openly licensed and freely distributable.
 
-  ### Colors
+  #### Colors
 
   #{color_table "
     Fedora Blue
@@ -167,7 +173,7 @@ page_classes: brand-guide
     CMYK 100/57/0/38
   "}
 
-  ##### Secondary Colors
+  ###### Secondary Colors
 
   #{color_table "
     Friends Magenta        
@@ -187,7 +193,7 @@ page_classes: brand-guide
     CMYK 57/46/0/0
   "}
 
-  ##### Other Official Colors
+  ###### Other Official Colors
 
   #{color_table "
     Black
@@ -205,49 +211,49 @@ page_classes: brand-guide
 
   Also, have a look at the [section about colors](https://fedoraproject.org/wiki/Logo/UsageGuidelines%23Colors) in the [Fedora Logo Usage Guidelines](https://fedoraproject.org/wiki/Logo/UsageGuidelines).
 
-  ## Messaging
+  ### Messaging
 
   Innovation through Fedora often forms the basis for many Red Hat open source projects, such as Red Hat Enterprise Linux, CentOS, and Project Atomic. Fedora is highly adaptive and is involved in the development stage of nearly every Red Hat-sponsored open source project.
 
-  ### Elevator Pitches
+  #### Elevator Pitches
 
-  ##### 25 Words
+  ###### 25 Words
 
   The Fedora Project is a free and open source software community project that produces a complete Linux-based operating system with editions tailored for specific usage.
 
-  ##### 50 Words
+  ###### 50 Words
 
   The Fedora Project is a Free and open source software community project that produces a complete Linux-based operating system ready for cloud instances, server platforms, or workstation environments. This distribution incorporates leading-edge technologies built by free software developers and serves as the basis for Red Hat Enterprise Linux and CentOS.
 
-  ##### 100 Words
+  ###### 100 Words
 
   The Fedora Project is a vibrant community project that leads the advancement of free and open source software and content. The Fedora community produces a complete Linux-based operating system every six months that is ready for cloud instances, server platforms, or workstation environments. The Fedora distribution incorporates leading-edge technologies built by free software developers around the world. Innovation through Fedora often forms the basis for many Red Hat open source projects, such as Red Hat Enterprise Linux, CentOS, and Project Atomic. The Fedora Project contributes everything it builds back to the free and open source world, and anyone can participate.
 
   * * *
 
-  # RDO
+  ## RDO
 
   ![](/images/branding/image22.png)
 
   RDO provides the open source foundation for an organization to build a private or public Infrastructure- as-a-Service (IaaS) cloud on top of enterprise-ready platforms like CentOS.
 
-  ## Key Message
+  ### Key Message
 
   RDO is a freely available, community-supported distribution of OpenStack that runs on Red Hat Enterprise Linux, CentOS, Fedora, and their derivatives. In addition to providing a set of software packages, RDO is a place for users of the cloud computing platform on Red Hat Linux operating systems to get help and compare notes on running OpenStack.
 
-  ## Visual Style
+  ### Visual Style
 
   ![Screenshot from 2016-03-04 09-52-07.png](/images/branding/image21.png)
 
   RDO uses strong red and black areas to create a bold and solid visual style for the project. The preferred representation of the RDO logo is white over the RDO Red background. If this is not possible, a red box containing the white logo can be used to keep the solid feel, for example if your background is uneven or different color. For clothing and promotional items where it is not always possible to control the color precisely, use your own judgement to try to best maintain the identity of RDO.
 
-  ### Font and Text Styles
+  #### Font and Text Styles
 
   RDO project uses two font families; [Raleway](https://www.google.com/fonts%23UsePlace:use/Collection:Raleway) for headlines and [Lato](https://www.google.com/fonts%23UsePlace:use/Collection:Lato) for normal text content. Normal headlines use the regular weight of Raleway, but if you want to make a strong point, you can place your message in white and bold Raleway over a black area, like on the example.
 
   Both typefaces are free and available from Google Fonts, additionally Lato can also be installed with the Software application on Fedora.
 
-  ### Colors
+  #### Colors
 
   Since the RDO logo is generally white, an important part of the visual identity is created by the red and black areas - as seen for example on the [project website](http://rdoproject.org). The same solid feel should be present in printed material and event presence as well.
 
@@ -268,25 +274,25 @@ page_classes: brand-guide
     CMYK 0/0/0/0
   "}
 
-  ## Messaging
+  ### Messaging
 
   RDO can be tightly integrated with the upstream OpenStack project, as well as ManageIQ for scalable cloud systems management. RDO can also be used in conjunction with oVirt for hybrid cloud/datacenter deployments, as well as Ceph for block storage and Gluster for file-based storage.
 
-  ### Elevator Pitches
+  #### Elevator Pitches
 
-  ##### 25 Words
+  ###### 25 Words
 
   RDO provides the open source foundation for an organization to build private or public OpenStack Infrastructure-as-a-Service (IaaS) clouds on top of platforms such as CentOS.
 
-  ##### 50 Words
+  ###### 50 Words
 
   RDO technology provides the open source foundation for your organization to build a private or public Infrastructure-as-a-Service (IaaS) cloud. RDO enables you to leverage OpenStack, the fastest-growing open cloud infrastructure project, technology, and community while maintaining the security, stability, and cloud-readiness of platforms like CentOS and Red Hat Enterprise Linux.
 
-  ##### 100 Words
+  ###### 100 Words
 
   RDO technology provides the open source foundation for your organization to build a private or public Infrastructure-as-a-Service (IaaS) cloud for cloud-enabled workloads. Using RDO enables you to leverage OpenStack, the largest and fastest-growing open source cloud infrastructure project, technology and community, while maintaining the security, stability, and cloud-readiness of platforms such as CentOS and Red Hat Enterprise Linux. As an RDO user, your organization is well represented in the broader OpenStack community by the Red Hat-sponsored RDO community, where RDO is currently a top open source contributor and a significant and vibrant presence in all of the OpenStack subprojects.
 
-  # oVirt
+  ## oVirt
 
   ![oVirt-logo.png](/images/branding/image16.png)
 
@@ -296,17 +302,17 @@ page_classes: brand-guide
 
   ![ovirtmockuprollupaa.png](/images/branding/image09.png)
 
-  ## Key Message
+  ### Key Message
 
   ![](/images/branding/image12.png)
 
   oVirt provides datacenter virtualization, including a kernel-based virtual machine (KVM) hypervisor running on the Linux kernel, and a virtualization management system based on Fedora or CentOS and the WildFly Application Server.
 
-  ## Visual Style
+  ### Visual Style
 
   oVirt has a mostly light overall feel, with headlines and accents in the green color. You can also use light grays for illustrations on brochures. If you need more impact for presentations or event booths, you can use a green background and white logo.
 
-  ### Font and Text Styles
+  #### Font and Text Styles
 
   ![Screenshot from 2016-03-04 11-12-42.png](/images/branding/image17.png)
 
@@ -316,11 +322,11 @@ page_classes: brand-guide
 
   Venturis Sans is also included in Fedora, but the Software installer does not find it since it is part of the TeX publishing framework, and thus not listed as a software package by itself. But you can use the command  “sudo dnf install texlive-venturisadf” on the Terminal to install it by its own.
 
-  ### Colors
+  #### Colors
 
   The oVirt logo is green but the “Virt” part can be white if the logo is placed on a green background. Just make sure the “o” has legible contrast against the background.
 
-  ##### Logo Colors
+  ###### Logo Colors
 
   #{color_table "
     oVirt Green
@@ -334,7 +340,7 @@ page_classes: brand-guide
     CMYK 34/0/61/0
   "}
 
-  ##### Additional Colors
+  ###### Additional Colors
 
   #{color_table "
     Accent Yellow
@@ -363,21 +369,21 @@ page_classes: brand-guide
     CMYK 4/3/6/7
   "}
 
-  ## Messaging
+  ### Messaging
 
   oVirt works closely with RDO, a community-driven OpenStack distribution and ManageIQ, which provides cloud management and orchestration across multiple hypervisors, public cloud providers, and OpenStack. oVirt also is integrated with Gluster for file-based storage and Ceph for block storage.
 
-  ### Elevator Pitches
+  #### Elevator Pitches
 
-  ##### 25 Words
+  ###### 25 Words
 
   A virtualization platform with an easy-to-use web interface that manages virtual machines, storage, and networks. oVirt is open source and powered by KVM on Linux.
 
-  ##### 50 Words
+  ###### 50 Words
 
   A virtualization platform with an easy-to-use web interface that manages virtual machines, storage, and networks. oVirt is open source, powered by KVM on Linux, and integrates with Ceph and Gluster for storage. Manage virtual machine workloads at the scale you need, while taking advantage of the performance benefits you expect.
 
-  ##### 100 Words
+  ###### 100 Words
 
   Your organization’s success depends on having an infrastructure that’s flexible while being highly available and resilient. As technology and business demands evolve, your infrastructure must be ready to meet these challenges now and in future.
 
@@ -385,7 +391,7 @@ page_classes: brand-guide
 
   * * *
 
-  # CentOS
+  ## CentOS
 
   ![centos-logo-lightbg.png](/images/branding/image01.png)
 
@@ -393,25 +399,25 @@ page_classes: brand-guide
 
   ![centosbanner.png](/images/branding/image08.png)
 
-  ## Key Message
+  ### Key Message
 
   The CentOS project is a community project that is developed, maintained, and supported by and for its users and contributors responsible for the production of CentOS, a consistent Linux distribution derived from the Red Hat Enterprise Linux codebase and other sources.
 
-  ## Visual Style
+  ### Visual Style
 
   ![](/images/branding/image14.png)
 
   CentOS has a dark blue “science fiction” -like visual style with a circuit board pattern and a gradient to darker blue, with white text laid on top. The yellow color from the logo has also been used as an accent color with designs using the light-on-dark color scheme, like on the website.
 
-  ### Font and Text Styles
+  #### Font and Text Styles
 
   Two font families are utilized by CentOS. [Exo](https://www.google.com/fonts%23UsePlace:use/Collection:Exo) for headlines and [Source Sans Pro](https://www.google.com/fonts%23UsePlace:use/Collection:Source%2BSans%2BPro) for normal text.
 
   Both fonts are freely licensed and can be downloaded from the Google Fonts service. On Fedora, Source Sans Pro can be installed with the Software application.
 
-  ### Colors
+  #### Colors
 
-  ##### CentOS Logo Colors
+  ###### CentOS Logo Colors
 
   #{color_table "
     Green
@@ -435,7 +441,7 @@ page_classes: brand-guide
     CMYK 92/70/0/0
   "}
 
-  ##### Additional Colors
+  ###### Additional Colors
 
   #{color_table "
     Background Gradient Blue
@@ -447,21 +453,21 @@ page_classes: brand-guide
     RGB #050517
   "}
 
-  ## Messaging
+  ### Messaging
 
   CentOS provides a base for community adoption and integration of open source cloud, storage, network, and infrastructure technologies on an operating system derived from Red Hat Enterprise Linux sources. CentOS is a leading community platform for many open source technologies from projects such as OpenStack for the cloud, Project Atomic for container management, and oVirt for virtual machine deployment.
 
-  ### Elevator Pitches
+  #### Elevator Pitches
 
-  ##### 25 Words
+  ###### 25 Words
 
   The CentOS project is responsible for the production of CentOS, a consistent Linux distribution derived from the Red Hat Enterprise Linux codebase and other sources.
 
-  ##### 50 Words
+  ###### 50 Words
 
   The CentOS project is responsible for the production of CentOS, a consistent Linux distribution derived from the Red Hat Enterprise Linux codebase and other sources. The CentOS Project also establishes CentOS as a leading community platform for emerging open source technologies from projects such as OpenStack, Project Atomic, and oVirt.
 
-  ##### 100 Words
+  ###### 100 Words
 
   The CentOS project is a community project that is developed, maintained, and supported by and for its users and contributors responsible for the production of CentOS, a consistent Linux distribution derived from the Red Hat Enterprise Linux codebase and other sources.
 
@@ -469,31 +475,31 @@ page_classes: brand-guide
 
   * * *
 
-  # Gluster
+  ## Gluster
 
   ![ant-w-GLUSTER-text.png](/images/branding/image23.png)
 
   The Gluster Project community produces and releases GlusterFS, open source software used to create a scalable network file system for large and distributed storage solutions.
 
-  ## Key Message
+  ### Key Message
 
   ![](/images/branding/image05.png)
 
   The Gluster Project produces GlusterFS, a free and open source software solution used to create a scalable network file system. Using commodity hardware, users can create large, distributed storage solutions for media streaming, data analysis, and other data- and bandwidth-intensive tasks at a fraction of the investment of traditional storage.
 
-  ## Visual Style
+  ### Visual Style
 
   ![](/images/branding/image04.png)
 
   Orange and black accents and sky blue background on the website.
 
-  ### Font and Text Styles
+  #### Font and Text Styles
 
   Gluster uses Lato for its typeface, bold weight for headlines and  regular for, well, regular text content.
 
   Lato is a freely licensed typeface and is available on Fedora with the Software application. It can also be [downloaded from Google Fonts](https://www.google.com/fonts%23UsePlace:use/Collection:Lato).
 
-  ### Colors
+  #### Colors
 
   #{color_table "
     Orange
@@ -505,21 +511,21 @@ page_classes: brand-guide
     RGB #202020
   "}
 
-  ## Messaging
+  ### Messaging
 
   Thanks to its highly flexible nature, Gluster can be integrated with virtually every Red Hat-sponsored project that needs a powerful storage solution.
 
-  ### Elevator Pitches
+  #### Elevator Pitches
 
-  ##### 25 Words
+  ###### 25 Words
 
   The Gluster Project community produces and releases GlusterFS, open source software used to create a scalable network file system for large and distributed storage solutions.
 
-  ##### 50 Words
+  ###### 50 Words
 
   The Gluster Project produces GlusterFS, a free and open source software solution used to create a scalable network file system. Using commodity hardware, users can create large, distributed storage solutions for media streaming, data analysis, and other data- and bandwidth-intensive tasks at a fraction of the investment of traditional storage.
 
-  ##### 100 Words
+  ###### 100 Words
 
   The Gluster Project community produces and releases GlusterFS, a free and open source software solution used to create a scalable network file system. Using common off-the-shelf hardware, users can create large, distributed storage solutions for media streaming, data analysis, and other data- and bandwidth-intensive tasks.
 
@@ -527,7 +533,7 @@ page_classes: brand-guide
 
   * * *
 
-  # Ceph
+  ## Ceph
 
   Note: Ceph style is being currently revised, so this is subject to change.
 
@@ -535,19 +541,19 @@ page_classes: brand-guide
 
   Ceph is an open source and freely available distributed object store and file system that relies upon the RADOS (Reliable Autonomic Distributed Object Store) foundation.
 
-  ## Key Message
+  ### Key Message
 
   Ceph is an open source project built through the efforts of a dedicated, passionate community. Ceph is a freely distributed object store and file system that uses the RADOS (Reliable Autonomic Distributed Object Store) foundation to provide applications with object, block, and file system storage in a single, unified storage cluster.
 
-  ## Visual Style
+  ### Visual Style
 
   Ceph has a brief [logo usage styleguide](http://ceph.com/logos/) on the project website.
 
-  ### Font and Text Styles
+  #### Font and Text Styles
 
   Ceph uses Apex Sans typeface for headlines and Helvetica for text content. Apex Sans is a commercially licensed font, as well as Helvetica. You can likely substitute Helvetica with “Nimbus Sans” or “Free Sans” from the Freefont package on the Software application on Fedora if you don’t have a license for Apex Sans. For
 
-  ### Logo Colors
+  #### Logo Colors
 
   Currently the colors are defined only as RGB, pantone and cmyk versions need to be added in the future.
 
@@ -559,7 +565,7 @@ page_classes: brand-guide
     RGB #37424A
   "}
 
-  ### Secondary Colors
+  #### Secondary Colors
 
   #{color_table "
     Blue
@@ -572,21 +578,21 @@ page_classes: brand-guide
     RGB #D0D2D1
   "}
 
-  ## Messaging
+  ### Messaging
 
   Thanks to its highly flexible nature, Ceph can be integrated with virtually every Red Hat-sponsored project that needs a powerful storage solution.
 
-  ### Elevator Pitches
+  #### Elevator Pitches
 
-  ##### 25 Words
+  ###### 25 Words
 
   Ceph is an open source and freely available distributed object store and file system that relies upon the RADOS (Reliable Autonomic Distributed Object Store) foundation.
 
-  ##### 50 Words
+  ###### 50 Words
 
   Ceph is an open source and freely distributed object store and file system using the RADOS (Reliable Autonomic Distributed Object Store) foundation to provide applications with object, block, and file system storage in a single, unified storage cluster. Ceph provides seamless access to objects using native language bindings or API.
 
-  ##### 100 Words
+  ###### 100 Words
 
   Ceph is an open source project built through the efforts of a dedicated, passionate community. Ceph is a freely distributed object store and file system that uses the RADOS (Reliable Autonomic Distributed Object Store) foundation to provide applications with object, block, and file system storage in a single, unified storage cluster.
 
@@ -594,29 +600,29 @@ page_classes: brand-guide
 
   * * *
 
-  # Project Atomic
+  ## Project Atomic
 
   ![PA-Logo-Vertical.png](/images/branding/image02.png)
 
   Project Atomic advances the way containerized applications are created, deployed, and managed. Specifications, standards, and implementations contribute to the growing functionality and security of containers.
 
-  ## Key Message
+  ### Key Message
 
   Project Atomic advances the way users can create, deploy, and manage containerized applications.  Through a variety of tools, specifications, and improvements to upstream projects, it makes container infrastructure more stable, secure and sustainable.
 
   ![atomicbanner.png](/images/branding/image03.png)
 
-  ## Visual Style
+  ### Visual Style
 
   Atomic has a green and dark gray theme that looks very industrial and “sci-fi”.
 
-  ### Font and Text Styles
+  #### Font and Text Styles
 
   Project Atomic headlines are written in League Gothic which is available in the Software application in Fedora, as well as from T[he League of Moveable Type](https://www.theleagueofmoveabletype.com/), a font foundry focused on creating high quality free and open source fonts. Yes, this is a style guide, but that is an awesome project, check them out, then continue reading this.
 
   The text content is written using Open Sans Light, available in Fedora through the Software application, as well as from [Google Fonts](https://www.google.com/fonts%23UsePlace:use/Collection:Open%2BSans).
 
-  ### Colors
+  #### Colors
 
   #{color_table "
     Nucleus Green
@@ -635,41 +641,41 @@ page_classes: brand-guide
     Pantone Black 6
   "}
 
-  ## Messaging
+  ### Messaging
 
   Project Atomic, because of its use of emerging container technologies, is in the process of being integrated with several open source projects, including RDO, oVirt, Fedora, and CentOS.  Project Atomic provides the base platform for OpenShift Origin.  Included in the Atomic Umbrella are development efforts which contribute to external upstream projects, including Docker, Kubernetes, OCI, and SELinux.
 
-  ### Elevator Pitches
+  #### Elevator Pitches
 
-  ##### 25 Words
+  ###### 25 Words
 
   Project Atomic advances the way containerized applications are created, deployed, and managed. Tools, specifications and platform improvements make container infrastructure secure and sustainable.
 
-  ##### 50 Words
+  ###### 50 Words
 
   Project Atomic advances the way users create, deploy, and manage containerized applications.  Tools, specifications and platform improvements make container infrastructure secure and sustainable.  Software such as Atomic Host, OStree, Cockpit, Atomic.app, and the Atomic Developer Bundle support a fast, maintainable workflow for container applications from development to operations.
 
-  ##### 100 Words
+  ###### 100 Words
 
   Project Atomic advances the way users create, deploy, and manage containerized applications.  Tools, specifications and platform improvements make container infrastructure secure and sustainable.
 
   Under the Project Atomic umbrella, multiple coordinated projects support the entire containerized application lifecycle.  Fedora  and CentOS Atomic Host provide a dedicated platform for container clusters.  The Atomic Developer Bundle helps developers build containerized applications.  Atomic.app, the Nulecule specification, and Atomic Registry enable smooth and repeatable deployment.  The Cockpit UI and extensions to Docker and Kubernetes support maintaining and securing production microservices.
 
-  # Template Project
+  ## Template Project
 
   ![randomgoods.png](/images/branding/image24.png)
 
   Random Quality Goods are random!
 
-  ## Key Message
+  ### Key Message
 
   A brief explanation of the goal and mission of the project: What does success mean in practical terms?
 
-  ## Visual Identity
+  ### Visual Identity
 
   Basic elements of the brand and the overall look on print, digital media, and event presence.
 
-  ### Colors
+  #### Colors
 
   #{color_table "
     Random
@@ -683,35 +689,35 @@ page_classes: brand-guide
     CMYK 00, 11, 22, 33
   "}
 
-  ### Typeface
+  #### Typeface
 
   Random Quality Goods uses random fonts with random weights to achieve the most random look. Please use any font, as long as the font license is randomly selected from the free licenses.
 
-  ## Messaging
+  ### Messaging
 
   An overview of how the project works with other free and open source projects within OSAS.
 
-  ### Elevator Pitches
+  #### Elevator Pitches
 
-  ##### 25 Words
+  ###### 25 Words
 
   A 25-word description of the project and its impact.
 
-  ##### 50 Words
+  ###### 50 Words
 
   A 50-word description of the project and its impact.
 
-  ##### 100 Words
+  ###### 100 Words
 
   A 100-word description of the project and its impact.
 
   * * *
 
-  # Social Media Channels
+  ## Social Media Channels
 
   At this time, OSAS projects and adjunct open source projects are present on one of three social media platforms: Twitter, Facebook, and Google+. Social media channels are managed by their respective community leads and the community analyst. Adjunct social media channels are managed by their respective projects. For more information, refer to the “Tactics” section of this branding guide.
 
-  ## Twitter
+  ### Twitter
 
   Red Hat Community: @redhatopen
    Ceph: @Ceph
@@ -728,7 +734,7 @@ page_classes: brand-guide
 
   ManageIQ: @manageiq
 
-  ## Facebook
+  ### Facebook
 
   Red Hat Community: [https://www.facebook.com/redhatopen](https://www.facebook.com/redhatopen)
    Ceph: [https://www.facebook.com/cephstorage](https://www.facebook.com/cephstorage)
@@ -744,9 +750,9 @@ page_classes: brand-guide
    Infinispan: [https://www.facebook.com/infinispan/](https://www.facebook.com/infinispan/)
    ManageIQ: [https://www.facebook.com/manageiq](https://www.facebook.com/manageiq)
 
-  ## Google+
+  ### Google+
 
-  ### Brand Pages
+  #### Brand Pages
 
   Red Hat Community: [https://plus.google.com/113258037797946990391](https://plus.google.com/113258037797946990391)
    Ceph: [https://plus.google.com/+Cephstorage](https://plus.google.com/%2BCephstorage)
@@ -761,7 +767,7 @@ page_classes: brand-guide
    Infinispan: [https://plus.google.com/u/0/+InfinispanOrg](https://plus.google.com/u/0/%2BInfinispanOrg)
    ManageIQ: [https://plus.google.com/u/0/+ManageiqOrg](https://plus.google.com/u/0/%2BManageiqOrg)
 
-  ### Community Pages
+  #### Community Pages
 
   Red Hat Community: [https://plus.google.com/communities/116577470717704091424](https://plus.google.com/communities/116577470717704091424)
    Ceph: [https://plus.google.com/communities/116115281445231966828](https://plus.google.com/communities/116115281445231966828)
@@ -775,7 +781,7 @@ page_classes: brand-guide
 
   * * *
 
-  # Social Media Guidelines
+  ## Social Media Guidelines
 
   Information and communication in the open source ecosystem has become increasingly more social, if such a thing is possible. It is increasingly important to use social media tools to connect to users, contributors, and allies within the broad open source community.
 
@@ -787,7 +793,7 @@ page_classes: brand-guide
 
   Learn more about [Red Hat’s social media policies](https://mojo.redhat.com/community/about-red-hat/messaging-index/social-media-guidelines).
 
-  ## Strategy
+  ### Strategy
 
   The social media strategy for OSAS is two-fold.
 
@@ -801,7 +807,7 @@ page_classes: brand-guide
 
   Another element of the strategy will be to work with any upstream project’s existing social media contributors to build their brand and follow existing community norms. In this case, OSAS will coordinate with contributors to help them promote their upstream project, using metrics and constructive methods to enhance community messaging for that project.
 
-  ### Goals and Objectives
+  #### Goals and Objectives
 
   The goals and objectives of the OSAS social media plan are:
 
@@ -810,11 +816,11 @@ page_classes: brand-guide
   - Build rapport and interest among members of the media
   - Drive traffic to the Red Hat Community site to increase awareness of how all projects work together
 
-  ## Tactics
+  ### Tactics
 
   To deliver on these goals and objectives, a broad approach to social media and content generation will be undertaken, through a variety of outlets.
 
-  ### Channels
+  #### Channels
 
   Ideally, all channels will be jointly managed by the Community Analyst and the Community Liaison for each OSAS project, where applicable. If the Analyst is not a member of that project, or the project is not part of OSAS, the Analyst will work with a project’s existing governance and social media participant to enhance social media messaging for that project.
 
@@ -834,7 +840,7 @@ page_classes: brand-guide
 
   Podcasts. OSAS should produce (at least) a monthly series of podcasts related to the areas of interest for OSAS and its participating projects. These will have a less-formal format and should be available for the general public.
 
-  ### Content
+  #### Content
 
   Content on all of the channels listed above will be ecumenical in nature, with a focus on upstream OSAS projects and the topics in which its projects lead: cloud computing, Linux, containers, virtualization, IT management, storage, and advanced networking.
 
@@ -844,7 +850,7 @@ page_classes: brand-guide
 
   * * *
 
-  ## Notes:
+  ### Notes:
 
   - Fedora needs to be part of this
   - social media should be in its own doc
@@ -852,23 +858,23 @@ page_classes: brand-guide
 
   * * *
 
-  # FeedHenry
+  ## FeedHenry
 
   ![FeedHenry-logo.png](/images/branding/image07.png)
 
   Our mobile platform story.
 
-  ## Key message
+  ### Key message
 
   A brief explanation of the goal and mission of FeedHenry project: What does success mean in practical terms?
 
-  ## Visual identity
+  ### Visual identity
 
   Basic elements of the brand and the overall look on print, digital media, and event presence.
 
-  ## Colors
+  ### Colors
 
-  ### Primary palette
+  #### Primary palette
 
   #{color_table "
     FeedHenry Red
@@ -886,7 +892,7 @@ page_classes: brand-guide
     CMYK 74, 64, 60, 73
   "}
 
-  ### Secondary Palette
+  #### Secondary Palette
 
   #{color_table "
     Accent Green
