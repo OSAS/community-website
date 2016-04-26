@@ -1,7 +1,5 @@
 ## RDO
 
-![](/images/branding/website-rdo.png)
-
 RDO provides the open source foundation for an organization to build a private or public Infrastructure- as-a-Service (IaaS) cloud on top of enterprise-ready platforms like CentOS.
 
 ### Key Message
@@ -10,15 +8,18 @@ RDO is a freely available, community-supported distribution of OpenStack that ru
 
 ### Visual Style
 
-![Screenshot from 2016-03-04 09-52-07.png](/images/branding/type-raleway.png)
 
 RDO uses strong red and black areas to create a bold and solid visual style for the project. The preferred representation of the RDO logo is white over the RDO Red background. If this is not possible, a red box containing the white logo can be used to keep the solid feel, for example if your background is uneven or different color. For clothing and promotional items where it is not always possible to control the color precisely, use your own judgement to try to best maintain the identity of RDO.
+
+![](/images/branding/website-rdo.png){:.website}
 
 #### Font and Text Styles
 
 RDO project uses two font families; [Raleway](https://www.google.com/fonts%23UsePlace:use/Collection:Raleway) for headlines and [Lato](https://www.google.com/fonts%23UsePlace:use/Collection:Lato) for normal text content. Normal headlines use the regular weight of Raleway, but if you want to make a strong point, you can place your message in white and bold Raleway over a black area, like on the example.
 
 Both typefaces are free and available from Google Fonts, additionally Lato can also be installed with the Software application on Fedora.
+
+![Raleway specimen](/images/branding/type-raleway.png){:.type-example}
 
 #### Colors
 

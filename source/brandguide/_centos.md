@@ -5,23 +5,23 @@
 
 The CentOS project is responsible for the production of CentOS, a consistent Linux distribution derived from the Red Hat Enterprise Linux codebase and other sources.
 
-![centosbanner.png](/images/branding/banner-centos.png)
-
 ### Key Message
 
 The CentOS project is a community project that is developed, maintained, and supported by and for its users and contributors responsible for the production of CentOS, a consistent Linux distribution derived from the Red Hat Enterprise Linux codebase and other sources.
 
 ### Visual Style
 
-![](/images/branding/type-exo.png)
-
 CentOS has a dark blue “science fiction” -like visual style with a circuit board pattern and a gradient to darker blue, with white text laid on top. The yellow color from the logo has also been used as an accent color with designs using the light-on-dark color scheme, like on the website.
+
+![centosbanner.png](/images/branding/banner-centos.png){:.banner}
 
 #### Font and Text Styles
 
 Two font families are utilized by CentOS. [Exo](https://www.google.com/fonts%23UsePlace:use/Collection:Exo) for headlines and [Source Sans Pro](https://www.google.com/fonts%23UsePlace:use/Collection:Source%2BSans%2BPro) for normal text.
 
 Both fonts are freely licensed and can be downloaded from the Google Fonts service. On Fedora, Source Sans Pro can be installed with the Software application.
+
+![](/images/branding/type-exo.png){:.type-example}
 
 #### Colors
 

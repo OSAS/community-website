@@ -1,23 +1,19 @@
 ## oVirt
 
-![oVirt-logo.png](/images/branding/logo-ovirt.png)
-{:.logo}
+![oVirt-logo.png](/images/branding/logo-ovirt.png){:.logo}
 
-A virtualization platform with an easy-to-use web interface that manages virtual machines, storage,
-
-and networks. oVirt is open source and powered by KVM on Linux.
-
-![ovirtmockuprollupaa.png](/images/branding/banner-ovirt.png)
+A virtualization platform with an easy-to-use web interface that manages virtual machines, storage, and networks. oVirt is open source and powered by KVM on Linux.
 
 ### Key Message
-
-![](/images/branding/website-ovirt.png)
 
 oVirt provides datacenter virtualization, including a kernel-based virtual machine (KVM) hypervisor running on the Linux kernel, and a virtualization management system based on Fedora or CentOS and the WildFly Application Server.
 
 ### Visual Style
 
 oVirt has a mostly light overall feel, with headlines and accents in the green color. You can also use light grays for illustrations on brochures. If you need more impact for presentations or event booths, you can use a green background and white logo.
+
+![ovirtmockuprollupaa.png](/images/branding/banner-ovirt.png){:.banner}
+![](/images/branding/website-ovirt.png){:.flyer}
 
 #### Font and Text Styles
 

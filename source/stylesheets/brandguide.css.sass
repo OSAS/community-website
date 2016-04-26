@@ -18,9 +18,7 @@
 
     td
       border: none
-
-      &.brand-color-white
-        border: 1px solid #eee
+      box-shadow: inset 0 0 0 1px rgba(black, 0.05), inset 8px 8px 8px rgba(black, 0.03), inset 1px 1px 0 1px rgba(white, 0.05)
 
     ul, li
       margin: 0
@@ -36,8 +34,11 @@
     li
       font-size: 0.9em
 
+    + p
+      margin-top: 2em
+
   hr
-    margin: 4em 0
+    margin: 6em 0
 
   #markdown-toc
     columns: 30ex
@@ -53,7 +54,11 @@
 
   .type-example,
   .logo,
+  .banner,
+  .example,
+  .flyer,
   .palette
+
     text-align: center
     margin-left: auto
     margin-right: auto
@@ -66,6 +71,35 @@
   .type-example > img + img
     margin-top: 0
 
+  .type-example
+    margin-left: 5%
+    max-width: 40%
+    height: auto
+    float: left
+
+  img.logo,
+  .logo img
+    max-height: 6ex
+    width: auto
+    margin: -2ex 0 0 4ex
+    float: right
+
+    // Squareish logos need to be a bit taller
+    &.logo-square
+      max-height: 12ex
+
+  img.website,
+  .website img,
+  img.banner,
+  .banner img,
+  img.flyer,
+  .flyer img
+    max-height: 56ex
+    width: auto
+    float: left
+
+  h1, h2, h3, h4, h5, h6
+    clear: both
 
   h3, h4, h5, h6
     margin-top: 3em
