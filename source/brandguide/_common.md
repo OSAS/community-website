@@ -6,17 +6,17 @@ There are situations when you need to represent several of our community brands 
 
 Red Hat branding uses the commercially licensed font called Interstate. There is an open source variant of it called [Overpass](http://overpassfont.org), that can be used to substitute it on the web. It is available in Fedora in a package called overpass-fonts.  Please see the [Brand Standards section about typeface](http://brand.redhat.com/elements/typography/) for more details.
 
-![](/images/branding/image15.png)
+![](/images/branding/type-overpass.png)
 {:.type-example}
 
 ### Color palette
 
 We are using the Red Hat secondary colors to represent community projects. If your design uses common branding, you should generally use only the projects’ logos to represent them. The main visual palette and style of your design should follow the Red Hat brand guidelines to keep things consistent. When your design represents only one project, you can use the color palette and visual style of that particular project.
 
-![](/images/branding/image20.png)
-![](/images/branding/image13.png)
-![](/images/branding/image10.png)
-![](/images/branding/image19.png)
+![](/images/branding/color-darkblue.png)
+![](/images/branding/color-lightblue.png)
+![](/images/branding/color-darkgray.png)
+![](/images/branding/color-lightgray.png)
 {:.palette}
 
 #{color_table "

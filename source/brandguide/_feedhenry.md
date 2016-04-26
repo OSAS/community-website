@@ -1,6 +1,6 @@
 ## FeedHenry
 
-![FeedHenry-logo.png](/images/branding/image07.png)
+![FeedHenry-logo.png](/images/branding/logo-feedhenry.png)
 {:.logo}
 
 Our mobile platform story.

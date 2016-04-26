@@ -1,11 +1,11 @@
 ## CentOS
 
-![centos-logo-lightbg.png](/images/branding/image01.png)
+![centos-logo-lightbg.png](/images/branding/logo-centos.png)
 {:.logo}
 
 The CentOS project is responsible for the production of CentOS, a consistent Linux distribution derived from the Red Hat Enterprise Linux codebase and other sources.
 
-![centosbanner.png](/images/branding/image08.png)
+![centosbanner.png](/images/branding/banner-centos.png)
 
 ### Key Message
 
@@ -13,7 +13,7 @@ The CentOS project is a community project that is developed, maintained, and sup
 
 ### Visual Style
 
-![](/images/branding/image14.png)
+![](/images/branding/type-exo.png)
 
 CentOS has a dark blue “science fiction” -like visual style with a circuit board pattern and a gradient to darker blue, with white text laid on top. The yellow color from the logo has also been used as an accent color with designs using the light-on-dark color scheme, like on the website.
 

@@ -1,6 +1,6 @@
 ## Template Project
 
-![randomgoods.png](/images/branding/image24.png)
+![randomgoods.png](/images/branding/logo-template.png)
 
 Random Quality Goods are random!
 

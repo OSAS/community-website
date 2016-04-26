@@ -1,18 +1,18 @@
 ## Gluster
 
-![ant-w-GLUSTER-text.png](/images/branding/image23.png)
+![ant-w-GLUSTER-text.png](/images/branding/logo-gluster.png)
 
 The Gluster Project community produces and releases GlusterFS, open source software used to create a scalable network file system for large and distributed storage solutions.
 
 ### Key Message
 
-![](/images/branding/image05.png)
+![](/images/branding/website-gluster.png)
 
 The Gluster Project produces GlusterFS, a free and open source software solution used to create a scalable network file system. Using commodity hardware, users can create large, distributed storage solutions for media streaming, data analysis, and other data- and bandwidth-intensive tasks at a fraction of the investment of traditional storage.
 
 ### Visual Style
 
-![](/images/branding/image04.png)
+![](/images/branding/type-lato.png)
 
 Orange and black accents and sky blue background on the website.
 

@@ -1,6 +1,6 @@
 ## RDO
 
-![](/images/branding/image22.png)
+![](/images/branding/website-rdo.png)
 
 RDO provides the open source foundation for an organization to build a private or public Infrastructure- as-a-Service (IaaS) cloud on top of enterprise-ready platforms like CentOS.
 
@@ -10,7 +10,7 @@ RDO is a freely available, community-supported distribution of OpenStack that ru
 
 ### Visual Style
 
-![Screenshot from 2016-03-04 09-52-07.png](/images/branding/image21.png)
+![Screenshot from 2016-03-04 09-52-07.png](/images/branding/type-raleway.png)
 
 RDO uses strong red and black areas to create a bold and solid visual style for the project. The preferred representation of the RDO logo is white over the RDO Red background. If this is not possible, a red box containing the white logo can be used to keep the solid feel, for example if your background is uneven or different color. For clothing and promotional items where it is not always possible to control the color precisely, use your own judgement to try to best maintain the identity of RDO.
 

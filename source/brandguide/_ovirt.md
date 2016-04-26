@@ -1,17 +1,17 @@
 ## oVirt
 
-![oVirt-logo.png](/images/branding/image16.png)
+![oVirt-logo.png](/images/branding/logo-ovirt.png)
 {:.logo}
 
 A virtualization platform with an easy-to-use web interface that manages virtual machines, storage,
 
 and networks. oVirt is open source and powered by KVM on Linux.
 
-![ovirtmockuprollupaa.png](/images/branding/image09.png)
+![ovirtmockuprollupaa.png](/images/branding/banner-ovirt.png)
 
 ### Key Message
 
-![](/images/branding/image12.png)
+![](/images/branding/website-ovirt.png)
 
 oVirt provides datacenter virtualization, including a kernel-based virtual machine (KVM) hypervisor running on the Linux kernel, and a virtualization management system based on Fedora or CentOS and the WildFly Application Server.
 
@@ -21,7 +21,7 @@ oVirt has a mostly light overall feel, with headlines and accents in the green c
 
 #### Font and Text Styles
 
-![Screenshot from 2016-03-04 11-12-42.png](/images/branding/image17.png)
+![Screenshot from 2016-03-04 11-12-42.png](/images/branding/type-venturissans.png)
 
 oVirt uses two font families; Venturis Sans ADF for headlines and Source Sans Pro for normal text content. Both fonts are free and available for Fedora.
 

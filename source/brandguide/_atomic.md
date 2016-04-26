@@ -1,6 +1,6 @@
 ## Project Atomic
 
-![PA-Logo-Vertical.png](/images/branding/image02.png)
+![PA-Logo-Vertical.png](/images/branding/logo-atomic.png)
 {:.logo}
 
 Project Atomic advances the way containerized applications are created, deployed, and managed. Specifications, standards, and implementations contribute to the growing functionality and security of containers.
@@ -9,7 +9,7 @@ Project Atomic advances the way containerized applications are created, deployed
 
 Project Atomic advances the way users can create, deploy, and manage containerized applications.  Through a variety of tools, specifications, and improvements to upstream projects, it makes container infrastructure more stable, secure and sustainable.
 
-![atomicbanner.png](/images/branding/image03.png)
+![atomicbanner.png](/images/branding/banner-atomic.png)
 
 ### Visual Style
 

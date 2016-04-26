@@ -3,7 +3,7 @@
 Note: Ceph style is being currently revised, so this is subject to change.
 {:.alert.alert-warning}
 
-![Ceph_Logo_Standard_RGB_120411_fa.png](/images/branding/image18.png)
+![Ceph_Logo_Standard_RGB_120411_fa.png](/images/branding/logo-ceph.png)
 {:.logo}
 
 Ceph is an open source and freely available distributed object store and file system that relies upon the RADOS (Reliable Autonomic Distributed Object Store) foundation.

@@ -1,6 +1,6 @@
 ## Fedora
 
-![fedora_logo.png](/images/branding/image06.png)
+![fedora_logo.png](/images/branding/logo-fedora.png)
 {:.logo}
 
 The Fedora Project is a free and open source software community project that produces a complete Linux-based operating system ready for cloud, server, or workstation.
@@ -21,8 +21,8 @@ Fedora recommends using Open Sans for regular text content, and  Montserrat for 
 
 Open Sans is packaged for Fedora - you'll need to install the texlive-opensans package. Open Sans may also be downloaded from the [Open Sans website](http://www.opensans.com/). Montserrat may be downloaded from [Font Squirrel website](https://www.fontsquirrel.com/fonts/montserrat). Both fonts are openly licensed and freely distributable.
 
-![Montserrat_sample.png](/images/branding/image00.png){:.type-example}
-![OpenSans-sample.png](/images/branding/image11.png){:.type-example}
+![Montserrat_sample.png](/images/branding/type-montserrat.png){:.type-example}
+![OpenSans-sample.png](/images/branding/type-opensans.png){:.type-example}
 
 #### Colors
 
