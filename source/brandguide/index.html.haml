@@ -30,7 +30,7 @@ stylesheet: brandguide
   # # # # # # # # # # # # # # # # # # # #
 
   def fix_heading_ids(doc, part)
-    doc.gsub(/^(#+) (.*)$/) do
+    doc.gsub(/^(###+) (.*)$/) do
       level = Regexp.last_match[1]
       title = Regexp.last_match[2]
 
