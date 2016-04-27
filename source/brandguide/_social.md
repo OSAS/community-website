@@ -131,9 +131,3 @@ Content on all of the channels listed above will be ecumenical in nature, with a
 Content will include original content, to be hosted on the Community site, and will include blogs, technical articles, and success stories, as well as multimedia content. Links back to this content will be posted on the appropriate social media channels.
 
 Aggregated content of interest from project sites will also appear on the Community portal. Broader related content will also be aggregated on the appropriate social media channels.
-
-### Notes
-
-- Fedora needs to be part of this
-- social media should be in its own doc
-- list font packages that are available in fedora!
