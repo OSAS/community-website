@@ -192,6 +192,9 @@ activate :blog_helpers
 require 'lib/confcal.rb'
 activate :confcal
 
+require 'lib/brandguide.rb'
+activate :brandguide
+
 require 'lib/monkeypatch_blog_date.rb'
 
 
