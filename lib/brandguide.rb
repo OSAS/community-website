@@ -4,11 +4,9 @@ class BrandGuide < Middleman::Extension
   end
 
   helpers do
-
     # Calculate if the text should be on dark or light background
-    def color_contrast hex
-      lightdark = hex.tr('#','').to_i(16) > "ffffff".to_i(16)/1.75
-      "background:#{hex};color:#{lightdark ? '#000' : '#fff'};"
+    def color_contrast(hex)
+      hex.tr('#', '').to_i(16) > 'ffffff'.to_i(16) / 1.75
     end
 
     # Output HTML for the color table
@@ -19,7 +17,12 @@ class BrandGuide < Middleman::Extension
             color_width = (100 / colors.count).floor
             colors.each do |color|
               next if color[:hex].nil?
-              haml_tag :td, {style: "#{color_contrast color[:hex]}", class: "brand-color-#{color[:name].parameterize}", width: "#{color_width}%"} do
+
+              lightdark = color_contrast color[:hex]
+              csscolor = "background:#{color[:hex]};" \
+                         "color:##{lightdark ? '000' : 'fff'};"
+
+              haml_tag :td, {style: "#{csscolor}", class: "brand-color-#{color[:name].parameterize}", width: "#{color_width}%"} do
                 haml_tag :strong, color[:name]
                 haml_tag :ul do
                   haml_tag :li, "Hex: #{color[:hex]}"
