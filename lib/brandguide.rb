@@ -10,9 +10,9 @@ class BrandGuide < Middleman::Extension
     end
 
     # Output HTML for the color table
-    def format_color_table colors
+    def format_color_table(colors)
       capture_haml do
-        haml_tag :table, {class: "table color-table"} do
+        haml_tag :table, class: 'table color-table' do
           haml_tag :tr, {} do
             color_width = (100 / colors.count).floor
             colors.each do |color|
@@ -22,7 +22,11 @@ class BrandGuide < Middleman::Extension
               csscolor = "background:#{color[:hex]};" \
                          "color:##{lightdark ? '000' : 'fff'};"
 
-              haml_tag :td, {style: "#{csscolor}", class: "brand-color-#{color[:name].parameterize}", width: "#{color_width}%"} do
+              tag_opts = { style: csscolor,
+                           class: "brand-color-#{color[:name].parameterize}",
+                           width: "#{color_width}%" }
+
+              haml_tag :td, tag_opts do
                 haml_tag :strong, color[:name]
                 haml_tag :ul do
                   haml_tag :li, "Hex: #{color[:hex]}"
@@ -38,7 +42,7 @@ class BrandGuide < Middleman::Extension
     end
 
     # Parse color table data and produce HTML table output
-    def color_table *obj
+    def color_table(*obj)
       colors = obj.map do |vals|
         attr = {}
         vals = vals.strip.split("\n").map do |val|
@@ -62,7 +66,6 @@ class BrandGuide < Middleman::Extension
 
       format_color_table colors
     end
-
   end
 end
 
