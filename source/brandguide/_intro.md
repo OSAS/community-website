@@ -1,4 +1,4 @@
-# Red Hat Community Projects: A brief style guide
+# Red Hat Community Brand Guide
 
 From the [Red Hat Brand Standards](http://brand.redhat.com/logos/communitylogos/):
 
