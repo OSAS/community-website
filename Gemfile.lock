@@ -236,10 +236,10 @@ DEPENDENCIES
   open-uri-cached
   pry
   pry-stack_explorer
-  rails-assets-chartjs
-  rails-assets-fullcalendar
-  rails-assets-jquery (~> 1)
-  rails-assets-momentjs
+  rails-assets-chartjs!
+  rails-assets-fullcalendar!
+  rails-assets-jquery!
+  rails-assets-momentjs!
   reverse_markdown
   ruby18_source_location
   slop
@@ -247,3 +247,6 @@ DEPENDENCIES
   therubyracer
   wdm (~> 0.1.0)
   wikicloth
+
+BUNDLED WITH
+   1.10.6
