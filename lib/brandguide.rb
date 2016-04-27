@@ -5,8 +5,24 @@ class BrandGuide < Middleman::Extension
 
   helpers do
     # Calculate if the text should be on dark or light background
+    # Converts RGB to YIQ for better color comparisons
+    # More on YIQ: https://en.wikipedia.org/wiki/YIQ
+    #
+    # Returns true if light color, false if dark color
     def color_contrast(hex)
-      hex.tr('#', '').to_i(16) > 'ffffff'.to_i(16) / 1.75
+      # Remove '#', to get at hex number
+      h = hex.tr('#', '')
+
+      # Expand hex triples (example: #ac9 as #aacc99)
+      h = h.chars.map { |c| c + c }.join if h.size == 3
+
+      # Convert each R G B component from hex to decimal
+      r = h[0..1].to_i(16)
+      g = h[2..3].to_i(16)
+      b = h[4..5].to_i(16)
+
+      # Compare YIQ conversion to midpoint (256 / 2 = 128)
+      (r * 299 + g * 587 + b * 114) / 1000 >= 128
     end
 
     # Output HTML for the color table
