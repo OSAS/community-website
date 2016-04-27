@@ -3,106 +3,191 @@
   #page
     margin-bottom: 6em
 
-  img
-    max-width: 100%
-    height: auto
-    margin: 2em auto
+  #content
 
-  .color-table
-    border-spacing: 6px
-    border-collapse: separate
-    margin: 0 -6px
+    img
+      max-width: 100%
+      height: auto
+      margin: 2em auto
 
-    td + td
-      cellpadding: 6px solid #fff
+    .color-table
+      border-spacing: 6px
+      border-collapse: separate
+      margin: 0 -6px
 
-    td
-      border: none
-      box-shadow: inset 0 0 0 1px rgba(black, 0.05), inset 8px 8px 8px rgba(black, 0.03), inset 1px 1px 0 1px rgba(white, 0.05)
+      td + td
+        cellpadding: 6px solid #fff
 
-    ul, li
-      margin: 0
-      padding: 0
-      list-style: none
-    
-    strong
-      align: center
-      opacity: 0.8
+      td
+        border: none
+        box-shadow: inset 0 0 0 1px rgba(black, 0.05), inset 8px 8px 8px rgba(black, 0.03), inset 1px 1px 0 1px rgba(white, 0.05)
+
+      ul, li
+        margin: 0
+        padding: 0
+        list-style: none
+
+      strong
+        align: center
+        opacity: 0.8
+        display: block
+        margin-bottom: 0.5ex
+
+      li
+        font-size: 0.9em
+
+      + p
+        margin-top: 2em
+
+    hr
+      margin: 6em 0
+
+    #markdown-toc
+      columns: 30ex
+      -moz-columns: 30ex
+
+      li li li li
+        display: none
+
+    .media-list
+      columns: 30ex
+      -moz-columns: 30ex
+      margin-bottom: 2em
+
+    .type-example,
+    .logo,
+    .banner,
+    .example,
+    .flyer,
+    .palette
+
+      text-align: center
+      margin-left: auto
+      margin-right: auto
+
+    .type-example,
+    .logo
       display: block
-      margin-bottom: 0.5ex
 
-    li
-      font-size: 0.9em
+    .type-example + .type-example,
+    .type-example > img + img
+      margin-top: 0
 
-    + p
-      margin-top: 2em
+    .type-example
+      margin-left: 5%
+      max-width: 40%
+      height: auto
+      float: left
 
-  hr
-    margin: 6em 0
+    img.logo,
+    .logo img
+      max-height: 6ex
+      width: auto
+      margin: -2ex 0 0 4ex
+      float: right
 
+      // Squareish logos need to be a bit taller
+      &.logo-square
+        max-height: 12ex
+
+    img.website,
+    .website img,
+    img.banner,
+    .banner img,
+    img.flyer,
+    .flyer img
+      max-height: 56ex
+      width: auto
+      float: left
+
+    h1, h2, h3, h4, h5, h6
+      clear: both
+
+    h3, h4, h5, h6
+      margin-top: 3em
+
+    h5, h6
+      color: #888
+
+  /* Custom ToC overrides to our ToC markdown code,
+     specific to brandguide
   #markdown-toc
-    columns: 30ex
-    -moz-columns: 30ex
+    -moz-columns: 1 !important
+    columns: 1 !important
+    counter-reset: tocMain
 
-    li li li li
-      display: none
+    > li > ol > li
+      counter-increment: tocMain
+      display: inline-block
+      overflow: visible
+      padding: 0
+      width: 33%
 
-  .media-list
-    columns: 30ex
-    -moz-columns: 30ex
-    margin-bottom: 2em
+      &:before
+        content: counter(tocMain) ". "
+        position: relative
+        left: -2ex
+        width: 2ex
+        display: inline-block
+        text-align: right
+        padding: 0 1ex 0 0
 
-  .type-example,
-  .logo,
-  .banner,
-  .example,
-  .flyer,
-  .palette
 
-    text-align: center
-    margin-left: auto
-    margin-right: auto
+      > a
+        display: inline-block
+        margin: 0
+        padding: 1ex 0
 
-  .type-example,
-  .logo
-    display: block
+      /* Popup menu
+      > ol
+        background: rgba(black, 0.8)
+        border-radius: 3px
+        box-shadow: 0 3px 6px 0 rgba(black, 0.15)
+        left: 0.5ex
+        opacity: 0
+        padding: 0
+        position: absolute
+        top: 5.5ex
+        transition: all 400ms
+        visibility: hidden
+        width: 60%
+        z-index: 100
 
-  .type-example + .type-example,
-  .type-example > img + img
-    margin-top: 0
+        a
+          color: #fff
+          display: block
+          padding: 1ex 2ex
+          transition: all 300ms
 
-  .type-example
-    margin-left: 5%
-    max-width: 40%
-    height: auto
-    float: left
+          &:hover
+            background-color: rgba(white, 0.3)
+            text-decoration: none
 
-  img.logo,
-  .logo img
-    max-height: 6ex
-    width: auto
-    margin: -2ex 0 0 4ex
-    float: right
+          + a
+            padding-top: 0
 
-    // Squareish logos need to be a bit taller
-    &.logo-square
-      max-height: 12ex
+        li
+          display: block
+          margin: 0
+          padding: 0
 
-  img.website,
-  .website img,
-  img.banner,
-  .banner img,
-  img.flyer,
-  .flyer img
-    max-height: 56ex
-    width: auto
-    float: left
+          &:first-child a
+            border-radius: 3px 3px 0 0
 
-  h1, h2, h3, h4, h5, h6
-    clear: both
+          &:last-child a
+            border-radius: 0 0 3px 3px
 
-  h3, h4, h5, h6
-    margin-top: 3em
+        &:before
+          position: absolute
+          border: 1ex solid transparent
+          border-width: 1ex
+          border-top-width: 0
+          border-bottom-color: rgba(black, 0.8)
+          content: ""
+          left: 0.75ex
+          top: -1ex
 
-  h5, h6
-    color: #888
+      &:hover > ol
+        opacity: 1
+        transition: all 200ms
+        visibility: visible
