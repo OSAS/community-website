@@ -160,7 +160,7 @@ GEM
     rails-assets-fullcalendar (2.4.0)
       rails-assets-jquery (>= 1.7.1)
       rails-assets-moment (>= 2.5.0)
-    rails-assets-jquery (1.11.3)
+    rails-assets-jquery (1.12.2)
     rails-assets-moment (2.10.6)
     rails-assets-momentjs (2.10.6)
     rb-fsevent (0.9.4)
@@ -247,6 +247,3 @@ DEPENDENCIES
   therubyracer
   wdm (~> 0.1.0)
   wikicloth
-
-BUNDLED WITH
-   1.10.6
