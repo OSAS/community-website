@@ -157,13 +157,13 @@ ready do
 
   # Add author pages
   sitemap.resources.group_by {|p| p.data["author"]}.each do |author, pages|
-    proxy "/blog/author/#{author.parameterize.downcase}.html", "author.html", locals: {author: author, pages: pages}, :ignore => true if author
+    proxy "/blog/author/#{author.parameterize}.html", "author.html", locals: {author: author, pages: pages}, :ignore => true if author
   end
   proxy "/blog/author.html", "author.html", :ignore => true
 
   # Add blog feeds
-  blog.tags.each do |tag_name, tag_data|
-    proxy "/blog/tag/#{tag_name.downcase}.xml", "feed.xml", locals: {tag_name: tag_name}, :ignore => true if tag_name
+  blog.tags.keys.map(&:downcase).uniq.compact.each do |tag_name|
+    proxy "/blog/tag/#{tag_name.parameterize}.xml", "feed.xml", locals: {tag_name: tag_name}, :ignore => true if tag_name
   end
   proxy "/blog/feed.xml", "feed.xml", :ignore => true
   proxy "/blog/tag/index.html", "tag.html", :ignore => true
