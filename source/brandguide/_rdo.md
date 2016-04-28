@@ -1,5 +1,7 @@
 ## RDO
 
+![logo-rdo.png](/images/branding/logo-rdo.png){:.logo}
+
 RDO provides the open source foundation for an organization to build a private or public Infrastructure- as-a-Service (IaaS) cloud on top of enterprise-ready platforms like CentOS.
 
 ### Key Message
