@@ -61,14 +61,12 @@
       # and it'd be nice to pass the original color back to the legend
       # as this list is processed, and only a few things escape to the
       # legendTemplate
-      fillColor: sass("#{color}"),
       label: label,
       pointColor: sass("mix(#{color}, #fff, 70)"),
       pointHighlightFill: sass("mix(#{color}, #000, 100)"),
       pointHighlightStroke: sass("mix(#{color}, #000, 100)"),
       pointStrokeColor: "transparent",
       strokeColor: sass("mix(#{color}, #fff, 40)"),
-      originalColor: sass("color")
     }
   end
 
