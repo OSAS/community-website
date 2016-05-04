@@ -1,5 +1,5 @@
 ---
-pageable: true
+pageable: false
 ---
 
 - content_for :head do
@@ -23,7 +23,19 @@ pageable: true
 
     %h2 Red Hat Community News
 
-    = partial :blog_posts, locals: locals
+    .blog-posts-list
+      - loc = {page_articles: page_articles.take(blog.options[:per_page])}
+      = partial :blog_posts, locals: loc
+
+    -# Simple static pagination that links to /blog/
+    %ul.pagination
+      %li.active
+        %span 1
+      - (2..6).each do |page|
+        %li
+          %a{href: "/blog/page=#{page}/"}= page
+      %li
+        %a{href: "/blog/page=2/"} Older
 
 
   %section.sidebar.col-sm-4
