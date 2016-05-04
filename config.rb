@@ -52,6 +52,8 @@ set :partials_dir, 'layouts'
 ###
 
 activate :blog do |blog|
+  blog.publish_future_dated = true
+
   blog.prefix = "blog/"
   blog.layout = "post"
   blog.tag_template = "tag.html"
