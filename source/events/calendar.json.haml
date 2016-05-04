@@ -15,18 +15,18 @@ index: false
         conferences += year.map do |conf_label, conf|
 
           time_pool = [
-            Chronic::parse(conf.start),
-            Chronic::parse(conf.end)
+            conf.start.to_s,
+            conf.end.to_s
           ]
 
           if conf.talks
             conf.talks.each do |talk|
-              time_pool.push Chronic::parse(talk.start)
-              time_pool.push Chronic::parse(talk.end)
+              time_pool.push talk.start.to_s unless talk.start.nil?
+              time_pool.push talk.end.to_s unless talk.end.nil?
             end
           end
 
-          time_pool.compact!
+          time_pool = time_pool.reject(&:empty?).compact
 
           if time_pool.max.nil?
             current = false
@@ -44,9 +44,9 @@ index: false
                 begin
                   item = {
                     title: talk.title,
-                    start: Chronic::parse(talk.start),#.strftime("%Y-%m-%d"),
+                    start: talk.start.to_time,
                     speaker: talk.speaker,
-                    end: Chronic::parse(talk.end),#.strftime("%Y-%m-%d"),
+                    end: talk.end.to_time,
                     url: current ? fragment : page + fragment,
                     className: current ? "current" : "old",
                     location: talk.location,
