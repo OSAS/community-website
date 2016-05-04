@@ -79,14 +79,14 @@
       print "\r#{progress_string}: #{(ratio_done * 100).to_i}% #{bar}#{empty}"
 
       # Skip various special pages
-      next if page.url.match /^\/search\//
-      next if page.url.match /^\/admin\//
-      next if page.url.match /^\/404/
-      next if page.url.match /^\/$/
-      next if page.url.match /^\/blog\/$/
-      next if page.url.match /^\/blog\/tag/
-      next if page.url.match /^\/blog\/author/
-      next if page.url.match /\=/
+      next if page.url == '/'
+      next if page.url == '/blog/'
+      next if page.url.start_with?('/search/')
+      next if page.url.start_with?('/admin/')
+      next if page.url.start_with?('/404')
+      next if page.url.start_with?('/blog/tag')
+      next if page.url.start_with?('/blog/author')
+      next if page.url.include?('=')
 
       page_title = discover_title(page)
       next if page_title == nil
