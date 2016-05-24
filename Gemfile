@@ -103,10 +103,10 @@ gem 'icalendar', '~> 1.5'
 gem "feedjira"
 
 # Command line parser
-gem "slop"
+gem 'slop', '~> 4'
 
 # XDG launcher
-gem "launchy"
+gem 'launchy'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery'
