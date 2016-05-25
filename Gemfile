@@ -103,7 +103,7 @@ gem 'icalendar', '~> 1.5'
 gem "feedjira"
 
 # Command line parser
-gem 'slop', '~> 3.4'
+gem 'slop', '~> 4'
 
 # XDG launcher
 gem 'launchy'
