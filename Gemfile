@@ -11,12 +11,6 @@ gem 'compass', '~> 1.0.0.alpha.21'
 # Live-reloading plugin
 gem "middleman-livereload"
 
-# Debugger / REPL alternative to irb
-gem 'pry'
-#gem 'pry-debugger'
-gem 'pry-stack_explorer'
-gem 'middleman-pry'
-
 # Cross-templating language block fix for Ruby 1.8
 platforms :mri_18 do
   gem "ruby18_source_location"
