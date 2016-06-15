@@ -222,7 +222,7 @@ DEPENDENCIES
   nokogiri
   oj
   open-uri-cached
-  rails-assets-chartjs!
+  rails-assets-chartjs (~> 1.0)!
   rails-assets-fullcalendar!
   rails-assets-jquery!
   rails-assets-momentjs!
