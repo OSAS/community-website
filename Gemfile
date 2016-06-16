@@ -106,5 +106,5 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-jquery'
   gem 'rails-assets-momentjs'
   gem 'rails-assets-fullcalendar'
-  gem 'rails-assets-chartjs', '~> 1.0'
+  gem 'rails-assets-chartjs', '~> 2.1'
 end
