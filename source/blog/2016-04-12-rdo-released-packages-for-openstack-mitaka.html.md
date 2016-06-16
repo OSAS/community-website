@@ -1,5 +1,5 @@
 ---
-title: RDO released packages for OpenStack Mitaka
+title: RDO Releases Packages for OpenStack Mitaka
 author: rbowen
 date: 2016-04-12 15:01:45 UTC
 tags: openstack, rdo, mitaka, packages, community, opensource
