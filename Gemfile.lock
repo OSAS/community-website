@@ -145,7 +145,7 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    rails-assets-chartjs (1.0.2)
+    rails-assets-chartjs (2.1.6)
     rails-assets-fullcalendar (2.4.0)
       rails-assets-jquery (>= 1.7.1)
       rails-assets-moment (>= 2.5.0)
@@ -222,7 +222,7 @@ DEPENDENCIES
   nokogiri
   oj
   open-uri-cached
-  rails-assets-chartjs (~> 1.0)!
+  rails-assets-chartjs (~> 2.1)!
   rails-assets-fullcalendar!
   rails-assets-jquery!
   rails-assets-momentjs!

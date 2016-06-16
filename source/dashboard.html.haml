@@ -1,28 +1,25 @@
+-#######################################################################
+-# Ruby helper functions, used in the HAML below
+-#######################################################################
+
 :ruby
   require 'sass'
 
+  # General chart options
+  # See http://www.chartjs.org/docs/#chart-configuration-creating-a-chart-with-options
   optionsLine = {
     animation: false,
-    datasetFill: false,
-    pointDotRadius: 1.5,
-    pointDotStrokeWidth: 3,
-    pointHistDetectionRadius: 0,
-    scaleBeginAtZero: true,
-    scaleShowGridLines: false,
-    tooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %> <%= datasetLabel %>",
-    multiTooltipTemplate: "<%= value %> <%= datasetLabel %>",
-    legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li style=\"color:<%=datasets[i].fillColor%>\"><%if(datasets[i].label){%><%= sentence(datasets[i].label) %><%}%></li><%}%></ul>"
+    title:     {display: false},
+    legend:    {position: 'bottom'},
+    scales:    {xAxes: [{display: false}]},
+    fill:      false,
   }
 
   # In CoffeeScript, this gets merged with the above options
   optionsLineSimple = {
-    datasetFill: true,
-    datasetStroke: false,
-    datasetStrokeWidth: 2,
-    legend: false,
-    pointDot: false,
-    showScale: false,
-    showTooltips: false,
+    legend: {display: false},
+    scales: {xAxes: [{display: false}], yAxes: [{display: false}]},
+    fill:   true,
   }
 
   # Helper to easily do SASS from within Ruby
@@ -30,6 +27,8 @@
     Sass::Script::Parser.parse(cmd, 0, 0).perform(Sass::Environment.new).to_s
   end
 
+  # Defined colors
+  # (specifically chosen for colorblind contrast)
   color = {
     red:     '#d91515',
     blue:    '#0097ff',
@@ -42,35 +41,52 @@
   }
 
   # Extend color with light and dark variants
+  # (:darkblue, :lightblue, :extradarkblue, :extralightblue, etc.)
   color = color.inject({}) do |h, (k, v)|
     h[k] = v
-    h["dark#{k.to_s}".to_sym] = sass("darken(#{v}, 10)")
-    h["light#{k.to_s}".to_sym] = sass("lighten(#{v}, 15)")
-    h["extradark#{k.to_s}".to_sym] = sass("mix(#{v}, black, 70)")
+    h["dark#{k.to_s}".to_sym]       = sass("darken(#{v}, 10)")
+    h["light#{k.to_s}".to_sym]      = sass("lighten(#{v}, 15)")
+    h["extradark#{k.to_s}".to_sym]  = sass("mix(#{v}, black, 70)")
     h["extralight#{k.to_s}".to_sym] = sass("mix(#{v}, white, 50)")
     h
   end
 
-  # Process chart info for a line
-  def chartLine(label, color, info)
-    {
+  # Generate options for a line graphs
+  def chartLine(label, color, info, simple = false)
+    opt = {
       data: info,
-      originalColor: sass("#{color}"),
-      fillColor: sass("rgba(mix(#{color}, #fff, 70), 0.25)"),
-      # Override the fillColor, since we've set things to not fill
+      fill: false,
+      # Override the backgroundColor, since we've set things to not fill
       # and it'd be nice to pass the original color back to the legend
       # as this list is processed, and only a few things escape to the
       # legendTemplate
+      backgroundColor: sass("#{color}"),
+      borderColor: sass("mix(#{color}, #fff, 40)"),
       label: label,
-      pointColor: sass("mix(#{color}, #fff, 70)"),
-      pointHighlightFill: sass("mix(#{color}, #000, 100)"),
-      pointHighlightStroke: sass("mix(#{color}, #000, 100)"),
-      pointStrokeColor: "transparent",
-      strokeColor: sass("mix(#{color}, #fff, 40)"),
+      originalColor: sass("#{color}"),
+      pointBackgroundColor: sass("mix(#{color}, #fff, 70)"),
+      pointBorderColor: "transparent",
+      pointHoverBackgroundColor: sass("mix(#{color}, #000, 100)"),
+      pointHoverBorderColor: sass("mix(#{color}, #000, 100)"),
+      pointRadius: 1.5,
+      pointHitRadius: 12,
     }
+
+    # Inherit from above and provide some overrides for simple mode
+    # (used for contributor growth)
+    if simple
+      opt.merge({
+        fill: true,
+        borderWidth: 1,
+        pointRadius: 0,
+        pointHitRadius: 0,
+      })
+    else
+      opt
+    end
   end
 
-  # Process chart info for a pie piece
+  # Generate options for a pie piece
   def chartPie(label, color, info)
     {
       value: info,
@@ -80,10 +96,15 @@
     }
   end
 
-  # Take the last X months (default = 12), minus current (which is incomplete)
+  # Return only last X months (default = 12),
+  # minus the current month (which is incomplete in the data)
   def lastMonths(info, months = 12)
     info.last(months + 1).take(months)
   end
+
+-#######################################################################
+-# CoffeeScript, to generate the in-page JS
+-#######################################################################
 
 - content_for :tail do
   :coffee
@@ -91,8 +112,11 @@
     # Typical options
     ###
     @optionsLine = #{optionsLine.to_json}
-    @optionsLineSimple = $.extend {}, optionsLine, #{optionsLineSimple.to_json}
+    @optionsLineSimple = $.extend true, {}, optionsLine, #{optionsLineSimple.to_json}
 
+    ###
+    # Format a string as a sentence
+    ###
     @sentence = (string) ->
       string.replace /^(.)/g, (letter) -> letter.toUpperCase()
 
@@ -106,35 +130,37 @@
     # Common chart creation code, to prevent duplication
     ###
     @chart = (name, type, data, opts = @optionsLine) ->
-      ctx = $(name).get(0).getContext('2d')
-      result = new Chart(ctx)[type](data, opts)
+      canvasElement = $(name).get(0).getContext('2d')
 
-      ###
-      # Nuke labels from X
-      ###
-      result.scale.xLabels = ['']
-      # Re-render with nuked labels
-      result.render(true)
+      result = new Chart(canvasElement, {
+        type:    type.toLowerCase(),
+        data:    data,
+        options: opts
+      })
 
-      ###
-      # Should a legend be made?
-      # Yes, if not explictly turned off and contains multiple datasets
-      ###
-      makeLegend = opts.legend != false && data.datasets.length > 1
+      if data.heading
+        # For projects that have data for other than 12 months,
+        # figure out duration of time and make a string
+        if data.labels.length != 12
+          duration = ' (' + @getDuration(data.labels) + ')'
 
-      ###
-      # Figure out duration of time and make a string
-      ###
-      duration = ' (' + @getDuration(data.labels) + ')' if data.labels.length != 12
-
-      $(name).before('<h4>' + data.heading + (duration ? '') + '</h4>') if data.heading
-      $(name).after(result.generateLegend()) if makeLegend
+        # Prepend (optional) heading
+        $(name).before('<h4>' + data.heading + (duration ? '') + '</h4>')
 
       return chart
+
+-#######################################################################
+-# HAML to build the dashboard
+-#######################################################################
 
 - if data[:dashboard]
 
   .dashboard
+
+    -#----------------------------------------------------------
+    -# Intro text
+    -#----------------------------------------------------------
+
     #intro
       %h1 Open Source and Standards Community Dashboard
 
@@ -148,10 +174,20 @@
 
       %hr
 
+
+    -#----------------------------------------------------------
+    -# Dashboard
+    -#----------------------------------------------------------
+
     #statistics
+
+      -# Iterate through each bit of dashboard data
+      -# (located in ../data/dashboard)
+
       - data.dashboard.each do |label, project|
         - stat = project.stat
         - scm = stat.scm
+
         .row{class: "dashboard-item dashboard-#{label}"}
 
           .project-info.col-md-12
@@ -199,7 +235,11 @@
                   %strong= (na.reduce(&:+) / na.count.to_f).round(1)
 
             %canvas{id: "#{label}Line", width: 900, height: 250, style: "max-width:100%"}
+
+              -# Shove the JS For building the canvas above in the tail end of the page
               - content_for :tail do
+
+                -# Ruby is used internally to generate the data for the cart
                 :ruby
                   d = project.evol.scm
                   months = 12
@@ -211,8 +251,15 @@
                       chartLine('new authors (each month)', color[:green], lastMonths(d.newauthors, months)),
                     ]
                   }.to_json
+
+                -# Data above (via Ruby) is exported
+                -# and passed to the CoffeeScript-generated JS functions.
+                -# (This is what shows up in the rendered page source.)
                 :coffee
                   @#{label}Line = @chart("##{label}Line", "Line", #{info})
+
+            -# Growth is similarly generated as above, but is special-cased,
+            -# as it's displayed differently
 
             .growth
               - months = project.evol.scm.date.count - 1
@@ -235,7 +282,7 @@
                     info = {
                       labels: lastMonths(d.date, months),
                       datasets: [
-                        chartLine('new authors', color[:extralightgreen], lastMonths(newauthors, months)),
+                        chartLine('new authors', color[:extralightgreen], lastMonths(newauthors, months), 'simple'),
                       ]
                     }.to_json
                   :coffee
@@ -420,6 +467,7 @@
                   :coffee
                     @#{label}forumsent = @chart("##{label}forumsent", "Line", #{info})
 
+          -# Link to the dashboard source
           .col-md-12
             .pull-right= link_to "View the complete #{project.details.name} dashboard&hellip;", project.details.dashboard
 
