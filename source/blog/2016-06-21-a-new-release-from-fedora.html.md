@@ -10,7 +10,7 @@ comments: true
 
 It's kind of a big deal at Red Hat, since Fedora is the upstream from which many things flow. So, as such, it's a community release that gets a lot of attention both within Red Hat, and without.
 
-I actually had the opportunity to clean-install Fedora 24 Beta last week&mdash;not that I am some Fedora &uumlaut;ber-fan or anything. No, this was a necessity brought on by a dead hard drive. Thank goodness for cloud backups... one new drive later and I was installing Fedora 24 from a live USB.
+I actually had the opportunity to clean-install Fedora 24 Beta last week&mdash;not that I am some Fedora &uuml;ber-fan or anything. No, this was a necessity brought on by a dead hard drive. Thank goodness for cloud backups... one new drive later and I was installing Fedora 24 from a live USB.
 
 The experience itself was nothing notable, in that I had enough bad experiences with Xconfigurator and snapping CRT monitors to still make my subconsciously twitchy whenever I do a full install. Silly, yes, but I was poor in those days. So "not notable" is high praise indeed.
 
