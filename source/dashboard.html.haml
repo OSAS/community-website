@@ -184,7 +184,7 @@
       -# Iterate through each bit of dashboard data
       -# (located in ../data/dashboard)
 
-      - data.dashboard.each do |label, project|
+      - data.dashboard.projects.each do |label, project|
         - stat = project.stat
         - scm = stat.scm
 

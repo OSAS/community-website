@@ -13,7 +13,7 @@ require 'active_support'
 require 'active_support/core_ext'
 
 
-base_dir = 'data/dashboard'
+base_dir = 'data/dashboard/projects'
 
 sites = YAML.load_file("dashboard_config.yml")
 
