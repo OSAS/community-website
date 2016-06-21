@@ -168,7 +168,8 @@
         :markdown
           #{data.dashboard.index_page.description}
 
-      %hr
+      - if data.dashboard.projects.size != 1
+        %hr
 
 
     -#----------------------------------------------------------
@@ -188,18 +189,19 @@
 
           .project-info.col-md-12
 
-            .title
-              %h2{id: "#{label}-stats"}
-                = link_to "##{label}-stats" do
-                  = image_tag "dashboard/#{label}.svg", alt: project.details.name, class: 'logo'
+            - if data.dashboard.projects.size != 1
+              .title
+                %h2{id: "#{label}-stats"}
+                  = link_to "##{label}-stats" do
+                    = image_tag "dashboard/#{label}.svg", alt: project.details.name, class: 'logo'
 
-            - if project.details.summary
-              .description= project.details.summary
+              - if project.details.summary
+                .description= project.details.summary
 
-            - if project.details.site
-              .website
-                %strong Site:
-                = link_to project.details.site, project.details.site
+              - if project.details.site
+                .website
+                  %strong Site:
+                  = link_to project.details.site, project.details.site
 
           .card.col-md-6.active-new
             %h3 Active &amp; new developers
