@@ -15,16 +15,12 @@ require 'yaml'
 require 'active_support'
 require 'active_support/core_ext'
 
-
 base_dir = 'data/dashboard/projects'
 
-sites = YAML.load_file("dashboard_config.yml")
+sites = YAML.load_file('dashboard_config.yml')
 
-# Current terminal width, in characters, used for the progressbar
-
-if IO.console
-  screen_width = IO.console.winsize[1]
-end
+# Current terminal width, in characters (used for the progressbar)
+screen_width = IO.console.winsize[1] if IO.console
 
 sites.each do |site|
   site = site.with_indifferent_access
