@@ -2,6 +2,9 @@
 
 # Dependencies: rubygem-activesupport
 
+require 'bundler'
+Bundler.setup
+
 require 'time'
 require 'fileutils'
 require 'net/http'
