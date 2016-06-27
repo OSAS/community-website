@@ -906,9 +906,6 @@ Storage and Compute:
   - name: Luci
     url: https://fedorahosted.org/cluster/wiki/Luci
 
-  - name: LVM2
-    url: http://sourceware.org/lvm2/
-
   - name: NFS-Ganesha
     url: https://github.com/nfs-ganesha/nfs-ganesha/wiki
 
@@ -920,9 +917,6 @@ Storage and Compute:
 
   - name: rgmanager
     url: https://fedorahosted.org/cluster/wiki/RGManager
-
-  - name: Samba
-    url: http://www.samba.org/
 
   - name: vfs
     url: https://www.kernel.org/doc/Documentation/filesystems/vfs.txt
@@ -970,9 +964,6 @@ Developer Tools:
 
   - name: elfutils
     url: https://fedorahosted.org/elfutils/
-
-  - name: gcc
-    url: http://gcc.gnu.org
 
   - name: gcj
     url: http://gcc.gnu.org/java/

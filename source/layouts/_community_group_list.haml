@@ -14,6 +14,8 @@
 #project_list
 
   - data[group_type].each do |name, group|
+    - next unless group
+    - group.sort_by! { |k, v| k[:name].downcase }.uniq! { |k, v| k[:name].downcase }
 
     .category{class: "category--#{name.parameterize}"}
       %h2{id: name.parameterize}= name
@@ -23,24 +25,20 @@
         .primary
           .positionFix
 
-            - if group
-              %ul
+            %ul
+              - group.each do |item|
 
-                - group.each do |item|
+                - image_name = item.image || item.name.parameterize
 
-                  - image_name = item.image || item.name.parameterize
-
-                  - if File.exists? root + '/source/' + image_path("#{group_type}/#{image_name}.png").gsub(/\?.*/, '').gsub(/^\.\./, '')
-                    %li= link_to image_tag("#{group_type}/#{image_name}.png", alt: item.name), item.url, class: "item-#{image_name}", target: "_blank"
+                - if File.exists? root + '/source/' + image_path("#{group_type}/#{image_name}.png").gsub(/\?.*/, '').gsub(/^\.\./, '')
+                  %li= link_to image_tag("#{group_type}/#{image_name}.png", alt: item.name), item.url, class: "item-#{image_name}", target: "_blank"
 
 
       - unless hide_secondary
         .secondary
-          - if group
-            %ul
-              - group.sort_by! { |k, v| k[:name].downcase }
-              - group.each do |item|
-                %li= link_to item.name, item.url
+          %ul
+            - group.each do |item|
+              %li= link_to item.name, item.url
 
 
       %a.top(href="#quicklinks")
