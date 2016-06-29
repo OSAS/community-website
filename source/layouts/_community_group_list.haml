@@ -1,5 +1,10 @@
-- hide_secondary = false unless defined? hide_secondary
-- group_type ||= 'standards'
+:ruby
+  # Approximate resulting size of stretchy SVG images
+  # (so logos are all around the same visual size)
+  total_pixels = 8000
+
+  hide_secondary = false unless defined? hide_secondary
+  group_type ||= 'standards'
 
 #quicklinks
 
@@ -27,11 +32,61 @@
 
             %ul
               - group.each do |item|
+                :ruby
+                  image_name = item.image || item.name.parameterize
 
-                - image_name = item.image || item.name.parameterize
+                  file_root = root + '/source/'
 
-                - if File.exists? root + '/source/' + image_path("#{group_type}/#{image_name}.png").gsub(/\?.*/, '').gsub(/^\.\./, '')
-                  %li= link_to image_tag("#{group_type}/#{image_name}.png", alt: item.name), item.url, class: "item-#{image_name}", target: "_blank"
+                  svg = file_root + image_path("#{group_type}/#{image_name}.svg")
+                        .gsub(/\?.*/, '')
+                        .gsub(/^\.\./, '')
+
+                  png = svg.sub(/svg$/, 'png')
+
+                  filename = case
+                             when File.exists?(svg)
+                               svg
+                             when File.exists?(png)
+                               png
+                             else
+                               nil
+                             end
+
+                  ext = filename.match(/(svg|png)$/).to_s if filename
+
+                  if ext == 'svg'
+                    begin
+                      # Viewbox coordinates for stretchy SVGs
+                      viewbox = open(filename).read.match(/viewBox="([^"]*)"/)
+                      coord = viewbox[1].split(' ').map(&:to_f)
+
+                      aspect = (coord[3] - coord[1]) / (coord[2] - coord[0])
+
+                      # "Multiplier effect"
+                      # (a scale nudge based on type of image)
+                      mult = case
+                             when aspect > 1
+                               # Longer than wide
+                               0.8
+                             when aspect == 1
+                               # Square (or circle)
+                               0.9
+                             else
+                               # All else (wider than long)
+                               1
+                             end
+
+                      # Calculate width based on algebra —
+                      # figure out width and height based on pixel count
+                      # and ratio of dimensions
+                      # (Height is set to auto in the CSS; to maintain aspect)
+                      svg_width = (Math.sqrt(total_pixels/aspect) * mult).to_i
+                    rescue
+                    end
+                  end
+
+                - if filename
+                  %li= link_to image_tag("#{group_type}/#{image_name}.#{ext}", alt: item.name, width: svg_width), item.url, class: "item-#{image_name} type-#{ext}", target: "_blank"
 
 
       - unless hide_secondary
