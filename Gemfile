@@ -70,7 +70,7 @@ gem "therubyracer"
 gem "less"
 
 # asciidoctor
-gem "asciidoctor"
+gem "asciidoctor", '~> 0.1.4'
 
 # mediawiki
 gem "wikicloth"
