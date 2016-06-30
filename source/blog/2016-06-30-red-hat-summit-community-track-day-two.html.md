@@ -42,7 +42,7 @@ To demonstrate the process, Stef pushed the tag for Cockpit 0.112 and showed "th
 
 In conclusion, Stef says "open source is distributed, and there's a penalty for distributed, but it **scales**." Likewise, says Stef, the integration testing should be distributed as well. The packaging and delivery should be distributed. Everything should happen upstream, and if it's not upstream it's a recurring cost that you will pay for over time.
 
-## Management, legal, and Developers
+## Management, Legal, and Developers
 
 Red Hat's Richard Fontana and Deb Nicholson (from Open Invention Network), came in to talk about how to handle open source legal issues and communication within companies.
 
