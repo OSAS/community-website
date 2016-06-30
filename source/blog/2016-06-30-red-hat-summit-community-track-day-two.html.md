@@ -10,6 +10,8 @@ comments: true
 
 What follows is a nearly stream-of-consciousness grab of the highlights of the sessions from day two.
 
+READMORE
+
 ## Becoming a Contributor to Openstack on OpenStack (TripleO)
 
 "My name is Rain, and I'm talking to you about cloud... let's consider that for a moment." You have to love a presenter who seems born to the destiny of talking about their topic.
