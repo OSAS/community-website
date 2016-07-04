@@ -127,10 +127,6 @@ body
   .rhcnews
     display: none
 
-  .mission-text
-    font-size: 15px
-    padding: 10px 0
-
   #rh-logo,
   #site-title
     text-align: center
@@ -391,10 +387,15 @@ body.page #content h2
   background-color: #fff7b2
   margin: 10px -20px 40px
   padding: 1.5em 2.75em 1em
+  font-size: 130%
+
+  @media screen and (max-width: 650px)
+    font-size: inherit
+    margin: -4ex -4ex 0 -4ex
+    padding: 2ex 4ex 1ex
 
 .mission-text
   color: #5d5a41
-  font-size: 130%
   margin: 0 auto
 
   strong
