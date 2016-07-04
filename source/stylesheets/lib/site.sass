@@ -9,6 +9,18 @@ $header-padding: 20px
 h1, h2, h3, h4, h5, h6
   clear: both
 
+@media screen and (max-width: 768px)
+  h1
+    font-size: 160%
+  h2
+    font-size: 150%
+  h3
+    font-size: 140%
+  h4
+    font-size: 130%
+  h5
+    font-size: 120%
+
 .entry-meta
   font-size: inherit
   padding: 10px 0 30px
@@ -71,7 +83,7 @@ body
 
 /* General header style
 
-@media screen and (min-width: 651px)
+@media screen and (min-width: 768px)
 
   #site-title
     position: absolute
@@ -88,7 +100,7 @@ body
       font-size: 40px
       font-weight: normal
 
-@media screen and (max-width: 650px)
+@media screen and (max-width: 768px)
 
   #branding
     overflow: visible
@@ -389,10 +401,11 @@ body.page #content h2
   padding: 1.5em 2.75em 1em
   font-size: 130%
 
-  @media screen and (max-width: 650px)
+  @media screen and (max-width: 768px)
     font-size: inherit
     margin: -4ex -4ex 0 -4ex
     padding: 2ex 4ex 1ex
+    width: 100vw
 
 .mission-text
   color: #5d5a41
@@ -470,7 +483,7 @@ body.page #content h2
   line-height: 2.4
 
 
-@media screen and (max-width: 640px)
+@media screen and (max-width: 768px)
 
   #branding
     padding: 0.5rem 0 8rem
@@ -490,11 +503,11 @@ body.page #content h2
       text-align: center
 
     li
-      width: 20%
 
       > a
-        font-size: 15px
-        padding: 10px 0
+        font-size: calc(1vw + 8.25pt)
+        padding: 0.5ex 1.75ex
+        text-align: center
 
 .floatHeader
   #access,
