@@ -160,7 +160,7 @@
               - handle = author_data social_site
               - if handle
                 - unless follow_link_shown
-                  Follow author on:
+                  = "Follow #{author_name(author).to_s.split(' ').first} on:"
                   - follow_link_shown = true
                 - social_link = "#{social_sites[social_site.to_sym]}#{handle}"
                 - social_name = social_site_names[social_site.to_sym]
