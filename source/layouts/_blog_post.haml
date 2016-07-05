@@ -7,6 +7,9 @@
   #
   # = partial :blog_post, locals: {article: current_page}
 
+  @article = article
+  @data = data
+
   author = article.data.author
   article_view = (article.url == current_page.url)
   summarize ||= summarize
@@ -14,7 +17,8 @@
   tags = tags.parse_csv.map{|s| s.to_s.strip} if tags.is_a?(String) && !tags.empty?
 
   def author_data item
-    data.authors[item] if defined? data.authors[item]
+    author = @article.data.author
+    data.authors[author][item] if data.authors[author]
   end
 
 
@@ -37,8 +41,14 @@
 
     social_sites = {
       twitter: "https://twitter.com/",
-      googleplus: "https://twitter.com/+",
+      googleplus: "https://plus.google.com/+",
       facebook: "https://facebook.com/",
+    }
+
+    social_site_names = {
+      twitter: "Twitter",
+      googleplus: "Google+",
+      facebook: "Facebook",
     }
 
     twitter_card = {
@@ -143,5 +153,16 @@
           .more-link
             = author_link(author, "View all posts by #{author_name author} &raquo;")
 
+          .follow-on
+            - follow_link_shown = false
+            - %w(twitter googleplus facebook).each do |social_site|
+              - handle = author_data social_site
+              - if handle
+                - unless follow_link_shown
+                  Follow author on:
+                  - follow_link_shown = true
+                - social_link = "#{social_sites[social_site.to_sym]}#{handle}"
+                - social_name = social_site_names[social_site.to_sym]
+                = link_to social_name, social_link, {class: "icon-#{social_site}"}
 
     -# Share
