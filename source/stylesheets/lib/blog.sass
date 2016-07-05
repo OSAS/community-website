@@ -70,10 +70,24 @@ article.post
 .post-meta
   color: #777
 
-  /* FIXME: display tags in a nice way
-  /* (For now, we'll just temporarily hide them.)
   .tags
-    display: none
+    ul
+      display: inline
+      padding: 0
+      margin: 0
+
+    li
+      display: inline
+      margin: 0
+      padding: 0
+
+      + li
+        margin-left: -1ex
+        &:before
+          content: ', '
+
+      a
+        padding: 0.5ex
 
 .author-photo
   @extend .col-md-2
