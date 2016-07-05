@@ -100,7 +100,7 @@ class BlogHelpers < Middleman::Extension
         article_tags = article.data.tags
 
         unless article_tags.nil?
-          article_tags = article.data.tags.to_s.strip.split(/[\s,]+/) if article_tags.is_a?(String)
+          article_tags = article.data.tags.to_s.strip.split(',') if article_tags.is_a?(String)
           article_tags = article_tags.map { |t| t.parameterize.tr('-', '') }
           article_tags.each do |atag|
             result[atag] ||= []
@@ -120,10 +120,10 @@ class BlogHelpers < Middleman::Extension
       end
 
       # Join array(s) to just return results
-      # then sort by URL (which sorts by date, then alpha)
+      # then sort by date
       tag_matches
         .inject([]) { |result, d| result + d[1] }
-        .sort_by { |t| t[:url] }
+        .sort_by { |t| t[:date] }
     end
 
   end

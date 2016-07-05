@@ -89,10 +89,10 @@
   %header.post-header
 
     %h2.post-title.entry-title
-      - if (defined? article.url) && article.url != current_page.url
-        = link_to article.title, article.url
-      - else
+      - if article_view
         = article.title
+      - else
+        = link_to article.title, article.url
 
     %header.post-meta
       - if article.data.author
@@ -108,6 +108,15 @@
 
       - if defined? article.data.summary
         .entry-summary.hidden= markdown_to_html article.data.summary
+
+      - if article_view && tags.is_a?(Array)
+        .tags
+          posted in:
+
+          %ul.taglist
+          - tags.sort {|a,b| a.downcase <=> b.downcase}.each do |tag|
+            %li= link_to tag, tag_path(tag)
+
 
   %section.post-content.entry-content
     - summary = article.summary summarize
@@ -128,14 +137,6 @@
 
 
   %footer.post-meta
-    - if tags.is_a? Array
-      .tags
-        Tags:
-
-        %ul.taglist
-        - tags.sort {|a,b| a.downcase <=> b.downcase}.each do |tag|
-          %li= link_to tag, tag_path(tag)
-
     - if article_view && author_card(author)
 
       #author-info.author-info
