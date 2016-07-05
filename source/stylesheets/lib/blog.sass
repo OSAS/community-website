@@ -89,6 +89,10 @@ article.post
   .with-photo
     @extend .col-md-10
 
+  .follow-on,
+  .more-link
+    line-height: 3
+
 .post-content
   margin-top: 2em
 
@@ -148,3 +152,32 @@ article.post
   color: #777
   margin: 3em 0 0
   padding: 3em 0 0
+
+
+/* Icons
+
+.icon-facebook,
+.icon-googleplus,
+.icon-twitter
+  padding: 1em 0.25em
+  &:first-child
+    margin-left: 0.25em
+  &:before
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: contain
+    content: ''
+    display: inline-block
+    height: 1em
+    margin-right: 0.25em
+    vertical-align: middle
+    width: 1.5em
+
+.icon-facebook:before
+  background-image: url('/images/social/facebook.svg')
+
+.icon-googleplus:before
+  background-image: url('/images/social/googleplus.svg')
+
+.icon-twitter:before
+  background-image: url('/images/social/twitter.svg')
