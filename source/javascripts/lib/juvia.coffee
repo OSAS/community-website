@@ -59,9 +59,23 @@ show_comment_count = (article) ->
 
 # on jQuery(ready)
 $ ->
-  # Run Juvia for article pages (that have a '#blog-comments' section)
-  run_juvia() if $('#blog-comments').length
-
-  # Run our fake Juvia on every article on article listings
+  # Run our fake Juvia replacement on every article on article listing pages
   # (front page, blog page, etc.)
   $('.articles article').each (i, article) -> show_comment_count(article)
+
+  # Run Juvia for article pages (that have a '#blog-comments' section)
+  if $('#blog-comments').length
+    run_juvia().done ->
+      # Replace dates immediately after the Juvia script is run
+      $('.juvia-creation-date').each (i, dateObj) ->
+        $date = $(dateObj)
+        timeObj = moment $date.text().trim(), 'MMMM DD YYYY hh:mm'
+        timeString = timeObj.format('D MMM YYYY')
+        timeAgo = timeObj.fromNow()
+
+        $newDate = $('<time class="juvia-creation-date">')
+          .attr('datetime', timeObj.toISOString())
+          .attr('title', timeObj.format('dddd, MMMM Do YYYY @ hh:mm'))
+          .html("#{timeAgo} &mdash; <span>#{timeString}</span>")
+
+        $date.replaceWith($newDate)
