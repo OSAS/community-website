@@ -7,7 +7,7 @@ juvia_options =
   topic_title: document.title or location.href
   include_base: !window.Juvia
   include_css: false
-  comment_order: 'latest-first'
+  comment_order: 'earliest-first'
 
 # Generate a Juvia API, complete with request counters
 makeApiUrl = (options) ->
