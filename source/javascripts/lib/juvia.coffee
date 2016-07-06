@@ -22,7 +22,9 @@ makeApiUrl = (options) ->
 
 # Siple wrapper to use jQuery to inject the script with the proper API
 run_juvia = (options = juvia_options) ->
-  $.getScript makeApiUrl(options)
+  $.ajaxQueue
+    url: makeApiUrl(options)
+    dataType: 'script'
 
 # Load data from Juvia in a hacky way and display comment count on the
 # website
