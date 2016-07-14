@@ -930,6 +930,9 @@ Storage and Compute:
 
 Developer Tools:
 
+  - name: Ansible
+    url: http://www.ansible.com/community
+
   - name: Eclipse
     url: http://www.eclipse.org
 
