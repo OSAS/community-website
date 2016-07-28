@@ -593,7 +593,7 @@ Middleware and Identity:
 
   - name: Keycloak
     image: keycloak
-    url: https://keycloak.jboss.org/
+    url: http://keycloak.org/
 
   - name: mod_cluster
     url: http://mod-cluster.jboss.org/
