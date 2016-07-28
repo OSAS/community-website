@@ -261,9 +261,6 @@ Operating system:
   - name: Virtual memory manager
     url: http://www.kernel.org/
 
-  - name: Wildfly
-    url: http://wildfly.org/
-
   - name: yum
     url: http://fedoraproject.org/wiki/Yum
 
@@ -434,9 +431,9 @@ Middleware and Identity:
   - name: Hibernate
     url: http://www.hibernate.org/
 
-  - name: JBoss Application Server
-    image: jboss
-    url: http://www.jboss.org/
+  - name: Wildfly Application Server
+    image: wildfly
+    url: http://www.wildfly.org/
 
   ###
 
@@ -521,11 +518,9 @@ Middleware and Identity:
   - name: Errai
     url: http://erraiframework.org/
 
-  - name: eXo JCR
-    url: http://exojcr.jboss.org/
-
-  - name: GateIn Portal
-    url: http://gatein.jboss.org/
+  - name: Hawkular
+    image: hawkular 
+    url: http://hawkular.org/
 
   - name: HornetQ
     url: http://hornetq.jboss.org/
@@ -597,6 +592,7 @@ Middleware and Identity:
     url: http://web.mit.edu/kerberos/
 
   - name: Keycloak
+    image: keycloak
     url: https://keycloak.jboss.org/
 
   - name: mod_cluster
