@@ -1,10 +1,10 @@
-# Red Hat Community website
+# Red Hat Community Website
 
 To get started, you need to have Ruby and Ruby Gems installed, as well
 as "bundler".
 
 
-## Initial setup
+## Initial Setup
 
 ### Fedora, RHEL, & CentOS
 
@@ -25,7 +25,7 @@ Otherwise Git will bomb out due to permissions issues.
 3. Edit!
 
    When you edit files (pages, layouts, CSS, etc.), the site will
-   dyanmically update in development mode. (There's no need to refresh
+   dynamically update in development mode. (There's no need to refresh
    the page, unless you get a Ruby error.)
 
 
@@ -35,7 +35,7 @@ The `./run-server.sh` script handles changes in the `Gemfile` by including
 a `bundle install` before running Middleman.
 
 
-## Customizing your site
+## Customizing Your Site
 
 The site can be easily customized by editing `data/site.yml`.
 
