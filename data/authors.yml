@@ -154,6 +154,12 @@ kchamarthy:
     his contributions on interactions between OpenStack and its underlying
     virtualization components.
 
+lhawthorn:
+  name: Leslie Hawthorn
+  twitter: lhawthorn
+  description: |
+    An internationally known developer relations strategist, speaker, and author, Leslie Hawthorn leads ecosystem initiatives for the CentOS project at Red Hat. Follow her on Twitter @lhawthorn
+
 lveyde:
   name: Lev Veyde
   description: Lev Veyde is a Software Engineer at Red Hat, based in Ra'anana, Israel.
