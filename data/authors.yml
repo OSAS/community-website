@@ -154,6 +154,12 @@ kchamarthy:
     his contributions on interactions between OpenStack and its underlying
     virtualization components.
 
+kdas:
+  name: Kushal Das
+  twitter: kushaldas
+  description: |
+    Kushal Das a CPython core developer and currently working as Fedora Cloud Engineer at Red Hat. Follow Kushal on Twitter @kushaldas
+
 lhawthorn:
   name: Leslie Hawthorn
   twitter: lhawthorn
