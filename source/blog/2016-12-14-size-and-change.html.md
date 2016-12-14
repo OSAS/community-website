@@ -15,7 +15,7 @@ READMORE
 I have been thinking of this because of a few converging issues&mdash;one project I work on, which started with four people, now has more activity than we can handle, and we are thinking of how to grow the group of (OpenStack style) committers. I have been helping another project figure out how to create a governance structure to allow them to grow
 effectively beyond their current size, where they have about 10 active companies and about 150 active developers. And the company I work for has been going through some growing pains as we go past 10,000 people in size.
 
-The work of Robin Dunbar comes to mind&mdash;he of [Dunbar's Number](https://en.wikipedia.org/wiki/Dunbar's_number). In [How Many Friends Does One Person Need?](http://www.hup.harvard.edu/catalog.php?isbn=9780674057166), he examines the nature of communities of different sizes. He finds a number of group sizes that
+The work of Robin Dunbar comes to mind&mdash;he of [Dunbar's Number](https://en.wikipedia.org/wiki/Dunbar's_number). In [How Many Friends Does One Person Need?](http://www.hup.harvard.edu/catalog.php?isbn=9780674057166), he examines the nature of communities of different sizes. He finds a [number of group sizes](http://www.socialsciencespace.com/2013/11/robin-dunbar-on-dunbar-numbers/) that
 recur often, and their characteristics change at certain size limits: The specific sizes he points to are 5, 15, 50, 150, 500, and 5000&mdash;he
 suggests that there might be something special about this scaling factor
 of three.  But he does not talk a lot about evolution&mdash;how group dynamics
@@ -38,7 +38,7 @@ office.
 any individual message diminishes. At a certain size, it becomes much
 more difficult to evaluate the authority level of a person posting on
 the list, and the social ties weaken between list participants. On one
-list, when the main list got too busy, they created a "developers"
+list I participated in, when the main list got too busy, they created a "developers"
 mailing list where they could hang out together. A similar phenomenon
 happens with IRC channels.
 
@@ -52,7 +52,7 @@ new people grew beyond his ability to scale.
 There are multiple other scaling events&mdash;when do you implement some
 kind of HR process for absence management, expenses, pay raises, and so
 on? How big are you when it becomes cost effective to hire a full time
-accountant, lawyer, administrator, talent acquisition? When is a single
+accountant, lawyer, administrator, talent acquirer? When is a single
 team in your company big enough that you need to hire or promote someone
 who is not a founder to management? How big before it is unreasonable to
 ask everyone's opinion on a work change that impacts everyone?
@@ -75,14 +75,14 @@ At each of these changes, required structure and process is one axis.
 The other axis, perhaps more significant, is how people in the group
 relate to each other. Individuals can have multiple identities at once,
 each of which is stronger or weaker. I can be part of a project and part
-of a company at the same time&mdash;and whether I consider myself an project
+of a company at the same time&mdash;and whether I consider myself a project
 foo developer who gets paid by company X, or a company X employee who
 happens to be working on project foo, is a very personal thing,
 depending on the depth of the relationships that I have with other
 members of the groups "project foo" and "company X."
 
 The relationships with group members will change over time, as group
-size changes. I started my developer career as a developer of the GIMP,
+size changes. I started my open source developer career as a developer of the GIMP,
 spent over a year as the GIMP release manager, and organized multiple
 GIMP events, but over time I have drifted away as the project evolved,
 and some of the people I had close relationships with in the project
@@ -105,7 +105,7 @@ rich relationships and conversations. As a conference gets to the high
 hundreds, you start to see "tracks" form, where big sub-groups gather to
 share knowledge specific to them&mdash;with a resulting lessening of
 awareness of what is happening in other projects. When the OpenStack
-Summit got towards 1500 or 2000 people, you start to see a completely
+Summit got towards 1500 or 2000 people, you started to see a completely
 separate sub-event forming for developers&mdash;the "OpenStack developer"
 identity is reinforced, at the expense of some awareness of the
 technical community in the greater OpenStack ecosystem. And now, with
@@ -113,7 +113,7 @@ the main event over 5000 attendees, another inflection point has been
 reached, where in addition to per-project tracks at the developer
 summit, specific projects are co-ordinating smaller "mid-stream" events
 to encourage the creation of an even tighter per-project active
-participant identity. Once again those numbers&mdash;150, 500, 1500, 5000 -
+participant identity. Beginning next year, the developer event will be held completely separately, which will help to reinforce the "OpenStack developer" identity by making that event smaller.Once again those numbers&mdash;150, 500, 1500, 5000 -
 Dunbar's inflection points&mdash;match quite nicely to the moment where the
 communities feel an unease with the state of attairs, and start to look
 for ways to scale further.
@@ -128,7 +128,7 @@ Quintero](https://people.gnome.org/~federico/news.html) for introducing me both 
 theories on the [evolution](https://en.wikipedia.org/wiki/The_Death_and_Life_of_Great_American_Cities)
 of [healthy communities](http://www.goodreads.com/book/show/85398.The_Economy_of_Cities)). His characterization of this, which matches both Dunbar's
 group of 5000 (and coincidentally Plato's theoretical optimal size of a
-democracy, 5040), is that it is the size of a group where an individual
+democracy, 5040), is that it is also approximately the size of a group where an individual
 feels that they have no say in the affairs of the group. It is also the
 size at which town meetings in Massachusetts can move from "open to all"
 to representative meetings, open only to elected representatives (6000
@@ -159,7 +159,7 @@ be lost, causing nostalgia, anxiety, and some discontent that things
 were better before. Good communities will pay attention to these
 emotional consequences too. Perpetuating the founding values of a
 community as it scales is a challenge, and as a community grows a mix of
-dogma, lore, and stories can be used to pass on values.It means that as
+dogma, lore, and stories can be used to pass on values. It means that as
 communities grow, group identity, and the sub-groups that grow from
 group identity, needs to be managed&mdash;to avoid the [anti-patterns](http://communitymgt.wikia.com/wiki/Category:Anti-patterns)
-of the [clique](http://communitymgt.wikia.com/wiki/Nepotism), [the water cooler](http://communitymgt.wikia.com/wiki/Water_cooler), or corporate [command and control](http://communitymgt.wikia.com/wiki/Command_and_Control).
+of the [clique](http://communitymgt.wikia.com/wiki/Nepotism), [the water cooler](http://communitymgt.wikia.com/wiki/Water_cooler), or corporate [command and control](http://communitymgt.wikia.com/wiki/Command_and_Control). Applying consistent community values will help avoid such anti-patterns.
