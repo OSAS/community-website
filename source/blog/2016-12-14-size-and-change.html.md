@@ -6,7 +6,7 @@ tags: community, development, scale
 published: true
 comments: true
 ---
-![Apple and Orange](blog/Apple_and_Orange.jpg) I have been thinking about how size can affect culture and adaptability of groups recently. The topic once again came up today in a talk about what makes a healthy community. The answer to that will depend on the community's size and maturity. An open source project, in the words of one participant in this conversation, should have "the minimum level of structure to allow it to function effectively." I agree&mdash;just enough is the right amount. This article contains some ponderings on the relationship between size and communities, and some conclusions we can take from that.
+![Apple and Orange](blog/Apple_and_Orange.jpg) I have been thinking about how size can affect culture and adaptability of groups recently. The topic once again came up today in a talk about what makes a healthy community. The answer to that will depend on the community's size and maturity. An open source project, in the words of one participant in one conversation I had recently on this subject, should have "the minimum level of structure to allow it to function effectively." I agree&mdash;just enough is the right amount. This article contains some ponderings on the relationship between size and communities, and some conclusions we can take from that.
 
 READMORE
 
