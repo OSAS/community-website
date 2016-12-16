@@ -50,6 +50,13 @@ bkp:
     Brian is also an adjunct instructor at the University of Notre Dame.
     Follow him on Twitter @TheTechScribe
 
+bleathem:
+  name: Brian Leathem
+  twitter: brianleathem
+  description: |
+    Brian Leathem is a Principal Software Engineer at Red Hat and a core contributor to the Patternfly project, helping to bridge the worlds of developers and designers.
+    Follow him on Twitter @brianleathem
+
 dallen:
   name: Dan Allen
 
