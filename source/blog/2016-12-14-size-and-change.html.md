@@ -115,7 +115,7 @@ summit, specific projects are co-ordinating smaller "mid-stream" events
 to encourage the creation of an even tighter per-project active
 participant identity. Beginning next year, the developer event will be held completely separately, which will help to reinforce the "OpenStack developer" identity by making that event smaller.Once again those numbers&mdash;150, 500, 1500, 5000 -
 Dunbar's inflection points&mdash;match quite nicely to the moment where the
-communities feel an unease with the state of attairs, and start to look
+communities feel an unease with the state of affairs, and start to look
 for ways to scale further.
 
 ## Loss of Voice
