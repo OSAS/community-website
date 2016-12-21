@@ -57,6 +57,15 @@ bleathem:
     Brian Leathem is a Principal Software Engineer at Red Hat and a core contributor to the Patternfly project, helping to bridge the worlds of developers and designers.
     Follow him on Twitter @brianleathem
 
+cybette:
+  name: Carol Chen
+  twitter: cybette
+  description: |
+    Carol Chen is the Community Development Manager for ManageIQ, the open source project
+    that powers Red Hat CloudForms. Her previous experiences include software
+    development/integration and community management for 12 years in the mobile industry.
+    Follow her on Twitter @cybette
+
 dallen:
   name: Dan Allen
 
