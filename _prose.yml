@@ -1,0 +1,41 @@
+markdown: kramdown
+prose:
+  ignore:
+    - config.rb
+    - layouts
+  rooturl: "source"
+  siteurl: "http://community.redhat.com/"
+  media: "source/images/blog"
+  metadata:
+    source/blog:
+      - name: "title"
+        field:
+          label: "Name"
+          placeholder: "Category Name"
+          element: "text"
+          value: ""
+      - name: "author"
+        field:
+          label: "Author"
+          element: "text"
+          value: ""
+      - name: "tags"
+        field:
+          label: "Tags"
+          element: "textarea"
+          value: ""
+      - name: "categories"
+        field:
+          label: "Categories"
+          element: "textarea"
+          value: ""
+      - name: "comments"
+        field:
+          label: "Comments"
+          element: "checkbox"
+          value: true
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: false
