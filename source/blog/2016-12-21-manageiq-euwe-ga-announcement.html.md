@@ -1,5 +1,5 @@
 ---
-title: ManageIQ Euwe GA - Improved Container Management, Public Cloud Support, and more
+title: ManageIQ Euwe GA - Improved Container Management, Public Cloud Support, and More
 date: 2016-12-21 12:20 UTC
 author: cybette
 tags: community, ManageIQ, releases
@@ -9,7 +9,7 @@ comments: true
 
 ![ManageIQ logo](blog/manageiq-logo-glyph.png) The ManageIQ team is delighted to announce the release of ManageIQ Euwe! This fifth ManageIQ release is named after Dutch chess Grandmaster [Max Euwe](https://en.wikipedia.org/wiki/Max_Euwe). 
 
-Since the [ManageIQ Darga GA](/blog/2016/06/darga-ga-announcement/), we’ve had 9 productive [sprints](/blog/tags/sprints/) with a total of 3025 pull requests in the [main ManageIQ repo](https://github.com/manageiq/manageiq) and 4518 PRs [overall](https://github.com/manageiq/) (averaging 112/167 pull requests [per week](/blog/tags/LWIMIQ/)). All these activities have translated to a slew of new features, bug fixes, and even some deletions to optimize things.
+Since the [ManageIQ Darga GA](/blog/2016/06/darga-ga-announcement/), we’ve had 9 productive [sprints](/blog/tags/sprints/) with a total of 3,025 pull requests in the [main ManageIQ repo](https://github.com/manageiq/manageiq) and 4518 PRs [overall](https://github.com/manageiq/) (averaging 112/167 pull requests [per week](/blog/tags/LWIMIQ/)). All these activities have translated to a slew of new features, bug fixes, and even some deletions to optimize things.
 
 READMORE
 
