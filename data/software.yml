@@ -519,7 +519,7 @@ Middleware and Identity:
     url: http://erraiframework.org/
 
   - name: Hawkular
-    image: hawkular 
+    image: hawkular
     url: http://hawkular.org/
 
   - name: HornetQ
@@ -606,6 +606,9 @@ Middleware and Identity:
 
   - name: Netty
     url: https://netty.io/
+
+  - name: OptaPlanner
+    url: https://www.optaplanner.org
 
   - name: PicketBox
     url: http://picketbox.jboss.org/
