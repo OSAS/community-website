@@ -2,7 +2,7 @@
 title: RDO at DevConf.cz, FOSDEM
 author: rbowen
 date: 2017-01-24 20:49:54 UTC
-tags: rdo,fosdem.devconf.cz,community
+tags: rdo, fosdem, devconf.cz, community
 comments: true
 published: true
 ---
