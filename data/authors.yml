@@ -335,7 +335,13 @@ sellis:
   name: Steven Ellis
   twitter: StevensHat
   description: |
-    Steven has been with Red Hat since they opened their New Zealand office in May 2011. His involvement in Open Source stretches back over 20 years, including over 15 years using Linux within a variety business environments. Since moving to New Zealand he has provided technical direction and operational guidance for a number of New Zealand companies on the use of Open Source and Linux through roles with Optimation and IBM prior to joining Red Hat. As NZ Platform Solution Architect, his focus areas are Red Hat Enterprise Linux and Virtualisation/Cloud products as well as Storage technologies. Follow him on Twitter at @StevensHat.
+    Steven has been with Red Hat since they opened their New Zealand office in May 2011. His involvement in Open Source stretches back over 20 years, including over 15 years using Linux within a variety business environments. Since moving to New Zealand he has provided technical direction and operational guidance for a number of New Zealand companies on the use of Open Source and Linux through roles with Optimation and IBM prior to joining Red Hat. As NZ Platform Solution Architect, his focus areas are Red Hat Enterprise Linux and Virtualisation/Cloud products as well as Storage technologies. Follow him on Twitter @StevensHat.
+
+stormy:
+  name: Stormy Peters
+  twitter: storming
+  description: |
+    Stormy Peters is an information technology industry analyst and prominent free and open source software (FOSS) advocate, promoting business use of FOSS. Currently the Senior Manager of Community Team in Open Source and Standards, Stormy co-founded, and was later appointed as executive director of the GNOME Foundation. Follow her on Twitter @storming.
 
 tcallaway:
   name: Tom Callaway
