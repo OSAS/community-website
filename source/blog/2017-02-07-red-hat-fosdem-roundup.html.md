@@ -39,7 +39,7 @@ Project documentation is so much more than just the formal manual. It's how you 
 
 Tom Callaway, the Fedora Legal chair, talked about the past, present, and future of licensing and legal issues in the Fedora community. Tom is not a lawyer, nor does he play one on TV, but he does consult with lawyers, and occasionally, go drinking with them. He is not a lawyer, so nothing in my presentation should be (or could be) construed as legal advice.
 
-#### Overcoming Culture Clash
+### Overcoming Culture Clash
 
 **Presenter:** Dave Neary<br>
 **Track:** Community (Devroom)<br>
@@ -47,7 +47,7 @@ Tom Callaway, the Fedora Legal chair, talked about the past, present, and future
 
 We are all a product of our experiences. Different communities around the world have different core assumptions about behaviour, how decisions are made, the role of the individual in a group, and more. What makes up culture, and can we have better community experiences by understanding it?
 
-#### Mentoring 101: How to be a Great Community Mentor
+### Mentoring 101: How to be a Great Community Mentor
 
 **Presenter:** Brian Proffitt<br>
 **Track:** Community (Devroom)<br>
