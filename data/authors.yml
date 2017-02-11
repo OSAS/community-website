@@ -23,23 +23,19 @@ amye:
   name: Amye Scavarda
   twitter: amye
   description: |
-    Amye is the Gluster Community Lead at Red Hat. Previously, she was a project manager working in Drupal to expand out the world one website and infrastructure build at a time. Follow her on Twitter
-    @amye.
+    Amye is the Gluster Community Lead at Red Hat. Previously, she was a project manager working in Drupal to expand out the world one website and infrastructure build at a time. Follow her on Twitter @amye.
 
 bex:
   name: Brian Exelbierd
   twitter: bexelbie
   description: |
-    Brian (bex) Exelbierd is a Software Engineer for the Open Source and
-    Standards team at Red Hat. Brian supports the Project Atomic technologies
-    with both code and documenation.  In addition to development, Brian has a
-    background in Higher Education and traditional IT roles.  Follow him on
-    Twitter @bexelbie.
+    Brian (bex) Exelbierd is the Fedora Community Action and Impact Coordinator on behalf of the Open Source and Standards team at Red Hat. Brian has a background in Higher Education and various IT/Engineering roles. Follow him on Twitter @bexelbie or on [his blog](http://www.winglemeyer.org/).
 
 bkearney:
   name: Bryan Kearney
   twitter: "@bryan_kearney"
-  description: Bryan Kearney is a Sr. Engineering Manager at Red Hat.
+  description: |
+    Bryan Kearney is a Sr. Engineering Manager at Red Hat.
 
 bkp:
   name: Brian Proffitt
