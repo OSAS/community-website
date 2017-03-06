@@ -7,7 +7,7 @@ comments: true
 published: true
 ---
 
-![differing communication styles](blog/feedback.jpg) *In the [preceding article](/blog/2017/02/culture-clash-part-2/), we covered the six dimensions of culture according to Geert Hofstede, and explored the consequences that these dimensions may have on people's cultural attitudes. In this article, we explore some more practical ways to uncover cultural assumptions through good communication.*
+![differing communication styles](blog/feedback.jpg) *In the [preceding article](http://community.redhat.com/blog/2017/02/culture-clash-part-2/), we covered the six dimensions of culture according to Geert Hofstede, and explored the consequences that these dimensions may have on people's cultural attitudes. In this article, we explore some more practical ways to uncover cultural assumptions through good communication.*
 
 Sociology theory is all well and good, but how can we apply this to interactions in our communities? Is it possible to apply Hofstede's cultural dimensions theory to real-life interactions in community projects?
 
@@ -33,6 +33,6 @@ Applying this to community interactions, this allows you to understand fundament
 
 This is not an easy change&mdash;it is not a switch that you can flip for an entire project, it is a set of skills that individuals in your community can improve over time. But there are a few practical things that you can put in place, which are easy to implement, and which will get you on the path to greater cultural awareness.
 
-*In the next article, we get even more practical, and talk about some things that you can put in place in communities to build bridges between cultures in your community.*
+*In the [next article](http://community.redhat.com/blog/2017/03/culture-clash-part-4/), we get even more practical, and talk about some things that you can put in place in communities to build bridges between cultures in your community.*
 
 *Image courtesy of [Tumisu](https://pixabay.com/en/users/Tumisu-148124/), under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.en) license.*
