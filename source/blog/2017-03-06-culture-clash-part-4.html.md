@@ -7,7 +7,7 @@ comments: true
 published: true
 ---
 
-![differing communication styles](blog/diversity.png) *In the [last article](/blog/2017/03/culture-clash-part-3/), we finally went beyond theory to some practical tips on how to improve communication in your community. In this article, we get even more practical, offering some easy to follow tips which will make a material difference in your communities.*
+![differing communication styles](blog/diversity.png) *In the [last article](http://community.redhat.com/blog/2017/03/culture-clash-part-3/), we finally went beyond theory to some practical tips on how to improve communication in your community. In this article, we get even more practical, offering some easy to follow tips which will make a material difference in your communities.*
 
 There are two concrete things&mdash;one piece of advice for both community developers and individuals seeking to join a community, and one piece of advice for community projects interested in encouraging greater geographical diversity. Each one has a number of consequences.
 

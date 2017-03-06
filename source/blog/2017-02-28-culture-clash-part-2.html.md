@@ -7,7 +7,7 @@ comments: true
 published: true
 ---
 
-![Gluster logo](blog/six_degrees_of_separation.png) *In the [previous article](blog/2017/02/culture-clash-part-1/), we outlined how cultural dissonance can cause issues when cultures collide. In this article, we talk about what makes up cultural identity, and perhaps help you become more aware of your own cultural assumptions.*
+![Gluster logo](blog/six_degrees_of_separation.png) *In the [previous article](http://community.redhat.com/blog/2017/02/culture-clash-part-1/), we outlined how cultural dissonance can cause issues when cultures collide. In this article, we talk about what makes up cultural identity, and perhaps help you become more aware of your own cultural assumptions.*
 
 In "Cultures and Organizations", the sociologist Geert Hofstede identified six dimensions for characterizing a culture. The effects of these dimensions can be analyzed according to multiple characteristics of a culture, including education, social structure, political and economic systems, religious attitudes, traditions, and customs.
 
