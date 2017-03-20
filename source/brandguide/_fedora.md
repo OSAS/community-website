@@ -11,7 +11,7 @@ The Fedora Project is a community project that leads the advancement of free and
 
 ### Visual Style
 
-Fedora project has its own design team, so you should work with them, especially if you have questions about the visual style. They use the Fedora tickets to manage their workflow, so the easiest way to get in touch is to [file a new ticket](https://fedorahosted.org/design-team/newticket).
+Fedora project has its own design team, so you should work with them, especially if you have questions about the visual style. They use the Fedora tickets to manage their workflow, so the easiest way to get in touch is to [file a new ticket](https://pagure.io/design).
 
 The [Fedora Logo Usage Guidelines](https://fedoraproject.org/wiki/Logo/UsageGuidelines) on the Fedora wiki has a lot more information and details about the brand and visual style, so if you are about to design something for Fedora, make sure you study it carefully!
 
