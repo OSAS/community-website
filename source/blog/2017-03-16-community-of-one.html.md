@@ -49,7 +49,7 @@ But your project may be too big, scattered, or financially constrained to do suc
 
 If physical travel is a problem, think about hosting virtual events. This does not mean just online meetings (though those count), but organized goal-oriented events that can bring together a number of your community to accomplish something fast. Sprints, hackathons, mentoring programs, QA days... any organized event like this, even online, can create a sense of shared experience among you community members.
 
-At the end of the day, that is what you should be making for your community: shared experiences. They should be positive, but they don't have to be ("remember when we stayed up all night rebuilding that server?"). Good or bad, experiences that community members can share and reminisce about later help weave the tapesty of your community, and will make everyone feel less alone.
+At the end of the day, that is what you should be making for your community: shared experiences. They should be positive, but they don't have to be ("remember when we stayed up all night rebuilding that server?"). Good or bad, experiences that community members can share and reminisce about later help weave the tapestry of your community, and will make everyone feel less alone.
 
 
 *Image courtesy of [spikehedgehog99](http://spikehedgehog99.deviantart.com/) under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) license.*
