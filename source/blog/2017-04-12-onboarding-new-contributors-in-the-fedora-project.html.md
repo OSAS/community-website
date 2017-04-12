@@ -11,7 +11,7 @@ published: true
 
 These activities, like Release Engineering, must happen or no bits get shipped.  Other activities are critical to the experience of Fedora, like Design.  Without these activities we might as well not ship.  Some activities, like a lot of the work done by Fedora Infrastructure, are critical to providing the tools and glue we need to get our work done.
 
-Onboarding is much on the mind of communities of late, thanks to [Stormy Peter’s](https://twitter.com/storming) prompt on how community works at [opensource.com](https://opensource.com/article/17/4/blogging-challenge-open-source-community). Go read it, as it inspired this post and will contain lots of great information in the roundup post later this week.
+Onboarding is much on the mind of communities of late, thanks to [Stormy Peters'](https://twitter.com/storming) prompt on how community works at [opensource.com](https://opensource.com/article/17/4/blogging-challenge-open-source-community). Go read it, as it inspired this post and will contain lots of great information in the roundup post later this week.
 
 READMORE
 
