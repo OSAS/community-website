@@ -9,7 +9,7 @@ published: true
 
 ![river](blog/River.jpg) Inside the world of Red Hat, and other open source-oriented companies, there is a recurring metaphor to try to help explain the relationship between the projects where our source software is created and the commercially available software we ship with support, training, and other value-adds.
 
-The metaphor used is "upstream" and "downstream," where upstream code is the "source" project code and "downstream" is the refined product code. Thus, [Fedora](https://getfedora.org/) is the upstream to [Red Hat Enterprise Linux's](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) downstream, to ocik one example.
+The metaphor used is "upstream" and "downstream," where upstream code is the "source" project code and "downstream" is the refined product code. Thus, [Fedora](https://getfedora.org/) is the upstream to [Red Hat Enterprise Linux's](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) downstream, to pick one example.
 
 But increasingly we have been noticing a certain problem with this metaphor: very few people outside Red Hat and companies in this sector of IT really understood what the whole "stream" metaphor meant. Worse, when we really looked at the upstream/downstream metaphor ourselves, we realized that it has a fairly big flaw on its own.
 
