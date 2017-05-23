@@ -24,7 +24,7 @@ READMORE
 * Your three favorite events
 * The conference you’d recommend to all new open source community members
 
-We heard that you all are busy and good ideas take some time to generate, so we lengthened the blogging window to two weeks. Write about events by the end of the day June 1st to be included in this round! Just blog on your preferred blogging platfrm and then reference your blog post on Twitter with the #osscommunities hashtag!
+We heard that you all are busy and good ideas take some time to generate, so we lengthened the blogging window to two weeks. Write about events by the end of the day June 1st to be included in this round! Just blog on your preferred blogging platfrom and then reference your blog post on Twitter with the #osscommunities hashtag!
 
 We collected a lot of great content on the [Knowledge](/knowledge/) section of the Red Hat Community site and we will continue to link to any #osscommunities blog posts there.
 
