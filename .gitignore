@@ -21,3 +21,5 @@ data/dashboard/projects
 # Ignore emacs .. erm its backup files..
 *~
 *.swp
+# do not commit the Gemfile.lock, too much issue
+Gemfile.lock
