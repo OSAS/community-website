@@ -3,7 +3,7 @@
   # Note: The actual document is in this directory as `faq-document.ad`
   # Also: The URL is at /centos-faq/ thanks to a rewrite in config.rb
 
-  doc = Asciidoctor::Document.new open("#{root}/source/centos/faq-document.ad")
+  doc = Asciidoctor::Document.new open("#{root}/source/centos/faq-document.ad").read()
   html = Nokogiri::HTML doc.render
 
 -# Really, this classname should be in <body>
