@@ -64,7 +64,7 @@ gem 'middleman-sprockets', '3.3.2'
 
 #####
 # Formats
-
+gem "haml", '~> 4.0'
 # less (css)
 gem "therubyracer"
 gem "less"
