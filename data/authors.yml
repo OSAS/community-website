@@ -85,6 +85,12 @@ dcaro:
 dcleal:
   name: Dominic Cleal
 
+dhellman:
+  name: Doug Hellmann
+  twitter: doughellmann
+  description: |
+    Doug Hellman a software developer with a wide range of experience in application areas and types, serious about creating designs that meet requirements, are flexible, and can be maintained for long product lifetimes. A Fellow of the Python Software Foundation and its Communications Director from 2010-2012, Doug currently works on OpenStack full time for Red Hat. Find him on Twitter @doughellmann.
+
 dneary:
   name: Dave Neary
   twitter: nearyd
