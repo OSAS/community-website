@@ -70,7 +70,7 @@ Operating system:
     url: http://www.candlepinproject.org/
 
   - name: cobbler
-    url: http://www.cobblerd.org/
+    url: http://cobbler.github.io/
 
   - name: Completely Fair Scheduler
     url: https://www.kernel.org/doc/Documentation/scheduler/sched-design-CFS.txt
@@ -100,7 +100,7 @@ Operating system:
     url: http://fedoraproject.org/wiki/FedoraLiveCD
 
   - name: func
-    url: https://fedorahosted.org/func/
+    url: https://github.com/kadamski/func
 
   - name: GNU awk
     url: http://www.gnu.org/software/gawk/
@@ -148,7 +148,7 @@ Operating system:
     url: http://ipsec-tools.sourceforge.net/
 
   - name: iptraf-ng
-    url: https://fedorahosted.org/iptraf-ng/
+    url: https://sourceforge.net/projects/iptraf-ng/
 
   - name: Java
     url: http://www.oracle.com/technetwork/java/index.html
@@ -157,7 +157,7 @@ Operating system:
     url: http://fedoraproject.org/wiki/Koji
 
   - name: libuser
-    url: https://fedorahosted.org/libuser/
+    url: https://pagure.io/libuser
 
   - name: libxml2
     url: http://www.xmlsoft.org/
@@ -168,14 +168,14 @@ Operating system:
   - name: Linux Audit
     url: http://people.redhat.com/sgrubb/audit/
 
-  - name: Linux PAM
-    url: http://en.wikipedia.org/wiki/Linux_PAM
+  - name: Linux-PAM
+    url: http://www.linux-pam.org/
 
   - name: lynx
-    url: http://lynx.isc.org/
+    url: https://lynx.browser.org/
 
   - name: Mock
-    url: http://fedoraproject.org/wiki/Projects/Mock
+    url: https://github.com/rpm-software-management/mock/wiki
 
   - name: netfilter
     url: http://www.netfilter.org/
@@ -208,7 +208,7 @@ Operating system:
     url: http://freedesktop.org/wiki/Software/PulseAudio
 
   - name: pungi
-    url: https://fedorahosted.org/pungi/
+    url: https://pagure.io/pungi
 
   - name: pynfs
     url: http://www.citi.umich.edu/projects/nfsv4/pynfs/
@@ -226,16 +226,16 @@ Operating system:
     url: http://www.rsyslog.com/
 
   - name: SETroubleshoot
-    url: https://fedorahosted.org/setroubleshoot/
+    url: https://pagure.io/setroubleshoot
 
   - name: Spacewalk
     url: http://spacewalk.redhat.com
 
   - name: syslog-ng
-    url: http://www.balabit.com/network-security/syslog-ng
+    url: https://syslog-ng.org/
 
   - name: System Security Services Daemon
-    url: https://fedorahosted.org/sssd/
+    url: https://pagure.io/sssd
 
   - name: systemd
     url: http://www.freedesktop.org/wiki/Software/systemd
@@ -244,13 +244,10 @@ Operating system:
     url: http://tin.org/
 
   - name: udev
-    url: http://www.freedesktop.org/software/systemd/libudev/
+    url: https://www.freedesktop.org/software/systemd/man/udev.html
 
   - name: udisks
     url: http://www.freedesktop.org/wiki/Software/udisks
-
-  - name: Thin Crust
-    url: http://thincrust.net/
 
   - name: UPower
     url: http://upower.freedesktop.org/
@@ -331,6 +328,9 @@ Desktop:
   - name: fontconfig
     url: http://www.freedesktop.org/wiki/Software/fontconfig
 
+  - name: Galago
+    url: http://www.galago-project.org/news/index.php
+
   - name: Gamin
     url: http://people.gnome.org/~veillard/gamin/
 
@@ -369,9 +369,6 @@ Desktop:
 
   - name: libminidump
     url: http://cgit.freedesktop.org/libminidump
-
-  - name: libnotify
-    url: http://www.galago-project.org/news/index.php
 
   - name: LibreOffice Calc
     url: http://www.libreoffice.org/discover/calc/
@@ -479,9 +476,6 @@ Middleware and Identity:
   - name: Arquillian
     url: http://arquillian.org
 
-  - name: AuthHub
-    url: https://fedorahosted.org/AuthHub/
-
   - name: BoxGrinder
     url: http://boxgrinder.org
 
@@ -492,7 +486,7 @@ Middleware and Identity:
     url: http://capedwarf.org/
 
   - name: certmonger
-    url: https://fedorahosted.org/certmonger/
+    url: https://pagure.io/certmonger
 
   - name: CRaSH
     url: http://www.crashub.org/
@@ -551,9 +545,6 @@ Middleware and Identity:
 
   - name: JBoss Forge
     url: http://forge.jboss.org/
-
-  - name: JBoss Migration Center
-    url: http://jboss.org/migration/
 
   - name: JBoss Profiler
     url: http://jbossprofiler.jboss.org/
@@ -621,6 +612,9 @@ Middleware and Identity:
 
   - name: PressGang
     url: http://pressgang.jboss.org/
+
+  - name: Red Hat Application Migration Toolkit
+    url: https://developers.redhat.com/products/rhamt/overview/
 
   - name: RESTEasy
     url: http://resteasy.jboss.org/
@@ -711,7 +705,7 @@ Cloud and Virtualization:
   - name: aeolus-configure
     url: https://github.com/aeolusproject/aeolus-configure
 
-  - name: Audrey
+  - name: Aeolus Audrey
     url: https://github.com/aeolusproject/audrey
 
   - name: Augeas
@@ -726,11 +720,14 @@ Cloud and Virtualization:
   - name: DPDK
     url: http://www.dpdk.org
 
+  - name: Foreman
+    url: http://theforeman.org/
+
   - name: imagefactory
     url: http://imgfac.org/
 
   - name: Katello
-    url: http://www.katello.org/
+    url: https://theforeman.org/plugins/katello/
 
   - name: Kimchi
     url: https://github.com/kimchi-project/kimchi
@@ -742,7 +739,7 @@ Cloud and Virtualization:
     url: https://fedoraproject.org/wiki/Features/Matahari
 
   - name: moVirt
-    url: http://www.ovirt.org/Project_moVirt
+    url: https://www.ovirt.org/develop/projects/project-movirt/
 
   - name: Open vSwitch
     url: http://openvswitch.org/
@@ -768,11 +765,8 @@ Cloud and Virtualization:
   - name: OPNFV
     url: http://www.opnfv.org
 
-  - name: oVirt Engine
-    url: http://www.ovirt.org/OVirt_Engine_Development_Environment
-
   - name: oVirt Node
-    url: http://www.ovirt.org/Category:Node
+    url: https://www.ovirt.org/node/
 
   - name: OVMF
     url: http://www.tianocore.org/ovmf/
@@ -790,7 +784,7 @@ Cloud and Virtualization:
     url: https://github.com/aeolusproject/spherical
 
   - name: Spice
-    url: http://spice-space.org/home.html
+    url: https://www.spice-space.org/
 
   - name: Spice-gtk
     url: http://www.spice-space.org/page/Spice-Gtk
@@ -798,14 +792,11 @@ Cloud and Virtualization:
   - name: Spice-protocol
     url: http://www.spice-space.org/docs/spice_protocol.pdf
 
-  - name: The Foreman
-    url: http://theforeman.org/
-
   - name: vdagent
     url: http://www.spice-space.org/page/Whiteboard/AgentProtocol
 
   - name: vdsm
-    url: http://wiki.ovirt.org/Category:Vdsm
+    url: https://ovirt.org/develop/release-management/features/vdsm/vdsm-plugin/
 
   - name: Virt-clone
     url: http://virt-manager.org/
@@ -860,9 +851,6 @@ Storage and Compute:
   - name: Corosync
     url: http://corosync.github.io/corosync/
 
-  - name: Cumin
-    url: https://fedorahosted.org/grid/wiki/Cumin
-
   - name: device-mapper
     url: http://sourceware.org/dm/
 
@@ -885,7 +873,7 @@ Storage and Compute:
     url: https://sourceware.org/cluster/gfs/
 
   - name: GFS2
-    url: https://git.fedorahosted.org/git/gfs2-utils.git
+    url: https://pagure.io/gfs2-utils
 
   - name: libibverbs
     url: https://packages.debian.org/sid/libibverbs-dev
@@ -903,7 +891,7 @@ Storage and Compute:
     url: http://wiki.linux-nfs.org/wiki/index.php/Main_Page
 
   - name: Luci
-    url: https://fedorahosted.org/cluster/wiki/Luci
+    url: https://pagure.io/linux-cluster/luci
 
   - name: NFS-Ganesha
     url: https://github.com/nfs-ganesha/nfs-ganesha/wiki
@@ -915,7 +903,7 @@ Storage and Compute:
     url: http://clusterlabs.org/pacemaker.html
 
   - name: rgmanager
-    url: https://fedorahosted.org/cluster/wiki/RGManager
+    url: https://pagure.io/linux-cluster/rgmanager
 
   - name: vfs
     url: https://www.kernel.org/doc/Documentation/filesystems/vfs.txt
@@ -965,7 +953,7 @@ Developer Tools:
     url: http://www.eclipse.org/linuxtools/
 
   - name: elfutils
-    url: https://fedorahosted.org/elfutils/
+    url: https://sourceware.org/elfutils/
 
   - name: gcj
     url: http://gcc.gnu.org/java/
@@ -1014,9 +1002,6 @@ Developer Tools:
 
   - name: rpmgrill
     url: https://git.fedorahosted.org/git/rpmgrill.git
-
-  - name: suds
-    url: https://fedorahosted.org/suds/
 
   - name: SWI Prolog
     url: http://www.swi-prolog.org/
