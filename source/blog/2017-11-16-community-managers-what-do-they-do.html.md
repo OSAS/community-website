@@ -1,6 +1,6 @@
 ---
 title: Community Managers, What Do They Do?
-date: 2017-11-15 14:05 UTC
+date: 2017-11-16 14:05 UTC
 author: lbocincova
 tags: community, community management, open source
 published: true
