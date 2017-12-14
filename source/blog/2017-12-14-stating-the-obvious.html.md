@@ -9,7 +9,7 @@ comments: true
 
 ![road](blog/bkp/ocean-road.jpg) One thing I have learned while attending events around the world is how to at least say four things in the local language: "hello, goodbye, please, and thank you." It's not much, and I realize its yet-another sign of U.S. cultural centrism that I don't know more languages than English and some German, but I figure if you're going to visit someone's home, the least you could do as a good guest is try to be polite.
 
-Language barriers are not the only thing that can create difficulties communicating, particularly within communities. Personalities, methodologies, and even the most basic goals for a community can but community members at odds.
+Language barriers are not the only thing that can create difficulties communicating, particularly within communities. Personalities, methodologies, and even the most basic goals for a community can put community members at odds.
 
 READMORE
 
@@ -21,7 +21,7 @@ For some, it's about expressing their talent in a constructive way. For others, 
 
 You can see how the betterment and creation a certain piece of software may not be the end goal for someone's participation in your software community. It could actually be a means to another end. That means people are coming into your project with different agendas. This, in and of itself, is not a bad thing. Indeed, you want to have multiple points of view when working on projects, to help build better solutions.
 
-But it should serve as a cautionary for anyone who wants to propose a new idea in a project and assume that everyone will want to go along with it. "Let's use golang" could be met with resistance from people who wanted to practice their skills on another development language. Or "we don't need a code of conduct" could alarm people who are looking for a safe community in which to participate.
+But it should serve as a cautionary tale for anyone who wants to propose a new idea in a project and assume that everyone will want to go along with it. "Let's use golang" could be met with resistance from people who wanted to practice their skills on another development language. Or "we don't need a code of conduct" could alarm people who are looking for a safe community in which to participate.
 
 The good news, this is not a terrible problem to solve. You can simply ask.
 
