@@ -29,3 +29,5 @@ That's a worthy goal, but we are not working alone. Our definition of peace may 
 When my desires conflict with those of my neighbors', I have been lucky to settle things over a shared beer and look at the issue at hand over the fence line. But I know that should things not be so easy, there are laws and methods at our disposal to resolve things peacefully.
 
 Communities of all stripes need these kinds of avenues in place, so that we can get on with the business at hand and make great things.
+
+*Image available under the [CC0 Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/) license.*
