@@ -1,6 +1,6 @@
 ---
 title: Open Source and the Proactive Admin
-date: 2018-01-09 13:00 UTC
+date: 2018-01-09 11:05 UTC
 author: bkp
 tags: open source, security, best practices
 published: true
@@ -19,7 +19,7 @@ READMORE
 
 For those of you not up to speed about Meltdown and Spectre, my colleague Jon Masters has put together an [excellent and accessible blog post](https://www.redhat.com/en/blog/what-are-meltdown-and-spectre-here%E2%80%99s-what-you-need-know) that explains speculative execution and how this feature can be exploited. There's also a [good video](https://youtu.be/syAdX44pokE) that lays out the problem succinctly. For those wondering how the fixes could potentially impact your systems' performance, Red Hat has put [an article](https://access.redhat.com/articles/3307751) out about that, too.
 
-Obviously, this is an issue that every Linux distribution must deal with in the coming days, and there's a good round-up of articles on [LWN.net](https://lwn.net/Articles/742999/), as well as a very complete status report on the Linux kernel developers' progress in mitigating these issues from [Greg Kroah-Hartman](http://www.kroah.com/log/blog/2018/01/06/meltdown-status/).
+Obviously, this is an issue that every Linux distribution must deal with in the coming days, and there's a good round-up of articles on [LWN.net]https://lwn.net/Articles/742999/), as well as a very complete status report on the Linux kernel developers' progress in mitigating these issues from [Greg Kroah-Hartman](http://www.kroah.com/log/blog/2018/01/06/meltdown-status/).
 
 ## The Human Impact
 
