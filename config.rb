@@ -96,7 +96,7 @@ activate :directory_indexes
 
 activate :piwik do |f|
     f.id = 3
-    f.domain = 'piwik-osasteam.rhcloud.com'
+    f.domain = 'tracker.osci.io'
     f.url = 'piwik'
 end
 
