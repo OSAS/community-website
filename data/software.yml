@@ -787,13 +787,13 @@ Cloud and Virtualization:
     url: https://www.spice-space.org/
 
   - name: Spice-gtk
-    url: http://www.spice-space.org/page/Spice-Gtk
+    url: https://www.spice-space.org/spice-gtk.html
 
   - name: Spice-protocol
-    url: http://www.spice-space.org/docs/spice_protocol.pdf
+    url: https://www.spice-space.org/spice-user-manual.html#spice-protocol
 
   - name: vdagent
-    url: http://www.spice-space.org/page/Whiteboard/AgentProtocol
+    url: https://www.spice-space.org/agent-protocol.html
 
   - name: vdsm
     url: https://ovirt.org/develop/release-management/features/vdsm/vdsm-plugin/
