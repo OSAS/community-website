@@ -15,7 +15,7 @@ You can check out [all the talks](https://fosdem.org/2018/schedule/track/communi
 
 READMORE
 
-I think most of the talks are useful to anyone in the community space, but I'll call out two(ish) as of greatest interest to readers.
+I think most of the talks are useful to anyone in the community space, but I'll call out two(ish) for being the greatest interest to readers.
 
 * **[You've got some explaining to do. So use an FAQ!](https://fosdem.org/2018/schedule/event/community_explaining_faq/)** Useful views into how FAQ documents allow internal teams to reach consensus, particularly on contentious topics, before informing people outside of the company about decisions. Also wonderful for Simon Phipps and Rich Sands' colorful insights into the process of releasing Java under the GPL whilst at SUN Microsystems.
 
