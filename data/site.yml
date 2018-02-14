@@ -3,7 +3,7 @@ subhead: Open Source Community
 domain: community.redhat.com
 
 # Be sure to set up and install Juvia before enabling!
-#has_comments: true
+#has_comments: false
 
 # Optional logo. If commented out, it will not be used.
 logo: logo.svg
