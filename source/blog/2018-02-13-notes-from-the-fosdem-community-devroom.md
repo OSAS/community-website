@@ -7,7 +7,7 @@ published: true
 comments: true
 ---
 
-![FOSDEM Logo](blog/FOSDEM_logo.png) During FOSDEM, I had the privilege of co-chairing the Community DevRoom with Laura Czjakowski of Couchbase for the second time. We got a much larger room this year (80 seats, up from 40 last year) and still had a packed house the entire day with a queue for seats reaching down the stairs for all talks.
+![FOSDEM Logo](blog/FOSDEM_logo.png) During FOSDEM, I had the privilege of co-chairing the Community DevRoom with Laura Czajkowski of Couchbase for the second time. We got a much larger room this year (80 seats, up from 40 last year) and still had a packed house the entire day with a queue for seats reaching down the stairs for all talks.
 
 We were also honored to hear from the organizers that they received unsolicited feedback from several attendees that the DevRoom was one of the best at the event and had a great mix of talks for both seasoned open source contributors and folks who were old hands in the tech world but new to open source or to FOSDEM.
 
@@ -15,7 +15,7 @@ You can check out [all the talks](https://fosdem.org/2018/schedule/track/communi
 
 READMORE
 
-I think most of the talks are useful to anyone in the community space, but I'll call out two(ish) as of greatest interest to readers.
+I think most of the talks are useful to anyone in the community space, but I'll call out two(ish) for being the greatest interest to readers.
 
 * **[You've got some explaining to do. So use an FAQ!](https://fosdem.org/2018/schedule/event/community_explaining_faq/)** Useful views into how FAQ documents allow internal teams to reach consensus, particularly on contentious topics, before informing people outside of the company about decisions. Also wonderful for Simon Phipps and Rich Sands' colorful insights into the process of releasing Java under the GPL whilst at SUN Microsystems.
 
