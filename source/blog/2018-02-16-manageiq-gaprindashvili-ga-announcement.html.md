@@ -7,7 +7,7 @@ published: true
 comments: true
 ---
 
-![ManageIQ Gaprindashvili](blog/manageiq_gaprindashvili_release.png) Happy (Lunar) New Year! Since this is the first time I'm posting to the blog this year, I'd like to take the opportunity to wish everyone a wonderful 2018 (and excellent [Year of the Dog](https://chinesenewyear2018.com/) for those following the Chinese lunar year!)
+![ManageIQ Gaprindashvili](blog/manageiq_gaprindashvili_release.png) Happy (Lunar) New Year! Since this is the first time I'm posting to the blog this year, I'd like to take the opportunity to wish everyone a wonderful 2018 (and an excellent [Year of the Dog](https://chinesenewyear2018.com/) for those following the Chinese lunar year)!
 
 On behalf of the [ManageIQ](http://manageiq.org/) team, we're delighted to announce the release of **ManageIQ Gaprindashvili**! This is the seventh ManageIQ release and it's named after Georgian chess player [Nona Gaprindashvili](https://en.wikipedia.org/wiki/Nona_Gaprindashvili), who became the first woman to be awarded the Grandmaster title in 1978.
 
