@@ -300,12 +300,13 @@ rbowen:
   name: Rich Bowen
   twitter: rbowen
   description: |
-    Rich Bowen has been doing open source for almost 20 years. Rich is a
-    member of the Apache Software Foundation, where he is involved in the
-    Apache Web Server project, and serves as Executive Vice President and
-    board member. He is an avid runner, geocacher, writer, and the OpenStack
-    Community Liaison for the RDO project (openstack.redhat.com). Find him
-    on Twitter at: @rbowen.
+    Rich Bowen has been doing open source for more than 20 years. Rich is
+    a member of the Apache Software Foundation, where he is involved in
+    the Apache Web Server project, the Kibble project, the Community
+    Development project, and serves on the board of directors. He is an
+    avid biker, geocacher, and writer. By day, he is a community manager
+    at Red Hat, where he works with the OpenStack and CentOS communities.
+    Find him on Twitter at: @rbowen.
 
 rendsley:
   name: Rikki Endsley
