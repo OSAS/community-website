@@ -1,6 +1,6 @@
 ---
 title: Perusing OSAS' Menu of Services
-date: 2018-03-15 12:20 UTC
+date: 2018-03-21 11:05 UTC
 author: rsuehle
 tags: community, leadership, consultancy
 published: true
@@ -9,7 +9,7 @@ comments: true
 
 ![menu options](blog/wallmenu.jpg) As Red Hat's community portfolio grows, the Open Source and Standards (OSAS) team needs to shift our approach to supporting their needs. To accomplish this, the OSAS Community Outreach team will be shifting to a consultancy-style approach.
 
-The idea for this new approach actually was formed a couple of years ago, when Brian Proffitt, Jason Brooks, and I were in a [chocolate store](https://viderichocolatefactory.com/) down the street from the Red Hat corporate headquarters in Raleigh, brainstorming on ways we could expand the OSAS footprint within and without Red Hat.
+The idea for this new approach was formed a couple of years ago, when Brian Proffitt, Jason Brooks, and I were in a [chocolate store](https://viderichocolatefactory.com/) down the street from the Red Hat corporate headquarters in Raleigh, brainstorming on ways we could expand the OSAS footprint.
 
 READMORE
 
