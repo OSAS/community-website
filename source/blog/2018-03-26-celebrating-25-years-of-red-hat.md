@@ -11,6 +11,8 @@ comments: true
 
 It is a great pleasure, then, to announce the launch of [Red Hat's new GitHub organization page](https://RedHatOfficial.github.io/). The page will try to list every known free and open source project hosted on GitHub in which Red Hat staffers directly participate as part of their work. As you can see, it's gotten off to a good start.
 
+READMORE
+
 The page, which is a hosted GitHub page, is open and free to edit. If anything is in error or was missed, feel free to create an issue or submit a pull request to the [page's repo](https://github.com/RedHatOfficial/RedHatOfficial.github.io/). Detailed instructions are found in the repo's [README file](https://github.com/RedHatOfficial/RedHatOfficial.github.io/blob/github-init/README.md). Right now, the criteria for inclusion is straightforward: if an employee is working on a project or Red Hat team hosted on GitHub as part of their job responsibilities, then it can be listed. 
 
 These are not just Red Hat-stewarded projects... there are many many, many projects (like the Linux Kernel, OpenStack, and Kubernetes, to name a very few) that are also listed, because we don't just work on software for us. We work on a lot of projects for the benefit of many.
