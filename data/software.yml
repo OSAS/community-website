@@ -243,6 +243,9 @@ Operating system:
   - name: tin
     url: http://tin.org/
 
+  - name: Tuned
+    url: http://tuned-project.org/
+    
   - name: udev
     url: https://www.freedesktop.org/software/systemd/man/udev.html
 
