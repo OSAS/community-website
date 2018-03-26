@@ -154,7 +154,7 @@ Operating system:
     url: http://www.oracle.com/technetwork/java/index.html
 
   - name: Koji
-    url: http://fedoraproject.org/wiki/Koji
+    url: https://docs.pagure.org/koji/
 
   - name: libuser
     url: https://pagure.io/libuser
