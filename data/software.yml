@@ -440,17 +440,8 @@ Middleware and Identity:
   - name: 389 project
     url: http://port389.org/
 
-  - name: AeroGear
-    url: http://aerogear.org
-
-  - name: Æsh
-    url: http://aeshell.github.io/
-
   - name: Apache ActiveMQ
     url: https://activemq.apache.org/
-
-  - name: Apache Camel
-    url: http://camel.apache.org/
 
   - name: Apache CXF
     url: http://cxf.apache.org/
@@ -937,32 +928,95 @@ Developer Tools:
 
   ###
 
+  - name: abrt
+    url: https://abrt.readthedocs.org/en/latest/
+    
+  - name: AeroGear
+    url: http://aerogear.org
+
+  - name: aeshell
+    url: http://aeshell.github.io/
+    
+  - name: Apache Camel
+    url: http://camel.apache.org/   
+  
   - name: Apache Maven
     url: https://maven.apache.org/
+    
+  - name: Avocado
+    url: https://avocado-framework.github.io/ 
+    
+  - name: awestruct
+    url: http://awestruct.org
 
   - name: Beaker
     url: https://beaker-project.org/
 
+  - name: Bucharest Gold
+    url: https://github.com/bucharest-gold
+
+  - name: Buildah
+    url: https://github.com/projectatomic/buildah/
+ 
+  - name: CentOS CI
+    url: https://github.com/CentOS-PaaS-SIG   
+  
   - name: Ceylon
     url: http://ceylon-lang.org
 
   - name: Ceylon IDE
     url: http://ceylon-lang.org/documentation/1.1/ide/
 
+  - name: containers/image
+    url: https://github.com/containers/image
+    
+  - name: containers/storage
+    url: https://github.com/containers/storage
+ 
+  - name: crash
+    url: https://people.redhat.com/anderson/crash
+
+  - name: DBuildService
+    url: https://github.com/DBuildService
+
+  - name: devsuite-installer
+    url: https://developers.redhat.com/products/devsuite/overview/
+    
+  - name: dmpy
+    url: https://github.com/bmr-cymru/dmpy
+    
+  - name: dumpet
+  - url: https://github.com/rhboot/dumpet
+  
   - name: Eclipse CDT
     url: http://www.eclipse.org/cdt/
+    
+  - name: Eclipse Che
+  - url: https://eclipse.org/che
 
   - name: Eclipse Linux Tools Project
     url: http://www.eclipse.org/linuxtools/
-
+    
+  - name: Eclipse Web Tools Project
+    url: http://www.eclipse.org/webtools/
+    
   - name: elfutils
     url: https://sourceware.org/elfutils/
+    
+  - name: fabric8
+  - url: https://fabric8.io/ 
+
+  - name: Fedora Developer Portal
+  - url: https://developer.fedoraproject.org/
 
   - name: gcj
     url: http://gcc.gnu.org/java/
 
   - name: gdb
     url: http://sourceware.org/gdb/
+    
+  - name: Gluetool
+  - url: https://gluetool.readthedocs.io   
 
   - name: GNU Binutils
     url: http://www.gnu.org/software/binutils/
@@ -975,18 +1029,57 @@ Developer Tools:
 
   - name: GNU Patch
     url: http://savannah.gnu.org/projects/patch/
-
+    
+  - name: hwdata
+  - url: https://github.com/vcrhonek/hwdata
+  
+  - name: JBeret
+  - url: https://github.com/jberet
+  
   - name: JRuby
     url: http://jruby.org/
+    
+  - name: kpatch
+  - url: https://github.com/dynup/kpatch
+  
+  - name: Kubevirt
+  - url: https://kubevirt.github.io
+  
+  - name: Lago
+  - url: http://lago.readthedocs.org/
+  
+  - name: libpod
+  - url: https://github.com/projectatomic/libpod/
+  
+  - name: Lightblue Platform
+  - url: https://www.lightblue.io/
+  
+  - name: ManageIQ-Exchange
+  - url: https://manageiq-exchange.github.io/manageiq-exchange/
 
   - name: Maven Integration for Eclipse
     url: http://www.eclipse.org/m2e/
 
   - name: Maven Integration for Web Tools Platform
     url: https://www.eclipse.org/m2e-wtp/
+    
+  - name: Minishift
+  - url: https://minishift.io/
+  
+  - name: navmazing
+  - url: https://github.com/RedHatQE/navmazing/
+  
+  - name: .NET Core
+    url: https://www.microsoft.com/net    
 
   - name: OpenJDK
     url: http://openjdk.java.net/
+    
+  - name: OpenShift.io
+  - url: https://openshift.io/
+
+  - name: OpenTracing
+  - url: http://opentracing.io/
 
   - name: OProfile
     url: http://oprofile.sourceforge.net/news/
