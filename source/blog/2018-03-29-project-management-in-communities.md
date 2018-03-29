@@ -11,6 +11,8 @@ comments: true
 
 As a project manager, some of your skills include managing information to a wider team, communicating throughout all aspects of the project, managing budgets and generally being the person who knows where the project is at any time. As a community manager, you’ll need a lot of the same skill sets.
 
+READMORE
+
 I moved from being a project manager to a community lead, and there are aspects of each that are very different! Project managers have a lot of different pieces to manage in their day to day work, and they’re really good at working in conflict-rich environments. There’s always a negotiation going on, between time and budget and features. Community leads have a much broader view of a project, and usually a significant amount of stakeholder management, so there might not be as much day to day conflict&mdash;but there’s a lot of relationship management that goes on. The two are well suited to each other, and your project management skills aren’t as tied to the fact that communities are largely volunteers: you’d be the same person regardless of the goal.  
 
 This isn’t always all about Gantt charts. A Gantt chart is a project manager’s tool to help manage schedules for a project. It’s really just a way to be able to visually organize dependencies and project timelines in one space. You may not always have that in your project, but it’s a nice toolset to have: thinking about ways to able to communicate information about your project and community in a way that’s easily accessible. In order to figure out where your project is going, you’ll need to be able to write things down with which other people can work.
