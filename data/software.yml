@@ -166,7 +166,7 @@ Operating system:
     url: http://xmlsoft.org/XSLT/
 
   - name: Linux Audit
-    url: http://people.redhat.com/sgrubb/audit/
+    url: https://people.redhat.com/sgrubb/audit/
 
   - name: Linux-PAM
     url: http://www.linux-pam.org/
@@ -282,7 +282,10 @@ Containers:
 
   ###
 
-  - name: Flannel
+- name: CRI-O
+  url: http://cri-o.io/
+
+- name: Flannel
     url: https://github.com/coreos/flannel
 
 
@@ -310,6 +313,9 @@ Desktop:
 
   ###
 
+  - name: asciibinder
+    url: http://asciibinder.org/
+  
   - name: Avahi
     url: http://avahi.org/
 
@@ -402,6 +408,9 @@ Desktop:
 
   - name: Poppler
     url: http://poppler.freedesktop.org/
+    
+  - name: PressGang
+    url: https://pressgang.jboss.org/  
 
   - name: udisks
     url: http://www.freedesktop.org/wiki/Software/udisks
@@ -463,6 +472,9 @@ Middleware and Identity:
 
   - name: Apache ServiceMix
     url: https://servicemix.apache.org/
+    
+  - name: apiman
+    url: https://www.apiman.io/
 
   - name: APIviz
     url: http://code.google.com/p/apiviz/
@@ -476,20 +488,26 @@ Middleware and Identity:
   - name: Byteman
     url: http://byteman.jboss.org/
 
-  - name: CapeDwarf
-    url: http://capedwarf.org/
-
   - name: certmonger
     url: https://pagure.io/certmonger
 
   - name: CRaSH
     url: http://www.crashub.org/
+    
+  - name: chronicler
+    url: https://rally1.rallydev.com
+    
+  - name: darcy framework
+    url: https://github.com/darcy-framework  
 
   - name: Dashbuilder
     url: http://dashbuilder.org
 
   - name: Data Grids for the Java Platform
     url: http://jcp.org/en/jsr/detail?id=347
+    
+  - name: Debezium
+    url: http://debezium.io/   
 
   - name: Dogtag
     url: http://pki.fedoraproject.org/wiki/PKI_Main_Page
@@ -505,10 +523,19 @@ Middleware and Identity:
 
   - name: Errai
     url: http://erraiframework.org/
+    
+  - name: esbtools
+    url: https://github.com/esbtools
+    
+  - name: GateIn
+    url: http://gatein.jboss.org/
 
   - name: Hawkular
     image: hawkular
     url: http://hawkular.org/
+    
+  - name: hawtio
+    url: http://hawt.io/  
 
   - name: HornetQ
     url: http://hornetq.jboss.org/
@@ -527,18 +554,33 @@ Middleware and Identity:
 
   - name: JBoss AS Server Manager
     url: https://issues.jboss.org/browse/JBASM
+    
+  - name: JBoss CapeDwarf
+    url: http://capedwarf.org/    
 
   - name: JBoss Clustering
     url: http://jbossclustering.jboss.org/
+    
+  - name: JBoss Community
+    url: https://developer.jboss.org/en/website
+    
+  - name: JBoss Developer
+    url: https://developer.jboss.org/welcome
 
   - name: JBoss Developer Studio
-    url: http://www.jboss.org/products/devstudio/overview/
+    url: https://devstudio.jboss.com
 
   - name: JBoss ESB
     url: http://jbossesb.jboss.org/
 
   - name: JBoss Forge
     url: http://forge.jboss.org/
+    
+  - name: JBoss Logging
+    url: https://github.com/jboss-logging
+    
+  - name: JBoss LogManager
+    url: https://github.com/jboss-logging  
 
   - name: JBoss Profiler
     url: http://jbossprofiler.jboss.org/
@@ -557,9 +599,21 @@ Middleware and Identity:
 
   - name: JBoss Web Services
     url: http://jbossws.jboss.org/
-
-  - name: jBPM
-    url: http://www.jbpm.org/
+    
+  - name: JBoss Wise
+    url: http://wise.jboss.org/
+    
+  - name: jboss-switchyard"
+    url: https://switchyard.jboss.org/
+    
+  - name: jbosstm
+    url: https://github.com/jbosstm
+    
+  - name: jbossws
+    url: http://jbossws.jboss.org/  
+    
+  - name: Jcliff
+    url: https://github.com/bserdar/jclif
 
   - name: JGroups
     url: http://jgroups.org
@@ -579,6 +633,12 @@ Middleware and Identity:
   - name: Keycloak
     image: keycloak
     url: http://keycloak.org/
+    
+  - name: Kiali
+    url: https://github.com/kiali
+    
+  - name: KIE
+    url: http://www.kiegroup.org/
 
   - name: mod_cluster
     url: http://mod-cluster.jboss.org/
@@ -588,12 +648,9 @@ Middleware and Identity:
 
   - name: Narayana
     url: http://narayana.io/
-
-  - name: Netty
-    url: https://netty.io/
-
-  - name: OptaPlanner
-    url: https://www.optaplanner.org
+    
+  - name: Pbench
+    url: https://distributed-system-analysis.github.io/pbench/
 
   - name: PicketBox
     url: http://picketbox.jboss.org/
@@ -601,17 +658,14 @@ Middleware and Identity:
   - name: PicketLink
     url: http://picketlink.org/
 
-  - name: Portlet Bridge
-    url: http://portletbridge.jboss.org/
-
-  - name: PressGang
-    url: http://pressgang.jboss.org/
-
   - name: Red Hat Application Migration Toolkit
     url: https://developers.redhat.com/products/rhamt/overview/
 
   - name: RESTEasy
     url: http://resteasy.jboss.org/
+    
+  - name: Rhiot
+    url: https://rhiot.github.io/    
 
   - name: RHQ
     url: http://rhq-project.github.io/rhq/
@@ -627,6 +681,9 @@ Middleware and Identity:
 
   - name: Scribble
     url: http://www.scribble.org/
+    
+  - name: Seam
+    url: http://seamframework.org/  
 
   - name: ShrinkWrap
     url: http://arquillian.org/guides/shrinkwrap_introduction/
@@ -642,6 +699,9 @@ Middleware and Identity:
 
   - name: SwitchYard
     url: http://switchyard.jboss.org/
+    
+  - name: Syndesis
+    url: https://syndesis.io/  
 
   - name: Tattletale
     url: http://tattletale.jboss.org/
@@ -657,6 +717,9 @@ Middleware and Identity:
 
   - name: Weld
     url: http://weld.cdi-spec.org/
+    
+  - name: WildFly Elytron
+    url: http://wildfly.org  
 
   - name: Wise
     url: http://wise.jboss.org/
@@ -665,7 +728,7 @@ Middleware and Identity:
     url: http://xnio.jboss.org/
 
 
-Cloud and Virtualization:
+Operations:
 
   - name: Apache Deltacloud
     image: deltacloud
@@ -701,42 +764,114 @@ Cloud and Virtualization:
 
   - name: Aeolus Audrey
     url: https://github.com/aeolusproject/audrey
+    
+  - name: Apache ActiveMQ Artemis
+    url: https://activemq.apache.org/artemis/
 
   - name: Augeas
     url: http://augeas.net
+    
+  - name: Booth
+    url: https://clusterlabs.org/
 
   - name: Boxes
     url: https://wiki.gnome.org/action/show/Apps/Boxes
+    
+  -name: casync
+   url: https://github.com/systemd/casync/
+   
+  - name: Cinch
+    url: https://redhatqe-cinch.readthedocs.io/en/latest/
+    
+  - name: Citellus
+    url: https://github.com/zerodayz/citellus   
 
   - name: Conductor
     url: https://github.com/aeolusproject/conductor
+    
+  - name: dmioscope
+    url: https://github.com/bmr-cymru/dmioscope"
+    
+  - name: dogtagpki
+    url: https://github.com/dogtagpki
 
   - name: DPDK
     url: http://www.dpdk.org
+    
+  - name: Dynflow
+    url: https://dynflow.github.io
+    
+  - name: EnMasse
+    url: http://enmasse.io
+    
+  - name: Fedora libre-server Organization
+    url: https://libre-server.github.io/
+    
+  - name: fedora-selinux
+    url: https://github.com/fedora-selinux      
 
   - name: Foreman
     url: http://theforeman.org/
+    
+  - name: fusor
+    url: https://github.com/fusor  
+    
+  - name: Heketi
+    url: https://github.com/heketi/heketi/wiki  
 
   - name: imagefactory
     url: http://imgfac.org/
+    
+  - name: Juicer
+    url: https://juicer.github.io/juicer/   
 
   - name: Katello
-    url: https://theforeman.org/plugins/katello/
+    url: http://www.katello.org
 
   - name: Kimchi
     url: https://github.com/kimchi-project/kimchi
+    
+  - name: krb5
+    url: https://web.mit.edu/kerberos
+    
+  - name: Kronosnet
+    url: https://www.kronosnet.org/
+    
+  - name: latchset
+    url: https://latchset.github.io/  
 
   - name: libguestfs
     url: http://libguestfs.org/
+    
+  - name: Linchpin
+    url: https://linchpin.readthedocs.io/en/develop/  
 
   - name: Matahari
     url: https://fedoraproject.org/wiki/Features/Matahari
+    
+  - name: Moby Project
+    url: https://mobyproject.org/
+    
+  - name: mod_auth_gssapi
+    url: https://github.com/modauthgssapi/
+    
+  - name: monarch
+    url: https://github.com/alechenninger/monarch
 
   - name: moVirt
     url: https://www.ovirt.org/develop/projects/project-movirt/
+    
+  - name: Nexus
+    url: https://github.com/valleedelisle/nexus
+    
+  - name: OCF-spec
+    url: https://clusterlabs.org/   
 
   - name: Open vSwitch
     url: http://openvswitch.org/
+    
+  - name: OpenSCAP
+    url: https://www.open-scap.org  
 
   - name: OpenStack Glance
     url: http://docs.openstack.org/developer/glance/
@@ -755,9 +890,15 @@ Cloud and Virtualization:
 
   - name: OpenStack Swift
     url: http://docs.openstack.org/developer/swift/
+    
+  - name: ophicleide
+    url: https://ophicleide.github.io/
 
   - name: OPNFV
     url: http://www.opnfv.org
+    
+  - name: OSTree Project
+    url: https://ostree.readthedocs.io/en/latest/      
 
   - name: oVirt Node
     url: https://www.ovirt.org/node/
@@ -858,10 +999,10 @@ Storage and Compute:
     url: https://ext4.wiki.kernel.org/index.php/Main_Page
 
   - name: fence-agents
-    url: https://github.com/ClusterLabs/fence-agents
+    url: https://clusterlabs.org/
 
   - name: fence-virt
-    url: https://github.com/ClusterLabs/fence-virt
+    url: https://clusterlabs.org/
 
   - name: GFS
     url: https://sourceware.org/cluster/gfs/
@@ -873,7 +1014,7 @@ Storage and Compute:
     url: https://packages.debian.org/sid/libibverbs-dev
 
   - name: libqb
-    url: https://github.com/ClusterLabs/libqb/wiki
+    url: https://clusterlabs.github.io/libqb/
 
   - name: libstoragemgmt
     url: https://github.com/libstorage/libstoragemgmt/
@@ -888,7 +1029,7 @@ Storage and Compute:
     url: https://pagure.io/linux-cluster/luci
 
   - name: NFS-Ganesha
-    url: https://github.com/nfs-ganesha/nfs-ganesha/wiki
+    url: https://nfs-ganesha.github.io/
 
   - name: openais
     url: https://oss.oracle.com/osswiki/OpenAIS.html
@@ -986,13 +1127,13 @@ Developer Tools:
     url: https://github.com/bmr-cymru/dmpy
     
   - name: dumpet
-  - url: https://github.com/rhboot/dumpet
+    url: https://github.com/rhboot/dumpet
   
   - name: Eclipse CDT
     url: http://www.eclipse.org/cdt/
     
   - name: Eclipse Che
-  - url: https://eclipse.org/che
+    url: https://eclipse.org/che
 
   - name: Eclipse Linux Tools Project
     url: http://www.eclipse.org/linuxtools/
@@ -1004,10 +1145,10 @@ Developer Tools:
     url: https://sourceware.org/elfutils/
     
   - name: fabric8
-  - url: https://fabric8.io/ 
+    url: https://fabric8.io/ 
 
   - name: Fedora Developer Portal
-  - url: https://developer.fedoraproject.org/
+    url: https://developer.fedoraproject.org/
 
   - name: gcj
     url: http://gcc.gnu.org/java/
@@ -1016,7 +1157,7 @@ Developer Tools:
     url: http://sourceware.org/gdb/
     
   - name: Gluetool
-  - url: https://gluetool.readthedocs.io   
+    url: https://gluetool.readthedocs.io   
 
   - name: GNU Binutils
     url: http://www.gnu.org/software/binutils/
@@ -1031,31 +1172,31 @@ Developer Tools:
     url: http://savannah.gnu.org/projects/patch/
     
   - name: hwdata
-  - url: https://github.com/vcrhonek/hwdata
+    url: https://github.com/vcrhonek/hwdata
   
   - name: JBeret
-  - url: https://github.com/jberet
+    url: https://github.com/jberet
   
   - name: JRuby
     url: http://jruby.org/
     
   - name: kpatch
-  - url: https://github.com/dynup/kpatch
+    url: https://github.com/dynup/kpatch
   
   - name: Kubevirt
-  - url: https://kubevirt.github.io
+    url: https://kubevirt.github.io
   
   - name: Lago
-  - url: http://lago.readthedocs.org/
+    url: http://lago.readthedocs.org/
   
   - name: libpod
-  - url: https://github.com/projectatomic/libpod/
+    url: https://github.com/projectatomic/libpod/
   
   - name: Lightblue Platform
-  - url: https://www.lightblue.io/
+    url: https://www.lightblue.io/
   
   - name: ManageIQ-Exchange
-  - url: https://manageiq-exchange.github.io/manageiq-exchange/
+    url: https://manageiq-exchange.github.io/manageiq-exchange/
 
   - name: Maven Integration for Eclipse
     url: http://www.eclipse.org/m2e/
@@ -1064,22 +1205,25 @@ Developer Tools:
     url: https://www.eclipse.org/m2e-wtp/
     
   - name: Minishift
-  - url: https://minishift.io/
+    url: https://minishift.io/
   
   - name: navmazing
-  - url: https://github.com/RedHatQE/navmazing/
+    url: https://github.com/RedHatQE/navmazing/
   
   - name: .NET Core
-    url: https://www.microsoft.com/net    
+    url: https://www.microsoft.com/net
+    
+  - name: Netty Project
+    url: https://netty.io/
 
   - name: OpenJDK
     url: http://openjdk.java.net/
     
   - name: OpenShift.io
-  - url: https://openshift.io/
+    url: https://openshift.io/
 
   - name: OpenTracing
-  - url: http://opentracing.io/
+    url: http://opentracing.io/
 
   - name: OProfile
     url: http://oprofile.sourceforge.net/news/
@@ -1095,18 +1239,63 @@ Developer Tools:
 
   - name: Performance Co-Pilot
     url: http://www.pcp.io/
+    
+  - name: Python GSSAPI
+    url: https://github.com/pythongssapi
+  
+  - name: python-hwdata
+    url: https://github.com/xsuchy/python-hwdata
+  
+  - name: radanalyticsio
+    url: https://radanalytics.io/
+  
+  - name: RadarGun
+    url: http://radargun.github.io/
+    
+  - name: Red Hat Documentation
+    url: https://redhat-documentation.github.io/
+  
+  - name: Red Hat JBoss Developer Studio
+    url: https://developers.redhat.com/products/devstudio/
+    
+  - name: rh-messaging
+    url: https://github.com/rh-messaging
+    
+  - name: RHElements
+    url: https://rhelements.github.io/    
+
+  - name: RPM Packaging Guide
+    url: https://rpm-packaging-guide.github.io/
 
   - name: rpmgrill
     url: https://git.fedorahosted.org/git/rpmgrill.git
+    
+  - name: Sentaku
+    url: https://github.com/RedHatQE/Sentaku/
 
   - name: SWI Prolog
     url: http://www.swi-prolog.org/
 
   - name: SystemTap
     url: http://sourceware.org/systemtap/
+    
+  - name: TianoCore
+    url: https://www.tianocore.org/
 
   - name: Valgrind
     url: http://valgrind.org/
 
   - name: vc-dwim
     url: http://www.gnu.org/software/vc-dwim/
+
+  - name: widgetastic"
+    url: https://github.com/RedHatQE/widgetastic.core
+    
+  - name: widgetastic.patternfly
+    url: https://github.com/RedHatQE/widgetastic.patternfly
+    
+  - name: wrapanapi
+    url: https://github.com/ManageIQ/wrapanapi
+    
+  - name: Zanata
+    url: http://zanata.org/  
