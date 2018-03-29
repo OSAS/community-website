@@ -651,7 +651,7 @@ Middleware and Identity:
   - name: JBoss Wise
     url: http://wise.jboss.org/
     
-  - name: jboss-switchyard"
+  - name: jboss-switchyard
     url: https://switchyard.jboss.org/
     
   - name: jbosstm
