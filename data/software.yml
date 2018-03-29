@@ -421,7 +421,7 @@ Desktop:
   - name: Gnome-user-share
     url: http://git.gnome.org/browse/gnome-user-share/
 
-  - name: GNOME Boxs
+  - name: GNOME Boxes
     url: https://wiki.gnome.org/Apps/Boxes
 
   - name: GTK+
