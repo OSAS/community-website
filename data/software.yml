@@ -65,6 +65,9 @@ Operating system:
 
   - name: Autofs
     url: http://linux.die.net/man/5/autofs
+    
+  - name: boom
+    url: https://github.com/bmr-cymru/boom  
 
   - name: candlepin
     url: http://www.candlepinproject.org/
@@ -80,6 +83,12 @@ Operating system:
 
   - name: Crypto API
     url: http://www.chronox.de/crypto-API/
+    
+  - name: dbus-broker
+    url: https://github.com/bus1/dbus-broker/wiki
+    
+  - name: dbxtool
+    url: https://github.com/rhboot/dbxtool  
 
   - name: DeviceKit
     url: http://www.freedesktop.org/wiki/Software/DeviceKit
@@ -92,12 +101,33 @@ Operating system:
 
   - name: Editline Library
     url: http://www.thrysoee.dk/editline/
+    
+  - name: efibootmgr
+    url: https://github.com/rhboot/efibootmgr
+    
+  - name: efivar
+    url: https://github.com/rhboot/efivar  
 
   - name: elfutils
     url: https://fedorahosted.org/elfutils/
 
-  - name: FedoraLiveCD
+  - name: Fedora LiveCD Tools
     url: http://fedoraproject.org/wiki/FedoraLiveCD
+    
+  - name: fedora-static-analysis
+    url: https://fedoraproject.org/wiki/StaticAnalysis
+    
+  - name: fedora-sysv
+    url: https://github.com/fedora-sysv
+    
+  - name: firewalld
+    url: http://firewalld.org
+    
+  - name: fwupd
+    url: https://fwupd.org
+    
+  - name: fwupdate
+    url: https://github.com/rhboot/fwupdate  
 
   - name: func
     url: https://github.com/kadamski/func
@@ -194,6 +224,9 @@ Operating system:
 
   - name: PackageKit
     url: http://www.freedesktop.org/software/PackageKit/
+    
+  - name: pesign
+    url: https://github.com/rhboot/pesign  
 
   - name: polkit
     url: http://www.freedesktop.org/wiki/Software/polkit
@@ -215,9 +248,15 @@ Operating system:
 
   - name: python-nss
     url: http://www.mozilla.org/projects/security/pki/python-nss/
+    
+  - name: rebase-helper
+    url: https://rebase-helper.readthedocs.io
 
   - name: Red Hat Update Agent
     url: http://en.wikipedia.org/wiki/Up2date
+    
+  - name: redhat-imaging
+    url: https://imgfac.org/
 
   - name: rpm
     url: http://rpm.org/
@@ -227,7 +266,13 @@ Operating system:
 
   - name: SETroubleshoot
     url: https://pagure.io/setroubleshoot
-
+     
+  - name: shim
+    url: https://github.com/rhboot/shi  
+    
+  - name: Simple Signed Certificate Generator
+    url: https://github.com/sgallagher/sscg
+    
   - name: Spacewalk
     url: http://spacewalk.redhat.com
 
@@ -242,6 +287,9 @@ Operating system:
 
   - name: tin
     url: http://tin.org/
+    
+  - name: tito
+    url: https://github.com/dgoodwin/tito  
 
   - name: Tuned
     url: http://tuned-project.org/
@@ -257,6 +305,9 @@ Operating system:
 
   - name: util-linux
     url: https://github.com/karelzak/util-linux
+    
+  - name: varlink
+    url: https://github.com/varlink/documentation/wiki  
 
   - name: Virtual memory manager
     url: http://www.kernel.org/
@@ -313,6 +364,9 @@ Desktop:
 
   ###
 
+  - name: Apache jUDDI
+    url: http://juddi.apache.org
+    
   - name: asciibinder
     url: http://asciibinder.org/
   
@@ -390,9 +444,6 @@ Desktop:
 
   - name: nautilus
     url: https://wiki.gnome.org/action/show/Apps/Nautilus
-
-  - name: PackageKit
-    url: http://www.freedesktop.org/software/PackageKit/
 
   - name: pango
     url: http://www.pango.org/
@@ -512,9 +563,6 @@ Middleware and Identity:
   - name: Dogtag
     url: http://pki.fedoraproject.org/wiki/PKI_Main_Page
 
-  - name: Drools
-    url: http://www.drools.org/
-
   - name: EJB 3
     url: http://ejb3.jboss.org/
 
@@ -624,9 +672,6 @@ Middleware and Identity:
   - name: JSFUnit
     url: http://jsfunit.jboss.org/
 
-  - name: jUDDI
-    url: http://juddi.apache.org
-
   - name: Kerberos
     url: http://web.mit.edu/kerberos/
 
@@ -686,10 +731,10 @@ Middleware and Identity:
     url: http://seamframework.org/  
 
   - name: ShrinkWrap
-    url: http://arquillian.org/guides/shrinkwrap_introduction/
+    url: http://arquillian.org/
 
   - name: slapi-nis
-    url: https://fedorahosted.org/slapi-nis/
+    url: https://github.com/gooselinux/slapi-nis
 
   - name: Snowdrop
     url: http://snowdrop.jboss.org/
@@ -730,9 +775,8 @@ Middleware and Identity:
 
 Operations:
 
-  - name: Apache Deltacloud
-    image: deltacloud
-    url: http://deltacloud.apache.org/
+  - name: Ansible
+    url: http://www.ansible.com/community
 
   - name: KVM
     url: http://www.linux-kvm.org/page/Main_Page
@@ -767,6 +811,9 @@ Operations:
     
   - name: Apache ActiveMQ Artemis
     url: https://activemq.apache.org/artemis/
+    
+  - name: Apache Deltacloud
+    url: http://deltacloud.apache.org/    
 
   - name: Augeas
     url: http://augeas.net
@@ -908,12 +955,36 @@ Operations:
 
   - name: Oz
     url: https://github.com/clalancette/oz/wiki
+    
+  - name: pcs
+    url: https://clusterlabs.org/
+    
+  - name: Prometheus
+    url: https://prometheus.io/
 
   - name: QEMU
-    url: http://wiki.qemu.org/Main_Page
+    url: https://qemu.org/
+    
+  - name: resource-agents
+    url: https://clusterlabs.org/
+    
+  - name: sarstats
+    url: https://github.com/mbaldessari/sarstats
+    
+  - name: SBD
+    url: https://clusterlabs.org/
+    
+  - name: Skopeo
+    url: https://github.com/projectatomic/skopeo
 
   - name: Smokestack
     url: https://wiki.openstack.org/wiki/Smokestack
+    
+  - name: Software Collections
+    url: https://www.softwarecollections.org/en
+    
+  - name: sosreport
+    url: https://github.com/sosreport  
 
   - name: Spherical
     url: https://github.com/aeolusproject/spherical
@@ -926,6 +997,18 @@ Operations:
 
   - name: Spice-protocol
     url: https://www.spice-space.org/spice-user-manual.html#spice-protocol
+    
+  - name: splice
+    url: https://github.com/splice
+    
+  - name: The TorqueBox Project
+    url: http://torquebox.org
+    
+  - name: ticketutil
+    url: http://ticketutil.readthedocs.io/
+    
+  - name: Transtats
+    url: http://transtats.org  
 
   - name: vdagent
     url: https://www.spice-space.org/agent-protocol.html
@@ -947,7 +1030,9 @@ Operations:
 
   - name: Virt-viewer
     url: http://virt-manager.org/
-
+    
+  - name: xsos
+    url: https://github.com/ryran/xsos
 
 Storage and Compute:
 
@@ -991,6 +1076,9 @@ Storage and Compute:
 
   - name: dlm
     url: http://sourceware.org/cluster/dlm/
+    
+  - name: dm-vdo
+    url: https://github.com/dm-vdo  
 
   - name: ext3
     url: https://www.kernel.org/doc/Documentation/filesystems/ext3.txt
@@ -1003,6 +1091,9 @@ Storage and Compute:
 
   - name: fence-virt
     url: https://clusterlabs.org/
+    
+  - name: fs-drift
+    url: https://github.com/parallel-fs-utils/fs-drift/commits/master  
 
   - name: GFS
     url: https://sourceware.org/cluster/gfs/
@@ -1039,6 +1130,24 @@ Storage and Compute:
 
   - name: rgmanager
     url: https://pagure.io/linux-cluster/rgmanager
+    
+  - name: Rook
+    url: https://rook.io/
+    
+  - name: skyrings
+    url: https://github.com/skyrings
+    
+  - name: Smallfile
+    url: https://github.com/bengland2/smallfile
+    
+  - name: Springfield Project
+    url: https://springfield-project.github.io/
+    
+  - name: SSM
+    url: https://system-storage-manager.github.io/
+    
+  - name: Tendrl
+    url: http://tendrl.org/
 
   - name: vfs
     url: https://www.kernel.org/doc/Documentation/filesystems/vfs.txt
@@ -1051,9 +1160,6 @@ Storage and Compute:
 
 
 Developer Tools:
-
-  - name: Ansible
-    url: http://www.ansible.com/community
 
   - name: Eclipse
     url: http://www.eclipse.org
