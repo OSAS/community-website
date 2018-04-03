@@ -1,4 +1,8 @@
-Software foundations:
+Software Foundations:
+
+  - name: Cloud Native Computing Foundation
+    image: cncf
+    url: https://www.cncf.io/
 
   - name: Document Foundation
     image: documentfoundation
@@ -15,6 +19,10 @@ Software foundations:
     image: linuxfoundation
     url: http://www.linuxfoundation.org/
 
+  - name: Open Container Initiative
+    image: oci
+    url: https://www.opencontainers.org/
+
   - name: OpenDaylight
     url: http://opendaylight.org/
 
@@ -30,8 +38,7 @@ Software foundations:
     url: http://python.org/psf/
 
 
-Operating system:
-
+Operating System:
 
   - name: CentOS
     url: http://centos.org
@@ -76,6 +83,9 @@ Operating system:
 
   - name: Completely Fair Scheduler
     url: https://www.kernel.org/doc/Documentation/scheduler/sched-design-CFS.txt
+
+  - name: Container Linux
+    url: https://coreos.com/why/
 
   - name: Control Group Configuration Library
     url: http://sourceforge.net/projects/libcg/
@@ -317,11 +327,30 @@ Operating system:
 
 Containers:
 
+  - name: Clair
+    url: https://coreos.com/clair/
+
+  - name: CNI
+    url: https://github.com/containernetworking/cni
+
   - name: Cockpit
     url: http://cockpit-project.org
 
+  - name: CRI-O
+    url: http://cri-o.io/
+
+  - name: dex
+    url: https://github.com/coreos/dex
+
   - name: Docker
     url: https://www.docker.com/
+
+  - name: etcd
+    url: https://coreos.com/etcd/
+
+  - name: Flannel
+    image: flannel
+    url: https://github.com/coreos/flannel
 
   - name: Kubernetes
     url: http://kubernetes.io/
@@ -330,12 +359,8 @@ Containers:
     image: projectatomic
     url: http://www.projectatomic.io/
 
-  - name: CRI-O
-    url: http://cri-o.io/
-
-  - name: Flannel
-    url: https://github.com/coreos/flannel
-
+  - name: rkt
+    url: https://coreos.com/rkt/
 
 Desktop:
 
