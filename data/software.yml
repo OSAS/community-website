@@ -78,6 +78,9 @@ Operating System:
   - name: candlepin
     url: http://www.candlepinproject.org/
 
+  - name: chrony
+    url: https://chrony.tuxfamily.org/
+
   - name: cobbler
     url: http://cobbler.github.io/
 
