@@ -1,6 +1,6 @@
 ---
 title: A Community Manager's Sorting Hat
-date: 2018-04-03 19:55 UTC
+date: 2018-04-05 19:55 UTC
 author: sanja
 tags: community, management, skills
 published: true
