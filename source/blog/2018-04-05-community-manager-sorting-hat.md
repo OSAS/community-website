@@ -14,17 +14,17 @@ On the other hand, there is a lot of connotation around the title of a community
 READMORE
 
 As a community manager, you'll also be a
-* Project manager
-* Product manager
-* Content creator
-* Content editor
-* Technical writer
-* Developer advocate
-* Marketing specialist
-* Social media manager
-* Event manager
-* Budget manager and bookkeeper
-* Professional poking person
+  * Project manager
+  * Product manager
+  * Content creator
+  * Content editor
+  * Technical writer
+  * Developer advocate
+  * Marketing specialist
+  * Social media manager
+  * Event manager
+  * Budget manager and bookkeeper
+  * Professional poking person
 
 None of these are avoidable as a community manager. You will always have to be aware of your project's milestones, goals, and who the stakeholders are. You will have to know who the key players are and which people you have to keep happy for your project to succeed.
 
@@ -43,14 +43,14 @@ Events are great, but so is social media. Social media is usually global and you
 The professional poking person is one of the most important people in a project. You have to be the person who gets people together and who knows what's going on. Most importantly, you need to anticipate who is going to be annoyed at what and try to mitigate anger. The professional poking person is the one who gets people to go to events, give talks, hold meetings, generate content, and interact on social media because one thing is true: as a community manager, *it's dangerous to go alone*.
 
 **You might be a**
-* Developer
-* Systems engineer
-* Mediator
+  * Developer
+  * Systems engineer
+  * Mediator
 
 You might have to dig deep and solve issues that are outside of your comfort zone, be prepared to learn and to deal with systems and people alike.
 
 **You don't want to be**
-* Someone people have to work around to get to results
+  * Someone people have to work around to get to results
 
 What you don't want to be is the person people have to work around in order to get results&mdash;and they *will* do that, if you constantly complain without offering solutions or don't keep them happy.
 
