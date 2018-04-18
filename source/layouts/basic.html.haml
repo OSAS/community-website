@@ -10,6 +10,10 @@
 
   %head
 
+    - if build?
+
+      = partial "production_only_head"
+
     %title
       - page_title = discover_title
       = "#{page_title} &mdash;" unless page_title.to_s.empty?
