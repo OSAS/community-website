@@ -7,7 +7,7 @@ published: true
 comments: true
 ---
 
-![FOSDEM 2018 Blog](blog/fosdem_booth.jpg) This morning, I was asked to give a few tips about staffing a booth at a technology conference&mdash;or, indeed, any conference. This got me thinking&mdash;there's things that I do at a conference that come out of years and years of experience doing it wrong, and then tweaking it the next time.
+![FOSDEM 2018 Booth](blog/fosdem_booth.jpg) This morning, I was asked to give a few tips about staffing a booth at a technology conference&mdash;or, indeed, any conference. This got me thinking&mdash;there's things that I do at a conference that come out of years and years of experience doing it wrong, and then tweaking it the next time.
 
 I've been to a *lot* of conferences. And I've spent hundreds of hours staffing the booth.
 
