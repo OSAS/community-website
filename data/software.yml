@@ -141,9 +141,6 @@ Operating System:
   - name: fwupdate
     url: https://github.com/rhboot/fwupdate
 
-  - name: func
-    url: https://github.com/kadamski/func
-
   - name: GNU awk
     url: http://www.gnu.org/software/gawk/
 
@@ -524,9 +521,6 @@ Middleware and Identity:
     url: http://www.wildfly.org/
 
   ###
-
-  - name: 389 project
-    url: http://port389.org/
 
   - name: Apache ActiveMQ
     url: https://activemq.apache.org/
