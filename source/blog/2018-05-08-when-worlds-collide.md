@@ -15,7 +15,7 @@ READMORE
 
 Recognizing my own bias, I believe it's important for Red Hat customers to interact with upstram projects because they need to understand that what Red Hat says about open source is more than just lip service&mdash;it's something that is in our very DNA.
 
-Too many times, open source is trated as an afterthought, as commercial needs completely drive the features and roadmaps of a given software application, which is then thrown out to a public repository after the fact, almostit as an afterthought. With Red Hat, it's very much the opposite. Everything is done in the upstream first.
+Too many times, open source is treated as an afterthought, as commercial needs completely drive the features and roadmaps of a given software application, which is then thrown out to a public repository after the fact, almost  an afterthought. With Red Hat, it's very much the opposite. Everything is done in the upstream first.
 
 I know what you're thinking: yes, yes, we've heard this all before, the sky is blue, water is wet, yada yada yada. But every year I am surprised by the number of people here at Summit who are still genuinely surprised this is the case. This is the reason, then, why getting community team members in front of customers is critical: so they can build relationships and talk about how they, as customers and general users, can be directly involved in our open source communities and have a say in how our software is created. 
 
