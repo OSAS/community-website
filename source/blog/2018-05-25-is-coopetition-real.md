@@ -1,6 +1,6 @@
 ---
 title: Is Coopetition Real?
-date: 2018-05-22 15:00 UTC
+date: 2018-05-25 15:00 UTC
 author: bkp
 tags: open source, community, business
 published: true
@@ -9,7 +9,7 @@ comments: true
 
 ![boxer](blog/bowenboxing.jpg) Let's not kid ourselves: the free and open source community is not all laurel (yanni?) leaves and Kumbaya. There are arguments all the time.
 
-Vi vs. emacs. Restrictive vs. permissive. Open vs. proprietary. Heck, on most days, I have had discussions about one or more of these topics before I've finished my morning coffee. 
+Vi vs. emacs. Restrictive vs. permissive. Open vs. proprietary. Heck, on most days, I have had discussions about one or more of these topics before I've finished my morning coffee.
 
 When you add business interests in the mix, the arguments add a whole new layer of motivation because now we're talking about money and sales.
 
