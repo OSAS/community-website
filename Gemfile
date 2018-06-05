@@ -28,8 +28,6 @@ gem "middleman-blog"
 #gem "middleman-blog-drafts"
 #gem "middleman-blog-authors"
 
-gem 'middleman-deploy'
-
 gem 'middleman-piwik'
 
 # Thumbnailer
