@@ -13,7 +13,7 @@ class SiteHelpers < Middleman::Extension
     end
 
     def pretty_date(sometime, length = 'long')
-      return unless sometime
+      return if sometime.blank?
 
       sometime = Time.parse(sometime) if sometime.class == String
 
