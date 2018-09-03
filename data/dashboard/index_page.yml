@@ -1,9 +1,0 @@
----
-title: "Open Source and Standards Community Dashboard"
-description: |
-          Red Hat's Open Source and Standards (OSAS) group, working with [Bitergia](http://www.bitergia.com), is capturing interesting data from some of the upstream projects with which Red Hat is deeply involved. On this page, you'll find various vital signs from projects like [oVirt](http://www.ovirt.org), [RDO](https://www.rdoproject.org), and [Gluster](http://gluster.org/).
-
-          When looking at these stats, it is important not to compare raw numbers for dissimilar projects, as this is not a valid way of measuring the health of projects. For example, oVirt and RDO have different target audiences, and are at different stages of maturity. Comparing them directly would be an inaccurate methodology.
-
-          These figures are yet another way to provide transparency and insight into the open source communities with which OSAS works, but should not be used as a final or complete aspect of a community's health.
-
