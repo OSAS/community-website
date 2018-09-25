@@ -13,6 +13,9 @@ platforms :mri_18 do
   gem "ruby18_source_location"
 end
 
+# needed by ExecJS, needed by MM
+gem "therubyracer"
+
 
 #####
 # General plugins
